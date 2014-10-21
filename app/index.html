@@ -29,8 +29,8 @@
         <div class="header">
           <div class="container">
             <ul>
-              <li class="logo">logo</li>
-              <li ng-class="page.slug?'':'active'"><a href="#/">index</a></li>
+              <li class="logo">MEDEA proj</li>
+              <li ng-class="page.slug?'':'active'"><a href="#/">home</a></li>
               <li ng-class="page.slug==route.slug?'active':''" ng-repeat="route in routes" ng-if="route.type=='folder'"><a ng-href="#/{{route.slug}}">{{route.title}}</a></li>
             </ul>
             <!-- subfolders -->
