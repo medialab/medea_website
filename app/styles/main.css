@@ -191,6 +191,7 @@
 #sidebar-wrapper-right {
   background: black;
   color: white;
+  display: none;
   height: 100%;
   margin-right: -250px;
   overflow-y: auto;
@@ -208,4 +209,16 @@
 #sidebar-wrapper-right .share li {
   display: inline-block;
   list-style: none;
+}
+
+/* content space */
+
+.content {
+  padding-right: 200px !important;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    padding-right: 100px !important;
+  }
 }
