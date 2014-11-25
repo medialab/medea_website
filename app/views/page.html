@@ -1,10 +1,12 @@
+
 <div class="view-page">
   <div class="row">
     <div class="col-md-5">
-      <h1>Stories</h1>
+      <h1>{{content.title}}</h1>
     </div>
     <div class="col-md-7">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <p ng-bind-html="content.subtitle"></p>
+
     </div>
   </div>
   <div class="row">
@@ -17,16 +19,18 @@
     <div class="col-md-5">
       <div class="menu-lateral">
         <ul>
-          <li>sub_menu_01</li>
-          <li>sub_menu_02</li>
-          <li>sub_menu_03</li>
-          <li>sub_menu_04</li>
+          <li ng-repeat="section in content.sections">{{section.title}}</li>
         </ul>
       </div>
     </div>
     <div class="col-md-7">
       <div class="chapter-content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <section ng-repeat="section in content.sections">
+          <div ng-switch="section.type">
+            <div ng-switch-when="text" ng-bind-html="section.html"></div>
+            <div ng-switch-default> ... </div>
+          </div>
+        </section>
       </div>
     </div>
   </div>

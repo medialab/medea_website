@@ -8,12 +8,14 @@
  * Controller of the driveoutApp
  */
 angular.module('driveoutApp')
-  .controller('MainCtrl', function ($scope, $log) {
+  .controller('MainCtrl', function ($scope, $log, content) {
     $log.log('MainCtrl ready');
+    $scope.content = content.data;
     $scope.$parent.page = {};
-    $scope.$watch('routes', function(){
+    
+    $scope.$watch('routes', function(r){
       $log.info('routes loaded');
-      $scope.items = $scope.routes;
-      $scope.$parent.folders = [];
+      // get my pag
+
     })
   });

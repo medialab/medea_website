@@ -27,25 +27,25 @@ function parseGoogleDocument(result) {
 
   console.log($('body').html())
 
-  result.title = $('.title').html();
+  result.title = $('.title').text();
   result.subtitle = $('.subtitle').html();
 
   // parse document sections
   $('h1').each( function(i, el){
-    console.log('-------------------- oh', $(this).text());
-    result.sections.push({
+    var section = {
       title: $(this).text(),
-      contents: $(this).nextUntil('h1').html()
-    });
-
-    
+      html: $(this).nextUntil('h1').html() // guillaume
+    };
+    console.log('-------------------- oh', $(this).text());
     // check it's own h4
     var directives = $(this).find('h4');
 
     if(directives.length)
       console.log('oh yeh it has a durect')
-
-    console.log();
+    else
+      section.type = 'text'
+    
+    result.sections.push(section);
   })
 
   return result;  
@@ -81,8 +81,12 @@ drive.start().then(function logic() {
     console.log('--> ', file.title, file.id, file.mimeType);
 
     if(file.mimeType == 'application/vnd.google-apps.document') {
-      console.log('ee')
-      return parseGoogleDocument(result);
+      console.log('ee');
+      result = parseGoogleDocument(result);
+
+      drive.utils.write(CONTENTS_PATH + '/' + result.slug + '.json', JSON.stringify(result,null,2)); 
+  
+      return result;
     };// end if file.mimeType == 'application/vnd.google-apps.document'
 
     if(file.mimeType == 'application/vnd.google-apps.folder') {

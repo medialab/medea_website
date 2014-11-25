@@ -21,7 +21,12 @@ angular
     $routeProvider
       .when('/', {
         templateUrl: 'views/page.html',
-        controller: 'MainCtrl'
+        controller: 'MainCtrl',
+        resolve: {
+          content : function ($route, FilesFactory) {
+            return FilesFactory.get({path: 'home'});
+          }
+        }
       })
       .when('/404', {
         templateUrl: 'views/404.html',
