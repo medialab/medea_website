@@ -103,7 +103,7 @@ drive.start().then(function logic() {
     console.log(narratives[i].slug);
     console.log('-------------------------');
     drive.files.walk({fileId: narratives[i].id, mediapath: MEDIA_PATH}, function (file, options, results) {
-        console.log('--> ', file.title, file.id, file.mimeType);
+        console.log('--> "', file.title,'" ', file.id, file.mimeType);
     })
   };
 

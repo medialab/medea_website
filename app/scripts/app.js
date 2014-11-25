@@ -32,12 +32,12 @@ angular
         templateUrl: 'views/404.html',
         controller: '404Ctrl'
       })
-      .when('/:page', {
+      .when('/:page', { // static page controller
         templateUrl: 'views/page.html',
         controller: 'PageCtrl',
         resolve: {
           items : function ($route, FilesFactory) {
-            return FilesFactory.get({path: $route.current.params.page + '/index'});
+            return FilesFactory.get({path: $route.current.params.page});
           }
         }
       })
