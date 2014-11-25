@@ -17,7 +17,9 @@ var settings = require('./settings'),
 drive.start().then(function logic() {
   console.log('custom indexer of drive-out');
 
-  var fileId = drive.utils.getFileId(settings.DRIVE_FOLDER_URL);
+  var fileId = drive.utils.getFileId(settings.DRIVE_FOLDER_URL),
+      pages,
+      menu; // static pages dicts
   
   console.log();
   console.log('folder url:', settings.DRIVE_FOLDER_URL);
@@ -26,8 +28,52 @@ drive.start().then(function logic() {
   fs.existsSync(MEDIA_PATH) || fs.mkdirSync(MEDIA_PATH);
   fs.existsSync(CONTENTS_PATH) || fs.mkdirSync(CONTENTS_PATH);
 
-  var files = drive.files.walk({fileId: fileId, mediapath: MEDIA_PATH}, drive.iterators.flatten);
+  // static pages
+  /*
+    Left menu...
+  */
+  pages = drive.files.walk({fileId: fileId, mediapath: MEDIA_PATH}, function (file, options, results) {
+    var result = {
+      id: file.id,
+      title: file.title,
+      slug: drive.utils.slugify(file.title),
+      mimeType: file.mimeType,
+      sections: [] // it will bring h1 sections inside
+    };
+    console.log('--> ', file.title, file.id);
 
+    if(file.mimeType == 'application/vnd.google-apps.document') {
+      // for GOOGLE DOCUMENTS
+      var html = drive.files.getHtml({fileId:file.id}),
+          $ = drive.utils.parse(html);
+
+      console.log($('body').html())
+
+      result.title = $('.title').html();
+      result.subtitle = $('.subtitle').html();
+
+      // parse document sections
+      $('h1').each( function(i, el){
+        console.log('-------------------- oh', $(this).text());
+        result.sections.push({
+          title: $(this).text(),
+          contents: $(this).nextUntil('h1').html()
+        });
+        
+        console.log();
+      })
+
+      return result;  
+    };// end if file.mimeType == 'application/vnd.google-apps.document'
+
+    if(file.mimeType == 'application/vnd.google-apps.folder') {
+      result.type = 'folder';
+      return result;
+    };
+  });
+
+  drive.utils.write(CONTENTS_PATH + '/index.json', JSON.stringify(pages,null,2)); 
+  
   // todo: cycle through files to discover hidden metadata
 
   // create contents directory if it does not exist
@@ -35,7 +81,7 @@ drive.start().then(function logic() {
 
   // recursive save files data
   
-  function save_recursively(items, path) {
+  /*function save_recursively(items, path) {
     var results = [];
 
     fs.existsSync(path) || fs.mkdirSync(path);
@@ -68,8 +114,8 @@ drive.start().then(function logic() {
     // save index here.
     drive.utils.write(path + '/index.json', JSON.stringify(results,null,2)); 
   };
-  save_recursively(files, CONTENTS_PATH);
-  
+  // save_recursively(files, CONTENTS_PATH);
+  */
 
 }, console.log).catch(function(err) {
   console.log(err)
