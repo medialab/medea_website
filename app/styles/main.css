@@ -1,179 +1,216 @@
-/* Space out content a bit */
-html{
-  height: 100%;
-  padding:0;
-  margin:0;
-}
-body {
-  padding:0;
-  margin:0;
-  background-color: #fff;
-  color: #173340;
-  font-family: 'Crimson Text', serif;
-  font-size: 20px;
-  line-height: 28px;
-  height: 100%;
+/* general css */
+
+.no-padding {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-#layout{
-  
+.row {
+  margin: 0 !important;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+/* menu css */
+
+#sidebar-wrapper .logo {
+  padding: 15px;
 }
 
-/* Custom page header */
-.header{
-  padding: 40px 0;
-}
-.header ul {
-  padding: 0;
-}
-ul.nav{
-  margin-left: 105px;
-}
-.header ul li, ul.nav li {
-  display: inline-block;
-  list-style-type: none;
-  margin: 0px 5px;
-  padding: 2px 7px 1px 7px;
-  transition: all .3s ease-in-out;
-  border-bottom: 2px solid transparent;
-  font: 13px/18px 'Lato', sans-serif;
-  text-transform: uppercase;
+#sidebar-wrapper .sidebar-nav {
+  padding-left: 0;
+  padding-top: 100px;
 }
 
-.header ul li.logo {
-  width: 80px;
-  margin: 0 20px 0 0;
-  font-weight: 700;
-  color: #761c00;
-}
-.header ul li.active, ul.nav li.active {
-  background-color: #a9dde1;
+#sidebar-wrapper .sidebar-nav li {
+  border-top: 1px solid #c5c5c5;
+  list-style: none;
+  padding-left: 10px;
 }
 
-.header ul li.active a, ul.nav li.active a {
-  color: #173340;
-  background-color: none;
+#sidebar-wrapper .sidebar-nav li:last-child {
+  border-bottom: 1px solid #c5c5c5;
 }
 
-ul.nav li a{
-  color: #173340;
-  padding: 0;
-}
-ul.nav li a:hover{
-  background-color: transparent; 
-}
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  
+.navbar-border {
+  background-color: black;
+  height: 8px;
 }
 
-/* Custom page footer */
-.footer {
-  
+.navbar-top {
+  margin-bottom: 25px !important;
 }
 
-article {
-  padding: 2px 7px 1px 7px;
+.navbar-header .menu {
+  padding-left: 10px;
 }
 
-article .media{
-  background: #faf7ee;
-  margin: 18px 0;
+.navbar-header .logo {
+  padding-right: 10px;
 }
 
-article .media .title{
-  margin: 10px 20px 0 20px;
-  font-weight: 700;
-  font-family: 'Lato', sans-serif;
-  font-size: 15px;
-  text-transform: uppercase;
-  color:#761c00;
+/* view1 css */
+
+.view-page .row:first-child {
+  border-bottom: 1px solid #c5c5c5;
+  padding-bottom: 100px;
 }
 
-article .media .description{
-  margin: 0 20px 10px 20px;
-  font-style: italic;
+.view-page .menu-lateral {
+  padding-top: 20px;
 }
 
-
-a{
-  color: #f67954;
-  transition: color .2s;
+.view-page .menu-lateral li {
+  border-top: 1px solid #c5c5c5;
+  list-style: none;
+  padding: 5px 0;
 }
-a:hover{
-  color: #761c00;
-  text-decoration: none;
-  
+.view-page .menu-lateral li:last-child {
+  border-bottom: 1px solid #c5c5c5;
 }
 
-
-h1{
-  font-size: 36px;
-  line-height: 48px;
+.view-page .chapter-number {
+  padding-top: 10px;
 }
 
-h2{
-  
-  font-style: italic;
-  font-weight: normal;
-  padding-bottom: 40px;
-  font-size: 30px;
-  line-height: 36px;
-}
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 100%;
-  }
-}
-.container-narrow > hr {
-  margin: 30px 0;
+.view-page .chapter-title {
+  padding-top: 20px;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+.view-page .chapter-content {
+  padding-top: 20px;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
+/* Sidebarre menu */
+
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 250px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
+#wrapper.toggled {
     padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
 }
 
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 250px;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #ededed;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
 
+#wrapper.toggled #sidebar-wrapper {
+    width: 0;
+}
 
+#page-content-wrapper {
+    width: 100%;
+    padding: 20px;
+    padding-left: 250px !important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+    padding-left: 0 !important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 250px;  
+}
+
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
+}
+
+.sidebar-nav li a {
+  color: #999999;
+  display: block;
+  text-decoration: none;  
+}
+
+.sidebar-nav li a:hover {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
