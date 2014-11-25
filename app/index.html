@@ -27,22 +27,29 @@
         <div ng-controller="LayoutCtrl">
             <div class="col-md-12 no-padding" id="wrapper">
                 <div id="sidebar-wrapper-left">
-                    <img class="logo" src="images/logo_menu.png">
+                    <div class="top">
+                        <img class="pull-left logo" src="images/logo.png" alt="Logo">
+                        <span class="pull-right close-menu glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </div>
                     <ul class="sidebar-nav">
                         <li class="active">
                             <a href="#">home</a>
                         </li>
                         <li class="spacer"></li>
-
                         <li ng-repeat="route in routes">
                             <a href="#">{{route.slug}}</a>
+                            <ul>
+                                <li><a href="#">submenu_01</a></li>
+                                <li><a href="#">submenu_02</a></li>
+                                <li><a href="#">submenu_03</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
                 <div id="page-content-wrapper" class="navbar-header col-md-9 no-padding">
                     <div class="navbar-border row col-md-12 no-padding"></div>
                     <div class="navbar-top row col-md-12 no-padding">
-                        <img class="logo pull-right" src="images/logo.png" alt="Logo">
+                        <span class="pull-left menu glyphicon glyphicon-th-list" aria-hidden="true"></span>
                     </div>
                     <div class="content row col-md-12 no-padding" ng-view=""></div>
                 </div>

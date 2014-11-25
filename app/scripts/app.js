@@ -55,4 +55,16 @@ angular
   .config(function ($resourceProvider) {
     console.log($resourceProvider);
     $resourceProvider.defaults.stripTrailingSlashes = false;
+    $('.close-menu').click(
+      function() {
+        $("#wrapper").toggleClass("toggled");
+        $('.menu').show();
+      }
+    );
+    $('.menu').click(
+      function() {
+        $('.menu').hide();
+        $("#wrapper").toggleClass("toggled");
+      }
+    );
   })
