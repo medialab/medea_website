@@ -18,7 +18,6 @@ angular.module('driveoutApp')
 
     // filter stuffs
     $scope.$watch('routes', function(){ // get title
-      console.log( angular.copy($scope.routes))
       $scope.$parent.page = angular.copy($scope.routes)
         .filter(function(d){ return d.slug==$routeParams.page })
         .pop();
