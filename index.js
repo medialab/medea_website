@@ -20,29 +20,29 @@ var settings = require('./settings'),
   Return a well filled result object according to file.id
 */
 function parseGoogleDocument(result) {
-  console.log('parsing', result.slug)
+  console.log('      parsing', result.slug)
   // for GOOGLE DOCUMENTS
   var html = drive.files.getHtml({fileId:result.id}),
       $ = drive.utils.parse(html);
-
-  console.log($('body').html())
 
   result.title = $('.title').text();
   result.subtitle = $('.subtitle').html();
 
   // parse document sections
   $('h1').each( function(i, el){
-    var section = {
-      title: $(this).text(),
-      html: $(this).nextUntil('h1').get().map(function(e) {return $(e).html()}).join('') // guillaume
-    };
-    console.log('-------------------- oh', $(this).nextUntil('h1').get());
-    // check it's own h4
-    var directives = $(this).find('h4');
+    var contents = $(this).nextUntil('h1').get().map(function(e) {return $(e).html()}).join(''), // html specific to this section
+        section = {
+          title: $(this).text(),
+          html: contents // guillaume
+        };
 
-    if(directives.length)
-      console.log('oh yeh it has a durect')
-    else
+    // check it's own h4
+    var directives = $(contents).find('h4');
+    console.log(section.title, directives.length, $(contents).html());
+    if(directives.length) {
+      console.log('oh yeh it has a durect');
+      section.type = 'directive'
+    } else
       section.type = 'text'
     
     result.sections.push(section);
@@ -79,13 +79,10 @@ drive.start().then(function logic() {
       sections: [] // it will bring h1 sections inside
     };
     console.log('--> ', file.title, file.id, file.mimeType);
-
+    // save result to a file named as file.slug
     if(file.mimeType == 'application/vnd.google-apps.document') {
-      console.log('ee');
       result = parseGoogleDocument(result);
-
       drive.utils.write(CONTENTS_PATH + '/' + result.slug + '.json', JSON.stringify(result,null,2)); 
-  
       return result;
     };// end if file.mimeType == 'application/vnd.google-apps.document'
 
@@ -100,10 +97,26 @@ drive.start().then(function logic() {
   
   // cycle through narratives folder to get files (one narrative per google doc)
   for(var i=0; i<narratives.length; i++) {
+    console.log();
     console.log(narratives[i].slug);
+    fs.existsSync(CONTENTS_PATH + '/' + narratives[i].slug) || fs.mkdirSync(CONTENTS_PATH +'/' + narratives[i].slug);
     console.log('-------------------------');
+
     drive.files.walk({fileId: narratives[i].id, mediapath: MEDIA_PATH}, function (file, options, results) {
-        console.log('--> "', file.title,'" ', file.id, file.mimeType);
+      console.log('--> "', file.title,'" ', file.id, file.mimeType);
+      var result = {
+        id: file.id,
+        title: file.title,
+        slug: drive.utils.slugify(file.title),
+        mimeType: file.mimeType,
+        sections: [] // it will bring h1 sections inside
+      };
+
+      if(file.mimeType == 'application/vnd.google-apps.document') {
+        result = parseGoogleDocument(result);
+        drive.utils.write(CONTENTS_PATH + '/' + narratives[i].slug + '/' + result.slug + '.json', JSON.stringify(result,null,2)); 
+      }
+
     })
   };
 
