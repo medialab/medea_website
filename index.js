@@ -37,6 +37,8 @@ function parseGoogleDocument(result) {
       title: $(this).text(),
       contents: $(this).nextUntil('h1').html()
     });
+
+    
     // check it's own h4
     var directives = $(this).find('h4');
 

@@ -21,9 +21,10 @@
     "request": "^2.44.0",
     "googleapis": "^1.0.14",
     "request-sync": "0.0.5",
-    "cheerio": "^0.17.0"
+    "cheerio": "^0.17.0",
+    "css": "^2.1.0"
   },
-  "devDependencies": {  
+  "devDependencies": {
     "grunt": "^0.4.1",
     "grunt-autoprefixer": "^0.7.3",
     "grunt-concurrent": "^0.5.0",
