@@ -15,6 +15,7 @@ var settings = require('./settings'),
 
 
 
+
 /*
   Return a well filled result object according to file.id
 */
@@ -36,7 +37,12 @@ function parseGoogleDocument(result) {
       title: $(this).text(),
       contents: $(this).nextUntil('h1').html()
     });
-    
+    // check it's own h4
+    var directives = $(this).find('h4');
+
+    if(directives.length)
+      console.log('oh yeh it has a durect')
+
     console.log();
   })
 
@@ -86,9 +92,13 @@ drive.start().then(function logic() {
 
   drive.utils.write(CONTENTS_PATH + '/index.json', JSON.stringify(pages,null,2)); 
   
-  // todo: cycle through narratives to discover hidden metadata!
+  // cycle through narratives folder to get files (one narrative per google doc)
   for(var i=0; i<narratives.length; i++) {
-    console.log(narratives[i].slug)
+    console.log(narratives[i].slug);
+    console.log('-------------------------');
+    drive.files.walk({fileId: narratives[i].id, mediapath: MEDIA_PATH}, function (file, options, results) {
+        console.log('--> ', file.title, file.id, file.mimeType);
+    })
   };
 
 
