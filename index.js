@@ -34,9 +34,9 @@ function parseGoogleDocument(result) {
   $('h1').each( function(i, el){
     var section = {
       title: $(this).text(),
-      html: $(this).nextUntil('h1').html() // guillaume
+      html: $(this).nextUntil('h1').get().map(function(e) {return $(e).html()}).join('') // guillaume
     };
-    console.log('-------------------- oh', $(this).text());
+    console.log('-------------------- oh', $(this).nextUntil('h1').get());
     // check it's own h4
     var directives = $(this).find('h4');
 
