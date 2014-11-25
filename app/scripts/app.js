@@ -53,6 +53,11 @@ angular
       });
   })
   .config(function ($resourceProvider) {
-    console.log($resourceProvider)
+    console.log($resourceProvider);
     $resourceProvider.defaults.stripTrailingSlashes = false;
+    $('.menu').click(
+      function() {
+        $("#wrapper").toggleClass("toggled");
+      }
+    );
   })

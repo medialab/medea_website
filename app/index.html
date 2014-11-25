@@ -10,9 +10,6 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <!-- endbower -->
-    <link rel="stylesheet" href="bower_components/perfect-scrollbar/min/perfect-scrollbar.min.css">
-
     <!-- endbuild -->
     <link href='http://fonts.googleapis.com/css?family=Lato|Crimson+Text:700,400,400italic' rel='stylesheet' type='text/css'>
     <!-- build:css(.tmp) styles/main.css -->
@@ -29,7 +26,7 @@
     <div id="layout">
         <div ng-controller="LayoutCtrl">
             <div class="container col-md-12 no-padding" id="wrapper">
-                <div id="sidebar-wrapper">
+                <div id="sidebar-wrapper-left">
                     <img class="logo" src="images/logo_menu.png">
                     <ul class="sidebar-nav">
                         <li>
@@ -47,6 +44,18 @@
                         <img class="logo pull-right" src="images/logo.png" alt="Logo">
                     </div>
                     <div class="content row col-md-12 no-padding" ng-view=""></div>
+                </div>
+                <div id="sidebar-wrapper-right">
+                    <div>Mapping controversies</div>
+                    <div>
+                        <ul class="share">
+                            <li><img src="images/twitter.png" alt="Twitter"></li>
+                            <li><img src="images/twitter.png" alt="Facebook"></li>
+                        </ul>
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
                 </div>
             </div>
 
