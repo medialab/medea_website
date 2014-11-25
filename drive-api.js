@@ -10,7 +10,8 @@ var extend   = require('util')._extend,
     request_sync  = require('request-sync'),
     
     google   = require('googleapis'),
-    cheerio = require('cheerio'),
+    cheerio  = require('cheerio'),
+    css      = require('css'),
 
     settings, // cfr module.exports function
     secrets, // the content of SECRETS_PATH .json file
@@ -94,6 +95,40 @@ drive.utils.clean = function(html){
   return c;
 }
 
+/*
+  Return a html string well cleaned with cheerio and css
+*/
+drive.utils.parse = function(html) {
+  var $ = cheerio.load(html),
+      style,
+      bolds,
+      italics;
+  // get css rules from the tag style inside the html
+  style = css.parse($('style').text());
+  //get rules matching any span or p element having BOLD
+  bolds = style.stylesheet.rules.filter(function(rule) {
+    var rule_for_minor_selectors = rule.selectors.some(function(selector) {
+      return !selector.match(/h(\d+)/)
+    });
+
+    if(rule_for_minor_selectors)
+      return rule.declarations.some(function(d){
+        return d.property == 'font-weight' && (d.value == 'bold' || +d.value > 300);
+      });
+    else
+      return false;
+  });
+
+  // transform bold into strong element
+  for(var i =0; i<bolds.length; i++) {
+    bolds[i].selectors.forEach(function(d) {
+      $(d).replaceWith('<strong>' + $(d).html() + '</strong>')//console.log('apdjapodjaopdjaposdjpiajd', d)
+    })
+  };
+
+  // transform stuffs
+  return $;
+};
 
 
 
