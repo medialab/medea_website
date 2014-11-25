@@ -14,12 +14,42 @@ var settings = require('./settings'),
     CONTENTS_PATH    = './app/contents';
 
 
+
+/*
+  Return a well filled result object according to file.id
+*/
+function parseGoogleDocument(result) {
+  console.log('parsing', result.slug)
+  // for GOOGLE DOCUMENTS
+  var html = drive.files.getHtml({fileId:result.id}),
+      $ = drive.utils.parse(html);
+
+  console.log($('body').html())
+
+  result.title = $('.title').html();
+  result.subtitle = $('.subtitle').html();
+
+  // parse document sections
+  $('h1').each( function(i, el){
+    console.log('-------------------- oh', $(this).text());
+    result.sections.push({
+      title: $(this).text(),
+      contents: $(this).nextUntil('h1').html()
+    });
+    
+    console.log();
+  })
+
+  return result;  
+};
+
+
 drive.start().then(function logic() {
   console.log('custom indexer of drive-out');
 
   var fileId = drive.utils.getFileId(settings.DRIVE_FOLDER_URL),
       pages,
-      menu; // static pages dicts
+      narratives = []; // static pages dicts
   
   console.log();
   console.log('folder url:', settings.DRIVE_FOLDER_URL);
@@ -40,41 +70,27 @@ drive.start().then(function logic() {
       mimeType: file.mimeType,
       sections: [] // it will bring h1 sections inside
     };
-    console.log('--> ', file.title, file.id);
+    console.log('--> ', file.title, file.id, file.mimeType);
 
     if(file.mimeType == 'application/vnd.google-apps.document') {
-      // for GOOGLE DOCUMENTS
-      var html = drive.files.getHtml({fileId:file.id}),
-          $ = drive.utils.parse(html);
-
-      console.log($('body').html())
-
-      result.title = $('.title').html();
-      result.subtitle = $('.subtitle').html();
-
-      // parse document sections
-      $('h1').each( function(i, el){
-        console.log('-------------------- oh', $(this).text());
-        result.sections.push({
-          title: $(this).text(),
-          contents: $(this).nextUntil('h1').html()
-        });
-        
-        console.log();
-      })
-
-      return result;  
+      console.log('ee')
+      return parseGoogleDocument(result);
     };// end if file.mimeType == 'application/vnd.google-apps.document'
 
     if(file.mimeType == 'application/vnd.google-apps.folder') {
       result.type = 'folder';
+      narratives.push(result)
       return result;
     };
   });
 
   drive.utils.write(CONTENTS_PATH + '/index.json', JSON.stringify(pages,null,2)); 
   
-  // todo: cycle through files to discover hidden metadata
+  // todo: cycle through narratives to discover hidden metadata!
+  for(var i=0; i<narratives.length; i++) {
+    console.log(narratives[i].slug)
+  };
+
 
   // create contents directory if it does not exist
   
