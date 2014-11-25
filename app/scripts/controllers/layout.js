@@ -13,7 +13,11 @@ angular.module('driveoutApp')
     $log.log('LayoutCtrl ready', $route);
     //$scope.path = $route.current.params.path;
     FilesFactory.get({path:'index'}).then(function(res){
-      $scope.routes = res.data;
+      var routes = res.data.filter(function (d) {
+        if(d.type == 'folder')
+          return d
+      });
+      $scope.routes = routes;
     }); // we will then filter for the menu items
     // has subfolders?
   });

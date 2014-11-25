@@ -29,11 +29,13 @@
                 <div id="sidebar-wrapper-left">
                     <img class="logo" src="images/logo_menu.png">
                     <ul class="sidebar-nav">
-                        <li>
-                            <a href="#">menu_01</a>
+                        <li class="active">
+                            <a href="#">home</a>
                         </li>
-                        <li>
-                            <a href="#">menu_02</a>
+                        <li class="spacer"></li>
+
+                        <li ng-repeat="route in routes">
+                            <a href="#">{{route.slug}}</a>
                         </li>
                     </ul>
                 </div>
@@ -109,7 +111,6 @@
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/about.js"></script>
     <script src="scripts/services/files.js"></script>
-    <script src="scripts/services/file.js"></script>
     <script src="scripts/controllers/layout.js"></script>
     <script src="scripts/controllers/page.js"></script>
     <script src="scripts/directives/scrollbar.js"></script>
