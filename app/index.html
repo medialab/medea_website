@@ -10,6 +10,7 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
     <!-- endbuild -->
     <link href='http://fonts.googleapis.com/css?family=Lato|Crimson+Text:700,400,400italic' rel='stylesheet' type='text/css'>
     <!-- build:css(.tmp) styles/main.css -->
@@ -28,12 +29,11 @@
             <div class="col-md-12 no-padding" id="wrapper">
                 <div id="sidebar-wrapper-left">
                     <div class="top">
-                        <img class="pull-left logo" src="images/logo.png" alt="Logo">
                         <span class="pull-right close-menu glyphicon glyphicon-remove" aria-hidden="true"></span>
                     </div>
                     <ul class="sidebar-nav">
                         <li class="active">
-                            <a href="#">home</a>
+                            <a href="#/">home</a>
                         </li>
                         <li class="spacer"></li>
                         <li ng-repeat="route in routes">
@@ -48,9 +48,16 @@
                 </div>
                 <div id="page-content-wrapper" class="navbar-header col-md-9 no-padding">
                     <div class="navbar-border row col-md-12 no-padding"></div>
+                    
                     <div class="navbar-top row col-md-12 no-padding">
                         <span class="pull-left menu glyphicon glyphicon-th-list" aria-hidden="true"></span>
                     </div>
+
+                    <!-- MEDEA LOGO -->
+                    <div id="logo">
+                        <img class="pull-left logo" src="images/logo.png" alt="Logo">
+                    </div>
+
                     <div class="content row col-md-12 no-padding" ng-view=""></div>
                 </div>
                 <div id="sidebar-wrapper-right">
@@ -122,6 +129,8 @@
     <script src="scripts/directives/scrollbar.js"></script>
     <script src="scripts/controllers/404.js"></script>
     <script src="scripts/controllers/depth.js"></script>
+    <script src="scripts/directives/donut.js"></script>
+    <script src="scripts/directives/zeppelin.js"></script>
     <!-- endbuild -->
 </body>
 

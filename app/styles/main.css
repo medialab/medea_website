@@ -79,6 +79,22 @@
   padding-top: 20px;
 }
 
+.view-page ul {
+  margin: 0;
+  padding: 10px;
+  text-align:center;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.view-page ul li {
+  padding: 20px;
+  display: inline-block;
+}
+
+.view-page section {
+  height: 100%;
+}
+
 /* Sidebarre menu */
 
 /*!
@@ -228,4 +244,20 @@
   .content {
     padding-right: 100px !important;
   }
+}
+
+
+
+
+
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+#logo {
+  position: absolute;
+  right: 120px;
+  top: 30px;
 }

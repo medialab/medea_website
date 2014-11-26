@@ -8,6 +8,7 @@ var settings = require('./settings'),
     extend   = require('util')._extend,
     drive    = require('./drive-api')(settings),
 
+    cmp      = require('./custom-markdown-parser'),
     fs       = require('fs'),
 
     MEDIA_PATH = './app/media',
@@ -27,24 +28,56 @@ function parseGoogleDocument(result) {
 
   result.title = $('.title').text();
   result.subtitle = $('.subtitle').html();
-
+  console.log(html)
   // parse document sections
   $('h1').each( function(i, el){
     var contents = $(this).nextUntil('h1').get().map(function(e) {return $(e).html()}).join(''), // html specific to this section
         section = {
           title: $(this).text(),
-          html: contents // guillaume
+          html: cmp(contents) // guillaume
         };
 
     // check it's own h4
-    var directives = $(contents).find('h4');
-    console.log(section.title, directives.length, $(contents).html());
-    if(directives.length) {
-      console.log('oh yeh it has a durect');
+    var directive = $(this).nextUntil('h1').filter('h4');
+
+    //console.log(section.title, directives.length, directives);
+    if(directive.length) {
+      console.log('oh yeh it has a directive');
+      section.directive =  directive.text().split('|').shift().trim()
       section.type = 'directive'
-    } else
+      // check linked data
+      directive.find('a[href]').each(function (i, e) {
+        var datahref = e.attribs['href'].match(/id=([^&]*)/); // this is the address on google drive for the linked data
+        
+        if(datahref) {
+          console.log('directive has this file attached', datahref)
+          // get download urls
+          var file = drive.files.get({
+            fileId: datahref.pop()
+          });
+
+          if(file.downloadUrl) {
+            section.datasrc = section.datasrc || []; // add a proper list to hold data urls if it has'nt been done yet
+
+            drive.files.download({
+              downloadUrl: file.downloadUrl,
+              filepath: MEDIA_PATH + '/' + file.id + '.' + file.fileExtension
+            })
+            section.datasrc.push(file.id + '.' + file.fileExtension)
+            console.log('downlooading file', file.downloadUrl);
+          }
+        };
+          /*
+          drive.files.download({
+            downloadUrl: file.downloadUrl,
+            filepath: options.mediapath + '/' + file.id + '.' + file.fileExtension
+          })
+          */
+      })
+    } else {
       section.type = 'text'
-    
+    }
+
     result.sections.push(section);
   })
 

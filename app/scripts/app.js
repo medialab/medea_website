@@ -36,8 +36,8 @@ angular
         templateUrl: 'views/page.html',
         controller: 'PageCtrl',
         resolve: {
-          items : function ($route, FilesFactory) {
-            return FilesFactory.get({path: $route.current.params.page});
+          content : function ($route, FilesFactory) {
+            return FilesFactory.get({path: $route.current.params.page + '/index'});
           }
         }
       })

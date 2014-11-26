@@ -1,15 +1,58 @@
 
 <div class="view-page">
-  <div class="row">
-    <div class="col-md-5">
-      <h1>{{content.title}}</h1>
+  <!-- fixed header -->
+  <header>
+    <div class="row" >
+      <div class="col-md-5">
+        <h1>{{content.title}}</h1>
+      </div>
+      <div class="col-md-7">
+        <p ng-bind-html="content.subtitle"></p>
+
+      </div>
     </div>
-    <div class="col-md-7">
-      <p ng-bind-html="content.subtitle"></p>
+    <div></div>
+  </header>
+
+  
+  <div >
+    <ul>
+      <li>introduction</li>
+      <li>expertise</li>
+      <li>coordination</li>
+      <li>diversity</li>
+      <li>building</li>
+    </ul>
+
+  </div>
+
+  <div zeppelin sections="content.sections"></div>
+
+  <div class="row">
+    <div class="col-sm-4">
+      
+      <section ng-repeat="section in content.sections">
+        <div ng-bind-html="section.html"></div>
+        
+      </section>
+    
+    </div>
+    <div class="col-sm-8">
+      A wonderful vis wll be placed here
+      <div ng-switch="section.directive">
+          
+          <div ng-switch-when="text" ng-bind-html="section.html"></div>
+          
+          <div ng-switch-when="donut">
+            <donut></donut>
+          </div>
+          
+          <div ng-switch-default> ... {{section.directive}} </div>
+        </div>
 
     </div>
   </div>
-  <div class="row">
+  <!-- div class="row">
     <div class="col-md-7 col-md-offset-5">
       <div class="chapter-number">1.</div>
       <div class="chapter-title"><h2>This is the chapter title</h2></div>
@@ -33,5 +76,5 @@
         </section>
       </div>
     </div>
-  </div>
+  </div -->
 </div>

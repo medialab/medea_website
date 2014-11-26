@@ -332,6 +332,23 @@ drive.open.files.list = function(options) {
 */
 drive.files = {}
 
+drive.files.get = function(options) {
+  if(!options || !options.fileId)
+    throw 'files.list interrupted: please specify a "fileId" field ...';
+  
+  console.log(colors.white('files.get'), colors.greenBright(options.fileId));
+
+  var res = request_sync({
+      url: 'https://www.googleapis.com/drive/v2/files/' + options.fileId,
+      headers: {
+        'Authorization' : 'Bearer ' + secrets.access_token
+      }
+    });
+
+  return drive.response(res);
+};
+
+
 drive.files.list = function(options) {
   if(!options || !options.fileId)
     throw 'files.list interrupted: please specify a "fileId" field ...';
@@ -350,7 +367,6 @@ drive.files.list = function(options) {
 
   return drive.response(res);
 };
-
 
 drive.files.getHtml = function(options) {
   if(!options || !options.fileId)

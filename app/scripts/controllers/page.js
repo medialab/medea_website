@@ -8,14 +8,9 @@
  * Controller of the driveoutApp
  */
 angular.module('driveoutApp')
-  .controller('PageCtrl', function ($scope, items, $log, $routeParams) {
-    $scope.items = items.data;
+  .controller('PageCtrl', function ($scope, content, $log, $routeParams) {
+    $scope.content = content.data;
     
-    $scope.$parent.folders = angular.copy($scope.items).filter(function(d) {
-      if(d.type=='folder')
-        return d;
-    });
-
     // filter stuffs
     $scope.$watch('routes', function(){ // get title
       $scope.$parent.page = angular.copy($scope.routes)
