@@ -245,7 +245,7 @@ body{
 /* content space */
 
 .content {
-  padding-right: 200px !important;
+  
 }
 
 @media (max-width: 1024px) {
@@ -299,20 +299,38 @@ jgs       [_____]=8
   overflow-y: auto;
 }
 
-.zeppelin section>div, .zeppelin .playground {
-  margin: 20px 0;
+.zeppelin section>div {
+  margin: 60px 20px 40px 0;
 }
 
 .zeppelin .arrow.previous, .zeppelin .arrow.next {
-  position: absolute;
-  left: 50%;
-  width: 200px;
   background: #eeeeee;
   text-align: center;
-  margin-left: -100px;
 }
 
+.zeppelin .arrows {
+  z-index: 2;
+  position: absolute;
+}
 
-.zeppelin .arrow.next {
-  bottom: 0px;
+.zeppelin .arrows .arrow {
+  opacity: .2;
+  transition: opacity .35s ease-in-out;
+}
+
+.zeppelin .arrows .arrow.active {
+  opacity: 1;
+}
+
+.zeppelin .slider {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  transition: top .35s ease-in-out;
+}
+
+.zeppelin .image img {
+  width: 100%;
 }

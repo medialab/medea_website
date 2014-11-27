@@ -43,7 +43,7 @@ function parseGoogleDocument(result) {
     //console.log(section.title, directives.length, directives);
     if(directive.length) {
       console.log('oh yeh it has a directive');
-      section.directive =  directive.text().split('|').shift().trim()
+      section.directive =  directive.text().split(' ').shift().trim()
       section.type = 'directive'
       // check linked data
       directive.find('a[href]').each(function (i, e) {
@@ -63,8 +63,10 @@ function parseGoogleDocument(result) {
               downloadUrl: file.downloadUrl,
               filepath: MEDIA_PATH + '/' + file.id + '.' + file.fileExtension
             })
-            section.datasrc.push(file.id + '.' + file.fileExtension)
+            section.datasrc.push( 'media/' + file.id + '.' + file.fileExtension)
             console.log('downlooading file', file.downloadUrl);
+          } else {
+            console.log('CANNOT DOWNLoAD  file', file.title);
           }
         };
           /*
@@ -131,6 +133,8 @@ drive.start().then(function logic() {
   // cycle through narratives folder to get files (one narrative per google doc)
   for(var i=0; i<narratives.length; i++) {
     console.log();
+    if(narratives[i].slug != 'ipcc')
+      continue;
     console.log(narratives[i].slug);
     fs.existsSync(CONTENTS_PATH + '/' + narratives[i].slug) || fs.mkdirSync(CONTENTS_PATH +'/' + narratives[i].slug);
     console.log('-------------------------');
@@ -153,47 +157,6 @@ drive.start().then(function logic() {
     })
   };
 
-
-  // create contents directory if it does not exist
-  
-
-  // recursive save files data
-  
-  /*function save_recursively(items, path) {
-    var results = [];
-
-    fs.existsSync(path) || fs.mkdirSync(path);
-    
-    for(var i in items) {
-      
-      if(items[i].items){
-        var clone = {};
-        for(var k in items[i]){ // copy only non items
-          if(k != 'items')
-            clone[k] =   items[i][k];
-        }
-        results.push(clone); 
-        save_recursively(items[i].items, path + "/" + items[i].slug);
-      } else if(!items[i].target){
-        results.push(items[i]);
-      }
-      
-    };
-
-    for(var i in results) {
-      for(var j in items) {
-        if(results[i].slug == items[j].target){
-          results[i].metadata = extend({},items[j]);
-          break;
-        }
-      }
-    }
-
-    // save index here.
-    drive.utils.write(path + '/index.json', JSON.stringify(results,null,2)); 
-  };
-  // save_recursively(files, CONTENTS_PATH);
-  */
 
 }, console.log).catch(function(err) {
   console.log(err)

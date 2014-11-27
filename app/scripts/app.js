@@ -37,19 +37,16 @@ angular
         controller: 'PageCtrl',
         resolve: {
           content : function ($route, FilesFactory) {
-            return FilesFactory.get({path: $route.current.params.page + '/index'});
+            return FilesFactory.get({path: $route.current.params.page + '/introduction'});
           }
         }
       })
       .when('/:page/:sub', {
         templateUrl: 'views/page.html',
-        controller: 'DepthCtrl', // handle the items loading
+        controller: 'PageCtrl', // handle the items loading
         resolve: {
-          items : function ($route, FilesFactory) {
-            return FilesFactory.get({path: $route.current.params.page + '/' + $route.current.params.sub + '/index'});
-          },
-          parents : function ($route, FilesFactory) {
-            return FilesFactory.get({path: $route.current.params.page + '/index'});
+          content : function ($route, FilesFactory) {
+            return FilesFactory.get({path: $route.current.params.page + '/' + $route.current.params.sub});
           }
         }
       })

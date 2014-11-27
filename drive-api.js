@@ -107,6 +107,9 @@ drive.utils.parse = function(html) {
   style = css.parse($('style').text());
   //get rules matching any span or p element having BOLD
   bolds = style.stylesheet.rules.filter(function(rule) {
+    if(!rule || !rule.selectors)
+      return false;
+
     var rule_for_minor_selectors = rule.selectors.some(function(selector) {
       return !selector.match(/h(\d+)/)
     });

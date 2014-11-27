@@ -19,9 +19,9 @@ renderer.link = function(href, title, text) {
   var words = wordlist[1].split(',');
 
   if (words.length > 1)
-    return '<span ng-click="groupFocus(' + escape(words) + ')">' + text + '</span>';
+    return '<span data-click="groupFocus(' + escape(words) + ')">' + text + '</span>';
   else
-    return '<span ng-click="focus(' + escape(words[0]) + ')"></span>';
+    return '<span data-click="focus(' + escape(words[0]) + ')">' + text + '</span>';
 };
 
 // Exporting function

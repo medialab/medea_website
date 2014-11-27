@@ -1,29 +1,40 @@
 
  <div class="row fill-height">
-    <div class="arrow previous">previous</div>
-    <div class="arrow next">next</div>
+    <div class="arrows">
+      {{index + 1}} of {{sections.length}}
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="arrow" ng-class="index > 0?'active':''" ng-click="previous()">previous
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="arrow" ng-class="index + 1 < sections.length?'active':''" ng-click="next()">next 
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="col-sm-4 fill-height">
       
-      <section ng-repeat="section in sections">
-        <div ng-bind-html="section.html"></div>
-        
-      </section>
+      
+      <div class="slider">
+        <section ng-repeat="section in sections">
+          <div ng-bind-html= "section.html|unsafeHtml"></div>
+        </section>
+      </div>
     
     </div>
     <div class="col-sm-8 fill-height">
       <div class="playground" ng-switch="section.directive">
- <donut></donut>
- 
-          
-          <div ng-switch-when="text" ng-bind-html="section.html"></div>
-          
-          <div ng-switch-when="donut">
-            <donut></donut>
-          </div>
-          
-          <div ng-switch-default> ... {{section.directive}} </div>
+        <div class="image" ng-switch-when="image">
+          <img ng-repeat="src in section.datasrc" ng-src="{{src}}">
         </div>
+        <div ng-switch-when="text" ng-bind-html="section.html"></div>
+        <div ng-switch-when="donut">
+          <donut></donut>
+        </div>
+        <div ng-switch-default> ... {{section.directive}} </div>
+      </div>
 
     </div>
   </div>
