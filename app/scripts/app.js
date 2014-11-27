@@ -20,7 +20,7 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/page.html',
+        templateUrl: 'views/main.html',
         controller: 'MainCtrl',
         resolve: {
           content : function ($route, FilesFactory) {

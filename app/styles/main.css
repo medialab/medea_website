@@ -256,6 +256,10 @@ body{
 
 
 
+.page {
+  margin: 100px 100px;
+}
+
 
 
 
@@ -283,6 +287,7 @@ jgs       [_____]=8
   margin: 20px;
   position: relative;
   overflow: hidden;
+  background: #f5f5f5;
 }
 
 .zeppelin .fill-height{
@@ -302,10 +307,11 @@ jgs       [_____]=8
   position: absolute;
   left: 50%;
   width: 200px;
-  background: #f5f5f5;
+  background: #eeeeee;
   text-align: center;
   margin-left: -100px;
 }
+
 
 .zeppelin .arrow.next {
   bottom: 0px;
