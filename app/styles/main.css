@@ -1,5 +1,7 @@
 /* general css */
-
+body{
+  font-family: 'Lato';
+}
 .no-padding {
   margin: 0 !important;
   padding: 0 !important;
@@ -50,8 +52,7 @@
 /* view1 css */
 
 .view-page .row:first-child {
-  border-bottom: 1px solid #c5c5c5;
-  padding-bottom: 100px;
+
 }
 
 .view-page .menu-lateral {
@@ -83,12 +84,19 @@
   margin: 0;
   padding: 10px;
   text-align:center;
-  border-bottom: 1px solid #c5c5c5;
+  
 }
 
 .view-page ul li {
   padding: 20px;
   display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.view-page ul li.active{
+  border-bottom: 1px solid #d5d5d5;
 }
 
 .view-page section {
@@ -252,12 +260,38 @@
 
 
 /*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-``````````````
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  ZEPPELIN - the magic directive
+
+       _..--=--..._
+    .-'            '-.  .-.
+   /.'              '.\/  /
+  |=-                -=| (
+   \'.              .'/\  \
+    '-.,_____ _____.-'  '-'
+jgs       [_____]=8
+
+
 */
 #logo {
   position: absolute;
   right: 120px;
   top: 30px;
 }
+
+.zeppelin {
+  margin: 20px;
+  position: relative;
+}
+
+.zeppelin .fill-height{
+  height: 100%;
+}
+
+.zeppelin section {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+
+

@@ -1,0 +1,25 @@
+
+ <div class="row fill-height">
+    <div class="col-sm-4 fill-height">
+      
+      <section ng-repeat="section in sections">
+        <div ng-bind-html="section.html"></div>
+        
+      </section>
+    
+    </div>
+    <div class="col-sm-8 fill-height">
+      A wonderful vis wll be placed here
+      <div ng-switch="section.directive">
+          
+          <div ng-switch-when="text" ng-bind-html="section.html"></div>
+          
+          <div ng-switch-when="donut">
+            <donut></donut>
+          </div>
+          
+          <div ng-switch-default> ... {{section.directive}} </div>
+        </div>
+
+    </div>
+  </div>

@@ -9,7 +9,7 @@
 angular.module('driveoutApp')
   .directive('zeppelin', function ($window) {
     return {
-      template: '<div></div>',
+      templateUrl: 'views/directives/zeppelin.html',
       scope:{
         sections: '='
       },
@@ -22,12 +22,12 @@ angular.module('driveoutApp')
   
 
 
-        element.text('this is the zeppelin directive' + scope.h);
+        //element.text('this is the zeppelin directive' + scope.h);
 
        
 
         function resize(){
-          var h = (w.height() - 400)+ 'px';
+          var h = (w.height() - 250)+ 'px';
           console.log('/ zeppelin ---> ',h)
           element.css({
             height: h
