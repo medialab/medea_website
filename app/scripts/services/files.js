@@ -17,4 +17,14 @@ angular.module('driveoutApp')
     return $resource('/contents/:path.json',{ }, {
       get: {method:'GET', isArray: true, params: {path: '@path'} },
     });*/
+  })
+  /*
+    get data from svg data
+  */
+  .factory('HTMLFactory', function($http) {
+    return {
+        get: function(options) {
+          return $http.get('/'+ options.path);
+        }
+    };
   });

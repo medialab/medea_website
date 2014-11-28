@@ -36,7 +36,6 @@ angular.module('driveoutApp')
           $scope.steer($scope.index);
         };
 
-        
         /*
           Goto a specific slide. If the section directive names has the 'follow' prefix,
           we do not substitute the current section in playground, but
@@ -57,7 +56,7 @@ angular.module('driveoutApp')
           $scope.height = w.height() - 250;
           $scope.$apply()
         });
-        
+        $scope.steer(0);
       },
       link: function postLink(scope, element, attrs) {
         $log.debug("\n\nZEPPELIN - the magic directive");

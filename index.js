@@ -143,8 +143,8 @@ drive.start().then(function logic() {
       console.log('--> "', file.title,'" ', file.id, file.mimeType);
       var result = {
         id: file.id,
-        title: file.title.replace(/[0-9]{2,}[\s.]*/,''),
-        slug: drive.utils.slugify(file.title.replace(/[0-9]{2,}[\s.]*/,'')),
+        title: file.title.replace(/[0-9]*[\s.]*/,''),
+        slug: drive.utils.slugify(file.title.replace(/[0-9]*[\s.]*/,'')),
         mimeType: file.mimeType,
         sections: [] // it will bring h1 sections inside
       };

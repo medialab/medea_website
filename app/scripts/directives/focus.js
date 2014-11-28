@@ -7,11 +7,12 @@
  * # focus
  */
 angular.module('driveoutApp')
-  .directive('focus', function ($log) {
+  .directive('focus', function ($log, HTMLFactory) {
     return {
       scope: {
         src: '='
       },
+      template: '<div></div>',
       restrict: 'EA',
       link: function postLink(scope, element, attrs) {
         $log.debug('this is the focus directive');
