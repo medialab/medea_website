@@ -28,7 +28,7 @@ function parseGoogleDocument(result) {
 
   result.title = $('.title').text();
   result.subtitle = $('.subtitle').html();
-  console.log(html)
+  //console.log(html)
   // parse document sections
   $('h1').each( function(i, el){
     var contents = $(this).nextUntil('h1').get().map(function(e) {return $(e).html()}).join(''), // html specific to this section
@@ -133,8 +133,7 @@ drive.start().then(function logic() {
   // cycle through narratives folder to get files (one narrative per google doc)
   for(var i=0; i<narratives.length; i++) {
     console.log();
-    if(narratives[i].slug != 'ipcc')
-      continue;
+
     console.log(narratives[i].slug);
     fs.existsSync(CONTENTS_PATH + '/' + narratives[i].slug) || fs.mkdirSync(CONTENTS_PATH +'/' + narratives[i].slug);
     console.log('-------------------------');
@@ -143,8 +142,8 @@ drive.start().then(function logic() {
       console.log('--> "', file.title,'" ', file.id, file.mimeType);
       var result = {
         id: file.id,
-        title: file.title,
-        slug: drive.utils.slugify(file.title),
+        title: file.title.replace(/[0-9]{2,}[\s.]*/,''),
+        slug: drive.utils.slugify(file.title.replace(/[0-9]{2,}[\s.]*/,'')),
         mimeType: file.mimeType,
         sections: [] // it will bring h1 sections inside
       };
