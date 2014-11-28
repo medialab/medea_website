@@ -338,3 +338,7 @@ jgs       [_____]=8
 .zeppelin .image img {
   width: 100%;
 }
+
+.zeppelin .underline{
+  background: cyan;
+}
