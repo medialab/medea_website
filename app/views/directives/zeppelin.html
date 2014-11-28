@@ -33,8 +33,8 @@
         <div ng-switch-when="donut">
           <donut></donut>
         </div>
-        <div ng-switch-when="enbgraph">
-          <div enbgraph gexf="section.datasrc[0]" csv="section.datasrc[1]" height="h"></div>
+        <div class="fill-height" ng-switch-when="enbgraph">
+          <div class="fill-height" enbgraph gexf="section.datasrc[0]" csv="section.datasrc[1]" height="h"></div>
         </div>
         <div ng-switch-default> ... {{section.directive}} </div>
       </div>
