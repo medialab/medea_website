@@ -9,10 +9,22 @@
 angular.module('driveoutApp')
   .directive('enbgraph', function () {
     return {
-      template: '<div></div>',
-      restrict: 'E',
+      restrict: 'EA',
+      scope: {
+        gexf: '=',
+        csv: '=',
+        height: '='
+      },
       link: function postLink(scope, element, attrs) {
-        element.text('this is the enbgraph directive');
+        element.css('heigth', '100%');
+
+        var enb = new ENBGraph(element[0]);
+
+        // Loading graph
+        enb.load(scope.gexf, scope.csv, function() {
+          console.log('Graph loaded.');
+          // Binding clicks
+        });
       }
     };
   });

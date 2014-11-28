@@ -151,6 +151,7 @@
     // Properties
     this.index = null;
     this.size = 0;
+    this.container = container;
     this.sig = new sigma({
       settings: {
         singleHover: true,
@@ -180,6 +181,12 @@
     var self = this,
         count = 0;
 
+    // Safeguard
+    if (this.index) {
+      self.sig.refresh();
+      return;
+    }
+
     // Loading graph at init
     sigma.parsers.gexf(graphPath, this.sig, function() {
       var nodes = self.sig.graph.nodes();
@@ -201,6 +208,9 @@
         e.color = '#ddd';
         e.size = e.weigth;
       });
+
+      // Camera
+      self.camera.goTo({ratio: 1.3});
 
       // Refreshing view
       self.sig.refresh();
