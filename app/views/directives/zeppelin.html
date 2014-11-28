@@ -44,8 +44,11 @@
         <div class="fill-height" ng-switch-when="enbgraph">
           <div class="fill-height" enbgraph gexf="section.datasrc[0]" csv="section.datasrc[1]" height="height"></div>
         </div>
-        <div class="fill-height" ng-switch-when="ipcc-wg-venn">
-          <div class="fill-height" ipcc-wg-venn path="section.datasrc[0]"></div>
+        <div class="fill-height" ng-switch-when="ipccwgvenn">
+          <div id="venn" class="fill-height" ipccwgvenn path="section.datasrc[0]"></div>
+        </div>
+        <div class="fill-height" ng-switch-when="ipccpeoplelines">
+          <div class="fill-height" ipccpeoplelines path="section.datasrc[0]"></div>
         </div>
         <div ng-switch-default> ... {{section.directive}} </div>
       </div>
