@@ -287,7 +287,7 @@ jgs       [_____]=8
   margin: 20px;
   position: relative;
   overflow: hidden;
-  background: #f5f5f5;
+  
 }
 
 .zeppelin .fill-height{
@@ -296,6 +296,7 @@ jgs       [_____]=8
 
 .zeppelin .playground {
   height: 100%;
+  background: #f5f5f5;
 }
 .zeppelin section {
   height: 100%;
