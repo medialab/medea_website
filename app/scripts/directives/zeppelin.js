@@ -31,10 +31,7 @@ angular.module('driveoutApp')
           var _index = scope.index + 1;
           scope.index = Math.min(_index, scope.sections.length -1);
           $log.info('next slide', scope.index, '/', scope.sections.length - 1, -scope.index * scope.h);
-          scope.section = scope.sections[scope.index];
-          element.find('.slider').css({
-            top: -scope.index * scope.h
-          })
+          scope.steer(scope.index);
         };
         
         // goto previous slide
@@ -43,10 +40,6 @@ angular.module('driveoutApp')
           scope.index = Math.max(_index, 0);
           $log.info('next slide', scope.index, '/', scope.sections.length - 1);
           scope.steer(scope.index);
-
-          //scope.section = scope.sections[scope.index];
-          
-          
         };
 
         /*
@@ -59,7 +52,8 @@ angular.module('driveoutApp')
           element.find('.slider').css({
             top: -scope.index * scope.h
           });
-          scope.section = scope.sections[scope.index];
+          if(scope.sections[scope.index])
+            scope.section = scope.sections[scope.index];
         };
 
         
