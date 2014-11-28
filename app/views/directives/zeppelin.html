@@ -1,7 +1,7 @@
 
  <div class="row fill-height">
     <div class="arrows">
-      {{index + 1}} of {{sections.length}}
+      {{index + 1}} of {{sections.length}} {{h}}
       <div class="row">
         <div class="col-sm-6">
           <div class="arrow" ng-class="index > 0?'active':''" ng-click="previous()">previous
@@ -34,7 +34,7 @@
           <donut></donut>
         </div>
         <div ng-switch-when="enbgraph">
-          <enbgraph gexf="section.datasrc[0]" csv="section.datasrc[1]"></enbgraph>
+          <enbgraph gexf="section.datasrc[0]" csv="section.datasrc[1]" height="h"></enbgraph>
         </div>
         <div ng-switch-default> ... {{section.directive}} </div>
       </div>

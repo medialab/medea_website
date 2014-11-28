@@ -52,8 +52,9 @@ angular.module('driveoutApp')
           element.find('.slider').css({
             top: -scope.index * scope.h
           });
-          if(scope.sections[scope.index])
+          if(scope.sections[scope.index]){
             scope.section = scope.sections[scope.index];
+          }
         };
 
         
@@ -67,6 +68,9 @@ angular.module('driveoutApp')
           element.css({
             height: scope.h
           })
+          element.find('.slider').css({
+            top: -scope.index * scope.h
+          });
         };
 
         w.bind('resize', resize);
