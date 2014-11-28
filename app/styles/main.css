@@ -23,12 +23,12 @@ body{
 }
 
 #sidebar-wrapper-left .sidebar-nav li {
-  border-top: 1px solid #c5c5c5;
   list-style: none;
+  padding: 0 20px;
 }
 
 #sidebar-wrapper-left .sidebar-nav li:last-child {
-  border-bottom: 1px solid #c5c5c5;
+  
 }
 
 .navbar-border {
@@ -183,15 +183,17 @@ body{
   color: #999999;
   display: block;
   text-decoration: none;
+  
 }
 
 .sidebar-nav li.active a {
   color: #181818;
+  background-color: #d5d5d5;
 }
 
 .sidebar-nav li a:hover {
-  background: rgba(255,255,255,0.2);
-  color: #fff;
+  background-color: #e5e5e5;
+  color: black;
   text-decoration: none;
 }
 
@@ -358,7 +360,7 @@ jgs       [_____]=8
   width: 100%;
 }
 
-.zeppelin .focus {
+.zeppelin .focus, .image {
   overflow: auto;
   height: 100%;
 
