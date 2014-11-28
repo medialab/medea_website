@@ -330,7 +330,6 @@ jgs       [_____]=8
   line-height: 40px;
   background: #eee;
   text-align: center;
-
 }
 
 .zeppelin .arrows .arrow.active {
@@ -357,6 +356,12 @@ jgs       [_____]=8
 
 .zeppelin .image img {
   width: 100%;
+}
+
+.zeppelin .focus {
+  overflow: auto;
+  height: 100%;
+
 }
 
 .zeppelin .underline{

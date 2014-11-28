@@ -15,7 +15,10 @@ angular.module('driveoutApp')
       template: '<div></div>',
       restrict: 'EA',
       link: function postLink(scope, element, attrs) {
-        $log.debug('this is the focus directive');
+        $log.debug('this is the focus directive', scope.src);
+        HTMLFactory.get({path:scope.src}).then(function(res){
+          element.html(res.data.replace(/^.*<svg/, '<svg'));
+        });
 
         scope.$on('focus', function(e, ids) {
           $log.info('focus on', ids);
