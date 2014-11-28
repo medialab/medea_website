@@ -284,11 +284,10 @@ jgs       [_____]=8
 }
 
 .zeppelin {
-  margin: 20px;
+  margin: 40px 20px 20px 20px;
   position: relative;
-  overflow: hidden;
-  
 }
+
 
 .zeppelin .fill-height{
   height: 100%;
@@ -315,15 +314,36 @@ jgs       [_____]=8
 .zeppelin .arrows {
   z-index: 2;
   position: absolute;
+  width: 100%;
+  top: -40px;
+}
+
+.zeppelin .arrows .counter {
+  text-align: center;
+  line-height: 40px;
+  color: #ddd;
 }
 
 .zeppelin .arrows .arrow {
   opacity: .2;
-  transition: opacity .35s ease-in-out;
+  transition: all .35s ease-in-out;
+  line-height: 40px;
+  background: #eee;
+  text-align: center;
+
 }
 
 .zeppelin .arrows .arrow.active {
   opacity: 1;
+  cursor: pointer;
+}
+
+.zeppelin .arrows .arrow.active:hover{
+  background-color: #ccc;
+}
+
+.zeppelin .slider-wrapper {
+  overflow: hidden;
 }
 
 .zeppelin .slider {

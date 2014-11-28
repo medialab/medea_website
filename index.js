@@ -151,6 +151,7 @@ drive.start().then(function logic() {
 
       if(file.mimeType == 'application/vnd.google-apps.document') {
         result = parseGoogleDocument(result);
+        result.menu = ['introduction', 'narrative'];
         drive.utils.write(CONTENTS_PATH + '/' + narratives[i].slug + '/' + result.slug + '.json', JSON.stringify(result,null,2)); 
       }
 
