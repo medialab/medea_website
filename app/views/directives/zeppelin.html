@@ -1,30 +1,30 @@
 <div class="arrows">
   <div class="counter">{{index + 1}} of {{sections.length}}</div>
-      
+
       <div class="row">
         <div class="col-sm-2">
           <div class="arrow" ng-class="index > 0?'active':''" ng-click="previous()">previous
           </div>
         </div>
         <div class="col-sm-2">
-          <div class="arrow" ng-class="index + 1 < sections.length?'active':''" ng-click="next()">next 
+          <div class="arrow" ng-class="index + 1 < sections.length?'active':''" ng-click="next()">next
           </div>
         </div>
       </div>
     </div>
 
  <div class="row fill-height">
-    
+
 
     <div class="col-sm-4 fill-height slider-wrapper">
-      
-      
+
+
       <div class="slider">
         <section ng-repeat="section in sections">
           <div ng-bind-html= "section.html|unsafeHtml"></div>
         </section>
       </div>
-    
+
     </div>
     <div class="col-sm-8 fill-height">
       <div class="playground" ng-switch="section.directive">
@@ -40,6 +40,9 @@
         </div>
         <div class="fill-height" ng-switch-when="enbgraph">
           <div class="fill-height" enbgraph gexf="section.datasrc[0]" csv="section.datasrc[1]" height="height"></div>
+        </div>
+        <div class="fill-height" ng-switch-when="ipcc-wg-venn">
+          <div class="fill-height" ipcc-wg-venn path="section.datasrc[0]"></div>
         </div>
         <div ng-switch-default> ... {{section.directive}} </div>
       </div>
