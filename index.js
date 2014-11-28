@@ -42,7 +42,8 @@ function parseGoogleDocument(result) {
 
     //console.log(section.title, directives.length, directives);
     if(directive.length) {
-      console.log('oh yeh it has a directive');
+      //console.log(directive.html())
+      console.log('n. attachments: ', directive.find('a[href]').length);
       section.directive =  directive.text().split(' ').shift().trim()
       section.type = 'directive'
       // check linked data
@@ -50,12 +51,12 @@ function parseGoogleDocument(result) {
         var datahref = e.attribs['href'].match(/id=([^&]*)/); // this is the address on google drive for the linked data
         
         if(datahref) {
-          console.log('directive has this file attached', datahref)
           // get download urls
           var file = drive.files.get({
             fileId: datahref.pop()
           });
-
+          console.log('directive has this file attached', file.title)
+          
           if(file.downloadUrl) {
             section.datasrc = section.datasrc || []; // add a proper list to hold data urls if it has'nt been done yet
 
@@ -64,7 +65,7 @@ function parseGoogleDocument(result) {
               filepath: MEDIA_PATH + '/' + file.id + '.' + file.fileExtension
             })
             section.datasrc.push( 'media/' + file.id + '.' + file.fileExtension)
-            console.log('downlooading file', file.downloadUrl);
+            console.log('downloading file', file.downloadUrl);
           } else {
             console.log('CANNOT DOWNLoAD  file', file.title);
           }
