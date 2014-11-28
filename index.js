@@ -134,13 +134,17 @@ drive.start().then(function logic() {
   // cycle through narratives folder to get files (one narrative per google doc)
   for(var i=0; i<narratives.length; i++) {
     console.log();
+    if(narratives[i].slug != 'ipcc') {
+      continue
+    }
 
     console.log(narratives[i].slug);
     fs.existsSync(CONTENTS_PATH + '/' + narratives[i].slug) || fs.mkdirSync(CONTENTS_PATH +'/' + narratives[i].slug);
     console.log('-------------------------');
 
-    drive.files.walk({fileId: narratives[i].id, mediapath: MEDIA_PATH}, function (file, options, results) {
+    drive.files.walk({fileId: narratives[i].id, mediapath: MEDIA_PATH}, function (file, options, results, items) {
       console.log('--> "', file.title,'" ', file.id, file.mimeType);
+
       var result = {
         id: file.id,
         title: file.title.replace(/[0-9]*[\s.]*/,''),
@@ -151,11 +155,21 @@ drive.start().then(function logic() {
 
       if(file.mimeType == 'application/vnd.google-apps.document') {
         result = parseGoogleDocument(result);
-        result.menu = ['introduction', 'narrative'];
-        drive.utils.write(CONTENTS_PATH + '/' + narratives[i].slug + '/' + result.slug + '.json', JSON.stringify(result,null,2)); 
-      }
 
+        result.menu = items.filter(function(d) {
+          if(d.mimeType == 'application/vnd.google-apps.document' && d.title.match(/^[0-9]{1,}[\s.]*/))
+            return d
+        }).map(function(d) {
+          return {
+            title: d.title.replace(/^[0-9]*[\s.]*/,''),
+            slug: drive.utils.slugify(d.title.replace(/^[0-9]*[\s.]*/,'')),
+          }
+        });
+
+        drive.utils.write(CONTENTS_PATH + '/' + narratives[i].slug + '/' + result.slug + '.json', JSON.stringify(result,null,2)); 
+      };
     })
+
   };
 
 

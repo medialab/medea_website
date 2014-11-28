@@ -35,8 +35,8 @@
                         <li class="active">
                             <a href="#/">home</a>
                         </li>
-                        <li class="spacer"></li>
-                        <li ng-repeat="route in routes">
+                        
+                        <li class="{{route.slug == page.slug? 'active' : ''}}" ng-repeat="route in routes">
                             <a ng-href="#/{{route.slug}}">{{route.slug}}</a>
                             <ul>
                                 <li><a href="#">submenu_01</a></li>

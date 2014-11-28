@@ -443,7 +443,7 @@ drive.files.walk = function(options, iterator){
   })
 
   for(var i=0; i<files.items.length; i++) {
-    var file = iterator(files.items[i], options, results); // if iterator function return null or undefined
+    var file = iterator(files.items[i], options, results, files.items); // if iterator function return null or undefined
     if(file)
       results.push(file);
   };

@@ -17,11 +17,8 @@
   
   <div >
     <ul>
-      <li class="active">introduction</li>
-      <li>expertise</li>
-      <li>coordination</li>
-      <li>diversity</li>
-      <li>building</li>
+      <li class="{{entry.slug==tab ?'active':''}}" ng-repeat="entry in content.menu">
+        <a ng-href="#/{{page.slug}}/{{entry.slug}}">{{entry.title}}</a><li>
     </ul>
 
   </div>

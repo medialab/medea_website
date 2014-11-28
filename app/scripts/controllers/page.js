@@ -11,6 +11,8 @@ angular.module('driveoutApp')
   .controller('PageCtrl', function ($scope, content, $log, $routeParams) {
     $scope.content = content.data;
     
+    $scope.tab = $routeParams.sub || 'introduction';
+
     // filter stuffs
     $scope.$watch('routes', function(){ // get title
       $scope.$parent.page = angular.copy($scope.routes)
