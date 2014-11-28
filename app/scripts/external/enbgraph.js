@@ -328,7 +328,7 @@
   };
 
   // Focusing on a group of nodes
-  Abstract.prototype.focuseOnGroupByLabels = function(labels) {
+  Abstract.prototype.focusOnGroupByLabels = function(labels) {
     var nodes = this.findNodesByLabel(labels);
 
     // Computing bouding rectangle's center

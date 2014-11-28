@@ -25,6 +25,21 @@ angular.module('driveoutApp')
           console.log('Graph loaded.');
           // Binding clicks
         });
+
+        scope.$on('focus', function(e, string) {
+          var group = string.split(',');
+
+          if (group.length < 2) {
+
+            // Focusing on a single node
+            enb.focusOnNodeByLabel(group[0]);
+          }
+          else {
+
+            // Focusing on a group of nodes
+            enb.focusOnGroupByLabels(group);
+          }
+        });
       }
     };
   });

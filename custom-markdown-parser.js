@@ -5,12 +5,12 @@ var oldLink = renderer.link;
 
 // Helpers
 function escape(s) {
-  return JSON.stringify(s).replace(/"/g, '\'');
+  return (s instanceof Array ? s : [s]).join(',').replace(/"/g, '\'');
 }
 
 // New link function
 renderer.link = function(href, title, text) {
-  var wordlist = href.split('zoom:');
+  var wordlist = href.split('focus:');
 
   // If no zoom is found, we apply standard behaviour
   if (wordlist.length < 2)
