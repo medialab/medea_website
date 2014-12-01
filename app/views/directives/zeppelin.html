@@ -1,23 +1,23 @@
-<div class="arrows">
-  <div class="counter">{{index + 1}} of {{sections.length}}</div>
+<div class="counter">{{index + 1}} of {{sections.length}}</div>
 
-      <div class="row">
-        <div class="col-sm-2">
-          <div class="arrow" ng-class="index > 0?'active':''" ng-click="previous()">previous
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <div class="arrow" ng-class="index + 1 < sections.length?'active':''" ng-click="next()">next
-          </div>
-        </div>
-      </div>
-    </div>
 
  <div class="row fill-height">
 
 
     <div class="col-sm-4 fill-height slider-wrapper">
-
+      <div class="arrows">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="arrow" ng-class="index > 0?'active':''" ng-click="previous()">previous
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="arrow" ng-class="index + 1 < sections.length?'active':''" ng-click="next()">next
+            </div>
+          </div>
+        </div>
+      </div>
+        
 
       <div class="slider">
         <section ng-repeat="section in sections">

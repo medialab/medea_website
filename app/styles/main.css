@@ -317,13 +317,18 @@ jgs       [_____]=8
   z-index: 2;
   position: absolute;
   width: 100%;
-  top: -40px;
+  top: 0px;
+  background: #fff;
 }
 
-.zeppelin .arrows .counter {
+.zeppelin .counter {
+  position: absolute;
+  width: 100%;
   text-align: center;
   line-height: 40px;
-  color: #ddd;
+  height: 40px;
+  color: #d5d5d5;
+  top: -40px;
 }
 
 .zeppelin .arrows .arrow {
