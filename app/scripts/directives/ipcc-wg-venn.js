@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc directive
- * @name driveoutApp.directive:ipcc-wg-venn
+ * @name driveoutApp.directive:ipccwgvenn
  * @description
- * # ipcc-wg-venn
+ * # ipccwgvenn
  */
 angular.module('driveoutApp')
   .directive('ipccwgvenn', function () {

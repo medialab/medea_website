@@ -84,7 +84,7 @@ body{
   margin: 0;
   padding: 10px;
   text-align:center;
-  
+
 }
 
 .view-page ul li {
@@ -402,3 +402,31 @@ h4.venntitle {
   margin: 0;
   padding: 0;
 }
+
+/* Lines diagram */
+
+#peoplelines {
+  text-align: center;
+  overflow-y: auto;
+}
+#peoplelines span {
+  margin: 0px 15px;
+}
+.linestooltip {
+  position: absolute;
+  background: #333;
+  color: #ddd;
+  padding: 2px;
+  border: 0px;
+  border-radius: 8px;
+  opacity: 0;
+  font-size: 0.9em;
+}
+.linestooltip h3, .linestooltip p {
+  text-align: center;
+  margin: 0px 5px;
+}
+.linestooltip li {
+  margin: 0px 5px 0px -5px;
+}
+

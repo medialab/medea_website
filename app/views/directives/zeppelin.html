@@ -48,7 +48,19 @@
           <div id="venn" class="fill-height" ipccwgvenn path="section.datasrc[0]"></div>
         </div>
         <div class="fill-height" ng-switch-when="ipccpeoplelines">
-          <div class="fill-height" ipccpeoplelines path="section.datasrc[0]"></div>
+          <div id="peoplelines" class="fill-height" ipccpeoplelines>
+            <h3>National individual participations to each Assessment Report</h3>
+            <span>Country: </span>
+            <select id="lines-countries-choice"></select>
+            <span>Sort by: </span>
+            <select id="lines-countries-order">
+              <option value="alpha">Contributors names</option>
+              <option value="participations">Total contributions</option>
+              <option selected="selected" value="reports">Participation to ARs</option>
+              <option value="chrono">First participation</option>
+            </select>
+            <div id="lines-countries-viz"></div>
+          </div>
         </div>
         <div ng-switch-default> ... {{section.directive}} </div>
       </div>
