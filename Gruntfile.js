@@ -340,6 +340,12 @@ module.exports = function (grunt) {
         cwd: '<%= yeoman.app %>/media',
         dest: '<%= yeoman.dist %>/media',
         src: '{,*/}*'
+      },
+      data: {
+        expand: true,
+        cwd: '<%= yeoman.app %>/data',
+        dest: '<%= yeoman.dist %>/data',
+        src: '{,*/}*'
       }
     },
 

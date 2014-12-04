@@ -11,7 +11,7 @@ angular.module('driveoutApp')
   .factory('FilesFactory', function($http){
     return {
         get: function(options) {
-          return $http.get('/contents/'+ options.path +'.json');
+          return $http.get('contents/'+ options.path +'.json');
         }
     };/*function($resource) {
     return $resource('/contents/:path.json',{ }, {
@@ -24,7 +24,7 @@ angular.module('driveoutApp')
   .factory('HTMLFactory', function($http) {
     return {
         get: function(options) {
-          return $http.get('/'+ options.path);
+          return $http.get(options.path);
         }
     };
   });
