@@ -343,8 +343,8 @@ module.exports = function (grunt) {
       },
       data: {
         expand: true,
-        cwd: '<%= yeoman.app %>/data',
-        dest: '<%= yeoman.dist %>/data',
+        cwd: '<%= yeoman.app %>/contents/data',
+        dest: '<%= yeoman.dist %>/contents/data',
         src: '{,*/}*'
       }
     },
@@ -361,6 +361,7 @@ module.exports = function (grunt) {
         'copy:styles',
         'copy:contents',
         'copy:media',
+        'copy:data',
         'imagemin',
         'svgmin'
       ]
