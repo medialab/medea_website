@@ -9,13 +9,12 @@
  */
 angular.module('driveoutApp')
   .controller('MainCtrl', function ($scope, $log, content) {
-    $log.log('MainCtrl ready');
+
     $scope.content = content.data;
     $scope.$parent.page = {};
-    
+
     $scope.$watch('routes', function(r){
       $log.info('routes loaded');
       // get my pag
-
     })
   });
