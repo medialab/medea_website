@@ -2,156 +2,111 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Medea Website</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
-    <link href='http://fonts.googleapis.com/css?family=Lato|Crimson+Text:700,400,400italic' rel='stylesheet' type='text/css'>
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+  <meta charset="utf-8">
+  <title>Medea Website</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <link href='http://fonts.googleapis.com/css?family=Lato|Crimson+Text:700,400,400italic' rel='stylesheet' type='text/css'>
+  <!-- build:css(.tmp) styles/main.css -->
+  <!-- <link rel="stylesheet" href="styles/main.css"> -->
+  <!-- endbuild -->
 </head>
 
 <body ng-app="driveoutApp">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+  <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
 
-    <!-- Add your site or application content here -->
-    <div id="layout">
-        <div ng-controller="LayoutCtrl">
-            <div class="col-md-12 no-padding" id="wrapper">
-                <div id="sidebar-wrapper-left">
-                    <div class="top">
-                        <span class="pull-right close-menu glyphicon glyphicon-remove" aria-hidden="true"></span>
-                    </div>
-                    <ul class="sidebar-nav">
-                        <li>
-                            <a href="#/">home</a>
-                        </li>
-                        
-                        <li class="{{route.slug == page.slug? 'active' : ''}}" ng-repeat="route in routes">
-                            <a ng-href="#/{{route.slug}}">{{route.slug}}</a>
-                            <ul>
-                                <li><a href="#">submenu_01</a></li>
-                                <li><a href="#">submenu_02</a></li>
-                                <li><a href="#">submenu_03</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div id="page-content-wrapper" class="navbar-header col-md-9 no-padding">
-                    <div class="navbar-border row col-md-12 no-padding"></div>
+  <!-- Add your site or application content here -->
+  <div id="layout" class="container-fluid" ng-controller="LayoutCtrl">
 
-                    <div class="navbar-top row col-md-12 no-padding">
-                        <span class="pull-left menu glyphicon glyphicon-th-list" aria-hidden="true"></span>
-                    </div>
+    <!-- The current view content will be added in this div (thks to ng-view)-->
+    <div class="content row col-md-12 no-padding" ng-view></div>
 
-                    <!-- MEDEA LOGO -->
-                    <div id="logo">
-                        <img class="pull-left logo" src="images/logo.png" alt="Logo">
-                    </div>
+  </div>
 
-                    <div class="content row col-md-12 no-padding" ng-view=""></div>
-                </div>
-                <div id="sidebar-wrapper-right">
-                    <div>Mapping controversies</div>
-                    <div>
-                        <ul class="share">
-                            <li><img src="images/twitter.png" alt="Twitter"></li>
-                            <li><img src="images/twitter.png" alt="Facebook"></li>
-                        </ul>
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </div>
-                </div>
-            </div>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+  <script>
+  (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-            <div class="footer">
+  ga('create', 'UA-XXXXX-X');
+  ga('send', 'pageview');
+  </script>
 
-            </div>
-        </div>
-    </div>
+  <!-- build:js(.) scripts/oldieshim.js -->
+  <!--[if lt IE 9]>
+  <script src="bower_components/es5-shim/es5-shim.js"></script>
+  <script src="bower_components/json3/lib/json3.js"></script>
+  <![endif]-->
+  <!-- endbuild -->
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-    <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="bower_components/d3/d3.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
 
-    ga('create', 'UA-XXXXX-X');
-    ga('send', 'pageview');
-    </script>
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/main.js"></script>
+  <script src="scripts/controllers/about.js"></script>
+  <script src="scripts/services/files.js"></script>
+  <script src="scripts/controllers/layout.js"></script>
+  <script src="scripts/controllers/page.js"></script>
+  <script src="scripts/controllers/subchapters.js"></script>
+  <script src="scripts/controllers/content.js"></script>
+  <!-- <script src="scripts/directives/scrollbar.js"></script> -->
+  <script src="scripts/controllers/404.js"></script>
+  <script src="scripts/controllers/depth.js"></script>
+  <script src="scripts/directives/donut.js"></script>
+  <script src="scripts/directives/zeppelin.js"></script>
+  <script src="scripts/directives/top-menu.js"></script>
+  <script src="scripts/directives/subchapters.js"></script>
+  <script src="scripts/filters/unsafehtml.js"></script>
+  <script src="scripts/directives/enbgraph.js"></script>
+  <script src="scripts/directives/ipcc-wg-venn.js"></script>
+  <script src="scripts/directives/ipcc-people-lines.js"></script>
+  <script src="scripts/directives/focus.js"></script>
 
-    <!-- build:js(.) scripts/oldieshim.js -->
-    <!--[if lt IE 9]>
-    <script src="bower_components/es5-shim/es5-shim.js"></script>
-    <script src="bower_components/json3/lib/json3.js"></script>
-    <![endif]-->
-    <!-- endbuild -->
+  <!-- libraries -->
+  <script src="scripts/lib/sigma.min.js"></script>
+  <script src="scripts/lib/sigma.parsers.gexf.min.js"></script>
+  <script src="scripts/lib/sigma.plugins.neighborhood.min.js"></script>
+  <script src="scripts/lib/venn.js"></script>
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-    <script src="bower_components/d3/d3.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+  <!-- external -->
+  <script src="scripts/external/enbgraph.js"></script>
+  <script src="scripts/external/ipcc-wg-venn.js"></script>
+  <script src="scripts/external/ipcc-people-lines.js"></script>
+  <!-- endbuild -->
 
-    <!-- build:js({.tmp,app}) scripts/scripts.js -->
-    <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/main.js"></script>
-    <script src="scripts/controllers/about.js"></script>
-    <script src="scripts/services/files.js"></script>
-    <script src="scripts/controllers/layout.js"></script>
-    <script src="scripts/controllers/page.js"></script>
-    <script src="scripts/directives/scrollbar.js"></script>
-    <script src="scripts/controllers/404.js"></script>
-    <script src="scripts/controllers/depth.js"></script>
-    <script src="scripts/directives/donut.js"></script>
-    <script src="scripts/directives/zeppelin.js"></script>
-    <script src="scripts/filters/unsafehtml.js"></script>
-    <script src="scripts/directives/enbgraph.js"></script>
-    <script src="scripts/directives/ipcc-wg-venn.js"></script>
-    <script src="scripts/directives/ipcc-people-lines.js"></script>
-    <script src="scripts/directives/focus.js"></script>
 
-    <!-- libraries -->
-    <script src="scripts/lib/sigma.min.js"></script>
-    <script src="scripts/lib/sigma.parsers.gexf.min.js"></script>
-    <script src="scripts/lib/sigma.plugins.neighborhood.min.js"></script>
-    <script src="scripts/lib/venn.js"></script>
-
-    <!-- external -->
-    <script src="scripts/external/enbgraph.js"></script>
-    <script src="scripts/external/ipcc-wg-venn.js"></script>
-    <script src="scripts/external/ipcc-people-lines.js"></script>
-    <!-- endbuild -->
-
-    
 </body>
 
 </html>

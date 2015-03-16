@@ -1,0 +1,27 @@
+<div class="col-sm-5 col-md-5 col-lg-5" id="chapterTitle">
+  <h1>{{content.title}}</h1>
+</div>
+
+<div class="col-sm-5 col-md-5 col-lg-5" id="chapterDescription">
+  <p ng-bind-html="content.subtitle"></p>
+</div>
+
+<div class="col-sm-2 col-md-2 col-lg-2" id="narrativesLinks">
+
+  <div class="row" id="logo">
+    <img class="pull-left logo" src="images/logo.png" alt="Logo">
+  </div>
+
+  <div class="row" id="linksContainer">
+    <ul class="sidebar-nav">
+        <li>
+            <a href="#/">home</a>
+        </li>
+        <!-- Menus (home, data, IPCC, scientific litterature...) -->
+        <li class="{{route.slug === page.slug ? 'active' : ''}}" ng-repeat="route in routes">
+          <a ng-href="#/{{route.slug}}">{{route.slug}}</a>
+        </li>
+    </ul>
+  </div>
+
+</div>

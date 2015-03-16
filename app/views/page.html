@@ -1,54 +1,12 @@
+<div class="view-page container-fluid">
 
-<div class="view-page">
-  <!-- fixed header -->
-  <header>
-    <div class="row" >
-      <div class="col-md-5">
-        <h1>{{content.title}}</h1>
-      </div>
-      <div class="col-md-7">
-        <p ng-bind-html="content.subtitle"></p>
+  <div top-menu class="row"></div>
 
-      </div>
-    </div>
-    <div></div>
-  </header>
+  <div ng-controller="contentCtrl">
+    <div subchapters class="row"></div>
 
-  
-  <div >
-    <ul>
-      <li class="{{entry.slug==tab ?'active':''}}" ng-repeat="entry in content.menu">
-        <a ng-href="#/{{page.slug}}/{{entry.slug}}">{{entry.title}}</a><li>
-    </ul>
-
+    <div class="row" zeppelin id="narrativeContainer" sections="content.sections"></div>
   </div>
 
-  <div class="zeppelin" zeppelin sections="content.sections"></div>
-
- 
-  <!-- div class="row">
-    <div class="col-md-7 col-md-offset-5">
-      <div class="chapter-number">1.</div>
-      <div class="chapter-title"><h2>This is the chapter title</h2></div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-5">
-      <div class="menu-lateral">
-        <ul>
-          <li ng-repeat="section in content.sections">{{section.title}}</li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-md-7">
-      <div class="chapter-content">
-        <section ng-repeat="section in content.sections">
-          <div ng-switch="section.type">
-            <div ng-switch-when="text" ng-bind-html="section.html"></div>
-            <div ng-switch-default> ... </div>
-          </div>
-        </section>
-      </div>
-    </div>
-  </div -->
+  <div class="row" id="footer"></div>
 </div>

@@ -16,7 +16,7 @@ angular.module('driveoutApp')
         height: '='
       },
       link: function postLink(scope, element, attrs) {
-        element.css('heigth', '100%');
+        element.css('height', '100%');
 
         var enb = new ENBGraph(element[0]);
 

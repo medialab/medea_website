@@ -10,13 +10,13 @@
 angular.module('driveoutApp')
   .controller('PageCtrl', function ($scope, content, $log, $routeParams) {
     $scope.content = content.data;
-    
+
     $scope.tab = $routeParams.sub || 'introduction';
 
     // filter stuffs
     $scope.$watch('routes', function(){ // get title
       $scope.$parent.page = angular.copy($scope.routes)
-        .filter(function(d){ return d.slug==$routeParams.page })
+        .filter(function(d){ return d.slug === $routeParams.page })
         .pop();
       $log.info('routes loaded', $scope.page)
     })

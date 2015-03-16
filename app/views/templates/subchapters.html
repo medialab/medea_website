@@ -1,0 +1,14 @@
+  <!-- Attempt to create a good number of columns -->
+  <div class="{{entry.slug === tab ? 'active': ''}}
+              {{isEven || $index !== middleElement.index ? basicBtStpClass : middleBtpClass}}" ng-repeat="entry in content.menu">
+
+    <a ng-href="#/{{page.slug}}/{{entry.slug}}">{{entry.title}}</a>
+    <div ng-hide="{{entry.slug !== tab}}">
+      <span ng-class="index > 0 ? 'active':''" ng-click="previous()">&lt;</span>
+      <form>
+        <input type="radio" ng-repeat="part in $parent.content.sections"
+               ng-model="$parent.$parent.index" value="{{$index}}"></input>
+      </form>
+      <span ng-class="index + 1 < sections.length?'active':''" ng-click="next()">&gt;</span>
+    </div>
+  </div>
