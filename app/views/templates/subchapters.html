@@ -1,13 +1,13 @@
   <!-- Attempt to create a good number of columns -->
   <div class="row">
-    <div class="{{entry.slug === tab ? 'active': ''}}
+    <div class="subchapterContainer {{entry.slug === tab ? 'active': ''}}
                 {{isEven || $index !== middleElement.index ? basicBtStpClass : middleBtpClass}}" ng-repeat="entry in content.menu">
       <a ng-href="#/{{page.slug}}/{{entry.slug}}">{{entry.title}}</a>
     </div>
   </div>
   <!-- section navigation bar -->
   <div class="row">
-    <div class="{{isEven || $index !== middleElement.index ? basicBtStpClass : middleBtpClass}}"
+    <div class="subchapterContainer {{isEven || $index !== middleElement.index ? basicBtStpClass : middleBtpClass}}"
           ng-repeat="entry in content.menu">
       <div class="{{entry.slug !== tab ? 'hide' : ''}}">
         <span ng-class="index > 0 ? 'active':''" ng-click="previous()">&lt;</span>

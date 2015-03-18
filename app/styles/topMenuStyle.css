@@ -1,3 +1,30 @@
+/*
+ * Fixed height menu
+ */
+#topMenu {
+  height: 147px;
+}
+/*
+ * 1st category
+ *
+ */
+#logoContainer img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#linksContainer ul {
+  margin-top: 30px;
+  list-style-type: none;
+  text-align: right;
+}
+
+#chapterDescription {
+  margin-top: 20px;
+}
+
+/*2nd category: Small description, narrative text*/
+
 .hide {
   visibility: hidden;
 }
