@@ -8,7 +8,7 @@
  */
 angular.module('driveoutApp')
   .filter('unsafe', function($sce) { return $sce.trustAsHtml; })
-  .directive('zeppelin', function($log) {
+  .directive('zeppelin', function() {
     return {
       templateUrl: 'views/templates/zeppelin.html',
       scope:{
@@ -28,7 +28,6 @@ angular.module('driveoutApp')
         });
 
         scope.$parent.$watch('height', function(h) {
-          $log.info('height changed', h)
            element.css({
             height: h
           })

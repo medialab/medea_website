@@ -8,7 +8,7 @@
  * Controller of the driveoutApp
  */
 angular.module('driveoutApp')
-  .controller('PageCtrl', function ($scope, content, $log, $routeParams) {
+  .controller('PageCtrl', function ($scope, content, $routeParams) {
     $scope.content = content.data;
 
     $scope.tab = $routeParams.sub || 'introduction';
@@ -18,6 +18,5 @@ angular.module('driveoutApp')
       $scope.$parent.page = angular.copy($scope.routes)
         .filter(function(d){ return d.slug === $routeParams.page })
         .pop();
-      $log.info('routes loaded', $scope.page)
     })
   });

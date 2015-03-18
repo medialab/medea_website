@@ -14,7 +14,7 @@
   <!-- endbuild -->
   <link href='http://fonts.googleapis.com/css?family=Lato|Crimson+Text:700,400,400italic' rel='stylesheet' type='text/css'>
   <!-- build:css(.tmp) styles/main.css -->
-  <!-- <link rel="stylesheet" href="styles/main.css"> -->
+  <link rel="stylesheet" href="styles/topMenuStyle.css">
   <!-- endbuild -->
 </head>
 
@@ -24,10 +24,10 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <div id="layout" class="container-fluid" ng-controller="LayoutCtrl">
+  <div id="layout" ng-controller="LayoutCtrl">
 
     <!-- The current view content will be added in this div (thks to ng-view)-->
-    <div class="content row col-md-12 no-padding" ng-view></div>
+    <div ng-view></div>
 
   </div>
 

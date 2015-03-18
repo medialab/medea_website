@@ -55,7 +55,6 @@ angular
       });
   })
   .config(function ($resourceProvider) {
-    console.log($resourceProvider);
     $resourceProvider.defaults.stripTrailingSlashes = false;
     $('.close-menu').click(
       function() {

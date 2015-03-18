@@ -1,6 +1,5 @@
 angular.module('driveoutApp')
-  .controller('contentCtrl', function($window, $scope, $element, $attrs, $log) {
-        $log.log('control', $scope.$parent.content.sections);
+  .controller('contentCtrl', function($window, $scope, $element, $attrs) {
         var w = angular.element($window);
 
         $scope.index = 0;

@@ -1,6 +1,5 @@
 angular.module('driveoutApp')
-  .controller('SubchapterCtrl', function ($scope, $log) {
-    $log.log('subchapter',$scope);
+  .controller('SubchapterCtrl', function ($scope) {
     /**
      * This part of the code is dedicated to automatically choose the number
      * of columns needed to use.

@@ -22,7 +22,6 @@ angular.module('driveoutApp')
 
         // Loading graph
         enb.load(scope.gexf, scope.csv, function() {
-          console.log('Graph loaded.');
           // Binding clicks
         });
 

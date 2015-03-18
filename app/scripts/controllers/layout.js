@@ -8,7 +8,7 @@
  * Controller of the driveoutApp
  */
 angular.module('driveoutApp')
-  .controller('LayoutCtrl', function ($scope, $log, $route, FilesFactory) {
+  .controller('LayoutCtrl', function ($scope, $route, FilesFactory) {
     $scope.page = {};
 
     // inner pages
