@@ -1,3 +1,13 @@
+#subchapters {
+  top: 147px;
+  height: 85px;
+  padding-top: 10px;
+  width: 100%;
+  background: white;
+  z-index: 1;
+  text-transform: uppercase;
+}
 .subchapterContainer {
   text-align: center;
+  font-size: 13px;
 }

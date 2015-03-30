@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../fonts/Quicksand_Book.otf');
+}
+
+
+.fixed {
+  position: fixed;
+}
+
+.links {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.text {
+}

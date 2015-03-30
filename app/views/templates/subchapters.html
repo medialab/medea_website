@@ -1,7 +1,7 @@
   <!-- Attempt to create a good number of columns -->
   <div class="row">
     <div class="subchapterContainer {{entry.slug === tab ? 'active': ''}}
-                {{isEven || $index !== middleElement.index ? basicBtStpClass : middleBtpClass}}" ng-repeat="entry in content.menu">
+                {{isEven || $index !== middleElement.index ? basicBtStpClass : middleBtpClass}} links" ng-repeat="entry in content.menu">
       <a ng-href="#/{{page.slug}}/{{entry.slug}}">{{entry.title}}</a>
     </div>
   </div>

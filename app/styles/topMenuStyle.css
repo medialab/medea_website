@@ -2,8 +2,13 @@
  * Fixed height menu
  */
 #topMenu {
+  position: fixed;
   height: 147px;
+  background: white;
+  z-index: 1;
+  width: 100%;
 }
+
 /*
  * 1st category
  *
@@ -17,7 +22,7 @@
   margin-top: 30px;
   list-style-type: none;
   text-align: right;
-  font-size: 18px;
+  font-size: 12px;
 }
 #chapterDescription {
   margin-top: 20px;
