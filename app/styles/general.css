@@ -3,8 +3,8 @@
   src: url('../fonts/Roboto-Regular.ttf');
 }
 @font-face {
-  font-family: 'Quicksand';
-  src: url('../fonts/Quicksand_Book.otf');
+  font-family: 'Cuprum';
+  src: url('../fonts/Cuprum-Regular.ttf');
 }
 
 
@@ -12,10 +12,13 @@
   position: fixed;
 }
 
-.links {
+.links, #chapterTitle{
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
 .text {
+  font-family: 'Cuprum', sans-serif;
+  line-height: 1.6;
+  text-align: justify;
 }

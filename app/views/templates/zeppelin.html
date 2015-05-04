@@ -1,6 +1,6 @@
 <div class="fill-height">
 
-  <div class="col-sm-5 col-md-5 col-lg-5 fill-height slider-wrapper">
+  <div class="col-sm-5 col-md-5 col-lg-4 fill-height slider-wrapper">
 
     <div class="slider">
       <section ng-repeat="section in sections">
@@ -9,7 +9,7 @@
     </div>
 
   </div>
-  <div class="col-sm-7 col-md-7 col-lg-7 fill-height">
+  <div class="col-sm-7 col-md-7 col-lg-8 fill-height">
     <div class="playground" ng-switch="$parent.section.directive">
       <div class="image" ng-switch-when="image">
         <img ng-repeat="src in section.datasrc" ng-src="{{src}}">

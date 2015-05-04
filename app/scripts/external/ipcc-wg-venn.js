@@ -3,10 +3,12 @@
 
   venn.AR_data = null;
   venn.load_data = function(path, callback) {
+    console.log(path);
     if (venn.AR_data) {
       return callback();
     }
     d3.json(path, function(data) {
+      console.log(data);
       venn.AR_data = data;
       return callback();
     });
@@ -60,7 +62,7 @@
       venn.venn(data["sets"], data["overlaps"]),
       width, height
     );
-      
+
     diagram.circles
       .style("stroke", function(d) { return d.color; })
       .style("stroke-width", 3)
@@ -95,7 +97,7 @@
           Math.max(0, (d3.event.layerX - wid))) + "px")
         .style("top", (d3.event.layerY + 20) + "px");
     };
-    
+
     // hover on all the circles
     diagram.nodes
       .on("mouseover", function(d) {
@@ -110,16 +112,16 @@
       .on("mousemove", function(d) {
         venn.tooltip.moveTooltip(d);
       });
-    
+
     // draw a path around each intersection area, add hover there as well
     diagram.svg.selectAll("path")
       .data(data["overlaps"])
       .enter()
       .append("path")
-      .attr("d", function(d) { 
+      .attr("d", function(d) {
         return venn.intersectionAreaPath(d.sets.map(function(j) {
           return data["sets"][j];
-       })); 
+       }));
       })
       .style("fill-opacity", 1)
       .style("fill", function(d) { return d.color;})
