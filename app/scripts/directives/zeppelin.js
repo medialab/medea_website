@@ -15,7 +15,6 @@ angular.module('driveoutApp')
         sections: '='
       },
       link: function postLink(scope, element, attrs) {
-
         element.on('click', '[data-click]', function(e) {
           scope.$broadcast('focus', '' + $(this).attr('data-click'));
         })

@@ -12,7 +12,7 @@
   <div class="col-sm-7 col-md-7 col-lg-8 fill-height">
     <div class="playground" ng-switch="$parent.section.directive">
       <div class="image" ng-switch-when="image">
-        <img ng-repeat="src in section.datasrc" ng-src="{{src}}">
+        <img ng-repeat="src in $parent.$parent.section.datasrc" ng-src="{{src}}"/>
       </div>
       <div class="focus" ng-switch-when="focus">
         <div focus src="section.datasrc[0]"></div>
@@ -28,7 +28,7 @@
         <div class="fill-height" enbgraph gexf="section.datasrc[0]" csv="section.datasrc[1]" height="height"></div>
       </div>
       <div class="fill-height" ng-switch-when="ipccwgvenn">
-        <div id="venn" class="fill-height" ipccwgvenn path="section.datasrc[0]"></div>
+        <div id="venn" class="fill-height" ipccwgvenn path="$parent.$parent.section.datasrc[0]"></div>
       </div>
       <div class="fill-height" ng-switch-when="ipccpeoplelines">
         <div id="peoplelines" class="fill-height" ipccpeoplelines>
