@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="styles/subchapters.css">
   <link rel="stylesheet" href="styles/narrative.css">
   <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/viz-common.css">
   <!-- endbuild -->
 </head>
 
@@ -75,6 +76,16 @@
   <!-- endbower -->
   <!-- endbuild -->
 
+  <!-- libraries -->
+  <script src="scripts/lib/sigma.min.js"></script>
+  <script src="scripts/lib/sigma.parsers.gexf.min.js"></script>
+  <script src="scripts/lib/sigma.plugins.neighborhood.min.js"></script>
+  <script src="scripts/lib/venn.js"></script>
+  <!-- external -->
+  <script src="scripts/external/bricks-partByChapters.js"></script>
+  <script src="scripts/external/enbgraph.js"></script>
+  <script src="scripts/external/ipcc-wg-venn.js"></script>
+  <script src="scripts/external/ipcc-people-lines.js"></script>
   <!-- build:js({.tmp,app}) scripts/scripts.js -->
   <script src="scripts/app.js"></script>
   <script src="scripts/controllers/main.js"></script>
@@ -88,6 +99,7 @@
   <script src="scripts/controllers/404.js"></script>
   <script src="scripts/controllers/depth.js"></script>
   <script src="scripts/directives/donut.js"></script>
+  <script src="scripts/directives/bricks-partByChapters.js"></script>
   <script src="scripts/directives/image.js"></script>
   <script src="scripts/directives/zeppelin.js"></script>
   <script src="scripts/directives/top-menu.js"></script>
@@ -98,16 +110,7 @@
   <script src="scripts/directives/ipcc-people-lines.js"></script>
   <script src="scripts/directives/focus.js"></script>
 
-  <!-- libraries -->
-  <script src="scripts/lib/sigma.min.js"></script>
-  <script src="scripts/lib/sigma.parsers.gexf.min.js"></script>
-  <script src="scripts/lib/sigma.plugins.neighborhood.min.js"></script>
-  <script src="scripts/lib/venn.js"></script>
 
-  <!-- external -->
-  <script src="scripts/external/enbgraph.js"></script>
-  <script src="scripts/external/ipcc-wg-venn.js"></script>
-  <script src="scripts/external/ipcc-people-lines.js"></script>
   <!-- endbuild -->
 
 
