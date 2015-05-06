@@ -2,12 +2,11 @@
 
   <div class="col-sm-5 col-md-5 col-lg-4 fill-height slider-wrapper">
 
-    <div class="fill-height overflow">
-      <section ng-repeat="section in sections" id="{{section.title}}">
+    <div class="slider fill-height overflow">
+      <section ng-repeat="section in sections" id="{{'chapter_' + $index}}">
         <div ng-bind-html= "section.html|unsafeHtml"></div>
       </section>
     </div>
-
   </div>
   <div class="col-sm-7 col-md-7 col-lg-8 fill-height">
     <div class="fill-height" ng-switch="$parent.section.directive">

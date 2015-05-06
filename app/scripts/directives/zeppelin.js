@@ -19,11 +19,15 @@ angular.module('driveoutApp')
           scope.$broadcast('focus', '' + $(this).attr('data-click'));
         })
 
+
         // goto next slide
         scope.$parent.$watch('index', function(index) {
-          element.find('.slider').css({
-            top: -index * scope.$parent.height
-          });
+          var sliderComponent = element.find('.slider');
+          if (element.find('#chapter_' + index)[0] !== undefined) {
+            sliderComponent.scrollTop(
+              element.find('#chapter_' + index)[0].offsetTop -
+              sliderComponent[0].offsetTop)
+          }
         });
 
         scope.$parent.$watch('height', function(h) {
@@ -31,8 +35,6 @@ angular.module('driveoutApp')
             height: h
           })
         });
-
-
 
       }
     };
