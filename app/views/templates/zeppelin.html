@@ -2,15 +2,15 @@
 
   <div class="col-sm-5 col-md-5 col-lg-4 fill-height slider-wrapper">
 
-    <div class="slider">
-      <section ng-repeat="section in sections">
+    <div class="fill-height overflow">
+      <section ng-repeat="section in sections" id="{{section.title}}">
         <div ng-bind-html= "section.html|unsafeHtml"></div>
       </section>
     </div>
 
   </div>
   <div class="col-sm-7 col-md-7 col-lg-8 fill-height">
-    <div class="playground" ng-switch="$parent.section.directive">
+    <div class="fill-height" ng-switch="$parent.section.directive">
       <div class="image" ng-switch-when="image">
         <img ng-repeat="src in $parent.$parent.section.datasrc" ng-src="{{src}}"/>
       </div>
@@ -48,7 +48,7 @@
         </div>
       </div>
       <div class="fill-height" ng-switch-when="ipccpeoplelines">
-        <div id="peoplelines" class="fill-height" ipccpeoplelines>
+        <div id="peoplelines" class="fill-height overflow" ipccpeoplelines>
           <h3>National individual participations to each Assessment Report</h3>
           <span>Country: </span>
           <select id="lines-countries-choice"></select>

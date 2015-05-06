@@ -2,3 +2,7 @@
   margin-top: 250px;
   font-size: 15px;
 }
+
+.overflow {
+  overflow-y: auto;
+}

@@ -6,7 +6,7 @@
     </div>
   </div>
   <!-- section navigation bar -->
-  <div class="row">
+  <div class="row" id="subchapterMenu">
     <div class="subchapterContainer {{isEven || $index !== middleElement.index ? basicBtStpClass : middleBtpClass}}"
           ng-repeat="entry in content.menu">
       <div class="{{entry.slug !== tab ? 'hide' : ''}}">
