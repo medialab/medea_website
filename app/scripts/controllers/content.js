@@ -13,16 +13,20 @@ angular.module('driveoutApp')
           $scope.steer(index);
         });
 
-        $scope.next = function() {
+        $scope.next = function(fromScroll) {
           var _index = $scope.index + 1;
           $scope.index = Math.min(_index, $scope.$parent.content.sections.length -1);
         };
 
         // goto previous slide
-        $scope.previous = function() {
+        $scope.previous = function(fromScroll) {
           var _index = $scope.index - 1;
           $scope.index = Math.max(_index, 0);
         };
+
+        $scope.getCurrentIndex = function() {
+          return $scope.index;
+        }
 
         /*
           Goto a specific slide. If the section directive names has the 'follow' prefix,
@@ -43,7 +47,6 @@ angular.module('driveoutApp')
 
         w.on('resize', function () {
           $scope.height = w.height() - 250;
-          $scope.$apply()
         });
 
         $scope.steer(0);
