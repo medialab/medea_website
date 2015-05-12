@@ -10,10 +10,11 @@
     <div class="subchapterContainer {{isEven || $index !== middleElement.index ? basicBtStpClass : middleBtpClass}}"
           ng-repeat="entry in content.menu">
       <div class="{{entry.slug !== tab ? 'hide' : ''}}">
-        <span ng-class="index > 0 ? 'active':''" ng-click="previous()">&lt;</span>
+        <span ng-class="index > 0 ? 'active':''" ng-click="elementClicked('previous')">&lt;</span>
         <input type="radio" ng-repeat="part in $parent.content.sections"
-               ng-model="$parent.$parent.index" value="{{$index}}"></input>
-        <span ng-class="index + 1 < sections.length?'active':''" ng-click="next()">&gt;</span>
+               ng-model="$parent.$parent.index" value="{{$index}}"
+               ng-click="elementClicked('radio', {{$index}})"></input>
+        <span ng-class="index + 1 < sections.length?'active':''" ng-click="elementClicked('next')">&gt;</span>
       </div>
     </div>
   </div>

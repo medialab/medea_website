@@ -56,7 +56,7 @@ angular.module('driveoutApp')
             }
 
             if(diff < 200 ) {
-              functionToCall(true);
+              functionToCall();
               scope.$parent.$apply();
             }
           }

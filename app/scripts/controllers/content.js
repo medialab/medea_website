@@ -12,20 +12,31 @@ angular.module('driveoutApp')
           $scope.steer(index);
         });
 
-        $scope.next = function(fromScroll) {
+        $scope.bringTextTo = function(index) {
+          var element = $element,
+              sliderComponent = element.find('.slider');
+          if (element.find('#chapter_' + index)[0] !== undefined) {
+            sliderComponent.scrollTop(
+              element.find('#chapter_' + index)[0].offsetTop -
+              sliderComponent[0].offsetTop)
+          }
+        }
+
+        $scope.next = function() {
           var _index = $scope.index + 1;
           $scope.index = Math.min(_index, $scope.$parent.content.sections.length -1);
         };
 
         // goto previous slide
-        $scope.previous = function(fromScroll) {
+        $scope.previous = function() {
           var _index = $scope.index - 1;
           $scope.index = Math.max(_index, 0);
         };
 
         $scope.getCurrentIndex = function() {
           return $scope.index;
-        }
+        };
+
 
         /*
           Goto a specific slide. If the section directive names has the 'follow' prefix,

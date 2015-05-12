@@ -18,5 +18,6 @@ angular.module('driveoutApp')
       $scope.$parent.page = angular.copy($scope.routes)
         .filter(function(d){ return d.slug === $routeParams.page })
         .pop();
-    })
+
+    });
   });
