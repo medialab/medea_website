@@ -14,11 +14,16 @@
     </ul>
   </div>
 </div>
-<div class="col-sm-4 col-md-4 col-lg-4" id="chapterTitle">
-  <span class="alignDown"><h1>{{content.title}}</h1></span>
-</div>
-
-<div class="col-sm-6 col-md-6 col-lg-5 text" id="chapterDescription">
-  <p class="alignDown" ng-bind-html="content.subtitle"></p>
+<div class="col-sm-10 col-md-10 col-lg-9">
+  <div class="row">
+    <div class="col-sm-1 col-md-1 col-lg-1" ng-click="nextSL()">&lt;</div>
+    <div class="col-sm-5 col-md-5 col-lg-5" id="chapterTitle">
+      <span class="alignDown"><h1>{{content.title}}</h1></span>
+    </div>
+    <div class="col-sm-5 col-md-5 col-lg-5 text" id="chapterDescription">
+      <p class="alignDown" ng-bind-html="content.subtitle"></p>
+    </div>
+    <div class="col-sm-1 col-md-1 col-lg-1">&gt;</div>
+  </div>
 </div>
 

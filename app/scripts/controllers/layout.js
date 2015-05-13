@@ -15,6 +15,12 @@ angular.module('driveoutApp')
     $scope.pages  = [];
     $scope.routes = [];
 
+    $scope.currentSLindex = 0;
+
+    $scope.nextSL = function() {
+      console.log(content, $scope.routes);
+    };
+
     //Stores the folders (routes) and the pages (pages) in the layout scope
     FilesFactory.get({path: 'index'}).then(function (res) {
       var routes,

@@ -1,22 +1,20 @@
   <!-- Attempt to create a good number of columns -->
-  <div class="row">
+<!--   <div class="row">
     <div class="subchapterContainer {{entry.slug === tab ? 'active': ''}}
                 {{isEven || $index !== middleElement.index ? basicBtStpClass : middleBtpClass}} links" ng-repeat="entry in content.menu">
       <a ng-href="#/{{page.slug}}/{{entry.slug}}">{{entry.title}}</a>
     </div>
-  </div>
+  </div> -->
   <!-- section navigation bar -->
   <div class="row" id="subchapterMenu">
-    <div class="subchapterContainer {{isEven || $index !== middleElement.index ? basicBtStpClass : middleBtpClass}}"
+    <div class="subchapterContainer {{entry.slug === tab ? 'active': ''}}"
           ng-repeat="entry in content.menu">
       <div class="{{entry.slug !== tab ? 'hide' : ''}}">
-        <span ng-class="index > 0 ? 'active':''" ng-click="elementClicked('previous')">&lt;</span>
         <span ng-repeat="part in $parent.content.sections">
           <input type="radio"
                  ng-model="$parent.$parent.index" value="{{$index}}"
-                 ng-click="elementClicked('radio', {{$index}})"><label for="option"><span><span></span></span></label>
+                 ng-click="elementClicked('radio', {{$index}})"><label for="option"><span><span></span></span>CH{{$index+1}}</label>
         </span>
-        <span ng-class="index + 1 < sections.length?'active':''" ng-click="elementClicked('next')">&gt;</span>
       </div>
     </div>
   </div>
