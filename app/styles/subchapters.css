@@ -10,5 +10,73 @@
 .subchapterContainer {
   text-align: center;
   font-size: 12px;
-  letter-spacing: 2px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+a {
+  color: #363633;
+}
+a:hover {
+  color: #f3bc4c;
+  text-decoration: none;
+}
+
+/**
+ * Radio buttons styling
+ */
+ /*Hide the default radio button*/
+input[type=radio]:not(old){
+  width: 14px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  opacity: 0;
+}
+/*Label Positionning*/
+input[type=radio]:not(old) + label{
+  display: inline-block;
+  margin-left: -14px;
+  line-height: 16px;
+}
+/*Create the unchecked graphics*/
+input[type=radio]:not(old) + label > span{
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: 0.25em 0em 0.25em 0em;
+  border: 2px solid rgb(94, 94, 88);
+  border-radius: 7px;
+  /*background: rgb(224,224,224);*/
+/*  background-image:    -moz-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image:     -ms-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image:      -o-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image: -webkit-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image:         linear-gradient(rgb(240,240,240),rgb(224,224,224));*/
+  vertical-align: bottom;
+}
+/*Inversed background gradient on selected radio button*/
+input[type=radio]:not(old):checked + label > span{
+  background-image :    -moz-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :     -ms-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :      -o-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image : -webkit-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :         linear-gradient(rgb(224,224,224),rgb(240,240,240));
+}
+/*Bullet displaying*/
+input[type=radio]:not(old):checked + label > span > span{
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin-top: 2px;
+  margin-left: 2px;
+  border-radius: 3px;
+  background: rgb(94, 94, 88);
+  /*
+  background-image :    -moz-linear-gradient(rgb(134, 137, 130),rgb(67, 71, 62));
+  background-image :     -ms-linear-gradient(rgb(134, 137, 130),rgb(67, 71, 62));
+  background-image :      -o-linear-gradient(rgb(134, 137, 130),rgb(67, 71, 62));
+  background-image : -webkit-linear-gradient(rgb(134, 137, 130),rgb(67, 71, 62));
+  background-image :         linear-gradient(rgb(134, 137, 130),rgb(67, 71, 62));
+  */
 }

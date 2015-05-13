@@ -11,9 +11,11 @@
           ng-repeat="entry in content.menu">
       <div class="{{entry.slug !== tab ? 'hide' : ''}}">
         <span ng-class="index > 0 ? 'active':''" ng-click="elementClicked('previous')">&lt;</span>
-        <input type="radio" ng-repeat="part in $parent.content.sections"
-               ng-model="$parent.$parent.index" value="{{$index}}"
-               ng-click="elementClicked('radio', {{$index}})"></input>
+        <span ng-repeat="part in $parent.content.sections">
+          <input type="radio"
+                 ng-model="$parent.$parent.index" value="{{$index}}"
+                 ng-click="elementClicked('radio', {{$index}})"><label for="option"><span><span></span></span></label>
+        </span>
         <span ng-class="index + 1 < sections.length?'active':''" ng-click="elementClicked('next')">&gt;</span>
       </div>
     </div>
