@@ -49,19 +49,25 @@ angular.module('driveoutApp')
             functionToCall = scope.$parent.previous
 
           if (element.find('#chapter_' + nextIndex)[0] !== undefined) {
-            var diff;
+            var switchViz = false,
+                upDiff = 200,
+                downDiff = 400;
             if (nextIndex > currentIndex) {
               functionToCall = scope.$parent.next;
-              diff = Math.abs(element.find('#chapter_' +
-                                nextIndex)[0].offsetTop - this.scrollTop);
+              console.log(element.find('#chapter_' +
+                                nextIndex)[0].offsetTop, this.scrollTop)
+              switchViz = element.find('#chapter_' + nextIndex)[0].offsetTop <
+                          this.scrollTop + downDiff;
             }
             else {
               functionToCall = scope.$parent.previous;
-              diff = Math.abs(element.find('#chapter_' +
-                              currentIndex)[0].offsetTop - this.scrollTop);
+              console.log(element.find('#chapter_' +
+                              currentIndex)[0].offsetTop, this.scrollTop)
+              switchViz = element.find('#chapter_' + currentIndex)[0].offsetTop >
+                          this.scrollTop + upDiff;
             }
 
-            if(diff < 200) {
+            if(switchViz) {
               functionToCall(true);
               scope.$parent.$apply();
             }
