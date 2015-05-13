@@ -6,6 +6,14 @@
   font-family: 'Cuprum';
   src: url('../fonts/Cuprum-Regular.ttf');
 }
+@font-face {
+  font-family: 'Merriweather-Regular';
+  src: url('../fonts/Merriweather-Regular.ttf');
+}
+@font-face {
+  font-family: 'Merriweather-Light';
+  src: url('../fonts/Merriweather_Light.ttf');
+}
 
 
 .fixed {
@@ -14,12 +22,16 @@
 
 .links, #chapterTitle{
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .text {
-  font-family: 'Cuprum', sans-serif;
-  line-height: 1.6;
+  font-family: 'Merriweather-Regular', sans-serif;
+  line-height: 27px;
+  font-size: 16px;
+  font-weight: 100;
+  color: #363633;
   text-align: justify;
 }
 
