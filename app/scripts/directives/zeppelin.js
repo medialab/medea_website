@@ -21,6 +21,12 @@ angular.module('driveoutApp')
 
         //Scroll spy for the narratives' text
         $('.slider').on('scroll', function(e){
+          //Checks if the scroll has been triggered by the user or automatically
+          if (scope.$parent.getScrollFlag()) {
+            scope.$parent.automatedScroll = false;
+            return true;
+          }
+
           //Remembers the scroll position
           if (this.data === undefined)
             this.data = {oldPosition: 0, newPosition: e.currentTarget.scrollTop}
@@ -55,8 +61,8 @@ angular.module('driveoutApp')
                               currentIndex)[0].offsetTop - this.scrollTop);
             }
 
-            if(diff < 200 ) {
-              functionToCall();
+            if(diff < 200) {
+              functionToCall(true);
               scope.$parent.$apply();
             }
           }

@@ -5,6 +5,8 @@ angular.module('driveoutApp')
         $scope.index = 0;
         $scope.height = w.height() - 250;
 
+        $scope.automatedScroll = false;
+
         $scope.$watch('index', function(index) {
           if (typeof index === 'string')
             $scope.index = +index;
@@ -12,7 +14,12 @@ angular.module('driveoutApp')
           $scope.steer(index);
         });
 
+        $scope.getScrollFlag = function() {
+          return $scope.automatedScroll;
+        }
+
         $scope.bringTextTo = function(index) {
+          $scope.automatedScroll = true;
           var element = $element,
               sliderComponent = element.find('.slider');
           if (element.find('#chapter_' + index)[0] !== undefined) {
@@ -22,15 +29,19 @@ angular.module('driveoutApp')
           }
         }
 
-        $scope.next = function() {
+        $scope.next = function(fromScroll) {
           var _index = $scope.index + 1;
           $scope.index = Math.min(_index, $scope.$parent.content.sections.length -1);
+          if (!fromScroll)
+            $scope.bringTextTo($scope.index);
         };
 
         // goto previous slide
-        $scope.previous = function() {
+        $scope.previous = function(fromScroll) {
           var _index = $scope.index - 1;
           $scope.index = Math.max(_index, 0);
+          if (!fromScroll)
+            $scope.bringTextTo($scope.index);
         };
 
         $scope.getCurrentIndex = function() {

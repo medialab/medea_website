@@ -13,12 +13,10 @@ angular.module('driveoutApp')
               scope.bringTextTo(value);
               break;
             case 'next':
-              window.dispatchEvent(new Event('indexChangedManually'));
-              scope.next();
+              scope.next(false);
               break;
             case 'previous':
-              window.dispatchEvent(new Event('indexChangedManually'));
-              scope.previous();
+              scope.previous(false);
               break;
           }
         }
