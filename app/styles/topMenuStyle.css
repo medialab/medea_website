@@ -3,7 +3,7 @@
  */
 #topMenu {
   position: fixed;
-  height: 147px;
+  height: 150px;
   background: white;
   z-index: 1;
   width: 100%;
@@ -40,8 +40,6 @@
   font-size: 17px;
 }
 
-/*2nd category: Small description, narrative text*/
-
 .hide {
   visibility: hidden;
 }
@@ -50,4 +48,23 @@
   position: absolute;
   bottom: 0;
   margin: auto;
+}
+
+.changeSLbutton {
+  display: inline;
+  position: relative;
+  top: 50px;
+  stroke: #ccc;
+  fill: #ccc;
+}
+.changeSLbutton:not(.inactive):hover {
+  stroke: black;
+  fill: black;
+}
+
+.changeSLleft {
+  float: left;
+}
+.changeSLright {
+  float: right;
 }

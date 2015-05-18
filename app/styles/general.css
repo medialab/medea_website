@@ -38,3 +38,7 @@
 .fill-height {
   height: 100%;
 }
+
+.noLeftGutter {
+  padding-left: 0;
+}
