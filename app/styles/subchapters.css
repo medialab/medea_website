@@ -1,6 +1,6 @@
 #subchapters {
   top: 147px;
-  height: 85px;
+  height: 25px;
   padding-top: 10px;
   width: 100%;
   background: white;
@@ -41,6 +41,11 @@ input[type=radio]:not(old) + label{
   margin-left: -30px;
   line-height: 16px;
 }
+
+input[type=radio]:not(old):checked + label{
+  font-size:22px;
+}
+
 /*Create the unchecked graphics*/
 /*input[type=radio]:not(old) + label > span{
   display: inline-block;

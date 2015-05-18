@@ -21,10 +21,10 @@
         <path id="arrow-left-1" d="M46.077 55.738c0.858 0.867 0.858 2.266 0 3.133s-2.243 0.867-3.101 0l-25.056-25.302c-0.858-0.867-0.858-2.269 0-3.133l25.056-25.306c0.858-0.867 2.243-0.867 3.101 0s0.858 2.266 0 3.133l-22.848 23.738 22.848 23.738z"></path>
       </svg>
     </div>
-    <div class="col-sm-5 col-md-5 col-lg-5" id="chapterTitle">
+    <div class="col-sm-5 col-md-5 col-lg-5 noLeftGutter" id="chapterTitle">
       <span class="alignDown"><h1>{{content.title}}</h1></span>
     </div>
-    <div class="col-sm-5 col-md-5 col-lg-5 text" id="chapterDescription">
+    <div class="col-sm-5 col-md-5 col-lg-5 text  noRightGutter" id="chapterDescription">
       <p class="alignDown" ng-bind-html="content.subtitle"></p>
     </div>
     <div class="col-sm-1 col-md-1 col-lg-1 changeSLbutton changeSLright {{$parent.currentSLindex === content.menu.length - 1 ? 'inactive': ''}}" ng-mouseover="checkSLIndex()" ng-click="nextSL()">
