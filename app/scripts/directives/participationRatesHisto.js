@@ -15,12 +15,10 @@ angular.module('driveoutApp')
         var elementWidth = element.width(),
             elementHeight = element.height();
         var histogram = new PowerLawHistogram();
-        console.log('inRates');
         histogram.load('contents/data/participationRatesHisto/participations.json', function() {
           var width = elementWidth,
               height = elementHeight/2,
               margin = {top: 40, bottom: 70, left: 40, right: 40};
-          console.log(histogram)
 
           histogram.drawChart('#containerNonBridge',
             {
