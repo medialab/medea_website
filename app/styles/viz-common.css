@@ -54,7 +54,7 @@ rect {
   appearance: none;
   padding: 2px 2px 2px 10px;
   background: transparent
-              url('../media/bricks-partByChapters/expand22.png')
+              url('./bricks-partByChapterByCountry/media/expand22.png')
               no-repeat left center;
   outline: none;
   z-index: 1;
@@ -140,4 +140,19 @@ rect {
   fill: white;
   font-weight: bold;
   alignment-baseline: central;
+}
+
+/*********************************************************************
+ *************************** Powerlaw histogram
+ *********************************************************************/
+.histoBridgeTooltipText, .histoBridgeTooltipContainer #arrowTooltip{
+  pointer-events: none;
+  z-index: 2;
+}
+.histoBridgeTooltipText {
+  background: #453c32;
+  color: white;
+}
+.histoBridgeTooltipText .hoverBar rect{
+  fill: #453c32;
 }
