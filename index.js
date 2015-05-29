@@ -33,15 +33,13 @@ function parseGoogleDocument(result) {
   //   console.log(html)
   // parse document sections
   $('h1').each( function(i, el){
-    var contents = $(this).nextUntil('h1').get().map(function(e) {return $(e).html()}).join(''), // html specific to this section
-        section = {
-          title: $(this).text(),
-          html: cmp(contents) // guillaume
+    var section = {
+          title: $(this).text() // guillaume
         };
 
     // check it's own h4
     var directive = $(this).nextUntil('h1').filter('h4');
-    console.log('directives', directive.length);
+    console.log('directives', directive.html());
 
     //console.log(section.title, directives.length, directives);
     if(directive.length) {
@@ -79,10 +77,17 @@ function parseGoogleDocument(result) {
             filepath: options.mediapath + '/' + file.id + '.' + file.fileExtension
           })
           */
-      })
+      });
+    $(this).remove('h4');
     } else {
       section.type = 'text'
     }
+    var contents = $(this).nextUntil('h1').filter(function(d) {
+      console.log('d', d);
+      console.log('name', $(this)[0].name);
+      return $(this)[0].name !== 'h4'
+    }).get().map(function(e) {return $(e).html()}).join(''); // html specific to this section
+      section.html = cmp(contents);
 
     result.sections.push(section);
   })
