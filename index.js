@@ -1,6 +1,6 @@
 'use strict';
 /*
-  
+
   Example and basiuc usage for drive-out!
   settings fil have to be in the same level.
 */
@@ -28,7 +28,9 @@ function parseGoogleDocument(result) {
 
   result.title = $('.title').text();
   result.subtitle = $('.subtitle').html();
-  //console.log(html)
+  // console.log($('.title'))
+  // if (result.slug.search('coordin') !== -1)
+  //   console.log(html)
   // parse document sections
   $('h1').each( function(i, el){
     var contents = $(this).nextUntil('h1').get().map(function(e) {return $(e).html()}).join(''), // html specific to this section
@@ -39,6 +41,7 @@ function parseGoogleDocument(result) {
 
     // check it's own h4
     var directive = $(this).nextUntil('h1').filter('h4');
+    console.log('directives', directive.length);
 
     //console.log(section.title, directives.length, directives);
     if(directive.length) {
@@ -49,14 +52,14 @@ function parseGoogleDocument(result) {
       // check linked data
       directive.find('a[href]').each(function (i, e) {
         var datahref = e.attribs['href'].match(/id=([^&]*)/); // this is the address on google drive for the linked data
-        
+
         if(datahref) {
           // get download urls
           var file = drive.files.get({
             fileId: datahref.pop()
           });
           console.log('directive has this file attached', file.title)
-          
+
           if(file.downloadUrl) {
             section.datasrc = section.datasrc || []; // add a proper list to hold data urls if it has'nt been done yet
 
@@ -84,7 +87,7 @@ function parseGoogleDocument(result) {
     result.sections.push(section);
   })
 
-  return result;  
+  return result;
 };
 
 
@@ -94,7 +97,7 @@ drive.start().then(function logic() {
   var fileId = drive.utils.getFileId(settings.DRIVE_FOLDER_URL),
       pages,
       narratives = []; // static pages dicts
-  
+
   console.log();
   console.log('folder url:', settings.DRIVE_FOLDER_URL);
   console.log('folder id: ', fileId);
@@ -118,7 +121,7 @@ drive.start().then(function logic() {
     // save result to a file named as file.slug
     if(file.mimeType == 'application/vnd.google-apps.document') {
       result = parseGoogleDocument(result);
-      drive.utils.write(CONTENTS_PATH + '/' + result.slug + '.json', JSON.stringify(result,null,2)); 
+      drive.utils.write(CONTENTS_PATH + '/' + result.slug + '.json', JSON.stringify(result,null,2));
       return result;
     };// end if file.mimeType == 'application/vnd.google-apps.document'
 
@@ -129,8 +132,8 @@ drive.start().then(function logic() {
     };
   });
 
-  drive.utils.write(CONTENTS_PATH + '/index.json', JSON.stringify(pages,null,2)); 
-  
+  drive.utils.write(CONTENTS_PATH + '/index.json', JSON.stringify(pages,null,2));
+
   // cycle through narratives folder to get files (one narrative per google doc)
   for(var i=0; i<narratives.length; i++) {
     console.log();
@@ -166,7 +169,7 @@ drive.start().then(function logic() {
           }
         });
 
-        drive.utils.write(CONTENTS_PATH + '/' + narratives[i].slug + '/' + result.slug + '.json', JSON.stringify(result,null,2)); 
+        drive.utils.write(CONTENTS_PATH + '/' + narratives[i].slug + '/' + result.slug + '.json', JSON.stringify(result,null,2));
       };
     })
 

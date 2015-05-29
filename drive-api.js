@@ -8,14 +8,14 @@ var extend   = require('util')._extend,
     request  = require('request'),
 
     request_sync  = require('request-sync'),
-    
+
     google   = require('googleapis'),
     cheerio  = require('cheerio'),
     css      = require('css'),
 
     settings, // cfr module.exports function
     secrets, // the content of SECRETS_PATH .json file
-    
+
     drive = {},
     google_drive = {};
 
@@ -39,7 +39,7 @@ drive.utils.slugify = function(text) {
 
 
 /*
-  function utils.getFileId 
+  function utils.getFileId
   ---
 
   get drive id from a google drive share link,
@@ -59,13 +59,13 @@ drive.utils.getFileId = function(url) {
 
 
 /*
-  function utils.write 
+  function utils.write
   ---
 
   fs write a file in sync
 */
 drive.utils.write = function(filepath, contents) {
-  console.log(colors.white('writing file'), colors.inverse(filepath));    
+  console.log(colors.white('writing file'), colors.inverse(filepath));
   var fd = fs.openSync(filepath, 'w');
   fs.writeSync(fd, contents);
   fs.closeSync(fd);
@@ -114,18 +114,22 @@ drive.utils.parse = function(html) {
       return !selector.match(/h(\d+)/)
     });
 
-    if(rule_for_minor_selectors)
+    if (rule_for_minor_selectors)
       return rule.declarations.some(function(d){
-        return d.property == 'font-weight' && (d.value == 'bold' || +d.value > 300);
+        return d.property === 'font-weight' && (d.value === 'bold' || +d.value > 300);
       });
     else
       return false;
   });
-
   // transform bold into strong element
   for(var i =0; i<bolds.length; i++) {
     bolds[i].selectors.forEach(function(d) {
-      $(d).replaceWith('<strong>' + $(d).html() + '</strong>')//console.log('apdjapodjaopdjaposdjpiajd', d)
+      if (Object.keys($(d)).length > 1) {
+        var dollarD = $(d);
+        $(d).each(function(i, e) {
+          $(this).replaceWith('<strong>' + $(this).html() + '</strong>')
+        });
+      }
     })
   };
 
@@ -150,11 +154,11 @@ drive.start = function() {
     var flush = function() {
       secrets = require(settings.SECRETS_PATH);
       oauth2Client.setCredentials(secrets);
-      
+
       var expiry_date = new Date(secrets.expiry_date);
 
       console.log('date this token will expire:', colors.inverse(new Date(secrets.expiry_date)));
-      
+
 
       if((new Date()).getTime() - expiry_date.getTime() > 60000) { // that is10 min to expiry
         console.log(colors.bold('token expired...'));
@@ -163,17 +167,17 @@ drive.start = function() {
             if(err)
               return reject(err);
             drive.utils.write(settings.SECRETS_PATH, JSON.stringify(tokens));
-            
+
             console.log('date this *new* token will expire:', colors.inverse(new Date(secrets.expiry_date)));
             secrets = tokens;
             console.log('\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n');
-            
+
             return resolve();
           });
         })
       } else {
         console.log('\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n');
-        return resolve(); 
+        return resolve();
       }
     };
 
@@ -181,9 +185,9 @@ drive.start = function() {
       console.log('secrets file found in ', colors.inverse(settings.SECRETS_PATH));
       return flush();
     };
-      
+
     var readline = require('readline'),
-        
+
         rl = readline.createInterface({
           input: process.stdin,
           output: process.stdout
@@ -227,7 +231,7 @@ drive.response = function(res) {
   if(res.statusCode!= 200) {
     console.log('    error ', colors.red(contents.error.message));
 
-    throw 'googleapi response does not allow to proceed...'; 
+    throw 'googleapi response does not allow to proceed...';
   };
 
   return contents;
@@ -252,22 +256,25 @@ drive.iterators.basic = function(file) {
 */
 drive.iterators.flatten = function(file, options, results) {
   console.log('drive.iterators.flatten', file.title, file.id);
-  
+
   var result = {
     id: file.id,
     title: file.title,
     slug: drive.utils.slugify(file.title),
     mimeType: file.mimeType
   };
- 
+
   if(file.mimeType == 'application/vnd.google-apps.document') {
     var html = drive.files.getHtml({fileId:file.id}),
         body = html.match(/<body[^>]*>(.*?)<\/body>/i)[1],
         $ = cheerio.load(body);
+    // var fileName = 'HTML_'+file.title+'_'+(new Date.now())+'.html';
+    // console.log('fileName', fileName);
+    // fs.writeFileSync(fileName, html);
 
     result.title = $('.title').html() || file.title;
     result.subtitle = $('.subtitle').html();
-    
+
     // clean first title and first subtitle
     $('.title').first().text('');
     $('.subtitle').first().text('')
@@ -312,7 +319,7 @@ drive.open.files = {};
 
 
 drive.open.files.get = function(options) {
-  
+
 
 };
 
@@ -320,11 +327,11 @@ drive.open.files.get = function(options) {
   get html contents
 */
 drive.open.files.getHtml = function(options) {
-  
+
 };
 
 drive.open.files.list = function(options) {
-  
+
 };
 
 
@@ -338,7 +345,7 @@ drive.files = {}
 drive.files.get = function(options) {
   if(!options || !options.fileId)
     throw 'files.list interrupted: please specify a "fileId" field ...';
-  
+
   console.log(colors.white('files.get'), colors.greenBright(options.fileId));
 
   var res = request_sync({
@@ -355,7 +362,7 @@ drive.files.get = function(options) {
 drive.files.list = function(options) {
   if(!options || !options.fileId)
     throw 'files.list interrupted: please specify a "fileId" field ...';
-  
+
   console.log(colors.white('files.list'), colors.greenBright(options.fileId));
 
   var res = request_sync({
@@ -374,7 +381,7 @@ drive.files.list = function(options) {
 drive.files.getHtml = function(options) {
   if(!options || !options.fileId)
     throw 'files.getHtml interrupted: please specify a "fileId" field ...';
-  
+
   var f = options.format || 'html'; // format can either be html or txt
   console.log('         ',colors.cyan('get '+f), 'of', options.fileId);
   var response = request_sync({
@@ -389,7 +396,7 @@ drive.files.getHtml = function(options) {
 
 
 /*
-  Download asyncrh the url specified in options.url to options.filepath. 
+  Download asyncrh the url specified in options.url to options.filepath.
   Use only with downloadUrl fields.
   @return Promise
 */
@@ -404,7 +411,7 @@ drive.files.download =function(options) {
     console.log(colors.red('cannot write at options.filepath'), colors.inverse(options.filepath));
     throw 'error on writing file';
   });
-  
+
   request({
     url: options.downloadUrl,
     headers: {
@@ -428,10 +435,10 @@ drive.files.walk = function(options, iterator){
   console.log('drive.files.walk ...');
   var files = drive.files.list({fileId: options.fileId}),
       results = [];
-  
+
   if(!files.items)
     return results;
-  
+
   // sort files here by function, @todo
   files.items.sort(function(a, b) {
     if (a.title > b.title)
