@@ -23,7 +23,6 @@ angular.module('driveoutApp')
           histogram.drawChart('#containerTotal',
             {
               dataName: 'all',
-              title: 'Participations over time',
               height: height,
               width: width,
               margin: margin
