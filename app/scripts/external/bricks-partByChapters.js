@@ -412,7 +412,7 @@
     //Width of bar corresponding to all the participations worldwide
     var totalWidth = params.oneARwidth - 2 * params.spaceHoriUnit;
 
-    var countryBarWidth = params.scaleX(modifLog(params.totalCountryAR));
+    var countryBarWidth = params.scaleX(modifLog(params.totalCountryAR+1));
 
     //Horizontal start position
     var xPosition = params.xStartPosition + params.spaceHoriUnit;
