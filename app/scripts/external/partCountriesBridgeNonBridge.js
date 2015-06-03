@@ -40,9 +40,14 @@
     var self = this;
     d3.json(path, function(participations) {
       self.data = participations;
+      console.log('participation', participations);
+
+      delete self.data.bridge['N/A'];
+      delete self.data.nonBridge['N/A'];
 
       self.dataNonBridge = self.data.nonBridge;
       self.dataBridge = self.data.bridge;
+
 
       if (typeof callback === 'function')
         callback();
