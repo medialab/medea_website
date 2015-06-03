@@ -29,6 +29,10 @@
   StackedBars.prototype.load = function(path, callback) {
     var self = this;
     d3.json(path, function(participations) {
+      console.log('participations', participations);
+      for (var country in participations) {
+        delete participations[country].total;
+      }
       self.data = participations;
       callback();
     });
@@ -84,7 +88,7 @@
         //Height of the bars
         barHeight = effHeight - totalVertiSpace,
         //Width of the bard
-        barWidth = (effWidth - totalHoriSpace) / 3,
+        barWidth = (effWidth - totalHoriSpace) / Object.keys(this.data[country]).length,
         //horizontal positions of the bars
         xPositions = [],
         //vertical positions of the bars
@@ -207,22 +211,22 @@
         });
 
 
-      //Title creation
-      var title =
-        d3.select(container + ' svg')
-        .selectAll('#vizTitle')
-        .data([country]);
+      // //Title creation
+      // var title =
+      //   d3.select(container + ' svg')
+      //   .selectAll('#vizTitle')
+      //   .data([country]);
 
-      title.enter()
-          .append('text')
-          .attr('id', 'vizTitle')
-          .attr('y', margin.top/2)
-          .attr('x', margin.left + effWidth/2)
-          .style('text-anchor', 'middle')
+      // title.enter()
+      //     .append('text')
+      //     .attr('id', 'vizTitle')
+      //     .attr('y', margin.top/2)
+      //     .attr('x', margin.left + effWidth/2)
+      //     .style('text-anchor', 'middle')
 
-      d3.select('#vizTitle')
-        .text('Role repartition by author\'s type - ' +
-              country + (country === 'all' ? ' countries' : ''))
+      // d3.select('#vizTitle')
+      //   .text('Role repartition by author\'s type - ' +
+      //         country + (country === 'all' ? ' countries' : ''))
 
       //Legend creation
       d3.select(container + ' svg')
