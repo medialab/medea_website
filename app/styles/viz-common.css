@@ -54,7 +54,7 @@ rect {
   appearance: none;
   padding: 2px 2px 2px 10px;
   background: transparent
-              url('./bricks-partByChapterByCountry/media/expand22.png')
+              url('../media/bricks-partByChapters/expand22.png')
               no-repeat left center;
   outline: none;
   z-index: 1;
