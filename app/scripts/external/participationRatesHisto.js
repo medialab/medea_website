@@ -40,7 +40,6 @@
     var self = this;
     d3.json(path, function(participations) {
       self.data = participations;
-
       self.dataNonBridge = self.getNbParticipations(
         self.data.filter(function(d) {
           return !d.bridge;
@@ -53,7 +52,6 @@
       );
 
       self.data = self.getNbParticipations(self.data);
-
       var maxPart = d3.max(Object.keys(self.data), function(d) {return +d;}),
           minPart = d3.min(Object.keys(self.data), function(d) {return +d;});
 
@@ -67,6 +65,10 @@
         if (self.dataBridge[i] === undefined)
           self.dataBridge[i] = 0;
       }
+      if (self.dataBridge['1'] !== undefined)
+        delete self.dataBridge['1'];
+      if (self.dataNonBridge['1'] !== undefined)
+        delete self.dataNonBridge['1'];
 
       if (typeof callback === 'function')
         callback();
