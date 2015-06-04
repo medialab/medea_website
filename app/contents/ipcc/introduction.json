@@ -1,0 +1,51 @@
+{
+  "id": "1CqLWS_HhWsPuwibGxjylYV1Ws1XweORVylX-Dvz6dK8",
+  "title": "IPCC main",
+  "slug": "introduction",
+  "mimeType": "application/vnd.google-apps.document",
+  "sections": [
+    {
+      "title": "First image",
+      "directive": "image",
+      "type": "directive",
+      "datasrc": [
+        "media/0BxbcQLNpkPSIUl9BMDdBUnZuM2M.svg"
+      ],
+      "html": "<p><span>Heyheyhey</span><span>A very long text with special words</span><span>A very long text with special words</span><span>A very long <a href=\"&#x2018;goto&#x2019;\">text with special words</a> A very long text with special words</span><span>&#xA0;A very long Hello <a href=\"zoom:agriculture\">Dany ciao cioa</a>&apos; text with special words</span><span>&#xA0;A very long text with special words</span><span>A very long text with special words</span><span>A very long text with special words</span><span>A very long text with special words</span><span></span><span></span><span>A very long text with special words A very long text with special words</span><span>&#xA0;A very long text with special words</span><span>&#xA0;A very long text with special words</span><span>A very long text with special words</span><span>A very long text with special words</span><span>A very long text with special words</span><span></span><span></span></p>\n"
+    },
+    {
+      "title": "Second image",
+      "directive": "donut",
+      "type": "directive",
+      "datasrc": [
+        "media/0ByZTyEnzm9qqVk1xZzExOWJKeTA.csv"
+      ],
+      "html": "<p><span>A very long text with special words A very long text with special words</span><span>&#xA0;A very long text with special words</span><span>&#xA0;A very long text with special words</span><span>A very long text with special words</span><span>A very long text with special words</span><span>A very long text with special words</span><span></span><span></span></p>\n"
+    },
+    {
+      "title": "Second image, different",
+      "directive": "image|ciao",
+      "type": "directive",
+      "html": "<p><span>A very long text with special words A very long text with special words A very long text with special words A very long text with special words</span><span>A very long text with special words</span><span>A very long text with special words</span><span>A very long text with special words</span><span></span><span></span></p>\n"
+    }
+  ],
+  "subtitle": "<a name=\"h.1br36m9i0ops\"></a><span>a short account</span>",
+  "menu": [
+    {
+      "title": "Introduction",
+      "slug": "introduction"
+    },
+    {
+      "title": "National Cultures of Climate Expertise - France",
+      "slug": "national-cultures-of-climate-expertise-france"
+    },
+    {
+      "title": "Coordination and Controversy",
+      "slug": "coordination-and-controversy"
+    },
+    {
+      "title": "Diversity",
+      "slug": "diversity"
+    }
+  ]
+}

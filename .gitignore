@@ -13,8 +13,6 @@ dist
 .sass-cache
 bower_components
 
-app/contents
-
 # Logs
 logs
 *.log

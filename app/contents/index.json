@@ -1,0 +1,69 @@
+[
+  {
+    "id": "0B2OCGdkKsDqsM3RsRG1IQ1liRHM",
+    "title": "Data",
+    "slug": "data",
+    "mimeType": "application/vnd.google-apps.folder",
+    "sections": [],
+    "type": "folder"
+  },
+  {
+    "id": "0ByZTyEnzm9qqZ1Q0a1JrdlQ1cmc",
+    "title": "IPCC",
+    "slug": "ipcc",
+    "mimeType": "application/vnd.google-apps.folder",
+    "sections": [],
+    "type": "folder"
+  },
+  {
+    "id": "1STResuGAzwl1nYF0Iy1RzAz5JYFIvudfPrjn-Nu8Teg",
+    "title": "A smart title for the long introduction",
+    "slug": "introduction",
+    "mimeType": "application/vnd.google-apps.document",
+    "sections": [
+      {
+        "title": "Debate",
+        "type": "text",
+        "html": "<p><span>&#x2026;Eccoci</span></p>\n"
+      },
+      {
+        "title": "Why?",
+        "type": "text",
+        "html": "<p><span>&#x2026;Qui</span><span></span><span></span><span></span></p>\n"
+      }
+    ],
+    "subtitle": null
+  },
+  {
+    "id": "0ByZTyEnzm9qqemw3aDM5NUZLSFU",
+    "title": "Scientific Literature",
+    "slug": "scientific-literature",
+    "mimeType": "application/vnd.google-apps.folder",
+    "sections": [],
+    "type": "folder"
+  },
+  {
+    "id": "0ByZTyEnzm9qqSW55cDlCMDd4Ums",
+    "title": "UNFCCC",
+    "slug": "unfccc",
+    "mimeType": "application/vnd.google-apps.folder",
+    "sections": [],
+    "type": "folder"
+  },
+  {
+    "id": "1WHuonjVOWJFETL1gTF1wnIe5EAw2BNTVRt98KIvb2d0",
+    "title": "",
+    "slug": "footer",
+    "mimeType": "application/vnd.google-apps.document",
+    "sections": [],
+    "subtitle": null
+  },
+  {
+    "id": "147kJIfzO_2nmgsfAwpW0y4b_gWuZjgRESXLVdVwDV4E",
+    "title": "MEDEA Mapping Emerging Debates on Adaptation",
+    "slug": "home",
+    "mimeType": "application/vnd.google-apps.document",
+    "sections": [],
+    "subtitle": "<a name=\"h.ah63fphil882\"></a><span>Earth&#x2019;s climate is changing. Slowly but inexorably. As sanctioned the latest IPCC Report, the actions taken so far to reduce the emissions of greenhouse gases are insufficient and the first impacts of global warming are beginning to be felt.</span>"
+  }
+]

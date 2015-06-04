@@ -1,0 +1,44 @@
+{
+  "id": "1yodnhF80_UMqjKYJKlGKXuBNMad8ZIQqmCUS-8qcVXI",
+  "title": "Narrative title",
+  "slug": "narrative",
+  "mimeType": "application/vnd.google-apps.document",
+  "sections": [
+    {
+      "title": "introduction",
+      "type": "text",
+      "html": "<p><span>test text</span><span></span></p>\n"
+    },
+    {
+      "title": "Fig. 1",
+      "directive": "histogram:",
+      "type": "directive",
+      "html": "<p><span>the text here with special focus according to directive behaviour <a href=\"zoom:agriculture,system\">Dany</a> and the text with <a href=\"zoom:node_identifier\">markers</a> ici</span><span></span></p>\n"
+    },
+    {
+      "title": "Fig. 2",
+      "directive": "histogram:",
+      "type": "directive",
+      "html": "<p><span>the text with <a href=\"zoom:node_identifier\"></span><span>markers</span><span></a> ici</span><span></span></p>\n"
+    }
+  ],
+  "subtitle": "<a name=\"h.7k7k15456yze\"></a><span>narrative subtitle</span>",
+  "menu": [
+    {
+      "title": "Introduction",
+      "slug": "introduction"
+    },
+    {
+      "title": "National Cultures of Climate Expertise - France",
+      "slug": "national-cultures-of-climate-expertise-france"
+    },
+    {
+      "title": "Coordination and Controversy",
+      "slug": "coordination-and-controversy"
+    },
+    {
+      "title": "Diversity",
+      "slug": "diversity"
+    }
+  ]
+}

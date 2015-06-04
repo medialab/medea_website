@@ -1,0 +1,19 @@
+{
+  "id": "1STResuGAzwl1nYF0Iy1RzAz5JYFIvudfPrjn-Nu8Teg",
+  "title": "A smart title for the long introduction",
+  "slug": "introduction",
+  "mimeType": "application/vnd.google-apps.document",
+  "sections": [
+    {
+      "title": "Debate",
+      "type": "text",
+      "html": "<p><span>&#x2026;Eccoci</span></p>\n"
+    },
+    {
+      "title": "Why?",
+      "type": "text",
+      "html": "<p><span>&#x2026;Qui</span><span></span><span></span><span></span></p>\n"
+    }
+  ],
+  "subtitle": null
+}
