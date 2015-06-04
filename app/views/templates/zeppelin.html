@@ -27,6 +27,12 @@
       <div class="fill-height" ng-switch-when="enbgraph">
         <div class="fill-height" enbgraph gexf="section.datasrc[0]" csv="section.datasrc[1]" height="height"></div>
       </div>
+      <div class="fill-height scrollable" ng-switch-when="pdfWG">
+        <h3>Report of the first session of the WMO/UNEP INTERGOVERNMENTAL PANEL ON CLIMATE CHANGE (IPCC)</h3>
+        <h4>Geneva, 9-11 November 1988</h4>
+
+        <img class="imgScaled" src="../media/pdfWG.png">
+      </div>
       <div class="fill-height" ng-switch-when="ipccwgvenn">
         <div id="venn" class="fill-height" ipccwgvenn path="$parent.$parent.section.datasrc[0]"></div>
       </div>

@@ -44,3 +44,7 @@
 .noRightGutter {
   padding-right: 0;
 }
+
+.scrollable {
+  overflow: auto;
+}

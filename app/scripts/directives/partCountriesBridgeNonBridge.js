@@ -18,7 +18,7 @@ angular.module('driveoutApp')
         var histogram = new countryPartBridgenonBridge();
         histogram.load('contents/data/partCountriesBridgeNonBridge/participations.json', function() {
             var width = elementWidth,
-                height = elementHeight / 2,
+                height = elementHeight / 2.5,
                 margin = {top: 40, bottom: 70, left: 40, right: 40};
 
                 histogram.drawChart('#containerNonBridge',
