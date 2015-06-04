@@ -42,16 +42,16 @@
       var div = d3.select(container).append("div")
         .attr("id", id)
         .style("float", "left");
-      if (i == 4) {
-        div.style("clear", "both")
-          .style("margin-left", width/6 + "px");
+      if (i == 5) {
+        div.style("clear", "right")
+          .style("margin-left", width/4 + "px");
       }
       div.append("div").attr("class", "venn");
       div.append("h4")
         .classed("venntitle", true)
         .style("width", width/3 - 5 + "px")
         .text("AR #" + i + " (" + venn.AR_data["years"][id] + ")");
-     venn.display_data("#" + id + " .venn", venn.AR_data[id], width/3 - 10, (height - ($("h3.venntitle").height() + 2*$("h4.venntitle").height() + 20))/2);
+     venn.display_data("#" + id + " .venn", venn.AR_data[id], width/2 - 10, (height - ($("h3.venntitle").height() + 2*$("h4.venntitle").height() + 20))/2);
     });
   };
 
@@ -85,6 +85,7 @@
           .replace(/&/g, "&nbsp;&amp;&nbsp;") +
         (d.label ? ": " + d.label : "") + "</b><br/>" +
         d.size + " contributors")
+        .style('padding', '10px')
         .transition().style("opacity", .9);
     };
     d3.selection.prototype.hideTooltip = function() {

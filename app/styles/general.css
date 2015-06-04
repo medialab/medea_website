@@ -46,5 +46,11 @@
 }
 
 .scrollable {
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.underline {
+  text-decoration: underline;
+  font-weight: bold;
 }

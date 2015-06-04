@@ -20,7 +20,7 @@ angular.module('driveoutApp')
         venn.load_data(scope.path, function() {
           elementid = "#"+element[0].getAttribute("id"),
           elementwidth = element.width(),
-          elementheight = element.height();
+          elementheight = element.height()-50;
           venn.plotGlobalAR(elementid, elementwidth, elementheight);
         });
 
