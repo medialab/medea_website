@@ -205,6 +205,7 @@
           return barWidth;
         })
         .attr('alignment-baseline', 'middle')
+        .attr('dominant-baseline', 'middle')
         .text(function(d, i) {
           return '- ' + d.role + ': ' +
             Math.round(d.effective/maxData[d.category] * 100) + '%';
@@ -241,6 +242,7 @@
           .attr('x', function(d, i) {return xPositions[i] + barWidth/2; })
           .style('text-anchor', 'middle')
           .style('alignment-baseline', 'hanging')
+          .style('dominant-baseline', 'hanging')
           .text(function(d, i) {return d === 'nonBridge' ? 'non-bridge' : d;})
 
       //Vertical axis legend

@@ -138,6 +138,7 @@
           return '\xA0\xA0';})
       .style('text-anchor', 'middle')
       .style('alignment-baseline', 'hanging')
+      .style('dominant-baseline', 'hanging')
       .on('mouseover', function(d,i) {
         drawToolTipHTML(svgContainer, bar[0][i].children[0], i, d, {trueSvgPositions: trueSvgPositions});
       })
@@ -233,12 +234,14 @@
       .attr('id', 'xAxisLegend')
       .style('text-anchor', 'middle')
       .style('alignment-baseline', 'hanging')
+      .style('dominant-baseline', 'hanging')
       .text('Countries');
     chart.append('text')
       .attr('transform', 'rotate(-90)')
       .attr('y', margin.left - 4*tickSize)
       .attr('x', 0 - (margin.top + chartTrueHeight/2))
       .style('alignment-baseline', 'baseline')
+      .style('dominant-baseline', 'baseline')
       .style('text-anchor', 'middle')
       .text('Number of participations');
 

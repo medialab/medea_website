@@ -157,6 +157,7 @@
           return '\xA0\xA0';})
       .style('text-anchor', 'middle')
       .style('alignment-baseline', 'hanging')
+      .style('dominant-baseline', 'hanging')
       .on('mouseover', function(d,i) {
         drawToolTip(svgContainer, bar[0][i], i, d);
       })
@@ -246,12 +247,14 @@
       .attr('id', 'xAxisLegend')
       .style('text-anchor', 'middle')
       .style('alignment-baseline', 'hanging')
+      .style('dominant-baseline', 'hanging')
       .text('Number of participations');
     chart.append('text')
       .attr('transform', 'rotate(-90)')
       .attr('y', margin.left - 4*tickSize)
       .attr('x', 0 - (margin.top + chartTrueHeight/2))
       .style('alignment-baseline', 'baseline')
+      .style('dominant-baseline', 'baseline')
       .style('text-anchor', 'middle')
       .text('Number of authors');
 
@@ -523,6 +526,7 @@
           return '\xA0\xA0';})
       .style('text-anchor', 'middle')
       .style('alignment-baseline', 'hanging')
+      .style('dominant-baseline', 'hanging')
       .on('mouseover', function(d,i) {
         drawToolTip(svgContainer, bar[0][i], i, d);
       })
@@ -612,12 +616,14 @@
       .attr('id', 'xAxisLegend')
       .style('text-anchor', 'middle')
       .style('alignment-baseline', 'hanging')
+      .style('dominant-baseline', 'hanging')
       .text('Number of participations');
     chart.append('text')
       .attr('transform', 'rotate(-90)')
       .attr('y', margin.left - 4*tickSize)
       .attr('x', 0 - (margin.top + chartTrueHeight/2))
       .style('alignment-baseline', 'baseline')
+      .style('dominant-baseline', 'baseline')
       .style('text-anchor', 'middle')
       .text('Number of authors');
 
