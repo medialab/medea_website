@@ -653,9 +653,9 @@
   function drawToolTip(component, bar, id, data, complementary) {
     //Remove the possibly existing powerLawTooltip
     d3.select(component + ' .powerLawTooltipContainer').remove();
-
+    console.log('barAttribute', bar.childNodes[0]);
     //For the case where it is the axis that is hovered
-    if (bar.getAttribute('height') === null && bar.getAttribute('class').indexOf('bar') > -1) {
+    if ((bar.getAttribute('height') === null) && bar.getAttribute('class').indexOf('bar') > -1) {
       bar = bar.childNodes[0];
     }
 
@@ -666,6 +666,13 @@
         boundingRectBar = bar.getBBox(),
         paddingText = {top: 5, left: 5};
 
+    //Hack for Firefox if the rectangle has an 0 height
+    if (boundingRectBar.width === 0 && boundingRectBar.height === 0) {
+      boundingRectBar.width = bar.getAttribute('width');
+      boundingRectBar.height = bar.getAttribute('height')
+      boundingRectBar.x = bar.getAttribute('x');
+      boundingRectBar.y = bar.getAttribute('y');
+    }
 
     d3.select(component).append('g')
       .attr('class', 'powerLawTooltipContainer')
