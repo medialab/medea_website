@@ -11,7 +11,8 @@
       "datasrc": [
         "media/0BxbcQLNpkPSIUl9BMDdBUnZuM2M.svg"
       ],
-      "html": "<p><span>Heyheyhey</span><span>A very long text with special words</span><span>A very long text with special words</span><span>A very long <a href=\"&#x2018;goto&#x2019;\">text with special words</a> A very long text with special words</span><span>&#xA0;A very long Hello <a href=\"zoom:agriculture\">Dany ciao cioa</a>&apos; text with special words</span><span>&#xA0;A very long text with special words</span><span>A very long text with special words</span><span>A very long text with special words</span><span>A very long text with special words</span><span></span><span></span><span>A very long text with special words A very long text with special words</span><span>&#xA0;A very long text with special words</span><span>&#xA0;A very long text with special words</span><span>A very long text with special words</span><span>A very long text with special words</span><span>A very long text with special words</span><span></span><span></span></p>\n"
+      "notes": [],
+      "html": "<p>HeyheyheyA very long text with special wordsA very long text with special wordsA very long <a href=\"&#x2018;goto&#x2019;\">text with special words</a> A very long text with special words&#xA0;A very long Hello <a href=\"zoom:agriculture\">Dany ciao cioa</a>&apos; text with special words&#xA0;A very long text with special wordsA very long text with special wordsA very long text with special wordsA very long text with special wordsA very long text with special words A very long text with special words&#xA0;A very long text with special words&#xA0;A very long text with special wordsA very long text with special wordsA very long text with special wordsA very long text with special words</p>\n"
     },
     {
       "title": "Second image",
@@ -20,13 +21,15 @@
       "datasrc": [
         "media/0ByZTyEnzm9qqVk1xZzExOWJKeTA.csv"
       ],
-      "html": "<p><span>A very long text with special words A very long text with special words</span><span>&#xA0;A very long text with special words</span><span>&#xA0;A very long text with special words</span><span>A very long text with special words</span><span>A very long text with special words</span><span>A very long text with special words</span><span></span><span></span></p>\n"
+      "notes": [],
+      "html": "<p>A very long text with special words A very long text with special words&#xA0;A very long text with special words&#xA0;A very long text with special wordsA very long text with special wordsA very long text with special wordsA very long text with special words</p>\n"
     },
     {
       "title": "Second image, different",
       "directive": "image|ciao",
       "type": "directive",
-      "html": "<p><span>A very long text with special words A very long text with special words A very long text with special words A very long text with special words</span><span>A very long text with special words</span><span>A very long text with special words</span><span>A very long text with special words</span><span></span><span></span></p>\n"
+      "notes": [],
+      "html": "<p>A very long text with special words A very long text with special words A very long text with special words A very long text with special wordsA very long text with special wordsA very long text with special wordsA very long text with special words</p>\n"
     }
   ],
   "subtitle": "<a name=\"h.1br36m9i0ops\"></a><span>a short account</span>",

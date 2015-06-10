@@ -65,7 +65,6 @@ angular.module('driveoutApp')
 
         //   Once timed properly, this funciton resize the szeppelin working area
         //   (fixing the height porperty according to window height props)
-
         w.on('resize', function () {
           $scope.height = w.height() - 250;
         });

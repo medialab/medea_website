@@ -88,7 +88,13 @@ function parseGoogleDocument(result) {
     }).get().map(function(e) {
       var html = $(e).html();
       if (html.match(/##\d+##/) !== null) {
-        // console.log('note index found', html.match(/##\d+##/g));
+        console.log('note index found', html.match(/##\d+##/g));
+        var indexNote = +html.match(/##\d+##/g)[0].replace(/##/g, '');
+        console.log(indexNote);
+        html = html.replace(/##\d+##/g, '<a href="#" noteIndex="' + indexNote + '" classToKeep="exponent">' + indexNote + '</a>');
+
+        console.log('note index found check', html.match(/##\d+##/g));
+        // html.replace(/##\d+##/g, '<span href="' + indexNote + '">' + indexNote + '</span>');
       }
       //Gets the notes if any
       //Adds them to the notes object
@@ -100,8 +106,7 @@ function parseGoogleDocument(result) {
         }
         return '';
       }
-      else
-        return $(e).html()
+      return html;
     }).join(''); // html specific to this section
       section.notes = notes;
       section.html = drive.utils.clean(cmp(contents));

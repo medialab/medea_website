@@ -15,7 +15,6 @@
   src: url('../fonts/Merriweather_Light.ttf');
 }
 
-
 .fixed {
   position: fixed;
 }
@@ -55,4 +54,8 @@
 .underline {
   text-decoration: underline;
   font-weight: bold;
+}
+
+.exponent {
+  vertical-align: super;
 }

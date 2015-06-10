@@ -24,12 +24,14 @@
       {
         "title": "Debate",
         "type": "text",
-        "html": "<p><span>&#x2026;Eccoci</span></p>\n"
+        "notes": [],
+        "html": "<p>&#x2026;Eccoci</p>\n"
       },
       {
         "title": "Why?",
         "type": "text",
-        "html": "<p><span>&#x2026;Qui</span><span></span><span></span><span></span></p>\n"
+        "notes": [],
+        "html": "<p>&#x2026;Qui</p>\n"
       }
     ],
     "subtitle": null

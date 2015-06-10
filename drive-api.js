@@ -83,15 +83,16 @@ drive.utils.clean = function(html){
   var c = html
             .replace(/<sup(.*?)href="#cmnt(.*?)<\/sup>/g, '')
             .replace(/<div(.*?)href="#cmnt(.*?)<\/div>/g, '') // avoid comment in text
-            .replace(/<span(.*?)>/g,'')
-            .replace(/<\/span(.*?)>/g,'')
-            .replace(/name="(.*?)"/g,'')
-            .replace(/style="(.*?)"/g,'')
-            .replace(/class="(.*?)"/g,'')
+            .replace(/\s*name="(.*?)"/g,'')
+            .replace(/\s*style="(.*?)"/g,'')
+            .replace(/\s*class="(.*?)"/g,'')
+            .replace(/<span\s*>/g,'')
+            .replace(/<\/span>/g,'')
+            .replace(/classToKeep/g, 'class')
             .replace(/<table(.*?)>/g, function(d, attrs){ return '<table class="table" ' + attrs + '>';})
             .replace(/<a\s*><\/a>/g,'')
-            .replace(/<p\s+><\/p>/g,'')
-            .replace(/<p\s+>/g,'<p>');
+            .replace(/<p\s*><\/p>/g,'')
+            .replace(/<p\s*>/g,'<p>');
   return c;
 }
 

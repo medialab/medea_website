@@ -75,6 +75,14 @@ angular.module('driveoutApp')
         })
 
 
+        /**
+         * Note Handler
+         */
+        element.on('click', '[noteIndex]', function(e) {
+          e.preventDefault();
+          var noteNumber = + $(this).attr('noteIndex');
+          console.log(noteNumber, scope.sections[scope.$parent.index].notes[noteNumber-1]);
+        });
 
 
         scope.$parent.$watch('height', function(h) {

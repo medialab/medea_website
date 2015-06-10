@@ -7,19 +7,22 @@
     {
       "title": "introduction",
       "type": "text",
-      "html": "<p><span>test text</span><span></span></p>\n"
+      "notes": [],
+      "html": "<p>test text</p>\n"
     },
     {
       "title": "Fig. 1",
       "directive": "histogram:",
       "type": "directive",
-      "html": "<p><span>the text here with special focus according to directive behaviour <a href=\"zoom:agriculture,system\">Dany</a> and the text with <a href=\"zoom:node_identifier\">markers</a> ici</span><span></span></p>\n"
+      "notes": [],
+      "html": "<p>the text here with special focus according to directive behaviour <a href=\"zoom:agriculture,system\">Dany</a> and the text with <a href=\"zoom:node_identifier\">markers</a> ici</p>\n"
     },
     {
       "title": "Fig. 2",
       "directive": "histogram:",
       "type": "directive",
-      "html": "<p><span>the text with <a href=\"zoom:node_identifier\"></span><span>markers</span><span></a> ici</span><span></span></p>\n"
+      "notes": [],
+      "html": "<p>the text with <a href=\"zoom:node_identifier\">markers</a> ici</p>\n"
     }
   ],
   "subtitle": "<a name=\"h.7k7k15456yze\"></a><span>narrative subtitle</span>",
