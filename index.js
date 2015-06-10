@@ -82,12 +82,29 @@ function parseGoogleDocument(result) {
     } else {
       section.type = 'text'
     }
+    var notes = [];
     var contents = $(this).nextUntil('h1').filter(function(d) {
-      console.log('d', d);
-      console.log('name', $(this)[0].name);
       return $(this)[0].name !== 'h4'
-    }).get().map(function(e) {return $(e).html()}).join(''); // html specific to this section
-      section.html = cmp(contents);
+    }).get().map(function(e) {
+      var html = $(e).html();
+      if (html.match(/##\d+##/) !== null) {
+        // console.log('note index found', html.match(/##\d+##/g));
+      }
+      //Gets the notes if any
+      //Adds them to the notes object
+      //Remove them from the text
+      var notesCheerio = $($(e).children('li')).children('h5');
+      if (e.name === 'ol' && notesCheerio.length > 0) {
+        for (var i = 0; i < notesCheerio.length; i++) {
+          notes.push(drive.utils.clean($(notesCheerio[i]).html()));
+        }
+        return '';
+      }
+      else
+        return $(e).html()
+    }).join(''); // html specific to this section
+      section.notes = notes;
+      section.html = drive.utils.clean(cmp(contents));
 
     result.sections.push(section);
   })

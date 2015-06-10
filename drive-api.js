@@ -89,7 +89,7 @@ drive.utils.clean = function(html){
             .replace(/style="(.*?)"/g,'')
             .replace(/class="(.*?)"/g,'')
             .replace(/<table(.*?)>/g, function(d, attrs){ return '<table class="table" ' + attrs + '>';})
-            .replace(/<a><\/a>/g,'')
+            .replace(/<a\s*><\/a>/g,'')
             .replace(/<p\s+><\/p>/g,'')
             .replace(/<p\s+>/g,'<p>');
   return c;
@@ -277,9 +277,9 @@ drive.iterators.flatten = function(file, options, results) {
 
     // clean first title and first subtitle
     $('.title').first().text('');
-    $('.subtitle').first().text('')
-
+    $('.subtitle').first().text('');
     result.html = drive.utils.clean($.html());
+
     result.type = 'document';
   }
 
