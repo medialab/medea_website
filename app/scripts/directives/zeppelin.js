@@ -74,12 +74,15 @@ angular.module('driveoutApp')
           }
         })
 
-
         /**
          * Note Handler
          */
+
         element.on('click', '[noteIndex]', function(e) {
-          e.preventDefault();
+          // e.preventDefault();
+          console.log($('[data-toggle="popover"]'));
+          $('[data-toggle="popover"]').popover();
+
           var noteNumber = + $(this).attr('noteIndex');
           console.log(noteNumber, scope.sections[scope.$parent.index].notes[noteNumber-1]);
         });
