@@ -91,10 +91,8 @@ function parseGoogleDocument(result) {
         console.log('note index found', html.match(/##\d+##/g));
         var indexNote = +html.match(/##\d+##/g)[0].replace(/##/g, '');
         console.log(indexNote);
-        html = html.replace(/##\d+##/g, '<a href="#" classToKeep="exponent" tooltip="On the Top!">' + indexNote + '</a>');
-
         console.log('note index found check', html.match(/##\d+##/g));
-        // html.replace(/##\d+##/g, '<span href="' + indexNote + '">' + indexNote + '</span>');
+        html = html.replace(/##\d+##/g, '<a href="#" classToKeep="exponent" popover-trigger="focus" popover-placement="right" popover="{{section.notes[' + (indexNote - 1 )+ ']}}" noteIndex="' + indexNote + '">' + indexNote + '</a>');
       }
       //Gets the notes if any
       //Adds them to the notes object

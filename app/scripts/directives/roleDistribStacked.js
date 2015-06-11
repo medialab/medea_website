@@ -6,7 +6,7 @@
  * @description
  * # bricks diagram
  */
-angular.module('driveoutApp')
+angular.module('driveoutApp.directives.roledistribstacked', [])
   .directive('roledistribstacked', function () {
     return {
       restrict: 'EA',

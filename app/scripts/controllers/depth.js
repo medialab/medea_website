@@ -7,7 +7,7 @@
  * # DepthCtrl
  * Controller of the driveoutApp
  */
-angular.module('driveoutApp')
+angular.module('driveoutApp.depth', [])
   .controller('DepthCtrl', function ($scope, items, parents, $routeParams) {
     $scope.items = items.data;
     $scope.$parent.folders = angular.copy(parents.data).filter(function(d) {

@@ -7,7 +7,7 @@
  * # files
  * Factory in the driveoutApp.
  */
-angular.module('driveoutApp')
+angular.module('driveoutApp.files', [])
   .factory('FilesFactory', function($http){
     return {
         get: function(options) {

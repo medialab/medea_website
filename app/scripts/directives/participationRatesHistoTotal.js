@@ -6,7 +6,7 @@
  * @description
  * # bricks diagram
  */
-angular.module('driveoutApp')
+angular.module('driveoutApp.directives.partratehistototal', [])
   .directive('participationrateshistototal', function () {
     return {
       restrict: 'EA',

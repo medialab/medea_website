@@ -5,7 +5,7 @@
     <div class="slider fill-height overflow">
       <section ng-repeat="section in sections" id="{{'chapter_' + $index}}">
         <h3>{{section.title}}</h3>
-        <div ng-bind-html= "section.html|unsafeHtml"></div>
+        <div sectiontoinsert sectionhtml="section.html"></div>
         <br/>
       </section>
     </div>

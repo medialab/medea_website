@@ -6,7 +6,7 @@
  * @description
  * # enbgraph
  */
-angular.module('driveoutApp')
+angular.module('driveoutApp.directives.enb', [])
   .directive('enbgraph', function () {
     return {
       restrict: 'EA',

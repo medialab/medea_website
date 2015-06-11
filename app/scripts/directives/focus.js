@@ -6,7 +6,7 @@
  * @description
  * # focus
  */
-angular.module('driveoutApp')
+angular.module('driveoutApp.directives.focus', [])
   .directive('focus', function (HTMLFactory) {
     return {
       scope: {

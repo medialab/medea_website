@@ -6,7 +6,7 @@
  * @description
  * # bricks diagram
  */
-angular.module('driveoutApp')
+angular.module('driveoutApp.directives.bricks', [])
   .directive('participationbychapters', function () {
     return {
       restrict: 'EA',

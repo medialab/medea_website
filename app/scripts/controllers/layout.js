@@ -7,7 +7,7 @@
  * # LayoutCtrl
  * Controller of the driveoutApp
  */
-angular.module('driveoutApp')
+angular.module('driveoutApp.layout', [])
   .controller('LayoutCtrl', function ($scope, $route, FilesFactory) {
     $scope.page = {};
 

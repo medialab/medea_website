@@ -6,7 +6,7 @@
  * @description
  * # bricks diagram
  */
-angular.module('driveoutApp')
+angular.module('driveoutApp.directives.partcountrybridgenonbridge', [])
   .directive('partcountriesbridgenonbridge', function () {
     return {
       restrict: 'EA',

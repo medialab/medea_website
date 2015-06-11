@@ -6,17 +6,24 @@
  * @description The directove of directives
  * # zeppelin
  */
-angular.module('driveoutApp')
+angular.module('driveoutApp.directives.zeppelin', [])
   .filter('unsafe', function($sce) { return $sce.trustAsHtml; })
-  .directive('zeppelin', function() {
+  .directive('zeppelin', function($compile) {
     return {
       templateUrl: 'views/templates/zeppelin.html',
       scope:{
         sections: '='
       },
+      replace: true,
       link: function postLink(scope, element, attrs) {
         element.on('click', '[data-click]', function(e) {
           scope.$broadcast('focus', '' + $(this).attr('data-click'));
+        })
+
+        scope.$watch(attrs, function(html) {
+          console.log(attrs)
+          element.html(html);
+          $compile(element.contents())(scope);
         })
 
         //Scroll spy for the narratives' text
@@ -79,10 +86,7 @@ angular.module('driveoutApp')
          */
 
         element.on('click', '[noteIndex]', function(e) {
-          // e.preventDefault();
-          console.log($('[data-toggle="popover"]'));
-          $('[data-toggle="popover"]').popover();
-
+          e.preventDefault();
           var noteNumber = + $(this).attr('noteIndex');
           console.log(noteNumber, scope.sections[scope.$parent.index].notes[noteNumber-1]);
         });

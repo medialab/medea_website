@@ -6,7 +6,7 @@
  * @description
  * # ipccwgvenn
  */
-angular.module('driveoutApp')
+angular.module('driveoutApp.directives.wenn', [])
   .directive('ipccwgvenn', function () {
     return {
       restrict: 'EA',

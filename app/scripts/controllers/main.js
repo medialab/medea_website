@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of the driveoutApp
  */
-angular.module('driveoutApp')
+angular.module('driveoutApp.main', [])
   .controller('MainCtrl', function ($scope, content) {
 
     $scope.content = content.data;

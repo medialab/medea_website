@@ -9,14 +9,25 @@
  * Main module of the application.
  */
 angular
-  .module('driveoutApp', [
-    //'ngAnimate',
+  .module('driveoutApp.global', [
+    'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
     'ui.bootstrap',
-    'ngTouch'
+    'ngTouch',
+    'driveoutApp.404',
+    'driveoutApp.about',
+    'driveoutApp.content',
+    'driveoutApp.depth',
+    'driveoutApp.layout',
+    'driveoutApp.main',
+    'driveoutApp.page',
+    'driveoutApp.subchapter',
+    'driveoutApp.directives',
+    'driveoutApp.files',
+    'driveoutApp.filters'
   ])
   .config(function ($routeProvider) {
     $routeProvider

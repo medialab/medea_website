@@ -6,7 +6,7 @@
  * @description
  * # donut
  */
-angular.module('driveoutApp')
+angular.module('driveoutApp.directives.image', [])
   .directive('imageFirst', function () {
     return {
       template: '<div></div>',

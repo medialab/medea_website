@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="driveoutApp.global">
 
 <head>
   <meta charset="utf-8">
@@ -22,7 +22,7 @@
   <!-- endbuild -->
 </head>
 
-<body ng-app="driveoutApp">
+<body>
   <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
@@ -80,10 +80,9 @@
   <script src="scripts/lib/sigma.min.js"></script>
   <script src="scripts/lib/sigma.parsers.gexf.min.js"></script>
   <script src="scripts/lib/sigma.plugins.neighborhood.min.js"></script>
-  <script src="scripts/lib/bootstrap.min.js"></script>
-  <script src="scripts/lib/ui-bootstrap-0.9.0.min.js"></script>
   <script src="scripts/lib/venn.js"></script>
   <!-- external -->
+  <script src="scripts/app.js"></script>
   <script src="scripts/external/bricks-partByChapters.js"></script>
   <script src="scripts/external/participationRatesHisto.js"></script>
   <script src="scripts/external/roleDistribStacked.js"></script>
@@ -92,7 +91,6 @@
   <script src="scripts/external/ipcc-wg-venn.js"></script>
   <script src="scripts/external/ipcc-people-lines.js"></script>
   <!-- build:js({.tmp,app}) scripts/scripts.js -->
-  <script src="scripts/app.js"></script>
   <script src="scripts/controllers/main.js"></script>
   <script src="scripts/controllers/about.js"></script>
   <script src="scripts/services/files.js"></script>
@@ -103,6 +101,7 @@
   <!-- <script src="scripts/directives/scrollbar.js"></script> -->
   <script src="scripts/controllers/404.js"></script>
   <script src="scripts/controllers/depth.js"></script>
+  <script src="scripts/directives/directives.js"></script>
   <script src="scripts/directives/donut.js"></script>
   <script src="scripts/directives/bricks-partByChapters.js"></script>
   <script src="scripts/directives/participationRatesHisto.js"></script>
@@ -113,6 +112,7 @@
   <script src="scripts/directives/zeppelin.js"></script>
   <script src="scripts/directives/top-menu.js"></script>
   <script src="scripts/directives/subchapters.js"></script>
+  <script src="scripts/directives/section.js"></script>
   <script src="scripts/filters/unsafehtml.js"></script>
   <script src="scripts/directives/enbgraph.js"></script>
   <script src="scripts/directives/ipcc-wg-venn.js"></script>

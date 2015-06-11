@@ -8,7 +8,7 @@
  * # unsafeHtml
  * Filter in the driveoutApp.
  */
-angular.module('driveoutApp')
+angular.module('driveoutApp.filters', [])
   .filter('unsafeHtml', function ($sce) {
     return function (input) {
       return $sce.trustAsHtml(input);

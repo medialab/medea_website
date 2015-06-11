@@ -7,6 +7,6 @@
  * # 404Ctrl
  * Controller of the driveoutApp
  */
-angular.module('driveoutApp')
+angular.module('driveoutApp.404', [])
   .controller('404Ctrl', function ($scope) {
   });

@@ -1,4 +1,4 @@
-angular.module('driveoutApp')
+angular.module('driveoutApp.subchapter', [])
   .controller('SubchapterCtrl', function ($scope) {
     /**
      * This part of the code is dedicated to automatically choose the number

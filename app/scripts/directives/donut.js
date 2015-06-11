@@ -6,7 +6,7 @@
  * @description
  * # donut
  */
-angular.module('driveoutApp')
+angular.module('driveoutApp.directives.donut', [])
   .directive('donut', function () {
     return {
       template: '<div></div>',

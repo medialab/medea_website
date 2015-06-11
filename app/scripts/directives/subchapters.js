@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('driveoutApp')
+angular.module('driveoutApp.directives.subchapters', [])
   .directive('subchapters', function () {
     return {
       templateUrl: 'views/templates/subchapters.html',

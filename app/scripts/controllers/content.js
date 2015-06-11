@@ -1,4 +1,4 @@
-angular.module('driveoutApp')
+angular.module('driveoutApp.content', ['ui.bootstrap'])
   .controller('contentCtrl', function($window, $scope, $element, $attrs) {
         var w = angular.element($window);
 

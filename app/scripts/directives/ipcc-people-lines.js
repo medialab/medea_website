@@ -6,7 +6,7 @@
  * @description
  * # ipcc-wg-venn
  */
-angular.module('driveoutApp')
+angular.module('driveoutApp.directives.peoplelines', [])
   .directive('ipccpeoplelines', function () {
     return {
       restrict: 'EA',
