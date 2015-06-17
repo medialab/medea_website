@@ -20,6 +20,21 @@ rect {
   max-height: 100%;
 }
 
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.fillComplement {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+.fillComplement > canvas {
+  width: auto;
+  display: block;
+  margin: auto;
+  height: 100%;
+}
 
 /*********************************************************************
  *************************** StackedChart

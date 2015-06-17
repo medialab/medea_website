@@ -1,0 +1,1927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2015-06-16">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="attr_type" title="Type" type="string"></attribute>
+      <attribute id="global_occurrences" title="Occurrences Count" type="integer"></attribute>
+      <attribute id="attr_1_2" title="WG" type="string"></attribute>
+    </attributes>
+    <attributes class="edge" mode="static">
+      <attribute id="attr_type" title="Type" type="string"></attribute>
+      <attribute id="matchings_count" title="Matchings Count" type="integer"></attribute>
+    </attributes>
+    <nodes>
+      <node id="author_022d5af2fe9431572c28f70fae312443" label="A. Underdal">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="-251.13414" y="584.78973" z="0.0"></viz:position>
+        <viz:color r="127" g="255" b="0"></viz:color>
+      </node>
+      <node id="author_46cb586599a2de6fb317c906e1256248" label="B. Blair Fitzharris">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="5"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="26.666666"></viz:size>
+        <viz:position x="732.6827" y="-250.936" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_fd9f1e8321e9b75f540daddb7eff2985" label="Bryson C. Bates">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="491.0242" y="175.79431" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_c8185a525b41f9c9bc596ea6a20ffeec" label="D. Keith">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="-349.26675" y="-65.25792" z="0.0"></viz:position>
+        <viz:color r="127" g="255" b="0"></viz:color>
+      </node>
+      <node id="author_cd0fbd5ee8e3e7ed201e4e69d9ffbd8d" label="D.l. Mauzerall">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="-661.74536" y="-18.136076" z="0.0"></viz:position>
+        <viz:color r="127" g="255" b="0"></viz:color>
+      </node>
+      <node id="author_be2a6fda1f06da1b60fcb34058347549" label="Dahe Qin">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="3"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="357.33966" y="222.66638" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_67b62bc37dd87dd5a193dc9287676c50" label="David Schimel">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="-0.118468456" y="166.50853" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_907e4743af5f2be44a9e9c8abd9ef32a" label="David Vaughan">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="455.61438" y="-63.36276" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_52bd9caf0b03afb6a7de321e05bb6c7c" label="E.ya. Rankova">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="28.488646" y="298.5643" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_e31ccd24ad8cf56f2ee1f8287b25df43" label="Emilio Lebre La Rovere">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="4"></attvalue>
+          <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="23.333334"></viz:size>
+        <viz:position x="615.5726" y="-160.68964" z="0.0"></viz:position>
+        <viz:color r="255" g="140" b="0"></viz:color>
+      </node>
+      <node id="author_3545b49225576b41d13202e7b8108d4c" label="Evan Mills">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="5"></attvalue>
+          <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="26.666666"></viz:size>
+        <viz:position x="726.74475" y="-107.98176" z="0.0"></viz:position>
+        <viz:color r="255" g="140" b="0"></viz:color>
+      </node>
+      <node id="author_3f47d15f4ab6fbee9dabb0482c2adb3a" label="Ferenc L. Toth">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="6"></attvalue>
+          <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="30.0"></viz:size>
+        <viz:position x="-441.16748" y="-419.35583" z="0.0"></viz:position>
+        <viz:color r="255" g="140" b="0"></viz:color>
+      </node>
+      <node id="author_5670ccb51a17d022096af91bbe187a7d" label="Frederick H.m. Semazzi">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="4"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="23.333334"></viz:size>
+        <viz:position x="-109.32066" y="689.8897" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_d85fc325121db760b5d5ab7d5686b5f4" label="Gary W. Yohe">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="4"></attvalue>
+          <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="23.333334"></viz:size>
+        <viz:position x="615.4585" y="-299.54276" z="0.0"></viz:position>
+        <viz:color r="255" g="140" b="0"></viz:color>
+      </node>
+      <node id="author_824ecd1a1d9107193a356cc6557ba119" label="Haroon S. Kheshgi">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="5"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="26.666666"></viz:size>
+        <viz:position x="-327.89188" y="633.53766" z="0.0"></viz:position>
+        <viz:color r="127" g="255" b="0"></viz:color>
+      </node>
+      <node id="author_194da61acf9c400cedea79e7b70c8695" label="James A. Renwick">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="28.50139" y="261.89716" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_03aab89f1c37ed3fe13c79045a30827c" label="Jason A. Lowe">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="291.6222" y="386.3823" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_b8d50b382e7422f6f1979d4a0d11b4a6" label="John M. Christensen">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="3"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="-640.4233" y="-97.02008" z="0.0"></viz:position>
+        <viz:color r="127" g="255" b="0"></viz:color>
+      </node>
+      <node id="author_528233d30d282add96a6aa7d1c1c8e99" label="John P. Weyant">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="5"></attvalue>
+          <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="26.666666"></viz:size>
+        <viz:position x="-223.3709" y="-701.51996" z="0.0"></viz:position>
+        <viz:color r="255" g="140" b="0"></viz:color>
+      </node>
+      <node id="author_65831e51ede397d333e8284c48a1f820" label="Jonathan M. Gregory">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="4"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="23.333334"></viz:size>
+        <viz:position x="-92.33399" y="749.7524" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_fc27b45f09b00d5b2043a0e10febf298" label="José Marengo">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="3"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="156.37224" y="404.58508" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_8b6a6ce4c1e58e6d088a23b1d1648683" label="Ken Gregory">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="4"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="23.333334"></viz:size>
+        <viz:position x="-417.2214" y="-362.83295" z="0.0"></viz:position>
+        <viz:color r="127" g="255" b="0"></viz:color>
+      </node>
+      <node id="author_644e19d2af6e3e2cdadafd8a96eba18b" label="Kevin Walsh">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="3"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="19.124681" y="511.1577" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_16c397736db1becf613a3109b360b1f4" label="Kirit S. Parikh">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="415.271" y="-295.51984" z="0.0"></viz:position>
+        <viz:color r="255" g="140" b="0"></viz:color>
+      </node>
+      <node id="author_c2e8ae633e38d80c340140cb23034dec" label="Laban J. Ogallo">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="449.3119" y="-188.56113" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_7230e4d5de0a31a3161f8764a1abeab1" label="Lee Ann Kozak">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="512.2217" y="-13.065819" z="0.0"></viz:position>
+        <viz:color r="255" g="140" b="0"></viz:color>
+      </node>
+      <node id="author_eee492962d16b17a8a7d86457d2a3f63" label="Linda O. Mearns">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="6"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="30.0"></viz:size>
+        <viz:position x="125.030464" y="831.1014" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_9dcb518967dd56fac7567de898aa1fd6" label="Luis Jose Mata">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="7"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="33.333332"></viz:size>
+        <viz:position x="385.53455" y="350.8564" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_3060ec3774018d7a4fc093a49cf59b9d" label="M. Manning">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="482.92337" y="-254.5544" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_07823551c9d15e05fda8bd262ff5a077" label="Mack Mcfarland">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="4"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="23.333334"></viz:size>
+        <viz:position x="-227.11209" y="414.30237" z="0.0"></viz:position>
+        <viz:color r="127" g="255" b="0"></viz:color>
+      </node>
+      <node id="author_b287ddcf1791e46710ea9ec600cbea1f" label="Michael J. Apps">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="308.9061" y="-304.76376" z="0.0"></viz:position>
+        <viz:color r="255" g="140" b="0"></viz:color>
+      </node>
+      <node id="author_886a7d187b25e2afd21ef8db4cb66de9" label="Mike Hulme">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="7"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="33.333332"></viz:size>
+        <viz:position x="85.53291" y="724.0322" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_5290059870ec0f5c15439d7b172552a9" label="Murari Lal">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="7"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="33.333332"></viz:size>
+        <viz:position x="545.65094" y="61.889946" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_59ab8070179f1c76de877ba76cb779ae" label="Nebojsa Nakicenovic">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="3"></attvalue>
+          <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="-0.030728433" y="-370.4354" z="0.0"></viz:position>
+        <viz:color r="255" g="140" b="0"></viz:color>
+      </node>
+      <node id="author_a67984a2034fe0687e710c8ebad0e3a5" label="Oleg A. Anisimov">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="5"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="26.666666"></viz:size>
+        <viz:position x="702.3524" y="-198.8664" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_017cba3cdc7f20d59f3e9a6ebaaa4ae3" label="Richard G. Richels">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="7"></attvalue>
+          <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="33.333332"></viz:size>
+        <viz:position x="-146.8588" y="-329.65277" z="0.0"></viz:position>
+        <viz:color r="255" g="140" b="0"></viz:color>
+      </node>
+      <node id="author_2b80aed41cb5ccd9eea71eeb16daa57b" label="Richard S.j. Tol">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="548.64075" y="-128.58997" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_40045f9701a22f61a8d1177908c39867" label="Rik Leemans">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="4"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="23.333334"></viz:size>
+        <viz:position x="586.6892" y="110.01597" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_66ee20ad21751d188b1577c1b1c0ae99" label="Robert (bob) J. Scholes">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="5"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="26.666666"></viz:size>
+        <viz:position x="214.95505" y="348.1547" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_bbcf25d1b8314f92a5fac198a2cda52a" label="Roger N. Jones">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="7"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="33.333332"></viz:size>
+        <viz:position x="654.0718" y="201.0188" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_1b6dc2a5b4690aa7f30a56979101c427" label="Sandra Brown">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="4"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="23.333334"></viz:size>
+        <viz:position x="714.84155" y="-33.30345" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_7b4fd4cb32b0b89c38aec7a82d4b0b22" label="Seita Emori">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="263.65244" y="461.72678" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_115b790cd7abcc6f28864242003bec92" label="Sujata Gupta">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="4"></attvalue>
+          <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="23.333334"></viz:size>
+        <viz:position x="561.65155" y="-221.31567" z="0.0"></viz:position>
+        <viz:color r="255" g="140" b="0"></viz:color>
+      </node>
+      <node id="author_518144b9b1a5de363267d8e51daa8b1c" label="T.l. Schneider">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="705.66705" y="518.6737" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_cd48340918de7b51e0df4dc0b7498fd6" label="Thomas E. Downing">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="4"></attvalue>
+          <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="23.333334"></viz:size>
+        <viz:position x="754.2326" y="74.83255" z="0.0"></viz:position>
+        <viz:color r="255" g="140" b="0"></viz:color>
+      </node>
+      <node id="author_295c3732c4587e2b205e0625151a7646" label="Timothy Carter">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="5"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="26.666666"></viz:size>
+        <viz:position x="662.01385" y="144.61992" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_fc4a80db52d6130fb750be28e609a743" label="Tom M.l. Wigley">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="4"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="23.333334"></viz:size>
+        <viz:position x="-115.673775" y="460.93073" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_8775ac0f80ffec98c88d749115141f8f" label="Toru Nozawa">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="231.58035" y="425.727" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_c47369b0bc3ac7ad70dbbb09f698da98" label="W. Fraser">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="86.34326" y="438.91174" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_c573929bf1705584c6079378b452a48f" label="W. North">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="317.74338" y="656.0119" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_ae55960d70ab852b3a430e9b51d2a6c7" label="Wolfgang P. Cramer">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="4"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="23.333334"></viz:size>
+        <viz:position x="527.285" y="239.91692" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="chapter_f28cfb6120c395df00e7918b2152f236" label="The Climate System: an Overview">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="13.333334"></viz:size>
+        <viz:position x="-866.0254" y="500.0" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_888b625c19f9caf508d4580dfda8b21f" label="Regional Climate Information - Evaluation and Projections">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="17"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="40.0"></viz:size>
+        <viz:position x="-346.41016" y="800.0" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_61554d578da60936c83d9d24c9158f6d" label="Changes in Sea Level">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="11"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="26.666666"></viz:size>
+        <viz:position x="-288.67508" y="833.3334" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_055567780bb74bf475b22d7cd412daca" label="Detection of Climate Change and Attribution of Causes">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="12"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="30.0"></viz:size>
+        <viz:position x="-230.94011" y="866.6666" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_b54e59270be1bb1585497313ae11f089" label="Climate Scenario Development">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="12"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="33.333332"></viz:size>
+        <viz:position x="-173.20505" y="899.99994" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_92a4c4d3dcf4f54484d3718b8dce68a0" label="Advancing our Understanding">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="3"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="-115.47003" y="933.3333" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_d39e8ae95ea13e1ab574fcadc0c1a26a" label="Observed Climate Variability and Change">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="25"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="36.666668"></viz:size>
+        <viz:position x="-808.2904" y="533.3333" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_8c51b1ee37f2caf7a09f3bd56f6ff37c" label="The Carbon Cycle and Atmospheric Carbon Dioxide">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="11"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="-750.5553" y="566.6666" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_ba40e12bd5d12d6a4f6110af6b13379f" label="Atmospheric Chemistry and Greenhouse Gases">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="14"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="26.666666"></viz:size>
+        <viz:position x="-692.8203" y="599.99994" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_15a35238d9c1a8d998621722d68cf47b" label="AER, their Direct and Indirect Effects">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-635.08527" y="633.33325" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_275e3dc3fb8a2cae2a7931c302f9792a" label="Radiative Forcing of Climate Change">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="5"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="13.333334"></viz:size>
+        <viz:position x="-577.3503" y="666.6666" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_dff36ca080bcb7e2da27a50acdece7f4" label="Physical Climate Processes and Feedbacks">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="5"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="13.333334"></viz:size>
+        <viz:position x="-519.6153" y="700.00006" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_89c3123a77bf0dfda394f6b1915f7c32" label="Model Evaluation">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="9"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="26.666666"></viz:size>
+        <viz:position x="-461.8802" y="733.3334" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_f3c2b00900a518d58afa93c6b6f7e11b" label="Projections of Future Climate Change">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="10"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="23.333334"></viz:size>
+        <viz:position x="-404.14517" y="766.6667" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_46e43c0268bc0d6f43c651fdf4248308" label="Summary For Policy Makers">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="21"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="33.333332"></viz:size>
+        <viz:position x="-57.73502" y="966.6667" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_4e436745ecad8561df9946bf60596157" label="Technical Summary">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="22"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="33.333332"></viz:size>
+        <viz:position x="-2.8154932E-6" y="1000.0" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_302b89b3622aad0e7629f000154931cf" label="Overview of Impacts, Adaptation and Vulnerability to Climate Change">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="3"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="866.0254" y="500.0" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_dfae4983894a5cd52c16147ec33fb3a3" label="Africa">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="10"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="866.0254" y="111.11112" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_b0ce1396f47e99865d9403b13bf99103" label="Asia">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="5"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="23.333334"></viz:size>
+        <viz:position x="866.0254" y="55.555576" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_f4fb03adad7bff4c6774cf0b5b820dd1" label="Australia and New Zealand">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="11"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="23.333334"></viz:size>
+        <viz:position x="866.0254" y="2.52707E-5" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_dea6a4e969e7b48c85d621b7bb76f8f7" label="Europe">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="6"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="23.333334"></viz:size>
+        <viz:position x="866.02545" y="-55.55551" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_cb7a8b47e7205ba876ec26f0f8a32bdf" label="Latin America">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="5"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="866.02545" y="-111.11109" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_9294722bb3a829b35432c91bc9ad8b5b" label="North America">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="4"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="866.02545" y="-166.66666" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_65e250162ba68c926bb47dbda8a75d59" label="Polar Regions">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="7"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="23.333334"></viz:size>
+        <viz:position x="866.0254" y="-222.22218" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_2ea6e887fd95e69ad166acf94ebb53bf" label="Small Island States">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="3"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="866.0254" y="-277.7778" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_24374324c0e4fc6602a9ada9bb8324f5" label="Adaptation to Climate Change in the Context of Sustainable Development and Equity">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="4"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="866.0254" y="-333.33334" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_0f7c4b144772488c61a94370eaea4495" label="Vulnerability to Climate Change and Reasons for Concern: A Synthesis">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="15"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="33.333332"></viz:size>
+        <viz:position x="866.0253" y="-388.88876" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_1f716c5d9c19deea116e56f92578a53d" label="Methods and Tools">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="11"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="36.666668"></viz:size>
+        <viz:position x="866.02545" y="455.9832" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_ec4104d795b8d4863d448e2ffc350ef0" label="Developing and Applying Scenarios">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="12"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="33.333332"></viz:size>
+        <viz:position x="866.0254" y="388.88892" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_afaa3f6b52bc0a8a1ad2a5baf2e8dadc" label="Hydrology and Water Resources">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="866.02545" y="333.3333" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_481cd5fd3a61ff0c39d14f89cf32dbdd" label="Ecosystems and Their Goods and Services">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="13"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="23.333334"></viz:size>
+        <viz:position x="866.0254" y="277.7778" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_82c1317d1b90479fef94180cc3ea3406" label="Human Settlements, Energy and Industry">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="13.333334"></viz:size>
+        <viz:position x="864.0741" y="231.97838" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_ea63f4b2c7d49e6282914069b64d4846" label="Insurance and Other Financial Services">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="3"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="866.02545" y="166.66664" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_36a4666c8ad5810f7544b89d77f5acb7" label="Summary For Policy Makers">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="22"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="50.0"></viz:size>
+        <viz:position x="866.0254" y="-444.44443" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_c7383d91a9ac981f738bc7a680f040f1" label="Technical Summary">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="18"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="43.333332"></viz:size>
+        <viz:position x="866.0254" y="-500.0" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_a74b8d5a718252273a4587d4e2ff7928" label="Setting the Stage: Climate Change and Sustainable Development">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="7"></attvalue>
+          <attvalue for="attr_1_2" value="WG III"></attvalue>
+        </attvalues>
+        <viz:size value="26.666666"></viz:size>
+        <viz:position x="2.8154932E-6" y="-1000.0" z="0.0"></viz:position>
+        <viz:color r="255" g="215" b="0"></viz:color>
+      </node>
+      <node id="chapter_94beb85fe8cd7a530f8f094d73ba1b3f" label="Decision-making Frameworks">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="9"></attvalue>
+          <attvalue for="attr_1_2" value="WG III"></attvalue>
+        </attvalues>
+        <viz:size value="26.666666"></viz:size>
+        <viz:position x="-708.56616" y="-590.9092" z="0.0"></viz:position>
+        <viz:color r="255" g="215" b="0"></viz:color>
+      </node>
+      <node id="chapter_4712eeddc2f9031a874da7271830bc69" label="Greenhouse Gas Emission Mitigation Scenarios and Implications">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="5"></attvalue>
+          <attvalue for="attr_1_2" value="WG III"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="-78.72952" y="-954.5455" z="0.0"></viz:position>
+        <viz:color r="255" g="215" b="0"></viz:color>
+      </node>
+      <node id="chapter_9d2892de240a8f8a3b7a2ba65ffc1416" label="Technological and Economic Potential of Greenhouse Gas Emissions Reduction">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="13"></attvalue>
+          <attvalue for="attr_1_2" value="WG III"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="-157.45926" y="-909.0909" z="0.0"></viz:position>
+        <viz:color r="255" g="215" b="0"></viz:color>
+      </node>
+      <node id="chapter_75912dd4fe3832ace1523013642a0b72" label="Technological and Economic Potential of Options to Enhance, Maintain, and Manage Biological Carbon Reservoirs and Geo-engineering">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="10"></attvalue>
+          <attvalue for="attr_1_2" value="WG III"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="-236.18874" y="-863.6364" z="0.0"></viz:position>
+        <viz:color r="255" g="215" b="0"></viz:color>
+      </node>
+      <node id="chapter_58fc8065036f29dc4fea00edbb2bed9c" label="Barriers, Opportunities, and market Potential of Technologies and Practices">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="4"></attvalue>
+          <attvalue for="attr_1_2" value="WG III"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-314.91833" y="-818.1818" z="0.0"></viz:position>
+        <viz:color r="255" g="215" b="0"></viz:color>
+      </node>
+      <node id="chapter_50ca13dc3765822df207b79b5e9c8c37" label="Policies, Measures and Instruments">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG III"></attvalue>
+        </attvalues>
+        <viz:size value="13.333334"></viz:size>
+        <viz:position x="-393.64786" y="-772.72723" z="0.0"></viz:position>
+        <viz:color r="255" g="215" b="0"></viz:color>
+      </node>
+      <node id="chapter_d7dbe858d730e1b490da6dc3b0f14862" label="Costing Methodologies">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="1"></attvalue>
+          <attvalue for="attr_1_2" value="WG III"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-472.3775" y="-727.27277" z="0.0"></viz:position>
+        <viz:color r="255" g="215" b="0"></viz:color>
+      </node>
+      <node id="chapter_0a59cc9db7f453554ccd82a165103f85" label="Global, Regional and National Costs and Ancillary Benefits of Mitigation">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="5"></attvalue>
+          <attvalue for="attr_1_2" value="WG III"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="-551.1071" y="-681.8182" z="0.0"></viz:position>
+        <viz:color r="255" g="215" b="0"></viz:color>
+      </node>
+      <node id="chapter_bd00141ad91962747cfc90eb155a9545" label="Sector Costs and Ancillary Benefits of Mitigation">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG III"></attvalue>
+        </attvalues>
+        <viz:size value="16.666668"></viz:size>
+        <viz:position x="-629.8366" y="-636.36365" z="0.0"></viz:position>
+        <viz:color r="255" g="215" b="0"></viz:color>
+      </node>
+      <node id="chapter_729b6441153da58684e9dbe8b9b9d9b7" label="Summary For Policy Makers">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="19"></attvalue>
+          <attvalue for="attr_1_2" value="WG III"></attvalue>
+        </attvalues>
+        <viz:size value="26.666666"></viz:size>
+        <viz:position x="-787.29584" y="-545.4545" z="0.0"></viz:position>
+        <viz:color r="255" g="215" b="0"></viz:color>
+      </node>
+      <node id="chapter_4d6fa8a158bc6fe968fd40ef580ea7d9" label="Technical Summary">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="14"></attvalue>
+          <attvalue for="attr_1_2" value="WG III"></attvalue>
+        </attvalues>
+        <viz:size value="23.333334"></viz:size>
+        <viz:position x="-866.0254" y="-500.0" z="0.0"></viz:position>
+        <viz:color r="255" g="215" b="0"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="author_022d5af2fe9431572c28f70fae312443" target="chapter_92a4c4d3dcf4f54484d3718b8dce68a0" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_022d5af2fe9431572c28f70fae312443" target="chapter_94beb85fe8cd7a530f8f094d73ba1b3f" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_46cb586599a2de6fb317c906e1256248" target="chapter_61554d578da60936c83d9d24c9158f6d" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_46cb586599a2de6fb317c906e1256248" target="chapter_65e250162ba68c926bb47dbda8a75d59" weight="4.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_46cb586599a2de6fb317c906e1256248" target="chapter_1f716c5d9c19deea116e56f92578a53d" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_46cb586599a2de6fb317c906e1256248" target="chapter_36a4666c8ad5810f7544b89d77f5acb7" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_46cb586599a2de6fb317c906e1256248" target="chapter_c7383d91a9ac981f738bc7a680f040f1" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_fd9f1e8321e9b75f540daddb7eff2985" target="chapter_888b625c19f9caf508d4580dfda8b21f" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_fd9f1e8321e9b75f540daddb7eff2985" target="chapter_f4fb03adad7bff4c6774cf0b5b820dd1" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_c8185a525b41f9c9bc596ea6a20ffeec" target="chapter_89c3123a77bf0dfda394f6b1915f7c32" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_c8185a525b41f9c9bc596ea6a20ffeec" target="chapter_75912dd4fe3832ace1523013642a0b72" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_cd0fbd5ee8e3e7ed201e4e69d9ffbd8d" target="chapter_ba40e12bd5d12d6a4f6110af6b13379f" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_cd0fbd5ee8e3e7ed201e4e69d9ffbd8d" target="chapter_bd00141ad91962747cfc90eb155a9545" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_be2a6fda1f06da1b60fcb34058347549" target="chapter_61554d578da60936c83d9d24c9158f6d" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_be2a6fda1f06da1b60fcb34058347549" target="chapter_65e250162ba68c926bb47dbda8a75d59" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_be2a6fda1f06da1b60fcb34058347549" target="chapter_2ea6e887fd95e69ad166acf94ebb53bf" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_67b62bc37dd87dd5a193dc9287676c50" target="chapter_f28cfb6120c395df00e7918b2152f236" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_67b62bc37dd87dd5a193dc9287676c50" target="chapter_9294722bb3a829b35432c91bc9ad8b5b" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_907e4743af5f2be44a9e9c8abd9ef32a" target="chapter_d39e8ae95ea13e1ab574fcadc0c1a26a" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_907e4743af5f2be44a9e9c8abd9ef32a" target="chapter_65e250162ba68c926bb47dbda8a75d59" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_52bd9caf0b03afb6a7de321e05bb6c7c" target="chapter_d39e8ae95ea13e1ab574fcadc0c1a26a" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_52bd9caf0b03afb6a7de321e05bb6c7c" target="chapter_b0ce1396f47e99865d9403b13bf99103" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_e31ccd24ad8cf56f2ee1f8287b25df43" target="chapter_ec4104d795b8d4863d448e2ffc350ef0" weight="4.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_e31ccd24ad8cf56f2ee1f8287b25df43" target="chapter_36a4666c8ad5810f7544b89d77f5acb7" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_e31ccd24ad8cf56f2ee1f8287b25df43" target="chapter_c7383d91a9ac981f738bc7a680f040f1" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_e31ccd24ad8cf56f2ee1f8287b25df43" target="chapter_4712eeddc2f9031a874da7271830bc69" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_3545b49225576b41d13202e7b8108d4c" target="chapter_9294722bb3a829b35432c91bc9ad8b5b" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_3545b49225576b41d13202e7b8108d4c" target="chapter_ea63f4b2c7d49e6282914069b64d4846" weight="4.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_3545b49225576b41d13202e7b8108d4c" target="chapter_36a4666c8ad5810f7544b89d77f5acb7" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_3545b49225576b41d13202e7b8108d4c" target="chapter_c7383d91a9ac981f738bc7a680f040f1" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_3545b49225576b41d13202e7b8108d4c" target="chapter_9d2892de240a8f8a3b7a2ba65ffc1416" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_3f47d15f4ab6fbee9dabb0482c2adb3a" target="chapter_1f716c5d9c19deea116e56f92578a53d" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_3f47d15f4ab6fbee9dabb0482c2adb3a" target="chapter_a74b8d5a718252273a4587d4e2ff7928" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_3f47d15f4ab6fbee9dabb0482c2adb3a" target="chapter_94beb85fe8cd7a530f8f094d73ba1b3f" weight="4.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_3f47d15f4ab6fbee9dabb0482c2adb3a" target="chapter_0a59cc9db7f453554ccd82a165103f85" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_3f47d15f4ab6fbee9dabb0482c2adb3a" target="chapter_729b6441153da58684e9dbe8b9b9d9b7" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_3f47d15f4ab6fbee9dabb0482c2adb3a" target="chapter_4d6fa8a158bc6fe968fd40ef580ea7d9" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_5670ccb51a17d022096af91bbe187a7d" target="chapter_888b625c19f9caf508d4580dfda8b21f" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_5670ccb51a17d022096af91bbe187a7d" target="chapter_055567780bb74bf475b22d7cd412daca" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_5670ccb51a17d022096af91bbe187a7d" target="chapter_89c3123a77bf0dfda394f6b1915f7c32" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_5670ccb51a17d022096af91bbe187a7d" target="chapter_dfae4983894a5cd52c16147ec33fb3a3" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_d85fc325121db760b5d5ab7d5686b5f4" target="chapter_24374324c0e4fc6602a9ada9bb8324f5" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_d85fc325121db760b5d5ab7d5686b5f4" target="chapter_0f7c4b144772488c61a94370eaea4495" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_d85fc325121db760b5d5ab7d5686b5f4" target="chapter_1f716c5d9c19deea116e56f92578a53d" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_d85fc325121db760b5d5ab7d5686b5f4" target="chapter_a74b8d5a718252273a4587d4e2ff7928" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_824ecd1a1d9107193a356cc6557ba119" target="chapter_055567780bb74bf475b22d7cd412daca" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_824ecd1a1d9107193a356cc6557ba119" target="chapter_8c51b1ee37f2caf7a09f3bd56f6ff37c" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_824ecd1a1d9107193a356cc6557ba119" target="chapter_46e43c0268bc0d6f43c651fdf4248308" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_824ecd1a1d9107193a356cc6557ba119" target="chapter_4e436745ecad8561df9946bf60596157" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_824ecd1a1d9107193a356cc6557ba119" target="chapter_75912dd4fe3832ace1523013642a0b72" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_194da61acf9c400cedea79e7b70c8695" target="chapter_d39e8ae95ea13e1ab574fcadc0c1a26a" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_194da61acf9c400cedea79e7b70c8695" target="chapter_f4fb03adad7bff4c6774cf0b5b820dd1" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_03aab89f1c37ed3fe13c79045a30827c" target="chapter_61554d578da60936c83d9d24c9158f6d" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_03aab89f1c37ed3fe13c79045a30827c" target="chapter_dea6a4e969e7b48c85d621b7bb76f8f7" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_b8d50b382e7422f6f1979d4a0d11b4a6" target="chapter_888b625c19f9caf508d4580dfda8b21f" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_b8d50b382e7422f6f1979d4a0d11b4a6" target="chapter_94beb85fe8cd7a530f8f094d73ba1b3f" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_b8d50b382e7422f6f1979d4a0d11b4a6" target="chapter_4d6fa8a158bc6fe968fd40ef580ea7d9" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_528233d30d282add96a6aa7d1c1c8e99" target="chapter_0f7c4b144772488c61a94370eaea4495" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_528233d30d282add96a6aa7d1c1c8e99" target="chapter_a74b8d5a718252273a4587d4e2ff7928" weight="4.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_528233d30d282add96a6aa7d1c1c8e99" target="chapter_94beb85fe8cd7a530f8f094d73ba1b3f" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_528233d30d282add96a6aa7d1c1c8e99" target="chapter_729b6441153da58684e9dbe8b9b9d9b7" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_528233d30d282add96a6aa7d1c1c8e99" target="chapter_4d6fa8a158bc6fe968fd40ef580ea7d9" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_65831e51ede397d333e8284c48a1f820" target="chapter_61554d578da60936c83d9d24c9158f6d" weight="4.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_65831e51ede397d333e8284c48a1f820" target="chapter_f3c2b00900a518d58afa93c6b6f7e11b" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_65831e51ede397d333e8284c48a1f820" target="chapter_46e43c0268bc0d6f43c651fdf4248308" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_65831e51ede397d333e8284c48a1f820" target="chapter_2ea6e887fd95e69ad166acf94ebb53bf" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_fc27b45f09b00d5b2043a0e10febf298" target="chapter_055567780bb74bf475b22d7cd412daca" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_fc27b45f09b00d5b2043a0e10febf298" target="chapter_d39e8ae95ea13e1ab574fcadc0c1a26a" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_fc27b45f09b00d5b2043a0e10febf298" target="chapter_cb7a8b47e7205ba876ec26f0f8a32bdf" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_8b6a6ce4c1e58e6d088a23b1d1648683" target="chapter_89c3123a77bf0dfda394f6b1915f7c32" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_8b6a6ce4c1e58e6d088a23b1d1648683" target="chapter_4e436745ecad8561df9946bf60596157" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_8b6a6ce4c1e58e6d088a23b1d1648683" target="chapter_9d2892de240a8f8a3b7a2ba65ffc1416" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_8b6a6ce4c1e58e6d088a23b1d1648683" target="chapter_729b6441153da58684e9dbe8b9b9d9b7" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_644e19d2af6e3e2cdadafd8a96eba18b" target="chapter_888b625c19f9caf508d4580dfda8b21f" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_644e19d2af6e3e2cdadafd8a96eba18b" target="chapter_89c3123a77bf0dfda394f6b1915f7c32" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_644e19d2af6e3e2cdadafd8a96eba18b" target="chapter_f4fb03adad7bff4c6774cf0b5b820dd1" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_16c397736db1becf613a3109b360b1f4" target="chapter_1f716c5d9c19deea116e56f92578a53d" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_16c397736db1becf613a3109b360b1f4" target="chapter_a74b8d5a718252273a4587d4e2ff7928" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_c2e8ae633e38d80c340140cb23034dec" target="chapter_d39e8ae95ea13e1ab574fcadc0c1a26a" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_c2e8ae633e38d80c340140cb23034dec" target="chapter_0f7c4b144772488c61a94370eaea4495" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_7230e4d5de0a31a3161f8764a1abeab1" target="chapter_ea63f4b2c7d49e6282914069b64d4846" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_7230e4d5de0a31a3161f8764a1abeab1" target="chapter_bd00141ad91962747cfc90eb155a9545" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_eee492962d16b17a8a7d86457d2a3f63" target="chapter_888b625c19f9caf508d4580dfda8b21f" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_eee492962d16b17a8a7d86457d2a3f63" target="chapter_b54e59270be1bb1585497313ae11f089" weight="4.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_eee492962d16b17a8a7d86457d2a3f63" target="chapter_f3c2b00900a518d58afa93c6b6f7e11b" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_eee492962d16b17a8a7d86457d2a3f63" target="chapter_46e43c0268bc0d6f43c651fdf4248308" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_eee492962d16b17a8a7d86457d2a3f63" target="chapter_4e436745ecad8561df9946bf60596157" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_eee492962d16b17a8a7d86457d2a3f63" target="chapter_ec4104d795b8d4863d448e2ffc350ef0" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_9dcb518967dd56fac7567de898aa1fd6" target="chapter_b54e59270be1bb1585497313ae11f089" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_9dcb518967dd56fac7567de898aa1fd6" target="chapter_92a4c4d3dcf4f54484d3718b8dce68a0" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_9dcb518967dd56fac7567de898aa1fd6" target="chapter_46e43c0268bc0d6f43c651fdf4248308" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_9dcb518967dd56fac7567de898aa1fd6" target="chapter_4e436745ecad8561df9946bf60596157" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_9dcb518967dd56fac7567de898aa1fd6" target="chapter_cb7a8b47e7205ba876ec26f0f8a32bdf" weight="4.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_9dcb518967dd56fac7567de898aa1fd6" target="chapter_36a4666c8ad5810f7544b89d77f5acb7" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_9dcb518967dd56fac7567de898aa1fd6" target="chapter_c7383d91a9ac981f738bc7a680f040f1" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_3060ec3774018d7a4fc093a49cf59b9d" target="chapter_ba40e12bd5d12d6a4f6110af6b13379f" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_3060ec3774018d7a4fc093a49cf59b9d" target="chapter_c7383d91a9ac981f738bc7a680f040f1" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_07823551c9d15e05fda8bd262ff5a077" target="chapter_ba40e12bd5d12d6a4f6110af6b13379f" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_07823551c9d15e05fda8bd262ff5a077" target="chapter_46e43c0268bc0d6f43c651fdf4248308" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_07823551c9d15e05fda8bd262ff5a077" target="chapter_4e436745ecad8561df9946bf60596157" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_07823551c9d15e05fda8bd262ff5a077" target="chapter_9d2892de240a8f8a3b7a2ba65ffc1416" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_b287ddcf1791e46710ea9ec600cbea1f" target="chapter_481cd5fd3a61ff0c39d14f89cf32dbdd" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_b287ddcf1791e46710ea9ec600cbea1f" target="chapter_75912dd4fe3832ace1523013642a0b72" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_886a7d187b25e2afd21ef8db4cb66de9" target="chapter_888b625c19f9caf508d4580dfda8b21f" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_886a7d187b25e2afd21ef8db4cb66de9" target="chapter_b54e59270be1bb1585497313ae11f089" weight="4.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_886a7d187b25e2afd21ef8db4cb66de9" target="chapter_d39e8ae95ea13e1ab574fcadc0c1a26a" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_886a7d187b25e2afd21ef8db4cb66de9" target="chapter_46e43c0268bc0d6f43c651fdf4248308" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_886a7d187b25e2afd21ef8db4cb66de9" target="chapter_4e436745ecad8561df9946bf60596157" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_886a7d187b25e2afd21ef8db4cb66de9" target="chapter_dea6a4e969e7b48c85d621b7bb76f8f7" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_886a7d187b25e2afd21ef8db4cb66de9" target="chapter_ec4104d795b8d4863d448e2ffc350ef0" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_5290059870ec0f5c15439d7b172552a9" target="chapter_888b625c19f9caf508d4580dfda8b21f" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_5290059870ec0f5c15439d7b172552a9" target="chapter_b54e59270be1bb1585497313ae11f089" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_5290059870ec0f5c15439d7b172552a9" target="chapter_d39e8ae95ea13e1ab574fcadc0c1a26a" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_5290059870ec0f5c15439d7b172552a9" target="chapter_b0ce1396f47e99865d9403b13bf99103" weight="4.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_5290059870ec0f5c15439d7b172552a9" target="chapter_2ea6e887fd95e69ad166acf94ebb53bf" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_5290059870ec0f5c15439d7b172552a9" target="chapter_36a4666c8ad5810f7544b89d77f5acb7" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_5290059870ec0f5c15439d7b172552a9" target="chapter_c7383d91a9ac981f738bc7a680f040f1" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_59ab8070179f1c76de877ba76cb779ae" target="chapter_ec4104d795b8d4863d448e2ffc350ef0" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_59ab8070179f1c76de877ba76cb779ae" target="chapter_4712eeddc2f9031a874da7271830bc69" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_59ab8070179f1c76de877ba76cb779ae" target="chapter_729b6441153da58684e9dbe8b9b9d9b7" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_a67984a2034fe0687e710c8ebad0e3a5" target="chapter_61554d578da60936c83d9d24c9158f6d" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_a67984a2034fe0687e710c8ebad0e3a5" target="chapter_dff36ca080bcb7e2da27a50acdece7f4" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_a67984a2034fe0687e710c8ebad0e3a5" target="chapter_65e250162ba68c926bb47dbda8a75d59" weight="4.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_a67984a2034fe0687e710c8ebad0e3a5" target="chapter_36a4666c8ad5810f7544b89d77f5acb7" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_a67984a2034fe0687e710c8ebad0e3a5" target="chapter_c7383d91a9ac981f738bc7a680f040f1" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_017cba3cdc7f20d59f3e9a6ebaaa4ae3" target="chapter_302b89b3622aad0e7629f000154931cf" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_017cba3cdc7f20d59f3e9a6ebaaa4ae3" target="chapter_0f7c4b144772488c61a94370eaea4495" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_017cba3cdc7f20d59f3e9a6ebaaa4ae3" target="chapter_1f716c5d9c19deea116e56f92578a53d" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_017cba3cdc7f20d59f3e9a6ebaaa4ae3" target="chapter_94beb85fe8cd7a530f8f094d73ba1b3f" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_017cba3cdc7f20d59f3e9a6ebaaa4ae3" target="chapter_0a59cc9db7f453554ccd82a165103f85" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_017cba3cdc7f20d59f3e9a6ebaaa4ae3" target="chapter_729b6441153da58684e9dbe8b9b9d9b7" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_017cba3cdc7f20d59f3e9a6ebaaa4ae3" target="chapter_4d6fa8a158bc6fe968fd40ef580ea7d9" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_2b80aed41cb5ccd9eea71eeb16daa57b" target="chapter_89c3123a77bf0dfda394f6b1915f7c32" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_2b80aed41cb5ccd9eea71eeb16daa57b" target="chapter_0f7c4b144772488c61a94370eaea4495" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_40045f9701a22f61a8d1177908c39867" target="chapter_b54e59270be1bb1585497313ae11f089" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_40045f9701a22f61a8d1177908c39867" target="chapter_0f7c4b144772488c61a94370eaea4495" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_40045f9701a22f61a8d1177908c39867" target="chapter_ec4104d795b8d4863d448e2ffc350ef0" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_40045f9701a22f61a8d1177908c39867" target="chapter_36a4666c8ad5810f7544b89d77f5acb7" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_66ee20ad21751d188b1577c1b1c0ae99" target="chapter_8c51b1ee37f2caf7a09f3bd56f6ff37c" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_66ee20ad21751d188b1577c1b1c0ae99" target="chapter_46e43c0268bc0d6f43c651fdf4248308" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_66ee20ad21751d188b1577c1b1c0ae99" target="chapter_4e436745ecad8561df9946bf60596157" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_66ee20ad21751d188b1577c1b1c0ae99" target="chapter_dfae4983894a5cd52c16147ec33fb3a3" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_66ee20ad21751d188b1577c1b1c0ae99" target="chapter_36a4666c8ad5810f7544b89d77f5acb7" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_bbcf25d1b8314f92a5fac198a2cda52a" target="chapter_055567780bb74bf475b22d7cd412daca" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_bbcf25d1b8314f92a5fac198a2cda52a" target="chapter_b54e59270be1bb1585497313ae11f089" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_bbcf25d1b8314f92a5fac198a2cda52a" target="chapter_302b89b3622aad0e7629f000154931cf" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_bbcf25d1b8314f92a5fac198a2cda52a" target="chapter_f4fb03adad7bff4c6774cf0b5b820dd1" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_bbcf25d1b8314f92a5fac198a2cda52a" target="chapter_1f716c5d9c19deea116e56f92578a53d" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_bbcf25d1b8314f92a5fac198a2cda52a" target="chapter_ec4104d795b8d4863d448e2ffc350ef0" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_bbcf25d1b8314f92a5fac198a2cda52a" target="chapter_36a4666c8ad5810f7544b89d77f5acb7" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_1b6dc2a5b4690aa7f30a56979101c427" target="chapter_d39e8ae95ea13e1ab574fcadc0c1a26a" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_1b6dc2a5b4690aa7f30a56979101c427" target="chapter_481cd5fd3a61ff0c39d14f89cf32dbdd" weight="4.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_1b6dc2a5b4690aa7f30a56979101c427" target="chapter_36a4666c8ad5810f7544b89d77f5acb7" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_1b6dc2a5b4690aa7f30a56979101c427" target="chapter_c7383d91a9ac981f738bc7a680f040f1" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_7b4fd4cb32b0b89c38aec7a82d4b0b22" target="chapter_888b625c19f9caf508d4580dfda8b21f" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_7b4fd4cb32b0b89c38aec7a82d4b0b22" target="chapter_b0ce1396f47e99865d9403b13bf99103" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_115b790cd7abcc6f28864242003bec92" target="chapter_82c1317d1b90479fef94180cc3ea3406" weight="4.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_115b790cd7abcc6f28864242003bec92" target="chapter_36a4666c8ad5810f7544b89d77f5acb7" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_115b790cd7abcc6f28864242003bec92" target="chapter_c7383d91a9ac981f738bc7a680f040f1" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_115b790cd7abcc6f28864242003bec92" target="chapter_50ca13dc3765822df207b79b5e9c8c37" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_518144b9b1a5de363267d8e51daa8b1c" target="chapter_275e3dc3fb8a2cae2a7931c302f9792a" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_518144b9b1a5de363267d8e51daa8b1c" target="chapter_302b89b3622aad0e7629f000154931cf" weight="4.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_cd48340918de7b51e0df4dc0b7498fd6" target="chapter_dfae4983894a5cd52c16147ec33fb3a3" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_cd48340918de7b51e0df4dc0b7498fd6" target="chapter_24374324c0e4fc6602a9ada9bb8324f5" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_cd48340918de7b51e0df4dc0b7498fd6" target="chapter_1f716c5d9c19deea116e56f92578a53d" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_cd48340918de7b51e0df4dc0b7498fd6" target="chapter_a74b8d5a718252273a4587d4e2ff7928" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_295c3732c4587e2b205e0625151a7646" target="chapter_b54e59270be1bb1585497313ae11f089" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_295c3732c4587e2b205e0625151a7646" target="chapter_dea6a4e969e7b48c85d621b7bb76f8f7" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_295c3732c4587e2b205e0625151a7646" target="chapter_ec4104d795b8d4863d448e2ffc350ef0" weight="4.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_295c3732c4587e2b205e0625151a7646" target="chapter_36a4666c8ad5810f7544b89d77f5acb7" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_295c3732c4587e2b205e0625151a7646" target="chapter_c7383d91a9ac981f738bc7a680f040f1" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_fc4a80db52d6130fb750be28e609a743" target="chapter_055567780bb74bf475b22d7cd412daca" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_fc4a80db52d6130fb750be28e609a743" target="chapter_ba40e12bd5d12d6a4f6110af6b13379f" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_fc4a80db52d6130fb750be28e609a743" target="chapter_f3c2b00900a518d58afa93c6b6f7e11b" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_fc4a80db52d6130fb750be28e609a743" target="chapter_0f7c4b144772488c61a94370eaea4495" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_8775ac0f80ffec98c88d749115141f8f" target="chapter_f3c2b00900a518d58afa93c6b6f7e11b" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_8775ac0f80ffec98c88d749115141f8f" target="chapter_b0ce1396f47e99865d9403b13bf99103" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_c47369b0bc3ac7ad70dbbb09f698da98" target="chapter_ba40e12bd5d12d6a4f6110af6b13379f" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_c47369b0bc3ac7ad70dbbb09f698da98" target="chapter_481cd5fd3a61ff0c39d14f89cf32dbdd" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_c573929bf1705584c6079378b452a48f" target="chapter_055567780bb74bf475b22d7cd412daca" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_c573929bf1705584c6079378b452a48f" target="chapter_1f716c5d9c19deea116e56f92578a53d" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_ae55960d70ab852b3a430e9b51d2a6c7" target="chapter_888b625c19f9caf508d4580dfda8b21f" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_ae55960d70ab852b3a430e9b51d2a6c7" target="chapter_8c51b1ee37f2caf7a09f3bd56f6ff37c" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_ae55960d70ab852b3a430e9b51d2a6c7" target="chapter_dea6a4e969e7b48c85d621b7bb76f8f7" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_ae55960d70ab852b3a430e9b51d2a6c7" target="chapter_481cd5fd3a61ff0c39d14f89cf32dbdd" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

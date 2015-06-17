@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2015-06-16">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="attr_type" title="Type" type="string"></attribute>
+      <attribute id="global_occurrences" title="Occurrences Count" type="integer"></attribute>
+      <attribute id="attr_1_2" title="WG" type="string"></attribute>
+    </attributes>
+    <attributes class="edge" mode="static">
+      <attribute id="attr_type" title="Type" type="string"></attribute>
+      <attribute id="matchings_count" title="Matchings Count" type="integer"></attribute>
+    </attributes>
+    <nodes>
+      <node id="author_7cda79e893eec9481b2dffc20f21aef6" label="A. Barrie Pittock">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="4"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="30.0"></viz:size>
+        <viz:position x="-133.91101" y="678.65546" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_adba6623a80f5a191588e9e0aa3eaaa9" label="A.j. Apling">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="-512.15875" y="-452.7983" z="0.0"></viz:position>
+        <viz:color r="127" g="255" b="0"></viz:color>
+      </node>
+      <node id="author_54f5fcbe03bbf127520c8c9df6455ce9" label="Andrei A. Velichko">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="3"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="25.0"></viz:size>
+        <viz:position x="375.1564" y="149.88602" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_a1e535e595d1ec1c285ad68978360f82" label="Anthony C. Janetos">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="651.4785" y="443.3211" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_244f1e93aea41f78bf409d639793782c" label="Dennis A. Tirpak">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="16.40127" y="-794.3994" z="0.0"></viz:position>
+        <viz:color r="127" g="255" b="0"></viz:color>
+      </node>
+      <node id="author_01cbbcc3ccb698b150c183bf1373cb8b" label="Eugene Z. Stakhiv">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="3"></attvalue>
+          <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="25.0"></viz:size>
+        <viz:position x="300.28256" y="-321.78375" z="0.0"></viz:position>
+        <viz:color r="255" g="140" b="0"></viz:color>
+      </node>
+      <node id="author_6a3f16bad31d9ed0697ee97ec00ff319" label="J S. Oguntoyinbo">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="189.04343" y="642.0394" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_2c33ff959ad2138595f63c168d7daa70" label="J. Titus">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="544.876" y="-470.6431" z="0.0"></viz:position>
+        <viz:color r="255" g="140" b="0"></viz:color>
+      </node>
+      <node id="author_72e8921916d83542dfd582ac6f80ad28" label="James Morison">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="628.448" y="591.458" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_2f79c9262665dd171048e8292933eed6" label="John Everett">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="480.53427" y="-433.49347" z="0.0"></viz:position>
+        <viz:color r="255" g="140" b="0"></viz:color>
+      </node>
+      <node id="author_c2e8ae633e38d80c340140cb23034dec" label="Laban J. Ogallo">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="336.9705" y="608.46405" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_00967f03856b94081ee35aa2bb8fd5b5" label="M. Rees">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="-136.08514" y="-647.0906" z="0.0"></viz:position>
+        <viz:color r="255" g="140" b="0"></viz:color>
+      </node>
+      <node id="author_c850672810246ffdfbd52873a6697381" label="Neville Nicholls">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="198.9247" y="578.43164" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_cba5d2c2f662552e98da111887bea3ee" label="R. Holesgrove">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="216.26375" y="-224.86339" z="0.0"></viz:position>
+        <viz:color r="255" g="140" b="0"></viz:color>
+      </node>
+      <node id="author_4a7902cbaec3db74883b97933e36cd1a" label="R. Kintanar">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="433.1026" y="750.0583" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_d1c8aecd24d6b5fb96ef0a5ff8c959ad" label="R.j. Luxmoore">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG III"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="-673.5873" y="-499.9774" z="0.0"></viz:position>
+        <viz:color r="127" g="255" b="0"></viz:color>
+      </node>
+      <node id="author_23cd80e3d1ec755e693575db79ef96d1" label="Roy M. Koerner">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="129.6603" y="74.845856" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_cc4b018de89813af70ebdfea08b10166" label="S.k. Sinha">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="83.72539" y="829.4535" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_e029ba9f518742a90b27ffe7d462a1ba" label="Terry V. Callaghan">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="107.68673" y="766.95734" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="author_c2c07dcc15efea1ef53fab865c402472" label="W. Degefu">
+        <attvalues>
+          <attvalue for="attr_type" value="Author"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="258.82483" y="677.81116" z="0.0"></viz:position>
+        <viz:color r="221" g="160" b="221"></viz:color>
+      </node>
+      <node id="chapter_a29b46eb2b6e524297e9088bdc68c431" label="Greenhouse Gases and AER">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="5"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="15.0"></viz:size>
+        <viz:position x="-866.0254" y="500.0" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_f70b626821b2825372f931567577a20e" label="Effects on Ecosystems">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="10"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="25.0"></viz:size>
+        <viz:position x="-173.20503" y="899.99994" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_201ee22043807b98c52e80d2670dba16" label="Narrowing the Uncertainties">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-86.60262" y="950.0002" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_7239b95195e672c3a3edfcfcc7f98c4a" label="Radiative Forcing of Climate">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="15.0"></viz:size>
+        <viz:position x="-779.4228" y="550.0" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_d633d2e9519ab7e0277bf2b66dfd7bae" label="Validation of Climate Models">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="4"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-692.8203" y="599.99994" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_5514b3eeaac057705db376ece4a20fb3" label="Equilibrium Climate Change">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="6"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="25.0"></viz:size>
+        <viz:position x="-606.2178" y="650.0" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_8c701c642ec60119aee5eb9f96683812" label="Time-Dependent Greenhouse Gas Induced Climate Change">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-519.6151" y="700.00006" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_40aaec932ef31bf8e4e13d3c0216b131" label="Observed Climate Variations and Change">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="11"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="25.0"></viz:size>
+        <viz:position x="-433.0127" y="750.0" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_65a7162dd11d73a82afb8fce7ab6650e" label="Detection of the Greenhouse Effect in the Observations">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="9"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="25.0"></viz:size>
+        <viz:position x="-346.4101" y="799.9998" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_aada81663c95ec46cabaa5baa1ff9187" label="Sea Level Rise">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="6"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-259.8076" y="850.0" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_b05be2d592490536b58877a724813021" label="Annex">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="8"></attvalue>
+          <attvalue for="attr_1_2" value="WG I"></attvalue>
+        </attvalues>
+        <viz:size value="25.0"></viz:size>
+        <viz:position x="3.7294421E-6" y="1000.0" z="0.0"></viz:position>
+        <viz:color r="30" g="144" b="255"></viz:color>
+      </node>
+      <node id="chapter_ccaa7bef3ac060f4cb473d03acb38c3b" label="Agriculture and Forestry">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="11"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="50.0"></viz:size>
+        <viz:position x="866.0254" y="500.0" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_954a55b78ea4fb48e765b7126942e4b4" label="Natural terrestrial Ecosystems">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="5"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="30.0"></viz:size>
+        <viz:position x="866.02545" y="300.00003" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_231860c9a1178f5255d9c8d94975a11d" label="Hydrology and Water Resources">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="4"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="15.0"></viz:size>
+        <viz:position x="866.0254" y="99.99984" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_c156bf1d50042e244d12b68124e3c19b" label="Human Settlement; the Energy Transport and Industrial sectors; Human Health; Air quality and Changes in Ultraviolet-B Radiation">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="3"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="866.0252" y="-99.99997" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_0600b94d1dfec58147587208e1ae4d43" label="Oceans and coastal zones">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="5"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="30.0"></viz:size>
+        <viz:position x="866.02545" y="-300.00003" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_92bbb821d73866f971df70dedac54bec" label="Seasonal snow cover, ice and permafrost">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="4"></attvalue>
+          <attvalue for="attr_1_2" value="WG II"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="866.0254" y="-500.0" z="0.0"></viz:position>
+        <viz:color r="220" g="20" b="60"></viz:color>
+      </node>
+      <node id="chapter_2dcdefe605221e463e0c9ba692c24578" label="Financial Mechanisms">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="1"></attvalue>
+          <attvalue for="attr_1_2" value="WG III"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-866.0254" y="-500.0" z="0.0"></viz:position>
+        <viz:color r="255" g="215" b="0"></viz:color>
+      </node>
+      <node id="chapter_7fee798383c76f42d51e77b175f4454d" label="Emissions Scenarios">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="2"></attvalue>
+          <attvalue for="attr_1_2" value="WG III"></attvalue>
+        </attvalues>
+        <viz:size value="15.0"></viz:size>
+        <viz:position x="-3.7294421E-6" y="-1000.0" z="0.0"></viz:position>
+        <viz:color r="255" g="215" b="0"></viz:color>
+      </node>
+      <node id="chapter_3ae2e976d309f214426bccb698e75e73" label="Coastal Zone Management">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="4"></attvalue>
+          <attvalue for="attr_1_2" value="WG III"></attvalue>
+        </attvalues>
+        <viz:size value="15.0"></viz:size>
+        <viz:position x="-216.50633" y="-875.00006" z="0.0"></viz:position>
+        <viz:color r="255" g="215" b="0"></viz:color>
+      </node>
+      <node id="chapter_1853d5c31bfb0c2ffcf29f690678fac8" label="Resource Use and Management">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="9"></attvalue>
+          <attvalue for="attr_1_2" value="WG III"></attvalue>
+        </attvalues>
+        <viz:size value="35.0"></viz:size>
+        <viz:position x="-433.01273" y="-750.0" z="0.0"></viz:position>
+        <viz:color r="255" g="215" b="0"></viz:color>
+      </node>
+      <node id="chapter_55d11020a53c20ad19c5ca4697eca011" label="Public Education and Information">
+        <attvalues>
+          <attvalue for="attr_type" value="Chapter"></attvalue>
+          <attvalue for="global_occurrences" value="1"></attvalue>
+          <attvalue for="attr_1_2" value="WG III"></attvalue>
+        </attvalues>
+        <viz:size value="15.0"></viz:size>
+        <viz:position x="-649.51904" y="-625.0" z="0.0"></viz:position>
+        <viz:color r="255" g="215" b="0"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="author_7cda79e893eec9481b2dffc20f21aef6" target="chapter_5514b3eeaac057705db376ece4a20fb3" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_7cda79e893eec9481b2dffc20f21aef6" target="chapter_40aaec932ef31bf8e4e13d3c0216b131" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_7cda79e893eec9481b2dffc20f21aef6" target="chapter_65a7162dd11d73a82afb8fce7ab6650e" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_7cda79e893eec9481b2dffc20f21aef6" target="chapter_ccaa7bef3ac060f4cb473d03acb38c3b" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_adba6623a80f5a191588e9e0aa3eaaa9" target="chapter_7239b95195e672c3a3edfcfcc7f98c4a" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_adba6623a80f5a191588e9e0aa3eaaa9" target="chapter_1853d5c31bfb0c2ffcf29f690678fac8" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_54f5fcbe03bbf127520c8c9df6455ce9" target="chapter_5514b3eeaac057705db376ece4a20fb3" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_54f5fcbe03bbf127520c8c9df6455ce9" target="chapter_954a55b78ea4fb48e765b7126942e4b4" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_54f5fcbe03bbf127520c8c9df6455ce9" target="chapter_92bbb821d73866f971df70dedac54bec" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_a1e535e595d1ec1c285ad68978360f82" target="chapter_b05be2d592490536b58877a724813021" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_a1e535e595d1ec1c285ad68978360f82" target="chapter_954a55b78ea4fb48e765b7126942e4b4" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_244f1e93aea41f78bf409d639793782c" target="chapter_b05be2d592490536b58877a724813021" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_244f1e93aea41f78bf409d639793782c" target="chapter_7fee798383c76f42d51e77b175f4454d" weight="4.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_01cbbcc3ccb698b150c183bf1373cb8b" target="chapter_231860c9a1178f5255d9c8d94975a11d" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_01cbbcc3ccb698b150c183bf1373cb8b" target="chapter_0600b94d1dfec58147587208e1ae4d43" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_01cbbcc3ccb698b150c183bf1373cb8b" target="chapter_1853d5c31bfb0c2ffcf29f690678fac8" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_6a3f16bad31d9ed0697ee97ec00ff319" target="chapter_40aaec932ef31bf8e4e13d3c0216b131" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_6a3f16bad31d9ed0697ee97ec00ff319" target="chapter_ccaa7bef3ac060f4cb473d03acb38c3b" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_2c33ff959ad2138595f63c168d7daa70" target="chapter_0600b94d1dfec58147587208e1ae4d43" weight="4.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_2c33ff959ad2138595f63c168d7daa70" target="chapter_3ae2e976d309f214426bccb698e75e73" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_72e8921916d83542dfd582ac6f80ad28" target="chapter_f70b626821b2825372f931567577a20e" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_72e8921916d83542dfd582ac6f80ad28" target="chapter_ccaa7bef3ac060f4cb473d03acb38c3b" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_2f79c9262665dd171048e8292933eed6" target="chapter_0600b94d1dfec58147587208e1ae4d43" weight="4.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_2f79c9262665dd171048e8292933eed6" target="chapter_1853d5c31bfb0c2ffcf29f690678fac8" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_c2e8ae633e38d80c340140cb23034dec" target="chapter_65a7162dd11d73a82afb8fce7ab6650e" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_c2e8ae633e38d80c340140cb23034dec" target="chapter_ccaa7bef3ac060f4cb473d03acb38c3b" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_00967f03856b94081ee35aa2bb8fd5b5" target="chapter_0600b94d1dfec58147587208e1ae4d43" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_00967f03856b94081ee35aa2bb8fd5b5" target="chapter_1853d5c31bfb0c2ffcf29f690678fac8" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_c850672810246ffdfbd52873a6697381" target="chapter_40aaec932ef31bf8e4e13d3c0216b131" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_c850672810246ffdfbd52873a6697381" target="chapter_ccaa7bef3ac060f4cb473d03acb38c3b" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_cba5d2c2f662552e98da111887bea3ee" target="chapter_954a55b78ea4fb48e765b7126942e4b4" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_cba5d2c2f662552e98da111887bea3ee" target="chapter_1853d5c31bfb0c2ffcf29f690678fac8" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_4a7902cbaec3db74883b97933e36cd1a" target="chapter_b05be2d592490536b58877a724813021" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_4a7902cbaec3db74883b97933e36cd1a" target="chapter_ccaa7bef3ac060f4cb473d03acb38c3b" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_d1c8aecd24d6b5fb96ef0a5ff8c959ad" target="chapter_a29b46eb2b6e524297e9088bdc68c431" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_d1c8aecd24d6b5fb96ef0a5ff8c959ad" target="chapter_55d11020a53c20ad19c5ca4697eca011" weight="4.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_23cd80e3d1ec755e693575db79ef96d1" target="chapter_5514b3eeaac057705db376ece4a20fb3" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_23cd80e3d1ec755e693575db79ef96d1" target="chapter_92bbb821d73866f971df70dedac54bec" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_cc4b018de89813af70ebdfea08b10166" target="chapter_f70b626821b2825372f931567577a20e" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_cc4b018de89813af70ebdfea08b10166" target="chapter_ccaa7bef3ac060f4cb473d03acb38c3b" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_e029ba9f518742a90b27ffe7d462a1ba" target="chapter_f70b626821b2825372f931567577a20e" weight="3.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_e029ba9f518742a90b27ffe7d462a1ba" target="chapter_954a55b78ea4fb48e765b7126942e4b4" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_c2c07dcc15efea1ef53fab865c402472" target="chapter_65a7162dd11d73a82afb8fce7ab6650e" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="author_c2c07dcc15efea1ef53fab865c402472" target="chapter_ccaa7bef3ac060f4cb473d03acb38c3b" weight="2.0">
+        <attvalues>
+          <attvalue for="matchings_count" value="1"></attvalue>
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

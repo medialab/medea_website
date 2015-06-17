@@ -34,6 +34,9 @@
 
         <img class="imgScaled" src="media/pdfWG.png">
       </div>
+      <div class="fill-height scrollable" ng-switch-when="pdfOrga">
+        <img class="imgScaled" src="media/pdfOrga.png">
+      </div>
       <div class="fill-height scrollable" ng-switch-when="ipccwgvenn">
         <div id="venn" class="fill-height" ipccwgvenn path="$parent.$parent.section.datasrc[0]"></div>
       </div>
@@ -75,6 +78,22 @@
           <div id="containerStackedBars">
           <h3>Repartion roles in the IPCC by author type</h3>
             <div id="svgContainer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="fill-height" ng-switch-when="gexfTest1">
+        <div id="gexfTest1" class="fill-height" gexftestone>
+          <div id="gexfTest1" class="fill-height flex">
+            <h3 id="vizTitle">Bridge authors in AR
+              <select id="currentAR">
+                <option value='1' selected>1</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5</option>
+              </select>
+            </h3>
+            <div id="sigma-container" class="fillComplement"></div>
           </div>
         </div>
       </div>
