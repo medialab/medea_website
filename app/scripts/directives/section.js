@@ -5,8 +5,9 @@ angular.module('driveoutApp.directives.section', [])
     return {
       replace: true,
       link: function(scope, element, attrs) {
+        // console.log(attrs);
         scope.$watch(attrs.sectionhtml, function(html) {
-          console.log(attrs);
+          // console.log(attrs);
           element.html(html);
           $compile(element.contents())(scope);
         });

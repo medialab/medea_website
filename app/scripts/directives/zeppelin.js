@@ -20,12 +20,6 @@ angular.module('driveoutApp.directives.zeppelin', [])
           scope.$broadcast('focus', '' + $(this).attr('data-click'));
         })
 
-        scope.$watch(attrs, function(html) {
-          console.log(attrs)
-          element.html(html);
-          $compile(element.contents())(scope);
-        })
-
         //Scroll spy for the narratives' text
         $('.slider').on('scroll', function(e){
           //Checks if the scroll has been triggered by the user or automatically
