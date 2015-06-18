@@ -17,7 +17,7 @@ angular.module('driveoutApp.directives.wenn', [])
 
         var elementid, elementwidth, elementheight;
 
-        venn.load_data(scope.path, function() {
+        venn.load_data('contents/data/ipcc-wg-venn/authors-by-wg-by-ar-venn.json', function() {
           elementid = "#"+element[0].getAttribute("id"),
           elementwidth = element.width(),
           elementheight = element.height()-50;
