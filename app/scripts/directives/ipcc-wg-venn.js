@@ -25,6 +25,7 @@ angular.module('driveoutApp.directives.wenn', [])
         });
 
         scope.$on('focus', function(e, string) {
+          console.log('focus', string)
           if (string === "global") {
             element.html("");
             venn.plotGlobalAR(elementid, elementwidth, elementheight);
