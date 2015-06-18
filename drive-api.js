@@ -86,13 +86,23 @@ drive.utils.clean = function(html){
             .replace(/\s*name="(.*?)"/g,'')
             .replace(/\s*style="(.*?)"/g,'')
             .replace(/\s*class="(.*?)"/g,'')
-            .replace(/<span\s*>/g,'')
-            .replace(/<\/span>/g,'')
+            .replace(/<span\s*><\/span>/g,'')
             .replace(/classToKeep/g, 'class')
             .replace(/<table(.*?)>/g, function(d, attrs){ return '<table class="table" ' + attrs + '>';})
             .replace(/<a\s*><\/a>/g,'')
             .replace(/<p\s*><\/p>/g,'')
             .replace(/<p\s*>/g,'<p>');
+  // console.log('clean', c.match(/<span\s*>([\S\s](?!<sp))*<\/span>/g));
+  var spanMatched = c.match(/<span\s*>([\S\s](?!<sp))*<\/span>/g);
+  if (spanMatched !== null)
+    for (var i = 0; i < spanMatched.length; i++) {
+      var currentSpan = spanMatched[i],
+          cleanedText =  currentSpan.replace(/<span\s*>/, '').replace(/<\/span>/, '');
+      console.log();
+      console.log(currentSpan, cleanedText);
+      console.log();
+      c = c.replace(currentSpan, cleanedText);
+    }
   return c;
 }
 
