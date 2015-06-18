@@ -7,7 +7,7 @@ settings.js
 sublime.sublime*
 sublime
 
-app/contents/ipcc/**
+app/contents/ipcc/
 app/contents/*.json
 
 dist
