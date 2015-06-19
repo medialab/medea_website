@@ -19,10 +19,6 @@
       .append("div")
       .classed("venntooltip", true);
 
-    d3.select(container).append("h3")
-      .classed("venntitle", true)
-      .style("width", width + "px")
-      .html("Distribution of IPCC authors among the 3 working groups<br/>all assessment reports aggregated");
     d3.select(container).append("div").attr("class", "venn");
     venn.display_data(container + " .venn", venn.AR_data["AR-global"], width, height - $(container + " h3").height() - 20);
   };
