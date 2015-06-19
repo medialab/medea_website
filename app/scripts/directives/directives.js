@@ -16,5 +16,6 @@ angular.module('driveoutApp.directives', [
   'driveoutApp.directives.topmenu',
   'driveoutApp.directives.zeppelin',
   'driveoutApp.directives.section',
+  'driveoutApp.directives.pdfconclusion',
   'driveoutApp.directives.gexftestone'
   ])
