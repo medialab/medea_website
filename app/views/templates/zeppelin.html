@@ -85,12 +85,12 @@
         </div>
       </div>
       <div class="fill-height" ng-switch-when="pdfConclusion">
-        <div id="pdfconclusion" class="fill-height" pdfconclusion>
-          <div><button id="prevPDF">Previous</button>
-          <button id="nextPDF">Next</button>
-          &nbsp; &nbsp;
-          <span>Page: <span id="page_numPDF"></span> / <span id="page_countPDF"></span></span></div>
-          <canvas id="containerPdfConclusion"></canvas>
+        <div id="pdfconclusion" class="fill-height flex" pdfconclusion>
+          <div>
+            <button id="prevPDF">Previous</button><button id="nextPDF">Next</button>&nbsp; &nbsp;
+            <span>Page: <span id="page_numPDF"></span> / <span id="page_countPDF"></span></span>
+          </div>
+          <canvas id="containerPdfConclusion" class="fillComplement"></canvas>
         </div>
       </div>
       <div class="fill-height" ng-switch-when="gexfTest1">
