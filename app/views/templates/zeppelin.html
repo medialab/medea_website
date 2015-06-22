@@ -37,9 +37,9 @@
         <h3>Organisation of the IPCC</h3>
         <img class="imgScaled" src="media/pdfOrga.png">
       </div>
-      <div class="fill-height scrollable" ng-switch-when="ipccwgvenn">
+      <div class="fill-height scrollable flex" ng-switch-when="ipccwgvenn">
         <h3>Distribution of IPCC authors among the 3 working groups<br/>all assessment reports aggregated</h3>
-        <div id="venn" class="fill-height" ipccwgvenn path="$parent.$parent.section.datasrc[0]"></div>
+        <div id="venn" class="fillComplement" ipccwgvenn path="$parent.$parent.section.datasrc[0]"></div>
       </div>
       <div class="fill-height" ng-switch-when="participationByChapters">
         <div id="containerBricks" participationbychapters>

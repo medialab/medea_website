@@ -28,9 +28,11 @@ angular.module('driveoutApp.directives.wenn', [])
           console.log('focus', string)
           if (string === "global") {
             element.html("");
+            element[0].setAttribute('class', element[0].getAttribute('class').replace('fillHeight', 'fillComplement'));
             venn.plotGlobalAR(elementid, elementwidth, elementheight);
           } else if (string === "annual") {
             element.html("");
+            element[0].setAttribute('class', element[0].getAttribute('class').replace('fillComplement', 'fillHeight'));
             venn.plotAnnualARs(elementid, elementwidth, elementheight);
           }
         });
