@@ -16,9 +16,9 @@ angular.module('driveoutApp.directives.roledistribstacked', [])
             elementHeight = element.height();
       var stackedBars = new StackedBars();
       stackedBars.load('contents/data/roleDistribStacked/participations.json', function() {
-        var width = elementWidth/2,
-            height = elementHeight,
-            margin = {top: 40, bottom: 70, left: elementWidth/10, right: 70};
+        var width = elementWidth/1.1,
+            height = elementHeight/1.1,
+            margin = {top: 40, bottom: 20, left: elementWidth/5, right: elementWidth/10};
 
         stackedBars.drawViz('#svgContainer',
           {
