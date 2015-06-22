@@ -17,7 +17,8 @@ rect {
 }
 
 .imgScaled {
-  max-height: 100%;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .flex {
