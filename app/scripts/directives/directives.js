@@ -14,6 +14,7 @@ angular.module('driveoutApp.directives', [
   'driveoutApp.directives.roledistribstacked',
   'driveoutApp.directives.subchapters',
   'driveoutApp.directives.topmenu',
+  'driveoutApp.directives.footer',
   'driveoutApp.directives.zeppelin',
   'driveoutApp.directives.section',
   'driveoutApp.directives.pdfconclusion',

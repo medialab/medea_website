@@ -1,0 +1,15 @@
+#homeImage {
+  height: 250px;
+  background: #F2F2F2;
+  text-align: center;
+}
+
+.study {
+  margin: 20px 5px;
+}
+
+.thumbnailStudy {
+  height: 200px;
+  width: 300px;
+  background: #F2F2F2;
+}

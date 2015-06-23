@@ -9,7 +9,6 @@
  */
 angular.module('driveoutApp.main', [])
   .controller('MainCtrl', function ($scope, content) {
-
     $scope.content = content.data;
     $scope.$parent.page = {};
 
