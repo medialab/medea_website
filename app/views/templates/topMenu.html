@@ -14,11 +14,13 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="{{route.slug === page.slug ? 'active' : ''}}" ng-repeat="route in routes">
-          <a ng-href="#/{{route.slug}}">{{route.slug}}</a>
-        </li>
         <li ng-repeat="page in pages" ng-if="page.slug !== 'home' && page.slug !== 'footer'">
           <a ng-href="#/{{page.slug}}">{{page.slug}}</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="studyLink {{route.slug === page.slug ? 'active' : ''}}" ng-repeat="route in routes">
+          <a ng-href="#/{{route.slug}}/main">{{route.slug}}</a>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->

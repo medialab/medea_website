@@ -22,6 +22,7 @@ angular
     'driveoutApp.content',
     'driveoutApp.depth',
     'driveoutApp.layout',
+    'driveoutApp.home',
     'driveoutApp.main',
     'driveoutApp.page',
     'driveoutApp.subchapter',
@@ -33,7 +34,7 @@ angular
     $routeProvider
       .when('/', {
         templateUrl: 'views/home.html',
-        controller: 'MainCtrl',
+        controller: 'HomeCtrl',
         resolve: {
           content : function ($route, FilesFactory) {
             return FilesFactory.get({path: 'home'});
@@ -46,7 +47,11 @@ angular
       })
       .when('/:page', { // static page controller
         templateUrl: 'views/page.html',
-        controller: 'PageCtrl',
+        controller: 'PageCtrl'
+      })
+      .when('/:page/main', {
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl',
         resolve: {
           content : function ($route, FilesFactory) {
             return FilesFactory.get({path: $route.current.params.page + '/introduction'});

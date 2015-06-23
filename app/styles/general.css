@@ -14,7 +14,12 @@
   font-family: 'Merriweather-Light';
   src: url('../fonts/Merriweather_Light.ttf');
 }
+body{
+  padding-top: 70px;
+}
 
+
+/*CHECK IF THEY ARE STILL USED*/
 .fixed {
   position: fixed;
 }

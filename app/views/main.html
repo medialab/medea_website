@@ -1,0 +1,18 @@
+<div class="view-page container-fluid">
+  <div top-menu class="row"></div>
+  <div id="studyIntroduction">
+    <h1>{{studyIntro.title}}</h1>
+  </div>
+  <div id="storyLinesThumbnails">
+    <div class="storyline container-fluid" ng-repeat="sl in studyIntro.menu">
+        <div class="col-sm-5 col-md-5 col-lg-5">
+          <a ng-href="./{{sl.slug}}">
+            <div class="thumbnailStudy">{{route.slug}}</div>
+          </a>
+        </div>
+        <div class="col-sm-7 col-md-7 col-lg-7">
+        Some text Some text Some text Some text Some text Some text Some text
+        </div>
+      </div>
+  </div>
+</div>
