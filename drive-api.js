@@ -98,9 +98,6 @@ drive.utils.clean = function(html){
     for (var i = 0; i < spanMatched.length; i++) {
       var currentSpan = spanMatched[i],
           cleanedText =  currentSpan.replace(/<span\s*>/, '').replace(/<\/span>/, '');
-      console.log();
-      console.log(currentSpan, cleanedText);
-      console.log();
       c = c.replace(currentSpan, cleanedText);
     }
   return c;

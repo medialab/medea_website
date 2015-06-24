@@ -12,7 +12,8 @@ var settings = require('./settings'),
     fs       = require('fs'),
 
     MEDIA_PATH = './app/media',
-    CONTENTS_PATH    = './app/contents';
+    CONTENTS_PATH    = './app/contents',
+    pagesInfoIndex = {};
 
 
 
@@ -39,7 +40,6 @@ function parseGoogleDocument(result) {
 
     // check it's own h4
     var directive = $(this).nextUntil('h1').filter('h4');
-    console.log('directives', directive.html());
 
     //console.log(section.title, directives.length, directives);
     if(directive.length) {
@@ -163,6 +163,11 @@ drive.start().then(function logic() {
       continue
     }
 
+
+    if (pagesInfoIndex[narratives[i].slug] === undefined)
+      pagesInfoIndex[narratives[i].slug] = [];
+
+
     console.log(narratives[i].slug);
     fs.existsSync(CONTENTS_PATH + '/' + narratives[i].slug) || fs.mkdirSync(CONTENTS_PATH +'/' + narratives[i].slug);
     console.log('-------------------------');
@@ -178,16 +183,50 @@ drive.start().then(function logic() {
         sections: [] // it will bring h1 sections inside
       };
 
+
+      if(file.mimeType == 'application/vnd.google-apps.document') {
+        result = parseGoogleDocument(result);
+        if (file.title.match(/^[0-9]{1,}[\s.]*/))
+          pagesInfoIndex[narratives[i].slug].push(result);
+      };
+    })
+
+  };
+  // cycle through narratives folder to get files (one narrative per google doc)
+  for(var i=0; i<narratives.length; i++) {
+    console.log();
+    if(narratives[i].slug != 'ipcc') {
+      continue
+    }
+
+    console.log(narratives[i].slug);
+    fs.existsSync(CONTENTS_PATH + '/' + narratives[i].slug) || fs.mkdirSync(CONTENTS_PATH +'/' + narratives[i].slug);
+    console.log('-------------------------');
+
+    drive.files.walk({fileId: narratives[i].id, mediapath: MEDIA_PATH}, function (file, options, results, items) {
+      console.log('--> "', file.title,'" ', file.id, file.mimeType);
+
+      var result = {
+        id: file.id,
+        title: file.title.replace(/[0-9]*[\s.]*/,''),
+        slug: drive.utils.slugify(file.title.replace(/[0-9]*[\s.]*/,'')),
+        mimeType: file.mimeType,
+        sections: [] // it will bring h1 sections inside
+      };
+
+
       if(file.mimeType == 'application/vnd.google-apps.document') {
         result = parseGoogleDocument(result);
 
-        result.menu = items.filter(function(d) {
-          if(d.mimeType == 'application/vnd.google-apps.document' && d.title.match(/^[0-9]{1,}[\s.]*/))
+        result.menu = pagesInfoIndex[narratives[i].slug].filter(function(d) {
+          if(d.mimeType == 'application/vnd.google-apps.document')
             return d
         }).map(function(d) {
+          console.log('menu',d);
           return {
             title: d.title.replace(/^[0-9]*[\s.]*/,''),
             slug: drive.utils.slugify(d.title.replace(/^[0-9]*[\s.]*/,'')),
+            subtitle: d.subtitle
           }
         });
 
@@ -197,6 +236,7 @@ drive.start().then(function logic() {
 
   };
 
+  console.log(pagesInfoIndex);
 
 }, console.log).catch(function(err) {
   console.log(err)
