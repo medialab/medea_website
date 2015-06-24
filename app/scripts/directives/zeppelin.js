@@ -8,7 +8,7 @@
  */
 angular.module('driveoutApp.directives.zeppelin', [])
   .filter('unsafe', function($sce) { return $sce.trustAsHtml; })
-  .directive('zeppelin', function($compile) {
+  .directive('zeppelin', function() {
     return {
       templateUrl: 'views/templates/zeppelin.html',
       scope:{

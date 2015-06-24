@@ -6,12 +6,13 @@
   </div>
   <div id="storyLinesThumbnails">
     <div class="storyline container-fluid" ng-repeat="sl in studyIntro.menu" ng-if="sl.slug !== 'ipcc-main'">
-        <div class="col-sm-5 col-md-5 col-lg-5">
-          <a ng-href="#{{studyIntro.studyPath}}/{{sl.slug}}">
-            <div class="thumbnailSl">{{route.slug}}</div>
-          </a>
-        </div>
-        <div sectiontoinsert sectionhtml="sl.subtitle" class="col-sm-7 col-md-7 col-lg-7"></div>
+      <div class="col-sm-5 col-md-5 col-lg-5">
+        <a ng-click="notCollapsed = !notCollapsed">
+          <div class="thumbnailSl">{{sl.slug}}</div>
+        </a>
       </div>
+      <div sectiontoinsert sectionhtml="sl.subtitle" class="col-sm-7 col-md-7 col-lg-7"></div>
+      <div collapse="!notCollapsed" zeppelin id="narrativeContainer" sections="storylines[sl.slug].sections"></div>
+    </div>
   </div>
 </div>
