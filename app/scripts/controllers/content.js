@@ -1,6 +1,7 @@
 angular.module('driveoutApp.content', ['ui.bootstrap'])
   .controller('contentCtrl', function($window, $scope, $element, $attrs) {
         var w = angular.element($window);
+        console.log('contentScope', $scope);
 
         $scope.index = 0;
         $scope.height = w.height() - 250;
@@ -30,8 +31,9 @@ angular.module('driveoutApp.content', ['ui.bootstrap'])
         }
 
         $scope.next = function(fromScroll) {
-          var _index = $scope.index + 1;
-          $scope.index = Math.min(_index, $scope.$parent.content.sections.length -1);
+          var _index = $scope.index + 1,
+              sections = $scope.$parent.$parent.$parent.storylines[$scope.$parent.$parent.sl].sections;
+          $scope.index = Math.min(_index, sections.length -1);
           if (!fromScroll)
             $scope.bringTextTo($scope.index);
         };
@@ -56,9 +58,12 @@ angular.module('driveoutApp.content', ['ui.bootstrap'])
           the section scrolling inside the slider as well.
         */
         $scope.steer = function(index){
-          if (index >= 0 && index < $scope.content.sections.length) {
-            if($scope.content.sections[$scope.index]){
-              $scope.section = $scope.content.sections[$scope.index];
+          console.log($scope.$parent.$parent.$parent);
+          console.log(Object.keys($scope.$parent.$parent.$parent.storylines));
+          var sections = $scope.$parent.$parent.$parent.storylines[$scope.$parent.$parent.sl].sections;
+          if (index >= 0 && index < sections.length) {
+            if(sections[$scope.index]){
+              $scope.section = sections[$scope.index];
             }
           }
         };
