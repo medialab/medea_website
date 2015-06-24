@@ -17,5 +17,12 @@ angular.module('driveoutApp.main', [])
       }
     }
 
+    $scope.scrollDown = function(container) {
+      var slElement = $('#container_' + container)[0].offsetTop - 55;
+      $('html, body').animate({
+        scrollTop: slElement
+      });
+    }
+
     console.log($scope)
   });
