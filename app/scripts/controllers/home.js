@@ -9,6 +9,7 @@
  */
 angular.module('driveoutApp.home', [])
   .controller('HomeCtrl', function ($scope, content) {
+    $('html, body').scrollTop(0);
     $scope.content = content.data;
     $scope.$parent.page = {};
 

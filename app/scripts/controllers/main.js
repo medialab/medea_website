@@ -1,5 +1,6 @@
 angular.module('driveoutApp.main', [])
   .controller('MainCtrl', function ($scope, $location, $http, content) {
+    $('html, body').scrollTop(0);
     var retrievedContent = content.data;
     var studyPath = $location.path().replace(/\/\w*$/, '');
     retrievedContent.studyPath = studyPath;
@@ -18,11 +19,10 @@ angular.module('driveoutApp.main', [])
     }
 
     $scope.scrollDown = function(container) {
-      var slElement = $('#container_' + container)[0].offsetTop - 55;
+      var slElement = $('#container_' + container)[0].offsetTop - 60;
       $('html, body').animate({
         scrollTop: slElement
       });
     }
 
-    console.log($scope)
   });
