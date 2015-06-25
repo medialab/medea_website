@@ -8,6 +8,16 @@ angular.module('driveoutApp.main', [])
     $scope.storylines = {};
     $scope.oneClicked = false;
     $scope.slClicked = '';
+    $scope.location = $location;
+    $scope.addressByUser = true;
+
+    $scope.$watch('location.url()', function(e) {
+      var potSL = e.replace(studyPath, '').replace('/main#', '');
+      console.log(potSL, $scope);
+      if (Object.keys($scope.storylines).indexOf(potSL) !== -1 && $scope.addressByUser) {
+        $('#container_' + potSL + ' > div > a').click();
+      }
+    })
 
     $scope.clickSL = function(slug) {
       $scope.oneClicked = !$scope.oneClicked;
