@@ -19,6 +19,7 @@ angular.module('driveoutApp.main', [])
     }
 
     $scope.scrollDown = function(container) {
+      $scope.$broadcast('zeppelin');
       var slElement = $('#container_' + container)[0].offsetTop - 60;
       $('html, body').animate({
         scrollTop: slElement
@@ -26,34 +27,27 @@ angular.module('driveoutApp.main', [])
     }
 
     var w = angular.element(window);
+    $scope.$on('zeppelin', function() {
+      var navBarHeight = $('nav')[0].offsetHeight,
+          thumbsHeight = $('.thumbnailSl')[0].offsetHeight;
+      var height = w.height() - navBarHeight - thumbsHeight - 50;
+
+      var narratives = $('.narrative');
+      narratives.each(function(e){
+        var nar = narratives[e];
+        nar.setAttribute('style', 'height: ' + height + 'px;');
+      })
+    })
     w.on('resize', function() {
       var navBarHeight = $('nav')[0].offsetHeight,
           thumbsHeight = $('.thumbnailSl')[0].offsetHeight;
-          console.log(thumbsHeight);
       var height = w.height() - navBarHeight - thumbsHeight - 50;
 
-      console.log(w.height() - navBarHeight - thumbsHeight);
-      console.log($('.narrative'))
       var narratives = $('.narrative');
       narratives.each(function(e){
         var nar = narratives[e];
         nar.setAttribute('style', 'height: ' + height + 'px;');
       })
     });
-    w.on('load', function() {
-      var navBarHeight = $('nav')[0].offsetHeight,
-          thumbsHeight = $('.thumbnailSl')[0].offsetHeight;
-          console.log(thumbsHeight);
-      var height = w.height() - navBarHeight - thumbsHeight - 50;
-
-      console.log(w.height() - navBarHeight - thumbsHeight);
-      console.log($('.narrative'))
-      var narratives = $('.narrative');
-      narratives.each(function(e){
-        var nar = narratives[e];
-        nar.setAttribute('style', 'height: ' + height + 'px;');
-      })
-      // $('.narrative').css('height', height + 'px;')
-    })
 
   });

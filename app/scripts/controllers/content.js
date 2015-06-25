@@ -1,7 +1,7 @@
 angular.module('driveoutApp.content', ['ui.bootstrap'])
   .controller('contentCtrl', function($window, $scope, $element, $attrs) {
         var w = angular.element($window);
-        console.log('contentScope', $scope);
+        $scope.$broadcast('zeppelin');
 
         $scope.index = 0;
         $scope.height = w.height() - 250;

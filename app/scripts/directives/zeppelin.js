@@ -17,8 +17,6 @@ angular.module('driveoutApp.directives.zeppelin', [])
       },
       replace: true,
       link: function postLink(scope, element, attrs) {
-        console.log('scopezep', scope);
-
         element.on('click', '[data-click]', function(e) {
           scope.$broadcast('focus', '' + $(this).attr('data-click'));
         })
@@ -65,59 +63,56 @@ angular.module('driveoutApp.directives.zeppelin', [])
         //     }
         //   }
         // };
-
         //Scroll spy for the narratives' text
         $('.slider').on('scroll', function(e){
-          // //Checks if the scroll has been triggered by the user or automatically
-          // if (scope.$parent.getScrollFlag()) {
-          //   scope.$parent.automatedScroll = false;
-          //   return true;
-          // }
+          //Checks its the good slider that is triggered
+          if (e.currentTarget.parentNode.parentNode.id === element[0].id) {
+            // //Checks if the scroll has been triggered by the user or automatically
+            // if (scope.$parent.getScrollFlag()) {
+            //   scope.$parent.automatedScroll = false;
+            //   return true;
+            // }
 
-          //Remembers the scroll position
-          if (this.data === undefined)
-            this.data = {oldPosition: 0, newPosition: e.currentTarget.scrollTop}
-          else {
-            this.data.oldPosition = this.data.newPosition;
-            this.data.newPosition = e.currentTarget.scrollTop;
-          }
-
-          //Determine the next index to match
-          //(could be the one before or the one after)
-          var currentIndex = scope.getCurrentIndex(),
-              nextIndex = this.data.newPosition < this.data.oldPosition ?
-                          currentIndex - 1:
-                          currentIndex + 1,
-              functionToCall;
-
-          if (nextIndex > currentIndex)
-            functionToCall = scope.next
-          else
-            functionToCall = scope.previous
-
-          if (element.find('#chapter_' + nextIndex)[0] !== undefined) {
-            var switchViz = false,
-                upDiff = 200,
-                downDiff = 400;
-            if (nextIndex > currentIndex) {
-              functionToCall = scope.next;
-              console.log(element.find('#chapter_' +
-                                nextIndex)[0].offsetTop, this.scrollTop)
-              switchViz = element.find('#chapter_' + nextIndex)[0].offsetTop <
-                          this.scrollTop + downDiff;
-            }
+            //Remembers the scroll position
+            if (this.data === undefined)
+              this.data = {oldPosition: 0, newPosition: e.currentTarget.scrollTop}
             else {
-              functionToCall = scope.previous;
-              console.log(element.find('#chapter_' +
-                              currentIndex)[0].offsetTop, this.scrollTop)
-              switchViz = element.find('#chapter_' + currentIndex)[0].offsetTop >
-                          this.scrollTop + upDiff;
+              this.data.oldPosition = this.data.newPosition;
+              this.data.newPosition = e.currentTarget.scrollTop;
             }
 
-            if(switchViz) {
-              console.log('switchViz')
-              functionToCall(true);
-              scope.$apply();
+            //Determine the next index to match
+            //(could be the one before or the one after)
+            var currentIndex = scope.getCurrentIndex(),
+                nextIndex = this.data.newPosition < this.data.oldPosition ?
+                            currentIndex - 1:
+                            currentIndex + 1,
+                functionToCall;
+
+            if (nextIndex > currentIndex)
+              functionToCall = scope.next
+            else
+              functionToCall = scope.previous
+
+            if (element.find('#chapter_' + nextIndex)[0] !== undefined) {
+              var switchViz = false,
+                  upDiff = 200,
+                  downDiff = 400;
+              if (nextIndex > currentIndex) {
+                functionToCall = scope.next;
+                switchViz = element.find('#chapter_' + nextIndex)[0].offsetTop <
+                            this.scrollTop + downDiff;
+              }
+              else {
+                functionToCall = scope.previous;
+                switchViz = element.find('#chapter_' + currentIndex)[0].offsetTop >
+                            this.scrollTop + upDiff;
+              }
+
+              if(switchViz) {
+                functionToCall(true);
+                scope.$apply();
+              }
             }
           }
         })
@@ -129,7 +124,6 @@ angular.module('driveoutApp.directives.zeppelin', [])
         element.on('click', '[noteIndex]', function(e) {
           e.preventDefault();
           var noteNumber = + $(this).attr('noteIndex');
-          console.log(noteNumber, scope.sections[scope.$parent.index].notes[noteNumber-1]);
         });
 
 
