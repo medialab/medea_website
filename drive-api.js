@@ -37,6 +37,10 @@ drive.utils.slugify = function(text) {
     .replace(/-+$/, '');            // Trim - from end of text
 };
 
+drive.utils.cleanFileTitle = function(text) {
+  return text.toString().toLowerCase()
+    .replace(/^\d*\. /, '');
+}
 
 /*
   function utils.getFileId

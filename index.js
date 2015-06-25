@@ -132,10 +132,11 @@ drive.start().then(function logic() {
     Left menu...
   */
   pages = drive.files.walk({fileId: fileId, mediapath: MEDIA_PATH}, function (file, options, results) {
+    var formatedTitle = drive.utils.cleanFileTitle(file.title);
     var result = {
       id: file.id,
-      title: file.title,
-      slug: drive.utils.slugify(file.title),
+      title: formatedTitle,
+      slug: drive.utils.slugify(formatedTitle),
       mimeType: file.mimeType,
       sections: [] // it will bring h1 sections inside
     };
