@@ -12,7 +12,7 @@
         </a>
       </div>
       <div sectiontoinsert sectionhtml="sl.subtitle" class="col-sm-7 col-md-7 col-lg-7"></div>
-      <div collapse="!notCollapsed" zeppelin class="narrativeContainer" sections="storylines[sl.slug].sections" index="0" id="storyline_{{sl.slug}}"></div>
+      <div collapse="!notCollapsed" zeppelin class="narrativeContainer {{!notCollapsed ? 'displayNone' : ''}}" sections="storylines[sl.slug].sections" index="0" id="storyline_{{sl.slug}}">{{notCollapsed}}</div>
     </div>
   </div>
 </div>

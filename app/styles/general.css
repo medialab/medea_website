@@ -18,6 +18,9 @@ body{
   padding-top: 50px;
 }
 
+.displayNone {
+  display: none;
+}
 
 /*CHECK IF THEY ARE STILL USED*/
 .fixed {
