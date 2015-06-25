@@ -1,16 +1,16 @@
 <div class="view-page container-fluid">
   <div top-menu class="row"></div>
 
-  <div class="page">
+  <div>
     <div id="homeImage" class="row"></div>
-    <div id="medeaDescription">
-      <div sectiontoinsert sectionhtml="content.subtitle"></div>
+    <div id="medeaDescription" class="page">
+      <div sectiontoinsert sectionhtml="content.subtitle" id="homeSubtitle"></div>
       <div ng-repeat="section in content.sections">
         <h1 sectiontoinsert sectionhtml="section.title"></h1>
         <div sectiontoinsert sectionhtml="section.html"></div>
       </div>
     </div>
-    <div id="studies">
+    <div id="studies" class="page">
       <h2>Studies:</h2>
       <div class="study container-fluid" ng-repeat="route in routes">
         <div class="col-sm-5 col-md-5 col-lg-5">

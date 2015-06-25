@@ -1,3 +1,40 @@
 .studyLink {
   font-weight: bold;
 }
+nav {
+  height: 100px;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+/*Allows the navbar to be height enough*/
+.navbar-header a, .navbar-nav > li > a {
+    line-height: 100px;
+    height: 100px;
+    padding-top: 0;
+}
+/*Put the log in the left part's center*/
+.navbar-header a {
+  width: 100%;
+  text-align: center;
+}
+/*Keep the sections to the right*/
+#navBarRightPart {
+  float: right;
+  right: 50px;
+}
+.navbar-nav > li:active {
+  color: #f3bc4c;
+}
+/*Dropdown on hover*/
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
+/*background for dropdowned elements*/
+.studyLink > a:hover {
+  background: #f3bc4c !important;
+}

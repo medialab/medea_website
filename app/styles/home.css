@@ -1,7 +1,14 @@
 #homeImage {
   height: 250px;
-  background: #F2F2F2;
+  background: #f3bc4c;
   text-align: center;
+  margin-bottom: 60px;
+}
+#homeSubtitle {
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 40px;
 }
 
 .study{
@@ -11,5 +18,5 @@
 .thumbnailStudy{
   height: 200px;
   width: 300px;
-  background: #F2F2F2;
+  background: #f3bc4c;
 }

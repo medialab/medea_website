@@ -1,27 +1,26 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#/"><img class="logo" src="images/logo.png"  alt="Logo"></a>
+    <div class="navbar-header col-sm-5 col-md-5 col-lg-5">
+      <a class="navbar-brand" href="#/">Medea</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse col-sm-7 col-md-7 col-lg-7" id="navBarRightPart">
       <ul class="nav navbar-nav">
         <li ng-repeat="page in pages" ng-if="page.slug !== 'home' && page.slug !== 'footer'">
           <a ng-href="#/{{page.slug}}">{{page.slug}}</a>
         </li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="studyLink {{route.slug === page.slug ? 'active' : ''}}" ng-repeat="route in routes">
-          <a ng-href="#/{{route.slug}}/main">{{route.slug}}</a>
-        </li>
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+            <a role="button" class="dropdown-toggle pointable" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Stories <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="studyLink {{route.slug === page.slug ? 'active' : ''}}" ng-repeat="route in routes">
+                <a ng-href="#/{{route.slug}}/main">{{route.slug}}</a>
+              </li>
+            </ul>
+          </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
