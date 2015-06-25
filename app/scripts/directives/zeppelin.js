@@ -127,11 +127,11 @@ angular.module('driveoutApp.directives.zeppelin', [])
         });
 
 
-        scope.$parent.$watch('height', function(h) {
-           element.css({
-            height: h
-          })
-        });
+        // scope.$parent.$watch('height', function(h) {
+        //    element.css({
+        //     height: h
+        //   })
+        // });
       }
     };
   })

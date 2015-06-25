@@ -17,7 +17,7 @@ angular.module('driveoutApp.directives.partratehisto', [])
         var histogram = new PowerLawHistogram();
         histogram.load('contents/data/participationRatesHisto/participations.json', function() {
           var width = elementWidth,
-              height = elementHeight/2.3,
+              height = elementHeight/2.4,
               margin = {top: 40, bottom: 70, left: 40, right: 40};
 
           histogram.drawChart('#containerNonBridge',
@@ -44,7 +44,7 @@ angular.module('driveoutApp.directives.partratehisto', [])
               elementHeight = element.height();
           histogram.load('contents/data/participationRatesHisto/participations.json', function() {
             var width = elementWidth,
-                height = elementHeight/2.3,
+                height = elementHeight/2.4,
                 margin = {top: 40, bottom: 70, left: 40, right: 40};
 
             histogram.drawChart('#containerNonBridge',

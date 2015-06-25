@@ -58,15 +58,15 @@ angular
           }
         }
       })
-      .when('/:page/:sub', {
-        templateUrl: 'views/page.html',
-        controller: 'PageCtrl', // handle the items loading
-        resolve: {
-          content : function ($route, FilesFactory) {
-            return FilesFactory.get({path: $route.current.params.page + '/' + $route.current.params.sub});
-          }
-        }
-      })
+      // .when('/:page/:sub', {
+      //   templateUrl: 'views/page.html',
+      //   controller: 'PageCtrl', // handle the items loading
+      //   resolve: {
+      //     content : function ($route, FilesFactory) {
+      //       return FilesFactory.get({path: $route.current.params.page + '/' + $route.current.params.sub});
+      //     }
+      //   }
+      // })
       .otherwise({
         redirectTo: '/404'
       });

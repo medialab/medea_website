@@ -6,6 +6,17 @@ angular.module('driveoutApp.main', [])
     retrievedContent.studyPath = studyPath;
     $scope.studyIntro = retrievedContent;
     $scope.storylines = {};
+    $scope.oneClicked = false;
+    $scope.slClicked = '';
+
+    $scope.clickSL = function(slug) {
+      $scope.oneClicked = !$scope.oneClicked;
+
+      if (slug === $scope.slClicked)
+        $scope.slClicked = '';
+      else
+        $scope.slClicked = slug;
+    }
 
     for (var i = 0; i < retrievedContent.menu.length; i++) {
       var menuItem = retrievedContent.menu[i];
@@ -20,17 +31,25 @@ angular.module('driveoutApp.main', [])
 
     $scope.scrollDown = function(container) {
       $scope.$broadcast('zeppelin');
-      var slElement = $('#container_' + container)[0].offsetTop - 60;
-      $('html, body').animate({
-        scrollTop: slElement
-      });
+      // var slElement = $('#container_' + container)[0].offsetTop - 60;
+      // $('html, body').animate({
+      //   scrollTop: slElement
+      // });
     }
 
     var w = angular.element(window);
     $scope.$on('zeppelin', function() {
       var navBarHeight = $('nav')[0].offsetHeight,
-          thumbsHeight = $('.thumbnailSl')[0].offsetHeight;
-      var height = w.height() - navBarHeight - thumbsHeight - 50;
+          thumbsHeight = $('.thumbnailSl')[0].offsetHeight,
+          introHeight = $('#studyIntroduction')[0].offsetHeight;
+          console.log(introHeight)
+      var height = w.height() - navBarHeight - thumbsHeight - introHeight - 80;
+
+      var narrativeContainer = $('.narrativeContainer');
+      narrativeContainer.each(function(e){
+        var nar = narrativeContainer[e];
+        $(nar).css('margin-top', thumbsHeight + 20);
+      });
 
       var narratives = $('.narrative');
       narratives.each(function(e){
@@ -40,8 +59,16 @@ angular.module('driveoutApp.main', [])
     })
     w.on('resize', function() {
       var navBarHeight = $('nav')[0].offsetHeight,
-          thumbsHeight = $('.thumbnailSl')[0].offsetHeight;
-      var height = w.height() - navBarHeight - thumbsHeight - 50;
+          thumbsHeight = $('.thumbnailSl')[0].offsetHeight,
+          introHeight = $('#studyIntroduction')[0].offsetHeight;
+          console.log(introHeight)
+      var height = w.height() - navBarHeight - thumbsHeight - introHeight - 80;
+
+      var narrativeContainer = $('.narrativeContainer');
+      narrativeContainer.each(function(e){
+        var nar = narrativeContainer[e];
+        $(nar).css('margin-top', thumbsHeight + 20);
+      });
 
       var narratives = $('.narrative');
       narratives.each(function(e){
