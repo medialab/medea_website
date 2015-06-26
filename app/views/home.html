@@ -5,13 +5,15 @@
     <div id="homeImage" class="row"></div>
     <div id="medeaDescription" class="page">
       <div sectiontoinsert sectionhtml="content.subtitle" id="homeSubtitle"></div>
-      <div ng-repeat="section in content.sections">
+      <div id="spaceBetweenParagraphs">&bull;</div>
+      <div ng-repeat="section in content.sections"
+           class="descriptions col-sm-6 col-md-6 col-lg-6{{$index === 0 ? ' noLeftGutter' : ($index === 1 ? ' noRightGutter' : '')}}">
         <h1 sectiontoinsert sectionhtml="section.title"></h1>
         <div sectiontoinsert sectionhtml="section.html"></div>
       </div>
     </div>
     <div id="studies" class="page">
-      <h2>Studies:</h2>
+      <h1>Studies:</h1>
       <div class="study container-fluid" ng-repeat="route in routes">
         <div class="col-sm-5 col-md-5 col-lg-5">
           <a ng-href="#/{{route.slug}}/main">

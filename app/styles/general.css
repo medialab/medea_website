@@ -1,8 +1,4 @@
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Regular.ttf');
-}
-@font-face {
   font-family: 'Cuprum';
   src: url('../fonts/Cuprum-Regular.ttf');
 }
@@ -15,13 +11,18 @@
   src: url('../fonts/Merriweather_Light.ttf');
 }
 body{
-  padding-top: 100px;
-  font-family: 'Merriweather-Regular' sans-serif;
+  padding-top: 60px;
+  font-family: 'Merriweather-Light';
   font-size: 16px;
   line-height: 25px;
-  font-weight: 400;
+  font-weight: 300;
   color: #363633;
 }
+h1 {
+  font-family: 'Raleway';
+  margin-bottom: 25px;
+}
+
 .page {
   padding-left: 60px;
   padding-right: 60px;
@@ -29,6 +30,13 @@ body{
 
 .displayNone {
   display: none;
+}
+
+.noLeftGutter {
+  padding-left: 0;
+}
+.noRightGutter {
+  padding-right: 0;
 }
 
 /*CHECK IF THEY ARE STILL USED*/
@@ -55,12 +63,6 @@ body{
 }
 .fill-width {
   width: 100%;
-}
-.noLeftGutter {
-  padding-left: 0;
-}
-.noRightGutter {
-  padding-right: 0;
 }
 
 .scrollable {

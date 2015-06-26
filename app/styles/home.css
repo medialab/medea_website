@@ -1,16 +1,29 @@
 #homeImage {
-  height: 250px;
-  background: #f3bc4c;
+  height: 300px;
+  background-image: url('/images/medea_6-01.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 #homeSubtitle {
   font-family: 'Raleway';
   font-weight: 300;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 40px;
 }
-
+#spaceBetweenParagraphs {
+  height: 120px;
+  font-size: 60px;
+  line-height: 120px;
+  text-align: center;
+  color: #57AACE;
+}
+.descriptions {
+  font-size: 14px;
+  line-height: 30px;
+}
 .study{
   margin: 20px 5px;
 }
@@ -18,5 +31,6 @@
 .thumbnailStudy{
   height: 200px;
   width: 300px;
-  background: #f3bc4c;
+  background: #57AACE;
 }
+/*#57AACE*/

@@ -2,31 +2,33 @@
   font-weight: bold;
 }
 nav {
-  height: 100px;
-  text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1px;
+  height: 60px;
 }
+
 /*Allows the navbar to be height enough*/
-.navbar-header a, .navbar-nav > li > a {
-    line-height: 100px;
-    height: 100px;
+nav .navbar-header a, nav .navbar-nav > li > a {
+    line-height: 60px;
+    height: 60px;
     padding-top: 0;
 }
 /*Put the log in the left part's center*/
 .navbar-header a {
-  width: 100%;
-  text-align: center;
+  padding-left: 60px;
+  font-size: 22px;
+  font-weight: 400;
 }
 /*Keep the sections to the right*/
 #navBarRightPart {
+  text-transform: uppercase;
   float: right;
   right: 50px;
 }
 .navbar-nav > li:active {
-  color: #f3bc4c;
+  color: #57AACE;
 }
 /*Dropdown on hover*/
 @media (min-width: 979px) {
@@ -36,5 +38,5 @@ nav {
 }
 /*background for dropdowned elements*/
 .studyLink > a:hover {
-  background: #f3bc4c !important;
+  background: #CEE2F2 !important;
 }
