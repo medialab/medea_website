@@ -29,6 +29,7 @@ function parseGoogleDocument(result) {
 
   result.title = $('.title').text();
   result.subtitle = drive.utils.clean($('.subtitle').html());
+  console.log('subtitle', $('.subtitle').html());
   // console.log($('.title'))
   // if (result.slug.search('coordin') !== -1)
   //   console.log(html)
@@ -37,7 +38,6 @@ function parseGoogleDocument(result) {
     var section = {
           title: $(this).text() // guillaume
         };
-
     // check it's own h4
     var directive = $(this).nextUntil('h1').filter('h4');
 
@@ -78,7 +78,7 @@ function parseGoogleDocument(result) {
           })
           */
       });
-    $(this).remove('h4');
+      $(this).remove('h4');
     } else {
       section.type = 'text'
     }
@@ -86,7 +86,9 @@ function parseGoogleDocument(result) {
     var contents = $(this).nextUntil('h1').filter(function(d) {
       return $(this)[0].name !== 'h4'
     }).get().map(function(e) {
-      var html = $(e).html();
+      var html = '<' + e.name +'>' + $(e).html() + '</' + e.name +'>';
+      if (result.slug === 'home')
+        console.log(e.name);
       if (html.match(/##\d+##/) !== null) {
         var indexNote = +html.match(/##\d+##/g)[0].replace(/##/g, '');
         html = html.replace(/##\d+##/g, '<a href="#" classToKeep="exponent" popover-trigger="focus" popover-placement="right" popover="{{section.notes[' + (indexNote - 1 )+ ']}}" noteIndex="' + indexNote + '">' + indexNote + '</a>');
@@ -223,7 +225,7 @@ drive.start().then(function logic() {
           if(d.mimeType == 'application/vnd.google-apps.document')
             return d
         }).map(function(d) {
-          console.log('menu',d);
+          // console.log('menu',d);
           return {
             title: d.title.replace(/^[0-9]*[\s.]*/,''),
             slug: drive.utils.slugify(d.title.replace(/^[0-9]*[\s.]*/,'')),
