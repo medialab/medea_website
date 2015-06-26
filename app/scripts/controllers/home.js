@@ -11,7 +11,7 @@ angular.module('driveoutApp.home', [])
   .controller('HomeCtrl', function ($scope, content) {
     $('html, body').scrollTop(0);
     $scope.content = content.data;
-    console.log('home', content.data)
+    console.log(content.data)
     $scope.$parent.page = {};
 
     $scope.$watch('routes', function(r){

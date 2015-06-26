@@ -9,8 +9,6 @@ angular.module('driveoutApp.directives.section', [])
         scope.$watch(attrs.sectionhtml, function(html) {
           // console.log(attrs);
           html = html.replace('&lt;','<').replace('&gt;', '>');
-          console.log('html', html);
-          console.log();
           element.html(html);
           $compile(element.contents())(scope);
         });

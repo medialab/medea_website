@@ -22,7 +22,11 @@ h1 {
   font-family: 'Raleway';
   margin-bottom: 25px;
 }
-
+.allButImageContainer {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .page {
   padding-left: 60px;
   padding-right: 60px;

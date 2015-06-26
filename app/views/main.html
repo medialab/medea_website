@@ -1,18 +1,20 @@
-<div class="view-page container-fluid page">
+<div class="view-page container-fluid">
   <div top-menu class="row"></div>
-  <div id="studyIntroduction">
-    <h1>{{studyIntro.title}}</h1>
-    <div sectiontoinsert sectionhtml="studyIntro.subtitle"></div>
-  </div>
-  <div id="storyLinesThumbnails">
-    <div class="storyline container-fluid {{$parent.oneClicked && (sl.slug !== $parent.slClicked) ? 'displayNone' : ''}}" ng-repeat="sl in studyIntro.menu" ng-if="sl.slug !== 'ipcc-main'" id="container_{{sl.slug}}">
-      <div class="col-sm-5 col-md-5 col-lg-5">
-        <a class="clickable" ng-click="notCollapsed = !notCollapsed; clickSL(sl.slug); scrollDown(sl.slug)">
-          <div class="thumbnailSl">{{sl.slug}}</div>
-        </a>
+  <div class="allButImageContainer">
+    <div id="studyIntroduction" class="page">
+      <h1>{{studyIntro.title}}</h1>
+      <p sectiontoinsert sectionhtml="studyIntro.subtitle"></p>
+    </div>
+    <div id="storyLinesContainer" class="page">
+      <div class="storyline container-fluid {{$parent.oneClicked && (sl.slug !== $parent.slClicked) ? 'displayNone' : ''}}" ng-repeat="sl in studyIntro.menu" ng-if="sl.slug !== 'ipcc-main'" id="container_{{sl.slug}}">
+        <div class="col-sm-5 col-md-5 col-lg-5 row">
+          <a class="clickable" ng-click="notCollapsed = !notCollapsed; clickSL(sl.slug); scrollDown(sl.slug)">
+            <div class="thumbnailSl">{{sl.slug}}</div>
+          </a>
+        </div>
+        <div sectiontoinsert sectionhtml="sl.subtitle" class="col-sm-7 col-md-7 col-lg-7"></div>
+        <div collapse="!notCollapsed" zeppelin class="narrativeContainer {{!notCollapsed ? 'displayNone' : ''}}" sections="storylines[sl.slug].sections" index="0" id="storyline_{{sl.slug}}"></div>
       </div>
-      <div sectiontoinsert sectionhtml="sl.subtitle" class="col-sm-7 col-md-7 col-lg-7"></div>
-      <div collapse="!notCollapsed" zeppelin class="narrativeContainer {{!notCollapsed ? 'displayNone' : ''}}" sections="storylines[sl.slug].sections" index="0" id="storyline_{{sl.slug}}"></div>
     </div>
   </div>
 </div>
