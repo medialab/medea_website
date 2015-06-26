@@ -28,9 +28,7 @@ nav .navbar-header a, nav .navbar-nav > li > a {
   float: right;
   right: 50px;
 }
-.navbar-nav > li:active {
-  color: #57AACE;
-}
+
 /*Dropdown on hover*/
 @media (min-width: 979px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
@@ -40,4 +38,9 @@ nav .navbar-header a, nav .navbar-nav > li > a {
 /*background for dropdowned elements*/
 .studyLink > a:hover {
   background: #CEE2F2 !important;
+}
+
+li.active > a{
+  color: #57AACE !important;
+  background-color: transparent !important;
 }

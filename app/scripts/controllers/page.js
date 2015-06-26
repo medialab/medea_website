@@ -8,16 +8,9 @@
  * Controller of the driveoutApp
  */
 angular.module('driveoutApp.page', [])
-  .controller('PageCtrl', function ($scope, content, $routeParams) {
-    $scope.content = content.data;
+  .controller('PageCtrl', function ($scope, $routeParams) {
 
     $scope.tab = $routeParams.sub || 'introduction';
 
-    // filter stuffs
-    $scope.$watch('routes', function(){ // get title
-      $scope.$parent.page = angular.copy($scope.routes)
-        .filter(function(d){ return d.slug === $routeParams.page })
-        .pop();
 
-    });
   });

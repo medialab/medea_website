@@ -25,6 +25,7 @@ angular
     'driveoutApp.home',
     'driveoutApp.main',
     'driveoutApp.page',
+    'driveoutApp.topmenu',
     'driveoutApp.subchapter',
     'driveoutApp.directives',
     'driveoutApp.files',

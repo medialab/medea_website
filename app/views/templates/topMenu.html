@@ -8,15 +8,15 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse col-sm-7 col-md-7 col-lg-7" id="navBarRightPart">
       <ul class="nav navbar-nav">
-        <li ng-repeat="page in pages" ng-if="page.slug !== 'home' && page.slug !== 'footer'">
+        <li ng-repeat="page in pages" ng-if="page.slug !== 'home' && page.slug !== 'footer'" class="{{currentPage === page.slug ? 'active': ''}}">
           <a ng-href="#/{{page.slug}}">{{page.slug}}</a>
         </li>
       </ul>
       <ul class="nav navbar-nav">
-        <li class="dropdown">
+        <li class="dropdown {{isStory ? 'active': ''}}">
             <a role="button" class="dropdown-toggle pointable" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Stories <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li class="studyLink {{route.slug === page.slug ? 'active' : ''}}" ng-repeat="route in routes">
+              <li class="studyLink {{route.slug === storySlug ? 'active': ''}}" ng-repeat="route in routes">
                 <a ng-href="#/{{route.slug}}/main">{{route.slug}}</a>
               </li>
             </ul>
