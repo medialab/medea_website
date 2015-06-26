@@ -1,12 +1,13 @@
 .studyLink {
   font-weight: bold;
 }
-nav {
+.navbar {
   font-family: 'Raleway', sans-serif;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1px;
   height: 60px;
+  border-bottom: 2px solid #57AACE;
 }
 
 /*Allows the navbar to be height enough*/

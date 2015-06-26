@@ -1,36 +1,33 @@
 #homeImage {
   height: 300px;
-  background-image: url('/images/medea_6-01.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   text-align: center;
+  background-color: #57AACE;
   margin-bottom: 40px;
 }
-#homeSubtitle {
+#homeImage img {
+  height: 300px;
+}
+#homeSubtitle, #studiesAbstract {
   font-family: 'Raleway';
   font-weight: 300;
   font-size: 20px;
   line-height: 40px;
 }
-#spaceBetweenParagraphs {
+.spaceBetweenParagraphs {
+  width: 100%;
   height: 120px;
   font-size: 60px;
   line-height: 120px;
   text-align: center;
   color: #57AACE;
 }
+
 .descriptions {
   font-size: 14px;
   line-height: 30px;
 }
 .study{
-  margin: 20px 5px;
+  margin: 20px 0;
 }
 
-.thumbnailStudy{
-  height: 200px;
-  width: 300px;
-  background: #57AACE;
-}
-/*#57AACE*/
+/*color footer: #33616D*/

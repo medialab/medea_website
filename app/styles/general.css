@@ -31,7 +31,10 @@ h1 {
 .displayNone {
   display: none;
 }
-
+/*Prevent the middle points to go to the right of a section*/
+.noFloat {
+  clear: both;
+}
 .noLeftGutter {
   padding-left: 0;
 }
