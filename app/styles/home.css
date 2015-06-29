@@ -47,5 +47,22 @@
 .study{
   margin: 20px 0;
 }
+.thumbnailStudy {
+  position: relative;
+}
+.backStudies {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.frontStudies {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  top: 75px;
+}
 
 /*color footer: #33616D*/

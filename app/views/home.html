@@ -22,7 +22,10 @@
         <div class="study container-fluid col-sm-6 col-md-6 col-lg-6{{$index === 0 ? ' noLeftGutter' : ($index === 1 ? ' noRightGutter' : '')}}" ng-repeat="route in routes">
           <div>
             <a ng-href="#/{{route.slug}}/main">
-              <div class="thumbnailStudy"><img ng-src="images/medea_studies-{{route.slug}}.jpg"></div>
+              <div class="thumbnailStudy">
+                <img ng-src="images/medea2_back-01.jpg" class="backStudies">
+                <img ng-src="images/medea_studies-{{route.slug}}.png" class="frontStudies">
+              </div>
             </a>
             <div class="studyDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum, mi eu ultricies tempus, enim purus suscipit orci, volutpat convallis tellus nibh quis augue.</div>
           </div>
