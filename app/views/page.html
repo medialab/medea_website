@@ -1,8 +1,10 @@
-<div class="view-page container-fluid">
+<div class="view-page container-fluid page">
 
   <div top-menu class="row" id="topMenu"></div>
-  <h1>{{content.title}}</h1>
+  <h1><i class="fa fa-arrow-circle-left negativeMargin icon"></i><a href="#{{content.studyPath}}/main">{{content.menu[0].title}}</h1></a>
+  <h2>{{content.title}}</h2>
+  <div subchapters></div>
   <span ng-controller="contentCtrl">
-    <div class="row text" zeppelin id="narrativeContainer" index="0" sections="content.sections">
+    <div class="text" zeppelin id="narrativeContainer" index="0" sections="content.sections">
   </span>
 </div>

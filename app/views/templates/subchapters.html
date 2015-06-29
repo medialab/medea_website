@@ -1,19 +1,14 @@
 <!-- section navigation bar -->
-<div class="row">
-  <div class="col-sm-10 col-md-10 col-lg-9 col-sm-offset-2 col-md-offset-2 col-lg-offset-3">
-  <div class="row">
-  <div class="col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-sm-5 col-md-5 col-lg-5 noLeftGutter" id="subchapterMenu">
+  <div id="subchapterMenu">
+    <span class="negativeMargin paragraphSign">&#167;</span>
     <div class="subchapterContainer {{entry.slug === tab ? 'active': ''}}"
           ng-repeat="entry in content.menu">
       <div class="{{entry.slug !== tab ? 'hide' : ''}}">
-        <span ng-repeat="part in $parent.content.sections">
+        <span ng-repeat="part in $parent.content.sections" class="chapterNumbers">
           <input type="radio"
                  ng-model="$parent.$parent.index" value="{{$index}}"
-                 ng-click="elementClicked('radio', {{$index}})"><label for="option"><span><span></span></span>CH{{$index+1}}</label>
+                 ng-click="elementClicked('radio', {{$index}})"><label for="option"><span><span></span></span>{{$index+1}}</label>
         </span>
       </div>
     </div>
   </div>
-  </div>
-  </div>
-</div>
