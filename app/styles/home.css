@@ -1,11 +1,24 @@
 #homeImage {
   height: 300px;
   text-align: center;
-  background-color: #57AACE;
+  /*background-color: #57AACE;*/
   margin-bottom: 40px;
+  position: relative;
+  overflow-x: hidden;
 }
-#homeImage img {
+#backHomeImage {
+  width: 100%;
   height: 300px;
+  object-fit: cover;
+}
+#frontHomeImage {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  top: 150px;
+  z-index: 1;
 }
 #homeSubtitle, #studiesAbstract {
   font-family: 'Raleway';
@@ -28,7 +41,7 @@
 }
 .studyDescription {
   /*margin-top: 10px;*/
-  padding: 10px 20px;
+  padding: 10px 0px;
   font-size: 13px;
 }
 .study{
