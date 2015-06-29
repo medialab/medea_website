@@ -55,7 +55,16 @@ angular
         controller: 'MainCtrl',
         resolve: {
           content : function ($route, FilesFactory) {
-            return FilesFactory.get({path: $route.current.params.page + '/introduction'});
+            return FilesFactory.get({path: $route.current.params.page + '/mapping-the-organizational-dynamics-of-the-ipcc'});
+          }
+        }
+      })
+      .when('/:page/:sub', {
+        templateUrl: 'views/page.html',
+        controller: 'PageCtrl', // handle the items loading
+        resolve: {
+          content : function ($route, FilesFactory) {
+            return FilesFactory.get({path: $route.current.params.page + '/' + $route.current.params.sub});
           }
         }
       })

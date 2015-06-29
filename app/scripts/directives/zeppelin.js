@@ -24,20 +24,20 @@ angular.module('driveoutApp.directives.zeppelin', [])
         scope.getCurrentIndex = function() {
           return scope.index;
         };
-        // scope.getScrollFlag = function() {
-        //   return scope.automatedScroll;
-        // }
+        scope.getScrollFlag = function() {
+          return scope.automatedScroll;
+        }
 
-        // scope.bringTextTo = function(index) {
-        //   scope.automatedScroll = true;
-        //   var element = $element,
-        //       sliderComponent = element.find('.slider');
-        //   if (element.find('#chapter_' + index)[0] !== undefined) {
-        //     sliderComponent.scrollTop(
-        //       element.find('#chapter_' + index)[0].offsetTop -
-        //       sliderComponent[0].offsetTop)
-        //   }
-        // }
+        scope.bringTextTo = function(index) {
+          scope.automatedScroll = true;
+          var element = $element,
+              sliderComponent = element.find('.slider');
+          if (element.find('#chapter_' + index)[0] !== undefined) {
+            sliderComponent.scrollTop(
+              element.find('#chapter_' + index)[0].offsetTop -
+              sliderComponent[0].offsetTop)
+          }
+        }
 
         scope.next = function(fromScroll) {
           var _index = scope.index + 1;
@@ -54,24 +54,25 @@ angular.module('driveoutApp.directives.zeppelin', [])
             scope.bringTextTo(scope.index);
         };
 
-        // scope.steer = function(index) {
-        //   console.log('scopi', this)
-        //   var sections = this.sections;
-        //   if (index >= 0 && index < sections.length) {
-        //     if(sections[scope.index]){
-        //       scope.section = sections[scope.index];
-        //     }
-        //   }
-        // };
+        scope.steer = function(index) {
+          console.log('scopi', this)
+          var sections = this.sections;
+          if (index >= 0 && index < sections.length) {
+            if(sections[scope.index]){
+              scope.section = sections[scope.index];
+            }
+          }
+        };
         //Scroll spy for the narratives' text
         $('.slider').on('scroll', function(e){
+          console.log('scroll', e);
           //Checks its the good slider that is triggered
           if (e.currentTarget.parentNode.parentNode.id === element[0].id) {
-            // //Checks if the scroll has been triggered by the user or automatically
-            // if (scope.$parent.getScrollFlag()) {
-            //   scope.$parent.automatedScroll = false;
-            //   return true;
-            // }
+            //Checks if the scroll has been triggered by the user or automatically
+            if (scope.$parent.getScrollFlag()) {
+              scope.$parent.automatedScroll = false;
+              return true;
+            }
 
             //Remembers the scroll position
             if (this.data === undefined)
@@ -126,12 +127,15 @@ angular.module('driveoutApp.directives.zeppelin', [])
           var noteNumber = + $(this).attr('noteIndex');
         });
 
-
-        // scope.$parent.$watch('height', function(h) {
-        //    element.css({
-        //     height: h
-        //   })
-        // });
+        console.log('heyScope', scope);
+        scope.$parent.$watch(function(scopeP) {
+          console.log(scopeP.height);
+          return scopeP.height;
+          }, function(h) {
+           element.css({
+            height: h
+          })
+        });
       }
     };
   })

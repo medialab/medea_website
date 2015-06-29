@@ -1,5 +1,5 @@
-<div>
-  <div class="col-sm-5 col-md-5 col-lg-4 slider-wrapper narrative">
+<div class="fill-height">
+  <div class="col-sm-5 col-md-5 col-lg-4  fill-height slider-wrapper">
 
     <div class="slider fill-height overflow">
       <section ng-repeat="section in sections" id="{{'chapter_' + $index}}">
@@ -9,7 +9,7 @@
       </section>
     </div>
   </div>
-  <div class="col-sm-7 col-md-7 col-lg-8 narrative">
+  <div class="col-sm-7 col-md-7 col-lg-8 fill-height">
     <div class="fill-height" ng-switch="sections[index].directive">
       <div class="image" ng-switch-when="image">
         <img ng-repeat="src in $parent.$parent.section.datasrc" ng-src="{{src}}"/>

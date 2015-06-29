@@ -4,5 +4,4 @@ angular.module('driveoutApp.topmenu', [])
     $scope.currentPage = $location.path().replace(/^\//,'');
     $scope.isStory =  $location.path().replace(/^\//,'').search('/') !== -1;
     $scope.storySlug = $scope.isStory ? $scope.currentPage.replace(/\/\w*/,'') : '';
-    console.log($scope.currentPage);
   });

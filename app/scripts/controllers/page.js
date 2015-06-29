@@ -8,9 +8,7 @@
  * Controller of the driveoutApp
  */
 angular.module('driveoutApp.page', [])
-  .controller('PageCtrl', function ($scope, $routeParams) {
-
+  .controller('PageCtrl', function ($scope, content, $routeParams) {
+    $scope.content = content.data;
     $scope.tab = $routeParams.sub || 'introduction';
-
-
   });
