@@ -21,51 +21,8 @@ angular.module('driveoutApp.directives.zeppelin', [])
           scope.$broadcast('focus', '' + $(this).attr('data-click'));
         })
 
-        scope.getCurrentIndex = function() {
-          return scope.index;
-        };
-        scope.getScrollFlag = function() {
-          return scope.automatedScroll;
-        }
-
-        scope.bringTextTo = function(index) {
-          scope.automatedScroll = true;
-          var element = $element,
-              sliderComponent = element.find('.slider');
-          if (element.find('#chapter_' + index)[0] !== undefined) {
-            sliderComponent.scrollTop(
-              element.find('#chapter_' + index)[0].offsetTop -
-              sliderComponent[0].offsetTop)
-          }
-        }
-
-        scope.next = function(fromScroll) {
-          var _index = scope.index + 1;
-          scope.index = Math.min(_index, scope.sections.length -1);
-          if (!fromScroll)
-            scope.bringTextTo(scope.index);
-        };
-
-        // goto previous slide
-        scope.previous = function(fromScroll) {
-          var _index = scope.index - 1;
-          scope.index = Math.max(_index, 0);
-          if (!fromScroll)
-            scope.bringTextTo(scope.index);
-        };
-
-        scope.steer = function(index) {
-          console.log('scopi', this)
-          var sections = this.sections;
-          if (index >= 0 && index < sections.length) {
-            if(sections[scope.index]){
-              scope.section = sections[scope.index];
-            }
-          }
-        };
         //Scroll spy for the narratives' text
         $('.slider').on('scroll', function(e){
-          console.log('scroll', e);
           //Checks its the good slider that is triggered
           if (e.currentTarget.parentNode.parentNode.id === element[0].id) {
             //Checks if the scroll has been triggered by the user or automatically
@@ -84,35 +41,35 @@ angular.module('driveoutApp.directives.zeppelin', [])
 
             //Determine the next index to match
             //(could be the one before or the one after)
-            var currentIndex = scope.getCurrentIndex(),
+            var currentIndex = scope.$parent.getCurrentIndex(),
                 nextIndex = this.data.newPosition < this.data.oldPosition ?
                             currentIndex - 1:
                             currentIndex + 1,
                 functionToCall;
 
             if (nextIndex > currentIndex)
-              functionToCall = scope.next
+              functionToCall = scope.$parent.next
             else
-              functionToCall = scope.previous
+              functionToCall = scope.$parent.previous
 
             if (element.find('#chapter_' + nextIndex)[0] !== undefined) {
               var switchViz = false,
                   upDiff = 200,
                   downDiff = 400;
               if (nextIndex > currentIndex) {
-                functionToCall = scope.next;
+                functionToCall = scope.$parent.next;
                 switchViz = element.find('#chapter_' + nextIndex)[0].offsetTop <
                             this.scrollTop + downDiff;
               }
               else {
-                functionToCall = scope.previous;
+                functionToCall = scope.$parent.previous;
                 switchViz = element.find('#chapter_' + currentIndex)[0].offsetTop >
                             this.scrollTop + upDiff;
               }
 
               if(switchViz) {
                 functionToCall(true);
-                scope.$apply();
+                scope.$parent.$apply();
               }
             }
           }
@@ -127,7 +84,7 @@ angular.module('driveoutApp.directives.zeppelin', [])
           var noteNumber = + $(this).attr('noteIndex');
         });
 
-        console.log('heyScope', scope);
+
         scope.$parent.$watch(function(scopeP) {
           console.log(scopeP.height);
           return scopeP.height;

@@ -1,7 +1,7 @@
 angular.module('driveoutApp.content', ['ui.bootstrap'])
   .controller('contentCtrl', function($window, $scope, $element, $attrs) {
        var w = angular.element($window);
-
+       console.log('scopi', $scope);
         $scope.index = 0;
         $scope.height = w.height() - 250;
 
@@ -32,6 +32,7 @@ angular.module('driveoutApp.content', ['ui.bootstrap'])
         $scope.next = function(fromScroll) {
           var _index = $scope.index + 1;
           $scope.index = Math.min(_index, $scope.$parent.content.sections.length -1);
+          console.log('new index', $scope.index);
           if (!fromScroll)
             $scope.bringTextTo($scope.index);
         };
@@ -40,6 +41,7 @@ angular.module('driveoutApp.content', ['ui.bootstrap'])
         $scope.previous = function(fromScroll) {
           var _index = $scope.index - 1;
           $scope.index = Math.max(_index, 0);
+          console.log('new index', $scope.index);
           if (!fromScroll)
             $scope.bringTextTo($scope.index);
         };
@@ -49,16 +51,11 @@ angular.module('driveoutApp.content', ['ui.bootstrap'])
         };
 
 
-        /*
-          Goto a specific slide. If the section directive names has the 'follow' prefix,
-          we do not substitute the current section in playground, but
-          we 'inject' preliminary params instead. This function handle the
-          the section scrolling inside the slider as well.
-        */
         $scope.steer = function(index){
-          if (index >= 0 && index < $scope.content.sections.length) {
-            if($scope.content.sections[$scope.index]){
-              $scope.section = $scope.content.sections[$scope.index];
+          if (index >= 0 && index < $scope.$parent.content.sections.length) {
+            if($scope.$parent.content.sections[$scope.index]){
+              // console.log('scopi', $scope , 'scopi parent', $scope.$parent, $scope.index);
+              $scope.section = $scope.$parent.content.sections[$scope.index];
             }
           }
         };
