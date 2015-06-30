@@ -16,9 +16,10 @@ angular.module('driveoutApp.directives.partratehistototal', [])
             elementHeight = element.height();
         var histogram = new PowerLawHistogram();
         histogram.load('contents/data/participationRatesHisto/participations.json', function() {
+          var legendHeight = $('.vizLegendZone').height();
           var width = elementWidth,
-              height = elementHeight/1.2,
-              margin = {top: 40, bottom: 70, left: 40, right: 40};
+              height = elementHeight/1.2 - legendHeight,
+              margin = {top: 40, bottom: 35, left: 40, right: 40};
 
           histogram.drawChart('#containerTotal',
             {
@@ -27,16 +28,21 @@ angular.module('driveoutApp.directives.partratehistototal', [])
               width: width,
               margin: margin
             });
+          $('#containerTotal svg').css({
+            'position': 'absolute',
+            'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+            'margin-bottom': 30 + 'px'});
       });
 
       window.addEventListener('resize', function() {
-        if (element.width() !== 0) {
+          console.log(element.height(), $('.vizLegendZone').position())
           var elementWidth = element.width(),
               elementHeight = element.height();
           histogram.load('contents/data/participationRatesHisto/participations.json', function() {
+            var legendHeight = $('.vizLegendZone').height();
             var width = elementWidth,
-                height = elementHeight/1.2,
-                margin = {top: 40, bottom: 70, left: 40, right: 40};
+                height = elementHeight/1.2 - legendHeight,
+                margin = {top: 40, bottom: 35, left: 40, right: 40};
 
             histogram.drawChart('#containerTotal',
               {
@@ -45,8 +51,11 @@ angular.module('driveoutApp.directives.partratehistototal', [])
                 width: width,
                 margin: margin
               });
+            $('#containerTotal svg').css({
+              'position': 'absolute',
+              'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+              'margin-bottom': 30 + 'px'});
           });
-        }
       });
     }
   };

@@ -110,13 +110,24 @@ angular.module('driveoutApp.directives.pdfconclusion', [])
         }
         document.getElementById('nextPDF').addEventListener('click', onNextPage);
 
+        $('#containerPdfConclusion').css({
+            'position': 'absolute',
+            'left': (element.width() - 525)/2 +'px',
+            'height': 350 + 'px',
+            'width': 525 + 'px',
+            'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+            'margin-bottom': 30 + 'px'});
+        window.addEventListener('resize', function() {
+          $('#containerPdfConclusion').css({
+            'left': (element.width() - 525)/2 +'px'
+          });
+        })
         /**
          * Asynchronously downloads PDF.
          */
         PDFJS.getDocument(url).then(function (pdfDoc_) {
           pdfDoc = pdfDoc_;
           document.getElementById('page_countPDF').textContent = pdfDoc.numPages;
-
           // Initial/first page rendering
           renderPage(pageNum);
         });

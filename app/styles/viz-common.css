@@ -11,6 +11,18 @@
 rect {
   shape-rendering: crispEdges;
 }
+select {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  background-color: #33616D;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
 .invisible {
   visibility: hidden;
   pointer-events: all;
@@ -139,26 +151,34 @@ rect {
   font: 0px sans-serif;
 }
 .powerLawHisto rect {
-  fill: #8B7866;
+  fill: #33616D;
 }
 .powerLawHisto text, .powerLawHisto line {
-  fill: #665F5E;
-  font: 13px sans-serif;
+  fill: #33616D;
+  font: 11px sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-.powerLawHisto.title {
-  font: 16px sans-serif;
-  font-weight: 600;
-  fill: #665F5E;
+.powerLawHisto .title {
+  font-size: 14px;
+  letter-spacing: 1px;
+  fill: #33616D;
+}
+.powerLawHisto #xAxisLegend, .powerLawHisto #yAxisLegend {
+  font-size: 12px;
+  letter-spacing: 1px;
+  fill: #33616D;
 }
 
 #powerLawTooltip rect, #powerLawTooltip path, .powerLawHisto .hoverBar{
-  fill: #453c32;
+  fill: rgba(51, 97, 109, 0.8);
 }
 
 #powerLawTooltipText text{
   fill: white;
-  font-weight: bold;
+  font-size: 11px;
+  text-transform: none;
   alignment-baseline: central;
 }
 
@@ -170,11 +190,11 @@ rect {
   z-index: 2;
 }
 .histoBridgeTooltipText {
-  background: #453c32;
+  background: rgba(51, 97, 109, 0.8);
   color: white;
 }
 .histoBridgeTooltipText .hoverBar rect{
-  fill: #453c32;
+  fill: rgba(51, 97, 109, 0.8);
 }
 
 /*********************************************************************

@@ -240,10 +240,11 @@
       .attr('transform', 'rotate(-90)')
       .attr('y', margin.left - 4*tickSize)
       .attr('x', 0 - (margin.top + chartTrueHeight/2))
+      .attr('id', 'yAxisLegend')
       .style('alignment-baseline', 'baseline')
       .style('dominant-baseline', 'baseline')
       .style('text-anchor', 'middle')
-      .text('Number of participations');
+      .text('Participations');
 
     this.drawBars(dataArray,{
                          scaleX: x,
@@ -319,7 +320,7 @@
       .style('height', 0)
       .style('border-left', arrowSide + 'px solid transparent')
       .style('border-right', arrowSide + 'px solid transparent')
-      .style('border-top', arrowSide + 'px solid #453c32')
+      .style('border-top', arrowSide + 'px solid rgba(51, 97, 109, 0.8)')
       .style('left', boundingRectBar.x +
                      boundingRectBar.width/2 -
                      arrowSide + trueSvgPositions.left + 'px')

@@ -248,15 +248,16 @@
       .style('text-anchor', 'middle')
       .style('alignment-baseline', 'hanging')
       .style('dominant-baseline', 'hanging')
-      .text('Number of participations');
+      .text('Participations');
     chart.append('text')
       .attr('transform', 'rotate(-90)')
       .attr('y', margin.left - 4*tickSize)
       .attr('x', 0 - (margin.top + chartTrueHeight/2))
+      .attr('id', 'yAxisLegend')
       .style('alignment-baseline', 'baseline')
       .style('dominant-baseline', 'baseline')
       .style('text-anchor', 'middle')
-      .text('Number of authors');
+      .text('Authors');
 
     this.drawBars(dataArray,{
                          scaleX: x,
@@ -617,15 +618,16 @@
       .style('text-anchor', 'middle')
       .style('alignment-baseline', 'hanging')
       .style('dominant-baseline', 'hanging')
-      .text('Number of participations');
+      .text('Participations');
     chart.append('text')
       .attr('transform', 'rotate(-90)')
       .attr('y', margin.left - 4*tickSize)
       .attr('x', 0 - (margin.top + chartTrueHeight/2))
+      .attr('id', 'yAxisLegend')
       .style('alignment-baseline', 'baseline')
       .style('dominant-baseline', 'baseline')
       .style('text-anchor', 'middle')
-      .text('Number of authors');
+      .text('Authors');
 
     this.drawBars(dataArray,{
                          scaleX: x,

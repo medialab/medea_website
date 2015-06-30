@@ -12,6 +12,12 @@ angular.module('driveoutApp.directives.gexftestone', [])
       restrict: 'EA',
       scope: {},
       link: function postLink(scope, element, attrs) {
+        $('#sigma-container').css({
+            'position': 'absolute',
+            'height': ($('.vizLegendZone').position().top) + 'px',
+            'width': '100%',
+            'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+            'margin-bottom': 30 + 'px'});
         drawGraph('sigma-container', 'currentAR');
       }
     };

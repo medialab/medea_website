@@ -16,15 +16,16 @@ angular.module('driveoutApp.directives.partratehisto', [])
             elementHeight = element.height();
         var histogram = new PowerLawHistogram();
         histogram.load('contents/data/participationRatesHisto/participations.json', function() {
-          var width = elementWidth,
-              height = elementHeight/2.4,
-              margin = {top: 40, bottom: 70, left: 40, right: 40};
+          var legendHeight = $('.vizLegendZone').height();
 
+          var width = elementWidth,
+              height = elementHeight/1.1 - legendHeight,
+              margin = {top: 40, bottom: 35, left: 40, right: 40};
           histogram.drawChart('#containerNonBridge',
             {
               dataName: 'dataNonBridge',
               title: 'Non-bridge authors',
-              height: height,
+              height: height/2,
               width: width,
               margin: margin
             });
@@ -32,10 +33,14 @@ angular.module('driveoutApp.directives.partratehisto', [])
             {
               dataName: 'dataBridge',
               title: 'Bridge authors',
-              height: height,
+              height: height/2,
               width: width,
               margin: margin
             });
+          $('#containerBridge svg').css({
+            'position': 'absolute',
+            'bottom': (element.height()- $('.vizLegendZone').position().top - 5 )+ 'px',
+            'margin-bottom': 30 + 'px'});
       });
 
       window.addEventListener('resize', function() {
@@ -43,15 +48,18 @@ angular.module('driveoutApp.directives.partratehisto', [])
           var elementWidth = element.width(),
               elementHeight = element.height();
           histogram.load('contents/data/participationRatesHisto/participations.json', function() {
+            var legendHeight = $('.vizLegendZone').height();
+
+
             var width = elementWidth,
-                height = elementHeight/2.4,
-                margin = {top: 40, bottom: 70, left: 40, right: 40};
+                height = elementHeight/1.1 - legendHeight,
+                margin = {top: 40, bottom: 35, left: 40, right: 40};
 
             histogram.drawChart('#containerNonBridge',
               {
                 dataName: 'dataNonBridge',
                 title: 'Non-bridge authors',
-                height: height,
+                height: height/2,
                 width: width,
                 margin: margin
               });
@@ -59,10 +67,14 @@ angular.module('driveoutApp.directives.partratehisto', [])
               {
                 dataName: 'dataBridge',
                 title: 'Bridge authors',
-                height: height,
+                height: height/2,
                 width: width,
                 margin: margin
               });
+            $('#containerBridge svg').css({
+            'position': 'absolute',
+            'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+            'margin-bottom': 30 + 'px'});
           });
         }
       });

@@ -19,7 +19,7 @@
       right: 40
     };
     this.defaultRatio = {
-      verti: 0.2,
+      verti: 0,
       hori: 0.4
     };
     this.defaultCountry = 'all';
