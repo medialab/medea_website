@@ -3,7 +3,7 @@ angular.module('driveoutApp.content', ['ui.bootstrap'])
        var w = angular.element($window);
        console.log('scopi', $scope);
         $scope.index = 0;
-        $scope.height = w.height() - 250;
+        $scope.height = w.height() - 265;
 
         $scope.automatedScroll = false;
 
@@ -63,7 +63,7 @@ angular.module('driveoutApp.content', ['ui.bootstrap'])
         //   Once timed properly, this funciton resize the szeppelin working area
         //   (fixing the height porperty according to window height props)
         w.on('resize', function () {
-          $scope.height = w.height() - 250;
+          $scope.height = w.height() - 265;
           $scope.$apply();
         });
 

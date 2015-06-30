@@ -10,3 +10,34 @@
 .overflow {
   overflow-y: auto;
 }
+
+.vizLegendButton, .vizLegendButton:active, .vizLegendButton:focus, .vizLegendButton:active:focus {
+  padding: 0;
+  border: none;
+  outline: none;
+  position: absolute;
+  background: none;
+  height: 20px;
+  bottom: -22px;
+  left: 50%;
+  z-index: 2;
+}
+.vizLegendZone {
+  position: absolute;
+  width: 100%;
+  bottom: -10px;
+}
+.topline {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #33616D;
+  height: 5px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.vizLegendText {
+  background-color: rgba(255, 255, 255, 0.77);
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
+}

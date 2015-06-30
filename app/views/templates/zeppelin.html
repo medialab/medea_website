@@ -1,6 +1,5 @@
 <div class="fill-height">
   <div class="col-sm-5 col-md-5 col-lg-4  fill-height slider-wrapper noLeftGutter">
-
     <div class="slider fill-height overflow noLeftGutter">
       <section ng-repeat="section in sections" id="{{'chapter_' + $index}}">
         <h3 class="chapterNumbers">{{section.title}}</h3>
@@ -27,18 +26,34 @@
         <div class="fill-height" enbgraph gexf="section.datasrc[0]" csv="section.datasrc[1]" height="height"></div>
       </div>
       <div class="fill-height scrollable" ng-switch-when="pdfWG">
-        <h3>Report of the first session of the WMO/UNEP INTERGOVERNMENTAL PANEL ON CLIMATE CHANGE (IPCC)</h3>
-        <h4>Geneva, 9-11 November 1988</h4>
-
         <img class="imgScaled" ng-src="media/pdfWG.png">
+        <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+        <div collapse="isCollapsed" class="vizLegendZone">
+          <div class="topline"></div>
+          <div class="vizLegendText">
+            <h4>Report of the first session of the WMO/UNEP INTERGOVERNMENTAL PANEL ON CLIMATE CHANGE (IPCC)<br/>Geneva, 9-11 November 1988</h4>
+          </div>
+        </div>
       </div>
       <div class="fill-height scrollable" ng-switch-when="pdfOrga">
-        <h3>Organisation of the IPCC</h3>
         <img class="imgScaled" ng-src="media/pdfOrga.png">
+        <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+        <div collapse="isCollapsed" class="vizLegendZone">
+          <div class="topline"></div>
+          <div class="vizLegendText">
+            <h4>Organisation of the IPCC</h4>
+          </div>
+        </div>
       </div>
       <div class="fill-height scrollable flex" ng-switch-when="ipccwgvenn">
-        <h3>Distribution of IPCC authors among the 3 working groups all assessment reports aggregated</h3>
         <div id="venn" class="fillComplement" ipccwgvenn path="$parent.$parent.section.datasrc[0]"></div>
+        <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+        <div collapse="isCollapsed" class="vizLegendZone">
+          <div class="topline"></div>
+          <div class="vizLegendText">
+            <h4>Distribution of IPCC authors among the 3 working groups all assessment reports aggregated</h4>
+          </div>
+        </div>
       </div>
       <div class="fill-height" ng-switch-when="participationByChapters">
         <div id="containerBricks" participationbychapters>
@@ -59,17 +74,29 @@
       </div>
       <div class="fill-height" ng-switch-when="participationRatesHisto">
         <div id="containerparticipationRatesHisto" class="flex fill-height" participationrateshisto>
-          <h3>Comparison of distribution participations between bridge and non-bridge authors in the IPCC</h3>
           <div class="fillComplement">
             <div id="containerNonBridge"></div>
             <div id="containerBridge"></div>
+          </div>
+          <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+          <div collapse="isCollapsed" class="vizLegendZone">
+            <div class="topline"></div>
+            <div class="vizLegendText">
+              <h4>Comparison of distribution participations between bridge and non-bridge authors in the IPCC</h4>
+            </div>
           </div>
         </div>
       </div>
       <div class="fill-height" ng-switch-when="participationRatesHistoTotal">
         <div id="containerparticipationRatesHistoTotal" class="fill-height" participationrateshistototal>
-          <h3>Distribution of author participations in the IPCC</h3>
           <div id="containerTotal"></div>
+          <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+          <div collapse="isCollapsed" class="vizLegendZone">
+            <div class="topline"></div>
+            <div class="vizLegendText">
+              <h4>Distribution of author participations in the IPCC</h4>
+            </div>
+          </div>
         </div>
       </div>
       <div class="fill-height fill-width" ng-switch-when="guardianArticle">
@@ -78,42 +105,63 @@
       <div class="fill-height" ng-switch-when="roleDistribStacked">
         <div id="containerroledistribstacked" class="fill-height" roledistribstacked>
           <div id="containerStackedBars" class="flex fill-height">
-            <h3>Repartion roles in the IPCC by author type</h3>
             <div id="svgContainer" class="fillComplement"></div>
+            <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+            <div collapse="isCollapsed" class="vizLegendZone">
+              <div class="topline"></div>
+              <div class="vizLegendText">
+                <h4>Repartion roles in the IPCC by author type</h4>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="fill-height" ng-switch-when="pdfConclusion">
         <div id="pdfconclusion" class="fill-height flex" pdfconclusion>
-          <div>
-            <button id="prevPDF">Previous</button><button id="nextPDF">Next</button>&nbsp; &nbsp;
-            <span>Page: <span id="page_numPDF"></span> / <span id="page_countPDF"></span></span>
-          </div>
           <canvas id="containerPdfConclusion" class="fillComplement"></canvas>
+          <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+          <div collapse="isCollapsed" class="vizLegendZone">
+            <div class="topline"></div>
+            <div class="vizLegendText">
+              <h4><button id="prevPDF">Previous</button><button id="nextPDF">Next</button>&nbsp; &nbsp;
+            <span>Page: <span id="page_numPDF"></span> / <span id="page_countPDF"></span></span></h4>
+            </div>
+          </div>
         </div>
       </div>
       <div class="fill-height" ng-switch-when="gexfTest1">
         <div id="gexfTest1" class="fill-height" gexftestone>
           <div id="gexfTest1" class="fill-height flex">
-            <h3 id="vizTitle">Bridge authors in AR
+            <div id="sigma-container" class="fillComplement"></div>
+            <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+            <div collapse="isCollapsed" class="vizLegendZone">
+              <div class="topline"></div>
+              <div class="vizLegendText">
+                <h4 id="vizTitle">Bridge authors in AR
               <select id="currentAR">
                 <option value='1' selected>1</option>
                 <option value='2'>2</option>
                 <option value='3'>3</option>
                 <option value='4'>4</option>
                 <option value='5'>5</option>
-              </select>
-            </h3>
-            <div id="sigma-container" class="fillComplement"></div>
+              </select></h4>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="fill-height" ng-switch-when="partCountriesBridgeNonBridge">
         <div id="containerpartcountriesbridgenonbridge" class="fill-height" partcountriesbridgenonbridge>
           <div id="containerPartCountriesBridgeNonBridge">
-            <h3>Comparison of distribution of country participations in the IPCC by author type</h3>
             <div id="containerNonBridge"></div>
             <div id="containerBridge"></div>
+            <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+            <div collapse="isCollapsed" class="vizLegendZone">
+              <div class="topline"></div>
+              <div class="vizLegendText">
+                <h4>Comparison of distribution of country participations in the IPCC by author type</h4>
+              </div>
+            </div>
           </div>
         </div>
       </div>

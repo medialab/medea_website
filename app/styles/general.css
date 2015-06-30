@@ -10,13 +10,19 @@
   font-family: 'Merriweather-Light';
   src: url('../fonts/Merriweather_Light.ttf');
 }
+html {
+  min-height: 100%;
+  border-bottom: 3px solid #33616D;
+}
 body{
+  height: 100%;
   padding-top: 60px;
   font-family: 'Merriweather-Light';
   font-size: 14px;
   line-height: 25px;
   font-weight: 300;
   color: #363633;
+
 }
 h1 {
   font-family: 'Raleway';
@@ -32,6 +38,16 @@ h3 {
   letter-spacing: 1px;
   margin-bottom: 12px;
   font-size: 14px;
+}
+h4 {
+  font-size: 11px;
+  font-family: 'Merriweather-Regular';
+  text-align: center;
+  line-height: 15px !important;
+  color: #33616D;
+}
+.lightBlueHover:hover {
+  color: #57AACE;
 }
 .icon {
   margin-top: 10px;

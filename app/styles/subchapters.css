@@ -14,8 +14,9 @@
   font-weight: bold;
   letter-spacing: 1px;
 }
-.subchapters {
-  margin-bottom: 10px;
+#subchapters {
+  padding-top: 0;
+  margin-bottom: 20px;
 }
 .subChapBullet{
   display: inline-block;
