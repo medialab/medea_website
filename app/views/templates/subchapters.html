@@ -3,11 +3,12 @@
     <span class="negativeMargin paragraphSign">&#167;</span>
     <div class="subchapterContainer {{entry.slug === tab ? 'active': ''}}"
           ng-repeat="entry in content.menu">
-      <div class="{{entry.slug !== tab ? 'hide' : ''}}">
+      <div class="chapterNumbersContainer {{entry.slug !== tab ? 'hide' : ''}}">
         <span ng-repeat="part in $parent.content.sections" class="chapterNumbers">
           <input type="radio"
                  ng-model="$parent.$parent.index" value="{{$index}}"
                  ng-click="elementClicked('radio', {{$index}})"><label for="option"><span><span></span></span>{{$index+1}}</label>
+          <div class="subChapBullet" ng-if="$index+1 !== $parent.content.sections.length">&nbsp;&nbsp;&bull;&nbsp;&nbsp;</div>
         </span>
       </div>
     </div>

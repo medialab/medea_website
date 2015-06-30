@@ -14,6 +14,17 @@
   font-weight: bold;
   letter-spacing: 1px;
 }
+.subchapters {
+  margin-bottom: 10px;
+}
+.subChapBullet{
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  font-size: 20px;
+  height: 16px;
+  line-height: 16px;
+}
 
 a {
   color: #363633;
@@ -28,22 +39,27 @@ a:hover {
  */
  /*Hide the default radio button*/
 input[type=radio]:not(old){
-  width: 30px;
-  margin: 0;
+  width: 20px;
   padding: 0;
   font-size: 14px;
   opacity: 0;
 }
 
 /*Label Positionning*/
-input[type=radio]:not(old) + label{
+input[type=radio]:not(old){
+  cursor: pointer;
   display: inline-block;
-  margin-left: -30px;
+  margin-right: -20px;
+  line-height: 16px;
+}
+label {
+  display: inline-block;
   line-height: 16px;
 }
 
 input[type=radio]:not(old):checked + label{
-  font-size:22px;
+  font-size:14px;
+  color: #57AACE;
 }
 
 /*Create the unchecked graphics*/
