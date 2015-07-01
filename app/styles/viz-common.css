@@ -4,7 +4,7 @@
 .axis path,
 .axis line {
   fill: none;
-  stroke: #000;
+  stroke: #33616D;
   shape-rendering: crispEdges;
   stroke-width: 1;
 }
@@ -32,6 +32,10 @@ select {
   width: 80%;
   margin-left: 10%;
 }
+.imgNotScrollable {
+  position: absolute;
+  bottom: 30px;
+}
 
 .flex {
   display: flex;
@@ -52,20 +56,29 @@ select {
 /*********************************************************************
  *************************** StackedChart
  *********************************************************************/
-.LA {
-  fill: #8C806A;
-}
 .CA {
-  fill: #5B513F;
+  fill: #3c95b5;
 }
 .CLA {
-  fill: #AA8F70;
+  fill: #3c87a3;
+}
+.LA {
+  fill: #287183;
 }
 .RE {
-  fill: #EAB473;
+  fill: #2f5b66;
 }
-.roleLegend {
-  font-size: 11px;
+.tick text, .roleLegend {
+  font: 11px 'Raleway';
+  fill: #33616D;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.barTitle {
+  font: 14px 'Raleway';
+  fill: #33616D;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /*********************************************************************
@@ -148,14 +161,17 @@ select {
  *************************** Powerlaw histogram
  *********************************************************************/
 .powerLawHisto .axis text {
-  font: 0px sans-serif;
+  font: 0px 'Raleway';
+}
+.powerLawHisto #yAxis text {
+  font: 11px 'Raleway';
 }
 .powerLawHisto rect {
   fill: #33616D;
 }
 .powerLawHisto text, .powerLawHisto line {
   fill: #33616D;
-  font: 11px sans-serif;
+  font: 11px 'Raleway';
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -166,8 +182,10 @@ select {
   fill: #33616D;
 }
 .powerLawHisto #xAxisLegend, .powerLawHisto #yAxisLegend {
-  font-size: 12px;
+  font-size: 11px;
+  /*font-family: 'Merriweather-Regular';*/
   letter-spacing: 1px;
+  font-weight: 700;
   fill: #33616D;
 }
 
@@ -185,15 +203,15 @@ select {
 /*********************************************************************
  *************************** Powerlaw histogram
  *********************************************************************/
-.histoBridgeTooltipText, .histoBridgeTooltipContainer #arrowTooltip{
+.tooltipText, .histoBridgeTooltipContainer #arrowTooltip{
   pointer-events: none;
   z-index: 2;
 }
-.histoBridgeTooltipText {
+.tooltipText {
   background: rgba(51, 97, 109, 0.8);
   color: white;
 }
-.histoBridgeTooltipText .hoverBar rect{
+.tooltipText .hoverBar rect{
   fill: rgba(51, 97, 109, 0.8);
 }
 
@@ -203,10 +221,10 @@ select {
 .venntooltip {
   position: absolute;
   text-align: center;
-  background: #333;
-  color: #ddd;
+  background: rgba(91, 94, 93, 0.8);
+  color: white;
+  font-size: 11px;
   border: 0;
-  border-radius: 8px;
 }
 
 /*********************************************************************

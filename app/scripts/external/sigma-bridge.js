@@ -72,8 +72,9 @@
     );
   };
 
-  function drawGraph(container, selectContainer) {
-
+  function drawGraph(container, selectContainer, ar) {
+    console.log(container)
+    $('#' + container + ' canvas').remove();
     var newInstance = new sigma({container: container});
 
     var select =  document.getElementById(selectContainer);
@@ -100,8 +101,9 @@
       // singleHover: true,
       labelThreshold: 100
     });
-
-    update(container, '1', newInstance);
+    if (ar === undefined)
+      ar = '1';
+    update(container, ar, newInstance);
   }
 
   function update(container, ar, sigmaInstance) {

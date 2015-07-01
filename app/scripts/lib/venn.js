@@ -254,7 +254,7 @@
         return output;
     };
 
-    /** Scales a solution from venn.venn or venn.greedyLayout such that it fits in
+    /** Scales a solution from venn.venn or venn.gre"edyLayout such that it fits in
     a rectangle of width/height - with padding around the borders. also
     centers the diagram in the available space at the same time */
     venn.scaleSolution = function(solution, width, height, padding) {
@@ -582,16 +582,28 @@
 
         var text = nodes.append("text")
                .attr("dy", ".35em")
-               .attr("x", function(d) { return Math.floor(d.textCenter.x); })
-               .attr("y", function(d) { return Math.floor(d.textCenter.y); })
+               .attr("x", function(d) { return d.x; })
+               .attr("y", function(d) { return d.y; })
                .attr("text-anchor", "middle")
                .style("fill", function(d, i) { return colours(i); })
-               .call(function (text) { text.each(wrapText); });
+               .text(function(d) {
+                return d.label;
+               });
+        var numbers = nodes.append("text")
+               .attr("dy", "1.7em")
+               .attr("x", function(d) { return d.x; })
+               .attr("y", function(d) { return d.y; })
+               .attr("text-anchor", "middle")
+               .style("fill", function(d, i) { return colours(i); })
+               .text(function(d) {
+                return d.size;
+               });
 
         return {'svg' : svg,
                 'nodes' : nodes,
                 'circles' : circles,
-                'text' : text };
+                'partTitle' : text,
+                'partNumber': numbers };
     };
 
     venn.updateD3Diagram = function(diagram, dataset, parameters) {

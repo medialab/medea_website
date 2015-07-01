@@ -67,8 +67,6 @@
         tickSize = params.tickSize,
         barWidth = (w - data.length * 2 * distanceBarToTick) / data.length;
 
-    //SVG's true position
-    var trueSvgPositions = params.trueSvgPositions;
     var scaleY = scaleY.domain([0, d3.max(data, function(d) { return d.y; })]);
 
     var bar = d3.select(svgContainer).selectAll('.bar '+ name)
@@ -100,7 +98,7 @@
       .attr('height', function(d) { return h; })
       .attr('class', 'invisible')
       .on('mouseover', function(d,i) {
-        drawToolTipHTML(svgContainer, bar[0][i].children[0], i, d, {trueSvgPositions: trueSvgPositions});
+        drawToolTipHTML(svgContainer, bar[0][i].children[0], i, d);
       })
       .on('mouseleave', function(d,i) {
         removeToolTipHTML(svgContainer, bar[0][i].children[0]);
@@ -130,7 +128,7 @@
                 distanceBarToTick +
                 barWidth / 2);
       })
-      .attr('y', margin.top + h + 2*tickSize)
+      .attr('y', margin.top + h + 3*tickSize)
       .text(function(d,i) {
         if (barWidth >= 30 || i % 2 === 0)
           return d.abbr;
@@ -140,7 +138,7 @@
       .style('alignment-baseline', 'hanging')
       .style('dominant-baseline', 'hanging')
       .on('mouseover', function(d,i) {
-        drawToolTipHTML(svgContainer, bar[0][i].children[0], i, d, {trueSvgPositions: trueSvgPositions});
+        drawToolTipHTML(svgContainer, bar[0][i].children[0], i, d);
       })
       .on('mouseleave', function(d,i) {
         removeToolTipHTML(svgContainer, bar[0][i].children[0]);
@@ -149,7 +147,7 @@
     //Now the ticks are built, the legend of the x axis is added
     var barBbox = bar[0][0].getBBox();
     d3.select(svgContainer + ' #xAxisLegend')
-      .attr('y', barBbox.y + barBbox.height + tickSize);
+      .attr('y', barBbox.y + barBbox.height + 4*tickSize);
   }
 
   Histogram.prototype.drawChart = function(container, params) {
@@ -185,7 +183,13 @@
     //Creates the y Axis ranging from 0 to 100 (100 on top)
     var yAxis = d3.svg.axis()
       .scale(d3.scale.linear().range([chartTrueHeight, 0]).domain([0, 100]))
-      .tickSize(tickSize)
+      .ticks(1)
+      .tickValues([0, 100])
+      .tickFormat(function(d, i) {
+        console.log(i);
+        if (i === 1)
+          return d3.max(dataArray, function(d) { return d.y; });
+      })
       .orient('left');
 
     //Creates the x Axis ranging from 0 to 100 (100 on top)
@@ -193,9 +197,6 @@
       .scale(x)
       .tickSize(0)
       .orient('bottom');
-
-    var trueSvgPositions = document.getElementById(container.replace('#',''))
-                      .getBoundingClientRect();
 
     d3.select(container + ' svg').remove();
 
@@ -230,7 +231,7 @@
     //Adds the axis labels
     chart.append('text')
       .attr('x', margin.left + (chartTrueWidth / 2))
-      .attr('y', chartTrueHeight + margin.top + tickSize)
+      .attr('y', chartTrueHeight + margin.top + 2 * tickSize)
       .attr('id', 'xAxisLegend')
       .style('text-anchor', 'middle')
       .style('alignment-baseline', 'hanging')
@@ -238,7 +239,7 @@
       .text('Countries');
     chart.append('text')
       .attr('transform', 'rotate(-90)')
-      .attr('y', margin.left - 4*tickSize)
+      .attr('y', margin.left - 7*tickSize)
       .attr('x', 0 - (margin.top + chartTrueHeight/2))
       .attr('id', 'yAxisLegend')
       .style('alignment-baseline', 'baseline')
@@ -253,8 +254,7 @@
                          height: chartTrueHeight,
                          width: chartTrueWidth,
                          margin: margin,
-                         tickSize: tickSize,
-                         trueSvgPositions: trueSvgPositions
+                         tickSize: tickSize
                        });
     return chart;
   }
@@ -273,8 +273,9 @@
   function drawToolTipHTML(component, bar, id, data, complementary) {
     if (complementary === undefined || complementary.slave === undefined)
       findCountryBarInOtherGraph(component, data.country);
-    var country = data.country,
-        trueSvgPositions = complementary.trueSvgPositions;
+    var country = data.country;
+    var trueSvgPositions = document.getElementById(component.replace('#',''))
+                  .getBoundingClientRect();
 
     //Remove the possibly existing tooltip
     d3.select('#histoBridgeTooltipContainer_' + component.replace('#','')).remove();
@@ -298,7 +299,7 @@
       .attr('id', 'histoBridgeTooltipContainer_' + component.replace('#',''))
       .attr('class', 'histoBridgeTooltipContainer')
       .append('div')
-      .attr('class', 'histoBridgeTooltipText')
+      .attr('class', 'histoBridgeTooltipText tooltipText')
       .attr('id', 'histoBridgeTooltipText_' + component.replace('#',''))
         .style('position', 'absolute')
         .style('padding', paddingText.top + 'px ' + paddingText.left + 'px')
@@ -350,7 +351,7 @@
 
     d3.select('#histoBridgeTooltipText_' + component.replace('#',''))
       .style('top', trueSvgPositions.top + boundingRectBar.y + trueY -
-                    tooltipHeight - 2*arrowSide + 'px')
+                    tooltipHeight - 2*arrowSide - 2 + 'px');
   }
 
   function findCountryBarInOtherGraph(component, country, complementary) {
@@ -375,7 +376,6 @@
                       index,
                       dataArray[index],
                       {
-                        trueSvgPositions: trueSvgPositions,
                         slave: true
                       });
   }

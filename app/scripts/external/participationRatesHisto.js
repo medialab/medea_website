@@ -201,7 +201,8 @@
     //Creates the y Axis ranging from 0 to 100 (100 on top)
     var yAxis = d3.svg.axis()
       .scale(d3.scale.linear().range([chartTrueHeight, 0]).domain([0, 100]))
-      .tickSize(tickSize)
+      .ticks(1)
+      .tickValues([0, 100])
       .orient('left');
 
     //Creates the x Axis ranging from 0 to 100 (100 on top)
@@ -489,10 +490,10 @@
       .attr('height', function(d) { return h; })
       .attr('class', 'invisible')
       .on('mouseover', function(d,i) {
-        drawToolTip(svgContainer, bar[0][i], i, d);
+        drawToolTip(svgContainer, bar[0][i].children[0], i, d);
       })
       .on('mouseleave', function(d,i) {
-        removeToolTip(svgContainer, bar[0][i]);
+        removeToolTip(svgContainer, bar[0][i].children[0]);
       });
 
     /**
@@ -519,7 +520,7 @@
                 distanceBarToTick +
                 barWidth / 2);
       })
-      .attr('y', margin.top + h + 2*tickSize)
+      .attr('y', margin.top + h + 3*tickSize)
       .text(function(d,i) {
         if (barWidth >= 14 || i % 2 !== 0)
           return d.x;
@@ -529,16 +530,16 @@
       .style('alignment-baseline', 'hanging')
       .style('dominant-baseline', 'hanging')
       .on('mouseover', function(d,i) {
-        drawToolTip(svgContainer, bar[0][i], i, d);
+        drawToolTip(svgContainer, bar[0][i].children[0], i, d);
       })
       .on('mouseleave', function(d,i) {
-        removeToolTip(svgContainer, bar[0][i]);
+        removeToolTip(svgContainer, bar[0][i].children[0]);
       });
 
     //Now the ticks are built, the legend of the x axis is added
     var barBbox = bar[0][0].getBBox();
     d3.select(svgContainer + ' #xAxisLegend')
-      .attr('y', barBbox.y + barBbox.height + tickSize);
+      .attr('y', barBbox.y + barBbox.height + 4*tickSize);
   }
 
   Histogram.prototype.drawChart = function(container, params) {
@@ -571,7 +572,13 @@
     //Creates the y Axis ranging from 0 to 100 (100 on top)
     var yAxis = d3.svg.axis()
       .scale(d3.scale.linear().range([chartTrueHeight, 0]).domain([0, 100]))
-      .tickSize(tickSize)
+      .ticks(1)
+      .tickValues([0, 100])
+      .tickFormat(function(d, i) {
+        console.log(i);
+        if (i === 1)
+          return d3.max(dataArray, function(d) { return d.y; });
+      })
       .orient('left');
 
     //Creates the x Axis ranging from 0 to 100 (100 on top)
@@ -579,7 +586,6 @@
       .scale(x)
       .tickSize(0)
       .orient('bottom');
-
     d3.select(container + ' svg').remove();
 
     //Creates the chart component inside
@@ -621,7 +627,7 @@
       .text('Participations');
     chart.append('text')
       .attr('transform', 'rotate(-90)')
-      .attr('y', margin.left - 4*tickSize)
+      .attr('y', margin.left - 7*tickSize)
       .attr('x', 0 - (margin.top + chartTrueHeight/2))
       .attr('id', 'yAxisLegend')
       .style('alignment-baseline', 'baseline')
@@ -642,94 +648,94 @@
   }
 
   function removeToolTip(container, bar) {
-    d3.select(container + ' .powerLawTooltipContainer').remove();
+    d3.select('.powerLawTooltipContainer').remove();
 
     //For the case where it is the axis that is hovered
     if (bar.getAttribute('height') === null && bar.getAttribute('class').indexOf('bar') > -1) {
       bar = bar.childNodes[0];
     }
-
+    console.log('bar delete', bar, bar.getAttribute("class"));
     bar.setAttribute("class", bar.getAttribute("class").replace(/ hoverBar/, ''));
   }
 
   function drawToolTip(component, bar, id, data, complementary) {
-    //Remove the possibly existing powerLawTooltip
-    d3.select(component + ' .powerLawTooltipContainer').remove();
-    console.log('barAttribute', bar.childNodes[0]);
-    //For the case where it is the axis that is hovered
-    if ((bar.getAttribute('height') === null) && bar.getAttribute('class').indexOf('bar') > -1) {
-      bar = bar.childNodes[0];
-    }
+    var country = data.country;
+    var trueSvgPositions = document.getElementById(component.replace('#',''))
+                      .getBoundingClientRect();
+    //Remove the possibly existing tooltip
+    d3.select('#powerLawTooltipContainer_' + component.replace('#','')).remove();
 
-    //Enables the styling with the over
+    //Enables the styling with the hover
     bar.setAttribute("class", bar.getAttribute("class")+ ' hoverBar');
 
-    var powerLawTooltipLegend = data.y + (data.y > 1 ? ' authors' : ' author'),
+    var powerLawTooltipLegend = data.y +
+                            (data.y > 1 ? ' authors' :
+                                          ' author'),
         boundingRectBar = bar.getBBox(),
         paddingText = {top: 5, left: 5};
 
-    //Hack for Firefox if the rectangle has an 0 height
-    if (boundingRectBar.width === 0 && boundingRectBar.height === 0) {
-      boundingRectBar.width = bar.getAttribute('width');
-      boundingRectBar.height = bar.getAttribute('height')
-      boundingRectBar.x = bar.getAttribute('x');
-      boundingRectBar.y = bar.getAttribute('y');
-    }
-
-    d3.select(component).append('g')
+    var trueY = data.chapterName !== undefined ?
+                  + bar.getAttribute('transform')
+                     .replace(/translate\(\d*,/,'').replace('\)','') :
+                  0;
+    d3.select('body')
+      .append('div')
+      .attr('id', 'powerLawTooltipContainer_' + component.replace('#',''))
       .attr('class', 'powerLawTooltipContainer')
-      .append('g')
-      .attr('id', 'powerLawTooltip');
-    d3.select(component + ' .powerLawTooltipContainer')
-      .append('g')
-      .attr('id', 'powerLawTooltipText');
+      .append('div')
+      .attr('class', 'powerLawTooltipText tooltipText')
+      .attr('id', 'powerLawTooltipText_' + component.replace('#',''))
+        .style('position', 'absolute')
+        .style('padding', paddingText.top + 'px ' + paddingText.left + 'px')
 
+    d3.select('#powerLawTooltipText_' + component.replace('#',''))
+      .text(powerLawTooltipLegend);
 
-    //Text in the powerLawTooltip creation + horizontal alignment
-    d3.select(component + ' .powerLawTooltipContainer #powerLawTooltipText')
-      .append('text')
-        .attr('x', boundingRectBar.x + boundingRectBar.width/2)
-        .style('text-anchor', 'middle')
-        .text(powerLawTooltipLegend);
-    var boundingRectText = d3.select(component + ' #powerLawTooltipText text')[0][0].getBBox();
+    var svgBbox = d3.select(component)[0][0].getBBox(),
+        xMax = svgBbox.x + svgBbox.width,
+        xMin = svgBbox.x;
 
-    var downArrowWidth = boundingRectText.width/1.7;
-    //Text in the powerLawTooltip vertical alignment
-    d3.select(component + ' #powerLawTooltipText text')
-      .attr('y', boundingRectBar.y - 2*Math.sqrt(downArrowWidth) - paddingText.top )
-      .style('alignment-baseline', 'baseline');
-    boundingRectText = d3.select(component + ' #powerLawTooltipText text')[0][0].getBBox();
+    //Here we create an arrow of the given side
+    var arrowSide = 8;
+    d3.select('#powerLawTooltipContainer_' + component.replace('#',''))
+      .append('div')
+      .attr('id', 'arrowTooltip')
+      .style('position', 'absolute')
+      .style('width', 0)
+      .style('height', 0)
+      .style('border-left', arrowSide + 'px solid transparent')
+      .style('border-right', arrowSide + 'px solid transparent')
+      .style('border-top', arrowSide + 'px solid rgba(51, 97, 109, 0.8)')
+      .style('left', boundingRectBar.x +
+                     boundingRectBar.width/2 -
+                     arrowSide + trueSvgPositions.left + 'px')
+      .style('top', boundingRectBar.y + trueSvgPositions.top + trueY - arrowSide + 'px')
+      console.log('svgPosition', trueSvgPositions);
 
-    // Small arrow of the powerLawTooltip
-    d3.select(component + ' .powerLawTooltipContainer #powerLawTooltip')
-      .append('path')
-        .attr('d', d3.svg.symbol().type('triangle-down').size(downArrowWidth))
-        .attr('transform',
-              'translate(' +
-                (boundingRectBar.x + boundingRectBar.width/2) + ',' +
-                (boundingRectBar.y - Math.sqrt(downArrowWidth)/2) + ')');
+    //Text in the tooltip horizontal alignement if out of the svg on the right
+    var tooltipWidth = document.getElementById('powerLawTooltipText_' + component.replace('#','')).clientWidth -
+                       2 * paddingText.left,
+        tooltipHeight = document.getElementById('powerLawTooltipText_' + component.replace('#','')).clientHeight -
+                       2 * paddingText.top,
+        xFinalText = boundingRectBar.x + boundingRectBar.width/2 +
+                     tooltipWidth/2,
+        xStartText = boundingRectBar.x + boundingRectBar.width/2 -
+                     tooltipWidth/2;
 
-    //Creates the "box" containing the text
-    d3.select(component + ' .powerLawTooltipContainer #powerLawTooltip')
-      .append('rect')
-        .attr('y', boundingRectText.y - paddingText.top)
-        .attr('x', boundingRectText.x - paddingText.left)
-        .attr('height', boundingRectText.height + 2 * paddingText.top)
-        .attr('width', boundingRectText.width + 2 * paddingText.left);
+    if (xFinalText >= xMax )
+      d3.select('#powerLawTooltipText_' + component.replace('#',''))
+        .style('left', trueSvgPositions.left + xStartText - (xFinalText - xMax) + 'px')
+    else if (xStartText <= xMin)
+      d3.select('#powerLawTooltipText_' + component.replace('#',''))
+        .style('left', trueSvgPositions.left + xMin + 'px')
+    else
+      d3.select('#powerLawTooltipText_' + component.replace('#',''))
+        .style('left', trueSvgPositions.left + Math.round(boundingRectBar.x +
+                        boundingRectBar.width/2 - tooltipWidth/2) + 'px');
 
-
-
-    //Enables the text to be above the rect
-    d3.select(component + ' .powerLawTooltipContainer')
-      .sort(function(a, b) {
-        if (a.id === 'powerLawTooltip' && b.id === 'powerLawTooltipText')
-          return 1;
-        else if (b.id === 'powerLawTooltip' && a.id === 'powerLawTooltipText')
-          return -1;
-        else
-          return 0;
-      });
-
+    d3.select('#powerLawTooltipText_' + component.replace('#',''))
+      .style('top', trueSvgPositions.top + boundingRectBar.y + trueY -
+                    tooltipHeight - 2*arrowSide - 2 + 'px');
   }
 
 

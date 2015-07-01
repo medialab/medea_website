@@ -35,7 +35,6 @@ angular.module('driveoutApp.directives.partratehistototal', [])
       });
 
       window.addEventListener('resize', function() {
-          console.log(element.height(), $('.vizLegendZone').position())
           var elementWidth = element.width(),
               elementHeight = element.height();
           histogram.load('contents/data/participationRatesHisto/participations.json', function() {

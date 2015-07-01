@@ -66,14 +66,25 @@
 
     diagram.circles
       .style("stroke", function(d) { return d.color; })
-      .style("stroke-width", 3)
+      .style("stroke-width", 0)
       .style("stroke-opacity", .4)
       .style("fill", function(d) { return d.color; })
-      .style("fill-opacity", 1);
-    diagram.text
-      .style("fill", "#111")
-      .style("font-family", "Arial")
-      .style("font-size", "12px");
+      .style("fill-opacity", 0.7);
+
+    diagram.partTitle
+      .style("fill", "white")
+      .style("font-family", "Raleway")
+      .style("letter-spacing", '1px')
+      .style("font-weight", '700')
+      .style("text-transform", 'uppercase')
+      .style("font-size", "13px");
+
+    diagram.partNumber
+      .style("fill", "white")
+      .style("font-family", "Raleway")
+      .style("letter-spacing", '1px')
+      .style("text-transform", 'uppercase')
+      .style("font-size", "13px");
 
     d3.selection.prototype.moveParentToFront = function() {
       return this.each(function() {
@@ -82,9 +93,6 @@
     };
     d3.selection.prototype.showTooltip = function(d) {
       return this.html("<b>" +
-        d.id.replace("WG", "Working Group")
-          .replace(/&/g, "&nbsp;&amp;&nbsp;") +
-        (d.label ? ": " + d.label : "") + "</b><br/>" +
         d.size + " contributors")
         .style('padding', '10px')
         .transition().style("opacity", .9);
@@ -103,8 +111,6 @@
     // hover on all the circles
     diagram.nodes
       .on("mouseover", function(d) {
-        d3.select(this).select("circle")
-          .moveParentToFront();
         venn.tooltip.showTooltip(d);
       })
       .on("mouseenter", this.onmouseover)
@@ -125,13 +131,16 @@
           return data["sets"][j];
        }));
       })
-      .style("fill-opacity", 1)
+      .style("fill-opacity", 0)
       .style("fill", function(d) { return d.color;})
       .on("mouseover", function(d) {
+        console.log(this, d);
+        $(this).css({'fill-opacity': 0.7});
         venn.tooltip.showTooltip(d);
       })
       .on("mouseenter", this.onmouseover)
       .on("mouseout", function() {
+        $(this).css({'fill-opacity': 0});
         venn.tooltip.hideTooltip();
       })
       .on("mousemove", function(d) {

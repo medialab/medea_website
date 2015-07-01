@@ -20,7 +20,7 @@ angular.module('driveoutApp.directives.roledistribstacked', [])
 
           var width = elementWidth,
               height = elementHeight - legendHeight,
-              margin = {top: 40, bottom: 30, left: elementWidth/5, right: elementWidth/10};
+              margin = {top: 40, bottom: 27, left: elementWidth/5, right: elementWidth/10};
 
           stackedBars.drawViz('#svgContainer',
             {
@@ -40,9 +40,11 @@ angular.module('driveoutApp.directives.roledistribstacked', [])
             var elementWidth = element.width(),
                 elementHeight = element.height();
             stackedBars.load('contents/data/roleDistribStacked/participations.json', function() {
+              var legendHeight = $('.vizLegendZone').height();
+
               var width = elementWidth,
                   height = elementHeight - legendHeight,
-                  margin = {top: 40, bottom: 30, left: elementWidth/5, right: elementWidth/10};
+                  margin = {top: 40, bottom: 27, left: elementWidth/5, right: elementWidth/10};
 
               stackedBars.drawViz('#svgContainer',
                 {
@@ -55,7 +57,7 @@ angular.module('driveoutApp.directives.roledistribstacked', [])
                 'position': 'absolute',
                 'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
                 'margin-bottom': 30 + 'px'});
-            });
+                });
           }
         });
       }

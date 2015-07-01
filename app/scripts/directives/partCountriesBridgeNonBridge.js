@@ -19,7 +19,7 @@ angular.module('driveoutApp.directives.partcountrybridgenonbridge', [])
         histogram.load('contents/data/partCountriesBridgeNonBridge/participations.json', function() {
             var width = elementWidth,
                 height = elementHeight / 2.5,
-                margin = {top: 40, bottom: 30, left: 40, right: 40};
+                margin = {top: 40, bottom: 34, left: 40, right: 40};
 
                 histogram.drawChart('#containerNonBridge',
                   {
@@ -50,28 +50,28 @@ angular.module('driveoutApp.directives.partcountrybridgenonbridge', [])
             histogram.load('contents/data/partCountriesBridgeNonBridge/participations.json', function() {
               var width = elementWidth,
                   height = elementHeight / 2.5,
-                  margin = {top: 40, bottom: 30, left: 40, right: 40};
+                  margin = {top: 40, bottom: 34, left: 40, right: 40};
 
-                histogram.drawChart('#containerNonBridge',
-                  {
-                    dataName: 'dataNonBridge',
-                    title: 'Non-bridge authors',
-                    height: height,
-                    width: width,
-                    margin: margin
-                  });
-                histogram.drawChart('#containerBridge',
-                  {
-                    dataName: 'dataBridge',
-                    title: 'Bridge authors',
-                    height: height,
-                    width: width,
-                    margin: margin
-                  });
-                $('#containerBridge svg').css({
-                  'position': 'absolute',
-                  'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-                  'margin-bottom': 30 + 'px'});
+              histogram.drawChart('#containerNonBridge',
+                {
+                  dataName: 'dataNonBridge',
+                  title: 'Non-bridge authors',
+                  height: height,
+                  width: width,
+                  margin: margin
+                });
+              histogram.drawChart('#containerBridge',
+                {
+                  dataName: 'dataBridge',
+                  title: 'Bridge authors',
+                  height: height,
+                  width: width,
+                  margin: margin
+                });
+              $('#containerBridge svg').css({
+                'position': 'absolute',
+                'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+                'margin-bottom': 30 + 'px'});
             });
           }
         });

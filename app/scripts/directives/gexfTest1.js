@@ -14,11 +14,21 @@ angular.module('driveoutApp.directives.gexftestone', [])
       link: function postLink(scope, element, attrs) {
         $('#sigma-container').css({
             'position': 'absolute',
-            'height': ($('.vizLegendZone').position().top) + 'px',
+            'height': ($('.vizLegendZone').position().top + 5) + 'px',
             'width': '100%',
-            'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+            'bottom': '30px',
             'margin-bottom': 30 + 'px'});
         drawGraph('sigma-container', 'currentAR');
+
+        window.addEventListener('resize', function() {
+          $('#sigma-container').css({
+            'position': 'absolute',
+            'height': ($('.vizLegendZone').position().top + 5) + 'px',
+            'width': '100%',
+            'bottom': '30px',
+            'margin-bottom': 30 + 'px'});
+          drawGraph('sigma-container', 'currentAR', $('#currentAR')[0].value);
+        })
       }
     };
   });
