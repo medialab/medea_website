@@ -23,7 +23,7 @@
         </attvalues>
         <viz:size value="28.181818"></viz:size>
         <viz:position x="-360.98026" y="555.36475" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_01d15b61153b9f391735cbd94529f99c" label="Andrey G. Kostianoy">
         <attvalues>
@@ -33,7 +33,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="-449.70642" y="327.53342" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_faabd41cf369d0d71c4e86a5c0a2eb7f" label="Anthony Patt">
         <attvalues>
@@ -43,7 +43,7 @@
         </attvalues>
         <viz:size value="24.545456"></viz:size>
         <viz:position x="-286.17322" y="-538.62335" z="0.0"></viz:position>
-        <viz:color r="255" g="140" b="0"></viz:color>
+        <viz:color r="91" g="174" b="102"></viz:color>
       </node>
       <node id="author_20934d66cfdb92392abe7100d502e991" label="Atul K. Jain">
         <attvalues>
@@ -53,7 +53,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="-582.7176" y="-123.68698" z="0.0"></viz:position>
-        <viz:color r="127" g="255" b="0"></viz:color>
+        <viz:color r="49" g="91" b="102"></viz:color>
       </node>
       <node id="author_e34181347f708823afa60b312c6248fa" label="Bart Van Den Hurk">
         <attvalues>
@@ -63,7 +63,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="217.36679" y="556.62054" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_9b88ca2f557717d4961ba5c46c33ab19" label="Benjamin Poulter">
         <attvalues>
@@ -73,7 +73,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="-623.05475" y="-103.361435" z="0.0"></viz:position>
-        <viz:color r="127" g="255" b="0"></viz:color>
+        <viz:color r="49" g="91" b="102"></viz:color>
       </node>
       <node id="author_ae16afdf9168c987073f7f21507779eb" label="Benjamin Stocker">
         <attvalues>
@@ -83,7 +83,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="-565.4325" y="-70.3052" z="0.0"></viz:position>
-        <viz:color r="127" g="255" b="0"></viz:color>
+        <viz:color r="49" g="91" b="102"></viz:color>
       </node>
       <node id="author_a144523a8b9033da25aa7e65714016ec" label="Brian C. O'neill">
         <attvalues>
@@ -93,7 +93,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="484.2149" y="62.10491" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_2be96fc9f525427e0015676b99922b21" label="Charles Koven">
         <attvalues>
@@ -103,7 +103,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="57.817596" y="473.7923" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_0d7ecf18d79e38adba0a9f9e25be784d" label="Christoph Von Stechow">
         <attvalues>
@@ -113,7 +113,7 @@
         </attvalues>
         <viz:size value="31.818182"></viz:size>
         <viz:position x="-537.2436" y="-570.6746" z="0.0"></viz:position>
-        <viz:color r="255" g="140" b="0"></viz:color>
+        <viz:color r="91" g="174" b="102"></viz:color>
       </node>
       <node id="author_ac0bbef29d80d0e01a18efac6d992328" label="Christopher Lennard">
         <attvalues>
@@ -123,7 +123,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="542.20355" y="37.3332" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_258e1c30b8a5e494fa8f0dad3e50cdb8" label="David M. Karl">
         <attvalues>
@@ -133,7 +133,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="605.1169" y="244.34657" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_e2ca27c457584da8cc5d2e8189f7d5d1" label="Detlef P. Van Vuuren">
         <attvalues>
@@ -143,7 +143,7 @@
         </attvalues>
         <viz:size value="28.181818"></viz:size>
         <viz:position x="-366.76315" y="-511.25458" z="0.0"></viz:position>
-        <viz:color r="112" g="128" b="144"></viz:color>
+        <viz:color r="43" g="42" b="43"></viz:color>
       </node>
       <node id="author_a9c5861e7e9c85abfa75442ce0f737de" label="Ed Hawkins">
         <attvalues>
@@ -153,7 +153,7 @@
         </attvalues>
         <viz:size value="20.909092"></viz:size>
         <viz:position x="126.351654" y="672.69916" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_b455808ba7541e1792516a0e2dac86fa" label="Emiola Gbobaniyi">
         <attvalues>
@@ -163,7 +163,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="159.51254" y="252.37509" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_9441dbf1fb2577fa46121d0603231831" label="Etsushi Kato">
         <attvalues>
@@ -173,7 +173,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="-694.74725" y="-83.08467" z="0.0"></viz:position>
-        <viz:color r="127" g="255" b="0"></viz:color>
+        <viz:color r="49" g="91" b="102"></viz:color>
       </node>
       <node id="author_3f47d15f4ab6fbee9dabb0482c2adb3a" label="Ferenc L. Toth">
         <attvalues>
@@ -183,7 +183,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="275.03735" y="-434.93628" z="0.0"></viz:position>
-        <viz:color r="255" g="140" b="0"></viz:color>
+        <viz:color r="91" g="174" b="102"></viz:color>
       </node>
       <node id="author_09ec0ddafd6a14728b7bafabb519c92c" label="Geert Jan Van Oldenborgh">
         <attvalues>
@@ -193,7 +193,7 @@
         </attvalues>
         <viz:size value="24.545456"></viz:size>
         <viz:position x="-188.88847" y="628.9067" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_997a74c42b004df836f749f13c32949f" label="George Hurtt">
         <attvalues>
@@ -203,7 +203,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="60.61143" y="430.68182" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_8cca175996182788fbf638ad185cecb5" label="Gerardo Benito">
         <attvalues>
@@ -213,7 +213,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="454.36392" y="396.06516" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_6c30225f76c1583df7e8c310d4bc2ae2" label="Hans Von Storch">
         <attvalues>
@@ -223,7 +223,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="422.3643" y="416.56204" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_824ecd1a1d9107193a356cc6557ba119" label="Haroon S. Kheshgi">
         <attvalues>
@@ -233,7 +233,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="130.69943" y="-351.59512" z="0.0"></viz:position>
-        <viz:color r="255" g="140" b="0"></viz:color>
+        <viz:color r="91" g="174" b="102"></viz:color>
       </node>
       <node id="author_4d38a3bbaafeb313ce3e9143e51f4f34" label="Howard Kunreuther">
         <attvalues>
@@ -243,7 +243,7 @@
         </attvalues>
         <viz:size value="24.545456"></viz:size>
         <viz:position x="-404.45053" y="-778.0655" z="0.0"></viz:position>
-        <viz:color r="255" g="140" b="0"></viz:color>
+        <viz:color r="91" g="174" b="102"></viz:color>
       </node>
       <node id="author_2498ab6f9d42313aa0add52013cdfd30" label="J. Graham Cogley">
         <attvalues>
@@ -253,7 +253,7 @@
         </attvalues>
         <viz:size value="24.545456"></viz:size>
         <viz:position x="549.9958" y="213.72614" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_96eb3897bf9887219a7454551d9658c5" label="Jan Christoph Minx">
         <attvalues>
@@ -263,7 +263,7 @@
         </attvalues>
         <viz:size value="20.909092"></viz:size>
         <viz:position x="-783.88855" y="-494.44617" z="0.0"></viz:position>
-        <viz:color r="255" g="140" b="0"></viz:color>
+        <viz:color r="91" g="174" b="102"></viz:color>
       </node>
       <node id="author_7adb7a2a12612c911f8eb05f8a0c56f8" label="Jan Fuglestvedt">
         <attvalues>
@@ -273,7 +273,7 @@
         </attvalues>
         <viz:size value="24.545456"></viz:size>
         <viz:position x="-592.313" y="304.71265" z="0.0"></viz:position>
-        <viz:color r="127" g="255" b="0"></viz:color>
+        <viz:color r="49" g="91" b="102"></viz:color>
       </node>
       <node id="author_3e0118dd38d703f5940599c5cd0dbe5a" label="Jan Sedlacek">
         <attvalues>
@@ -283,7 +283,7 @@
         </attvalues>
         <viz:size value="39.09091"></viz:size>
         <viz:position x="-157.3439" y="510.50714" z="0.0"></viz:position>
-        <viz:color r="112" g="128" b="144"></viz:color>
+        <viz:color r="43" g="42" b="43"></viz:color>
       </node>
       <node id="author_f6e732df22425752997cd3bb85f710ab" label="Joan Kleypas">
         <attvalues>
@@ -293,7 +293,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="-13.617951" y="193.96982" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_770e649c097f122814cbc8e470564dad" label="Joanna I. House">
         <attvalues>
@@ -303,7 +303,7 @@
         </attvalues>
         <viz:size value="24.545456"></viz:size>
         <viz:position x="-400.739" y="-433.5109" z="0.0"></viz:position>
-        <viz:color r="112" g="128" b="144"></viz:color>
+        <viz:color r="43" g="42" b="43"></viz:color>
       </node>
       <node id="author_fa044c418377b56b1eaefbc4e823f3a3" label="Joeri Rogelj">
         <attvalues>
@@ -313,7 +313,7 @@
         </attvalues>
         <viz:size value="31.818182"></viz:size>
         <viz:position x="-348.4595" y="301.93848" z="0.0"></viz:position>
-        <viz:color r="127" g="255" b="0"></viz:color>
+        <viz:color r="49" g="91" b="102"></viz:color>
       </node>
       <node id="author_7b8956f64c90a2ba8b430dec0d3104b1" label="John R. Porter">
         <attvalues>
@@ -323,7 +323,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="641.3184" y="77.70488" z="0.0"></viz:position>
-        <viz:color r="255" g="140" b="0"></viz:color>
+        <viz:color r="91" g="174" b="102"></viz:color>
       </node>
       <node id="author_fc27b45f09b00d5b2043a0e10febf298" label="José Marengo">
         <attvalues>
@@ -333,7 +333,7 @@
         </attvalues>
         <viz:size value="20.909092"></viz:size>
         <viz:position x="413.5172" y="-248.61238" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_d7d454836d0761cdd05bbce104d32754" label="Kathleen Mcinnes">
         <attvalues>
@@ -343,7 +343,7 @@
         </attvalues>
         <viz:size value="24.545456"></viz:size>
         <viz:position x="615.54486" y="161.01369" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_427e74ede215ddc3f6a0e59ee1cbe03a" label="Klaus Keller">
         <attvalues>
@@ -353,7 +353,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="246.13307" y="-522.42267" z="0.0"></viz:position>
-        <viz:color r="255" g="140" b="0"></viz:color>
+        <viz:color r="91" g="174" b="102"></viz:color>
       </node>
       <node id="author_fb171aaac38c2768902a3728f9190850" label="Kristin Seyboth">
         <attvalues>
@@ -363,7 +363,7 @@
         </attvalues>
         <viz:size value="28.181818"></viz:size>
         <viz:position x="-666.2831" y="-517.26636" z="0.0"></viz:position>
-        <viz:color r="255" g="140" b="0"></viz:color>
+        <viz:color r="91" g="174" b="102"></viz:color>
       </node>
       <node id="author_eee492962d16b17a8a7d86457d2a3f63" label="Linda O. Mearns">
         <attvalues>
@@ -373,7 +373,7 @@
         </attvalues>
         <viz:size value="24.545456"></viz:size>
         <viz:position x="180.94246" y="-9.692981" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_d991a8dc50ae148259d46dc63d078bc3" label="Long Cao">
         <attvalues>
@@ -383,7 +383,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="72.7823" y="35.75259" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_943c284ffc7b7f638345c45e108b6836" label="Michael Prather">
         <attvalues>
@@ -393,7 +393,7 @@
         </attvalues>
         <viz:size value="24.545456"></viz:size>
         <viz:position x="89.98172" y="638.3799" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_fe9cce2fd571cb1e49b2890ad7067a1b" label="Mxolisi Shongwe">
         <attvalues>
@@ -403,7 +403,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="-13.025235" y="573.10126" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_109e782b6f6cdc23e32f6057e54ecf56" label="Paul Watkiss">
         <attvalues>
@@ -413,7 +413,7 @@
         </attvalues>
         <viz:size value="24.545456"></viz:size>
         <viz:position x="388.45804" y="-201.11314" z="0.0"></viz:position>
-        <viz:color r="255" g="140" b="0"></viz:color>
+        <viz:color r="91" g="174" b="102"></viz:color>
       </node>
       <node id="author_5ff278ffb2b8fb4e67a63aab3f8b49f8" label="Philip Rasch">
         <attvalues>
@@ -423,7 +423,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="-524.908" y="273.51758" z="0.0"></viz:position>
-        <viz:color r="127" g="255" b="0"></viz:color>
+        <viz:color r="49" g="91" b="102"></viz:color>
       </node>
       <node id="author_4a484727b0fe91121dab21fea41bc5d9" label="Regine Hock">
         <attvalues>
@@ -433,7 +433,7 @@
         </attvalues>
         <viz:size value="20.909092"></viz:size>
         <viz:position x="-95.56467" y="550.27045" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_1954a3f32e7532fa3c2768f1e7bfb289" label="Richard A. Houghton">
         <attvalues>
@@ -443,7 +443,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="-638.75146" y="-47.540394" z="0.0"></viz:position>
-        <viz:color r="127" g="255" b="0"></viz:color>
+        <viz:color r="49" g="91" b="102"></viz:color>
       </node>
       <node id="author_497d2cc0cc93f3008ef4a70ec85bdda9" label="Robert Kopp">
         <attvalues>
@@ -453,7 +453,7 @@
         </attvalues>
         <viz:size value="20.909092"></viz:size>
         <viz:position x="294.1878" y="184.3902" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_a3e27ae2622c8fc9a37d111a920dbd55" label="Sarah R. Cooley">
         <attvalues>
@@ -463,7 +463,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="-12.465449" y="332.09982" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_2976de1cef2c1076b443541ba76a6ac0" label="Stephen Sitch">
         <attvalues>
@@ -473,7 +473,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="100.00525" y="453.48154" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_4cb56a5c4d6781b1c8c7b87d201fe91b" label="Steven J. Smith">
         <attvalues>
@@ -483,7 +483,7 @@
         </attvalues>
         <viz:size value="24.545456"></viz:size>
         <viz:position x="-467.5704" y="-641.0772" z="0.0"></viz:position>
-        <viz:color r="127" g="255" b="0"></viz:color>
+        <viz:color r="49" g="91" b="102"></viz:color>
       </node>
       <node id="author_2d182dbc5231a9ce8c65f85f5ca14c8c" label="Terry D. Prowse">
         <attvalues>
@@ -493,7 +493,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="445.6391" y="-221.42143" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_1c1ae362a19b11dc34398cf79fc09a62" label="Tomasz Zylicz">
         <attvalues>
@@ -503,7 +503,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="-393.81857" y="-597.4926" z="0.0"></viz:position>
-        <viz:color r="255" g="140" b="0"></viz:color>
+        <viz:color r="91" g="174" b="102"></viz:color>
       </node>
       <node id="author_f15ac38243d131d346ab8e1a9ddfa2ae" label="Won-tae Kwon">
         <attvalues>
@@ -513,7 +513,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="303.90027" y="356.679" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_f37cc9b1cef47613acf705358fd14f5d" label="Yukihiro Nojiri">
         <attvalues>
@@ -523,7 +523,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="-13.99185" y="370.07278" z="0.0"></viz:position>
-        <viz:color r="221" g="160" b="221"></viz:color>
+        <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="chapter_70de1c136f92d6c007ab11b248f2432e" label="Introduction">
         <attvalues>
@@ -533,7 +533,7 @@
         </attvalues>
         <viz:size value="13.636364"></viz:size>
         <viz:position x="-937.38007" y="431.70663" z="0.0"></viz:position>
-        <viz:color r="30" g="144" b="255"></viz:color>
+        <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_67b4937f6cc4973d7e78abb09e8815fd" label="Detection and Attribution of Climate Change: from Global to Regional">
         <attvalues>
@@ -543,7 +543,7 @@
         </attvalues>
         <viz:size value="13.636364"></viz:size>
         <viz:position x="-417.76477" y="731.7066" z="0.0"></viz:position>
-        <viz:color r="30" g="144" b="255"></viz:color>
+        <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_ff2fb0b9eda7c0b2bd96e72bd893a358" label="Near-term Climate Change: Projections and Predictability">
         <attvalues>
@@ -553,7 +553,7 @@
         </attvalues>
         <viz:size value="31.818182"></viz:size>
         <viz:position x="-360.0297" y="765.04" z="0.0"></viz:position>
-        <viz:color r="30" g="144" b="255"></viz:color>
+        <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_0d4e570755e49d29b406af7df6af3d24" label="Long-term Climate Change: Projections, Commitments and Irreversibility">
         <attvalues>
@@ -563,7 +563,7 @@
         </attvalues>
         <viz:size value="20.909092"></viz:size>
         <viz:position x="-302.2948" y="798.37335" z="0.0"></viz:position>
-        <viz:color r="30" g="144" b="255"></viz:color>
+        <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_8e64cfe1d887967bcae49bab1cbdeca9" label="Sea Level Change">
         <attvalues>
@@ -573,7 +573,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="-244.55968" y="831.7066" z="0.0"></viz:position>
-        <viz:color r="30" g="144" b="255"></viz:color>
+        <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_15ac14f9015acf5f3b4f884ba6620118" label="Climate Phenomena and their Relevance for Future Regional Climate Change">
         <attvalues>
@@ -583,7 +583,7 @@
         </attvalues>
         <viz:size value="28.181818"></viz:size>
         <viz:position x="-186.82469" y="865.0399" z="0.0"></viz:position>
-        <viz:color r="30" g="144" b="255"></viz:color>
+        <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_a7219fce96fe04a59b9c12c1cdd208b6" label="Observations: Atmosphere and Surface">
         <attvalues>
@@ -593,7 +593,7 @@
         </attvalues>
         <viz:size value="13.636364"></viz:size>
         <viz:position x="-879.64496" y="465.03995" z="0.0"></viz:position>
-        <viz:color r="30" g="144" b="255"></viz:color>
+        <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_726edd1f3551f9d348aee71de64b4606" label="Observations: Ocean">
         <attvalues>
@@ -603,7 +603,7 @@
         </attvalues>
         <viz:size value="31.818182"></viz:size>
         <viz:position x="-821.9099" y="498.3733" z="0.0"></viz:position>
-        <viz:color r="30" g="144" b="255"></viz:color>
+        <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_b9a11af7fde32864a5a0972d001b17ba" label="Observations: Cryosphere">
         <attvalues>
@@ -613,7 +613,7 @@
         </attvalues>
         <viz:size value="20.909092"></viz:size>
         <viz:position x="-764.1749" y="531.7066" z="0.0"></viz:position>
-        <viz:color r="30" g="144" b="255"></viz:color>
+        <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_21887d6b81410a0adc63b5b6269264df" label="Information and Paleoclimate Archives">
         <attvalues>
@@ -623,7 +623,7 @@
         </attvalues>
         <viz:size value="24.545456"></viz:size>
         <viz:position x="-706.4399" y="565.04" z="0.0"></viz:position>
-        <viz:color r="30" g="144" b="255"></viz:color>
+        <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_928c699d51ff052766b3521bba9107c3" label="Carbon and Other biogeochemical Cycles">
         <attvalues>
@@ -633,7 +633,7 @@
         </attvalues>
         <viz:size value="50.0"></viz:size>
         <viz:position x="-648.70483" y="598.3733" z="0.0"></viz:position>
-        <viz:color r="30" g="144" b="255"></viz:color>
+        <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_f99c3603698ceb0fb83bfcb7759a3c91" label="Clouds and AER">
         <attvalues>
@@ -643,7 +643,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="-590.9698" y="631.7066" z="0.0"></viz:position>
-        <viz:color r="30" g="144" b="255"></viz:color>
+        <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_4b2ac44fe9ab398ea677f9093a1d9cdf" label="Anthropogenic and Natural Radiative Forcing">
         <attvalues>
@@ -653,7 +653,7 @@
         </attvalues>
         <viz:size value="28.181818"></viz:size>
         <viz:position x="-533.2348" y="665.04" z="0.0"></viz:position>
-        <viz:color r="30" g="144" b="255"></viz:color>
+        <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_564ea8c5d73132edaa148be3721b38b2" label="Evaluation of Climate Models">
         <attvalues>
@@ -663,7 +663,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="-475.49976" y="698.3733" z="0.0"></viz:position>
-        <viz:color r="30" g="144" b="255"></viz:color>
+        <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_8e03dbd6b1d59dc2245a460f03a7e32c" label="Summary For Policy Makers">
         <attvalues>
@@ -673,7 +673,7 @@
         </attvalues>
         <viz:size value="24.545456"></viz:size>
         <viz:position x="-129.0896" y="898.3733" z="0.0"></viz:position>
-        <viz:color r="30" g="144" b="255"></viz:color>
+        <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_486e182bab491bbfd976fa58dab1ebca" label="Technical Summary">
         <attvalues>
@@ -683,7 +683,7 @@
         </attvalues>
         <viz:size value="20.909092"></viz:size>
         <viz:position x="-71.3546" y="931.7066" z="0.0"></viz:position>
-        <viz:color r="30" g="144" b="255"></viz:color>
+        <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_88760999d5f231b6719db2bfbee9a20e" label="Point of Departure">
         <attvalues>
@@ -693,7 +693,7 @@
         </attvalues>
         <viz:size value="24.545456"></viz:size>
         <viz:position x="794.6708" y="431.70663" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_a1648ad6547a857dd2ff5238e7aca8ac" label="Key Economic Sectors and Services">
         <attvalues>
@@ -703,7 +703,7 @@
         </attvalues>
         <viz:size value="20.909092"></viz:size>
         <viz:position x="794.6708" y="98.373276" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_7bc4f30dc7bfe7878b9090cf8f4d83c3" label="Adaptation needs and options">
         <attvalues>
@@ -713,7 +713,7 @@
         </attvalues>
         <viz:size value="13.636364"></viz:size>
         <viz:position x="794.6708" y="56.706657" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_40b6b6a3daaed0a1b7c38d08938127b2" label="Adaptation Opportunities, Constraints and Limits">
         <attvalues>
@@ -723,7 +723,7 @@
         </attvalues>
         <viz:size value="13.636364"></viz:size>
         <viz:position x="794.6707" y="15.03998" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_2a273f0e5f4e5be4dc1ab02979536929" label="Economics of Adaptation">
         <attvalues>
@@ -733,7 +733,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="794.6707" y="-26.626776" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_0c639293b569cabb70dd1d65f50c529a" label="Detection and Attribution of Observed Impacts">
         <attvalues>
@@ -743,7 +743,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="794.67084" y="-68.293396" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_f012b57ba895a2080836b4a848ce75dc" label="Emergent Risks and Key Vulnerabilities">
         <attvalues>
@@ -753,7 +753,7 @@
         </attvalues>
         <viz:size value="31.818182"></viz:size>
         <viz:position x="794.6707" y="-109.96002" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_ea5d5060ccf18e19d1bd56e6c0653e69" label="Foundations for Decisionmaking">
         <attvalues>
@@ -763,7 +763,7 @@
         </attvalues>
         <viz:size value="13.636364"></viz:size>
         <viz:position x="794.67084" y="390.03995" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_1bf441519a1d66de6c17a42e7f63e45d" label="Regional Context">
         <attvalues>
@@ -773,7 +773,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="794.6707" y="-151.62677" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_b0cf404d3b68ff69520f02b6071b229c" label="Africa">
         <attvalues>
@@ -783,7 +783,7 @@
         </attvalues>
         <viz:size value="20.909092"></viz:size>
         <viz:position x="794.6708" y="-193.29337" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_56be85ac4ec440953f024193440ff6f8" label="Europe">
         <attvalues>
@@ -793,7 +793,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="794.6709" y="-234.96" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_4ba9e0950cc77729770ac2071fde55db" label="Asia">
         <attvalues>
@@ -803,7 +803,7 @@
         </attvalues>
         <viz:size value="20.909092"></viz:size>
         <viz:position x="794.6708" y="-276.62668" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_910ba04669fd8e36362590e88f7dc0d7" label="Australiasia">
         <attvalues>
@@ -813,7 +813,7 @@
         </attvalues>
         <viz:size value="13.636364"></viz:size>
         <viz:position x="794.6708" y="-318.29337" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_8fdf7303ece1f602c161dc099d09dd24" label="North America">
         <attvalues>
@@ -823,7 +823,7 @@
         </attvalues>
         <viz:size value="10.0"></viz:size>
         <viz:position x="794.6709" y="-359.96005" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_785192e72a14fe5711d2d032fc65f0da" label="Central and South America">
         <attvalues>
@@ -833,7 +833,7 @@
         </attvalues>
         <viz:size value="13.636364"></viz:size>
         <viz:position x="794.6708" y="-401.62674" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_72b65633302d4f507e48903421e3a66f" label="Polar Regions">
         <attvalues>
@@ -843,7 +843,7 @@
         </attvalues>
         <viz:size value="13.636364"></viz:size>
         <viz:position x="794.6708" y="-443.29337" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_a060c88fc24f2a4f17787194029fce49" label="Small Islands">
         <attvalues>
@@ -853,7 +853,7 @@
         </attvalues>
         <viz:size value="13.636364"></viz:size>
         <viz:position x="794.67084" y="-484.96002" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_984e957c8c7b14cd98bf910f98135471" label="Freshwater Resources">
         <attvalues>
@@ -863,7 +863,7 @@
         </attvalues>
         <viz:size value="24.545456"></viz:size>
         <viz:position x="794.6707" y="348.3733" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_961c40ba0c0fe6181603319a55af9ae4" label="Open Oceans">
         <attvalues>
@@ -873,7 +873,7 @@
         </attvalues>
         <viz:size value="13.636364"></viz:size>
         <viz:position x="794.6707" y="-526.6268" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_422db21c5d00b6c7302537e54a2c760e" label="Terrestrial and Inland water Systems">
         <attvalues>
@@ -883,7 +883,7 @@
         </attvalues>
         <viz:size value="24.545456"></viz:size>
         <viz:position x="794.6708" y="306.70654" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_93d326ed5457663b994769f97a038663" label="Coastal systesms and low-lying Areas">
         <attvalues>
@@ -893,7 +893,7 @@
         </attvalues>
         <viz:size value="13.636364"></viz:size>
         <viz:position x="794.6709" y="265.03992" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_710ea8010421cc4ccd8170203d04ced6" label="Ocean Systems">
         <attvalues>
@@ -903,7 +903,7 @@
         </attvalues>
         <viz:size value="24.545456"></viz:size>
         <viz:position x="794.6708" y="223.3733" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_e93fc7b801c0e1fb562782197e48ab37" label="Food Production systems and Food Security">
         <attvalues>
@@ -913,7 +913,7 @@
         </attvalues>
         <viz:size value="13.636364"></viz:size>
         <viz:position x="794.67084" y="181.7066" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_da052618416a9ec4e84991396ab44e14" label="Urban Areas">
         <attvalues>
@@ -923,7 +923,7 @@
         </attvalues>
         <viz:size value="10.0"></viz:size>
         <viz:position x="794.67084" y="140.0399" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_bd926940ce8d446f849a9c4e8d48d2e2" label="Technical Summary">
         <attvalues>
@@ -933,7 +933,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="794.67084" y="-568.2934" z="0.0"></viz:position>
-        <viz:color r="220" g="20" b="60"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_77e71052951950c659d5e781e3122698" label="Introduction">
         <attvalues>
@@ -943,7 +943,7 @@
         </attvalues>
         <viz:size value="10.0"></viz:size>
         <viz:position x="-71.354614" y="-1068.2933" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="68" g="163" b="199"></viz:color>
       </node>
       <node id="chapter_c2a8d4ada3ef0912e150c4031a2f6b3b" label="Industry">
         <attvalues>
@@ -953,7 +953,7 @@
         </attvalues>
         <viz:size value="13.636364"></viz:size>
         <viz:position x="-533.2348" y="-801.6268" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="68" g="163" b="199"></viz:color>
       </node>
       <node id="chapter_fb9db0501dc3be8eb81933b2d13d1a0b" label="AFOLU">
         <attvalues>
@@ -963,7 +963,7 @@
         </attvalues>
         <viz:size value="35.454544"></viz:size>
         <viz:position x="-590.96985" y="-768.2934" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="68" g="163" b="199"></viz:color>
       </node>
       <node id="chapter_96ce275483529fda8a63693ada8913df" label="Human Settlements, Infrastructure and Spatial Planning">
         <attvalues>
@@ -973,7 +973,7 @@
         </attvalues>
         <viz:size value="10.0"></viz:size>
         <viz:position x="-648.7049" y="-734.96" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="68" g="163" b="199"></viz:color>
       </node>
       <node id="chapter_31ddc0c8b57eca56db8b1d5bd3bbefa9" label="Regional Development and Cooperation">
         <attvalues>
@@ -983,7 +983,7 @@
         </attvalues>
         <viz:size value="13.636364"></viz:size>
         <viz:position x="-706.43994" y="-701.6267" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="68" g="163" b="199"></viz:color>
       </node>
       <node id="chapter_e1d7ed5f54bb176d95e5229112cb225b" label="National and Sub-National Policies">
         <attvalues>
@@ -993,7 +993,7 @@
         </attvalues>
         <viz:size value="24.545456"></viz:size>
         <viz:position x="-764.1749" y="-668.2934" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="68" g="163" b="199"></viz:color>
       </node>
       <node id="chapter_fda03b28220e2ad941b94961b4209f30" label="Investment and Finance">
         <attvalues>
@@ -1003,7 +1003,7 @@
         </attvalues>
         <viz:size value="10.0"></viz:size>
         <viz:position x="-821.91" y="-634.96" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="68" g="163" b="199"></viz:color>
       </node>
       <node id="chapter_65aa36442ccefef98c4cc557eb732b65" label="Integrated Risk and Uncertainty">
         <attvalues>
@@ -1013,7 +1013,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="-129.0896" y="-1034.9601" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="68" g="163" b="199"></viz:color>
       </node>
       <node id="chapter_8188def15630308d5ced7539ce74c318" label="Sustainable Development and Equity">
         <attvalues>
@@ -1023,7 +1023,7 @@
         </attvalues>
         <viz:size value="10.0"></viz:size>
         <viz:position x="-186.82468" y="-1001.6267" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="68" g="163" b="199"></viz:color>
       </node>
       <node id="chapter_20970dea1a61ad027a89aa714c9107b8" label="Drivers, Trends and Mitigation">
         <attvalues>
@@ -1033,7 +1033,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="-244.5597" y="-968.29333" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="68" g="163" b="199"></viz:color>
       </node>
       <node id="chapter_7d238887fdab82ccd8c5468b53a5a664" label="Assessing Transformation Pathways">
         <attvalues>
@@ -1043,7 +1043,7 @@
         </attvalues>
         <viz:size value="31.818182"></viz:size>
         <viz:position x="-302.2947" y="-934.96" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="68" g="163" b="199"></viz:color>
       </node>
       <node id="chapter_11fd0847b3508db511a1acda77d3fd98" label="Energy Systems">
         <attvalues>
@@ -1053,7 +1053,7 @@
         </attvalues>
         <viz:size value="17.272728"></viz:size>
         <viz:position x="-360.02975" y="-901.6267" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="68" g="163" b="199"></viz:color>
       </node>
       <node id="chapter_609053bb9d96dd8a177deec5072e6444" label="Transport">
         <attvalues>
@@ -1063,7 +1063,7 @@
         </attvalues>
         <viz:size value="10.0"></viz:size>
         <viz:position x="-417.76477" y="-868.2934" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="68" g="163" b="199"></viz:color>
       </node>
       <node id="chapter_5eebf17b2a63ffa460921231ec3066f3" label="Buildings">
         <attvalues>
@@ -1073,7 +1073,7 @@
         </attvalues>
         <viz:size value="10.0"></viz:size>
         <viz:position x="-475.49976" y="-834.9601" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="68" g="163" b="199"></viz:color>
       </node>
       <node id="chapter_52c1eec06a368d3d76f444ef79934e76" label="Summary For Policy Makers">
         <attvalues>
@@ -1083,7 +1083,7 @@
         </attvalues>
         <viz:size value="42.727272"></viz:size>
         <viz:position x="-872.6039" y="-606.3208" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="68" g="163" b="199"></viz:color>
       </node>
       <node id="chapter_073944b56930d00cafcf8f5e21e37c29" label="Technical Summary">
         <attvalues>
@@ -1093,7 +1093,7 @@
         </attvalues>
         <viz:size value="39.09091"></viz:size>
         <viz:position x="-938.55347" y="-560.0787" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="68" g="163" b="199"></viz:color>
       </node>
     </nodes>
     <edges>

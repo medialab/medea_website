@@ -69,7 +69,7 @@
       .style("stroke-width", 0)
       .style("stroke-opacity", .4)
       .style("fill", function(d) { return d.color; })
-      .style("fill-opacity", 0.7);
+      .style("fill-opacity", 1);
 
     diagram.partTitle
       .style("fill", "white")
@@ -131,16 +131,16 @@
           return data["sets"][j];
        }));
       })
-      .style("fill-opacity", 0)
+      .style("fill-opacity", 1)
       .style("fill", function(d) { return d.color;})
       .on("mouseover", function(d) {
-        console.log(this, d);
-        $(this).css({'fill-opacity': 0.7});
+        // console.log(this, d);
+        // $(this).css({'fill-opacity': 0.7});
         venn.tooltip.showTooltip(d);
       })
       .on("mouseenter", this.onmouseover)
       .on("mouseout", function() {
-        $(this).css({'fill-opacity': 0});
+        // $(this).css({'fill-opacity': 0});
         venn.tooltip.hideTooltip();
       })
       .on("mousemove", function(d) {

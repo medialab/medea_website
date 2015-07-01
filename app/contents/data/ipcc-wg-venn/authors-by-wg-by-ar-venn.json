@@ -2,7 +2,7 @@
   "AR-4": {
     "overlaps": [
       {
-        "color": "#54484a",
+        "color": "#953a24",
         "sets": [
           0,
           1
@@ -11,7 +11,7 @@
         "size": 30
       },
       {
-        "color": "#6d4935",
+        "color": "#315b66",
         "sets": [
           0,
           2
@@ -20,7 +20,7 @@
         "size": 1
       },
       {
-        "color": "rgb(66, 139, 106)",
+        "color": "5bae66",
         "sets": [
           1,
           2
@@ -29,7 +29,7 @@
         "size": 15
       },
       {
-        "color": "#27201c",
+        "color": "#2b2a2b",
         "sets": [
           0,
           1,
@@ -41,19 +41,19 @@
     ],
     "sets": [
       {
-        "color": "#ab3f22",
+        "color": "#766aa4",
         "size": 615,
         "id": "WG 1",
         "label": "Physical basis"
       },
       {
-        "color": "#6fb266",
+        "color": "#cccf5f",
         "size": 422,
         "id": "WG 2",
         "label": "Impacts"
       },
       {
-        "color": "#3c95b5",
+        "color": "#44a3c7",
         "size": 271,
         "id": "WG 3",
         "label": "Mitigation"
@@ -63,7 +63,7 @@
   "AR-5": {
     "overlaps": [
       {
-        "color": "#54484a",
+        "color": "#953a24",
         "sets": [
           0,
           1
@@ -72,7 +72,7 @@
         "size": 31
       },
       {
-        "color": "#6d4935",
+        "color": "#315b66",
         "sets": [
           0,
           2
@@ -90,7 +90,7 @@
         "size": 14
       },
       {
-        "color": "#27201c",
+        "color": "#2b2a2b",
         "sets": [
           0,
           1,
@@ -102,19 +102,19 @@
     ],
     "sets": [
       {
-        "color": "#ab3f22",
+        "color": "#766aa4",
         "size": 783,
         "id": "WG 1",
         "label": "Physical basis"
       },
       {
-        "color": "#6fb266",
+        "color": "#cccf5f",
         "size": 692,
         "id": "WG 2",
         "label": "Impacts"
       },
       {
-        "color": "#3c95b5",
+        "color": "#44a3c7",
         "size": 455,
         "id": "WG 3",
         "label": "Mitigation"
@@ -124,7 +124,7 @@
   "AR-2": {
     "overlaps": [
       {
-        "color": "#54484a",
+        "color": "#953a24",
         "sets": [
           0,
           1
@@ -133,7 +133,7 @@
         "size": 27
       },
       {
-        "color": "#6d4935",
+        "color": "#315b66",
         "sets": [
           0,
           2
@@ -151,7 +151,7 @@
         "size": 10
       },
       {
-        "color": "#27201c",
+        "color": "#2b2a2b",
         "sets": [
           0,
           1,
@@ -163,19 +163,19 @@
     ],
     "sets": [
       {
-        "color": "#ab3f22",
+        "color": "#766aa4",
         "size": 411,
         "id": "WG 1",
         "label": "Physical basis"
       },
       {
-        "color": "#6fb266",
+        "color": "#cccf5f",
         "size": 550,
         "id": "WG 2",
         "label": "Impacts"
       },
       {
-        "color": "#3c95b5",
+        "color": "#44a3c7",
         "size": 91,
         "id": "WG 3",
         "label": "Mitigation"
@@ -185,7 +185,7 @@
   "AR-3": {
     "overlaps": [
       {
-        "color": "#54484a",
+        "color": "#953a24",
         "sets": [
           0,
           1
@@ -194,7 +194,7 @@
         "size": 32
       },
       {
-        "color": "#6d4935",
+        "color": "#315b66",
         "sets": [
           0,
           2
@@ -212,7 +212,7 @@
         "size": 12
       },
       {
-        "color": "#27201c",
+        "color": "#2b2a2b",
         "sets": [
           0,
           1,
@@ -224,19 +224,19 @@
     ],
     "sets": [
       {
-        "color": "#ab3f22",
+        "color": "#766aa4",
         "size": 609,
         "id": "WG 1",
         "label": "Physical basis"
       },
       {
-        "color": "#6fb266",
+        "color": "#cccf5f",
         "size": 406,
         "id": "WG 2",
         "label": "Impacts"
       },
       {
-        "color": "#3c95b5",
+        "color": "#44a3c7",
         "size": 210,
         "id": "WG 3",
         "label": "Mitigation"
@@ -246,7 +246,7 @@
   "AR-1": {
     "overlaps": [
       {
-        "color": "#54484a",
+        "color": "#953a24",
         "sets": [
           0,
           1
@@ -255,7 +255,7 @@
         "size": 12
       },
       {
-        "color": "#6d4935",
+        "color": "#315b66",
         "sets": [
           0,
           2
@@ -273,7 +273,7 @@
         "size": 5
       },
       {
-        "color": "#27201c",
+        "color": "#2b2a2b",
         "sets": [
           0,
           1,
@@ -285,19 +285,19 @@
     ],
     "sets": [
       {
-        "color": "#ab3f22",
+        "color": "#766aa4",
         "size": 248,
         "id": "WG 1",
         "label": "Physical basis"
       },
       {
-        "color": "#6fb266",
+        "color": "#cccf5f",
         "size": 177,
         "id": "WG 2",
         "label": "Impacts"
       },
       {
-        "color": "#3c95b5",
+        "color": "#44a3c7",
         "size": 70,
         "id": "WG 3",
         "label": "Mitigation"
@@ -307,7 +307,7 @@
   "AR-inter": {
     "overlaps": [
       {
-        "color": "#54484a",
+        "color": "#953a24",
         "sets": [
           0,
           1
@@ -316,7 +316,7 @@
         "size": 161
       },
       {
-        "color": "#6d4935",
+        "color": "#315b66",
         "sets": [
           0,
           2
@@ -334,7 +334,7 @@
         "size": 100
       },
       {
-        "color": "#27201c",
+        "color": "#2b2a2b",
         "sets": [
           0,
           1,
@@ -346,19 +346,19 @@
     ],
     "sets": [
       {
-        "color": "#ab3f22",
+        "color": "#766aa4",
         "size": 1844,
         "id": "WG 1",
         "label": "Physical basis"
       },
       {
-        "color": "#6fb266",
+        "color": "#cccf5f",
         "size": 1766,
         "id": "WG 2",
         "label": "Impacts"
       },
       {
-        "color": "#3c95b5",
+        "color": "#44a3c7",
         "size": 873,
         "id": "WG 3",
         "label": "Mitigation"
@@ -375,7 +375,7 @@
   "AR-intra": {
     "overlaps": [
       {
-        "color": "#54484a",
+        "color": "#953a24",
         "sets": [
           0,
           1
@@ -384,7 +384,7 @@
         "size": 132
       },
       {
-        "color": "#6d4935",
+        "color": "#315b66",
         "sets": [
           0,
           2
@@ -402,7 +402,7 @@
         "size": 56
       },
       {
-        "color": "#27201c",
+        "color": "#2b2a2b",
         "sets": [
           0,
           1,
@@ -414,19 +414,19 @@
     ],
     "sets": [
       {
-        "color": "#ab3f22",
+        "color": "#766aa4",
         "size": 2666,
         "id": "WG 1",
         "label": "Physical basis"
       },
       {
-        "color": "#6fb266",
+        "color": "#cccf5f",
         "size": 2247,
         "id": "WG 2",
         "label": "Impacts"
       },
       {
-        "color": "#3c95b5",
+        "color": "#44a3c7",
         "size": 1097,
         "id": "WG 3",
         "label": "Mitigation"
@@ -436,7 +436,7 @@
   "AR-global": {
     "overlaps": [
       {
-        "color": "#54484a",
+        "color": "#953a24",
         "sets": [
           0,
           1
@@ -445,7 +445,7 @@
         "size": 189
       },
       {
-        "color": "#6d4935",
+        "color": "#315b66",
         "sets": [
           0,
           2
@@ -463,7 +463,7 @@
         "size": 115
       },
       {
-        "color": "#27201c",
+        "color": "#2b2a2b",
         "sets": [
           0,
           1,
@@ -475,19 +475,19 @@
     ],
     "sets": [
       {
-        "color": "#ab3f22",
+        "color": "#766aa4",
         "size": 1853,
         "id": "WG 1",
         "label": "Physical basis"
       },
       {
-        "color": "#6fb266",
+        "color": "#cccf5f",
         "size": 1793,
         "id": "WG 2",
         "label": "Impacts"
       },
       {
-        "color": "#3c95b5",
+        "color": "#44a3c7",
         "size": 890,
         "id": "WG 3",
         "label": "Mitigation"
