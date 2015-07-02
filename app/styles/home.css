@@ -41,8 +41,37 @@
 }
 .studyDescription {
   /*margin-top: 10px;*/
+  font-family: 'Raleway';
+  font-weight: 300;
   padding: 10px 0px;
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+ol.storylinesContainer {
+  list-style-type: none;
+  margin-top: 30px;
+  padding-left: 0;
+}
+li.storyline {
+  font-family: 'Merriweather-Light';
+  font-size: 12px;
+  padding-bottom: 40px;
+  line-height: 26px;
+}
+.exploreContainer {
+  width: 100%;
+  text-align: right;
+}
+.exploreButton {
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  font-weight: 700;
+  background-color: #33616D;
+  border: none;
+  color: white;
 }
 .study{
   margin: 20px 0;

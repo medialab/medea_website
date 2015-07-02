@@ -37,8 +37,14 @@ angular
         templateUrl: 'views/home.html',
         controller: 'HomeCtrl',
         resolve: {
-          content : function ($route, FilesFactory) {
+          contentHome : function ($route, FilesFactory) {
             return FilesFactory.get({path: 'home'});
+          },
+          contentIPCC: function(FilesFactory) {
+            return FilesFactory.get({path: 'ipcc/mapping-the-organizational-dynamics-of-the-ipcc'});
+          },
+          contentUNFCCC: function(FilesFactory) {
+            // return FilesFactory.get({path: 'unfccc/introduction'});
           }
         }
       })
@@ -49,15 +55,6 @@ angular
       .when('/:page', { // static page controller
         templateUrl: 'views/page.html',
         controller: 'PageCtrl'
-      })
-      .when('/:page/main', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        resolve: {
-          content : function ($route, FilesFactory) {
-            return FilesFactory.get({path: $route.current.params.page + '/mapping-the-organizational-dynamics-of-the-ipcc'});
-          }
-        }
       })
       .when('/:page/:sub', {
         templateUrl: 'views/page.html',

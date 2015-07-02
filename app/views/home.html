@@ -21,13 +21,19 @@
         <p id="studiesAbstract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum, mi eu ultricies tempus, enim purus suscipit orci, volutpat convallis tellus nibh quis augue. Proin eros tortor, egestas ac elit eget, condimentum sodales lacus. Nulla purus augue, tincidunt hendrerit dolor eget, accumsan venenatis ipsum.</p>
         <div class="study container-fluid col-sm-6 col-md-6 col-lg-6{{$index === 0 ? ' noLeftGutter' : ($index === 1 ? ' noRightGutter' : '')}}" ng-repeat="route in routes">
           <div>
-            <a ng-href="#/{{route.slug}}/main">
-              <div class="thumbnailStudy">
-                <img ng-src="images/medea2_back-01.jpg" class="backStudies">
-                <img ng-src="images/medea_studies-{{route.slug}}.png" class="frontStudies">
-              </div>
-            </a>
-            <div class="studyDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum, mi eu ultricies tempus, enim purus suscipit orci, volutpat convallis tellus nibh quis augue.</div>
+            <div class="thumbnailStudy">
+              <img ng-src="images/medea2_back-01.jpg" class="backStudies">
+              <img ng-src="images/medea_studies-{{route.slug}}.png" class="frontStudies">
+            </div>
+            <div class="studyDescription">{{contentStudies[route.slug].subtitle}}</div>
+            <ol class="storylinesContainer">
+              <li class="storyline" ng-repeat="slData in contentStudies[route.slug].menu" ng-if="slData.slug !== 'mapping-the-organizational-dynamics-of-the-ipcc'">
+                <h5 class="slTitle">{{slData.title}}</h5>
+                <p>{{slData.subtitle}}</p>
+                <div class="exploreContainer">
+                <a ng-href="#/{{route.slug}}/{{slData.slug}}"><button class="exploreButton">Explore this story  <i class="fa fa-chevron-right"></i></button></a></div>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
