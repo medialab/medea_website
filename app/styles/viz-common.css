@@ -243,3 +243,17 @@ select {
 .pointable{
   cursor: pointer;
 }
+.sigmaControl, .sigmaControl:hover {
+  color: #33616D;
+}
+.tooltip > .tooltip-inner {
+  background-color: #33616D;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.tooltip.right .tooltip-arrow {
+  border-right-color: #33616D;
+}

@@ -72,7 +72,7 @@
     );
   };
 
-  function drawGraph(container, selectContainer, ar) {
+  function drawGraph(container, selectContainer, ar, callback) {
     console.log(container)
     $('#' + container + ' canvas').remove();
     var newInstance = new sigma({container: container});
@@ -104,6 +104,7 @@
     if (ar === undefined)
       ar = '1';
     update(container, ar, newInstance);
+    callback(newInstance);
   }
 
   function update(container, ar, sigmaInstance) {
@@ -151,7 +152,7 @@
               if (n.id === nodeId)
                 n.staticLabel = true;
               else
-                n.staticLabel = false;
+                n.staticLabel = true;
             }
             else {
               n.color = '#eee';
