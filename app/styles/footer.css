@@ -1,5 +1,37 @@
 #footer {
   margin-top: 50px;
-  height: 150px;
-  /*background: #33616D;*/
+  padding-top: 35px;
+  height: 300px;
+  background: #33616D;
+  color: #9EC1CA;
+}
+
+.footerTitle {
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  color: #182d33;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  padding-bottom: 15px;
+}
+
+#footer p {
+  font-size: 11px;
+  line-height: 16px;
+}
+
+.disclaimerBody {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 10px !important;
+  line-height: 13px !important;
+}
+#address {
+  font-weight: 400;
+}
+
+img.fullwidth {
+  width: 100%;
 }
