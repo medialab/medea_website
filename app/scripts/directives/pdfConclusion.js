@@ -109,18 +109,45 @@ angular.module('driveoutApp.directives.pdfconclusion', [])
           queueRenderPage(pageNum);
         }
         document.getElementById('nextPDF').addEventListener('click', onNextPage);
-
-        $('#containerPdfConclusion').css({
-            'position': 'absolute',
-            'left': (element.width() - 525)/2 +'px',
-            'height': 350 + 'px',
-            'width': 525 + 'px',
-            'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-            'margin-bottom': 30 + 'px'});
-        window.addEventListener('resize', function() {
+        var ratio = 350/525;
+        if ($('#pdfconclusion').width()*ratio
+            < $('#pdfconclusion').height()) {
           $('#containerPdfConclusion').css({
-            'left': (element.width() - 525)/2 +'px'
-          });
+              'position': 'absolute',
+              'height': ($('#pdfconclusion').width()*ratio) + 'px',
+              'width': '100%',
+              'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+              'margin-bottom': 30 + 'px'});
+        }
+        else {
+          $('#containerPdfConclusion').css({
+              'position': 'absolute',
+              'left': (element.width() - ($('#pdfconclusion').height()/ratio)) /2 + 'px',
+              'height': '100%',
+              'width': ($('#pdfconclusion').height()/ratio) + 'px',
+              'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+              'margin-bottom': 30 + 'px'});
+        }
+        window.addEventListener('resize', function() {
+          if ($('#pdfconclusion').width()*ratio
+            < $('#pdfconclusion').height()) {
+            $('#containerPdfConclusion').css({
+                'position': 'absolute',
+                'left': '0',
+                'height': ($('#pdfconclusion').width()*ratio) + 'px',
+                'width': '100%',
+                'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+                'margin-bottom': 30 + 'px'});
+          }
+          else {
+            $('#containerPdfConclusion').css({
+              'position': 'absolute',
+              'left': (element.width() - ($('#pdfconclusion').height()/ratio)) /2 + 'px',
+              'height': '100%',
+              'width': ($('#pdfconclusion').height()/ratio) + 'px',
+              'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+              'margin-bottom': 30 + 'px'});
+          }
         })
         /**
          * Asynchronously downloads PDF.
