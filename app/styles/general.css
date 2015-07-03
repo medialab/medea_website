@@ -131,4 +131,11 @@ h5 {
 
 .exponent {
   vertical-align: super;
+  color: #33616D;
+  font-family: 'Raleway';
+  font-size: 14px;
+  font-weight: 700;
+}
+a.exponent:hover {
+  color: rgba(51, 97, 109, 0.8);
 }
