@@ -129,24 +129,26 @@ angular.module('driveoutApp.directives.pdfconclusion', [])
               'margin-bottom': 30 + 'px'});
         }
         window.addEventListener('resize', function() {
-          if ($('#pdfconclusion').width()*ratio
-            < $('#pdfconclusion').height()) {
-            $('#containerPdfConclusion').css({
+          if (element.height() !== 0) {
+            if ($('#pdfconclusion').width()*ratio
+              < $('#pdfconclusion').height()) {
+              $('#containerPdfConclusion').css({
+                  'position': 'absolute',
+                  'left': '0',
+                  'height': ($('#pdfconclusion').width()*ratio) + 'px',
+                  'width': '100%',
+                  'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+                  'margin-bottom': 30 + 'px'});
+            }
+            else {
+              $('#containerPdfConclusion').css({
                 'position': 'absolute',
-                'left': '0',
-                'height': ($('#pdfconclusion').width()*ratio) + 'px',
-                'width': '100%',
+                'left': (element.width() - ($('#pdfconclusion').height()/ratio)) /2 + 'px',
+                'height': '100%',
+                'width': ($('#pdfconclusion').height()/ratio) + 'px',
                 'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
                 'margin-bottom': 30 + 'px'});
-          }
-          else {
-            $('#containerPdfConclusion').css({
-              'position': 'absolute',
-              'left': (element.width() - ($('#pdfconclusion').height()/ratio)) /2 + 'px',
-              'height': '100%',
-              'width': ($('#pdfconclusion').height()/ratio) + 'px',
-              'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-              'margin-bottom': 30 + 'px'});
+            }
           }
         })
         /**

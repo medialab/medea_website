@@ -35,6 +35,7 @@ angular.module('driveoutApp.directives.partratehistototal', [])
       });
 
       window.addEventListener('resize', function() {
+        if (element.height() !== 0) {
           var elementWidth = element.width(),
               elementHeight = element.height();
           histogram.load('contents/data/participationRatesHisto/participations.json', function() {
@@ -55,6 +56,7 @@ angular.module('driveoutApp.directives.partratehistototal', [])
               'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
               'margin-bottom': 30 + 'px'});
           });
+        }
       });
     }
   };

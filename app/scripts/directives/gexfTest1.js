@@ -47,13 +47,15 @@ angular.module('driveoutApp.directives.gexftestone', [])
         });
 
         window.addEventListener('resize', function() {
-          $('#sigma-container').css({
-            'position': 'absolute',
-            'height': ($('.vizLegendZone').position().top + 5) + 'px',
-            'width': '100%',
-            'bottom': '30px',
-            'margin-bottom': 30 + 'px'});
-          drawGraph('sigma-container', 'currentAR', $('#currentAR')[0].value);
+          if (element.height() !== 0) {
+            $('#sigma-container').css({
+              'position': 'absolute',
+              'height': ($('.vizLegendZone').position().top + 5) + 'px',
+              'width': '100%',
+              'bottom': '30px',
+              'margin-bottom': 30 + 'px'});
+            drawGraph('sigma-container', 'currentAR', $('#currentAR')[0].value);
+          }
         })
       }
     };
