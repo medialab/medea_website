@@ -78,7 +78,6 @@ angular.module('driveoutApp.directives.zeppelin', [])
         /**
          * Note Handler
          */
-
         element.on('click', '[noteIndex]', function(e) {
           e.preventDefault();
           var noteNumber = + $(this).attr('noteIndex');

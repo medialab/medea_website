@@ -95,7 +95,8 @@ drive.utils.clean = function(html){
             .replace(/<table(.*?)>/g, function(d, attrs){ return '<table class="table" ' + attrs + '>';})
             .replace(/<a\s*><\/a>/g,'')
             .replace(/<p\s*><\/p>/g,'')
-            .replace(/<p\s*>/g,'<p>');
+            .replace(/<p\s*>/g,'<p>')
+            .replace(/&#xA0;/, ' ');
   // console.log('clean', c.match(/<span\s*>([\S\s](?!<sp))*<\/span>/g));
   var spanMatched = c.match(/<span\s*>([\S\s](?!<sp))*<\/span>/g);
   if (spanMatched !== null)
