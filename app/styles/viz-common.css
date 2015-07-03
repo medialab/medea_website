@@ -261,3 +261,14 @@ select {
 .tooltip.right .tooltip-arrow {
   border-right-color: #33616D;
 }
+#prevPDF, #nextPDF {
+  background: #33616D;
+  color: white;
+  border: none;
+  margin: 0 2px;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 8px;
+  font-weight: 700;
+}
