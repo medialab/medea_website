@@ -40,21 +40,24 @@
       var id = "AR-" + i;
       var div = d3.select(container).append("div")
         .attr("id", id)
+        .style('text-align', 'center')
         .style("float", "left");
-      if (i == 5) {
-        div.style("clear", "right")
+      if (i == 3) {
+        div.style("clear", "both")
           .style("margin-left", width/4 + "px");
       }
       div.append("div").attr("class", "venn");
       div.append("h4")
         .classed("venntitle", true)
-        .style("width", width/3 - 5 + "px")
         .text("AR #" + i + " (" + venn.AR_data["years"][id] + ")");
-     venn.display_data("#" + id + " .venn", venn.AR_data[id], width/2 - 10, (height - ($("h3.venntitle").height() + 2*$("h4.venntitle").height() + 20))/2);
+     venn.display_data("#" + id + " .venn", venn.AR_data[id], width/2 - 10, (height - ($("h3.venntitle").height() + 2*$("h4.venntitle").height() + 20))/3.5, false);
     });
   };
 
-  venn.display_data = function(div_id, data, width, height) {
+  venn.display_data = function(div_id, data, width, height, displayNumber) {
+    if (displayNumber === undefined)
+      displayNumber = true;
+
     // draw the diagram
     var diagram = venn.drawD3Diagram(
       d3.select(div_id),
@@ -77,12 +80,19 @@
       .style("text-transform", 'uppercase')
       .style("font-size", "13px");
 
-    diagram.partNumber
-      .style("fill", "white")
-      .style("font-family", "Raleway")
-      .style("letter-spacing", '1px')
-      .style("text-transform", 'uppercase')
-      .style("font-size", "13px");
+    if (displayNumber) {
+      diagram.partNumber
+        .style("fill", "white")
+        .style("font-family", "Raleway")
+        .style("letter-spacing", '1px')
+        .style("text-transform", 'uppercase')
+        .style("font-size", "13px");
+    }
+    else {
+      diagram.partNumber
+        .style("opacity", "0");
+    }
+
 
     d3.selection.prototype.moveParentToFront = function() {
       return this.each(function() {

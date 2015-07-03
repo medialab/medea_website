@@ -44,19 +44,19 @@
         "color": "#766aa4",
         "size": 615,
         "id": "WG 1",
-        "label": "Physical basis"
+        "label": "PB"
       },
       {
         "color": "#cccf5f",
         "size": 422,
         "id": "WG 2",
-        "label": "Impacts"
+        "label": "Im"
       },
       {
         "color": "#44a3c7",
         "size": 271,
         "id": "WG 3",
-        "label": "Mitigation"
+        "label": "Mi"
       }
     ]
   },
@@ -105,19 +105,19 @@
         "color": "#766aa4",
         "size": 783,
         "id": "WG 1",
-        "label": "Physical basis"
+        "label": "PB"
       },
       {
         "color": "#cccf5f",
         "size": 692,
         "id": "WG 2",
-        "label": "Impacts"
+        "label": "Im"
       },
       {
         "color": "#44a3c7",
         "size": 455,
         "id": "WG 3",
-        "label": "Mitigation"
+        "label": "Mi"
       }
     ]
   },
@@ -166,19 +166,19 @@
         "color": "#766aa4",
         "size": 411,
         "id": "WG 1",
-        "label": "Physical basis"
+        "label": "PB"
       },
       {
         "color": "#cccf5f",
         "size": 550,
         "id": "WG 2",
-        "label": "Impacts"
+        "label": "Im"
       },
       {
         "color": "#44a3c7",
         "size": 91,
         "id": "WG 3",
-        "label": "Mitigation"
+        "label": "Mi"
       }
     ]
   },
@@ -227,19 +227,19 @@
         "color": "#766aa4",
         "size": 609,
         "id": "WG 1",
-        "label": "Physical basis"
+        "label": "PB"
       },
       {
         "color": "#cccf5f",
         "size": 406,
         "id": "WG 2",
-        "label": "Impacts"
+        "label": "Im"
       },
       {
         "color": "#44a3c7",
         "size": 210,
         "id": "WG 3",
-        "label": "Mitigation"
+        "label": "Mi"
       }
     ]
   },
@@ -288,19 +288,19 @@
         "color": "#766aa4",
         "size": 248,
         "id": "WG 1",
-        "label": "Physical basis"
+        "label": "PB"
       },
       {
         "color": "#cccf5f",
         "size": 177,
         "id": "WG 2",
-        "label": "Impacts"
+        "label": "Im"
       },
       {
         "color": "#44a3c7",
         "size": 70,
         "id": "WG 3",
-        "label": "Mitigation"
+        "label": "Mi"
       }
     ]
   },

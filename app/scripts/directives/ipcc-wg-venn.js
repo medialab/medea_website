@@ -20,7 +20,7 @@ angular.module('driveoutApp.directives.wenn', [])
         venn.load_data('contents/data/ipcc-wg-venn/authors-by-wg-by-ar-venn.json', function() {
           elementid = "#"+element[0].getAttribute("id"),
           elementwidth = element.width(),
-          elementheight = element.height()-50;
+          elementheight = element.height()-$('.vizLegendZone').height();
           venn.plotGlobalAR(elementid, elementwidth, elementheight);
         });
 
