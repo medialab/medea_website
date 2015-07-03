@@ -18,5 +18,6 @@ angular.module('driveoutApp.directives', [
   'driveoutApp.directives.zeppelin',
   'driveoutApp.directives.section',
   'driveoutApp.directives.pdfconclusion',
+  'driveoutApp.directives.lastngrepeat',
   'driveoutApp.directives.gexftestone'
   ])

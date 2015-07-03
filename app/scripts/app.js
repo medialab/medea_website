@@ -45,6 +45,27 @@ angular
           },
           contentUNFCCC: function(FilesFactory) {
             // return FilesFactory.get({path: 'unfccc/introduction'});
+          },
+          scrollToStoryLines: function() {
+            return false;
+          }
+        }
+      })
+      .when('/storylines', {
+        templateUrl: 'views/home.html',
+        controller: 'HomeCtrl',
+        resolve: {
+          contentHome : function ($route, FilesFactory) {
+            return FilesFactory.get({path: 'home'});
+          },
+          contentIPCC: function(FilesFactory) {
+            return FilesFactory.get({path: 'ipcc/mapping-the-organizational-dynamics-of-the-ipcc'});
+          },
+          contentUNFCCC: function(FilesFactory) {
+            // return FilesFactory.get({path: 'unfccc/introduction'});
+          },
+          scrollToStoryLines: function() {
+            return true;
           }
         }
       })
@@ -64,6 +85,12 @@ angular
             return FilesFactory.get({path:'foreword'});
           }
         }
+      })
+      .when('/ipcc', {
+        redirectTo: '/storylines'
+      })
+      .when('/unfccc', {
+        redirectTo: '/storylines'
       })
       .when('/controversy-mapping', { // static page controller
         templateUrl: 'views/singlepage.html',
