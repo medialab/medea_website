@@ -21,7 +21,7 @@
 
     d3.select(container).append("div").attr("class", "venn");
 
-    d3.select(d3.select(container).node().parentNode).select('h3')
+    d3.select(d3.select(container).node().parentNode).select('h4')
       .html('Distribution of IPCC authors among the 3 working groups all assessment reports aggregated');
     venn.display_data(container + " .venn", venn.AR_data["AR-global"], width, height - $(container + " h3").height() - 20);
   };
@@ -35,7 +35,7 @@
     //   .classed("venntitle", true)
     //   .style("width", width + "px")
     //   .html("Distribution of IPCC authors among the 3 working groups<br/>across assessment reports");
-    d3.select(d3.select(container).node().parentNode).select('h3')
+    d3.select(d3.select(container).node().parentNode).select('h4')
       .html('Distribution of IPCC authors among the 3 working groups across assessment reports');
     d3.select(container).style("text-align", "center");
     [1,2,3,4,5].forEach(function(i) {
