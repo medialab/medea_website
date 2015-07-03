@@ -24,6 +24,7 @@ angular
     'driveoutApp.layout',
     'driveoutApp.home',
     'driveoutApp.page',
+    'driveoutApp.singlepage',
     'driveoutApp.topmenu',
     'driveoutApp.subchapter',
     'driveoutApp.directives',
@@ -52,16 +53,21 @@ angular
         controller: '404Ctrl'
       })
       .when('/about', { // static page controller
-        templateUrl: 'views/page.html',
-        controller: 'PageCtrl'
+        templateUrl: 'views/singlepage.html',
+        controller: 'SinglePageCtrl'
       })
       .when('/foreword', { // static page controller
-        templateUrl: 'views/page.html',
-        controller: 'PageCtrl'
+        templateUrl: 'views/singlepage.html',
+        controller: 'SinglePageCtrl',
+        resolve: {
+          content: function(FilesFactory) {
+            return FilesFactory.get({path:'foreword'});
+          }
+        }
       })
       .when('/controversy-mapping', { // static page controller
-        templateUrl: 'views/page.html',
-        controller: 'PageCtrl'
+        templateUrl: 'views/singlepage.html',
+        controller: 'SinglePageCtrl'
       })
       .when('/ipcc/national-cultures-of-climate-expertise-france', {
         templateUrl: 'views/page.html',
