@@ -52,6 +52,7 @@
   padding-right: 30px;
 }
 .centerInside {
+  margin: 40px 0;
   width: 49%;
   display: inline-block;
   text-align: center;
