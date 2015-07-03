@@ -7,7 +7,6 @@ angular.module('driveoutApp.directives.subchapters', [])
       controller: 'SubchapterCtrl',
       link: function postLink(scope, element, attrs) {
         scope.elementClicked =  function(element, value) {
-        console.log('scope', scope);
           switch (element) {
             case 'radio':
               scope.bringTextTo(value);

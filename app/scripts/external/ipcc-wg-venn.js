@@ -3,12 +3,10 @@
 
   venn.AR_data = null;
   venn.load_data = function(path, callback) {
-    console.log(path);
     if (venn.AR_data) {
       return callback();
     }
     d3.json(path, function(data) {
-      console.log(data);
       venn.AR_data = data;
       return callback();
     });

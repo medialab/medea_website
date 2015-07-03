@@ -1,7 +1,6 @@
 angular.module('driveoutApp.content', ['ui.bootstrap'])
   .controller('contentCtrl', function($window, $scope, $element, $attrs) {
        var w = angular.element($window);
-       console.log('scopi', $scope);
         $scope.index = 0;
         $scope.height = w.height() - 265;
 
@@ -32,7 +31,6 @@ angular.module('driveoutApp.content', ['ui.bootstrap'])
         $scope.next = function(fromScroll) {
           var _index = $scope.index + 1;
           $scope.index = Math.min(_index, $scope.$parent.content.sections.length -1);
-          console.log('new index', $scope.index);
           if (!fromScroll)
             $scope.bringTextTo($scope.index);
         };
@@ -41,7 +39,6 @@ angular.module('driveoutApp.content', ['ui.bootstrap'])
         $scope.previous = function(fromScroll) {
           var _index = $scope.index - 1;
           $scope.index = Math.max(_index, 0);
-          console.log('new index', $scope.index);
           if (!fromScroll)
             $scope.bringTextTo($scope.index);
         };
@@ -54,7 +51,6 @@ angular.module('driveoutApp.content', ['ui.bootstrap'])
         $scope.steer = function(index){
           if (index >= 0 && index < $scope.$parent.content.sections.length) {
             if($scope.$parent.content.sections[$scope.index]){
-              // console.log('scopi', $scope , 'scopi parent', $scope.$parent, $scope.index);
               $scope.section = $scope.$parent.content.sections[$scope.index];
             }
           }

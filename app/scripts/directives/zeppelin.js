@@ -85,7 +85,6 @@ angular.module('driveoutApp.directives.zeppelin', [])
 
 
         scope.$parent.$watch(function(scopeP) {
-          console.log(scopeP.height);
           return scopeP.height;
           }, function(h) {
            element.css({

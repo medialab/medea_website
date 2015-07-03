@@ -17,7 +17,6 @@
   });
   //Puts all the given node and its neighbors
   sigma.classes.graph.addMethod('activeNodesUp', function(nodeId) {
-    console.log(this);
     var neighbors = this.neighbors(nodeId);
     neighbors[nodeId] = this.nodesIndex[nodeId];
     var array = this.nodesArray.sort(function(a, b) {
@@ -73,7 +72,6 @@
   };
 
   function drawGraph(container, selectContainer, ar, callback) {
-    console.log(container)
     $('#' + container + ' canvas').remove();
     var newInstance = new sigma({container: container});
 

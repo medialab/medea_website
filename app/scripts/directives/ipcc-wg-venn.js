@@ -53,7 +53,6 @@ angular.module('driveoutApp.directives.wenn', [])
         });
 
         scope.$on('focus', function(e, string) {
-          console.log('focusEvent',e);
           if (string === "global") {
             element.html("");
             element[0].setAttribute('class', element[0].getAttribute('class').replace('fillHeight', 'fillComplement'));

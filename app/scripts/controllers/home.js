@@ -13,7 +13,6 @@ angular.module('driveoutApp.home', [])
     $scope.content = contentHome.data;
     $scope.contentStudies = {ipcc: contentIPCC.data};
     // $scope.contentUNFCCC = contentUNFCCC.data;
-    console.log('home content', contentHome, contentIPCC)
     $scope.$parent.page = {};
 
     $scope.$watch('routes', function(r){

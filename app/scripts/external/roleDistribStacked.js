@@ -29,7 +29,6 @@
   StackedBars.prototype.load = function(path, callback) {
     var self = this;
     d3.json(path, function(participations) {
-      console.log('participations', participations);
       for (var country in participations) {
         delete participations[country].total;
       }
@@ -54,7 +53,6 @@
         .attr('width', width)
         .attr('height', height)
         .attr('id', vizName);
-    console.log(this.data);
 
     this.updateData(container, country, params);
   }
@@ -136,7 +134,7 @@
             return 'translate(' + xPositions[i] + ',' + margin.top + ')';
           })
             .selectAll('rect')
-            .data(function(d) {console.log(d);
+            .data(function(d) {
               return Object.keys(dataCountry[d]).sort().map(function(e, i, a) {
                 var object = {
                       category: d,
@@ -180,7 +178,7 @@
 
       var roleLegend = d3.selectAll('.categoryBars')
         .selectAll('.roleLegend')
-        .data(function(d) {console.log(d);
+        .data(function(d) {
               return Object.keys(dataCountry[d]).sort().map(function(e, i, a) {
                 var object = {
                       category: d,

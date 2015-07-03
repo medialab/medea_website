@@ -40,7 +40,6 @@
     var self = this;
     d3.json(path, function(participations) {
       self.data = participations;
-      console.log('participation', participations);
 
       delete self.data.bridge['N/A'];
       delete self.data.nonBridge['N/A'];
@@ -186,7 +185,6 @@
       .ticks(1)
       .tickValues([0, 100])
       .tickFormat(function(d, i) {
-        console.log(i);
         if (i === 1)
           return d3.max(dataArray, function(d) { return d.y; });
       })

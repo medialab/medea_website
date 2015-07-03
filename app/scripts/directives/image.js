@@ -12,7 +12,6 @@ angular.module('driveoutApp.directives.image', [])
       template: '<div></div>',
       restrict: 'EA',
       link: function postLink(scope, element, attrs) {
-        console.log(element);
         element.text('this is the image directive');
       }
     };

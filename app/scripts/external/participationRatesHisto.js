@@ -575,7 +575,6 @@
       .ticks(1)
       .tickValues([0, 100])
       .tickFormat(function(d, i) {
-        console.log(i);
         if (i === 1)
           return d3.max(dataArray, function(d) { return d.y; });
       })
@@ -654,7 +653,6 @@
     if (bar.getAttribute('height') === null && bar.getAttribute('class').indexOf('bar') > -1) {
       bar = bar.childNodes[0];
     }
-    console.log('bar delete', bar, bar.getAttribute("class"));
     bar.setAttribute("class", bar.getAttribute("class").replace(/ hoverBar/, ''));
   }
 
@@ -709,8 +707,7 @@
       .style('left', boundingRectBar.x +
                      boundingRectBar.width/2 -
                      arrowSide + trueSvgPositions.left + 'px')
-      .style('top', boundingRectBar.y + trueSvgPositions.top + trueY - arrowSide + 'px')
-      console.log('svgPosition', trueSvgPositions);
+      .style('top', boundingRectBar.y + trueSvgPositions.top + trueY - arrowSide + 'px');
 
     //Text in the tooltip horizontal alignement if out of the svg on the right
     var tooltipWidth = document.getElementById('powerLawTooltipText_' + component.replace('#','')).clientWidth -
