@@ -36,7 +36,9 @@
         </div>
       </div>
       <div class="fill-height scrollable" ng-switch-when="pdfOrga">
-        <img class="imgScaled imgNotScrollable" ng-src="media/pdfOrga.png">
+        <div class="fullWidth">
+          <img class="imgScaled imgNotScrollable" ng-src="media/pdfOrga.png">
+        </div>
         <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
         <div collapse="isCollapsed" class="vizLegendZone">
           <div class="topline"></div>
