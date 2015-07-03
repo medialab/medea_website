@@ -52,21 +52,56 @@ angular
         templateUrl: 'views/404.html',
         controller: '404Ctrl'
       })
-      .when('/:page', { // static page controller
+      .when('/about', { // static page controller
         templateUrl: 'views/page.html',
         controller: 'PageCtrl'
       })
-      .when('/:page/:sub', {
+      .when('/forword', { // static page controller
+        templateUrl: 'views/page.html',
+        controller: 'PageCtrl'
+      })
+      .when('/controversy-mapping', { // static page controller
+        templateUrl: 'views/page.html',
+        controller: 'PageCtrl'
+      })
+      .when('/ipcc/national-cultures-of-climate-expertise-france', {
         templateUrl: 'views/page.html',
         controller: 'PageCtrl', // handle the items loading
         resolve: {
           content : function ($route, FilesFactory) {
-            return FilesFactory.get({path: $route.current.params.page + '/' + $route.current.params.sub});
+            return FilesFactory.get({path: 'ipcc/national-cultures-of-climate-expertise-france'});
+          }
+        }
+      })
+      .when('/ipcc/coordination-and-controversy', {
+        templateUrl: 'views/page.html',
+        controller: 'PageCtrl', // handle the items loading
+        resolve: {
+          content : function ($route, FilesFactory) {
+            return FilesFactory.get({path: 'ipcc/coordination-and-controversy'});
+          }
+        }
+      })
+      .when('/ipcc/diversity', {
+        templateUrl: 'views/page.html',
+        controller: 'PageCtrl', // handle the items loading
+        resolve: {
+          content : function ($route, FilesFactory) {
+            return FilesFactory.get({path: 'ipcc/diversity'});
+          }
+        }
+      })
+      .when('/ipcc/introduction', {
+        templateUrl: 'views/page.html',
+        controller: 'PageCtrl', // handle the items loading
+        resolve: {
+          content : function ($route, FilesFactory) {
+            return FilesFactory.get({path: 'ipcc/introduction'});
           }
         }
       })
       .otherwise({
-        redirectTo: '/404'
+        redirectTo: '/'
       });
   })
   .config(function ($resourceProvider) {
