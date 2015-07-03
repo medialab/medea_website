@@ -47,6 +47,9 @@ angular.module('driveoutApp.directives.pdfconclusion', [])
         function renderPage(num) {
           pageRendering = true;
           // Using promise to fetch the page
+          $('#containerPdfConclusion').css({
+            'visibility': 'hidden'
+          });
           pdfDoc.getPage(num).then(function(page) {
             var viewport = page.getViewport(scale);
             canvas.height = viewport.height;
@@ -67,6 +70,9 @@ angular.module('driveoutApp.directives.pdfconclusion', [])
                 renderPage(pageNumPending);
                 pageNumPending = null;
               }
+              $('#containerPdfConclusion').css({
+                'visibility': 'inherit'
+              });
             });
           });
 
