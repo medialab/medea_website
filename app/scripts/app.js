@@ -23,7 +23,6 @@ angular
     'driveoutApp.depth',
     'driveoutApp.layout',
     'driveoutApp.home',
-    'driveoutApp.main',
     'driveoutApp.page',
     'driveoutApp.topmenu',
     'driveoutApp.subchapter',
@@ -56,7 +55,7 @@ angular
         templateUrl: 'views/page.html',
         controller: 'PageCtrl'
       })
-      .when('/forword', { // static page controller
+      .when('/foreword', { // static page controller
         templateUrl: 'views/page.html',
         controller: 'PageCtrl'
       })

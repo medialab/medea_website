@@ -85,6 +85,9 @@ drive.utils.clean = function(html){
   if(!html) return html;
 
   var c = html
+            .replace(/&#xA0;/, ' ')
+            .replace(/&#160;/, ' ')
+            .replace(/&nbsp;/, ' ')
             .replace(/<sup(.*?)href="#cmnt(.*?)<\/sup>/g, '')
             .replace(/<div(.*?)href="#cmnt(.*?)<\/div>/g, '') // avoid comment in text
             .replace(/\s*name="(.*?)"/g,'')
@@ -94,9 +97,8 @@ drive.utils.clean = function(html){
             .replace(/classToKeep/g, 'class')
             .replace(/<table(.*?)>/g, function(d, attrs){ return '<table class="table" ' + attrs + '>';})
             .replace(/<a\s*><\/a>/g,'')
-            .replace(/<p\s*><\/p>/g,'')
-            .replace(/<p\s*>/g,'<p>')
-            .replace(/&#xA0;/, ' ');
+            .replace(/<p\s*>\s*/g,'<p>')
+            .replace(/<p><\/p>/g,'');
   // console.log('clean', c.match(/<span\s*>([\S\s](?!<sp))*<\/span>/g));
   var spanMatched = c.match(/<span\s*>([\S\s](?!<sp))*<\/span>/g);
   if (spanMatched !== null)

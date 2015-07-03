@@ -19,9 +19,9 @@ renderer.link = function(href, title, text) {
   var words = wordlist[1].split(',');
 
   if (words.length > 1)
-    return '<span class="underline" data-click="' + escape(words) + '">' + text + '</span>';
+    return '<div classToKeep="centerInside"><button classToKeep="buttonFocus" data-click="' + escape(words) + '">' + text + '</button></div>';
   else
-    return '<span class="underline" data-click="' + escape(words[0]) + '">' + text + '</span>';
+    return '<div classToKeep="centerInside"><button classToKeep="buttonFocus" data-click="' + escape(words[0]) + '">' + text + '</button></div>';
 };
 
 // Exporting function
