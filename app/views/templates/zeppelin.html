@@ -204,6 +204,30 @@
       <div class="fill-height" ng-switch-when="worldmapDiversity">
         <iframe width='100%' height='100%' frameborder='0' src='https://audreybaneyx.cartodb.com/viz/0ec34b32-24b9-11e5-9a86-0e853d047bba/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
       </div>
+      <div class="fill-height" ng-switch-when="diversityAcrossAR">
+        <iframe style="display: inline-block;"width="49%" height="100%" frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~legaultpierre/41" ></iframe>
+        <iframe width="49%" height="100%" frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~legaultpierre/8" ></iframe>
+        <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+        <div collapse="isCollapsed" class="vizLegendZone">
+          <div>Legend to be put here</div>
+          <div class="topline"></div>
+          <div class="vizLegendText">
+            <h4>WMO groups' participations across ARs</h4>
+          </div>
+        </div>
+      </div>
+      <div class="fill-height" ng-switch-when="diversityBetweenWGs">
+        <iframe style="display: inline-block;"width="49%" height="100%" frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~legaultpierre/54" ></iframe>
+        <iframe width="49%" height="100%" frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~legaultpierre/47" ></iframe>
+        <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+        <div collapse="isCollapsed" class="vizLegendZone">
+          <div>Legend to be put here</div>
+          <div class="topline"></div>
+          <div class="vizLegendText">
+            <h4>WMO groups' participations in working groups</h4>
+          </div>
+        </div>
+      </div>
       <div class="fill-height" ng-switch-when="ipccpeoplelines">
         <div id="peoplelines" class="fill-height overflow" ipccpeoplelines>
           <h3>National individual participations to each Assessment Report</h3>
