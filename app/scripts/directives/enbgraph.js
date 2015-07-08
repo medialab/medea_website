@@ -5,24 +5,20 @@
  * @name driveoutApp.directive:enbgraph
  * @description
  * # enbgraph
+ * gexf attribute is a relativ path to the gexf file
  */
 angular.module('driveoutApp.directives.enb', [])
   .directive('enbgraph', function () {
     return {
       restrict: 'EA',
       scope: {
-        gexf: '=',
-        csv: '=',
-        height: '='
+        gexf: '@'
       },
       link: function postLink(scope, element, attrs) {
-        element.css('height', '100%');
-
         var enb = new ENBGraph(element[0]);
 
         // Loading graph
-        enb.load(scope.gexf, scope.csv, function() {
-          // Binding clicks
+        enb.load(scope.gexf, null, function() {
         });
 
         scope.$on('focus', function(e, string) {
