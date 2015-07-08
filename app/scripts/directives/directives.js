@@ -2,6 +2,7 @@
 
 angular.module('driveoutApp.directives', [
   'driveoutApp.directives.bricks',
+  'driveoutApp.directives.brickswmo',
   'driveoutApp.directives.donut',
   'driveoutApp.directives.enb',
   'driveoutApp.directives.focus',

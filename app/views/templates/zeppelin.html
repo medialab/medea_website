@@ -286,6 +286,23 @@
           <div id="lines-countries-viz"></div>
         </div>
       </div>
+      <div class="fill-height" ng-switch-when="participationByChaptersWMO">
+        <div id="containerBricks" participationbychapterswmo>
+          <div id="vizTopContainer">
+            <span id="vizTitleContainer">
+             Participations by chapter
+             <select name="regionSelector" id="titleRegion"></select>
+            </span>
+            <a href="contents/data/bricks-partByChapters-WMO/participations.json" id="downloadDataButton" download>
+              <img type="image/svg+xml"
+                      ng-src="media/bricks-partByChapters/downloadData.svg"
+                      width="22"
+                      ></img>
+            </a>
+          </div>
+          <div id="bricksSvgContainer"></div>
+        </div>
+      </div>
       <div ng-switch-default> No viz assigned here </div>
     </div>
 </div>
