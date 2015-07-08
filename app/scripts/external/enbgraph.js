@@ -272,23 +272,25 @@
         callback();
     });
 
-    d3.csv(indexPath, function(data) {
-      self.index = {};
+    if(indexPath != null) {
+      d3.csv(indexPath, function(data) {
+        self.index = {};
 
-      data.forEach(function(line) {
-        var keywords = line.keywords.split('|');
+        data.forEach(function(line) {
+          var keywords = line.keywords.split('|');
 
-        keywords.forEach(function(k) {
-          if (!self.index[k]) {
-            self.index[k] = [];
-          }
-          self.index[k].push(line.paragraph);
+          keywords.forEach(function(k) {
+            if (!self.index[k]) {
+              self.index[k] = [];
+            }
+            self.index[k].push(line.paragraph);
+          });
         });
+        if (++count === 2)
+          callback();
       });
+    }
 
-      if (++count === 2)
-        callback();
-    });
   };
 
   // Finding a node by label

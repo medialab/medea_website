@@ -23,7 +23,7 @@
         <donut></donut>
       </div>
       <div class="fill-height" ng-switch-when="enbgraph">
-        <div class="fill-height" enbgraph gexf="section.datasrc[0]" csv="section.datasrc[1]" height="height"></div>
+        <enbgraph ng-class="['fill-height', 'enbgraph']" gexf="contents/data/unfccc-the-thematic-space-of-negotiations/ENB.gexf" />
       </div>
       <div class="fill-height scrollable" ng-switch-when="pdfWG">
         <img class="imgScaled" ng-src="media/pdfWG.png">
