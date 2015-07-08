@@ -18,6 +18,8 @@ angular.module('driveoutApp.directives', [
   'driveoutApp.directives.footer',
   'driveoutApp.directives.zeppelin',
   'driveoutApp.directives.partcountry9010',
+  'driveoutApp.directives.roleevolutiondiversity',
+  'driveoutApp.directives.diversityacrossroles',
   'driveoutApp.directives.section',
   'driveoutApp.directives.pdfconclusion',
   'driveoutApp.directives.lastngrepeat',
