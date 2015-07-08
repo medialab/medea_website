@@ -17,6 +17,7 @@ angular.module('driveoutApp.directives', [
   'driveoutApp.directives.topmenu',
   'driveoutApp.directives.footer',
   'driveoutApp.directives.zeppelin',
+  'driveoutApp.directives.partcountry9010',
   'driveoutApp.directives.section',
   'driveoutApp.directives.pdfconclusion',
   'driveoutApp.directives.lastngrepeat',
