@@ -1,8 +1,9 @@
 #Drive-out
 
-welcome to __Drive-out__, the node "exporter" for google drive. It extract html contents from Google Documents and allows you to download images, videos and other non-text contents.
+Welcome to __Drive-out__, the node "exporter" for google drive. It extract html contents from Google Documents and allows you to download images, videos and other non-text contents.
 This installation comes with a reasonably complete website that gives you a "preview" of your google drive folder contents.
 
+/!\ Warning, it appears that the Google Drive Documents have to be in YOUR OWN GOOGLE DRIVE FOLDER in order to let the API access these files. So don't forget to click on the "Add to my drive" button!
 
 1. Applying for a Google ClientID
 ---
