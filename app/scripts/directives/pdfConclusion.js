@@ -10,12 +10,16 @@ angular.module('driveoutApp.directives.pdfconclusion', [])
   .directive('pdfconclusion', function () {
     return {
       restrict: 'EA',
+      scope: {
+        url: '@',
+        ratio: '='
+      },
       link: function postLink(scope, element, attrs) {
         //
         // If absolute URL from the remote server is provided, configure the CORS
         // header on that server.
         //
-        var url = 'media/pdfConclusion.pdf';
+        var url = scope.url;
 
 
         //
@@ -115,12 +119,12 @@ angular.module('driveoutApp.directives.pdfconclusion', [])
           queueRenderPage(pageNum);
         }
         document.getElementById('nextPDF').addEventListener('click', onNextPage);
-        var ratio = 350/525;
+        var ratio = scope.ratio;
         if ($('#pdfconclusion').width()*ratio
             < $('#pdfconclusion').height()) {
           $('#containerPdfConclusion').css({
               'position': 'absolute',
-              'height': ($('#pdfconclusion').width()*ratio) + 'px',
+              'height': ($('#pdfconclusion').width()*ratio-30) + 'px',
               'width': '100%',
               'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
               'margin-bottom': 30 + 'px'});
@@ -141,7 +145,7 @@ angular.module('driveoutApp.directives.pdfconclusion', [])
               $('#containerPdfConclusion').css({
                   'position': 'absolute',
                   'left': '0',
-                  'height': ($('#pdfconclusion').width()*ratio) + 'px',
+                  'height': ($('#pdfconclusion').width()*ratio-30) + 'px',
                   'width': '100%',
                   'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
                   'margin-bottom': 30 + 'px'});

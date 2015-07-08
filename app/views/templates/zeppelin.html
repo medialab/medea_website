@@ -119,7 +119,7 @@
         </div>
       </div>
       <div class="fill-height" ng-switch-when="pdfConclusion">
-        <div id="pdfconclusion" class="fill-height" pdfconclusion>
+        <div id="pdfconclusion" class="fill-height" url="media/pdfConclusion.pdf" ratio="0.7" pdfconclusion>
           <canvas id="containerPdfConclusion"></canvas>
           <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
           <div collapse="isCollapsed" class="vizLegendZone">
@@ -204,6 +204,62 @@
       <div class="fill-height" ng-switch-when="worldmapDiversity">
         <iframe width='100%' height='100%' frameborder='0' src='https://audreybaneyx.cartodb.com/viz/0ec34b32-24b9-11e5-9a86-0e853d047bba/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
       </div>
+      <div class="fill-height" ng-switch-when="backToTheOECD">
+        <div id="containerpartcountries9010" class="fill-height" partcountriesninetypercent>
+          <div id="containerPartCountries9010">
+            <div id="container"></div>
+            <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+            <div collapse="isCollapsed" class="vizLegendZone">
+              <div class="topline"></div>
+              <div class="vizLegendText">
+                <h4>Distribution of country participations in the IPCC - 90% vs 10%</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fill-height" ng-switch-when="politicalLegitimacy">
+        <div id="pdfconclusion" class="fill-height" url="media/document_fusionne.pdf" ratio="1.3" pdfconclusion>
+          <canvas id="containerPdfConclusion"></canvas>
+          <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+          <div collapse="isCollapsed" class="vizLegendZone">
+            <div class="topline"></div>
+            <div class="vizLegendText">
+              <h4><button id="prevPDF">Previous</button><button id="nextPDF">Next</button>&nbsp; &nbsp;
+            <span>Page: <span id="page_numPDF"></span> / <span id="page_countPDF"></span></span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fill-height" ng-switch-when="evolutionOfRoles">
+        <div id="containerroleevolutiondiversity" class="fill-height" roleevolutiondiversity>
+          <div id="containerRolesEvolutionDiversity">
+            <div id="container"></div>
+            <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+            <div collapse="isCollapsed" class="vizLegendZone">
+              <div class="topline"></div>
+              <div class="vizLegendText">
+                <h4>Roles evolution across ARs</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fill-height" ng-switch-when="diversityAcrossRoles">
+        <div id="containerdiversityacrossroles" class="fill-height" diversityacrossroles>
+          <div id="containerDiversityAcrossRoles">
+            <div id="visualisation1"></div>
+            <div id="visualisation2"></div>
+            <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+            <div collapse="isCollapsed" class="vizLegendZone">
+              <div class="topline"></div>
+              <div class="vizLegendText">
+                <h4>Roles evolution across ARs</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="fill-height" ng-switch-when="diversityAcrossAR">
         <iframe style="display: inline-block;"width="49%" height="100%" frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~legaultpierre/41" ></iframe>
         <iframe width="49%" height="100%" frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~legaultpierre/8" ></iframe>
@@ -241,6 +297,23 @@
             <option value="chrono">First participation</option>
           </select>
           <div id="lines-countries-viz"></div>
+        </div>
+      </div>
+      <div class="fill-height" ng-switch-when="participationByChaptersWMO">
+        <div id="containerBricks" participationbychapterswmo>
+          <div id="vizTopContainer">
+            <span id="vizTitleContainer">
+             Participations by chapter
+             <select name="regionSelector" id="titleRegion"></select>
+            </span>
+            <a href="contents/data/bricks-partByChapters-WMO/participations.json" id="downloadDataButton" download>
+              <img type="image/svg+xml"
+                      ng-src="media/bricks-partByChapters/downloadData.svg"
+                      width="22"
+                      ></img>
+            </a>
+          </div>
+          <div id="bricksSvgContainer"></div>
         </div>
       </div>
       <div ng-switch-default> No viz assigned here </div>

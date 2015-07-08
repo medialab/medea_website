@@ -2,6 +2,7 @@
 
 angular.module('driveoutApp.directives', [
   'driveoutApp.directives.bricks',
+  'driveoutApp.directives.brickswmo',
   'driveoutApp.directives.donut',
   'driveoutApp.directives.enb',
   'driveoutApp.directives.focus',
@@ -17,6 +18,9 @@ angular.module('driveoutApp.directives', [
   'driveoutApp.directives.topmenu',
   'driveoutApp.directives.footer',
   'driveoutApp.directives.zeppelin',
+  'driveoutApp.directives.partcountry9010',
+  'driveoutApp.directives.roleevolutiondiversity',
+  'driveoutApp.directives.diversityacrossroles',
   'driveoutApp.directives.section',
   'driveoutApp.directives.pdfconclusion',
   'driveoutApp.directives.lastngrepeat',
