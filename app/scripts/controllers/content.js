@@ -11,6 +11,9 @@ angular.module('driveoutApp.content', ['ui.bootstrap'])
             $scope.index = +index;
 
           $scope.steer(index);
+          // Dispatch event to update the view according to the index
+          // Used for the zoom on the graph part of the UNFCCC view
+          $scope.$broadcast('updateView', index);
         });
 
         $scope.getScrollFlag = function() {

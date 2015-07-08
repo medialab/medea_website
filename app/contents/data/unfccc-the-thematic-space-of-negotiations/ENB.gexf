@@ -22,7 +22,7 @@
         <attvalues>
           <attvalue for="weight" value="383.0"></attvalue>
           <attvalue for="color" value="#FF9C97"></attvalue>
-          <attvalue for="ClusterName" value="REDD and post-Kyoto"></attvalue>
+          <attvalue for="ClusterName" value="Post-2012, mitigation and new funding pledges"></attvalue>
         </attvalues>
         <viz:size value="11.852408"></viz:size>
         <viz:position x="-141.73389" y="-1004.4497" z="0.0"></viz:position>
@@ -32,7 +32,7 @@
         <attvalues>
           <attvalue for="weight" value="88.0"></attvalue>
           <attvalue for="color" value="#F8B59E"></attvalue>
-          <attvalue for="ClusterName" value="CDM and carbon offsets"></attvalue>
+          <attvalue for="ClusterName" value="Clean Development Mechanism"></attvalue>
         </attvalues>
         <viz:size value="10.375488"></viz:size>
         <viz:position x="1744.261" y="1233.4799" z="0.0"></viz:position>
@@ -42,7 +42,7 @@
         <attvalues>
           <attvalue for="weight" value="13.0"></attvalue>
           <attvalue for="color" value="#BD8445"></attvalue>
-          <attvalue for="ClusterName" value="environmental and social impacts"></attvalue>
+          <attvalue for="ClusterName" value="Climate change impacts and development"></attvalue>
         </attvalues>
         <viz:size value="10.0"></viz:size>
         <viz:position x="2.8099341" y="-18.975351" z="0.0"></viz:position>
@@ -52,7 +52,7 @@
         <attvalues>
           <attvalue for="weight" value="366.0"></attvalue>
           <attvalue for="color" value="#FF5A52"></attvalue>
-          <attvalue for="ClusterName" value="adaptation funding and equity"></attvalue>
+          <attvalue for="ClusterName" value="Adaptation funding"></attvalue>
         </attvalues>
         <viz:size value="11.767298"></viz:size>
         <viz:position x="1094.9003" y="-567.6605" z="0.0"></viz:position>
@@ -62,7 +62,7 @@
         <attvalues>
           <attvalue for="weight" value="271.0"></attvalue>
           <attvalue for="color" value="#FF5A52"></attvalue>
-          <attvalue for="ClusterName" value="adaptation funding and equity"></attvalue>
+          <attvalue for="ClusterName" value="Adaptation funding"></attvalue>
         </attvalues>
         <viz:size value="11.291679"></viz:size>
         <viz:position x="1103.6266" y="-184.71896" z="0.0"></viz:position>
@@ -72,7 +72,7 @@
         <attvalues>
           <attvalue for="weight" value="98.0"></attvalue>
           <attvalue for="color" value="#00434C"></attvalue>
-          <attvalue for="ClusterName" value="vulnerability and adaptation actions"></attvalue>
+          <attvalue for="ClusterName" value="Vulnerability and adaptation policy"></attvalue>
         </attvalues>
         <viz:size value="10.425553"></viz:size>
         <viz:position x="656.7109" y="-103.140045" z="0.0"></viz:position>
@@ -82,7 +82,7 @@
         <attvalues>
           <attvalue for="weight" value="65.0"></attvalue>
           <attvalue for="color" value="#8E5C64"></attvalue>
-          <attvalue for="ClusterName" value="technology transfer and energy"></attvalue>
+          <attvalue for="ClusterName" value="Technology transfer and energy"></attvalue>
         </attvalues>
         <viz:size value="10.260339"></viz:size>
         <viz:position x="620.7237" y="1065.5985" z="0.0"></viz:position>
@@ -92,7 +92,7 @@
         <attvalues>
           <attvalue for="weight" value="43.0"></attvalue>
           <attvalue for="color" value="#88C3CB"></attvalue>
-          <attvalue for="ClusterName" value="Models and IPCC"></attvalue>
+          <attvalue for="ClusterName" value="Climate Expertise"></attvalue>
         </attvalues>
         <viz:size value="10.150195"></viz:size>
         <viz:position x="-284.9982" y="-95.74468" z="0.0"></viz:position>
@@ -102,7 +102,7 @@
         <attvalues>
           <attvalue for="weight" value="64.0"></attvalue>
           <attvalue for="color" value="#F1CB56"></attvalue>
-          <attvalue for="ClusterName" value="land use and forests"></attvalue>
+          <attvalue for="ClusterName" value="Land use and forestry"></attvalue>
         </attvalues>
         <viz:size value="10.255332"></viz:size>
         <viz:position x="378.31516" y="-822.0524" z="0.0"></viz:position>
@@ -112,7 +112,7 @@
         <attvalues>
           <attvalue for="weight" value="278.0"></attvalue>
           <attvalue for="color" value="#00434C"></attvalue>
-          <attvalue for="ClusterName" value="vulnerability and adaptation actions"></attvalue>
+          <attvalue for="ClusterName" value="Vulnerability and adaptation policy"></attvalue>
         </attvalues>
         <viz:size value="11.326725"></viz:size>
         <viz:position x="653.85785" y="45.787457" z="0.0"></viz:position>
@@ -122,7 +122,7 @@
         <attvalues>
           <attvalue for="weight" value="103.0"></attvalue>
           <attvalue for="color" value="#FF9C97"></attvalue>
-          <attvalue for="ClusterName" value="REDD and post-Kyoto"></attvalue>
+          <attvalue for="ClusterName" value="Post-2012, mitigation and new funding pledges"></attvalue>
         </attvalues>
         <viz:size value="10.450585"></viz:size>
         <viz:position x="-214.38916" y="-986.0464" z="0.0"></viz:position>
@@ -132,7 +132,7 @@
         <attvalues>
           <attvalue for="weight" value="439.0"></attvalue>
           <attvalue for="color" value="#FF5A52"></attvalue>
-          <attvalue for="ClusterName" value="adaptation funding and equity"></attvalue>
+          <attvalue for="ClusterName" value="Adaptation funding"></attvalue>
         </attvalues>
         <viz:size value="12.132772"></viz:size>
         <viz:position x="1084.214" y="-488.67514" z="0.0"></viz:position>
@@ -142,7 +142,7 @@
         <attvalues>
           <attvalue for="weight" value="224.0"></attvalue>
           <attvalue for="color" value="#00434C"></attvalue>
-          <attvalue for="ClusterName" value="vulnerability and adaptation actions"></attvalue>
+          <attvalue for="ClusterName" value="Vulnerability and adaptation policy"></attvalue>
         </attvalues>
         <viz:size value="11.056374"></viz:size>
         <viz:position x="265.06512" y="100.53431" z="0.0"></viz:position>
@@ -152,7 +152,7 @@
         <attvalues>
           <attvalue for="weight" value="1227.0"></attvalue>
           <attvalue for="color" value="#00434C"></attvalue>
-          <attvalue for="ClusterName" value="vulnerability and adaptation actions"></attvalue>
+          <attvalue for="ClusterName" value="Vulnerability and adaptation policy"></attvalue>
         </attvalues>
         <viz:size value="16.077902"></viz:size>
         <viz:position x="360.8047" y="11.007443" z="0.0"></viz:position>
@@ -162,7 +162,7 @@
         <attvalues>
           <attvalue for="weight" value="805.0"></attvalue>
           <attvalue for="color" value="#00434C"></attvalue>
-          <attvalue for="ClusterName" value="vulnerability and adaptation actions"></attvalue>
+          <attvalue for="ClusterName" value="Vulnerability and adaptation policy"></attvalue>
         </attvalues>
         <viz:size value="13.965155"></viz:size>
         <viz:position x="450.33722" y="27.59669" z="0.0"></viz:position>
@@ -172,7 +172,7 @@
         <attvalues>
           <attvalue for="weight" value="386.0"></attvalue>
           <attvalue for="color" value="#4896AA"></attvalue>
-          <attvalue for="ClusterName" value="Kyoto protocol"></attvalue>
+          <attvalue for="ClusterName" value="Emission Reduction Commitments"></attvalue>
         </attvalues>
         <viz:size value="11.867428"></viz:size>
         <viz:position x="-1542.004" y="-690.031" z="0.0"></viz:position>
@@ -182,7 +182,7 @@
         <attvalues>
           <attvalue for="weight" value="49.0"></attvalue>
           <attvalue for="color" value="#F1CB56"></attvalue>
-          <attvalue for="ClusterName" value="land use and forests"></attvalue>
+          <attvalue for="ClusterName" value="Land use and forestry"></attvalue>
         </attvalues>
         <viz:size value="10.180234"></viz:size>
         <viz:position x="206.11528" y="-675.6869" z="0.0"></viz:position>
@@ -192,7 +192,7 @@
         <attvalues>
           <attvalue for="weight" value="103.0"></attvalue>
           <attvalue for="color" value="#BD8445"></attvalue>
-          <attvalue for="ClusterName" value="environmental and social impacts"></attvalue>
+          <attvalue for="ClusterName" value="Climate change impacts and development"></attvalue>
         </attvalues>
         <viz:size value="10.450585"></viz:size>
         <viz:position x="-45.59265" y="20.937407" z="0.0"></viz:position>
@@ -202,7 +202,7 @@
         <attvalues>
           <attvalue for="weight" value="170.0"></attvalue>
           <attvalue for="color" value="#95A565"></attvalue>
-          <attvalue for="ClusterName" value="GHG and emissions measure"></attvalue>
+          <attvalue for="ClusterName" value="Reducing GHGs Emissions"></attvalue>
         </attvalues>
         <viz:size value="10.786022"></viz:size>
         <viz:position x="-1363.784" y="-401.78903" z="0.0"></viz:position>
@@ -212,7 +212,7 @@
         <attvalues>
           <attvalue for="weight" value="45.0"></attvalue>
           <attvalue for="color" value="#88C3CB"></attvalue>
-          <attvalue for="ClusterName" value="Models and IPCC"></attvalue>
+          <attvalue for="ClusterName" value="Climate Expertise"></attvalue>
         </attvalues>
         <viz:size value="10.160209"></viz:size>
         <viz:position x="-95.83083" y="-351.3444" z="0.0"></viz:position>
@@ -222,7 +222,7 @@
         <attvalues>
           <attvalue for="weight" value="467.0"></attvalue>
           <attvalue for="color" value="#F3835D"></attvalue>
-          <attvalue for="ClusterName" value="transport sector"></attvalue>
+          <attvalue for="ClusterName" value="Fuels and transports"></attvalue>
         </attvalues>
         <viz:size value="12.272955"></viz:size>
         <viz:position x="69.99914" y="1312.2196" z="0.0"></viz:position>
@@ -232,7 +232,7 @@
         <attvalues>
           <attvalue for="weight" value="1156.0"></attvalue>
           <attvalue for="color" value="#FF5A52"></attvalue>
-          <attvalue for="ClusterName" value="adaptation funding and equity"></attvalue>
+          <attvalue for="ClusterName" value="Adaptation funding"></attvalue>
         </attvalues>
         <viz:size value="15.722439"></viz:size>
         <viz:position x="799.2761" y="-62.77897" z="0.0"></viz:position>
@@ -242,7 +242,7 @@
         <attvalues>
           <attvalue for="weight" value="504.0"></attvalue>
           <attvalue for="color" value="#F8B59E"></attvalue>
-          <attvalue for="ClusterName" value="CDM and carbon offsets"></attvalue>
+          <attvalue for="ClusterName" value="Clean Development Mechanism"></attvalue>
         </attvalues>
         <viz:size value="12.458196"></viz:size>
         <viz:position x="1929.9446" y="1249.4133" z="0.0"></viz:position>
@@ -252,7 +252,7 @@
         <attvalues>
           <attvalue for="weight" value="500.0"></attvalue>
           <attvalue for="color" value="#F8B59E"></attvalue>
-          <attvalue for="ClusterName" value="CDM and carbon offsets"></attvalue>
+          <attvalue for="ClusterName" value="Clean Development Mechanism"></attvalue>
         </attvalues>
         <viz:size value="12.4381695"></viz:size>
         <viz:position x="1996.303" y="1200.3638" z="0.0"></viz:position>
@@ -262,7 +262,7 @@
         <attvalues>
           <attvalue for="weight" value="194.0"></attvalue>
           <attvalue for="color" value="#00434C"></attvalue>
-          <attvalue for="ClusterName" value="vulnerability and adaptation actions"></attvalue>
+          <attvalue for="ClusterName" value="Vulnerability and adaptation policy"></attvalue>
         </attvalues>
         <viz:size value="10.906178"></viz:size>
         <viz:position x="698.80927" y="-43.40343" z="0.0"></viz:position>
@@ -272,7 +272,7 @@
         <attvalues>
           <attvalue for="weight" value="1916.0"></attvalue>
           <attvalue for="color" value="#FF5A52"></attvalue>
-          <attvalue for="ClusterName" value="adaptation funding and equity"></attvalue>
+          <attvalue for="ClusterName" value="Adaptation funding"></attvalue>
         </attvalues>
         <viz:size value="19.527386"></viz:size>
         <viz:position x="1192.5417" y="-56.555412" z="0.0"></viz:position>
@@ -282,7 +282,7 @@
         <attvalues>
           <attvalue for="weight" value="68.0"></attvalue>
           <attvalue for="color" value="#FF9C97"></attvalue>
-          <attvalue for="ClusterName" value="REDD and post-Kyoto"></attvalue>
+          <attvalue for="ClusterName" value="Post-2012, mitigation and new funding pledges"></attvalue>
         </attvalues>
         <viz:size value="10.275358"></viz:size>
         <viz:position x="-16.179752" y="-756.96216" z="0.0"></viz:position>
@@ -292,7 +292,7 @@
         <attvalues>
           <attvalue for="weight" value="275.0"></attvalue>
           <attvalue for="color" value="#BD8445"></attvalue>
-          <attvalue for="ClusterName" value="environmental and social impacts"></attvalue>
+          <attvalue for="ClusterName" value="Climate change impacts and development"></attvalue>
         </attvalues>
         <viz:size value="11.311706"></viz:size>
         <viz:position x="103.51112" y="-66.95125" z="0.0"></viz:position>
@@ -302,7 +302,7 @@
         <attvalues>
           <attvalue for="weight" value="40.0"></attvalue>
           <attvalue for="color" value="#88C3CB"></attvalue>
-          <attvalue for="ClusterName" value="Models and IPCC"></attvalue>
+          <attvalue for="ClusterName" value="Climate Expertise"></attvalue>
         </attvalues>
         <viz:size value="10.135176"></viz:size>
         <viz:position x="-50.64585" y="827.9506" z="0.0"></viz:position>
@@ -312,7 +312,7 @@
         <attvalues>
           <attvalue for="weight" value="77.0"></attvalue>
           <attvalue for="color" value="#95A565"></attvalue>
-          <attvalue for="ClusterName" value="GHG and emissions measure"></attvalue>
+          <attvalue for="ClusterName" value="Reducing GHGs Emissions"></attvalue>
         </attvalues>
         <viz:size value="10.320416"></viz:size>
         <viz:position x="-1605.3994" y="-273.3975" z="0.0"></viz:position>
@@ -322,7 +322,7 @@
         <attvalues>
           <attvalue for="weight" value="1580.0"></attvalue>
           <attvalue for="color" value="#FF5A52"></attvalue>
-          <attvalue for="ClusterName" value="adaptation funding and equity"></attvalue>
+          <attvalue for="ClusterName" value="Adaptation funding"></attvalue>
         </attvalues>
         <viz:size value="17.8452"></viz:size>
         <viz:position x="1185.4381" y="-163.9945" z="0.0"></viz:position>
@@ -332,7 +332,7 @@
         <attvalues>
           <attvalue for="weight" value="196.0"></attvalue>
           <attvalue for="color" value="#4896AA"></attvalue>
-          <attvalue for="ClusterName" value="Kyoto protocol"></attvalue>
+          <attvalue for="ClusterName" value="Emission Reduction Commitments"></attvalue>
         </attvalues>
         <viz:size value="10.916191"></viz:size>
         <viz:position x="-1707.6285" y="-790.3938" z="0.0"></viz:position>
@@ -342,7 +342,7 @@
         <attvalues>
           <attvalue for="weight" value="66.0"></attvalue>
           <attvalue for="color" value="#00434C"></attvalue>
-          <attvalue for="ClusterName" value="vulnerability and adaptation actions"></attvalue>
+          <attvalue for="ClusterName" value="Vulnerability and adaptation policy"></attvalue>
         </attvalues>
         <viz:size value="10.265345"></viz:size>
         <viz:position x="522.9504" y="-23.328516" z="0.0"></viz:position>
@@ -352,7 +352,7 @@
         <attvalues>
           <attvalue for="weight" value="280.0"></attvalue>
           <attvalue for="color" value="#F3835D"></attvalue>
-          <attvalue for="ClusterName" value="transport sector"></attvalue>
+          <attvalue for="ClusterName" value="Fuels and transports"></attvalue>
         </attvalues>
         <viz:size value="11.336738"></viz:size>
         <viz:position x="37.408634" y="1401.7242" z="0.0"></viz:position>
@@ -362,7 +362,7 @@
         <attvalues>
           <attvalue for="weight" value="51.0"></attvalue>
           <attvalue for="color" value="#88C3CB"></attvalue>
-          <attvalue for="ClusterName" value="Models and IPCC"></attvalue>
+          <attvalue for="ClusterName" value="Climate Expertise"></attvalue>
         </attvalues>
         <viz:size value="10.190248"></viz:size>
         <viz:position x="-193.81964" y="-77.38285" z="0.0"></viz:position>
@@ -382,7 +382,7 @@
         <attvalues>
           <attvalue for="weight" value="381.0"></attvalue>
           <attvalue for="color" value="#95A565"></attvalue>
-          <attvalue for="ClusterName" value="GHG and emissions measure"></attvalue>
+          <attvalue for="ClusterName" value="Reducing GHGs Emissions"></attvalue>
         </attvalues>
         <viz:size value="11.842395"></viz:size>
         <viz:position x="-1491.8577" y="-528.4296" z="0.0"></viz:position>
@@ -392,7 +392,7 @@
         <attvalues>
           <attvalue for="weight" value="110.0"></attvalue>
           <attvalue for="color" value="#BD8445"></attvalue>
-          <attvalue for="ClusterName" value="environmental and social impacts"></attvalue>
+          <attvalue for="ClusterName" value="Climate change impacts and development"></attvalue>
         </attvalues>
         <viz:size value="10.485631"></viz:size>
         <viz:position x="45.014816" y="54.74159" z="0.0"></viz:position>
@@ -402,7 +402,7 @@
         <attvalues>
           <attvalue for="weight" value="82.0"></attvalue>
           <attvalue for="color" value="#4896AA"></attvalue>
-          <attvalue for="ClusterName" value="Kyoto protocol"></attvalue>
+          <attvalue for="ClusterName" value="Emission Reduction Commitments"></attvalue>
         </attvalues>
         <viz:size value="10.345449"></viz:size>
         <viz:position x="-1679.9625" y="-714.35834" z="0.0"></viz:position>
@@ -412,7 +412,7 @@
         <attvalues>
           <attvalue for="weight" value="95.0"></attvalue>
           <attvalue for="color" value="#F8B59E"></attvalue>
-          <attvalue for="ClusterName" value="CDM and carbon offsets"></attvalue>
+          <attvalue for="ClusterName" value="Clean Development Mechanism"></attvalue>
         </attvalues>
         <viz:size value="10.410534"></viz:size>
         <viz:position x="1977.9468" y="1329.0193" z="0.0"></viz:position>
@@ -422,7 +422,7 @@
         <attvalues>
           <attvalue for="weight" value="141.0"></attvalue>
           <attvalue for="color" value="#8E5C64"></attvalue>
-          <attvalue for="ClusterName" value="technology transfer and energy"></attvalue>
+          <attvalue for="ClusterName" value="Technology transfer and energy"></attvalue>
         </attvalues>
         <viz:size value="10.640833"></viz:size>
         <viz:position x="200.48553" y="987.7092" z="0.0"></viz:position>
@@ -432,7 +432,7 @@
         <attvalues>
           <attvalue for="weight" value="199.0"></attvalue>
           <attvalue for="color" value="#95A565"></attvalue>
-          <attvalue for="ClusterName" value="GHG and emissions measure"></attvalue>
+          <attvalue for="ClusterName" value="Reducing GHGs Emissions"></attvalue>
         </attvalues>
         <viz:size value="10.9312105"></viz:size>
         <viz:position x="-1430.9056" y="-337.423" z="0.0"></viz:position>
@@ -442,7 +442,7 @@
         <attvalues>
           <attvalue for="weight" value="168.0"></attvalue>
           <attvalue for="color" value="#BD8445"></attvalue>
-          <attvalue for="ClusterName" value="environmental and social impacts"></attvalue>
+          <attvalue for="ClusterName" value="Climate change impacts and development"></attvalue>
         </attvalues>
         <viz:size value="10.776009"></viz:size>
         <viz:position x="85.89959" y="-157.81946" z="0.0"></viz:position>
@@ -452,7 +452,7 @@
         <attvalues>
           <attvalue for="weight" value="2326.0"></attvalue>
           <attvalue for="color" value="#95A565"></attvalue>
-          <attvalue for="ClusterName" value="GHG and emissions measure"></attvalue>
+          <attvalue for="ClusterName" value="Reducing GHGs Emissions"></attvalue>
         </attvalues>
         <viz:size value="21.580053"></viz:size>
         <viz:position x="-1168.9121" y="-506.71884" z="0.0"></viz:position>
@@ -462,7 +462,7 @@
         <attvalues>
           <attvalue for="weight" value="179.0"></attvalue>
           <attvalue for="color" value="#88C3CB"></attvalue>
-          <attvalue for="ClusterName" value="Models and IPCC"></attvalue>
+          <attvalue for="ClusterName" value="Climate Expertise"></attvalue>
         </attvalues>
         <viz:size value="10.83108"></viz:size>
         <viz:position x="-416.74863" y="-130.00922" z="0.0"></viz:position>
@@ -472,7 +472,7 @@
         <attvalues>
           <attvalue for="weight" value="265.0"></attvalue>
           <attvalue for="color" value="#00434C"></attvalue>
-          <attvalue for="ClusterName" value="vulnerability and adaptation actions"></attvalue>
+          <attvalue for="ClusterName" value="Vulnerability and adaptation policy"></attvalue>
         </attvalues>
         <viz:size value="11.261641"></viz:size>
         <viz:position x="226.27957" y="13.934863" z="0.0"></viz:position>
@@ -482,7 +482,7 @@
         <attvalues>
           <attvalue for="weight" value="615.0"></attvalue>
           <attvalue for="color" value="#8E5C64"></attvalue>
-          <attvalue for="ClusterName" value="technology transfer and energy"></attvalue>
+          <attvalue for="ClusterName" value="Technology transfer and energy"></attvalue>
         </attvalues>
         <viz:size value="13.013918"></viz:size>
         <viz:position x="277.84253" y="1249.8267" z="0.0"></viz:position>
@@ -492,7 +492,7 @@
         <attvalues>
           <attvalue for="weight" value="1825.0"></attvalue>
           <attvalue for="color" value="#8E5C64"></attvalue>
-          <attvalue for="ClusterName" value="technology transfer and energy"></attvalue>
+          <attvalue for="ClusterName" value="Technology transfer and energy"></attvalue>
         </attvalues>
         <viz:size value="19.071793"></viz:size>
         <viz:position x="77.35211" y="1189.217" z="0.0"></viz:position>
@@ -502,7 +502,7 @@
         <attvalues>
           <attvalue for="weight" value="181.0"></attvalue>
           <attvalue for="color" value="#FF9C97"></attvalue>
-          <attvalue for="ClusterName" value="REDD and post-Kyoto"></attvalue>
+          <attvalue for="ClusterName" value="Post-2012, mitigation and new funding pledges"></attvalue>
         </attvalues>
         <viz:size value="10.841093"></viz:size>
         <viz:position x="-20.5897" y="-846.1725" z="0.0"></viz:position>
@@ -512,7 +512,7 @@
         <attvalues>
           <attvalue for="weight" value="275.0"></attvalue>
           <attvalue for="color" value="#FF9C97"></attvalue>
-          <attvalue for="ClusterName" value="REDD and post-Kyoto"></attvalue>
+          <attvalue for="ClusterName" value="Post-2012, mitigation and new funding pledges"></attvalue>
         </attvalues>
         <viz:size value="11.311706"></viz:size>
         <viz:position x="186.16931" y="416.43048" z="0.0"></viz:position>
@@ -522,7 +522,7 @@
         <attvalues>
           <attvalue for="weight" value="287.0"></attvalue>
           <attvalue for="color" value="#BD8445"></attvalue>
-          <attvalue for="ClusterName" value="environmental and social impacts"></attvalue>
+          <attvalue for="ClusterName" value="Climate change impacts and development"></attvalue>
         </attvalues>
         <viz:size value="11.371783"></viz:size>
         <viz:position x="-27.045593" y="-59.413345" z="0.0"></viz:position>
@@ -532,7 +532,7 @@
         <attvalues>
           <attvalue for="weight" value="103.0"></attvalue>
           <attvalue for="color" value="#F1CB56"></attvalue>
-          <attvalue for="ClusterName" value="land use and forests"></attvalue>
+          <attvalue for="ClusterName" value="Land use and forestry"></attvalue>
         </attvalues>
         <viz:size value="10.450585"></viz:size>
         <viz:position x="337.2772" y="-682.3875" z="0.0"></viz:position>
@@ -542,7 +542,7 @@
         <attvalues>
           <attvalue for="weight" value="129.0"></attvalue>
           <attvalue for="color" value="#4896AA"></attvalue>
-          <attvalue for="ClusterName" value="Kyoto protocol"></attvalue>
+          <attvalue for="ClusterName" value="Emission Reduction Commitments"></attvalue>
         </attvalues>
         <viz:size value="10.580755"></viz:size>
         <viz:position x="-1807.8965" y="-764.5971" z="0.0"></viz:position>
@@ -552,7 +552,7 @@
         <attvalues>
           <attvalue for="weight" value="503.0"></attvalue>
           <attvalue for="color" value="#BD8445"></attvalue>
-          <attvalue for="ClusterName" value="environmental and social impacts"></attvalue>
+          <attvalue for="ClusterName" value="Climate change impacts and development"></attvalue>
         </attvalues>
         <viz:size value="12.453189"></viz:size>
         <viz:position x="168.1775" y="-78.028244" z="0.0"></viz:position>
@@ -562,7 +562,7 @@
         <attvalues>
           <attvalue for="weight" value="483.0"></attvalue>
           <attvalue for="color" value="#8E5C64"></attvalue>
-          <attvalue for="ClusterName" value="technology transfer and energy"></attvalue>
+          <attvalue for="ClusterName" value="Technology transfer and energy"></attvalue>
         </attvalues>
         <viz:size value="12.353059"></viz:size>
         <viz:position x="161.19902" y="1220.388" z="0.0"></viz:position>
@@ -572,7 +572,7 @@
         <attvalues>
           <attvalue for="weight" value="58.0"></attvalue>
           <attvalue for="color" value="#88C3CB"></attvalue>
-          <attvalue for="ClusterName" value="Models and IPCC"></attvalue>
+          <attvalue for="ClusterName" value="Climate Expertise"></attvalue>
         </attvalues>
         <viz:size value="10.225293"></viz:size>
         <viz:position x="-517.3736" y="85.070274" z="0.0"></viz:position>
@@ -582,7 +582,7 @@
         <attvalues>
           <attvalue for="weight" value="196.0"></attvalue>
           <attvalue for="color" value="#4896AA"></attvalue>
-          <attvalue for="ClusterName" value="Kyoto protocol"></attvalue>
+          <attvalue for="ClusterName" value="Emission Reduction Commitments"></attvalue>
         </attvalues>
         <viz:size value="10.916191"></viz:size>
         <viz:position x="-1412.5038" y="-674.6819" z="0.0"></viz:position>
@@ -592,7 +592,7 @@
         <attvalues>
           <attvalue for="weight" value="4210.0"></attvalue>
           <attvalue for="color" value="#FF5A52"></attvalue>
-          <attvalue for="ClusterName" value="adaptation funding and equity"></attvalue>
+          <attvalue for="ClusterName" value="Adaptation funding"></attvalue>
         </attvalues>
         <viz:size value="31.012316"></viz:size>
         <viz:position x="1107.4944" y="-131.68794" z="0.0"></viz:position>
@@ -602,7 +602,7 @@
         <attvalues>
           <attvalue for="weight" value="85.0"></attvalue>
           <attvalue for="color" value="#95A565"></attvalue>
-          <attvalue for="ClusterName" value="GHG and emissions measure"></attvalue>
+          <attvalue for="ClusterName" value="Reducing GHGs Emissions"></attvalue>
         </attvalues>
         <viz:size value="10.360469"></viz:size>
         <viz:position x="-1476.7008" y="-449.60562" z="0.0"></viz:position>
@@ -612,7 +612,7 @@
         <attvalues>
           <attvalue for="weight" value="65.0"></attvalue>
           <attvalue for="color" value="#FF9C97"></attvalue>
-          <attvalue for="ClusterName" value="REDD and post-Kyoto"></attvalue>
+          <attvalue for="ClusterName" value="Post-2012, mitigation and new funding pledges"></attvalue>
         </attvalues>
         <viz:size value="10.260339"></viz:size>
         <viz:position x="-210.92505" y="-1162.399" z="0.0"></viz:position>
@@ -622,7 +622,7 @@
         <attvalues>
           <attvalue for="weight" value="335.0"></attvalue>
           <attvalue for="color" value="#F8B59E"></attvalue>
-          <attvalue for="ClusterName" value="CDM and carbon offsets"></attvalue>
+          <attvalue for="ClusterName" value="Clean Development Mechanism"></attvalue>
         </attvalues>
         <viz:size value="11.612096"></viz:size>
         <viz:position x="1752.5927" y="1289.3923" z="0.0"></viz:position>
@@ -632,7 +632,7 @@
         <attvalues>
           <attvalue for="weight" value="189.0"></attvalue>
           <attvalue for="color" value="#FF9C97"></attvalue>
-          <attvalue for="ClusterName" value="REDD and post-Kyoto"></attvalue>
+          <attvalue for="ClusterName" value="Post-2012, mitigation and new funding pledges"></attvalue>
         </attvalues>
         <viz:size value="10.8811455"></viz:size>
         <viz:position x="-169.06445" y="-1090.9518" z="0.0"></viz:position>
@@ -642,7 +642,7 @@
         <attvalues>
           <attvalue for="weight" value="39.0"></attvalue>
           <attvalue for="color" value="#F1CB56"></attvalue>
-          <attvalue for="ClusterName" value="land use and forests"></attvalue>
+          <attvalue for="ClusterName" value="Land use and forestry"></attvalue>
         </attvalues>
         <viz:size value="10.130169"></viz:size>
         <viz:position x="179.63359" y="-470.13843" z="0.0"></viz:position>
@@ -652,7 +652,7 @@
         <attvalues>
           <attvalue for="weight" value="153.0"></attvalue>
           <attvalue for="color" value="#BD8445"></attvalue>
-          <attvalue for="ClusterName" value="environmental and social impacts"></attvalue>
+          <attvalue for="ClusterName" value="Climate change impacts and development"></attvalue>
         </attvalues>
         <viz:size value="10.7009115"></viz:size>
         <viz:position x="90.36142" y="-108.55107" z="0.0"></viz:position>
@@ -662,7 +662,7 @@
         <attvalues>
           <attvalue for="weight" value="374.0"></attvalue>
           <attvalue for="color" value="#F1CB56"></attvalue>
-          <attvalue for="ClusterName" value="land use and forests"></attvalue>
+          <attvalue for="ClusterName" value="Land use and forestry"></attvalue>
         </attvalues>
         <viz:size value="11.807349"></viz:size>
         <viz:position x="552.3845" y="-766.0281" z="0.0"></viz:position>
@@ -672,7 +672,7 @@
         <attvalues>
           <attvalue for="weight" value="162.0"></attvalue>
           <attvalue for="color" value="#8E5C64"></attvalue>
-          <attvalue for="ClusterName" value="technology transfer and energy"></attvalue>
+          <attvalue for="ClusterName" value="Technology transfer and energy"></attvalue>
         </attvalues>
         <viz:size value="10.74597"></viz:size>
         <viz:position x="269.39703" y="1195.9589" z="0.0"></viz:position>
@@ -682,7 +682,7 @@
         <attvalues>
           <attvalue for="weight" value="60.0"></attvalue>
           <attvalue for="color" value="#FF5A52"></attvalue>
-          <attvalue for="ClusterName" value="adaptation funding and equity"></attvalue>
+          <attvalue for="ClusterName" value="Adaptation funding"></attvalue>
         </attvalues>
         <viz:size value="10.235306"></viz:size>
         <viz:position x="895.5512" y="103.1451" z="0.0"></viz:position>
@@ -692,7 +692,7 @@
         <attvalues>
           <attvalue for="weight" value="506.0"></attvalue>
           <attvalue for="color" value="#95A565"></attvalue>
-          <attvalue for="ClusterName" value="GHG and emissions measure"></attvalue>
+          <attvalue for="ClusterName" value="Reducing GHGs Emissions"></attvalue>
         </attvalues>
         <viz:size value="12.468208"></viz:size>
         <viz:position x="-1346.9218" y="-508.3198" z="0.0"></viz:position>
@@ -702,7 +702,7 @@
         <attvalues>
           <attvalue for="weight" value="85.0"></attvalue>
           <attvalue for="color" value="#88C3CB"></attvalue>
-          <attvalue for="ClusterName" value="Models and IPCC"></attvalue>
+          <attvalue for="ClusterName" value="Climate Expertise"></attvalue>
         </attvalues>
         <viz:size value="10.360469"></viz:size>
         <viz:position x="-75.53858" y="812.63715" z="0.0"></viz:position>
@@ -712,7 +712,7 @@
         <attvalues>
           <attvalue for="weight" value="356.0"></attvalue>
           <attvalue for="color" value="#95A565"></attvalue>
-          <attvalue for="ClusterName" value="GHG and emissions measure"></attvalue>
+          <attvalue for="ClusterName" value="Reducing GHGs Emissions"></attvalue>
         </attvalues>
         <viz:size value="11.717233"></viz:size>
         <viz:position x="-1246.8671" y="-376.65366" z="0.0"></viz:position>
@@ -722,7 +722,7 @@
         <attvalues>
           <attvalue for="weight" value="880.0"></attvalue>
           <attvalue for="color" value="#95A565"></attvalue>
-          <attvalue for="ClusterName" value="GHG and emissions measure"></attvalue>
+          <attvalue for="ClusterName" value="Reducing GHGs Emissions"></attvalue>
         </attvalues>
         <viz:size value="14.340643"></viz:size>
         <viz:position x="-1191.3833" y="-464.7539" z="0.0"></viz:position>
@@ -732,7 +732,7 @@
         <attvalues>
           <attvalue for="weight" value="466.0"></attvalue>
           <attvalue for="color" value="#8E5C64"></attvalue>
-          <attvalue for="ClusterName" value="technology transfer and energy"></attvalue>
+          <attvalue for="ClusterName" value="Technology transfer and energy"></attvalue>
         </attvalues>
         <viz:size value="12.267948"></viz:size>
         <viz:position x="284.36206" y="1274.6996" z="0.0"></viz:position>
@@ -742,7 +742,7 @@
         <attvalues>
           <attvalue for="weight" value="34.0"></attvalue>
           <attvalue for="color" value="#F1CB56"></attvalue>
-          <attvalue for="ClusterName" value="land use and forests"></attvalue>
+          <attvalue for="ClusterName" value="Land use and forestry"></attvalue>
         </attvalues>
         <viz:size value="10.105137"></viz:size>
         <viz:position x="462.68445" y="-784.39746" z="0.0"></viz:position>
@@ -752,7 +752,7 @@
         <attvalues>
           <attvalue for="weight" value="136.0"></attvalue>
           <attvalue for="color" value="#8E5C64"></attvalue>
-          <attvalue for="ClusterName" value="technology transfer and energy"></attvalue>
+          <attvalue for="ClusterName" value="Technology transfer and energy"></attvalue>
         </attvalues>
         <viz:size value="10.615801"></viz:size>
         <viz:position x="572.7264" y="1196.1052" z="0.0"></viz:position>
@@ -762,7 +762,7 @@
         <attvalues>
           <attvalue for="weight" value="201.0"></attvalue>
           <attvalue for="color" value="#F8B59E"></attvalue>
-          <attvalue for="ClusterName" value="CDM and carbon offsets"></attvalue>
+          <attvalue for="ClusterName" value="Clean Development Mechanism"></attvalue>
         </attvalues>
         <viz:size value="10.941223"></viz:size>
         <viz:position x="1862.2631" y="1180.6833" z="0.0"></viz:position>
@@ -772,7 +772,7 @@
         <attvalues>
           <attvalue for="weight" value="83.0"></attvalue>
           <attvalue for="color" value="#FF9C97"></attvalue>
-          <attvalue for="ClusterName" value="REDD and post-Kyoto"></attvalue>
+          <attvalue for="ClusterName" value="Post-2012, mitigation and new funding pledges"></attvalue>
         </attvalues>
         <viz:size value="10.350455"></viz:size>
         <viz:position x="-639.9924" y="-976.99054" z="0.0"></viz:position>
@@ -782,7 +782,7 @@
         <attvalues>
           <attvalue for="weight" value="53.0"></attvalue>
           <attvalue for="color" value="#FF9C97"></attvalue>
-          <attvalue for="ClusterName" value="REDD and post-Kyoto"></attvalue>
+          <attvalue for="ClusterName" value="Post-2012, mitigation and new funding pledges"></attvalue>
         </attvalues>
         <viz:size value="10.20026"></viz:size>
         <viz:position x="90.442116" y="-730.36176" z="0.0"></viz:position>
@@ -792,7 +792,7 @@
         <attvalues>
           <attvalue for="weight" value="81.0"></attvalue>
           <attvalue for="color" value="#FF9C97"></attvalue>
-          <attvalue for="ClusterName" value="REDD and post-Kyoto"></attvalue>
+          <attvalue for="ClusterName" value="Post-2012, mitigation and new funding pledges"></attvalue>
         </attvalues>
         <viz:size value="10.340443"></viz:size>
         <viz:position x="-189.01561" y="-1125.4276" z="0.0"></viz:position>
@@ -802,7 +802,7 @@
         <attvalues>
           <attvalue for="weight" value="1273.0"></attvalue>
           <attvalue for="color" value="#F1CB56"></attvalue>
-          <attvalue for="ClusterName" value="land use and forests"></attvalue>
+          <attvalue for="ClusterName" value="Land use and forestry"></attvalue>
         </attvalues>
         <viz:size value="16.3082"></viz:size>
         <viz:position x="427.84814" y="-710.8173" z="0.0"></viz:position>
@@ -812,7 +812,7 @@
         <attvalues>
           <attvalue for="weight" value="32.0"></attvalue>
           <attvalue for="color" value="#4896AA"></attvalue>
-          <attvalue for="ClusterName" value="Kyoto protocol"></attvalue>
+          <attvalue for="ClusterName" value="Emission Reduction Commitments"></attvalue>
         </attvalues>
         <viz:size value="10.095123"></viz:size>
         <viz:position x="-1508.5287" y="-835.8665" z="0.0"></viz:position>
@@ -822,7 +822,7 @@
         <attvalues>
           <attvalue for="weight" value="904.0"></attvalue>
           <attvalue for="color" value="#FF9C97"></attvalue>
-          <attvalue for="ClusterName" value="REDD and post-Kyoto"></attvalue>
+          <attvalue for="ClusterName" value="Post-2012, mitigation and new funding pledges"></attvalue>
         </attvalues>
         <viz:size value="14.460798"></viz:size>
         <viz:position x="153.7259" y="-786.87683" z="0.0"></viz:position>
@@ -832,7 +832,7 @@
         <attvalues>
           <attvalue for="weight" value="2405.0"></attvalue>
           <attvalue for="color" value="#FF5A52"></attvalue>
-          <attvalue for="ClusterName" value="adaptation funding and equity"></attvalue>
+          <attvalue for="ClusterName" value="Adaptation funding"></attvalue>
         </attvalues>
         <viz:size value="21.975569"></viz:size>
         <viz:position x="1031.682" y="-65.0137" z="0.0"></viz:position>
@@ -842,7 +842,7 @@
         <attvalues>
           <attvalue for="weight" value="651.0"></attvalue>
           <attvalue for="color" value="#4896AA"></attvalue>
-          <attvalue for="ClusterName" value="Kyoto protocol"></attvalue>
+          <attvalue for="ClusterName" value="Emission Reduction Commitments"></attvalue>
         </attvalues>
         <viz:size value="13.194153"></viz:size>
         <viz:position x="-1525.1786" y="-601.24554" z="0.0"></viz:position>
@@ -852,7 +852,7 @@
         <attvalues>
           <attvalue for="weight" value="90.0"></attvalue>
           <attvalue for="color" value="#88C3CB"></attvalue>
-          <attvalue for="ClusterName" value="Models and IPCC"></attvalue>
+          <attvalue for="ClusterName" value="Climate Expertise"></attvalue>
         </attvalues>
         <viz:size value="10.385501"></viz:size>
         <viz:position x="-348.44427" y="-131.9461" z="0.0"></viz:position>
@@ -862,7 +862,7 @@
         <attvalues>
           <attvalue for="weight" value="175.0"></attvalue>
           <attvalue for="color" value="#F1CB56"></attvalue>
-          <attvalue for="ClusterName" value="land use and forests"></attvalue>
+          <attvalue for="ClusterName" value="Land use and forestry"></attvalue>
         </attvalues>
         <viz:size value="10.811054"></viz:size>
         <viz:position x="281.50818" y="-532.97314" z="0.0"></viz:position>
@@ -872,7 +872,7 @@
         <attvalues>
           <attvalue for="weight" value="99.0"></attvalue>
           <attvalue for="color" value="#4896AA"></attvalue>
-          <attvalue for="ClusterName" value="Kyoto protocol"></attvalue>
+          <attvalue for="ClusterName" value="Emission Reduction Commitments"></attvalue>
         </attvalues>
         <viz:size value="10.43056"></viz:size>
         <viz:position x="-1444.148" y="-858.2005" z="0.0"></viz:position>
@@ -882,7 +882,7 @@
         <attvalues>
           <attvalue for="weight" value="246.0"></attvalue>
           <attvalue for="color" value="#FF5A52"></attvalue>
-          <attvalue for="ClusterName" value="adaptation funding and equity"></attvalue>
+          <attvalue for="ClusterName" value="Adaptation funding"></attvalue>
         </attvalues>
         <viz:size value="11.166516"></viz:size>
         <viz:position x="1053.7808" y="-9.573425" z="0.0"></viz:position>
@@ -892,7 +892,7 @@
         <attvalues>
           <attvalue for="weight" value="244.0"></attvalue>
           <attvalue for="color" value="#8E5C64"></attvalue>
-          <attvalue for="ClusterName" value="technology transfer and energy"></attvalue>
+          <attvalue for="ClusterName" value="Technology transfer and energy"></attvalue>
         </attvalues>
         <viz:size value="11.156504"></viz:size>
         <viz:position x="95.65569" y="1249.692" z="0.0"></viz:position>
@@ -902,7 +902,7 @@
         <attvalues>
           <attvalue for="weight" value="288.0"></attvalue>
           <attvalue for="color" value="#F1CB56"></attvalue>
-          <attvalue for="ClusterName" value="land use and forests"></attvalue>
+          <attvalue for="ClusterName" value="Land use and forestry"></attvalue>
         </attvalues>
         <viz:size value="11.37679"></viz:size>
         <viz:position x="421.06287" y="-770.1384" z="0.0"></viz:position>
@@ -912,7 +912,7 @@
         <attvalues>
           <attvalue for="weight" value="42.0"></attvalue>
           <attvalue for="color" value="#FF5A52"></attvalue>
-          <attvalue for="ClusterName" value="adaptation funding and equity"></attvalue>
+          <attvalue for="ClusterName" value="Adaptation funding"></attvalue>
         </attvalues>
         <viz:size value="10.145188"></viz:size>
         <viz:position x="993.58997" y="121.08185" z="0.0"></viz:position>
@@ -922,7 +922,7 @@
         <attvalues>
           <attvalue for="weight" value="340.0"></attvalue>
           <attvalue for="color" value="#95A565"></attvalue>
-          <attvalue for="ClusterName" value="GHG and emissions measure"></attvalue>
+          <attvalue for="ClusterName" value="Reducing GHGs Emissions"></attvalue>
         </attvalues>
         <viz:size value="11.637128"></viz:size>
         <viz:position x="-1549.2499" y="-294.49716" z="0.0"></viz:position>
@@ -932,7 +932,7 @@
         <attvalues>
           <attvalue for="weight" value="82.0"></attvalue>
           <attvalue for="color" value="#BD8445"></attvalue>
-          <attvalue for="ClusterName" value="environmental and social impacts"></attvalue>
+          <attvalue for="ClusterName" value="Climate change impacts and development"></attvalue>
         </attvalues>
         <viz:size value="10.345449"></viz:size>
         <viz:position x="-105.1666" y="-1.3508902" z="0.0"></viz:position>
@@ -942,7 +942,7 @@
         <attvalues>
           <attvalue for="weight" value="178.0"></attvalue>
           <attvalue for="color" value="#95A565"></attvalue>
-          <attvalue for="ClusterName" value="GHG and emissions measure"></attvalue>
+          <attvalue for="ClusterName" value="Reducing GHGs Emissions"></attvalue>
         </attvalues>
         <viz:size value="10.826074"></viz:size>
         <viz:position x="-1383.6593" y="-446.4504" z="0.0"></viz:position>
@@ -952,7 +952,7 @@
         <attvalues>
           <attvalue for="weight" value="163.0"></attvalue>
           <attvalue for="color" value="#88C3CB"></attvalue>
-          <attvalue for="ClusterName" value="Models and IPCC"></attvalue>
+          <attvalue for="ClusterName" value="Climate Expertise"></attvalue>
         </attvalues>
         <viz:size value="10.750977"></viz:size>
         <viz:position x="-424.42267" y="34.362072" z="0.0"></viz:position>
@@ -962,7 +962,7 @@
         <attvalues>
           <attvalue for="weight" value="78.0"></attvalue>
           <attvalue for="color" value="#8E5C64"></attvalue>
-          <attvalue for="ClusterName" value="technology transfer and energy"></attvalue>
+          <attvalue for="ClusterName" value="Technology transfer and energy"></attvalue>
         </attvalues>
         <viz:size value="10.325423"></viz:size>
         <viz:position x="370.68335" y="1044.3198" z="0.0"></viz:position>
@@ -972,7 +972,7 @@
         <attvalues>
           <attvalue for="weight" value="356.0"></attvalue>
           <attvalue for="color" value="#F1CB56"></attvalue>
-          <attvalue for="ClusterName" value="land use and forests"></attvalue>
+          <attvalue for="ClusterName" value="Land use and forestry"></attvalue>
         </attvalues>
         <viz:size value="11.717233"></viz:size>
         <viz:position x="573.1407" y="-817.6454" z="0.0"></viz:position>
@@ -982,7 +982,7 @@
         <attvalues>
           <attvalue for="weight" value="100.0"></attvalue>
           <attvalue for="color" value="#FF9C97"></attvalue>
-          <attvalue for="ClusterName" value="REDD and post-Kyoto"></attvalue>
+          <attvalue for="ClusterName" value="Post-2012, mitigation and new funding pledges"></attvalue>
         </attvalues>
         <viz:size value="10.435566"></viz:size>
         <viz:position x="103.621574" y="-368.5178" z="0.0"></viz:position>
@@ -992,7 +992,7 @@
         <attvalues>
           <attvalue for="weight" value="65.0"></attvalue>
           <attvalue for="color" value="#95A565"></attvalue>
-          <attvalue for="ClusterName" value="GHG and emissions measure"></attvalue>
+          <attvalue for="ClusterName" value="Reducing GHGs Emissions"></attvalue>
         </attvalues>
         <viz:size value="10.260339"></viz:size>
         <viz:position x="-1496.0798" y="-385.47775" z="0.0"></viz:position>
@@ -1002,7 +1002,7 @@
         <attvalues>
           <attvalue for="weight" value="96.0"></attvalue>
           <attvalue for="color" value="#95A565"></attvalue>
-          <attvalue for="ClusterName" value="GHG and emissions measure"></attvalue>
+          <attvalue for="ClusterName" value="Reducing GHGs Emissions"></attvalue>
         </attvalues>
         <viz:size value="10.415541"></viz:size>
         <viz:position x="-1408.3202" y="-289.43808" z="0.0"></viz:position>
@@ -1012,7 +1012,7 @@
         <attvalues>
           <attvalue for="weight" value="53.0"></attvalue>
           <attvalue for="color" value="#FF9C97"></attvalue>
-          <attvalue for="ClusterName" value="REDD and post-Kyoto"></attvalue>
+          <attvalue for="ClusterName" value="Post-2012, mitigation and new funding pledges"></attvalue>
         </attvalues>
         <viz:size value="10.20026"></viz:size>
         <viz:position x="33.052505" y="-864.6965" z="0.0"></viz:position>
@@ -1022,7 +1022,7 @@
         <attvalues>
           <attvalue for="weight" value="178.0"></attvalue>
           <attvalue for="color" value="#95A565"></attvalue>
-          <attvalue for="ClusterName" value="GHG and emissions measure"></attvalue>
+          <attvalue for="ClusterName" value="Reducing GHGs Emissions"></attvalue>
         </attvalues>
         <viz:size value="10.826074"></viz:size>
         <viz:position x="-1630.9021" y="-407.1377" z="0.0"></viz:position>
@@ -1032,7 +1032,7 @@
         <attvalues>
           <attvalue for="weight" value="187.0"></attvalue>
           <attvalue for="color" value="#F3835D"></attvalue>
-          <attvalue for="ClusterName" value="transport sector"></attvalue>
+          <attvalue for="ClusterName" value="Fuels and transports"></attvalue>
         </attvalues>
         <viz:size value="10.871133"></viz:size>
         <viz:position x="58.801556" y="1043.3784" z="0.0"></viz:position>
@@ -1042,7 +1042,7 @@
         <attvalues>
           <attvalue for="weight" value="230.0"></attvalue>
           <attvalue for="color" value="#BD8445"></attvalue>
-          <attvalue for="ClusterName" value="environmental and social impacts"></attvalue>
+          <attvalue for="ClusterName" value="Climate change impacts and development"></attvalue>
         </attvalues>
         <viz:size value="11.086412"></viz:size>
         <viz:position x="46.145622" y="-49.16264" z="0.0"></viz:position>
@@ -1052,7 +1052,7 @@
         <attvalues>
           <attvalue for="weight" value="1306.0"></attvalue>
           <attvalue for="color" value="#BD8445"></attvalue>
-          <attvalue for="ClusterName" value="environmental and social impacts"></attvalue>
+          <attvalue for="ClusterName" value="Climate change impacts and development"></attvalue>
         </attvalues>
         <viz:size value="16.473415"></viz:size>
         <viz:position x="134.08185" y="194.1724" z="0.0"></viz:position>
@@ -1062,7 +1062,7 @@
         <attvalues>
           <attvalue for="weight" value="181.0"></attvalue>
           <attvalue for="color" value="#8E5C64"></attvalue>
-          <attvalue for="ClusterName" value="technology transfer and energy"></attvalue>
+          <attvalue for="ClusterName" value="Technology transfer and energy"></attvalue>
         </attvalues>
         <viz:size value="10.841093"></viz:size>
         <viz:position x="173.84477" y="1075.867" z="0.0"></viz:position>
@@ -1072,7 +1072,7 @@
         <attvalues>
           <attvalue for="weight" value="159.0"></attvalue>
           <attvalue for="color" value="#F1CB56"></attvalue>
-          <attvalue for="ClusterName" value="land use and forests"></attvalue>
+          <attvalue for="ClusterName" value="Land use and forestry"></attvalue>
         </attvalues>
         <viz:size value="10.73095"></viz:size>
         <viz:position x="292.18" y="-480.705" z="0.0"></viz:position>
@@ -1082,7 +1082,7 @@
         <attvalues>
           <attvalue for="weight" value="259.0"></attvalue>
           <attvalue for="color" value="#00434C"></attvalue>
-          <attvalue for="ClusterName" value="vulnerability and adaptation actions"></attvalue>
+          <attvalue for="ClusterName" value="Vulnerability and adaptation policy"></attvalue>
         </attvalues>
         <viz:size value="11.231601"></viz:size>
         <viz:position x="645.48" y="-3.1822948" z="0.0"></viz:position>
@@ -1092,7 +1092,7 @@
         <attvalues>
           <attvalue for="weight" value="204.0"></attvalue>
           <attvalue for="color" value="#4896AA"></attvalue>
-          <attvalue for="ClusterName" value="Kyoto protocol"></attvalue>
+          <attvalue for="ClusterName" value="Emission Reduction Commitments"></attvalue>
         </attvalues>
         <viz:size value="10.9562435"></viz:size>
         <viz:position x="-1675.3704" y="-648.3839" z="0.0"></viz:position>
@@ -1102,7 +1102,7 @@
         <attvalues>
           <attvalue for="weight" value="161.0"></attvalue>
           <attvalue for="color" value="#95A565"></attvalue>
-          <attvalue for="ClusterName" value="GHG and emissions measure"></attvalue>
+          <attvalue for="ClusterName" value="Reducing GHGs Emissions"></attvalue>
         </attvalues>
         <viz:size value="10.740963"></viz:size>
         <viz:position x="-1569.2155" y="-361.5157" z="0.0"></viz:position>
@@ -1132,7 +1132,7 @@
         <attvalues>
           <attvalue for="weight" value="151.0"></attvalue>
           <attvalue for="color" value="#BD8445"></attvalue>
-          <attvalue for="ClusterName" value="environmental and social impacts"></attvalue>
+          <attvalue for="ClusterName" value="Climate change impacts and development"></attvalue>
         </attvalues>
         <viz:size value="10.690898"></viz:size>
         <viz:position x="72.51073" y="15.078094" z="0.0"></viz:position>
@@ -1142,7 +1142,7 @@
         <attvalues>
           <attvalue for="weight" value="367.0"></attvalue>
           <attvalue for="color" value="#4896AA"></attvalue>
-          <attvalue for="ClusterName" value="Kyoto protocol"></attvalue>
+          <attvalue for="ClusterName" value="Emission Reduction Commitments"></attvalue>
         </attvalues>
         <viz:size value="11.772305"></viz:size>
         <viz:position x="-1447.1927" y="-741.238" z="0.0"></viz:position>
@@ -1152,7 +1152,7 @@
         <attvalues>
           <attvalue for="weight" value="505.0"></attvalue>
           <attvalue for="color" value="#FF5A52"></attvalue>
-          <attvalue for="ClusterName" value="adaptation funding and equity"></attvalue>
+          <attvalue for="ClusterName" value="Adaptation funding"></attvalue>
         </attvalues>
         <viz:size value="12.463202"></viz:size>
         <viz:position x="1129.2223" y="-65.633385" z="0.0"></viz:position>
@@ -1162,7 +1162,7 @@
         <attvalues>
           <attvalue for="weight" value="80.0"></attvalue>
           <attvalue for="color" value="#95A565"></attvalue>
-          <attvalue for="ClusterName" value="GHG and emissions measure"></attvalue>
+          <attvalue for="ClusterName" value="Reducing GHGs Emissions"></attvalue>
         </attvalues>
         <viz:size value="10.335436"></viz:size>
         <viz:position x="-1172.8652" y="-342.12537" z="0.0"></viz:position>
@@ -1172,7 +1172,7 @@
         <attvalues>
           <attvalue for="weight" value="236.0"></attvalue>
           <attvalue for="color" value="#F8B59E"></attvalue>
-          <attvalue for="ClusterName" value="CDM and carbon offsets"></attvalue>
+          <attvalue for="ClusterName" value="Clean Development Mechanism"></attvalue>
         </attvalues>
         <viz:size value="11.116451"></viz:size>
         <viz:position x="1810.5404" y="1212.1761" z="0.0"></viz:position>
@@ -1192,7 +1192,7 @@
         <attvalues>
           <attvalue for="weight" value="1800.0"></attvalue>
           <attvalue for="color" value="#4896AA"></attvalue>
-          <attvalue for="ClusterName" value="Kyoto protocol"></attvalue>
+          <attvalue for="ClusterName" value="Emission Reduction Commitments"></attvalue>
         </attvalues>
         <viz:size value="18.94663"></viz:size>
         <viz:position x="-1574.571" y="-752.146" z="0.0"></viz:position>
@@ -1202,7 +1202,7 @@
         <attvalues>
           <attvalue for="weight" value="349.0"></attvalue>
           <attvalue for="color" value="#FF9C97"></attvalue>
-          <attvalue for="ClusterName" value="REDD and post-Kyoto"></attvalue>
+          <attvalue for="ClusterName" value="Post-2012, mitigation and new funding pledges"></attvalue>
         </attvalues>
         <viz:size value="11.682187"></viz:size>
         <viz:position x="-86.43455" y="-969.9689" z="0.0"></viz:position>
@@ -1212,7 +1212,7 @@
         <attvalues>
           <attvalue for="weight" value="2020.0"></attvalue>
           <attvalue for="color" value="#95A565"></attvalue>
-          <attvalue for="ClusterName" value="GHG and emissions measure"></attvalue>
+          <attvalue for="ClusterName" value="Reducing GHGs Emissions"></attvalue>
         </attvalues>
         <viz:size value="20.048061"></viz:size>
         <viz:position x="-1283.4402" y="-442.43207" z="0.0"></viz:position>
@@ -1222,7 +1222,7 @@
         <attvalues>
           <attvalue for="weight" value="1765.0"></attvalue>
           <attvalue for="color" value="#88C3CB"></attvalue>
-          <attvalue for="ClusterName" value="Models and IPCC"></attvalue>
+          <attvalue for="ClusterName" value="Climate Expertise"></attvalue>
         </attvalues>
         <viz:size value="18.771404"></viz:size>
         <viz:position x="-72.32486" y="-409.21597" z="0.0"></viz:position>
@@ -1232,7 +1232,7 @@
         <attvalues>
           <attvalue for="weight" value="25.0"></attvalue>
           <attvalue for="color" value="#8E5C64"></attvalue>
-          <attvalue for="ClusterName" value="technology transfer and energy"></attvalue>
+          <attvalue for="ClusterName" value="Technology transfer and energy"></attvalue>
         </attvalues>
         <viz:size value="10.060078"></viz:size>
         <viz:position x="123.58001" y="1096.8682" z="0.0"></viz:position>
@@ -1242,7 +1242,7 @@
         <attvalues>
           <attvalue for="weight" value="961.0"></attvalue>
           <attvalue for="color" value="#F8B59E"></attvalue>
-          <attvalue for="ClusterName" value="CDM and carbon offsets"></attvalue>
+          <attvalue for="ClusterName" value="Clean Development Mechanism"></attvalue>
         </attvalues>
         <viz:size value="14.74617"></viz:size>
         <viz:position x="1848.1843" y="1274.1703" z="0.0"></viz:position>
@@ -1252,7 +1252,7 @@
         <attvalues>
           <attvalue for="weight" value="76.0"></attvalue>
           <attvalue for="color" value="#F1CB56"></attvalue>
-          <attvalue for="ClusterName" value="land use and forests"></attvalue>
+          <attvalue for="ClusterName" value="Land use and forestry"></attvalue>
         </attvalues>
         <viz:size value="10.31541"></viz:size>
         <viz:position x="620.82855" y="-841.5302" z="0.0"></viz:position>
@@ -1262,7 +1262,7 @@
         <attvalues>
           <attvalue for="weight" value="76.0"></attvalue>
           <attvalue for="color" value="#8E5C64"></attvalue>
-          <attvalue for="ClusterName" value="technology transfer and energy"></attvalue>
+          <attvalue for="ClusterName" value="Technology transfer and energy"></attvalue>
         </attvalues>
         <viz:size value="10.31541"></viz:size>
         <viz:position x="240.13853" y="1035.4204" z="0.0"></viz:position>
@@ -1272,7 +1272,7 @@
         <attvalues>
           <attvalue for="weight" value="685.0"></attvalue>
           <attvalue for="color" value="#FF5A52"></attvalue>
-          <attvalue for="ClusterName" value="adaptation funding and equity"></attvalue>
+          <attvalue for="ClusterName" value="Adaptation funding"></attvalue>
         </attvalues>
         <viz:size value="13.364374"></viz:size>
         <viz:position x="891.771" y="438.30084" z="0.0"></viz:position>
@@ -1282,7 +1282,7 @@
         <attvalues>
           <attvalue for="weight" value="421.0"></attvalue>
           <attvalue for="color" value="#8E5C64"></attvalue>
-          <attvalue for="ClusterName" value="technology transfer and energy"></attvalue>
+          <attvalue for="ClusterName" value="Technology transfer and energy"></attvalue>
         </attvalues>
         <viz:size value="12.042656"></viz:size>
         <viz:position x="168.1154" y="1296.4879" z="0.0"></viz:position>
@@ -1292,7 +1292,7 @@
         <attvalues>
           <attvalue for="weight" value="87.0"></attvalue>
           <attvalue for="color" value="#FF5A52"></attvalue>
-          <attvalue for="ClusterName" value="adaptation funding and equity"></attvalue>
+          <attvalue for="ClusterName" value="Adaptation funding"></attvalue>
         </attvalues>
         <viz:size value="10.3704815"></viz:size>
         <viz:position x="1027.8574" y="43.930847" z="0.0"></viz:position>
@@ -1302,7 +1302,7 @@
         <attvalues>
           <attvalue for="weight" value="94.0"></attvalue>
           <attvalue for="color" value="#FF5A52"></attvalue>
-          <attvalue for="ClusterName" value="adaptation funding and equity"></attvalue>
+          <attvalue for="ClusterName" value="Adaptation funding"></attvalue>
         </attvalues>
         <viz:size value="10.405527"></viz:size>
         <viz:position x="959.76526" y="84.31835" z="0.0"></viz:position>
@@ -1312,7 +1312,7 @@
         <attvalues>
           <attvalue for="weight" value="120.0"></attvalue>
           <attvalue for="color" value="#8E5C64"></attvalue>
-          <attvalue for="ClusterName" value="technology transfer and energy"></attvalue>
+          <attvalue for="ClusterName" value="Technology transfer and energy"></attvalue>
         </attvalues>
         <viz:size value="10.535696"></viz:size>
         <viz:position x="481.46188" y="1095.8129" z="0.0"></viz:position>
@@ -1322,7 +1322,7 @@
         <attvalues>
           <attvalue for="weight" value="109.0"></attvalue>
           <attvalue for="color" value="#BD8445"></attvalue>
-          <attvalue for="ClusterName" value="environmental and social impacts"></attvalue>
+          <attvalue for="ClusterName" value="Climate change impacts and development"></attvalue>
         </attvalues>
         <viz:size value="10.480625"></viz:size>
         <viz:position x="-46.785614" y="60.575253" z="0.0"></viz:position>
@@ -1342,7 +1342,7 @@
         <attvalues>
           <attvalue for="weight" value="837.0"></attvalue>
           <attvalue for="color" value="#95A565"></attvalue>
-          <attvalue for="ClusterName" value="GHG and emissions measure"></attvalue>
+          <attvalue for="ClusterName" value="Reducing GHGs Emissions"></attvalue>
         </attvalues>
         <viz:size value="14.125362"></viz:size>
         <viz:position x="-1315.1975" y="-385.6669" z="0.0"></viz:position>
@@ -1352,7 +1352,7 @@
         <attvalues>
           <attvalue for="weight" value="124.0"></attvalue>
           <attvalue for="color" value="#F8B59E"></attvalue>
-          <attvalue for="ClusterName" value="CDM and carbon offsets"></attvalue>
+          <attvalue for="ClusterName" value="Clean Development Mechanism"></attvalue>
         </attvalues>
         <viz:size value="10.555722"></viz:size>
         <viz:position x="1621.3995" y="861.32794" z="0.0"></viz:position>
@@ -1362,7 +1362,7 @@
         <attvalues>
           <attvalue for="weight" value="4157.0"></attvalue>
           <attvalue for="color" value="#F8B59E"></attvalue>
-          <attvalue for="ClusterName" value="CDM and carbon offsets"></attvalue>
+          <attvalue for="ClusterName" value="Clean Development Mechanism"></attvalue>
         </attvalues>
         <viz:size value="30.746971"></viz:size>
         <viz:position x="1876.2614" y="1347.7637" z="0.0"></viz:position>
@@ -1372,7 +1372,7 @@
         <attvalues>
           <attvalue for="weight" value="155.0"></attvalue>
           <attvalue for="color" value="#95A565"></attvalue>
-          <attvalue for="ClusterName" value="GHG and emissions measure"></attvalue>
+          <attvalue for="ClusterName" value="Reducing GHGs Emissions"></attvalue>
         </attvalues>
         <viz:size value="10.710924"></viz:size>
         <viz:position x="-1479.742" y="-255.45287" z="0.0"></viz:position>
@@ -1382,7 +1382,7 @@
         <attvalues>
           <attvalue for="weight" value="187.0"></attvalue>
           <attvalue for="color" value="#8E5C64"></attvalue>
-          <attvalue for="ClusterName" value="technology transfer and energy"></attvalue>
+          <attvalue for="ClusterName" value="Technology transfer and energy"></attvalue>
         </attvalues>
         <viz:size value="10.871133"></viz:size>
         <viz:position x="11.458696" y="1136.3328" z="0.0"></viz:position>
@@ -1392,7 +1392,7 @@
         <attvalues>
           <attvalue for="weight" value="75.0"></attvalue>
           <attvalue for="color" value="#FF5A52"></attvalue>
-          <attvalue for="ClusterName" value="adaptation funding and equity"></attvalue>
+          <attvalue for="ClusterName" value="Adaptation funding"></attvalue>
         </attvalues>
         <viz:size value="10.310404"></viz:size>
         <viz:position x="1173.8131" y="29.476654" z="0.0"></viz:position>
@@ -1402,7 +1402,7 @@
         <attvalues>
           <attvalue for="weight" value="367.0"></attvalue>
           <attvalue for="color" value="#00434C"></attvalue>
-          <attvalue for="ClusterName" value="vulnerability and adaptation actions"></attvalue>
+          <attvalue for="ClusterName" value="Vulnerability and adaptation policy"></attvalue>
         </attvalues>
         <viz:size value="11.772305"></viz:size>
         <viz:position x="620.9025" y="-61.352295" z="0.0"></viz:position>
@@ -1412,7 +1412,7 @@
         <attvalues>
           <attvalue for="weight" value="763.0"></attvalue>
           <attvalue for="color" value="#BD8445"></attvalue>
-          <attvalue for="ClusterName" value="environmental and social impacts"></attvalue>
+          <attvalue for="ClusterName" value="Climate change impacts and development"></attvalue>
         </attvalues>
         <viz:size value="13.754881"></viz:size>
         <viz:position x="149.16132" y="-25.53218" z="0.0"></viz:position>
@@ -1422,7 +1422,7 @@
         <attvalues>
           <attvalue for="weight" value="238.0"></attvalue>
           <attvalue for="color" value="#00434C"></attvalue>
-          <attvalue for="ClusterName" value="vulnerability and adaptation actions"></attvalue>
+          <attvalue for="ClusterName" value="Vulnerability and adaptation policy"></attvalue>
         </attvalues>
         <viz:size value="11.126465"></viz:size>
         <viz:position x="371.25543" y="-45.791096" z="0.0"></viz:position>
@@ -1432,7 +1432,7 @@
         <attvalues>
           <attvalue for="weight" value="83.0"></attvalue>
           <attvalue for="color" value="#8E5C64"></attvalue>
-          <attvalue for="ClusterName" value="technology transfer and energy"></attvalue>
+          <attvalue for="ClusterName" value="Technology transfer and energy"></attvalue>
         </attvalues>
         <viz:size value="10.350455"></viz:size>
         <viz:position x="235.60152" y="1162.5488" z="0.0"></viz:position>
@@ -1442,7 +1442,7 @@
         <attvalues>
           <attvalue for="weight" value="97.0"></attvalue>
           <attvalue for="color" value="#F1CB56"></attvalue>
-          <attvalue for="ClusterName" value="land use and forests"></attvalue>
+          <attvalue for="ClusterName" value="Land use and forestry"></attvalue>
         </attvalues>
         <viz:size value="10.420547"></viz:size>
         <viz:position x="521.72797" y="-931.82086" z="0.0"></viz:position>
@@ -1452,7 +1452,7 @@
         <attvalues>
           <attvalue for="weight" value="785.0"></attvalue>
           <attvalue for="color" value="#4896AA"></attvalue>
-          <attvalue for="ClusterName" value="Kyoto protocol"></attvalue>
+          <attvalue for="ClusterName" value="Emission Reduction Commitments"></attvalue>
         </attvalues>
         <viz:size value="13.865025"></viz:size>
         <viz:position x="-1648.5859" y="-832.82324" z="0.0"></viz:position>
@@ -1462,7 +1462,7 @@
         <attvalues>
           <attvalue for="weight" value="155.0"></attvalue>
           <attvalue for="color" value="#F1CB56"></attvalue>
-          <attvalue for="ClusterName" value="land use and forests"></attvalue>
+          <attvalue for="ClusterName" value="Land use and forestry"></attvalue>
         </attvalues>
         <viz:size value="10.710924"></viz:size>
         <viz:position x="374.8983" y="-655.4394" z="0.0"></viz:position>
@@ -1472,7 +1472,7 @@
         <attvalues>
           <attvalue for="weight" value="43.0"></attvalue>
           <attvalue for="color" value="#4896AA"></attvalue>
-          <attvalue for="ClusterName" value="Kyoto protocol"></attvalue>
+          <attvalue for="ClusterName" value="Emission Reduction Commitments"></attvalue>
         </attvalues>
         <viz:size value="10.150195"></viz:size>
         <viz:position x="-1749.8737" y="-723.4543" z="0.0"></viz:position>
@@ -1482,7 +1482,7 @@
         <attvalues>
           <attvalue for="weight" value="268.0"></attvalue>
           <attvalue for="color" value="#F3835D"></attvalue>
-          <attvalue for="ClusterName" value="transport sector"></attvalue>
+          <attvalue for="ClusterName" value="Fuels and transports"></attvalue>
         </attvalues>
         <viz:size value="11.27666"></viz:size>
         <viz:position x="-41.843422" y="1385.3347" z="0.0"></viz:position>
@@ -1492,7 +1492,7 @@
         <attvalues>
           <attvalue for="weight" value="363.0"></attvalue>
           <attvalue for="color" value="#FF5A52"></attvalue>
-          <attvalue for="ClusterName" value="adaptation funding and equity"></attvalue>
+          <attvalue for="ClusterName" value="Adaptation funding"></attvalue>
         </attvalues>
         <viz:size value="11.752278"></viz:size>
         <viz:position x="1161.6682" y="-507.34302" z="0.0"></viz:position>
@@ -1502,7 +1502,7 @@
         <attvalues>
           <attvalue for="weight" value="66.0"></attvalue>
           <attvalue for="color" value="#88C3CB"></attvalue>
-          <attvalue for="ClusterName" value="Models and IPCC"></attvalue>
+          <attvalue for="ClusterName" value="Climate Expertise"></attvalue>
         </attvalues>
         <viz:size value="10.265345"></viz:size>
         <viz:position x="-300.5235" y="-60.76087" z="0.0"></viz:position>
@@ -1512,7 +1512,7 @@
         <attvalues>
           <attvalue for="weight" value="28.0"></attvalue>
           <attvalue for="color" value="#F8B59E"></attvalue>
-          <attvalue for="ClusterName" value="CDM and carbon offsets"></attvalue>
+          <attvalue for="ClusterName" value="Clean Development Mechanism"></attvalue>
         </attvalues>
         <viz:size value="10.075098"></viz:size>
         <viz:position x="2012.9883" y="1284.039" z="0.0"></viz:position>
@@ -1522,7 +1522,7 @@
         <attvalues>
           <attvalue for="weight" value="203.0"></attvalue>
           <attvalue for="color" value="#FF9C97"></attvalue>
-          <attvalue for="ClusterName" value="REDD and post-Kyoto"></attvalue>
+          <attvalue for="ClusterName" value="Post-2012, mitigation and new funding pledges"></attvalue>
         </attvalues>
         <viz:size value="10.951237"></viz:size>
         <viz:position x="76.70752" y="-828.42474" z="0.0"></viz:position>
@@ -1532,7 +1532,7 @@
         <attvalues>
           <attvalue for="weight" value="154.0"></attvalue>
           <attvalue for="color" value="#F1CB56"></attvalue>
-          <attvalue for="ClusterName" value="land use and forests"></attvalue>
+          <attvalue for="ClusterName" value="Land use and forestry"></attvalue>
         </attvalues>
         <viz:size value="10.705917"></viz:size>
         <viz:position x="427.13403" y="-857.50366" z="0.0"></viz:position>
@@ -1542,7 +1542,7 @@
         <attvalues>
           <attvalue for="weight" value="60.0"></attvalue>
           <attvalue for="color" value="#BD8445"></attvalue>
-          <attvalue for="ClusterName" value="environmental and social impacts"></attvalue>
+          <attvalue for="ClusterName" value="Climate change impacts and development"></attvalue>
         </attvalues>
         <viz:size value="10.235306"></viz:size>
         <viz:position x="-80.41276" y="88.937546" z="0.0"></viz:position>
@@ -1552,7 +1552,7 @@
         <attvalues>
           <attvalue for="weight" value="5136.0"></attvalue>
           <attvalue for="color" value="#8E5C64"></attvalue>
-          <attvalue for="ClusterName" value="technology transfer and energy"></attvalue>
+          <attvalue for="ClusterName" value="Technology transfer and energy"></attvalue>
         </attvalues>
         <viz:size value="35.648346"></viz:size>
         <viz:position x="557.9792" y="1174.9292" z="0.0"></viz:position>
@@ -1562,7 +1562,7 @@
         <attvalues>
           <attvalue for="weight" value="55.0"></attvalue>
           <attvalue for="color" value="#F8B59E"></attvalue>
-          <attvalue for="ClusterName" value="CDM and carbon offsets"></attvalue>
+          <attvalue for="ClusterName" value="Clean Development Mechanism"></attvalue>
         </attvalues>
         <viz:size value="10.210274"></viz:size>
         <viz:position x="1746.3416" y="1173.1368" z="0.0"></viz:position>
@@ -1572,7 +1572,7 @@
         <attvalues>
           <attvalue for="weight" value="1133.0"></attvalue>
           <attvalue for="color" value="#F1CB56"></attvalue>
-          <attvalue for="ClusterName" value="land use and forests"></attvalue>
+          <attvalue for="ClusterName" value="Land use and forestry"></attvalue>
         </attvalues>
         <viz:size value="15.607289"></viz:size>
         <viz:position x="375.63815" y="-717.4434" z="0.0"></viz:position>
@@ -1582,7 +1582,7 @@
         <attvalues>
           <attvalue for="weight" value="506.0"></attvalue>
           <attvalue for="color" value="#4896AA"></attvalue>
-          <attvalue for="ClusterName" value="Kyoto protocol"></attvalue>
+          <attvalue for="ClusterName" value="Emission Reduction Commitments"></attvalue>
         </attvalues>
         <viz:size value="12.468208"></viz:size>
         <viz:position x="-1401.3169" y="-806.00525" z="0.0"></viz:position>
@@ -1592,7 +1592,7 @@
         <attvalues>
           <attvalue for="weight" value="384.0"></attvalue>
           <attvalue for="color" value="#FF9C97"></attvalue>
-          <attvalue for="ClusterName" value="REDD and post-Kyoto"></attvalue>
+          <attvalue for="ClusterName" value="Post-2012, mitigation and new funding pledges"></attvalue>
         </attvalues>
         <viz:size value="11.857414"></viz:size>
         <viz:position x="157.21994" y="-838.47656" z="0.0"></viz:position>
@@ -1602,7 +1602,7 @@
         <attvalues>
           <attvalue for="weight" value="3684.0"></attvalue>
           <attvalue for="color" value="#BD8445"></attvalue>
-          <attvalue for="ClusterName" value="environmental and social impacts"></attvalue>
+          <attvalue for="ClusterName" value="Climate change impacts and development"></attvalue>
         </attvalues>
         <viz:size value="28.378893"></viz:size>
         <viz:position x="139.61353" y="269.2509" z="0.0"></viz:position>
@@ -1612,7 +1612,7 @@
         <attvalues>
           <attvalue for="weight" value="182.0"></attvalue>
           <attvalue for="color" value="#88C3CB"></attvalue>
-          <attvalue for="ClusterName" value="Models and IPCC"></attvalue>
+          <attvalue for="ClusterName" value="Climate Expertise"></attvalue>
         </attvalues>
         <viz:size value="10.8461"></viz:size>
         <viz:position x="-298.30206" y="3.6689053" z="0.0"></viz:position>
@@ -1622,7 +1622,7 @@
         <attvalues>
           <attvalue for="weight" value="49.0"></attvalue>
           <attvalue for="color" value="#BD8445"></attvalue>
-          <attvalue for="ClusterName" value="environmental and social impacts"></attvalue>
+          <attvalue for="ClusterName" value="Climate change impacts and development"></attvalue>
         </attvalues>
         <viz:size value="10.180234"></viz:size>
         <viz:position x="65.894485" y="-210.4269" z="0.0"></viz:position>
@@ -1632,7 +1632,7 @@
         <attvalues>
           <attvalue for="weight" value="79.0"></attvalue>
           <attvalue for="color" value="#FF9C97"></attvalue>
-          <attvalue for="ClusterName" value="REDD and post-Kyoto"></attvalue>
+          <attvalue for="ClusterName" value="Post-2012, mitigation and new funding pledges"></attvalue>
         </attvalues>
         <viz:size value="10.330429"></viz:size>
         <viz:position x="89.60531" y="-859.5754" z="0.0"></viz:position>
@@ -1642,7 +1642,7 @@
         <attvalues>
           <attvalue for="weight" value="102.0"></attvalue>
           <attvalue for="color" value="#88C3CB"></attvalue>
-          <attvalue for="ClusterName" value="Models and IPCC"></attvalue>
+          <attvalue for="ClusterName" value="Climate Expertise"></attvalue>
         </attvalues>
         <viz:size value="10.44558"></viz:size>
         <viz:position x="-472.0149" y="59.10265" z="0.0"></viz:position>
@@ -1652,7 +1652,7 @@
         <attvalues>
           <attvalue for="weight" value="6769.0"></attvalue>
           <attvalue for="color" value="#95A565"></attvalue>
-          <attvalue for="ClusterName" value="GHG and emissions measure"></attvalue>
+          <attvalue for="ClusterName" value="Reducing GHGs Emissions"></attvalue>
         </attvalues>
         <viz:size value="43.82397"></viz:size>
         <viz:position x="-1338.7614" y="-507.80417" z="0.0"></viz:position>
@@ -1662,7 +1662,7 @@
         <attvalues>
           <attvalue for="weight" value="232.0"></attvalue>
           <attvalue for="color" value="#FF9C97"></attvalue>
-          <attvalue for="ClusterName" value="REDD and post-Kyoto"></attvalue>
+          <attvalue for="ClusterName" value="Post-2012, mitigation and new funding pledges"></attvalue>
         </attvalues>
         <viz:size value="11.096425"></viz:size>
         <viz:position x="42.224167" y="-790.6254" z="0.0"></viz:position>
@@ -1672,7 +1672,7 @@
         <attvalues>
           <attvalue for="weight" value="111.0"></attvalue>
           <attvalue for="color" value="#F8B59E"></attvalue>
-          <attvalue for="ClusterName" value="CDM and carbon offsets"></attvalue>
+          <attvalue for="ClusterName" value="Clean Development Mechanism"></attvalue>
         </attvalues>
         <viz:size value="10.490638"></viz:size>
         <viz:position x="1945.6459" y="1144.9497" z="0.0"></viz:position>
@@ -1682,7 +1682,7 @@
         <attvalues>
           <attvalue for="weight" value="367.0"></attvalue>
           <attvalue for="color" value="#95A565"></attvalue>
-          <attvalue for="ClusterName" value="GHG and emissions measure"></attvalue>
+          <attvalue for="ClusterName" value="Reducing GHGs Emissions"></attvalue>
         </attvalues>
         <viz:size value="11.772305"></viz:size>
         <viz:position x="-1220.44" y="-531.1514" z="0.0"></viz:position>
@@ -1692,7 +1692,7 @@
         <attvalues>
           <attvalue for="weight" value="116.0"></attvalue>
           <attvalue for="color" value="#88C3CB"></attvalue>
-          <attvalue for="ClusterName" value="Models and IPCC"></attvalue>
+          <attvalue for="ClusterName" value="Climate Expertise"></attvalue>
         </attvalues>
         <viz:size value="10.515671"></viz:size>
         <viz:position x="-225.11778" y="112.072044" z="0.0"></viz:position>
@@ -1702,7 +1702,7 @@
         <attvalues>
           <attvalue for="weight" value="100.0"></attvalue>
           <attvalue for="color" value="#8E5C64"></attvalue>
-          <attvalue for="ClusterName" value="technology transfer and energy"></attvalue>
+          <attvalue for="ClusterName" value="Technology transfer and energy"></attvalue>
         </attvalues>
         <viz:size value="10.435566"></viz:size>
         <viz:position x="291.0036" y="1142.3678" z="0.0"></viz:position>
@@ -1712,7 +1712,7 @@
         <attvalues>
           <attvalue for="weight" value="81.0"></attvalue>
           <attvalue for="color" value="#F1CB56"></attvalue>
-          <attvalue for="ClusterName" value="land use and forests"></attvalue>
+          <attvalue for="ClusterName" value="Land use and forestry"></attvalue>
         </attvalues>
         <viz:size value="10.340443"></viz:size>
         <viz:position x="275.86365" y="-710.37915" z="0.0"></viz:position>
@@ -1722,7 +1722,7 @@
         <attvalues>
           <attvalue for="weight" value="45.0"></attvalue>
           <attvalue for="color" value="#F3835D"></attvalue>
-          <attvalue for="ClusterName" value="transport sector"></attvalue>
+          <attvalue for="ClusterName" value="Fuels and transports"></attvalue>
         </attvalues>
         <viz:size value="10.160209"></viz:size>
         <viz:position x="111.76127" y="1343.3262" z="0.0"></viz:position>
@@ -1732,7 +1732,7 @@
         <attvalues>
           <attvalue for="weight" value="215.0"></attvalue>
           <attvalue for="color" value="#8E5C64"></attvalue>
-          <attvalue for="ClusterName" value="technology transfer and energy"></attvalue>
+          <attvalue for="ClusterName" value="Technology transfer and energy"></attvalue>
         </attvalues>
         <viz:size value="11.011314"></viz:size>
         <viz:position x="355.69345" y="1184.3275" z="0.0"></viz:position>
@@ -1742,7 +1742,7 @@
         <attvalues>
           <attvalue for="weight" value="605.0"></attvalue>
           <attvalue for="color" value="#8E5C64"></attvalue>
-          <attvalue for="ClusterName" value="technology transfer and energy"></attvalue>
+          <attvalue for="ClusterName" value="Technology transfer and energy"></attvalue>
         </attvalues>
         <viz:size value="12.963853"></viz:size>
         <viz:position x="417.40036" y="1121.1912" z="0.0"></viz:position>
@@ -1752,7 +1752,7 @@
         <attvalues>
           <attvalue for="weight" value="43.0"></attvalue>
           <attvalue for="color" value="#BD8445"></attvalue>
-          <attvalue for="ClusterName" value="environmental and social impacts"></attvalue>
+          <attvalue for="ClusterName" value="Climate change impacts and development"></attvalue>
         </attvalues>
         <viz:size value="10.150195"></viz:size>
         <viz:position x="-9.932506" y="88.35363" z="0.0"></viz:position>
@@ -1762,7 +1762,7 @@
         <attvalues>
           <attvalue for="weight" value="3955.0"></attvalue>
           <attvalue for="color" value="#8E5C64"></attvalue>
-          <attvalue for="ClusterName" value="technology transfer and energy"></attvalue>
+          <attvalue for="ClusterName" value="Technology transfer and energy"></attvalue>
         </attvalues>
         <viz:size value="29.735657"></viz:size>
         <viz:position x="488.9348" y="1019.8884" z="0.0"></viz:position>
@@ -1772,7 +1772,7 @@
         <attvalues>
           <attvalue for="weight" value="94.0"></attvalue>
           <attvalue for="color" value="#00434C"></attvalue>
-          <attvalue for="ClusterName" value="vulnerability and adaptation actions"></attvalue>
+          <attvalue for="ClusterName" value="Vulnerability and adaptation policy"></attvalue>
         </attvalues>
         <viz:size value="10.405527"></viz:size>
         <viz:position x="320.72476" y="-19.0317" z="0.0"></viz:position>
@@ -1782,7 +1782,7 @@
         <attvalues>
           <attvalue for="weight" value="548.0"></attvalue>
           <attvalue for="color" value="#88C3CB"></attvalue>
-          <attvalue for="ClusterName" value="Models and IPCC"></attvalue>
+          <attvalue for="ClusterName" value="Climate Expertise"></attvalue>
         </attvalues>
         <viz:size value="12.678482"></viz:size>
         <viz:position x="-142.59811" y="-411.74298" z="0.0"></viz:position>
@@ -1792,7 +1792,7 @@
         <attvalues>
           <attvalue for="weight" value="122.0"></attvalue>
           <attvalue for="color" value="#BD8445"></attvalue>
-          <attvalue for="ClusterName" value="environmental and social impacts"></attvalue>
+          <attvalue for="ClusterName" value="Climate change impacts and development"></attvalue>
         </attvalues>
         <viz:size value="10.54571"></viz:size>
         <viz:position x="127.747406" y="-121.07447" z="0.0"></viz:position>
@@ -1802,7 +1802,7 @@
         <attvalues>
           <attvalue for="weight" value="101.0"></attvalue>
           <attvalue for="color" value="#FF5A52"></attvalue>
-          <attvalue for="ClusterName" value="adaptation funding and equity"></attvalue>
+          <attvalue for="ClusterName" value="Adaptation funding"></attvalue>
         </attvalues>
         <viz:size value="10.440573"></viz:size>
         <viz:position x="1001.53314" y="64.46334" z="0.0"></viz:position>
@@ -1812,7 +1812,7 @@
         <attvalues>
           <attvalue for="weight" value="42.0"></attvalue>
           <attvalue for="color" value="#88C3CB"></attvalue>
-          <attvalue for="ClusterName" value="Models and IPCC"></attvalue>
+          <attvalue for="ClusterName" value="Climate Expertise"></attvalue>
         </attvalues>
         <viz:size value="10.145188"></viz:size>
         <viz:position x="-316.69174" y="158.5879" z="0.0"></viz:position>
@@ -1822,7 +1822,7 @@
         <attvalues>
           <attvalue for="weight" value="366.0"></attvalue>
           <attvalue for="color" value="#00434C"></attvalue>
-          <attvalue for="ClusterName" value="vulnerability and adaptation actions"></attvalue>
+          <attvalue for="ClusterName" value="Vulnerability and adaptation policy"></attvalue>
         </attvalues>
         <viz:size value="11.767298"></viz:size>
         <viz:position x="783.0173" y="16.307518" z="0.0"></viz:position>
@@ -1832,7 +1832,7 @@
         <attvalues>
           <attvalue for="weight" value="464.0"></attvalue>
           <attvalue for="color" value="#FF9C97"></attvalue>
-          <attvalue for="ClusterName" value="REDD and post-Kyoto"></attvalue>
+          <attvalue for="ClusterName" value="Post-2012, mitigation and new funding pledges"></attvalue>
         </attvalues>
         <viz:size value="12.257936"></viz:size>
         <viz:position x="-195.82704" y="-1042.8156" z="0.0"></viz:position>
@@ -1842,7 +1842,7 @@
         <attvalues>
           <attvalue for="weight" value="136.0"></attvalue>
           <attvalue for="color" value="#4896AA"></attvalue>
-          <attvalue for="ClusterName" value="Kyoto protocol"></attvalue>
+          <attvalue for="ClusterName" value="Emission Reduction Commitments"></attvalue>
         </attvalues>
         <viz:size value="10.615801"></viz:size>
         <viz:position x="-1735.9543" y="-845.07043" z="0.0"></viz:position>
@@ -1852,7 +1852,7 @@
         <attvalues>
           <attvalue for="weight" value="79.0"></attvalue>
           <attvalue for="color" value="#88C3CB"></attvalue>
-          <attvalue for="ClusterName" value="Models and IPCC"></attvalue>
+          <attvalue for="ClusterName" value="Climate Expertise"></attvalue>
         </attvalues>
         <viz:size value="10.330429"></viz:size>
         <viz:position x="-562.4819" y="121.93512" z="0.0"></viz:position>
@@ -1862,7 +1862,7 @@
         <attvalues>
           <attvalue for="weight" value="123.0"></attvalue>
           <attvalue for="color" value="#8E5C64"></attvalue>
-          <attvalue for="ClusterName" value="technology transfer and energy"></attvalue>
+          <attvalue for="ClusterName" value="Technology transfer and energy"></attvalue>
         </attvalues>
         <viz:size value="10.550716"></viz:size>
         <viz:position x="275.7348" y="1107.975" z="0.0"></viz:position>
@@ -1872,7 +1872,7 @@
         <attvalues>
           <attvalue for="weight" value="260.0"></attvalue>
           <attvalue for="color" value="#95A565"></attvalue>
-          <attvalue for="ClusterName" value="GHG and emissions measure"></attvalue>
+          <attvalue for="ClusterName" value="Reducing GHGs Emissions"></attvalue>
         </attvalues>
         <viz:size value="11.236608"></viz:size>
         <viz:position x="-1492.8337" y="-315.7684" z="0.0"></viz:position>
@@ -1882,7 +1882,7 @@
         <attvalues>
           <attvalue for="weight" value="837.0"></attvalue>
           <attvalue for="color" value="#FF9C97"></attvalue>
-          <attvalue for="ClusterName" value="REDD and post-Kyoto"></attvalue>
+          <attvalue for="ClusterName" value="Post-2012, mitigation and new funding pledges"></attvalue>
         </attvalues>
         <viz:size value="14.125362"></viz:size>
         <viz:position x="266.52316" y="-759.6283" z="0.0"></viz:position>
@@ -1892,7 +1892,7 @@
         <attvalues>
           <attvalue for="weight" value="493.0"></attvalue>
           <attvalue for="color" value="#00434C"></attvalue>
-          <attvalue for="ClusterName" value="vulnerability and adaptation actions"></attvalue>
+          <attvalue for="ClusterName" value="Vulnerability and adaptation policy"></attvalue>
         </attvalues>
         <viz:size value="12.403124"></viz:size>
         <viz:position x="222.43925" y="61.978664" z="0.0"></viz:position>
@@ -1902,7 +1902,7 @@
         <attvalues>
           <attvalue for="weight" value="2068.0"></attvalue>
           <attvalue for="color" value="#4896AA"></attvalue>
-          <attvalue for="ClusterName" value="Kyoto protocol"></attvalue>
+          <attvalue for="ClusterName" value="Emission Reduction Commitments"></attvalue>
         </attvalues>
         <viz:size value="20.288376"></viz:size>
         <viz:position x="-1338.7854" y="-780.9771" z="0.0"></viz:position>
@@ -1912,7 +1912,7 @@
         <attvalues>
           <attvalue for="weight" value="891.0"></attvalue>
           <attvalue for="color" value="#4896AA"></attvalue>
-          <attvalue for="ClusterName" value="Kyoto protocol"></attvalue>
+          <attvalue for="ClusterName" value="Emission Reduction Commitments"></attvalue>
         </attvalues>
         <viz:size value="14.395714"></viz:size>
         <viz:position x="-1464.2415" y="-650.8268" z="0.0"></viz:position>
@@ -1922,7 +1922,7 @@
         <attvalues>
           <attvalue for="weight" value="769.0"></attvalue>
           <attvalue for="color" value="#4896AA"></attvalue>
-          <attvalue for="ClusterName" value="Kyoto protocol"></attvalue>
+          <attvalue for="ClusterName" value="Emission Reduction Commitments"></attvalue>
         </attvalues>
         <viz:size value="13.78492"></viz:size>
         <viz:position x="-1580.6482" y="-575.80634" z="0.0"></viz:position>
@@ -1932,7 +1932,7 @@
         <attvalues>
           <attvalue for="weight" value="184.0"></attvalue>
           <attvalue for="color" value="#95A565"></attvalue>
-          <attvalue for="ClusterName" value="GHG and emissions measure"></attvalue>
+          <attvalue for="ClusterName" value="Reducing GHGs Emissions"></attvalue>
         </attvalues>
         <viz:size value="10.856113"></viz:size>
         <viz:position x="-1385.8245" y="-363.74146" z="0.0"></viz:position>
@@ -1942,7 +1942,7 @@
         <attvalues>
           <attvalue for="weight" value="165.0"></attvalue>
           <attvalue for="color" value="#88C3CB"></attvalue>
-          <attvalue for="ClusterName" value="Models and IPCC"></attvalue>
+          <attvalue for="ClusterName" value="Climate Expertise"></attvalue>
         </attvalues>
         <viz:size value="10.760989"></viz:size>
         <viz:position x="-368.5676" y="89.41431" z="0.0"></viz:position>
@@ -1952,7 +1952,7 @@
         <attvalues>
           <attvalue for="weight" value="185.0"></attvalue>
           <attvalue for="color" value="#BD8445"></attvalue>
-          <attvalue for="ClusterName" value="environmental and social impacts"></attvalue>
+          <attvalue for="ClusterName" value="Climate change impacts and development"></attvalue>
         </attvalues>
         <viz:size value="10.861119"></viz:size>
         <viz:position x="35.245647" y="-110.397644" z="0.0"></viz:position>
@@ -1962,7 +1962,7 @@
         <attvalues>
           <attvalue for="weight" value="635.0"></attvalue>
           <attvalue for="color" value="#BD8445"></attvalue>
-          <attvalue for="ClusterName" value="environmental and social impacts"></attvalue>
+          <attvalue for="ClusterName" value="Climate change impacts and development"></attvalue>
         </attvalues>
         <viz:size value="13.114048"></viz:size>
         <viz:position x="113.26875" y="40.84243" z="0.0"></viz:position>
@@ -1972,7 +1972,7 @@
         <attvalues>
           <attvalue for="weight" value="622.0"></attvalue>
           <attvalue for="color" value="#00434C"></attvalue>
-          <attvalue for="ClusterName" value="vulnerability and adaptation actions"></attvalue>
+          <attvalue for="ClusterName" value="Vulnerability and adaptation policy"></attvalue>
         </attvalues>
         <viz:size value="13.048964"></viz:size>
         <viz:position x="416.254" y="-80.42003" z="0.0"></viz:position>
@@ -1982,7 +1982,7 @@
         <attvalues>
           <attvalue for="weight" value="519.0"></attvalue>
           <attvalue for="color" value="#00434C"></attvalue>
-          <attvalue for="ClusterName" value="vulnerability and adaptation actions"></attvalue>
+          <attvalue for="ClusterName" value="Vulnerability and adaptation policy"></attvalue>
         </attvalues>
         <viz:size value="12.533293"></viz:size>
         <viz:position x="382.629" y="62.73527" z="0.0"></viz:position>
@@ -1992,7 +1992,7 @@
         <attvalues>
           <attvalue for="weight" value="728.0"></attvalue>
           <attvalue for="color" value="#FF5A52"></attvalue>
-          <attvalue for="ClusterName" value="adaptation funding and equity"></attvalue>
+          <attvalue for="ClusterName" value="Adaptation funding"></attvalue>
         </attvalues>
         <viz:size value="13.579654"></viz:size>
         <viz:position x="1106.4323" y="-23.149372" z="0.0"></viz:position>
@@ -2002,7 +2002,7 @@
         <attvalues>
           <attvalue for="weight" value="1013.0"></attvalue>
           <attvalue for="color" value="#FF5A52"></attvalue>
-          <attvalue for="ClusterName" value="adaptation funding and equity"></attvalue>
+          <attvalue for="ClusterName" value="Adaptation funding"></attvalue>
         </attvalues>
         <viz:size value="15.006508"></viz:size>
         <viz:position x="1207.4846" y="-113.293045" z="0.0"></viz:position>
@@ -2012,7 +2012,7 @@
         <attvalues>
           <attvalue for="weight" value="2848.0"></attvalue>
           <attvalue for="color" value="#FF5A52"></attvalue>
-          <attvalue for="ClusterName" value="adaptation funding and equity"></attvalue>
+          <attvalue for="ClusterName" value="Adaptation funding"></attvalue>
         </attvalues>
         <viz:size value="24.19345"></viz:size>
         <viz:position x="1322.1237" y="-213.56499" z="0.0"></viz:position>
@@ -2022,7 +2022,7 @@
         <attvalues>
           <attvalue for="weight" value="3853.0"></attvalue>
           <attvalue for="color" value="#F1CB56"></attvalue>
-          <attvalue for="ClusterName" value="land use and forests"></attvalue>
+          <attvalue for="ClusterName" value="Land use and forestry"></attvalue>
         </attvalues>
         <viz:size value="29.224993"></viz:size>
         <viz:position x="529.2369" y="-857.81" z="0.0"></viz:position>
@@ -2032,7 +2032,7 @@
         <attvalues>
           <attvalue for="weight" value="529.0"></attvalue>
           <attvalue for="color" value="#88C3CB"></attvalue>
-          <attvalue for="ClusterName" value="Models and IPCC"></attvalue>
+          <attvalue for="ClusterName" value="Climate Expertise"></attvalue>
         </attvalues>
         <viz:size value="12.583359"></viz:size>
         <viz:position x="296.1212" y="-577.9725" z="0.0"></viz:position>
@@ -2042,7 +2042,7 @@
         <attvalues>
           <attvalue for="weight" value="285.0"></attvalue>
           <attvalue for="color" value="#FF9C97"></attvalue>
-          <attvalue for="ClusterName" value="REDD and post-Kyoto"></attvalue>
+          <attvalue for="ClusterName" value="Post-2012, mitigation and new funding pledges"></attvalue>
         </attvalues>
         <viz:size value="11.361771"></viz:size>
         <viz:position x="-44.38569" y="-1022.6758" z="0.0"></viz:position>
@@ -2052,7 +2052,7 @@
         <attvalues>
           <attvalue for="weight" value="782.0"></attvalue>
           <attvalue for="color" value="#F3835D"></attvalue>
-          <attvalue for="ClusterName" value="transport sector"></attvalue>
+          <attvalue for="ClusterName" value="Fuels and transports"></attvalue>
         </attvalues>
         <viz:size value="13.850005"></viz:size>
         <viz:position x="67.18227" y="1367.2225" z="0.0"></viz:position>
@@ -2062,7 +2062,7 @@
         <attvalues>
           <attvalue for="weight" value="821.0"></attvalue>
           <attvalue for="color" value="#F3835D"></attvalue>
-          <attvalue for="ClusterName" value="transport sector"></attvalue>
+          <attvalue for="ClusterName" value="Fuels and transports"></attvalue>
         </attvalues>
         <viz:size value="14.045259"></viz:size>
         <viz:position x="5.233207" y="1322.9579" z="0.0"></viz:position>
@@ -2072,7 +2072,7 @@
         <attvalues>
           <attvalue for="weight" value="493.0"></attvalue>
           <attvalue for="color" value="#F8B59E"></attvalue>
-          <attvalue for="ClusterName" value="CDM and carbon offsets"></attvalue>
+          <attvalue for="ClusterName" value="Clean Development Mechanism"></attvalue>
         </attvalues>
         <viz:size value="12.403124"></viz:size>
         <viz:position x="1928.0094" y="1194.7476" z="0.0"></viz:position>
@@ -2082,7 +2082,7 @@
         <attvalues>
           <attvalue for="weight" value="363.0"></attvalue>
           <attvalue for="color" value="#F8B59E"></attvalue>
-          <attvalue for="ClusterName" value="CDM and carbon offsets"></attvalue>
+          <attvalue for="ClusterName" value="Clean Development Mechanism"></attvalue>
         </attvalues>
         <viz:size value="11.752278"></viz:size>
         <viz:position x="2063.882" y="1246.4733" z="0.0"></viz:position>

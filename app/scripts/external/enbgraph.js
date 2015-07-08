@@ -160,7 +160,8 @@
         minEdgeSize: 0.5,
         maxEdgeSize: 10,
         labelSize: 'proportional',
-        labelSizeRatio: 1.2
+        labelSizeRatio: 1.2,
+        labelThreshold: 100
       }
     });
     this.camera = this.sig.addCamera('main');
@@ -210,7 +211,7 @@
       });
 
       // Camera
-      self.camera.goTo({ratio: 1.3});
+      self.camera.goTo({ratio: 1});
 
       // Refreshing view
       self.sig.refresh();
@@ -293,6 +294,19 @@
 
   };
 
+  // Reset zoom / cameras after focus on node(s)
+  Abstract.prototype.resetFocus = function() {
+    sigma.misc.animation.camera(
+      this.camera,
+      {
+        x: 0,
+        y: 0,
+        ratio: 1
+      },
+      {duration: 150}
+    );
+  }
+
   // Finding a node by label
   Abstract.prototype.findNodeByLabel = function(label) {
     return first(this.sig.graph.nodes(), function(node) {
@@ -347,7 +361,6 @@
           Math.pow(maxY + centerY, 2)
         );
 
-
     sigma.misc.animation.camera(
       this.camera,
       {
@@ -358,6 +371,19 @@
       {duration: 150}
     );
   };
+
+  // Focusing on given cluster(s)
+  Abstract.prototype.focusOnGroupByCluster = function(clustersNames) {
+    var self = this;
+    // Filter nodes on clusterName
+    var labels = self.sig.graph.nodes().filter(function(item) {
+      return ~clustersNames.indexOf(item.attributes['ClusterName']);
+    // Map to return only the nodes label
+    }).map(function(item) {
+      return item.label;
+    });
+    self.focusOnGroupByLabels(labels);
+  }
 
   // Exporting
   if (typeof exports !== 'undefined') {
