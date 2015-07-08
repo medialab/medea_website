@@ -162,9 +162,9 @@ drive.start().then(function logic() {
   // cycle through narratives folder to get files (one narrative per google doc)
   for(var i=0; i<narratives.length; i++) {
     console.log();
-    if(narratives[i].slug != 'ipcc') {
-      continue
-    }
+    // if(narratives[i].slug != 'ipcc') {
+    //   continue
+    // }
 
 
     if (pagesInfoIndex[narratives[i].slug] === undefined)
@@ -198,9 +198,9 @@ drive.start().then(function logic() {
   // cycle through narratives folder to get files (one narrative per google doc)
   for(var i=0; i<narratives.length; i++) {
     console.log();
-    if(narratives[i].slug != 'ipcc') {
-      continue
-    }
+    // if(narratives[i].slug != 'ipcc') {
+    //   continue
+    // }
 
     console.log(narratives[i].slug);
     fs.existsSync(CONTENTS_PATH + '/' + narratives[i].slug) || fs.mkdirSync(CONTENTS_PATH +'/' + narratives[i].slug);

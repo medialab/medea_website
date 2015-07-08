@@ -8,6 +8,7 @@ sublime.sublime*
 sublime
 
 app/contents/ipcc/
+app/contents/unfccc/
 app/contents/*.json
 
 dist

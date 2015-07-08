@@ -25,8 +25,8 @@ angular.module('driveoutApp.home', [])
       $scope.unsubscribeContentListener();
     }
     $scope.content = contentHome.data;
-    $scope.contentStudies = {ipcc: contentIPCC.data};
-    // $scope.contentUNFCCC = contentUNFCCC.data;
+    $scope.contentStudies = {ipcc: contentIPCC.data, unfccc: contentUNFCCC.data};
+    console.log(contentUNFCCC.data)
     $scope.$parent.page = {};
 
     $scope.$watch('routes', function(r){

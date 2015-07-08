@@ -44,7 +44,7 @@ angular
             return FilesFactory.get({path: 'ipcc/mapping-the-organizational-dynamics-of-the-ipcc'});
           },
           contentUNFCCC: function(FilesFactory) {
-            // return FilesFactory.get({path: 'unfccc/introduction'});
+            return FilesFactory.get({path: 'unfccc/introduction-and-methodology'});
           },
           scrollToStoryLines: function() {
             return false;
@@ -62,7 +62,7 @@ angular
             return FilesFactory.get({path: 'ipcc/mapping-the-organizational-dynamics-of-the-ipcc'});
           },
           contentUNFCCC: function(FilesFactory) {
-            // return FilesFactory.get({path: 'unfccc/introduction'});
+            return FilesFactory.get({path: 'unfccc/introduction-and-methodology'});
           },
           scrollToStoryLines: function() {
             return true;
@@ -129,6 +129,15 @@ angular
         resolve: {
           content : function ($route, FilesFactory) {
             return FilesFactory.get({path: 'ipcc/introduction'});
+          }
+        }
+      })
+      .when('/unfccc/the-thematic-space-of-negotiations', {
+        templateUrl: 'views/page.html',
+        controller: 'PageCtrl', // handle the items loading
+        resolve: {
+          content : function ($route, FilesFactory) {
+            return FilesFactory.get({path: 'unfccc/the-thematic-space-of-negotiations'});
           }
         }
       })
