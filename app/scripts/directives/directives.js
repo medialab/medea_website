@@ -25,6 +25,7 @@ angular.module('driveoutApp.directives', [
   'driveoutApp.directives.pdfconclusion',
   'driveoutApp.directives.stackedwgsbyar',
   'driveoutApp.directives.stackedwgsbyarcountryvstotal',
+  'driveoutApp.directives.stackedwgsbyarcavsnonca',
   'driveoutApp.directives.lastngrepeat',
   'driveoutApp.directives.gexfinstitutions',
   'driveoutApp.directives.gexftestone'

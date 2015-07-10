@@ -141,9 +141,9 @@
           //padding)
           xStartPosition = margin.left + (+ar - 1) * oneARwidth,
           //Vertical starting position for the chapter bars (not the totalAR
-          //one) without the top padding
-          yStartPosition = margin.top +
-                          spaceVertiUnit + barHeight +
+          //one)
+          yStartPosition = effHeight + margin.top - margin.bottom +
+                          - barHeight -
                           nbSpaces * spaceVertiUnit;
 
       var arGroup = chart
@@ -153,6 +153,7 @@
 
       //Adds the AR top bars
       createARbar(arGroup, ar, {
+                                 effHeight: effHeight,
                                  barHeight: barHeight,
                                  margin: margin,
                                  ratio: ratioSpaceVsBar,
@@ -389,8 +390,8 @@
     chapterContainer
       .attr('transform', function(d, i) {
         return 'translate(0,' +
-              (params.yStartPosition +
-                i * (barHeight + 2 * params.spaceVertiUnit)) + ')'});
+              ((params.yStartPosition -
+                i * (barHeight + 2 * params.spaceVertiUnit))) + ')'})
     d3.selectAll('.chapterContainer')
       .on('mouseover', function(d,i) {
           drawToolTipHTML(svg, this, i, d, {trueSvgPositions: trueSvgPositions});
@@ -407,7 +408,7 @@
     var barHeight = params.barHeight;
 
     //Vertical start position
-    var yPosition = params.margin.top + barHeight*params.ratio.verti/2;
+    var yPosition = params.margin.top + params.effHeight - (params.margin.bottom + barHeight*params.ratio.verti/2)
 
     //Width of bar corresponding to all the participations worldwide
     var totalWidth = params.oneARwidth - 2 * params.spaceHoriUnit;
