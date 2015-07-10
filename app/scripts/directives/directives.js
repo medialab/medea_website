@@ -23,6 +23,7 @@ angular.module('driveoutApp.directives', [
   'driveoutApp.directives.diversityacrossroles',
   'driveoutApp.directives.section',
   'driveoutApp.directives.pdfconclusion',
+  'driveoutApp.directives.stackedwgsbyar',
   'driveoutApp.directives.lastngrepeat',
   'driveoutApp.directives.gexftestone'
   ])
