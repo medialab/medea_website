@@ -377,6 +377,18 @@
           </div>
         </div>
       </div>
+      <div class="fill-height" ng-switch-when="stackedWGsByARCountryVsTotal">
+        <div id="containerStackedWGsByAR" class="fill-height" stackedwgsbyarcountryvstotal>
+          <div id="svgContainer"></div>
+          <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+          <div collapse="isCollapsed" class="vizLegendZone">
+            <div class="topline"></div>
+            <div class="vizLegendText">
+              <h4>Distribution of author participations in the working groups: France VS Total</h4>
+            </div>
+          </div>
+        </div>
+      </div>
       <div ng-switch-default> No viz assigned here </div>
     </div>
 </div>
