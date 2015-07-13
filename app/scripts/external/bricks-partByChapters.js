@@ -164,7 +164,7 @@
                                  partTotalAR: partTotalAR,
                                  xStartPosition: xStartPosition,
                                  totalCountryAR: partCountryAR,
-                                 container: container + ' svg',
+                                 container: '#' + params.vizName,
                                  trueSvgPositions: trueSvgPositions
                                });
 
@@ -179,6 +179,7 @@
         yStartPosition: yStartPosition,
         scaleX: scaleWG,
         country: country,
+        container: '#' + params.vizName,
         trueSvgPositions: trueSvgPositions
       });
     }
@@ -188,9 +189,7 @@
     //Changes the graph title
     var vizTopContainer = d3.select('#vizTopContainer'),
         vizTitleContainer = d3.select('#vizTitleContainer'),
-        countrySelector = d3.select('select#titleCountry'),
-        downloadDataButton = d3.select('#downloadDataButton'),
-        downloadDataWidth = d3.select('#downloadDataButton img')[0][0].getAttribute('width');
+        countrySelector = d3.select('select#titleCountry');
     vizTopContainer
       .style('width', chartBbox.width + 'px');
     vizTitleContainer
@@ -207,9 +206,7 @@
       .text(function(d) { return d; })
 
     countrySelector
-      .style('margin-left', 10 + 'px')
-      .style('top', -1 + 'px')
-
+      .style('width', country.length * 9 + 'px')
       // .style('left', margin.left + 2 * spaceHoriUnit + chartBbox.width/2 + 80 + 'px')
       // .style('top', margin.top/2 - 1+ 'px')
       .selectAll('option')
@@ -222,14 +219,10 @@
     var self = this;
     countrySelector
       .on('change', function() {
-        self.updateData(container, this.options[this.selectedIndex].text);
+        self.updateData(container, this.options[this.selectedIndex].text)
+        countrySelector.style(
+          'width', this.options[this.selectedIndex].text.length * 9 + 'px');
       });
-
-    downloadDataButton
-      .style('left', chartBbox.x +
-                     chartBbox.width -
-                     downloadDataWidth + 'px')
-      .style('top', margin.top/2.5 + 'px');
   }
 
   //Triggers the drawing of the different WG of an AR
@@ -317,6 +310,7 @@
         xStartPosition: params.xStartPosition,
         yStartPosition: params.yStartPosition,
         xPosition: xPositions[i],
+        container: params.container,
         widthTotalBar: widthTotalBars[wg],
         trueSvgPositions: params.trueSvgPositions
       });
@@ -394,7 +388,7 @@
                 i * (barHeight + 2 * params.spaceVertiUnit))) + ')'})
     d3.selectAll('.chapterContainer')
       .on('mouseover', function(d,i) {
-          drawToolTipHTML(svg, this, i, d, {trueSvgPositions: trueSvgPositions});
+          drawToolTipHTML(svg, this, i, d, {container: params.container});
         })
         .on('mouseleave', function(d,i) {
           removeToolTip(svg, this);
@@ -442,6 +436,14 @@
       .attr('height', barHeight)
       .attr('width', countryBarWidth);
 
+    group.append('text')
+      .attr('class', 'barTitle')
+      .attr('x', xPosition + totalWidth/2)
+      .attr('y', yPosition + barHeight + 6* params.ratio.verti * barHeight)
+      .attr('text-anchor', 'middle')
+      .attr('alignment-baseline', 'hanging')
+      .text('AR ' + ar);
+
     d3.select('#ARparticipations' + ar)
       .on('mouseover', function(d,i) {
           var data = {
@@ -450,7 +452,7 @@
             totalCountryAR: params.totalCountryAR,
             partTotalAR: params.partTotalAR
           }
-          drawToolTipHTML(params.container, this, i, data, {trueSvgPositions: trueSvgPositions});
+          drawToolTipHTML(params.container, this, i, data, {container: params.container});
       })
       .on('mouseleave', function(d,i) {
         removeToolTip(params.container, this);
@@ -470,12 +472,13 @@
   }
 
   function drawToolTipHTML(component, bar, id, data, complementary) {
+    var trueSvgPositions = document.getElementById(complementary.container.replace('#',''))
+                        .getBoundingClientRect();
     var country = data.country,
         ar = data.arNumber,
         wg = data.wgNumber,
         totalCountryAR = data.totalCountryAR,
-        partTotalAR =  data.partTotalAR,
-        trueSvgPositions = complementary.trueSvgPositions;
+        partTotalAR =  data.partTotalAR;
 
     //Remove the possibly existing tooltip
     d3.select('#tooltipContainer').remove();
@@ -549,11 +552,11 @@
       .style('height', 0)
       .style('border-left', arrowSide + 'px solid transparent')
       .style('border-right', arrowSide + 'px solid transparent')
-      .style('border-top', arrowSide + 'px solid #fff3e4')
+      .style('border-top', arrowSide + 'px solid rgba(51, 97, 109, 0.8)')
       .style('left', boundingRectBar.x +
                      boundingRectBar.width/2 -
                      arrowSide + trueSvgPositions.left + 'px')
-      .style('top', boundingRectBar.y + trueSvgPositions.top + trueY - arrowSide + 'px')
+      .style('top', boundingRectBar.y + trueSvgPositions.top + trueY - arrowSide + 2 + 'px')
 
 
     //Text in the tooltip horizontal alignement if out of the svg on the right

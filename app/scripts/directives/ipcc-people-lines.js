@@ -12,7 +12,7 @@ angular.module('driveoutApp.directives.peoplelines', [])
       restrict: 'EA',
       scope: {},
       link: function postLink(scope, element, attrs) {
-        var elementwidth = element.width() * 9.8/10,
+        var elementwidth = element.width() * 9.5/10,
             opts = '',
             select = document.querySelector('#lines-countries-choice'),
             sort = document.querySelector('#lines-countries-order'),
@@ -28,7 +28,12 @@ angular.module('driveoutApp.directives.peoplelines', [])
 
           select.onchange = sort.onchange = function(e) {
             viz.load_country(select.value, "contents//data/people-countries", function() {
-              viz.draw_country("#lines-countries-viz", select.value, sort.value, elementwidth);
+              viz.draw_country("#lines-countries-viz", select.value, sort.value,
+                {
+                  width: elementwidth,
+                  lineHeight: 15,
+                  lineMargin: {top: 2, bottom: 2, left: 0, right: 0}
+                });
             });
           };
           select.onchange();

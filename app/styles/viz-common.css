@@ -12,6 +12,14 @@ rect {
   shape-rendering: crispEdges;
 }
 select {
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: 0;
+}
+select#currentAR {
   position: relative;
   font-size: 12px;
   width: 30px;
@@ -20,12 +28,6 @@ select {
   color: #33616D;
   padding-top: 2px;
   padding-bottom: 2px;
-  background: transparent;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: none;
-  border: 0;
   z-index: 2 !important;
 }
 .selectIcon {
@@ -102,57 +104,49 @@ select {
   width: 100%;
   text-align: center;
 }
-#downloadDataButton, #vizTitleContainer, #titleCountry {
-  position: absolute;
-}
-#titleCountry {
-  border: none;
-  font-size: 14px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 2px 2px 2px 10px;
-  background: transparent
-              url('../media/bricks-partByChapters/expand22.png')
-              no-repeat left center;
-  outline: none;
-  z-index: 1;
-}
+
 .participationTotalARbar{
-  fill: #9B9490;
+  fill: #33616D;
+  opacity: 0.5;
 }
 .participationCountryARbar {
-  fill: #4F4743;
+  fill: #33616D;
 }
 
 .totalWG1{
-  fill: #F5ACAC;
+  fill: #766aa4;
+  opacity: 0.5;
 }
 .totalWG2 {
-  fill: #A5BADA;
+  fill: #cccf5f;
+  opacity: 0.5;
 }
 .totalWG3 {
-  fill: #9ED099;
+  fill: #44a3c7;
+  opacity: 0.5;
 }
 
 .phantomWG1{
-  fill: #F4E7E7;
+  fill: #766aa4;
+  opacity: 0.5;
 }
 .phantomWG2 {
-  fill: #EDF1F5;
+  fill: #cccf5f;
+  opacity: 0.5;
 }
 .phantomWG3 {
-  fill: #E2F4DF;
+  fill: #44a3c7;
+  opacity: 0.5;
 }
 
 .partialWG1 {
-  fill: #9B2222;
+  fill: #766aa4;
 }
 .partialWG2 {
-  fill: #214881;
+  fill: #cccf5f;
 }
 .partialWG3 {
-  fill: #1E9016;
+  fill: #44a3c7;
 }
 
 .nbOnDarkBar {
@@ -167,8 +161,10 @@ select {
 }
 
 #bricksTooltipText{
-  background: #fff3e4;
-  font-size: 12px;
+  background: rgba(51, 97, 109, 0.8);
+  color: white;
+  font: 12px 'Raleway';
+  line-height: 16px;
 }
 
 /*********************************************************************
@@ -317,4 +313,14 @@ select {
 
 .respRole {
   opacity: 0.5;
+}
+/*********************************************************************
+ *************************** IPCC people lines
+ *********************************************************************/
+.ipccPeopleLinesTooltipText {
+  background-color: rgba(51, 97, 109, 0.92);
+}
+.ipccPeopleLinesTooltipText li {
+  margin: 0px 5px 0px -5px;
+  font-size: 12px;
 }
