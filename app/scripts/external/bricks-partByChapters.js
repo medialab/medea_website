@@ -113,8 +113,7 @@
         //Unitary space between 2 bars
         spaceVertiUnit = 1;
 
-    var trueSvgPositions = document.getElementById(container.replace('#',''))
-                        .getBoundingClientRect();
+    var trueSvgPositions = document.getElementById(container.replace('#','')).getBoundingClientRect();
 
     var chart = d3.select(container + ' svg')
 
@@ -144,7 +143,7 @@
           //one)
           yStartPosition = effHeight + margin.top - margin.bottom +
                           - barHeight -
-                          nbSpaces * spaceVertiUnit;
+                          9 * spaceVertiUnit;
 
       var arGroup = chart
                       .append('g')
@@ -160,6 +159,7 @@
                                  country: country,
                                  oneARwidth: oneARwidth,
                                  spaceHoriUnit: spaceHoriUnit,
+                                 spaceVertiUnit: spaceVertiUnit,
                                  scaleX: scaleARX,
                                  partTotalAR: partTotalAR,
                                  xStartPosition: xStartPosition,
@@ -421,7 +421,7 @@
     var barHeight = params.barHeight;
 
     //Vertical start position
-    var yPosition = params.margin.top + params.effHeight - (params.margin.bottom + barHeight*params.ratio.verti/2)
+    var yPosition = params.margin.top + params.effHeight - (params.margin.bottom + 5*params.spaceVertiUnit)
 
     //Width of bar corresponding to all the participations worldwide
     var totalWidth = params.oneARwidth - 2 * params.spaceHoriUnit;
@@ -458,7 +458,7 @@
     group.append('text')
       .attr('class', 'barTitle')
       .attr('x', xPosition + totalWidth/2)
-      .attr('y', yPosition + barHeight + 6* params.ratio.verti * barHeight)
+      .attr('y', yPosition + barHeight + 5 * params.spaceVertiUnit)
       .attr('text-anchor', 'middle')
       .attr('alignment-baseline', 'hanging')
       .text('AR ' + ar);

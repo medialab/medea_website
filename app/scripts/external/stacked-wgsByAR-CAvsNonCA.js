@@ -213,6 +213,7 @@
           .style('dominant-baseline', 'hanging')
           .text(function(d, i) {return 'AR ' + d;})
 
+      d3.select('#verticalAxis').remove();
       //Vertical axis legend
       d3.select(container + ' svg')
         .append('g')
@@ -229,6 +230,55 @@
                 return d;
               })
               .orient('left'));
+
+      //Changes the graph title
+      var vizTitleContainer = d3.select('#vizTitleContainer'),
+          countrySelector = d3.select('select#titleCountry');
+
+      //small trick to have the select box always at the good size
+      vizTitleContainer.append('div')
+        .attr('id','measureTextDiv')
+        .style('position', 'absolute')
+        .style('font', '12px "Raleway"')
+        .text(country);
+      var countryTextSize = d3.select('#measureTextDiv')[0][0].getBoundingClientRect().width;
+      d3.select('#measureTextDiv').remove();
+
+      //Build the string containing the country options
+      countrySelector
+        .selectAll('option')
+        .data(Object.keys(this.data).sort())
+        .enter()
+        .append('option')
+        .attr('value', function(d) { return d; })
+        .text(function(d) { return d; })
+
+      countrySelector
+        .style('width', countryTextSize + 25 + 'px')
+        .selectAll('option')
+        .data(Object.keys(this.data).sort())
+        .attr('selected', function(d) {
+          return d === country ? '' : null;
+        });
+
+      var self = this;
+      countrySelector
+      .on('change', function() {
+        self.updateData(container, this.options[this.selectedIndex].text, params)
+
+        //small trick to have the select box always at the good size
+        vizTitleContainer.append('div')
+          .attr('id','measureTextDiv')
+          .style('position', 'absolute')
+          .style('font', '12px "Raleway"')
+          .text(this.options[this.selectedIndex].text);
+
+        var countryTextSize = d3.select('#measureTextDiv')[0][0].getBoundingClientRect().width;
+        d3.select('#measureTextDiv').remove();
+        countrySelector.style(
+          'width', countryTextSize + 25 + 'px');
+      });
+
       wgGroups.exit().remove();
       wgBars.exit().remove();
   };

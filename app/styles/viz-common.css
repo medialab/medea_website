@@ -20,15 +20,11 @@ select {
   appearance: none;
   outline: none;
   border: 0;
-  z-index: 2 !important;
 }
 select#currentAR {
   position: relative;
-  font-size: 12px;
   width: 30px;
   text-transform: uppercase;
-  font-weight: 700;
-  color: #33616D;
   padding-top: 2px;
   padding-bottom: 2px;
 }
@@ -36,7 +32,7 @@ select#currentAR {
   pointer-events: none;
   color: white;
   position: relative;
-  left: -18px;
+  left: -15px;
   z-index: 0 !important;
 }
 .invisible {

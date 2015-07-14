@@ -17,7 +17,7 @@ angular.module('driveoutApp.directives.bricks', [])
         bricks.load('contents/data/bricks-partByChapters/participations.json', function() {
           var width = elementwidth,
               height = element.height()/1.1,
-              margin = {top: 40, bottom: 18, left: 40, right: 40};
+              margin = {top: 40, bottom: 15, left: 40, right: 40};
 
           bricks.drawViz('#bricksSvgContainer',
             {
@@ -30,6 +30,27 @@ angular.module('driveoutApp.directives.bricks', [])
             'position': 'absolute',
             'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
             'margin-bottom': 30 + 'px'});
+          window.addEventListener('resize', function() {
+            if (element.height() !== 0){
+              var elementwidth = element.width() * 9.8/10;
+              var width = elementwidth,
+                height = element.height()/1.1,
+                margin = {top: 40, bottom: 15, left: 40, right: 40};
+
+              bricks.drawViz('#bricksSvgContainer',
+                {
+                  height: height,
+                  width: width,
+                  vizName: 'viviz',
+                  margin: margin
+                });
+              $('#bricksSvgContainer svg').css({
+                'position': 'absolute',
+                'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+                'margin-bottom': 30 + 'px'
+              });
+            }
+          });
       });
     }
   };

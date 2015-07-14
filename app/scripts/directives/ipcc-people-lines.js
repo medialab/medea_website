@@ -34,9 +34,20 @@ angular.module('driveoutApp.directives.peoplelines', [])
                   lineHeight: 15,
                   lineMargin: {top: 2, bottom: 2, left: 0, right: 0}
                 });
+              window.addEventListener('resize', function() {
+                elementwidth = element.width() * 9.5/10;
+                viz.draw_country("#lines-countries-viz", select.value, sort.value,
+                {
+                  width: elementwidth,
+                  lineHeight: 15,
+                  lineMargin: {top: 2, bottom: 2, left: 0, right: 0}
+                });
+              });
             });
           };
           select.onchange();
+
+
         });
 
       }
