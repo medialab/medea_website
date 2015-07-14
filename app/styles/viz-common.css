@@ -12,12 +12,15 @@ rect {
   shape-rendering: crispEdges;
 }
 select {
-  background: transparent;
+  background: #33616D;
+  color: white;
+  font: 12px 'Raleway';
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   outline: none;
   border: 0;
+  z-index: 2 !important;
 }
 select#currentAR {
   position: relative;
@@ -28,9 +31,10 @@ select#currentAR {
   color: #33616D;
   padding-top: 2px;
   padding-bottom: 2px;
-  z-index: 2 !important;
 }
 .selectIcon {
+  pointer-events: none;
+  color: white;
   position: relative;
   left: -18px;
   z-index: 0 !important;

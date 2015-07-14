@@ -17,7 +17,7 @@ angular.module('driveoutApp.directives.bricks', [])
         bricks.load('contents/data/bricks-partByChapters/participations.json', function() {
           var width = elementwidth,
               height = element.height()/1.1,
-              margin = {top: 40, bottom: 16, left: 40, right: 40};
+              margin = {top: 40, bottom: 18, left: 40, right: 40};
 
           bricks.drawViz('#bricksSvgContainer',
             {

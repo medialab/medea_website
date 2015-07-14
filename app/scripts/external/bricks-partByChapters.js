@@ -196,6 +196,15 @@
       // .style('left', chartBbox.x + spaceHoriUnit /2  + 'px')
       .style('top', margin.top/2.5 + 'px');
 
+    //small trick to have the select box always at the good size
+    vizTitleContainer.append('div')
+      .attr('id','measureTextDiv')
+      .style('position', 'absolute')
+      .style('font', '12px "Raleway"')
+      .text(country);
+    var countryTextSize = d3.select('#measureTextDiv')[0][0].getBoundingClientRect().width;
+    d3.select('#measureTextDiv').remove();
+
     //Build the string containing the country options
     countrySelector
       .selectAll('option')
@@ -206,7 +215,7 @@
       .text(function(d) { return d; })
 
     countrySelector
-      .style('width', country.length * 9 + 'px')
+      .style('width', countryTextSize + 25 + 'px')
       // .style('left', margin.left + 2 * spaceHoriUnit + chartBbox.width/2 + 80 + 'px')
       // .style('top', margin.top/2 - 1+ 'px')
       .selectAll('option')
@@ -220,8 +229,18 @@
     countrySelector
       .on('change', function() {
         self.updateData(container, this.options[this.selectedIndex].text)
+
+        //small trick to have the select box always at the good size
+        vizTitleContainer.append('div')
+          .attr('id','measureTextDiv')
+          .style('position', 'absolute')
+          .style('font', '12px "Raleway"')
+          .text(this.options[this.selectedIndex].text);
+
+        var countryTextSize = d3.select('#measureTextDiv')[0][0].getBoundingClientRect().width;
+        d3.select('#measureTextDiv').remove();
         countrySelector.style(
-          'width', this.options[this.selectedIndex].text.length * 9 + 'px');
+          'width', countryTextSize + 25 + 'px');
       });
   }
 
