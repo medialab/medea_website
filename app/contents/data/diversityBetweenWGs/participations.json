@@ -1,0 +1,122 @@
+{
+  "1": {
+    "regions": {
+      "NAC": {
+        "regionName": "North America, Central America and the Caribbean",
+        "participation": "1504",
+        "percentage": "41.6044"
+      },
+      "EUR": {
+        "regionName": "Europe",
+        "participation": "1495",
+        "percentage": "41.3555"
+      },
+      "ASI": {
+        "regionName": "Asia",
+        "participation": "248",
+        "percentage": "6.8603"
+      },
+      "SWP": {
+        "regionName": "South-West Pacific",
+        "participation": "245",
+        "percentage": "6.7773"
+      },
+      "AFR": {
+        "regionName": "Africa",
+        "participation": "60",
+        "percentage": "1.6598"
+      },
+      "SAM": {
+        "regionName": "South America",
+        "participation": "53",
+        "percentage": "1.4661"
+      },
+      "WMONA": {
+        "regionName": "Non Available",
+        "participation": "10",
+        "percentage": "0.2766"
+      }
+    },
+    "total": "3615"
+  },
+  "2": {
+    "regions": {
+      "NAC": {
+        "regionName": "North America, Central America and the Caribbean",
+        "participation": "945",
+        "percentage": "30.5430"
+      },
+      "EUR": {
+        "regionName": "Europe",
+        "participation": "941",
+        "percentage": "30.4137"
+      },
+      "SWP": {
+        "regionName": "South-West Pacific",
+        "participation": "327",
+        "percentage": "10.5688"
+      },
+      "ASI": {
+        "regionName": "Asia",
+        "participation": "306",
+        "percentage": "9.8901"
+      },
+      "WMONA": {
+        "regionName": "Non Available",
+        "participation": "223",
+        "percentage": "7.2075"
+      },
+      "AFR": {
+        "regionName": "Africa",
+        "participation": "211",
+        "percentage": "6.8197"
+      },
+      "SAM": {
+        "regionName": "South America",
+        "participation": "141",
+        "percentage": "4.5572"
+      }
+    },
+    "total": "3094"
+  },
+  "3": {
+    "regions": {
+      "EUR": {
+        "regionName": "Europe",
+        "participation": "586",
+        "percentage": "39.4347"
+      },
+      "NAC": {
+        "regionName": "North America, Central America and the Caribbean",
+        "participation": "446",
+        "percentage": "30.0135"
+      },
+      "ASI": {
+        "regionName": "Asia",
+        "participation": "229",
+        "percentage": "15.4105"
+      },
+      "SAM": {
+        "regionName": "South America",
+        "participation": "78",
+        "percentage": "5.2490"
+      },
+      "AFR": {
+        "regionName": "Africa",
+        "participation": "73",
+        "percentage": "4.9125"
+      },
+      "SWP": {
+        "regionName": "South-West Pacific",
+        "participation": "63",
+        "percentage": "4.2396"
+      },
+      "WMONA": {
+        "regionName": "Non Available",
+        "participation": "11",
+        "percentage": "0.7402"
+      }
+    },
+    "total": "1486"
+  }
+}
