@@ -124,7 +124,7 @@ select#currentAR {
   fill: #33616D;
   opacity: 0.5;
 }
-.participationCountryARbar {
+.participationCountryARbar, .participationRegionARbar {
   fill: #33616D;
 }
 
