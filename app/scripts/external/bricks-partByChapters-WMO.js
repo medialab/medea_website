@@ -142,9 +142,9 @@
           xStartPosition = margin.left + (+ar - 1) * oneARwidth,
           //Vertical starting position for the chapter bars (not the totalAR
           //one) without the top padding
-          yStartPosition = margin.top +
-                          spaceVertiUnit + barHeight +
-                          nbSpaces * spaceVertiUnit;
+          yStartPosition = effHeight + margin.top - margin.bottom +
+                          - barHeight -
+                          9 * spaceVertiUnit;
 
       var arGroup = chart
                       .append('g')
@@ -153,17 +153,19 @@
 
       //Adds the AR top bars
       createARbar(arGroup, ar, {
+                                 effHeight: effHeight,
                                  barHeight: barHeight,
                                  margin: margin,
                                  ratio: ratioSpaceVsBar,
                                  region: region,
                                  oneARwidth: oneARwidth,
                                  spaceHoriUnit: spaceHoriUnit,
+                                 spaceVertiUnit: spaceVertiUnit,
                                  scaleX: scaleARX,
                                  partTotalAR: partTotalAR,
                                  xStartPosition: xStartPosition,
                                  totalRegionAR: partRegionAR,
-                                 container: container + ' svg',
+                                 container: '#' + params.vizName,
                                  trueSvgPositions: trueSvgPositions
                                });
 
@@ -176,6 +178,7 @@
         spaceVertiUnit: spaceVertiUnit,
         xStartPosition: xStartPosition,
         yStartPosition: yStartPosition,
+        container: '#' + params.vizName,
         scaleX: scaleWG,
         region: region,
         trueSvgPositions: trueSvgPositions
@@ -187,9 +190,7 @@
     //Changes the graph title
     var vizTopContainer = d3.select('#vizTopContainer'),
         vizTitleContainer = d3.select('#vizTitleContainer'),
-        regionSelector = d3.select('select#titleRegion'),
-        downloadDataButton = d3.select('#downloadDataButton'),
-        downloadDataWidth = d3.select('#downloadDataButton img')[0][0].getAttribute('width');
+        regionSelector = d3.select('select#titleRegion');
     vizTopContainer
       .style('width', chartBbox.width + 'px');
     vizTitleContainer
@@ -224,11 +225,6 @@
         self.updateData(container, this.options[this.selectedIndex].text);
       });
 
-    downloadDataButton
-      .style('left', chartBbox.x +
-                     chartBbox.width -
-                     downloadDataWidth + 'px')
-      .style('top', margin.top/2.5 + 'px');
   }
 
   //Triggers the drawing of the different WG of an AR
@@ -316,6 +312,7 @@
         xStartPosition: params.xStartPosition,
         yStartPosition: params.yStartPosition,
         xPosition: xPositions[i],
+        container: params.container,
         widthTotalBar: widthTotalBars[wg],
         trueSvgPositions: params.trueSvgPositions
       });
@@ -390,11 +387,11 @@
     chapterContainer
       .attr('transform', function(d, i) {
         return 'translate(0,' +
-              (params.yStartPosition +
-                i * (barHeight + 2 * params.spaceVertiUnit)) + ')'});
+              ((params.yStartPosition -
+                i * (barHeight + 2 * params.spaceVertiUnit))) + ')'});
     d3.selectAll('.chapterContainer')
       .on('mouseover', function(d,i) {
-          drawToolTipHTML(svg, this, i, d, {trueSvgPositions: trueSvgPositions});
+          drawToolTipHTML(svg, this, i, d, {container: params.container});
         })
         .on('mouseleave', function(d,i) {
           removeToolTip(svg, this);
@@ -408,7 +405,7 @@
     var barHeight = params.barHeight;
 
     //Vertical start position
-    var yPosition = params.margin.top + barHeight*params.ratio.verti/2;
+    var yPosition = params.margin.top + params.effHeight - (params.margin.bottom + 5*params.spaceVertiUnit);
 
     //Width of bar corresponding to all the participations worldwide
     var totalWidth = params.oneARwidth - 2 * params.spaceHoriUnit;
@@ -441,6 +438,13 @@
       .attr('y', yPosition)
       .attr('height', barHeight)
       .attr('width', regionBarWidth);
+    group.append('text')
+      .attr('class', 'barTitle')
+      .attr('x', xPosition + totalWidth/2)
+      .attr('y', yPosition + barHeight + 5 * params.spaceVertiUnit)
+      .attr('text-anchor', 'middle')
+      .attr('alignment-baseline', 'hanging')
+      .text('AR ' + ar);
 
     d3.select('#ARparticipations' + ar)
       .on('mouseover', function(d,i) {
@@ -450,7 +454,7 @@
             totalRegionAR: params.totalRegionAR,
             partTotalAR: params.partTotalAR
           }
-          drawToolTipHTML(params.container, this, i, data, {trueSvgPositions: trueSvgPositions});
+          drawToolTipHTML(params.container, this, i, data, {container: params.container});
       })
       .on('mouseleave', function(d,i) {
         removeToolTip(params.container, this);
@@ -470,12 +474,13 @@
   }
 
   function drawToolTipHTML(component, bar, id, data, complementary) {
+    var trueSvgPositions = document.getElementById(complementary.container.replace('#',''))
+                        .getBoundingClientRect();
     var region = data.region,
         ar = data.arNumber,
         wg = data.wgNumber,
         totalRegionAR = data.totalRegionAR,
-        partTotalAR =  data.partTotalAR,
-        trueSvgPositions = complementary.trueSvgPositions;
+        partTotalAR =  data.partTotalAR;
 
     //Remove the possibly existing tooltip
     d3.select('#tooltipContainer').remove();
@@ -549,11 +554,11 @@
       .style('height', 0)
       .style('border-left', arrowSide + 'px solid transparent')
       .style('border-right', arrowSide + 'px solid transparent')
-      .style('border-top', arrowSide + 'px solid #fff3e4')
+      .style('border-top', arrowSide + 'px solid rgba(51, 97, 109, 0.8)')
       .style('left', boundingRectBar.x +
                      boundingRectBar.width/2 -
                      arrowSide + trueSvgPositions.left + 'px')
-      .style('top', boundingRectBar.y + trueSvgPositions.top + trueY - arrowSide + 'px')
+      .style('top', boundingRectBar.y + trueSvgPositions.top + trueY - arrowSide + 2 + 'px')
 
 
     //Text in the tooltip horizontal alignement if out of the svg on the right

@@ -421,7 +421,7 @@
     var barHeight = params.barHeight;
 
     //Vertical start position
-    var yPosition = params.margin.top + params.effHeight - (params.margin.bottom + 5*params.spaceVertiUnit)
+    var yPosition = params.margin.top + params.effHeight - (params.margin.bottom + 5*params.spaceVertiUnit);
 
     //Width of bar corresponding to all the participations worldwide
     var totalWidth = params.oneARwidth - 2 * params.spaceHoriUnit;

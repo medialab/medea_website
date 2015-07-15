@@ -268,20 +268,15 @@
         </div>
       </div>
       <div class="fill-height" ng-switch-when="participationByChaptersWMO">
-        <div id="containerBricks" participationbychapterswmo>
-          <div id="vizTopContainer">
-            <span id="vizTitleContainer">
-             Participations by chapter:
-             <select name="regionSelector" id="titleRegion"></select>
-            </span>
-            <a href="contents/data/bricks-partByChapters-WMO/participations.json" id="downloadDataButton" download>
-              <img type="image/svg+xml"
-                      ng-src="media/bricks-partByChapters/downloadData.svg"
-                      width="22"
-                      ></img>
-            </a>
-          </div>
+        <div id="containerBricks" class="fill-height" participationbychapterswmo>
           <div id="bricksSvgContainer"></div>
+          <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+          <div collapse="isCollapsed" class="vizLegendZone">
+            <div class="topline"></div>
+            <div class="vizLegendText">
+              <h4 id="vizTitleContainer">Participations by chapter <select name="regionSelector" id="titleRegion"></select><i class="fa fa-chevron-down selectIcon"></i></h4>
+            </div>
+          </div>
         </div>
       </div>
       <div class="fill-height scrollable" ng-switch-when="franceIntroImage">

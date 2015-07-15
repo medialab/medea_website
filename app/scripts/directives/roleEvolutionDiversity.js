@@ -32,6 +32,7 @@ angular.module('driveoutApp.directives.roleevolutiondiversity', [])
           });
           $('#container svg').css({
             'position': 'absolute',
+            'left': (element.width() - $('#container svg').width())/2 +'px',
             'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
             'margin-bottom': 30 + 'px'});
 
@@ -50,6 +51,7 @@ angular.module('driveoutApp.directives.roleevolutiondiversity', [])
                 });
               $('#container svg').css({
                 'position': 'absolute',
+                'left': (element.width() - $('#container svg').width())/2 +'px',
                 'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
                 'margin-bottom': 30 + 'px'
               });

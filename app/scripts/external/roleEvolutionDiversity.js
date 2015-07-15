@@ -40,7 +40,6 @@
           self.data.push(object);
         }
       }
-      console.log('dataaaaaa', self.data);
 
       if (typeof callback === 'function')
         callback();
@@ -94,6 +93,7 @@
       .x(function(d) { console.log('line', d); return x(d.AR); })
       .y(function(d) { return y(d.percentage); });
 
+    d3.select(container + ' svg').remove();
     // Create svg
     var svg = d3.select(container).append("svg")
         .attr('width', width)
@@ -132,10 +132,13 @@
         .attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')')
         .call(yAxis)
       .append("text")
+        .attr('id', 'yAxisLegend')
         .attr("transform", "rotate(-90)")
-        .attr("y", 6)
-        .attr("dy", ".71em")
-        .style("text-anchor", "end")
+        .attr("x", -(chartTrueHeight/2))
+        .attr('y', -(margin.left/1.3))
+        .style('alignment-baseline', 'baseline')
+        // .attr("dy", ".71em")
+        .style("text-anchor", "middle")
         .text("Participations (%)");
 
     // Add lines to svg
@@ -151,12 +154,12 @@
         .style("stroke", function(d) { return colorRange[d.Role]; })
         .style("opacity", 0.6);
 
-    Role.append("text")
-        .datum(function(d) { return {Role: d.Role, value: d.values[d.values.length - 1]}; })
-        .attr("transform", function(d) { return "translate(" + (margin.left + x(d.value.AR)) + "," + (margin.top + y(d.value.percentage)) + ")"; })
-        .attr("x", 3)
-        .attr("dy", ".35em")
-        .text(function(d) { return d.Role; });
+    // Role.append("text")
+    //     .datum(function(d) { return {Role: d.Role, value: d.values[d.values.length - 1]}; })
+    //     .attr("transform", function(d) { return "translate(" + (margin.left + x(d.value.AR)) + "," + (margin.top + y(d.value.percentage)) + ")"; })
+    //     .attr("x", 3)
+    //     .attr("dy", ".35em")
+    //     .text(function(d) { return d.Role; });
 
     // Add points to svg
     var circle = svg.selectAll(".circle")

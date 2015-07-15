@@ -68,6 +68,21 @@ select#currentAR {
   margin: auto;
   height: 100%;
 }
+#xAxisLegend, #yAxisLegend {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-family: 'Raleway';
+  /*font-family: 'Merriweather-Regular';*/
+  letter-spacing: 1px;
+  font-weight: 700;
+  fill: #33616D;
+}
+.title {
+  font-size: 11px;
+  letter-spacing: 1px;
+  fill: #33616D;
+  text-transform: uppercase;
+}
 
 /*********************************************************************
  *************************** StackedChart
@@ -186,18 +201,6 @@ select#currentAR {
   text-transform: uppercase;
 }
 
-.powerLawHisto .title {
-  font-size: 14px;
-  letter-spacing: 1px;
-  fill: #33616D;
-}
-.powerLawHisto #xAxisLegend, .powerLawHisto #yAxisLegend {
-  font-size: 11px;
-  /*font-family: 'Merriweather-Regular';*/
-  letter-spacing: 1px;
-  font-weight: 700;
-  fill: #33616D;
-}
 
 #powerLawTooltip rect, #powerLawTooltip path, .powerLawHisto .hoverBar{
   fill: rgba(51, 97, 109, 0.8);

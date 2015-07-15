@@ -10,7 +10,6 @@ angular.module('driveoutApp.directives', [
   'driveoutApp.directives.peoplelines',
   'driveoutApp.directives.wenn',
   'driveoutApp.directives.partcountrybridgenonbridge',
-  'driveoutApp.directives.linechart',
   'driveoutApp.directives.partratehisto',
   'driveoutApp.directives.partratehistototal',
   'driveoutApp.directives.roledistribstacked',

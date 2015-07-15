@@ -14,6 +14,7 @@
     this.defaultWidth = 400;
     this.defaultHeight = 200;
     this.defaultLineWidth = 15;
+    this.defaultDataName = 'CA';
     this.defaultMargin = {
       top: 40,
       bottom: 40,
@@ -22,20 +23,47 @@
     };
   }
 
-  LineChart.prototype.load = function(path, callback) {
-    var self = this;
-    d3.csv(path, function(error, data) {
-      self.data = data;
-      self.data.forEach(function(d) {
+  LineChart.prototype.load = function(folderPath, callback) {
+    var self = this,
+        files = {
+          'total': 'total_participations_by_ar_wmo_region.csv',
+          'CA': 'total_participations_by_ar_wmo_region_CA.csv',
+          'others': 'total_participations_by_ar_wmo_region_withoutCA.csv'
+        },
+        percentageMax = 0;
+
+    d3.csv(folderPath + files.CA, function(error, data) {
+      self.data = {};
+      self.data.CA = data;
+      self.data.CA.forEach(function(d) {
         d.wmo         = d['WMO Symbol'];
         d.percentage  = d['% WMO Region Participations'];
+        if ((+d.percentage) > percentageMax)
+          percentageMax = (+d.percentage);
       });
 
-      self.data = self.data.filter(function(d) {
+      self.data.CA = self.data.CA.filter(function(d) {
         return d.wmo != 'WMONA';
       });
-      if (typeof callback === 'function')
-        callback();
+
+      d3.csv(folderPath + files.others, function(error, dataO) {
+        self.data.others = dataO;
+        self.data.others.forEach(function(d) {
+          d.wmo         = d['WMO Symbol'];
+          d.percentage  = d['% WMO Region Participations'];
+
+          if ((+d.percentage)> percentageMax)
+            percentageMax = (+d.percentage);
+        });
+
+        self.data.others = self.data.others.filter(function(d) {
+          return d.wmo != 'WMONA';
+        });
+        self.percentageMax = percentageMax;
+        console.log('percentageMax', percentageMax)
+        if (typeof callback === 'function')
+          callback();
+      });
     });
   };
 
@@ -43,7 +71,8 @@
     var height = params.height || this.defaultHeight,
         width = params.width || this.defaultWidth,
         title = params.title || '',
-        data = this.data,
+        dataName = params.dataName || this.defaultDataName,
+        data = this.data[dataName],
         margin = params.margin || this.defaultMargin,
         colorRange = {
           'EUR': '#1E6D75',
@@ -88,6 +117,7 @@
       .x(function(d) { console.log('line', d); return x(d.AR); })
       .y(function(d) { return y(d.percentage); });
 
+    d3.select(container + ' svg').remove();
     // Create svg
     var svg = d3.select(container).append("svg")
         .attr('width', width)
@@ -111,7 +141,7 @@
 
     y.domain([
       d3.min(continents, function(d) { return d3.min(d.values, function(e) { return +e.percentage; }); }),
-      d3.max(continents, function(d) { return d3.max(d.values, function(e) { return +e.percentage; }); })
+      this.percentageMax
     ]);
 
     // Add graph to svg
@@ -125,11 +155,22 @@
         .attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')')
         .call(yAxis)
       .append("text")
+        .attr('id', 'yAxisLegend')
         .attr("transform", "rotate(-90)")
-        .attr("y", 6)
-        .attr("dy", ".71em")
-        .style("text-anchor", "end")
+        .attr("x", -(chartTrueHeight/2))
+        .attr('y', -(margin.left/1.5))
+        .style('alignment-baseline', 'baseline')
+        // .attr("dy", ".71em")
+        .style("text-anchor", "middle")
         .text("Participations (%)");
+
+    //Viz title
+    svg.append('text')
+      .attr('x', margin.left + (chartTrueWidth / 2))
+      .attr('y', margin.top)
+      .attr('class', 'title')
+      .style('text-anchor', 'middle')
+      .text(title);
 
     // Add lines to svg
     var continent = svg.selectAll(".continent")
@@ -144,12 +185,12 @@
         .style("stroke", function(d) { return colorRange[d.wmo]; })
         .style("opacity", 0.6);
 
-    continent.append("text")
-        .datum(function(d) { return {wmo: d.wmo, value: d.values[d.values.length - 1]}; })
-        .attr("transform", function(d) { return "translate(" + (margin.left + x(d.value.AR)) + "," + (margin.top + y(d.value.percentage)) + ")"; })
-        .attr("x", 3)
-        .attr("dy", ".35em")
-        .text(function(d) { return d.wmo; });
+    // continent.append("text")
+    //     .datum(function(d) { return {wmo: d.wmo, value: d.values[d.values.length - 1]}; })
+    //     .attr("transform", function(d) { return "translate(" + (margin.left + x(d.value.AR)) + "," + (margin.top + y(d.value.percentage)) + ")"; })
+    //     .attr("x", 3)
+    //     .attr("dy", ".35em")
+    //     .text(function(d) { return d.wmo; });
 
     // Add points to svg
     var circle = svg.selectAll(".circle")
@@ -169,7 +210,7 @@
         })
         .on('mouseleave', function(d,i) {
           removeToolTipHTML(container + 'Svg', this);
-        });;
+        });
   };
 
   function removeToolTipHTML(container, bar) {

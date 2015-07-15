@@ -15,63 +15,79 @@ angular.module('driveoutApp.directives.diversityacrossroles', [])
         var elementWidth = element.width(),
             elementHeight = element.height();
         var lineChart = new LineChart();
-        lineChart.load('contents/data/diversityAcrossRoles/total_participations_by_ar_wmo_region_CA.csv', function() {
+        lineChart.load('contents/data/diversityAcrossRoles/', function() {
           var width = elementWidth/1.2,
-              height = elementHeight/2.2,
-              margin = {
-                top: 70,
-                bottom: 70,
-                left: 70,
-                right: 70
+              height = elementHeight/2.4,
+              marginTopViz = {
+                top: 20,
+                bottom: 25,
+                left: 50,
+                right: 20
+              },
+              marginBottomViz = {
+                top: 25,
+                bottom: 20,
+                left: 50,
+                right: 20
               };
           lineChart.drawChart('#visualisation1', {
+            title: 'CA',
             height: height,
             width: width,
-            margin: margin
+            margin: marginTopViz
           });
-
-          window.addEventListener('resize', function() {
-            var elementWidth = element.width(),
-                elementHeight = element.height();
-            var width = elementWidth/1.2,
-                height = elementHeight/2.2;
-            lineChart.drawChart('#visualisation1',
-              {
-                height: height,
-                width: width,
-                margin: margin
-              });
-          });
-        });
-
-        lineChart.load('contents/data/diversityAcrossRoles/total_participations_by_ar_wmo_region_withoutCA.csv', function() {
-          var width = elementWidth/1.2,
-              height = elementHeight/2.2,
-              margin = {
-                top: 70,
-                bottom: 70,
-                left: 70,
-                right: 70
-              };
           lineChart.drawChart('#visualisation2', {
+            title: 'Responsability roles',
+            dataName: 'others',
             height: height,
             width: width,
-            margin: margin
+            margin: marginBottomViz
           });
 
+          $('#visualisation1 svg').css({
+            'position': 'absolute',
+            'left': (element.width() - $('#visualisation1 svg').width())/2 +'px',
+            'margin-bottom': 30 + 'px'});
+          $('#visualisation2 svg').css({
+            'position': 'absolute',
+            'left': (element.width() - $('#visualisation2 svg').width())/2 +'px',
+            'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+            'margin-bottom': 30 + 'px'});
+
           window.addEventListener('resize', function() {
-            var elementWidth = element.width(),
-                elementHeight = element.height();
-            var width = elementWidth/1.2,
-                height = elementHeight/2.2;
-            lineChart.drawChart('#visualisation2',
-              {
+            if (element.height() !== 0) {
+              var elementWidth = element.width(),
+                  elementHeight = element.height();
+              var width = elementWidth/1.2,
+                  height = elementHeight/2.4;
+              lineChart.drawChart('#visualisation1',
+                {
+                  title: 'CA',
+                  height: height,
+                  width: width,
+                  margin: marginTopViz
+                });
+              lineChart.drawChart('#visualisation2', {
+                title: 'Responsability roles',
+                dataName: 'others',
                 height: height,
                 width: width,
-                margin: margin
+                margin: marginBottomViz
               });
+              $('#visualisation1 svg').css({
+                'position': 'absolute',
+                'left': (element.width() - $('#visualisation1 svg').width())/2 +'px',
+                'margin-bottom': 30 + 'px'});
+              $('#visualisation2 svg').css({
+                'position': 'absolute',
+                'left': (element.width() - $('#visualisation2 svg').width())/2 +'px',
+                'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+                'margin-bottom': 30 + 'px'
+              });
+            }
           });
         });
+
     }
   };
 });
