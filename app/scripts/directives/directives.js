@@ -8,6 +8,7 @@ angular.module('driveoutApp.directives', [
   'driveoutApp.directives.focus',
   'driveoutApp.directives.image',
   'driveoutApp.directives.peoplelines',
+  'driveoutApp.directives.diversityacrossar',
   'driveoutApp.directives.wenn',
   'driveoutApp.directives.partcountrybridgenonbridge',
   'driveoutApp.directives.partratehisto',

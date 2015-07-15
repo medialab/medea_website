@@ -327,3 +327,28 @@ select#currentAR {
   margin: 0px 5px 0px -5px;
   font-size: 12px;
 }
+
+/*********************************************************************
+ *************************** Stacked Region Participation By AR
+ *********************************************************************/
+.NAC {
+  fill: #44a3c7;
+}
+.EUR {
+  fill: #315b66;
+}
+.WMONA {
+  fill: #695e9f;
+}
+.SWP {
+  fill: #953a24;
+}
+.ASI {
+  fill: #d7832e;
+}
+.AFR {
+  fill: #cccf5f;
+}
+.SAM {
+  fill: #5bae66;
+}
