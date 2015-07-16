@@ -264,7 +264,6 @@ select#currentAR {
  *************************** Sigma - UFCCC
  *********************************************************************/
 .enbgraph {
-  background-color: #f8f8f8;
   height: 100%;
   position: absolute;
   width: 100%;
@@ -351,4 +350,30 @@ select#currentAR {
 }
 .SAM {
   fill: #5bae66;
+}
+
+/*********************************************************************
+ *************************** Tables
+ *********************************************************************/
+table .tableRow > td, table .tableRow > th{
+  padding-bottom: 20px;
+}
+table .tableRow > th {
+  font: 13px 'Raleway';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #33616D;
+}
+table .firstColumn {
+  font: 13px 'Raleway';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #33616D;
+}
+table .secondColumn {
+  font: 13px 'Raleway';
+  letter-spacing: 1px;
+  color: #33616D;
 }

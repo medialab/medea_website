@@ -132,6 +132,15 @@ angular
           }
         }
       })
+      .when('/unfccc/mapping-adaptation-in-climate-negotiations', {
+        templateUrl: 'views/page.html',
+        controller: 'PageCtrl', // handle the items loading
+        resolve: {
+          content : function ($route, FilesFactory) {
+            return FilesFactory.get({path: 'unfccc/introduction-and-methodology'});
+          }
+        }
+      })
       .when('/unfccc/the-thematic-space-of-negotiations', {
         templateUrl: 'views/page.html',
         controller: 'PageCtrl', // handle the items loading

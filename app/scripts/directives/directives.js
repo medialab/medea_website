@@ -29,5 +29,7 @@ angular.module('driveoutApp.directives', [
   'driveoutApp.directives.stackedwgsbyarcavsnonca',
   'driveoutApp.directives.lastngrepeat',
   'driveoutApp.directives.gexfinstitutions',
+  'driveoutApp.directives.unfccctablefive',
+  'driveoutApp.directives.unfccctablefour',
   'driveoutApp.directives.gexftestone'
   ])

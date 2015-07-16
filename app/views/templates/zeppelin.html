@@ -405,6 +405,60 @@
           </div>
         </div>
       </div>
+      <div class="fill-height scrollable" ng-switch-when="UNFCCC_intro_1">
+        <img class="imgScaled imgNotScrollable" ng-src="images/UNFCCC_Intro_1.jpg">
+        <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+        <div collapse="isCollapsed" class="vizLegendZone">
+          <div class="topline"></div>
+          <div class="vizLegendText">
+            <h4>Title to be put here</h4>
+          </div>
+        </div>
+      </div>
+      <div class="fill-height scrollable" ng-switch-when="UNFCCC_intro_2">
+        <img class="imgScaled imgNotScrollable" ng-src="images/UNFCCC_Intro_2.png">
+        <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+        <div collapse="isCollapsed" class="vizLegendZone">
+          <div class="topline"></div>
+          <div class="vizLegendText">
+            <h4>Title to be put here</h4>
+          </div>
+        </div>
+      </div>
+      <div class="fill-height fill-width" ng-switch-when="UNFCCC_intro_3">
+        <iframe class="fill-height fill-width" src="http://www.iisd.ca/vol12/"></iframe>
+      </div>
+      <div class="fill-height fill-width scrollable" ng-switch-when="UNFCCC_intro_4">
+        <div unfccctablefour></div>
+        <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+        <div collapse="isCollapsed" class="vizLegendZone">
+          <div class="topline"></div>
+          <div class="vizLegendText">
+            <h4> list of the automatically extracted terms with their different forms</h4>
+            <h4> list of the manually selected terms with their forms and frequency</h4>
+          </div>
+        </div>
+      </div>
+      <div class="fill-height fill-width scrollable" ng-switch-when="UNFCCC_intro_5">
+        <div unfccctablefive></div>
+        <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+        <div collapse="isCollapsed" class="vizLegendZone">
+          <div class="topline"></div>
+          <div class="vizLegendText">
+            <h4>Tableau des termes contenus dans chacun des douze principaux clusters structurant le débat sur la négociation</h4>
+          </div>
+        </div>
+      </div>
+      <div class="fill-height scrollable" ng-switch-when="UNFCCC_intro_6">
+        <img class="imgScaled imgNotScrollable" ng-src="images/UNFCCC_Intro_6.jpg">
+        <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+        <div collapse="isCollapsed" class="vizLegendZone">
+          <div class="topline"></div>
+          <div class="vizLegendText">
+            <h4>Title to be put here</h4>
+          </div>
+        </div>
+      </div>
       <div ng-switch-default> No viz assigned here </div>
     </div>
 </div>
