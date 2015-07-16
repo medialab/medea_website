@@ -88,7 +88,7 @@ h5 {
 }
 
 .displayNone {
-  display: none;
+  display: none !important;
 }
 /*Prevent the middle points to go to the right of a section*/
 .noFloat {
@@ -99,6 +99,10 @@ h5 {
 }
 .noRightGutter {
   padding-right: 0;
+}
+
+.centerText {
+  text-align: center;
 }
 
 /*CHECK IF THEY ARE STILL USED*/
@@ -138,4 +142,8 @@ h5 {
 }
 a.exponent:hover {
   color: rgba(51, 97, 109, 0.8);
+}
+
+button:disabled {
+  background: rgba(51, 97, 109, 0.60);
 }

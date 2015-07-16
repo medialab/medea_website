@@ -57,7 +57,7 @@
   display: inline-block;
   text-align: center;
 }
-.buttonFocus {
+.buttonFocus, .buttonTable {
   background: #33616D;
   width: 150px;
   color: white;

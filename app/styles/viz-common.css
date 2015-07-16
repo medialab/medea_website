@@ -377,3 +377,18 @@ table .secondColumn {
   letter-spacing: 1px;
   color: #33616D;
 }
+table .thirdColumn {
+  font: 13px 'Raleway';
+  letter-spacing: 1px;
+  color: #33616D;
+  padding-left: 20px;
+}
+
+#buttonsTableContainer {
+  padding-bottom: 10px;
+  background-color: white;
+}
+.tableRow {
+  width: 100%;
+}
+
