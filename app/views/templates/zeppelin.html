@@ -16,9 +16,6 @@
       <div class="focus" ng-switch-when="focus">
         <div focus src="section.datasrc[0]"></div>
       </div>
-      <div class="fill-height" ng-switch-when="enbgraph">
-        <enbgraph ng-class="['fill-height', 'enbgraph']" gexf="contents/data/unfccc-the-thematic-space-of-negotiations/ENB.gexf" />
-      </div>
       <div class="fill-height scrollable" ng-switch-when="pdfWG">
         <img class="imgScaled" ng-src="media/pdfWG.png">
         <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
@@ -456,6 +453,21 @@
           <div class="topline"></div>
           <div class="vizLegendText">
             <h4>Title to be put here</h4>
+          </div>
+        </div>
+      </div>
+      <div class="fill-height" ng-switch-when="enbgraph">
+        <enbgraph ng-class="['fill-height', 'enbgraph']" gexf="contents/data/unfccc-the-thematic-space-of-negotiations/ENB.gexf" />
+      </div>
+      <div class="fill-height fill-width" ng-switch-when="trajectoriesOfAdaptation">
+        <div unfccctrajectoriesadaptation class="fill-height fill-width">
+          <div id="vizContainer" class="fill-height fill-width"></div>
+        </div>
+        <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+        <div collapse="isCollapsed" class="vizLegendZone">
+          <div class="topline"></div>
+          <div class="vizLegendText">
+            <h4>Visibility ranking of negotiation themes through COPs</h4>
           </div>
         </div>
       </div>

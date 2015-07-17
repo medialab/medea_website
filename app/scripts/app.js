@@ -150,6 +150,15 @@ angular
           }
         }
       })
+      .when('/unfccc/visualizing-the-trajectories-of-adaptation-in-the-unfccc', {
+        templateUrl: 'views/page.html',
+        controller: 'PageCtrl', // handle the items loading
+        resolve: {
+          content : function ($route, FilesFactory) {
+            return FilesFactory.get({path: 'unfccc/trajectories-of-adaptation'});
+          }
+        }
+      })
       .otherwise({
         redirectTo: '/'
       });

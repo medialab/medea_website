@@ -31,5 +31,6 @@ angular.module('driveoutApp.directives', [
   'driveoutApp.directives.gexfinstitutions',
   'driveoutApp.directives.unfccctablefive',
   'driveoutApp.directives.unfccctablefour',
+  'driveoutApp.directives.unfccctrajectoriesadaptation',
   'driveoutApp.directives.gexftestone'
   ])
