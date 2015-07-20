@@ -24,6 +24,7 @@ angular.module('driveoutApp.directives.wenn', [])
           venn.plotGlobalAR(elementid, elementwidth, elementheight);
         });
 
+
         window.addEventListener('resize', function() {
           if (element.width() !== 0) {
             venn.load_data('contents/data/ipcc-wg-venn/authors-by-wg-by-ar-venn.json', function() {
@@ -48,6 +49,9 @@ angular.module('driveoutApp.directives.wenn', [])
                   venn.plotAnnualARs(elementid, elementwidth, elementheight);
                 }
               }
+              $('#venn').css({
+                'height': '100%'
+              });
             });
           }
         });
