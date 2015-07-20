@@ -15,39 +15,12 @@ angular.module('driveoutApp.directives.unfccctrajectoriesadaptation', [])
         window.addEventListener('resize', function() {
           if (element.height() > 0)
             drawHeatmap();
+            highlightOnResize(scope.index)
         });
+        scope.index = 0;
 
         scope.$on('updateView', function(event, index) {
-          switch(index) {
-            case 0:
-              removeHighlight();
-              // Default view, reset zoom
-              break;
-            case 1:
-              // Zoom on cluster 'Climate Expertise'
-              highlightLine(0);
-              break;
-            case 2:
-              highlightLine([1,2]);
-              break;
-            case 3:
-              highlightLine(4);
-              break;
-            case 4:
-              highlightLine([5,7]);
-              break;
-            case 5:
-              highlightLine(8);
-              break;
-            case 6:
-              highlightLine([0,6]);
-              break;
-            case 7:
-              highlightLine(1);
-              break;
-            default:
-              break;
-          }
+          highlightOnResize(index);
         });
 
         function drawHeatmap() {
@@ -466,6 +439,39 @@ angular.module('driveoutApp.directives.unfccctrajectoriesadaptation', [])
                   'opacity': '1'
                 });
             }
+          }
+        }
+        function highlightOnResize(index) {
+          scope.index = index;
+          switch(index) {
+            case 0:
+              removeHighlight();
+              // Default view, reset zoom
+              break;
+            case 1:
+              // Zoom on cluster 'Climate Expertise'
+              highlightLine(0);
+              break;
+            case 2:
+              highlightLine([1,2]);
+              break;
+            case 3:
+              highlightLine(4);
+              break;
+            case 4:
+              highlightLine([5,7]);
+              break;
+            case 5:
+              highlightLine(8);
+              break;
+            case 6:
+              highlightLine([0,6]);
+              break;
+            case 7:
+              highlightLine(1);
+              break;
+            default:
+              break;
           }
         }
       }
