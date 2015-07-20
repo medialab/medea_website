@@ -132,9 +132,9 @@ angular.module('driveoutApp.directives.pdfconclusion', [])
         else {
           $('#containerPdfConclusion').css({
               'position': 'absolute',
-              'left': (element.width() - ($('#pdfconclusion').height()/ratio)) /2 + 'px',
-              'height': '100%',
-              'width': ($('#pdfconclusion').height()/ratio) + 'px',
+              'left': (element.width() - (($('.vizLegendZone').position().top - 30)/ratio)) /2 + 'px',
+              'height': ($('.vizLegendZone').position().top - 30) + 'px' ,
+              'width': (($('.vizLegendZone').position().top - 30)/ratio) + 'px',
               'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
               'margin-bottom': 30 + 'px'});
         }
@@ -153,9 +153,9 @@ angular.module('driveoutApp.directives.pdfconclusion', [])
             else {
               $('#containerPdfConclusion').css({
                 'position': 'absolute',
-                'left': (element.width() - ($('#pdfconclusion').height()/ratio)) /2 + 'px',
-                'height': '100%',
-                'width': ($('#pdfconclusion').height()/ratio) + 'px',
+                'left': (element.width() - (($('.vizLegendZone').position().top - 30)/ratio)) /2 + 'px',
+                'height': ($('.vizLegendZone').position().top - 30) + 'px' ,
+                'width': (($('.vizLegendZone').position().top - 30)/ratio) + 'px',
                 'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
                 'margin-bottom': 30 + 'px'});
             }
