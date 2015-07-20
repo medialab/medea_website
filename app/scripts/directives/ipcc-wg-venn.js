@@ -49,9 +49,6 @@ angular.module('driveoutApp.directives.wenn', [])
                   venn.plotAnnualARs(elementid, elementwidth, elementheight);
                 }
               }
-              $('#venn').css({
-                'height': '100%'
-              });
             });
           }
         });
