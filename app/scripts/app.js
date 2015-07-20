@@ -55,7 +55,7 @@ angular
         templateUrl: 'views/home.html',
         controller: 'HomeCtrl',
         resolve: {
-          contentHome : function ($route, FilesFactory) {
+          contentHome : function($route, FilesFactory) {
             return FilesFactory.get({path: 'home'});
           },
           contentIPCC: function(FilesFactory) {
@@ -75,7 +75,12 @@ angular
       })
       .when('/about', { // static page controller
         templateUrl: 'views/singlepage.html',
-        controller: 'SinglePageCtrl'
+        controller: 'SinglePageCtrl',
+        resolve: {
+          content: function(FilesFactory) {
+            return FilesFactory.get({path: 'about'});
+          }
+        }
       })
       .when('/foreword', { // static page controller
         templateUrl: 'views/singlepage.html',
@@ -86,15 +91,20 @@ angular
           }
         }
       })
+      .when('/controversy-mapping', { // static page controller
+        templateUrl: 'views/singlepage.html',
+        controller: 'SinglePageCtrl',
+        resolve: {
+          content: function(FilesFactory) {
+            return FilesFactory.get({path:'controversy-mapping'});
+          }
+        }
+      })
       .when('/ipcc', {
         redirectTo: '/storylines'
       })
       .when('/unfccc', {
         redirectTo: '/storylines'
-      })
-      .when('/controversy-mapping', { // static page controller
-        templateUrl: 'views/singlepage.html',
-        controller: 'SinglePageCtrl'
       })
       .when('/ipcc/national-cultures-of-climate-expertise-france', {
         templateUrl: 'views/page.html',
