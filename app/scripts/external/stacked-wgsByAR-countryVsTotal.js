@@ -25,6 +25,7 @@
     this.orderStack = ['WG1', 'WG1+2', 'WG2', 'WG2+3', 'WG3', 'WG1+3', 'WG1+2+3'];
     this.defaultCountry = 'France';
     this.userParams = {};
+    this.chosenCountry = '';
   }
 
   StackedBarsWGsByARsCountryVsTotal.prototype.load = function(path, callback) {
@@ -36,6 +37,12 @@
   };
 
   StackedBarsWGsByARsCountryVsTotal.prototype.drawViz = function(container, params) {
+    if (params.country === undefined) {
+      if (this.chosenCountry !== '')
+        params.country = this.chosenCountry;
+      else
+        params.country = this.defaultCountry;
+    }
     var height = params.height || this.defaultHeight,
         width = params.width || this.defaultWidth,
         country = params.country || this.defaultCountry,
@@ -56,6 +63,7 @@
   }
 
   StackedBarsWGsByARsCountryVsTotal.prototype.updateData = function(container, country, params) {
+    this.chosenCountry = country;
     var height = params.height || this.defaultHeight,
         width = params.width || this.defaultWidth,
         margin = params.margin || this.defaultMargin,
@@ -192,14 +200,14 @@
       var countryRectsEnter = countryRects.enter();
       countryRectsEnter
         .append('rect')
-        .attr('class', function(d, i) {
-          return d.wg.replace(/\+/g, '-');
-        })
         .on('mouseover', function(d,i) {
           drawToolTipHTML('#' + params.vizName, this, i, d);
         });
 
       countryRects
+        .attr('class', function(d, i) {
+          return d.wg.replace(/\+/g, '-');
+        })
         .attr('width', barWidth/2)
         .attr('y', function(d, i) {
           return d.yPosition

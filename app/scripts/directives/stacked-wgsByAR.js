@@ -39,25 +39,23 @@ angular.module('driveoutApp.directives.stackedwgsbyar', [])
             var legendHeight = $('.vizLegendZone').height();
             var elementWidth = element.width(),
                 elementHeight = element.height();
-            stackedBars.load('contents/data/stacked-wgsByAR/participations.json', function() {
-              var legendHeight = $('.vizLegendZone').height();
 
-              var width = elementWidth,
-                  height = elementHeight - legendHeight,
-                  margin = {top: 40, bottom: 27, left: 70, right: 5};
+            var width = elementWidth,
+                height = elementHeight - legendHeight,
+                margin = {top: 40, bottom: 27, left: 70, right: 5};
 
-              stackedBars.drawViz('#svgContainer',
-                {
-                  height: height,
-                  width: width,
-                  vizName: 'viviz',
-                  margin: margin
-                });
-              $('#svgContainer svg').css({
-                'position': 'absolute',
-                'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-                'margin-bottom': 30 + 'px'});
-                });
+            stackedBars.drawViz('#svgContainer',
+              {
+                height: height,
+                width: width,
+                vizName: 'viviz',
+                margin: margin
+              });
+            $('#svgContainer svg').css({
+              'position': 'absolute',
+              'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+              'margin-bottom': 30 + 'px'
+            });
           }
         });
       }

@@ -24,6 +24,7 @@
     };
     this.defaultCountry = 'France';
     this.userParams = {};
+    this.chosenCountry = '';
   }
 
   StackedBarsWGsByARsCaVsOthers.prototype.load = function(path, callback) {
@@ -35,6 +36,12 @@
   };
 
   StackedBarsWGsByARsCaVsOthers.prototype.drawViz = function(container, params) {
+    if (params.country === undefined) {
+      if (this.chosenCountry !== '')
+        params.country = this.chosenCountry;
+      else
+        params.country = this.defaultCountry;
+    }
     var height = params.height || this.defaultHeight,
         width = params.width || this.defaultWidth,
         country = params.country || this.defaultCountry,
@@ -55,6 +62,7 @@
   }
 
   StackedBarsWGsByARsCaVsOthers.prototype.updateData = function(container, country, params) {
+    this.chosenCountry = country;
     var height = params.height || this.defaultHeight,
         width = params.width || this.defaultWidth,
         margin = params.margin || this.defaultMargin,
@@ -129,11 +137,12 @@
 
       var wgGroupsEnter = wgGroups.enter();
       wgGroupsEnter
-        .append('g')
+        .append('g');
+
+      wgGroups
         .attr('class', function(d, i) {
           return 'WG' + d.wg + ' wgGroup';
-        });
-      wgGroups
+        })
         .attr('width', wgBarWidth)
         .attr('y', 0)
         .attr('height', function(d, i) {

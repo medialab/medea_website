@@ -24,6 +24,7 @@
       hori: 0.2
     };
     this.userParams = {};
+    this.chosenCountry = '';
   }
 
   Bricks.prototype.load = function(path, callback) {
@@ -35,8 +36,13 @@
   };
 
   Bricks.prototype.drawViz = function(container, params) {
-    if (params.country === undefined)
-      params.country = this.defaultCountry;
+
+    if (params.country === undefined) {
+      if (this.chosenCountry !== '')
+        params.country = this.chosenCountry;
+      else
+        params.country = this.defaultCountry;
+    }
 
     var height = params.height || this.defaultHeight,
         width = params.width || this.defaultWidth,
@@ -78,6 +84,7 @@
   }
 
   Bricks.prototype.updateData = function(container, country) {
+    this.chosenCountry = country;
     var params = this.userParams;
 
     var height = params.height || this.defaultHeight,
