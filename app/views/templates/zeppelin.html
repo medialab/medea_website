@@ -10,12 +10,6 @@
   </div>
   <div class="col-sm-7 col-md-7 col-lg-8 fill-height noRightGutter noLeftGutter">
     <div class="fill-height" ng-switch="sections[index].directive">
-      <div class="image" ng-switch-when="image">
-        <img ng-repeat="src in $parent.$parent.section.datasrc" ng-src="{{src}}"/>
-      </div>
-      <div class="focus" ng-switch-when="focus">
-        <div focus src="section.datasrc[0]"></div>
-      </div>
       <div class="fill-height scrollable" ng-switch-when="pdfWG">
         <img class="imgScaled" ng-src="media/pdfWG.png">
         <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>

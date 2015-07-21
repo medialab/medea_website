@@ -23,6 +23,7 @@
       verti: 0.2,
       hori: 0.2
     };
+    this.chosenRegion = '';
     this.userParams = {};
   }
 
@@ -35,8 +36,12 @@
   };
 
   Bricks.prototype.drawViz = function(container, params) {
-    if (params.region === undefined)
-      params.region = this.defaultRegion;
+    if (params.region === undefined) {
+      if (this.chosenRegion !== '')
+        params.region = this.chosenRegion;
+      else
+        params.region = this.defaultRegion;
+    }
 
     var height = params.height || this.defaultHeight,
         width = params.width || this.defaultWidth,
@@ -78,6 +83,7 @@
   }
 
   Bricks.prototype.updateData = function(container, region) {
+    this.chosenRegion = region;
     var params = this.userParams;
 
     var height = params.height || this.defaultHeight,
