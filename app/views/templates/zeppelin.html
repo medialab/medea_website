@@ -38,7 +38,7 @@
         <div collapse="isCollapsed" class="vizLegendZone">
           <div class="topline"></div>
           <div class="vizLegendText">
-            <h4>Distribution of IPCC authors among the 3 working groups all assessment reports aggregated</h4>
+            <h4>Distribution of IPCC authors among the 3 WGs - all ARs aggregated</h4>
           </div>
         </div>
       </div>
@@ -93,7 +93,7 @@
           <div collapse="isCollapsed" class="vizLegendZone">
             <div class="topline"></div>
             <div class="vizLegendText">
-              <h4><button id="prevPDF">Previous</button><button id="nextPDF">Next</button>&nbsp; &nbsp;
+              <h4>Presentation by Jean-Pascal van Ypersele at IPCC Plenary Session 2010<br/><button id="prevPDF">Previous</button><button id="nextPDF">Next</button>&nbsp; &nbsp;
             <span>Page: <span id="page_numPDF"></span> / <span id="page_countPDF"></span></span></h4>
             </div>
           </div>
@@ -180,7 +180,7 @@
             <div collapse="isCollapsed" class="vizLegendZone">
               <div class="topline"></div>
               <div class="vizLegendText">
-                <h4>Distribution of country participations in the IPCC - 90% vs 10%</h4>
+                <h4>Distribution of author participation in IPCC by country<br/> 24 countries count for 90% of participations / 93 countries make up the other 10%</h4>
               </div>
             </div>
           </div>
@@ -193,8 +193,34 @@
           <div collapse="isCollapsed" class="vizLegendZone">
             <div class="topline"></div>
             <div class="vizLegendText">
-              <h4><button id="prevPDF">Previous</button><button id="nextPDF">Next</button>&nbsp; &nbsp;
+              <h4>Summary text from Special Committee on Participation on Developing Countries<br/>Report of the 3rd session of the IPCC - 1990<br/><button id="prevPDF">Previous</button><button id="nextPDF">Next</button>&nbsp; &nbsp;
             <span>Page: <span id="page_numPDF"></span> / <span id="page_countPDF"></span></span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fill-height" ng-switch-when="diversityAcrossAR">
+        <div id="containerdiversityacrossar" class="fill-height" diversityacrossar>
+          <div id="svgContainerLeft"></div>
+          <div id="svgContainerRight"></div>
+          <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+          <div collapse="isCollapsed" class="vizLegendZone">
+            <div class="topline"></div>
+            <div class="vizLegendText">
+              <h4>Participation across ARs by World Meteorological Organization Country Groupings</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fill-height" ng-switch-when="diversityBetweenWGs">
+        <div id="containerdiversitybetweenwgs" class="fill-height" diversitybetweenwgs>
+          <div id="svgContainerLeft"></div>
+          <div id="svgContainerRight"></div>
+          <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+          <div collapse="isCollapsed" class="vizLegendZone">
+            <div class="topline"></div>
+            <div class="vizLegendText">
+              <h4>Participation across Working Groups by World Meteorological Organization Country Groupings</h4>
             </div>
           </div>
         </div>
@@ -207,7 +233,7 @@
             <div collapse="isCollapsed" class="vizLegendZone">
               <div class="topline"></div>
               <div class="vizLegendText">
-                <h4>Roles evolution across ARs</h4>
+                <h4>Changes in Proportions of Roles across ARs</h4>
               </div>
             </div>
           </div>
@@ -222,34 +248,8 @@
             <div collapse="isCollapsed" class="vizLegendZone">
               <div class="topline"></div>
               <div class="vizLegendText">
-                <h4>Roles evolution across ARs</h4>
+                <h4>Distribution of Roles between WMO Country Groupings across ARs</h4>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="fill-height" ng-switch-when="diversityAcrossAR">
-        <div id="containerdiversityacrossar" class="fill-height" diversityacrossar>
-          <div id="svgContainerLeft"></div>
-          <div id="svgContainerRight"></div>
-          <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
-          <div collapse="isCollapsed" class="vizLegendZone">
-            <div class="topline"></div>
-            <div class="vizLegendText">
-              <h4>WMO groups' participations across ARs</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="fill-height" ng-switch-when="diversityBetweenWGs">
-        <div id="containerdiversitybetweenwgs" class="fill-height" diversitybetweenwgs>
-          <div id="svgContainerLeft"></div>
-          <div id="svgContainerRight"></div>
-          <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
-          <div collapse="isCollapsed" class="vizLegendZone">
-            <div class="topline"></div>
-            <div class="vizLegendText">
-              <h4>WMO groups' participations in working groups</h4>
             </div>
           </div>
         </div>
@@ -261,7 +261,7 @@
           <div collapse="isCollapsed" class="vizLegendZone">
             <div class="topline"></div>
             <div class="vizLegendText">
-              <h4 id="vizTitleContainer">Participations by chapter <select name="regionSelector" id="titleRegion"></select><i class="fa fa-chevron-down selectIcon"></i></h4>
+              <h4 id="vizTitleContainer">WMO Country Groupings Participation by Chapter<br/><select name="regionSelector" id="titleRegion"></select><i class="fa fa-chevron-down selectIcon"></i></h4>
             </div>
           </div>
         </div>
@@ -283,7 +283,7 @@
           <div collapse="isCollapsed" class="vizLegendZone">
             <div class="topline"></div>
             <div class="vizLegendText">
-              <h4 id="vizTitleContainer">Distribution of author participations in the working groups - <select name="countrySelector" id="titleCountry"></select><i class="fa fa-chevron-down selectIcon"></i></h4>
+              <h4 id="vizTitleContainer">Proportion of Author Participations in the WGs - <select name="countrySelector" id="titleCountry"></select><i class="fa fa-chevron-down selectIcon"></i></h4>
             </div>
           </div>
         </div>
@@ -331,7 +331,7 @@
             <div collapse="isCollapsed" class="vizLegendZone">
               <div class="topline"></div>
               <div class="vizLegendText">
-                <h4 id="vizTitle">Institutions</h4>
+                <h4 id="vizTitle">Institutional Affiliations of French Authors in IPCC (1988 - 2015)</h4>
               </div>
             </div>
           </div>
@@ -344,7 +344,7 @@
           <div collapse="isCollapsed" class="vizLegendZone">
             <div class="topline"></div>
             <div class="vizLegendText">
-              <h4 id="vizTitleContainer">Distribution of author participations in the working groups:<br/><select name="countrySelector" id="titleCountry"></select><i class="fa fa-chevron-down selectIcon"></i>VS Total</h4>
+              <h4 id="vizTitleContainer">Proportion of Author Participations in the WGs:<br/><select name="countrySelector" id="titleCountry"></select><i class="fa fa-chevron-down selectIcon"></i>compared to All IPCC</h4>
             </div>
           </div>
         </div>
@@ -356,7 +356,7 @@
           <div collapse="isCollapsed" class="vizLegendZone">
             <div class="topline"></div>
             <div class="vizLegendText">
-              <h4 id="vizTitleContainer">Distribution of author roles in the working groups: <select name="countrySelector" id="titleCountry"></select><i class="fa fa-chevron-down selectIcon"></i></h4>
+              <h4 id="vizTitleContainer">Distribution of Author Roles in the WGs: <select name="countrySelector" id="titleCountry"></select><i class="fa fa-chevron-down selectIcon"></i></h4>
             </div>
           </div>
 
@@ -369,7 +369,7 @@
           <div collapse="isCollapsed" class="vizLegendZone">
             <div class="topline"></div>
             <div class="vizLegendText">
-              <h4 id="vizTitleContainer">Participations by chapter <select name="countrySelector" id="titleCountry"></select><i class="fa fa-chevron-down selectIcon"></i></h4>
+              <h4 id="vizTitleContainer">Participation by Chapter - <select name="countrySelector" id="titleCountry"></select><i class="fa fa-chevron-down selectIcon"></i></h4>
             </div>
           </div>
         </div>
@@ -381,7 +381,7 @@
           <div collapse="isCollapsed" class="vizLegendZone">
             <div class="topline"></div>
             <div class="vizLegendText">
-              <h4>National individual participations to each Assessment Report<br/>
+              <h4>National Experts and their Participation in the IPCC across ARs<br/>
               <span>Country: </span>
               <select id="lines-countries-choice"></select>
               <span>Sort by: </span>

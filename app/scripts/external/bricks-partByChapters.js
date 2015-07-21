@@ -311,6 +311,7 @@
       var chaptersWithWG = chapters.map(function(d) {
         var objectToReturn = {
           chapterName: d,
+          chapterTitle: dataAR.wg[wg].chaptersTitle[d],
           wgNumber: wg,
           arNumber: ar,
           country: params.country
@@ -513,8 +514,7 @@
     bar.setAttribute("class", bar.getAttribute("class")+ ' hoverBar');
 
     if (data.chapterName !== undefined) {
-      var chapterDescription = 'Chapter ' + data.chapterName +
-                               ' of the WG ' + wg + ' in AR ' + ar + ':',
+      var chapterDescription = data.chapterTitle + ' (AR ' + ar + ' - WG ' + wg + ' - CH '+ data.chapterName + ')',
           partCountryDescription = data.wg.chapterEffective !== 0 ?
                     country + '\'s participations for this chapter: ' +
                               data.wg.chapterEffective:

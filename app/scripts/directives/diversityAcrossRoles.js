@@ -31,13 +31,13 @@ angular.module('driveoutApp.directives.diversityacrossroles', [])
                 right: 20
               };
           lineChart.drawChart('#visualisation1', {
-            title: 'CA',
+            title: 'Participations as Contributing Authors (CA)',
             height: height,
             width: width,
             margin: marginTopViz
           });
           lineChart.drawChart('#visualisation2', {
-            title: 'Responsability roles',
+            title: 'Participations in Roles of Responsibility (CLA/LA/RE)',
             dataName: 'others',
             height: height,
             width: width,
@@ -62,13 +62,13 @@ angular.module('driveoutApp.directives.diversityacrossroles', [])
                   height = elementHeight/2.4;
               lineChart.drawChart('#visualisation1',
                 {
-                  title: 'CA',
+                  title: 'Participations as Contributing Authors (CA)',
                   height: height,
                   width: width,
                   margin: marginTopViz
                 });
               lineChart.drawChart('#visualisation2', {
-                title: 'Responsability roles',
+                title: 'Participations in Roles of Responsibility (CLA/LA/RE)',
                 dataName: 'others',
                 height: height,
                 width: width,
