@@ -14,40 +14,57 @@ angular.module('driveoutApp.directives.gexfarthree', [])
         index: '='
       },
       link: function postLink(scope, element, attrs) {
-        console.log(scope.index)
         $('#sigma-container').css({
             'position': 'absolute',
-            'height': ($('.vizLegendZone').position().top + 5) + 'px',
+            'height': ($('.vizLegendZone').position().top -25) + 'px',
             'width': '100%',
             'bottom': '30px',
             'margin-bottom': 30 + 'px'});
         scope.drawn = true;
 
         if (scope.index === 8) {
+          if (scope.sigmaInstance !== undefined)
+            scope.sigmaInstance.kill();
+
           drawGraph('sigma-container', 'currentAR', '3', function(sigmaInstance) {
             initateButtons(sigmaInstance);
+            scope.sigmaInstance = sigmaInstance;
           });
           changeSelectBox(3);
         }
         else if (scope.index === 9) {
+          if (scope.sigmaInstance !== undefined)
+            scope.sigmaInstance.kill();
+
           drawGraph('sigma-container', 'currentAR', '4', function(sigmaInstance) {
             initateButtons(sigmaInstance);
+            scope.sigmaInstance = sigmaInstance;
           });
           changeSelectBox(4);
         }
 
         scope.$on('updateView', function(event, index) {
           if (scope.index === 9 && index === 8) {
+            if (scope.sigmaInstance !== undefined)
+              scope.sigmaInstance.kill();
             drawGraph('sigma-container', 'currentAR', '3', function(sigmaInstance) {
               initateButtons(sigmaInstance);
+              scope.sigmaInstance = sigmaInstance;
             });
             changeSelectBox(3)
           }
           else if (scope.index === 8 && index === 9) {
+            if (scope.sigmaInstance !== undefined)
+              scope.sigmaInstance.kill();
             drawGraph('sigma-container', 'currentAR', '4', function(sigmaInstance) {
               initateButtons(sigmaInstance);
+              scope.sigmaInstance = sigmaInstance;
             });
             changeSelectBox(4)
+          }
+          else if (scope.index !== 8 && scope.index !== 9) {
+            if (scope.sigmaInstance !== undefined)
+              scope.sigmaInstance.kill();
           }
         });
 
@@ -55,10 +72,13 @@ angular.module('driveoutApp.directives.gexfarthree', [])
           if (element.height() !== 0) {
             $('#sigma-container').css({
               'position': 'absolute',
-              'height': ($('.vizLegendZone').position().top + 5) + 'px',
+              'height': ($('.vizLegendZone').position().top -25) + 'px',
               'width': '100%',
               'bottom': '30px',
               'margin-bottom': 30 + 'px'});
+
+            if (scope.sigmaInstance !== undefined)
+              scope.sigmaInstance.kill();
             drawGraph('sigma-container', 'currentAR', $('#currentAR')[0].value, function(sigmaInstance) {
             initateButtons(sigmaInstance);
           });
@@ -95,7 +115,6 @@ angular.module('driveoutApp.directives.gexfarthree', [])
 
         function changeSelectBox(value) {
           $('#currentAR option').each(function(index, option) {
-            console.log(option);
             var currentValue = index + 1;
 
             if (currentValue !== value)

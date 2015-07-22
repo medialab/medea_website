@@ -10,15 +10,19 @@ angular.module('driveoutApp.directives.gexfinstitutions', [])
   .directive('gexfinstitutions', function () {
     return {
       restrict: 'EA',
-      scope: {},
+      scope: {
+        index: '='
+      },
       link: function postLink(scope, element, attrs) {
         $('#sigma-container').css({
             'position': 'absolute',
-            'height': ($('.vizLegendZone').position().top + 5) + 'px',
+            'height': ($('.vizLegendZone').position().top - 25) + 'px',
             'width': '100%',
             'bottom': '30px',
             'margin-bottom': 30 + 'px'});
+
         drawGraphInstitutions('sigma-container', function(sigmaInstance) {
+          scope.sigmaInstance = sigmaInstance;
           var sigmaRecenter = function(){
             var c = sigmaInstance.cameras[0]
             c.goTo({
@@ -46,14 +50,23 @@ angular.module('driveoutApp.directives.gexfinstitutions', [])
           $('#unzoomButton').on('click', sigmaUnzoom);
         });
 
+        scope.$on('updateView', function(event, index) {
+          if (scope.index !== 3) {
+            if (scope.sigmaInstance !== undefined)
+              scope.sigmaInstance.kill();
+          }
+        });
+
         window.addEventListener('resize', function() {
           if (element.height() !== 0) {
             $('#sigma-container').css({
               'position': 'absolute',
-              'height': ($('.vizLegendZone').position().top + 5) + 'px',
+              'height': ($('.vizLegendZone').position().top - 25) + 'px',
               'width': '100%',
               'bottom': '30px',
               'margin-bottom': 30 + 'px'});
+            if (scope.sigmaInstance !== undefined)
+              scope.sigmaInstance.kill();
             drawGraph('sigma-container', 'currentAR', $('#currentAR')[0].value);
           }
         })
