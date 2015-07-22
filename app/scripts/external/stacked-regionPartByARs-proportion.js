@@ -218,6 +218,9 @@
     //Remove the possibly existing tooltip
     d3.selectAll('.stackedTooltipContainer').remove();
 
+    if (data.regionSymbol === 'WMONA')
+      data.regionSymbol = 'Non Available';
+
     var trueSvgPositions = document.querySelector(component)
                   .getBoundingClientRect();
     //Enables the styling with the hover

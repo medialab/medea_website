@@ -225,6 +225,7 @@
   }
   function drawToolTipHTML(component, element, id, data) {
     console.log('component', component);
+
     var country = data.country;
     var trueSvgPositions = document.getElementById(component.replace('#',''))
                   .getBoundingClientRect();

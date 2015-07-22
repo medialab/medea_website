@@ -228,6 +228,9 @@
     //Enables the styling with the hover
     bar.setAttribute("class", bar.getAttribute("class")+ ' hoverBar');
 
+    if (data.regionSymbol === 'WMONA')
+      data.regionSymbol = 'Non Available';
+
     var stackedTooltipLegend = data.regionSymbol + ': ' +
                             + (+data.percentage).toFixed(2) + '% ('
                             + data.participation +

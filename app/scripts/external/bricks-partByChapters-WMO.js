@@ -193,44 +193,58 @@
 
     var chartBbox = chart[0][0].getBBox();
 
-    //Changes the graph title
-    var vizTopContainer = d3.select('#vizTopContainer'),
-        vizTitleContainer = d3.select('#vizTitleContainer'),
-        regionSelector = d3.select('select#titleRegion');
-    vizTopContainer
-      .style('width', chartBbox.width + 'px');
-    vizTitleContainer
-      // .style('left', chartBbox.x + spaceHoriUnit /2  + 'px')
-      .style('top', margin.top/2.5 + 'px');
+      //Changes the graph title
+      var vizTitleContainer = d3.select('#vizTitleContainer'),
+          regionSelector = d3.select('select#titleRegion');
 
-    //Build the string containing the region options
-    regionSelector
-      .selectAll('option')
-      .data(Object.keys(this.data).sort())
-      .enter()
-      .append('option')
-      .attr('value', function(d) { return d; })
-      .text(function(d) { return d; })
+      //small trick to have the select box always at the good size
+      vizTitleContainer.append('div')
+        .attr('id','measureTextDiv')
+        .style('position', 'absolute')
+        .style('font', '12px "Raleway"')
+        .text(region);
+      var regionTextSize = d3.select('#measureTextDiv')[0][0].getBoundingClientRect().width;
+      d3.select('#measureTextDiv').remove();
 
-    regionSelector
-      .style('margin-left', 10 + 'px')
-      .style('top', -1 + 'px')
+      //Build the string containing the region options
+      regionSelector
+        .selectAll('option')
+        .data(Object.keys(this.data).sort())
+        .enter()
+        .append('option')
+        .attr('value', function(d) { return d; })
+        .text(function(d) {
+          if (d === 'WMONA')
+            return 'N/A';
+          else
+            return d;
+        })
 
-      // .style('left', margin.left + 2 * spaceHoriUnit + chartBbox.width/2 + 80 + 'px')
-      // .style('top', margin.top/2 - 1+ 'px')
-      .selectAll('option')
-      .data(Object.keys(this.data).sort())
-      .attr('selected', function(d) {
-        return d === region ? '' : null;
-      });
+      regionSelector
+        .style('width', regionTextSize + 25 + 'px')
+        .selectAll('option')
+        .data(Object.keys(this.data).sort())
+        .attr('selected', function(d) {
+          return d === region ? '' : null;
+        });
 
-    //Change listener for the select box
-    var self = this;
-    regionSelector
+      var self = this;
+      regionSelector
       .on('change', function() {
-        self.updateData(container, this.options[this.selectedIndex].text);
-      });
+        self.updateData(container, this.options[this.selectedIndex].value, params)
 
+        //small trick to have the select box always at the good size
+        vizTitleContainer.append('div')
+          .attr('id','measureTextDiv')
+          .style('position', 'absolute')
+          .style('font', '12px "Raleway"')
+          .text(this.options[this.selectedIndex].text);
+
+        var regionTextSize = d3.select('#measureTextDiv')[0][0].getBoundingClientRect().width;
+        d3.select('#measureTextDiv').remove();
+        regionSelector.style(
+          'width', regionTextSize + 25 + 'px');
+      });
   }
 
   //Triggers the drawing of the different WG of an AR
@@ -494,6 +508,8 @@
 
     //Enables the styling with the hover
     bar.setAttribute("class", bar.getAttribute("class")+ ' hoverBar');
+    if (region === 'WMONA')
+      region = 'Non Available Info Grouping';
 
     if (data.chapterName !== undefined) {
       var chapterDescription = 'Chapter: ' + data.chapterTitle + ' (AR ' + ar + ' - WG ' + wg + ' - CH '+ data.chapterName + ')',
