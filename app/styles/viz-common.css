@@ -369,6 +369,7 @@ table .firstColumn {
   font: 13px 'Raleway';
   text-transform: uppercase;
   letter-spacing: 1px;
+  width: 200px !important;
   font-weight: 700;
   color: #33616D;
 }
@@ -376,13 +377,16 @@ table .secondColumn {
   font: 13px 'Raleway';
   letter-spacing: 1px;
   color: #33616D;
+  padding-left: 20px;
 }
 table .thirdColumn {
   font: 13px 'Raleway';
   letter-spacing: 1px;
   color: #33616D;
+  width: 100px !important;
   padding-left: 20px;
 }
+
 
 #buttonsTableContainer {
   padding-bottom: 10px;
