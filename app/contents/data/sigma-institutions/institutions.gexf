@@ -1491,173 +1491,173 @@
         <viz:position x="2113.032" y="2001.9935" z="0.0"></viz:position>
         <viz:color r="220" g="220" b="220"></viz:color>
       </node>
-      <node id="arwg_413577fe0c9b47d47a51cbf9ed341dd4" label="ar1 wg1">
+      <node id="arwg_413577fe0c9b47d47a51cbf9ed341dd4" label="AR1 WG1">
         <attvalues>
           <attvalue for="attr_type" value="AR WG"></attvalue>
           <attvalue for="global_occurrences" value="9"></attvalue>
           <attvalue for="attr_2_4" value="1"></attvalue>
           <attvalue for="attr_2_5" value="1"></attvalue>
-          <attvalue for="Label_simple" value="ar1"></attvalue>
+          <attvalue for="Label_simple" value="AR1"></attvalue>
         </attvalues>
         <viz:size value="75.17903"></viz:size>
         <viz:position x="-1959.0723" y="2091.074" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="118" g="106" b="164"></viz:color>
       </node>
-      <node id="arwg_abbf058f79423a60b6119a2f01bfdb6b" label="ar1 wg3">
+      <node id="arwg_abbf058f79423a60b6119a2f01bfdb6b" label="AR1 WG3">
         <attvalues>
           <attvalue for="attr_type" value="AR WG"></attvalue>
           <attvalue for="global_occurrences" value="4"></attvalue>
           <attvalue for="attr_2_4" value="1"></attvalue>
           <attvalue for="attr_2_5" value="3"></attvalue>
-          <attvalue for="Label_simple" value="ar1"></attvalue>
+          <attvalue for="Label_simple" value="AR1"></attvalue>
         </attvalues>
         <viz:size value="63.61309"></viz:size>
         <viz:position x="-1915.1273" y="-2649.1199" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="68" g="163" b="199"></viz:color>
       </node>
-      <node id="arwg_bd34636e0cf002bc917c8975e8a8cf62" label="ar2 wg1">
+      <node id="arwg_bd34636e0cf002bc917c8975e8a8cf62" label="AR2 WG1">
         <attvalues>
           <attvalue for="attr_type" value="AR WG"></attvalue>
           <attvalue for="global_occurrences" value="13"></attvalue>
           <attvalue for="attr_2_4" value="2"></attvalue>
           <attvalue for="attr_2_5" value="1"></attvalue>
-          <attvalue for="Label_simple" value="ar2"></attvalue>
+          <attvalue for="Label_simple" value="AR2"></attvalue>
         </attvalues>
         <viz:size value="81.34731"></viz:size>
         <viz:position x="-1946.5079" y="1811.005" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="118" g="106" b="164"></viz:color>
       </node>
-      <node id="arwg_af1549dbf48cec13a05dde42c93d3f21" label="ar2 wg2">
+      <node id="arwg_af1549dbf48cec13a05dde42c93d3f21" label="AR2 WG2">
         <attvalues>
           <attvalue for="attr_type" value="AR WG"></attvalue>
           <attvalue for="global_occurrences" value="30"></attvalue>
           <attvalue for="attr_2_4" value="2"></attvalue>
           <attvalue for="attr_2_5" value="2"></attvalue>
-          <attvalue for="Label_simple" value="ar2"></attvalue>
+          <attvalue for="Label_simple" value="AR2"></attvalue>
         </attvalues>
         <viz:size value="97.51976"></viz:size>
         <viz:position x="-1906.7084" y="-664.577" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
-      <node id="arwg_c7362303bcba03207a0f10cfad5823f3" label="ar2 wg3">
+      <node id="arwg_c7362303bcba03207a0f10cfad5823f3" label="AR2 WG3">
         <attvalues>
           <attvalue for="attr_type" value="AR WG"></attvalue>
           <attvalue for="global_occurrences" value="9"></attvalue>
           <attvalue for="attr_2_4" value="2"></attvalue>
           <attvalue for="attr_2_5" value="3"></attvalue>
-          <attvalue for="Label_simple" value="ar2"></attvalue>
+          <attvalue for="Label_simple" value="AR2"></attvalue>
         </attvalues>
         <viz:size value="75.17903"></viz:size>
         <viz:position x="-1923.1068" y="-2923.6062" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="68" g="163" b="199"></viz:color>
       </node>
-      <node id="arwg_69a090c2b4c4b89a712a198b000d9eb7" label="ar3 wg1">
+      <node id="arwg_69a090c2b4c4b89a712a198b000d9eb7" label="AR3 WG1">
         <attvalues>
           <attvalue for="attr_type" value="AR WG"></attvalue>
           <attvalue for="global_occurrences" value="31"></attvalue>
           <attvalue for="attr_2_4" value="3"></attvalue>
           <attvalue for="attr_2_5" value="1"></attvalue>
-          <attvalue for="Label_simple" value="ar3"></attvalue>
+          <attvalue for="Label_simple" value="AR3"></attvalue>
         </attvalues>
         <viz:size value="98.199234"></viz:size>
         <viz:position x="-1936.6656" y="1503.826" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="118" g="106" b="164"></viz:color>
       </node>
-      <node id="arwg_c13529ec6d4429eb64ee8eb8208fe53f" label="ar3 wg2">
+      <node id="arwg_c13529ec6d4429eb64ee8eb8208fe53f" label="AR3 WG2">
         <attvalues>
           <attvalue for="attr_type" value="AR WG"></attvalue>
           <attvalue for="global_occurrences" value="4"></attvalue>
           <attvalue for="attr_2_4" value="3"></attvalue>
           <attvalue for="attr_2_5" value="2"></attvalue>
-          <attvalue for="Label_simple" value="ar3"></attvalue>
+          <attvalue for="Label_simple" value="AR3"></attvalue>
         </attvalues>
         <viz:size value="63.61309"></viz:size>
         <viz:position x="-1914.7214" y="-972.24274" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
-      <node id="arwg_8b3e76e135b35776d5b50be18e698f73" label="ar3 wg3">
+      <node id="arwg_8b3e76e135b35776d5b50be18e698f73" label="AR3 WG3">
         <attvalues>
           <attvalue for="attr_type" value="AR WG"></attvalue>
           <attvalue for="global_occurrences" value="7"></attvalue>
           <attvalue for="attr_2_4" value="3"></attvalue>
           <attvalue for="attr_2_5" value="3"></attvalue>
-          <attvalue for="Label_simple" value="ar3"></attvalue>
+          <attvalue for="Label_simple" value="AR3"></attvalue>
         </attvalues>
         <viz:size value="71.313354"></viz:size>
         <viz:position x="-1927.7458" y="-3546.9583" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="68" g="163" b="199"></viz:color>
       </node>
-      <node id="arwg_fa70b9b5ccf7f9fa8ede3cdc8a153786" label="ar4 wg1">
+      <node id="arwg_fa70b9b5ccf7f9fa8ede3cdc8a153786" label="AR4 WG1">
         <attvalues>
           <attvalue for="attr_type" value="AR WG"></attvalue>
           <attvalue for="global_occurrences" value="47"></attvalue>
           <attvalue for="attr_2_4" value="4"></attvalue>
           <attvalue for="attr_2_5" value="1"></attvalue>
-          <attvalue for="Label_simple" value="ar4"></attvalue>
+          <attvalue for="Label_simple" value="AR4"></attvalue>
         </attvalues>
         <viz:size value="106.8533"></viz:size>
         <viz:position x="-1919.3375" y="1139.1339" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="118" g="106" b="164"></viz:color>
       </node>
-      <node id="arwg_48882c6eef53e967332cd56a0c5ff319" label="ar4 wg2">
+      <node id="arwg_48882c6eef53e967332cd56a0c5ff319" label="AR4 WG2">
         <attvalues>
           <attvalue for="attr_type" value="AR WG"></attvalue>
           <attvalue for="global_occurrences" value="16"></attvalue>
           <attvalue for="attr_2_4" value="4"></attvalue>
           <attvalue for="attr_2_5" value="2"></attvalue>
-          <attvalue for="Label_simple" value="ar4"></attvalue>
+          <attvalue for="Label_simple" value="AR4"></attvalue>
         </attvalues>
         <viz:size value="85.10307"></viz:size>
         <viz:position x="-1903.7378" y="-1246.7969" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
-      <node id="arwg_74a6ec1c599b5d118fadf264c32564d6" label="ar4 wg3">
+      <node id="arwg_74a6ec1c599b5d118fadf264c32564d6" label="AR4 WG3">
         <attvalues>
           <attvalue for="attr_type" value="AR WG"></attvalue>
           <attvalue for="global_occurrences" value="13"></attvalue>
           <attvalue for="attr_2_4" value="4"></attvalue>
           <attvalue for="attr_2_5" value="3"></attvalue>
-          <attvalue for="Label_simple" value="ar4"></attvalue>
+          <attvalue for="Label_simple" value="AR4"></attvalue>
         </attvalues>
         <viz:size value="81.34731"></viz:size>
         <viz:position x="-1931.2513" y="-3856.0044" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="68" g="163" b="199"></viz:color>
       </node>
-      <node id="arwg_7b3afdfd0892b79145ecaa8d96aac9fb" label="ar5 wg1">
+      <node id="arwg_7b3afdfd0892b79145ecaa8d96aac9fb" label="AR5 WG1">
         <attvalues>
           <attvalue for="attr_type" value="AR WG"></attvalue>
           <attvalue for="global_occurrences" value="63"></attvalue>
           <attvalue for="attr_2_4" value="5"></attvalue>
           <attvalue for="attr_2_5" value="1"></attvalue>
-          <attvalue for="Label_simple" value="ar5"></attvalue>
+          <attvalue for="Label_simple" value="AR5"></attvalue>
         </attvalues>
         <viz:size value="112.62796"></viz:size>
         <viz:position x="-1909.3569" y="786.1256" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="118" g="106" b="164"></viz:color>
       </node>
-      <node id="arwg_3632371a7ada6618d965821cec212ec7" label="ar5 wg2">
+      <node id="arwg_3632371a7ada6618d965821cec212ec7" label="AR5 WG2">
         <attvalues>
           <attvalue for="attr_type" value="AR WG"></attvalue>
           <attvalue for="global_occurrences" value="25"></attvalue>
           <attvalue for="attr_2_4" value="5"></attvalue>
           <attvalue for="attr_2_5" value="2"></attvalue>
-          <attvalue for="Label_simple" value="ar5"></attvalue>
+          <attvalue for="Label_simple" value="AR5"></attvalue>
         </attvalues>
         <viz:size value="93.784195"></viz:size>
         <viz:position x="-1901.5524" y="-1601.4159" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="204" g="207" b="95"></viz:color>
       </node>
-      <node id="arwg_c60975553fbe499d6fdbe5dd07fd9489" label="ar5 wg3">
+      <node id="arwg_c60975553fbe499d6fdbe5dd07fd9489" label="AR5 WG3">
         <attvalues>
           <attvalue for="attr_type" value="AR WG"></attvalue>
           <attvalue for="global_occurrences" value="14"></attvalue>
           <attvalue for="attr_2_4" value="5"></attvalue>
           <attvalue for="attr_2_5" value="3"></attvalue>
-          <attvalue for="Label_simple" value="ar5"></attvalue>
+          <attvalue for="Label_simple" value="AR5"></attvalue>
         </attvalues>
         <viz:size value="82.665474"></viz:size>
         <viz:position x="-1916.1012" y="-3220.0833" z="0.0"></viz:position>
-        <viz:color r="255" g="215" b="0"></viz:color>
+        <viz:color r="68" g="163" b="199"></viz:color>
       </node>
       <node id="institution_2cce6a24e14e3017da851b09767e1b2e" label="CIRAD">
         <attvalues>
