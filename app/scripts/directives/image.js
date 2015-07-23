@@ -7,12 +7,41 @@
  * # donut
  */
 angular.module('driveoutApp.directives.image', [])
-  .directive('imageFirst', function () {
+  .directive('image', function () {
     return {
-      template: '<div></div>',
-      restrict: 'EA',
+      scope: {
+        ratiovertionhori: '='
+      },
       link: function postLink(scope, element, attrs) {
-        element.text('this is the image directive');
+        applyGoodSize();
+
+        // element.find('img').css({
+        //   'max-height': $('.vizLegendZone').position().top - 30 + 'px'
+        // });
+        window.addEventListener('resize', function() {
+          applyGoodSize();
+        })
+        function applyGoodSize() {
+          if (element.width()*0.8*scope.ratiovertionhori <$('.vizLegendZone').position().top - 30){
+            element.find('img').css({
+              'margin-left': (element.width() - element.width()*0.8) /2 + 'px',
+              'height': '',
+              'width': ''
+            });
+          }
+          else if (element.find('img').height() === $('.vizLegendZone').position().top - 30){
+            element.find('img').css({
+              'margin-left': (element.width() - element.find('img').width()) /2 + 'px',
+            });
+          }
+          else {
+            element.find('img').css({
+              'height': ($('.vizLegendZone').position().top - 30) + 'px',
+              'width': ($('.vizLegendZone').position().top - 30) / scope.ratiovertionhori + 'px',
+              'margin-left': (element.width() - ($('.vizLegendZone').position().top - 30) / scope.ratiovertionhori) /2 + 'px'
+            });
+          }
+        }
       }
     };
   });
