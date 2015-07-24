@@ -23,7 +23,7 @@ angular.module('driveoutApp.directives', [
   'driveoutApp.directives.roleevolutiondiversity',
   'driveoutApp.directives.diversityacrossroles',
   'driveoutApp.directives.section',
-  'driveoutApp.directives.pdfconclusion',
+  'driveoutApp.directives.pdf',
   'driveoutApp.directives.stackedwgsbyar',
   'driveoutApp.directives.stackedwgsbyarcountryvstotal',
   'driveoutApp.directives.stackedwgsbyarcavsnonca',

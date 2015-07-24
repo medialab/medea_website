@@ -6,8 +6,8 @@
  * @description
  * # donut
  */
-angular.module('driveoutApp.directives.pdfconclusion', [])
-  .directive('pdfconclusion', function () {
+angular.module('driveoutApp.directives.pdf', [])
+  .directive('pdf', function () {
     return {
       restrict: 'EA',
       scope: {
@@ -119,12 +119,13 @@ angular.module('driveoutApp.directives.pdfconclusion', [])
           queueRenderPage(pageNum);
         }
         document.getElementById('nextPDF').addEventListener('click', onNextPage);
+
         var ratio = scope.ratio;
-        if ($('#pdfconclusion').width()*ratio
-            < $('#pdfconclusion').height()) {
+        if ($('#pdf').width()*ratio
+            < $('#pdf').height()) {
           $('#containerPdfConclusion').css({
               'position': 'absolute',
-              'height': ($('#pdfconclusion').width()*ratio-30) + 'px',
+              'height': ($('#pdf').width()*ratio-30) + 'px',
               'width': '100%',
               'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
               'margin-bottom': 30 + 'px'});
@@ -140,12 +141,12 @@ angular.module('driveoutApp.directives.pdfconclusion', [])
         }
         window.addEventListener('resize', function() {
           if (element.height() !== 0) {
-            if ($('#pdfconclusion').width()*ratio
-              < $('#pdfconclusion').height()) {
+            if ($('#pdf').width()*ratio
+              < $('#pdf').height()) {
               $('#containerPdfConclusion').css({
                   'position': 'absolute',
                   'left': '0',
-                  'height': ($('#pdfconclusion').width()*ratio-30) + 'px',
+                  'height': ($('#pdf').width()*ratio-30) + 'px',
                   'width': '100%',
                   'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
                   'margin-bottom': 30 + 'px'});
