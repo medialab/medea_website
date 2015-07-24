@@ -167,7 +167,7 @@
     //Viz title
     svg.append('text')
       .attr('x', margin.left + (chartTrueWidth / 2))
-      .attr('y', margin.top)
+      .attr('y', margin.top/2)
       .attr('class', 'title')
       .style('text-anchor', 'middle')
       .text(title);

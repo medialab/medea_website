@@ -22,13 +22,13 @@ angular.module('driveoutApp.directives.diversityacrossroles', [])
                 top: 20,
                 bottom: 25,
                 left: 50,
-                right: 20
+                right: 30
               },
               marginBottomViz = {
                 top: 25,
                 bottom: 20,
                 left: 50,
-                right: 20
+                right: 30
               };
           lineChart.drawChart('#visualisation1', {
             title: 'Participations as Contributing Authors (CA)',
