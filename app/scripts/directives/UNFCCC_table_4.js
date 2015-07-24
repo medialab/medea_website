@@ -8,6 +8,17 @@ angular.module('driveoutApp.directives.unfccctablefour', [])
         var titleTable1 = 'List of the automatically extracted terms with their different forms',
             titleTable2 = 'List of the manually selected terms with their forms and frequency';
 
+        //Build the table to have the header fixed
+        $('#tableDivContainer.scrollableOverlay').css({
+          'max-height': element.height() - $('#buttonsTableContainer').height() - $('.tableHeader').height() - 10 + 'px'
+        });
+        window.addEventListener('resize', function() {
+          $('#tableDivContainer.scrollableOverlay').css({
+            'max-height': element.height() - $('#buttonsTableContainer').height() - $('.tableHeader').height() - 10 + 'px'
+          });
+        });
+
+        //Changes the tables on click
         $('#extractedTermsButton').on('click', function() {
           $('#tableExtracted').removeClass('displayNone');
 
@@ -20,7 +31,6 @@ angular.module('driveoutApp.directives.unfccctablefour', [])
           if ($('.vizLegendText h4').text() !== titleTable1)
             $('.vizLegendText h4').text(titleTable1);
         });
-
         $('#selectedTermsButton').on('click', function() {
           $('#tableSelected').removeClass('displayNone');
 

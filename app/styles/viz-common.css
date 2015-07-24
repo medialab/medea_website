@@ -355,15 +355,11 @@ select#currentAR {
 /*********************************************************************
  *************************** Tables
  *********************************************************************/
-table .tableRow > td, table .tableRow > th{
-  padding-bottom: 20px;
+table {
+  width: 100%;
 }
-table .tableRow > th {
-  font: 13px 'Raleway';
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
-  color: #33616D;
+table .tableRow > td{
+  padding-bottom: 20px;
 }
 table .firstColumn {
   font: 13px 'Raleway';
@@ -387,6 +383,19 @@ table .thirdColumn {
   padding-left: 20px;
 }
 
+.tableHeader .tableRow > td {
+  font: 13px 'Raleway';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  color: #33616D;
+}
+
+.scrollableOverlay {
+  overflow: auto;
+  overflow: overlay;
+}
 
 #buttonsTableContainer {
   padding-bottom: 10px;
