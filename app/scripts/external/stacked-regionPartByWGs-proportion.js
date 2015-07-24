@@ -62,7 +62,6 @@
         orderStack = this.orderStack,
         data = this.data;
 
-
         //Height the viz can actually take (allows margins)
     var effHeight = height - (margin.top + margin.bottom),
         //Width the viz can actually take (allows margins)
