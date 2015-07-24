@@ -10,19 +10,14 @@
   </div>
   <div class="col-sm-7 col-md-7 col-lg-8 fill-height noRightGutter noLeftGutter">
     <div class="fill-height" ng-switch="sections[index].directive">
-      <div class="fill-height scrollable" ng-switch-when="pdfWG">
-        <img class="imgScaled" ng-src="media/pdfWG.png">
-        <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
-        <div collapse="isCollapsed" class="vizLegendZone">
-          <div class="topline"></div>
-          <div class="vizLegendText">
-            <h4>Report of the first session of the WMO/UNEP INTERGOVERNMENTAL PANEL ON CLIMATE CHANGE (IPCC)<br/>Geneva, 9-11 November 1988</h4>
-          </div>
-        </div>
-      </div>
-      <div class="fill-height scrollable" ng-switch-when="pdfOrga">
-        <div class="fullWidth" ratiovertionhori="456/650" image>
-          <img class="imgNotScrollable imgScaled" ng-src="media/pdfOrga.png">
+      <!--  =================================================================-->
+      <!--  ============================== IPCC ============================ -->
+      <!--  =================================================================-->
+
+      <!-- ============================== Intro ============================ -->
+      <div class="fill-height scrollable" ng-switch-when="ipccIntro1">
+        <div class="fullWidth" ratiovertionhori="755/1020" image>
+          <a target="_blank" ng-href="images/ipccIntro1.png"><img class="imgNotScrollable imgScaled" ng-src="images/ipccIntro1.png"></a>
         </div>
         <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
         <div collapse="isCollapsed" class="vizLegendZone">
@@ -31,6 +26,57 @@
             <h4>Organisation of the IPCC</h4>
           </div>
         </div>
+      </div>
+      <div class="fill-height" ng-switch-when="ipccIntro3">
+        <div id="pdfconclusion" class="fill-height" url="media/document_fusionne.pdf" ratio="1.4" pdfconclusion>
+          <canvas id="containerPdfConclusion"></canvas>
+          <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+          <div collapse="isCollapsed" class="vizLegendZone">
+            <div class="topline"></div>
+            <div class="vizLegendText">
+              <h4>AR1 WG2 Chapter 2 Header (1990) & AR1 WG1 Author Appendix (1990)<br/><button id="prevPDF">Previous</button><button id="nextPDF">Next</button>&nbsp; &nbsp;
+            <span>Page: <span id="page_numPDF"></span> / <span id="page_countPDF"></span></span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- =================== Coordination & Controversy ================== -->
+      <div class="fill-height scrollable" ng-switch-when="pdfWG">
+        <img class="imgScaled" ng-src="images/pdfWG.jpg">
+        <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+        <div collapse="isCollapsed" class="vizLegendZone">
+          <div class="topline"></div>
+          <div class="vizLegendText">
+            <h4>Report of the first session of the WMO/UNEP INTERGOVERNMENTAL PANEL ON CLIMATE CHANGE (IPCC)<br/>Geneva, 9-11 November 1988</h4>
+          </div>
+        </div>
+      </div>
+      <div class="fill-height" ng-switch-when="participationRatesHistoTotal">
+        <div id="containerparticipationRatesHistoTotal" class="fill-height" participationrateshistototal>
+          <div id="containerTotal"></div>
+          <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+          <div collapse="isCollapsed" class="vizLegendZone">
+            <div class="topline"></div>
+            <div class="vizLegendText">
+              <h4>Distribution of author participations in the IPCC</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fill-height scrollable" ng-switch-when="pdfOrga">
+        <div class="fullWidth" ratiovertionhori="456/650" image>
+          <img class="imgNotScrollable imgScaled" ng-src="images/pdfOrga.jpg">
+        </div>
+        <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+        <div collapse="isCollapsed" class="vizLegendZone">
+          <div class="topline"></div>
+          <div class="vizLegendText">
+            <h4>Diagram of IPCC AR1 WG1 report structure and relations with WGIII and WGII<br/>From AR1 WGI Report Forward, 1990.</h4>
+          </div>
+        </div>
+      </div>
+      <div class="fill-height fill-width" ng-switch-when="guardianArticle">
+        <iframe class="fill-height fill-width"src="http://www.theguardian.com/environment/2010/jan/20/himalayan-glaciers-melt-claims-false-ipcc"></iframe>
       </div>
       <div class="fill-height scrollable flex" ng-switch-when="ipccwgvenn">
         <div id="venn" class="fill-height" ipccwgvenn path="$parent.$parent.section.datasrc[0]"></div>
@@ -57,21 +103,6 @@
           </div>
         </div>
       </div>
-      <div class="fill-height" ng-switch-when="participationRatesHistoTotal">
-        <div id="containerparticipationRatesHistoTotal" class="fill-height" participationrateshistototal>
-          <div id="containerTotal"></div>
-          <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
-          <div collapse="isCollapsed" class="vizLegendZone">
-            <div class="topline"></div>
-            <div class="vizLegendText">
-              <h4>Distribution of author participations in the IPCC</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="fill-height fill-width" ng-switch-when="guardianArticle">
-        <iframe class="fill-height fill-width"src="http://www.theguardian.com/environment/2010/jan/20/himalayan-glaciers-melt-claims-false-ipcc"></iframe>
-      </div>
       <div class="fill-height" ng-switch-when="roleDistribStacked">
         <div id="containerroledistribstacked" class="fill-height" roledistribstacked>
           <div id="containerStackedBars" class="flex fill-height">
@@ -86,15 +117,17 @@
           </div>
         </div>
       </div>
-      <div class="fill-height" ng-switch-when="pdfConclusion">
-        <div id="pdfconclusion" class="fill-height" url="media/pdfConclusion.pdf" ratio="0.7" pdfconclusion>
-          <canvas id="containerPdfConclusion"></canvas>
-          <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
-          <div collapse="isCollapsed" class="vizLegendZone">
-            <div class="topline"></div>
-            <div class="vizLegendText">
-              <h4>Presentation by Jean-Pascal van Ypersele at IPCC Plenary Session 2010<br/><button id="prevPDF">Previous</button><button id="nextPDF">Next</button>&nbsp; &nbsp;
-            <span>Page: <span id="page_numPDF"></span> / <span id="page_countPDF"></span></span></h4>
+      <div class="fill-height" ng-switch-when="partCountriesBridgeNonBridge">
+        <div id="containerpartcountriesbridgenonbridge" class="fill-height" partcountriesbridgenonbridge>
+          <div id="containerPartCountriesBridgeNonBridge">
+            <div id="containerNonBridge"></div>
+            <div id="containerBridge"></div>
+            <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+            <div collapse="isCollapsed" class="vizLegendZone">
+              <div class="topline"></div>
+              <div class="vizLegendText">
+                <h4>Comparison of distribution of country participations in the IPCC by author type</h4>
+              </div>
             </div>
           </div>
         </div>
@@ -154,21 +187,20 @@
           </div>
         </div>
       </div>
-      <div class="fill-height" ng-switch-when="partCountriesBridgeNonBridge">
-        <div id="containerpartcountriesbridgenonbridge" class="fill-height" partcountriesbridgenonbridge>
-          <div id="containerPartCountriesBridgeNonBridge">
-            <div id="containerNonBridge"></div>
-            <div id="containerBridge"></div>
-            <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
-            <div collapse="isCollapsed" class="vizLegendZone">
-              <div class="topline"></div>
-              <div class="vizLegendText">
-                <h4>Comparison of distribution of country participations in the IPCC by author type</h4>
-              </div>
+      <div class="fill-height" ng-switch-when="pdfConclusion">
+        <div id="pdfconclusion" class="fill-height" url="media/pdfConclusion.pdf" ratio="0.7" pdfconclusion>
+          <canvas id="containerPdfConclusion"></canvas>
+          <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+          <div collapse="isCollapsed" class="vizLegendZone">
+            <div class="topline"></div>
+            <div class="vizLegendText">
+              <h4>Presentation by Jean-Pascal van Ypersele at IPCC Plenary Session 2010<br/><button id="prevPDF">Previous</button><button id="nextPDF">Next</button>&nbsp; &nbsp;
+            <span>Page: <span id="page_numPDF"></span> / <span id="page_countPDF"></span></span></h4>
             </div>
           </div>
         </div>
       </div>
+      <!-- ============================ Diversity ========================== -->
       <div class="fill-height" ng-switch-when="worldmapDiversity">
         <iframe width='100%' height='100%' frameborder='0' src='https://audreybaneyx.cartodb.com/viz/0ec34b32-24b9-11e5-9a86-0e853d047bba/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
       </div>
@@ -266,6 +298,7 @@
           </div>
         </div>
       </div>
+      <!-- ============================= France ============================ -->
       <div class="fill-height scrollable" ng-switch-when="franceIntroImage">
         <div class="fullWidth" ratiovertionhori="340/510" image>
           <img class="imgScaled imgNotScrollable" ng-src="images/elysee-giec.png">
@@ -398,6 +431,12 @@
           </div>
         </div>
       </div>
+
+      <!--  =================================================================-->
+      <!-- ============================= UNFCCC ============================ -->
+      <!--  =================================================================-->
+
+      <!-- ============================== Intro ============================ -->
       <div class="fill-height scrollable" ng-switch-when="UNFCCC_intro_1">
         <div class="fullWidth" ratiovertionhori="1065/1600" image>
           <img class="imgScaled imgNotScrollable" ng-src="images/UNFCCC_Intro_1.jpg">
@@ -458,9 +497,11 @@
           </div>
         </div>
       </div>
+      <!-- ========================== Thematic space ======================= -->
       <div class="fill-height" ng-switch-when="enbgraph">
         <enbgraph ng-class="['fill-height', 'enbgraph']" gexf="contents/data/unfccc-the-thematic-space-of-negotiations/ENB.gexf" />
       </div>
+      <!-- ====================== Trajectories of adaptation =============== -->
       <div class="fill-height fill-width" ng-switch-when="trajectoriesOfAdaptation">
         <div unfccctrajectoriesadaptation class="fill-height fill-width">
           <div id="vizContainer" class="fill-height fill-width"></div>
