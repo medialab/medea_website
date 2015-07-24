@@ -159,7 +159,7 @@
         maxNodeSize: 15,
         minEdgeSize: 0.5,
         maxEdgeSize: 10,
-        labelSize: 'proportional',
+        labelSize: 'fixed',
         labelSizeRatio: 1.2,
         labelThreshold: 100
       }
