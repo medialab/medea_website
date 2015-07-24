@@ -44,6 +44,8 @@ angular.module('driveoutApp.directives.gexfarthree', [])
         }
 
         scope.$on('updateView', function(event, index) {
+          index = +index;
+
           if (scope.index === 9 && index === 8) {
             if (scope.sigmaInstance !== undefined)
               scope.sigmaInstance.kill();
@@ -65,6 +67,8 @@ angular.module('driveoutApp.directives.gexfarthree', [])
           else if (scope.index !== 8 && scope.index !== 9) {
             if (scope.sigmaInstance !== undefined)
               scope.sigmaInstance.kill();
+          }
+          else {
           }
         });
 

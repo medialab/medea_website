@@ -61,7 +61,7 @@ angular.module('driveoutApp.directives.zeppelin', [])
                 switchViz = element.find('#chapter_' + nextIndex)[0].offsetTop <
                             this.scrollTop + downDiff;
               }
-              else {
+              else if (nextIndex < currentIndex){
                 functionToCall = scope.$parent.previous;
                 switchViz = element.find('#chapter_' + currentIndex)[0].offsetTop >
                             this.scrollTop + upDiff;
