@@ -190,6 +190,7 @@ select#currentAR {
 }
 .powerLawHisto #yAxis text {
   font: 11px 'Raleway';
+  font-weight: 700;
 }
 .powerLawHisto rect {
   fill: #33616D;

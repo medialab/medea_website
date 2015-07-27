@@ -106,7 +106,7 @@ angular
       .when('/unfccc', {
         redirectTo: '/storylines'
       })
-      .when('/ipcc/national-cultures-of-climate-expertise-france', {
+      .when('/ipcc/national-cultures-of-climate-expertise-by-kari-de-pryck-and-ian-gray', {
         templateUrl: 'views/page.html',
         controller: 'PageCtrl', // handle the items loading
         resolve: {
@@ -115,7 +115,7 @@ angular
           }
         }
       })
-      .when('/ipcc/coordination-and-controversy', {
+      .when('/ipcc/coordination-and-controversy-in-the-ipcc-by-ian-gray', {
         templateUrl: 'views/page.html',
         controller: 'PageCtrl', // handle the items loading
         resolve: {
@@ -124,7 +124,7 @@ angular
           }
         }
       })
-      .when('/ipcc/diversity', {
+      .when('/ipcc/participation-and-politics-in-the-ipcc-by-ian-gray', {
         templateUrl: 'views/page.html',
         controller: 'PageCtrl', // handle the items loading
         resolve: {
@@ -133,7 +133,7 @@ angular
           }
         }
       })
-      .when('/ipcc/introduction', {
+      .when('/ipcc/introduction-by-ian-gray', {
         templateUrl: 'views/page.html',
         controller: 'PageCtrl', // handle the items loading
         resolve: {

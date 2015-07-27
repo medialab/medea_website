@@ -31,6 +31,7 @@ h1 {
 h2 {
   font-family: 'Raleway';
   margin-bottom: 18px;
+  font-size: 28px;
 }
 h3 {
   font-family: 'Raleway';
@@ -150,4 +151,15 @@ button:disabled {
 
 .popover {
   max-width: 80%;
+}
+
+.rightBorder {
+  border-right: 1px solid #57AACE;
+}
+
+.twentyPaddingLeft {
+  padding-left: 20px;
+}
+.twentyPaddingRight {
+  padding-right: 20px;
 }
