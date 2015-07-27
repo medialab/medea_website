@@ -20,7 +20,7 @@ angular.module('driveoutApp.directives.stackedwgsbyarcountryvstotal', [])
 
           var width = elementWidth,
               height = elementHeight - legendHeight,
-              margin = {top: 40, bottom: 27, left: elementWidth/5, right: elementWidth/10};
+              margin = {top: 40, bottom: 27, left: 50, right: -30};
 
           stackedBars.drawViz('#svgContainer',
             {
@@ -44,7 +44,7 @@ angular.module('driveoutApp.directives.stackedwgsbyarcountryvstotal', [])
 
               var width = elementWidth,
                   height = elementHeight - legendHeight,
-                  margin = {top: 40, bottom: 27, left: elementWidth/5, right: elementWidth/10};
+                  margin = {top: 40, bottom: 27, left: 50, right: -30};
 
               stackedBars.drawViz('#svgContainer',
                 {

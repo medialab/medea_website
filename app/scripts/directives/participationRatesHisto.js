@@ -20,7 +20,7 @@ angular.module('driveoutApp.directives.partratehisto', [])
 
           var width = elementWidth,
               height = elementHeight/1.1 - legendHeight,
-              margin = {top: 40, bottom: 35, left: 40, right: 40};
+              margin = {top: 40, bottom: 35, left: 40, right: 10};
           histogram.drawChart('#containerNonBridge',
             {
               dataName: 'dataNonBridge',
@@ -52,7 +52,7 @@ angular.module('driveoutApp.directives.partratehisto', [])
 
             var width = elementWidth,
                 height = elementHeight/1.1 - legendHeight,
-                margin = {top: 40, bottom: 35, left: 40, right: 40};
+                margin = {top: 40, bottom: 35, left: 40, right: 10};
             histogram.drawChart('#containerNonBridge',
               {
                 dataName: 'dataNonBridge',

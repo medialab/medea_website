@@ -16,18 +16,18 @@ angular.module('driveoutApp.directives.diversityacrossroles', [])
             elementHeight = element.height();
         var lineChart = new LineChart();
         lineChart.load('contents/data/diversityAcrossRoles/', function() {
-          var width = elementWidth/1.2,
+          var width = elementWidth,
               height = elementHeight/2.4,
               marginTopViz = {
                 top: 20,
                 bottom: 25,
-                left: 50,
+                left: 45,
                 right: 30
               },
               marginBottomViz = {
                 top: 25,
                 bottom: 20,
-                left: 50,
+                left: 45,
                 right: 30
               };
           lineChart.drawChart('#visualisation1', {
@@ -46,11 +46,11 @@ angular.module('driveoutApp.directives.diversityacrossroles', [])
 
           $('#visualisation1 svg').css({
             'position': 'absolute',
-            'left': (element.width() - $('#visualisation1 svg').width())/2 +'px',
+            'left': 0 +'px',
             'margin-bottom': 30 + 'px'});
           $('#visualisation2 svg').css({
             'position': 'absolute',
-            'left': (element.width() - $('#visualisation2 svg').width())/2 +'px',
+            'left': 0 +'px',
             'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
             'margin-bottom': 30 + 'px'});
 
@@ -58,7 +58,7 @@ angular.module('driveoutApp.directives.diversityacrossroles', [])
             if (element.height() !== 0) {
               var elementWidth = element.width(),
                   elementHeight = element.height();
-              var width = elementWidth/1.2,
+              var width = elementWidth,
                   height = elementHeight/2.4;
               lineChart.drawChart('#visualisation1',
                 {
@@ -76,11 +76,11 @@ angular.module('driveoutApp.directives.diversityacrossroles', [])
               });
               $('#visualisation1 svg').css({
                 'position': 'absolute',
-                'left': (element.width() - $('#visualisation1 svg').width())/2 +'px',
+                'left': 0 +'px',
                 'margin-bottom': 30 + 'px'});
               $('#visualisation2 svg').css({
                 'position': 'absolute',
-                'left': (element.width() - $('#visualisation2 svg').width())/2 +'px',
+                'left': 0 +'px',
                 'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
                 'margin-bottom': 30 + 'px'
               });

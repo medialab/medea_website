@@ -19,7 +19,7 @@ angular.module('driveoutApp.directives.partcountrybridgenonbridge', [])
         histogram.load('contents/data/partCountriesBridgeNonBridge/participations.json', function() {
             var width = elementWidth,
                 height = elementHeight / 2.5,
-                margin = {top: 40, bottom: 34, left: 40, right: 40};
+                margin = {top: 40, bottom: 34, left: 40, right: 10};
 
                 histogram.drawChart('#containerNonBridge',
                   {
@@ -50,7 +50,7 @@ angular.module('driveoutApp.directives.partcountrybridgenonbridge', [])
             histogram.load('contents/data/partCountriesBridgeNonBridge/participations.json', function() {
               var width = elementWidth,
                   height = elementHeight / 2.5,
-                  margin = {top: 40, bottom: 34, left: 40, right: 40};
+                  margin = {top: 40, bottom: 34, left: 40, right: 10};
 
               histogram.drawChart('#containerNonBridge',
                 {

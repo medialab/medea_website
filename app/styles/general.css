@@ -145,10 +145,6 @@ a.exponent:hover {
   color: rgba(51, 97, 109, 0.8);
 }
 
-button:disabled {
-  background: rgba(51, 97, 109, 0.60);
-}
-
 .popover {
   max-width: 80%;
 }

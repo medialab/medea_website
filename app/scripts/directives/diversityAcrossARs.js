@@ -22,7 +22,7 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
 
           var width = elementWidth/2.1,
               height = elementHeight - legendHeight,
-              margin = {top: 40, bottom: 27, left: 50, right: 10};
+              margin = {top: 40, bottom: 27, left: 45, right: 10};
 
           stackedBars.drawViz('#svgContainerLeft',
             {
@@ -33,7 +33,7 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
             });
           $('#svgContainerLeft svg').css({
             'position': 'absolute',
-            'left': (element.width() - 2 * width)/2 + 'px',
+            'left': 0 + 'px',
             'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
             'margin-bottom': 30 + 'px'});
 
@@ -46,7 +46,7 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
 
               var width = elementWidth /2.1,
                   height = elementHeight - legendHeight,
-                  margin = {top: 40, bottom: 27, left: 50, right: 10};
+                  margin = {top: 40, bottom: 27, left: 45, right: 10};
 
               stackedBars.drawViz('#svgContainerLeft',
                 {
@@ -57,7 +57,7 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
                 });
               $('#svgContainerLeft svg').css({
                 'position': 'absolute',
-                'left': (element.width() - 2 * width)/2 + 'px',
+                'left': 0 + 'px',
                 'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
                 'margin-bottom': 30 + 'px'
               });
@@ -69,7 +69,7 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
 
           var width = elementWidth/2.1,
               height = elementHeight - legendHeight,
-              margin = {top: 40, bottom: 27, left: 50, right: 10};
+              margin = {top: 40, bottom: 27, left: 50, right: 15};
 
           stackedBarsProp.drawViz('#svgContainerRight',
             {
@@ -80,7 +80,7 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
             });
           $('#svgContainerRight svg').css({
             'position': 'absolute',
-            'left': width + (element.width() - 2 * width)/2 + 'px',
+            'right': 0 + 'px',
             'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
             'margin-bottom': 30 + 'px'});
 
@@ -93,7 +93,7 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
 
               var width = elementWidth /2.1,
                   height = elementHeight - legendHeight,
-                  margin = {top: 40, bottom: 27, left: 50, right: 10};
+                  margin = {top: 40, bottom: 27, left: 50, right: 15};
 
               stackedBarsProp.drawViz('#svgContainerRight',
                 {
@@ -104,7 +104,7 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
                 });
               $('#svgContainerRight svg').css({
                 'position': 'absolute',
-                'left': width + (element.width() - 2 * width)/2 + 'px',
+                'right': 0 + 'px',
                 'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
                 'margin-bottom': 30 + 'px'
               });

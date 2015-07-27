@@ -19,7 +19,7 @@ angular.module('driveoutApp.directives.partratehistototal', [])
           var legendHeight = $('.vizLegendZone').height();
           var width = elementWidth,
               height = elementHeight/1.2 - legendHeight,
-              margin = {top: 40, bottom: 35, left: 40, right: 40};
+              margin = {top: 40, bottom: 35, left: 40, right: 10};
 
           histogram.drawChart('#containerTotal',
             {
@@ -42,7 +42,7 @@ angular.module('driveoutApp.directives.partratehistototal', [])
             var legendHeight = $('.vizLegendZone').height();
             var width = elementWidth,
                 height = elementHeight/1.2 - legendHeight,
-                margin = {top: 40, bottom: 35, left: 40, right: 40};
+                margin = {top: 40, bottom: 35, left: 40, right: 10};
 
             histogram.drawChart('#containerTotal',
               {

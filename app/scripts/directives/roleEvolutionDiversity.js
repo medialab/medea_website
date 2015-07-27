@@ -17,12 +17,12 @@ angular.module('driveoutApp.directives.roleevolutiondiversity', [])
 
         var lineChart = new LineChartRoleOnly();
         lineChart.load('contents/data/roleEvolutionDiversity/participations.json', function() {
-          var width = elementWidth/1.2,
+          var width = elementWidth,
               height = elementHeight/1.2,
               margin = {
                 top: 70,
                 bottom: 20,
-                left: 40,
+                left: 45,
                 right: 40
               };
           lineChart.drawChart('#container', {
@@ -32,7 +32,7 @@ angular.module('driveoutApp.directives.roleevolutiondiversity', [])
           });
           $('#container svg').css({
             'position': 'absolute',
-            'left': (element.width() - $('#container svg').width())/2 +'px',
+            'left': 0 +'px',
             'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
             'margin-bottom': 30 + 'px'});
 
@@ -40,7 +40,7 @@ angular.module('driveoutApp.directives.roleevolutiondiversity', [])
             if (element.width() !== 0) {
               var elementWidth = element.width(),
               elementHeight = element.height();
-              var width = elementWidth/1.2,
+              var width = elementWidth,
                   height = elementHeight/1.2;
 
               lineChart.drawChart('#container',
@@ -51,7 +51,7 @@ angular.module('driveoutApp.directives.roleevolutiondiversity', [])
                 });
               $('#container svg').css({
                 'position': 'absolute',
-                'left': (element.width() - $('#container svg').width())/2 +'px',
+                'left': 0 +'px',
                 'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
                 'margin-bottom': 30 + 'px'
               });

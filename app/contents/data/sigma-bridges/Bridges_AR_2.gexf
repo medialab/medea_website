@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
-  <meta lastmodifieddate="2015-07-02">
+  <meta lastmodifieddate="2015-06-16">
     <creator>Gephi 0.8.1</creator>
     <description></description>
   </meta>
@@ -22,7 +22,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="23.333334"></viz:size>
-        <viz:position x="-35.082478" y="728.0408" z="0.0"></viz:position>
+        <viz:position x="-394.4027" y="612.9606" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_a38718231750411bf57eb74a8ed7e7a3" label="B. Huntley">
@@ -32,7 +32,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="597.6151" y="451.6249" z="0.0"></viz:position>
+        <viz:position x="291.73743" y="689.9263" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_5d48dca669a7f12b48cb41d7eb55e777" label="Bert Bolin">
@@ -42,7 +42,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="20.0"></viz:size>
-        <viz:position x="468.78485" y="-258.26306" z="0.0"></viz:position>
+        <viz:position x="535.11115" y="10.7300205" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_5c8097185ee38b6368d93793f3e4374d" label="Christian Korner">
@@ -52,7 +52,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="20.0"></viz:size>
-        <viz:position x="715.7014" y="258.04456" z="0.0"></viz:position>
+        <viz:position x="490.79333" y="581.32385" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_554fc416e015389b5857b665d973031d" label="E. Sulzman">
@@ -62,7 +62,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="217.01588" y="403.07333" z="0.0"></viz:position>
+        <viz:position x="-13.595408" y="457.57968" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_1549803f385b170a6fd57da124c677e1" label="Gregg Marland">
@@ -72,7 +72,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="23.333334"></viz:size>
-        <viz:position x="344.07004" y="-596.48114" z="0.0"></viz:position>
+        <viz:position x="596.214" y="-344.5328" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_143448ce28ae7527a95bfe8e25a2c0db" label="H. Lins">
@@ -82,7 +82,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="20.0"></viz:size>
-        <viz:position x="413.89627" y="82.482956" z="0.0"></viz:position>
+        <viz:position x="317.2032" y="278.3805" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_9c2754923608d8928c95d0f26956beed" label="H.f. Diaz">
@@ -92,7 +92,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="20.0"></viz:size>
-        <viz:position x="202.08063" y="-377.65967" z="0.0"></viz:position>
+        <viz:position x="363.8368" y="-226.02254" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_17fe42a8076c79264cbb63b6d25afc20" label="I. Colin Prentice">
@@ -102,7 +102,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="395.60486" y="671.685" z="0.0"></viz:position>
+        <viz:position x="6.7613454" y="779.4986" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_365fc38c9be984844da9f8beb33e34f2" label="Jae Edmonds">
@@ -112,7 +112,7 @@
           <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
         </attvalues>
         <viz:size value="33.333332"></viz:size>
-        <viz:position x="154.13303" y="-424.41858" z="0.0"></viz:position>
+        <viz:position x="345.6924" y="-290.49075" z="0.0"></viz:position>
         <viz:color r="91" g="174" b="102"></viz:color>
       </node>
       <node id="author_1d605630c8129c77fe2d846799a83cc8" label="Jens Hesselbjerg Krishna Christensen">
@@ -122,7 +122,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="429.44672" y="-342.54828" z="0.0"></viz:position>
+        <viz:position x="543.1859" y="-81.93216" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_f64d818054f9f934f8bd600ff6b38363" label="John A. Church">
@@ -132,7 +132,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="237.52956" y="328.859" z="0.0"></viz:position>
+        <viz:position x="41.277103" y="403.565" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_8d4b2da353035c27e6eb3c0d44eb83d5" label="John M. Reilly">
@@ -142,7 +142,7 @@
           <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
         </attvalues>
         <viz:size value="23.333334"></viz:size>
-        <viz:position x="454.33737" y="-416.9633" z="0.0"></viz:position>
+        <viz:position x="601.94934" y="-133.93211" z="0.0"></viz:position>
         <viz:color r="91" g="174" b="102"></viz:color>
       </node>
       <node id="author_cfae41cc8c13835e7b11edd4f27edbb9" label="Jyoti K. Parikh">
@@ -152,7 +152,7 @@
           <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="-415.53708" y="-698.67114" z="0.0"></viz:position>
+        <viz:position x="-10.530106" y="-812.8355" z="0.0"></viz:position>
         <viz:color r="91" g="174" b="102"></viz:color>
       </node>
       <node id="author_4b0e85c733f76242fff0bc026909bb3e" label="K. Hogan">
@@ -162,7 +162,7 @@
           <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
         </attvalues>
         <viz:size value="23.333334"></viz:size>
-        <viz:position x="248.11874" y="-510.57745" z="0.0"></viz:position>
+        <viz:position x="470.1659" y="-318.11368" z="0.0"></viz:position>
         <viz:color r="91" g="174" b="102"></viz:color>
       </node>
       <node id="author_57c90a638e9dcaba44665fc790f3c78e" label="L.f. Pitelka">
@@ -172,7 +172,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="20.0"></viz:size>
-        <viz:position x="563.3473" y="8.064544" z="0.0"></viz:position>
+        <viz:position x="483.84076" y="288.6577" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_aa106f39268f3c4abcc618221757aca8" label="M. Jefferson">
@@ -182,7 +182,7 @@
           <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="366.38956" y="-423.98624" z="0.0"></viz:position>
+        <viz:position x="529.2958" y="-183.98808" z="0.0"></viz:position>
         <viz:color r="91" g="174" b="102"></viz:color>
       </node>
       <node id="author_82c7877d382ba371e6eaf8b1a52a54bb" label="Martin Beniston">
@@ -192,7 +192,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="23.333334"></viz:size>
-        <viz:position x="656.494" y="-325.17407" z="0.0"></viz:position>
+        <viz:position x="731.12756" y="46.638023" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_769f6a1ad063a0b06ff7781f902c25d8" label="Michael C. Maccracken">
@@ -202,7 +202,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="23.333334"></viz:size>
-        <viz:position x="405.92838" y="-555.396" z="0.0"></viz:position>
+        <viz:position x="629.2423" y="-278.02286" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_3b97a4eef2995db90d5a4cb84e5d28fb" label="Michael Grubb">
@@ -212,7 +212,7 @@
           <attvalue for="attr_1_2" value="WG I | WG III"></attvalue>
         </attvalues>
         <viz:size value="26.666666"></viz:size>
-        <viz:position x="-452.6808" y="-127.896515" z="0.0"></viz:position>
+        <viz:position x="-328.0848" y="-337.10202" z="0.0"></viz:position>
         <viz:color r="49" g="91" b="102"></viz:color>
       </node>
       <node id="author_69c5b84882ed178cb3cb59b5f93b5443" label="O. Sala">
@@ -222,7 +222,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="369.13315" y="646.31305" z="0.0"></viz:position>
+        <viz:position x="-3.4778264" y="744.2901" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_93ada84be5dd5b1e758dcff02524eff7" label="Ogunlade R. Davidson">
@@ -232,7 +232,7 @@
           <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
         </attvalues>
         <viz:size value="33.333332"></viz:size>
-        <viz:position x="20.230162" y="-463.48132" z="0.0"></viz:position>
+        <viz:position x="249.2605" y="-391.2715" z="0.0"></viz:position>
         <viz:color r="91" g="174" b="102"></viz:color>
       </node>
       <node id="author_28a65d07efc1ab30ecaab840007efd71" label="Philip L. Woodworth">
@@ -242,7 +242,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="208.40341" y="620.942" z="0.0"></viz:position>
+        <viz:position x="-129.98836" y="641.95325" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_efe6717435e8cabc73b1fc15bfdc885a" label="Pier Vellinga">
@@ -252,7 +252,7 @@
           <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
         </attvalues>
         <viz:size value="20.0"></viz:size>
-        <viz:position x="123.152954" y="-692.4325" z="0.0"></viz:position>
+        <viz:position x="452.86984" y="-538.08765" z="0.0"></viz:position>
         <viz:color r="91" g="174" b="102"></viz:color>
       </node>
       <node id="author_8a9f079bd2cd31691b5c7488dcaa21b2" label="R. Balling">
@@ -262,7 +262,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="282.8707" y="403.75616" z="0.0"></viz:position>
+        <viz:position x="43.095135" y="491.09845" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_a3ea80fe5b70f3ef8a06c049d9e0e6e4" label="R.j. Braithwaite">
@@ -272,7 +272,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="673.3403" y="106.21454" z="0.0"></viz:position>
+        <viz:position x="530.0225" y="428.65463" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_610ecca48ada0dffd9a454aa3db1d204" label="R.k. Pachauri">
@@ -282,7 +282,7 @@
           <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="-27.806189" y="-490.26874" z="0.0"></viz:position>
+        <viz:position x="221.05353" y="-438.4883" z="0.0"></viz:position>
         <viz:color r="91" g="174" b="102"></viz:color>
       </node>
       <node id="author_6336d58b93f35893ea034969b6120cbb" label="Rattan Lal">
@@ -292,7 +292,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="437.2672" y="411.11743" z="0.0"></viz:position>
+        <viz:position x="173.12581" y="574.67175" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_40045f9701a22f61a8d1177908c39867" label="Rik Leemans">
@@ -302,7 +302,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="30.0"></viz:size>
-        <viz:position x="327.1163" y="-462.80453" z="0.0"></viz:position>
+        <viz:position x="514.6933" y="-237.24232" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_06547f2c712e3bb3aefc6570c10c39f0" label="Robert T. Watson">
@@ -312,7 +312,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="20.0"></viz:size>
-        <viz:position x="501.51465" y="-194.09116" z="0.0"></viz:position>
+        <viz:position x="531.37" y="82.66947" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_192a940a145761cf121ab7dc0b18fdd4" label="Roger G. Barry">
@@ -322,7 +322,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="20.0"></viz:size>
-        <viz:position x="445.76532" y="241.44687" z="0.0"></viz:position>
+        <viz:position x="265.32065" y="431.98178" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_f6fd302d44307d6773b1b9909214e146" label="Roger Sedjo">
@@ -332,7 +332,7 @@
           <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="-106.44137" y="-503.93164" z="0.0"></viz:position>
+        <viz:position x="159.78487" y="-489.63828" z="0.0"></viz:position>
         <viz:color r="91" g="174" b="102"></viz:color>
       </node>
       <node id="author_7dc378001c60e1f1784602324ace350b" label="Ron Neilson">
@@ -342,7 +342,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="602.8066" y="415.32056" z="0.0"></viz:position>
+        <viz:position x="314.3856" y="661.0815" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_c86f1249352e15599a8ebdba06e6a983" label="S. Hastenrath">
@@ -352,7 +352,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="268.00342" y="349.25143" z="0.0"></viz:position>
+        <viz:position x="57.472073" y="436.4623" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_a4d7429c3f7303620541b388b937ba5c" label="T. Kittel">
@@ -362,7 +362,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="417.70508" y="378.63232" z="0.0"></viz:position>
+        <viz:position x="172.42705" y="536.75775" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_e1b518e58cf2f1f8bca41bc611f83c18" label="Vivien Gornitz">
@@ -372,7 +372,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="437.50458" y="324.43604" z="0.0"></viz:position>
+        <viz:position x="216.67207" y="499.72214" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_53e033f4e0b9ca0f653893d88c7c6051" label="Wilfreid Haeberli">
@@ -382,7 +382,7 @@
           <attvalue for="attr_1_2" value="WG I | WG II"></attvalue>
         </attvalues>
         <viz:size value="20.0"></viz:size>
-        <viz:position x="510.86465" y="235.10324" z="0.0"></viz:position>
+        <viz:position x="324.87015" y="459.03772" z="0.0"></viz:position>
         <viz:color r="149" g="58" b="36"></viz:color>
       </node>
       <node id="author_f4d96d7b46699c7c9afdc63379f189b7" label="William U. Chandler">
@@ -392,7 +392,7 @@
           <attvalue for="attr_1_2" value="WG II | WG III"></attvalue>
         </attvalues>
         <viz:size value="23.333334"></viz:size>
-        <viz:position x="157.86078" y="-659.75916" z="0.0"></viz:position>
+        <viz:position x="466.59103" y="-492.4378" z="0.0"></viz:position>
         <viz:color r="91" g="174" b="102"></viz:color>
       </node>
       <node id="chapter_7f218ddc639983a6835b9c4e81a082bd" label="Marine Biotic Responses to Environmental Change and Feedbacks to Climate">
@@ -402,7 +402,7 @@
           <attvalue for="attr_1_2" value="WG I"></attvalue>
         </attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="300.0" y="866.0254" z="0.0"></viz:position>
+        <viz:position x="-173.20508" y="900.0" z="0.0"></viz:position>
         <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_16ecfd66ebf747f64cc386638529f4b4" label="Advancing our Understanding">
@@ -412,7 +412,7 @@
           <attvalue for="attr_1_2" value="WG I"></attvalue>
         </attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="400.0" y="866.0254" z="0.0"></viz:position>
+        <viz:position x="-86.60253" y="950.0" z="0.0"></viz:position>
         <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_d71f86f75cb601181e8e49d244675a37" label="Radiative Forcing of Climate Change">
@@ -422,7 +422,7 @@
           <attvalue for="attr_1_2" value="WG I"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="-500.0" y="866.0254" z="0.0"></viz:position>
+        <viz:position x="-866.0254" y="500.0" z="0.0"></viz:position>
         <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_e9957c3144787e72d19148e6e6942988" label="Observed Climate Variability and Change">
@@ -432,7 +432,7 @@
           <attvalue for="attr_1_2" value="WG I"></attvalue>
         </attvalues>
         <viz:size value="36.666668"></viz:size>
-        <viz:position x="-400.0" y="866.0254" z="0.0"></viz:position>
+        <viz:position x="-779.42285" y="550.0" z="0.0"></viz:position>
         <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_85cfd6f6187d46f2143b4dcb6cb79e85" label="Climate Processes">
@@ -442,7 +442,7 @@
           <attvalue for="attr_1_2" value="WG I"></attvalue>
         </attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-300.0" y="866.0254" z="0.0"></viz:position>
+        <viz:position x="-692.8203" y="600.0" z="0.0"></viz:position>
         <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_8e6bda86717ba949ca587f68d8419236" label="Climate Models - Evaluation">
@@ -452,7 +452,7 @@
           <attvalue for="attr_1_2" value="WG I"></attvalue>
         </attvalues>
         <viz:size value="13.333334"></viz:size>
-        <viz:position x="-200.0" y="866.0254" z="0.0"></viz:position>
+        <viz:position x="-606.2178" y="650.0" z="0.0"></viz:position>
         <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_a4649d3f54a61b3c4c63ce9a573cd89e" label="Climate Models - Projections for the Future">
@@ -462,7 +462,7 @@
           <attvalue for="attr_1_2" value="WG I"></attvalue>
         </attvalues>
         <viz:size value="26.666666"></viz:size>
-        <viz:position x="-100.00001" y="866.0254" z="0.0"></viz:position>
+        <viz:position x="-519.61523" y="700.0" z="0.0"></viz:position>
         <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_02df5c7672692d97975e3493a21b5b62" label="Changes in Sea Level">
@@ -472,7 +472,7 @@
           <attvalue for="attr_1_2" value="WG I"></attvalue>
         </attvalues>
         <viz:size value="23.333334"></viz:size>
-        <viz:position x="-5.698204E-6" y="866.0254" z="0.0"></viz:position>
+        <viz:position x="-433.0127" y="750.0" z="0.0"></viz:position>
         <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_6f8d7f05a7b92eb31cd37169c7af5195" label="Detection of Climate Change and Attribution of Causes">
@@ -482,7 +482,7 @@
           <attvalue for="attr_1_2" value="WG I"></attvalue>
         </attvalues>
         <viz:size value="13.333334"></viz:size>
-        <viz:position x="99.99999" y="866.0254" z="0.0"></viz:position>
+        <viz:position x="-346.41016" y="800.0" z="0.0"></viz:position>
         <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_1fcda561ff44810b698a2070eb76d5c0" label="Terrestrial Biotic Responses to Environmental Change and Feedbacks to Climate">
@@ -492,7 +492,7 @@
           <attvalue for="attr_1_2" value="WG I"></attvalue>
         </attvalues>
         <viz:size value="33.333332"></viz:size>
-        <viz:position x="199.99998" y="866.0254" z="0.0"></viz:position>
+        <viz:position x="-259.80762" y="850.0" z="0.0"></viz:position>
         <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_91dbb6b0d6f33be616cb326143e25426" label="Technical Summary">
@@ -502,7 +502,7 @@
           <attvalue for="attr_1_2" value="WG I"></attvalue>
         </attvalues>
         <viz:size value="20.0"></viz:size>
-        <viz:position x="500.0" y="866.0254" z="0.0"></viz:position>
+        <viz:position x="6.5797194E-6" y="1000.0" z="0.0"></viz:position>
         <viz:color r="118" g="106" b="164"></viz:color>
       </node>
       <node id="chapter_f4f5182bc185fc0c1cdc16af479f9aa9" label="Climate Change Impacts on Forests">
@@ -512,7 +512,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="33.333332"></viz:size>
-        <viz:position x="1000.0" y="-6.5797194E-6" z="0.0"></viz:position>
+        <viz:position x="866.0254" y="500.0" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_f4277418c6b972f7371ecc4e56458f23" label="Hydrology and Freshwater Ecology">
@@ -522,7 +522,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="13.333334"></viz:size>
-        <viz:position x="857.1429" y="-247.43585" z="0.0"></viz:position>
+        <viz:position x="866.02545" y="214.2857" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_7606fe0bfcc35db855e12bd45eb75e07" label="Industry, Energy and Transportation: Impacts and Adaptation">
@@ -532,7 +532,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="839.2857" y="-278.36533" z="0.0"></viz:position>
+        <viz:position x="866.0254" y="178.57141" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_635b65f08c0621adcc752032e2fd9e68" label="Human Settlements in a Changing Climate: Impacts and Adaptation">
@@ -542,7 +542,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="13.333334"></viz:size>
-        <viz:position x="821.42865" y="-309.2948" z="0.0"></viz:position>
+        <viz:position x="866.02545" y="142.85718" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_c653280d027bcd3273eb46df009c64d7" label="Agriculture in a Changing Climate: Impacts and Adaptation">
@@ -552,7 +552,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="13.333334"></viz:size>
-        <viz:position x="803.5715" y="-340.22424" z="0.0"></viz:position>
+        <viz:position x="866.02545" y="107.1429" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_afb06a2dec6d077963ed35b4af7ed6f8" label="Water Resources Management">
@@ -562,7 +562,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="13.333334"></viz:size>
-        <viz:position x="785.7143" y="-371.15375" z="0.0"></viz:position>
+        <viz:position x="866.0254" y="71.42857" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_7d5c8f11241795a914408ef942b66342" label="Wood Production under Changing Climate and Land Use">
@@ -572,7 +572,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="763.3117" y="-409.95615" z="0.0"></viz:position>
+        <viz:position x="866.0254" y="26.623407" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_fb8f02a224a427bf9f707a47f5749236" label="Fisheries">
@@ -582,7 +582,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="750.0" y="-433.0127" z="0.0"></viz:position>
+        <viz:position x="866.0254" y="5.698204E-6" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_9bc311a15b072b2e9d43acad721e335d" label="Energy Supply Mitigation Options">
@@ -592,7 +592,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="20.0"></viz:size>
-        <viz:position x="732.1428" y="-463.94217" z="0.0"></viz:position>
+        <viz:position x="866.0254" y="-35.714294" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_05448383bd217ee9f0eb3acd71e63589" label="Rangelands in a Changing Climate: Impacts, Adaptations and Mitigation">
@@ -602,7 +602,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="13.333334"></viz:size>
-        <viz:position x="982.1429" y="-30.929499" z="0.0"></viz:position>
+        <viz:position x="866.02545" y="464.2857" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_d9d0b2d0f803fd6f97baff5136e1a22b" label="Industry">
@@ -612,7 +612,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="714.2857" y="-494.87167" z="0.0"></viz:position>
+        <viz:position x="866.0254" y="-71.42859" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_a3f1f90f5298c66f6dcc87437eeed83f" label="Mitigation Options in the Transportation Sector">
@@ -622,7 +622,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="13.333334"></viz:size>
-        <viz:position x="696.4286" y="-525.80115" z="0.0"></viz:position>
+        <viz:position x="866.02545" y="-107.14286" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_e2ce07799566ed948386fb7d4c25fa6f" label="Mitigation Options for Human Settlements">
@@ -632,7 +632,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="13.333334"></viz:size>
-        <viz:position x="678.5714" y="-556.7306" z="0.0"></viz:position>
+        <viz:position x="866.0254" y="-142.85713" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_3f177077bc75bf44d47fecd7a7b87449" label="Agricultural Options for Mitigation of Greenhouse Gas Emissions">
@@ -642,7 +642,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="660.7143" y="-587.6601" z="0.0"></viz:position>
+        <viz:position x="866.0254" y="-178.57143" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_d2abda634fed9463e6bbe1b2f437a74a" label="Management of Forests for Mitigation of Greenhouse Gas Emissions">
@@ -652,7 +652,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="642.8571" y="-618.5896" z="0.0"></viz:position>
+        <viz:position x="866.0254" y="-214.28575" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_6ae91f43d3fce3d673d202a35322bb0c" label="Mitigation: Cross-Sectoral and Other Issues">
@@ -662,7 +662,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="20.0"></viz:size>
-        <viz:position x="625.0" y="-649.51904" z="0.0"></viz:position>
+        <viz:position x="866.0254" y="-249.99998" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_2d69c178cf5761abdc0fbb9261f38a9b" label="Technical Guidelines for Assessing Climate Change Impacts and Adaptation">
@@ -672,7 +672,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="604.32916" y="-685.3221" z="0.0"></viz:position>
+        <viz:position x="866.02545" y="-291.34177" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_159471f2d937d33e9474ac3717c63760" label="Methods for Assessment of Mitigation Options">
@@ -682,7 +682,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="589.2857" y="-711.378" z="0.0"></viz:position>
+        <viz:position x="866.0254" y="-321.42856" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_fa5085f07d01c896fb0396097a461f96" label="Inventory of Technologies, Methods and Practices">
@@ -692,7 +692,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="13.333334"></viz:size>
-        <viz:position x="571.4286" y="-742.3075" z="0.0"></viz:position>
+        <viz:position x="866.02545" y="-357.14285" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_9dbb76139761cfab1fc97d11d80f2f19" label="Land Degradation and Desertification">
@@ -702,7 +702,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="964.2857" y="-61.858967" z="0.0"></viz:position>
+        <viz:position x="866.0254" y="428.5714" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_671eb1daa065715e9b5ddd5a8682768f" label="Impacts of Climate Change on Mountain Regions">
@@ -712,7 +712,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="26.666666"></viz:size>
-        <viz:position x="946.4285" y="-92.78844" z="0.0"></viz:position>
+        <viz:position x="866.0254" y="392.85712" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_4270de24e75d728062c385cffc03bd75" label="Non-Tidal Wetlands">
@@ -722,7 +722,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="928.5715" y="-123.717896" z="0.0"></viz:position>
+        <viz:position x="866.02545" y="357.14288" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_0cc70d823f2da695c2832b1096525366" label="The CryosphereL Changes and their Impacts">
@@ -732,7 +732,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="23.333334"></viz:size>
-        <viz:position x="910.7143" y="-154.6474" z="0.0"></viz:position>
+        <viz:position x="866.0254" y="321.42856" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_3b2f03253ec1410b9175ef29ca7d07d8" label="Oceans">
@@ -742,7 +742,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="13.333334"></viz:size>
-        <viz:position x="892.8571" y="-185.57692" z="0.0"></viz:position>
+        <viz:position x="866.0254" y="285.71423" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_1f51151468c5c5cea5138106fa469da6" label="Coastal Zones and Small Islands">
@@ -752,7 +752,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="875.0" y="-216.50636" z="0.0"></viz:position>
+        <viz:position x="866.0254" y="249.99998" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_bc286abfc488614abb2bb11c673893d6" label="Ecophysical, Ecological and Soil Processes in Terrestrial Ecosystems: A primer on general concepts">
@@ -762,7 +762,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="459.09192" y="-920.64795" z="0.0"></viz:position>
+        <viz:position x="857.9092" y="-567.75854" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_4ca8accd431e4a8d37e6d8eb941b07cc" label="Energy Primer">
@@ -772,7 +772,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="13.333334"></viz:size>
-        <viz:position x="442.3438" y="-947.1804" z="0.0"></viz:position>
+        <viz:position x="856.6712" y="-599.1104" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_326140ac51e2e7747ad5f43421f54482" label="Summary For Policy Makers">
@@ -782,7 +782,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="46.666668"></viz:size>
-        <viz:position x="539.0365" y="-794.32697" z="0.0"></viz:position>
+        <viz:position x="863.9828" y="-418.3891" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_aab6b252c865a5488897c78fbfd54514" label="Technical Summary">
@@ -792,7 +792,7 @@
           <attvalue for="attr_1_2" value="WG II"></attvalue>
         </attvalues>
         <viz:size value="50.0"></viz:size>
-        <viz:position x="494.47656" y="-867.4221" z="0.0"></viz:position>
+        <viz:position x="861.9403" y="-503.9713" z="0.0"></viz:position>
         <viz:color r="204" g="207" b="95"></viz:color>
       </node>
       <node id="chapter_d53a19e2f8fc101f6537002da6a390b4" label="Introduction: Scope the Assessment">
@@ -802,7 +802,7 @@
           <attvalue for="attr_1_2" value="WG III"></attvalue>
         </attvalues>
         <viz:size value="13.333334"></viz:size>
-        <viz:position x="-500.0" y="-866.0254" z="0.0"></viz:position>
+        <viz:position x="-6.5797194E-6" y="-1000.0" z="0.0"></viz:position>
         <viz:color r="68" g="163" b="199"></viz:color>
       </node>
       <node id="chapter_d19f7c3ba3f72f2c0fb2eaf0b4aada74" label="Integrated Assessment of Climate Change: An Overview and Comparison of Approaches and Results">
@@ -812,7 +812,7 @@
           <attvalue for="attr_1_2" value="WG III"></attvalue>
         </attvalues>
         <viz:size value="20.0"></viz:size>
-        <viz:position x="-1000.0" y="6.5797194E-6" z="0.0"></viz:position>
+        <viz:position x="-866.0254" y="-500.0" z="0.0"></viz:position>
         <viz:color r="68" g="163" b="199"></viz:color>
       </node>
       <node id="chapter_2bf79cf5788e491709adbb77a1e9dc71" label="Decision-Making Frameworks for Addressing Climate Change">
@@ -822,7 +822,7 @@
           <attvalue for="attr_1_2" value="WG III"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="-571.4286" y="-742.30756" z="0.0"></viz:position>
+        <viz:position x="-123.717896" y="-928.5715" z="0.0"></viz:position>
         <viz:color r="68" g="163" b="199"></viz:color>
       </node>
       <node id="chapter_0c79fc0fc5186519f5df47039c5bee98" label="Equity and Social Considerations">
@@ -832,7 +832,7 @@
           <attvalue for="attr_1_2" value="WG III"></attvalue>
         </attvalues>
         <viz:size value="13.333334"></viz:size>
-        <viz:position x="-642.8571" y="-618.5896" z="0.0"></viz:position>
+        <viz:position x="-247.43579" y="-857.1429" z="0.0"></viz:position>
         <viz:color r="68" g="163" b="199"></viz:color>
       </node>
       <node id="chapter_a654d18e05156b8a29365fb74dffe994" label="The Social Costs of Climate Change: Greenhouse Damage and the Benefits of Control">
@@ -842,7 +842,7 @@
           <attvalue for="attr_1_2" value="WG III"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="-714.2857" y="-494.87167" z="0.0"></viz:position>
+        <viz:position x="-371.15372" y="-785.7143" z="0.0"></viz:position>
         <viz:color r="68" g="163" b="199"></viz:color>
       </node>
       <node id="chapter_25701620da99fa45994708df5c6ee07f" label="A Generic Assessment of Response Options">
@@ -852,7 +852,7 @@
           <attvalue for="attr_1_2" value="WG III"></attvalue>
         </attvalues>
         <viz:size value="16.666668"></viz:size>
-        <viz:position x="-785.7143" y="-371.15372" z="0.0"></viz:position>
+        <viz:position x="-494.87167" y="-714.2857" z="0.0"></viz:position>
         <viz:color r="68" g="163" b="199"></viz:color>
       </node>
       <node id="chapter_ece43c601b9708303594f4a260f55de9" label="Estimating the Costs of Mitigating Greenhouse Gases">
@@ -862,7 +862,7 @@
           <attvalue for="attr_1_2" value="WG III"></attvalue>
         </attvalues>
         <viz:size value="26.666666"></viz:size>
-        <viz:position x="-857.1429" y="-247.43585" z="0.0"></viz:position>
+        <viz:position x="-618.5896" y="-642.8572" z="0.0"></viz:position>
         <viz:color r="68" g="163" b="199"></viz:color>
       </node>
       <node id="chapter_de8d3fd7a8dca425b0cf411f328e36b7" label="A Review of Mitigation Cost Studies">
@@ -872,7 +872,7 @@
           <attvalue for="attr_1_2" value="WG III"></attvalue>
         </attvalues>
         <viz:size value="23.333334"></viz:size>
-        <viz:position x="-928.5715" y="-123.71794" z="0.0"></viz:position>
+        <viz:position x="-742.3075" y="-571.4286" z="0.0"></viz:position>
         <viz:color r="68" g="163" b="199"></viz:color>
       </node>
     </nodes>

@@ -58,7 +58,7 @@
   text-align: center;
 }
 .buttonFocus, .buttonTable {
-  background: #33616D;
+  background: #57AACE;
   width: 150px;
   color: white;
   border: none;
@@ -69,4 +69,7 @@
   font-weight: 700;
   margin-left: auto;
   margin-right: auto;
+}
+button:disabled {
+  background: #33616D;
 }
