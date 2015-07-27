@@ -132,12 +132,9 @@ angular.module('driveoutApp.directives.pdf', [])
         }
         else {
           $('#containerPdfConclusion').css({
-              'position': 'absolute',
-              'left': (element.width() - (($('.vizLegendZone').position().top - 30)/ratio)) /2 + 'px',
-              'height': ($('.vizLegendZone').position().top - 30) + 'px' ,
-              'width': (($('.vizLegendZone').position().top - 30)/ratio) + 'px',
-              'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-              'margin-bottom': 30 + 'px'});
+            'width': '70%',
+            'margin-left': '15%'
+          });
         }
         window.addEventListener('resize', function() {
           if (element.height() !== 0) {
@@ -153,12 +150,9 @@ angular.module('driveoutApp.directives.pdf', [])
             }
             else {
               $('#containerPdfConclusion').css({
-                'position': 'absolute',
-                'left': (element.width() - (($('.vizLegendZone').position().top - 30)/ratio)) /2 + 'px',
-                'height': ($('.vizLegendZone').position().top - 30) + 'px' ,
-                'width': (($('.vizLegendZone').position().top - 30)/ratio) + 'px',
-                'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-                'margin-bottom': 30 + 'px'});
+                'width': '70%',
+                'margin-left': '15%'
+              });
             }
           }
         })

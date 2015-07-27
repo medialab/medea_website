@@ -19,7 +19,8 @@ angular.module('driveoutApp.directives.image', [])
         //   'max-height': $('.vizLegendZone').position().top - 30 + 'px'
         // });
         window.addEventListener('resize', function() {
-          applyGoodSize();
+          if (element.height() > 0)
+            applyGoodSize();
         })
         function applyGoodSize() {
           if (element.width()*0.8*scope.ratiovertionhori <$('.vizLegendZone').position().top - 30){
