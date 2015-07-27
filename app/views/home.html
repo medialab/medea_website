@@ -25,7 +25,6 @@
               <img ng-src="images/medea2_back-01.jpg" class="backStudies">
               <img ng-src="images/medea_studies-{{route.slug}}.png" class="frontStudies">
             </div>
-            <div class="studyDescription">{{contentStudies[route.slug].subtitle}}</div>
             <ol class="storylinesContainer">
               <li class="storyline" id="{{slData.slug}}" ng-repeat="slData in contentStudies[route.slug].menu" ng-if="slData.slug !== 'mapping-the-organizational-dynamics-of-the-ipcc' && slData.slug !== 'countries-in-the-unfccc'">
                 <h5 class="slTitle">{{slData.title}}</h5>
