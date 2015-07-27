@@ -16,7 +16,7 @@ angular.module('driveoutApp.directives.brickswmo', [])
         var bricks = new BricksWMO();
         bricks.load('contents/data/bricks-partByChapters-WMO/participations.json', function() {
           var width = elementwidth,
-              height = element.height(),
+              height = $('.vizLegendZone').position().top - 30,
               margin = {top: 40, bottom: 15, left: 40, right: 40};
 
           bricks.drawViz('#bricksSvgContainer',
@@ -34,7 +34,7 @@ angular.module('driveoutApp.directives.brickswmo', [])
             if (element.height() !== 0){
               var elementwidth = element.width() * 9.8/10;
               var width = elementwidth,
-                height = element.height()/1.1,
+                height = $('.vizLegendZone').position().top - 30,
                 margin = {top: 40, bottom: 15, left: 40, right: 40};
 
               bricks.drawViz('#bricksSvgContainer',
