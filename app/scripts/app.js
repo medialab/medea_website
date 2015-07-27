@@ -51,24 +51,6 @@ angular
           }
         }
       })
-      .when('/storylines', {
-        templateUrl: 'views/home.html',
-        controller: 'HomeCtrl',
-        resolve: {
-          contentHome : function($route, FilesFactory) {
-            return FilesFactory.get({path: 'home'});
-          },
-          contentIPCC: function(FilesFactory) {
-            return FilesFactory.get({path: 'ipcc/mapping-the-organizational-dynamics-of-the-ipcc'});
-          },
-          contentUNFCCC: function(FilesFactory) {
-            return FilesFactory.get({path: 'unfccc/introduction-and-methodology'});
-          },
-          scrollToStoryLines: function() {
-            return true;
-          }
-        }
-      })
       .when('/404', {
         templateUrl: 'views/404.html',
         controller: '404Ctrl'
@@ -99,12 +81,6 @@ angular
             return FilesFactory.get({path:'controversy-mapping'});
           }
         }
-      })
-      .when('/ipcc', {
-        redirectTo: '/storylines'
-      })
-      .when('/unfccc', {
-        redirectTo: '/storylines'
       })
       .when('/ipcc/national-cultures-of-climate-expertise-by-kari-de-pryck-and-ian-gray', {
         templateUrl: 'views/page.html',

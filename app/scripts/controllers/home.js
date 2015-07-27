@@ -8,7 +8,7 @@
  * Controller of the driveoutApp
  */
 angular.module('driveoutApp.home', [])
-  .controller('HomeCtrl', function ($scope, $window, contentHome, contentIPCC, contentUNFCCC, scrollToStoryLines) {
+  .controller('HomeCtrl', function ($scope, $window,$location,$anchorScroll,$timeout, contentHome, contentIPCC, contentUNFCCC, scrollToStoryLines) {
     if (scrollToStoryLines === undefined)
       scrollToStoryLines = false;
 
@@ -26,10 +26,20 @@ angular.module('driveoutApp.home', [])
     }
     $scope.content = contentHome.data;
     $scope.contentStudies = {ipcc: contentIPCC.data, unfccc: contentUNFCCC.data};
-    console.log(contentUNFCCC.data)
     $scope.$parent.page = {};
 
-    $scope.$watch('routes', function(r){
-      // get my pag
-    })
+    $anchorScroll.yOffset = 70;
+
+    if($location.hash())
+      $timeout(function() {
+        $anchorScroll()
+      });
+
+    $scope.anchorScrollTo = function(id) {
+      $location.hash(id);
+      $timeout(function() {
+        $anchorScroll()
+      });
+    };
+
   });

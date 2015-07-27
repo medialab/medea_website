@@ -8,8 +8,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse col-sm-7 col-md-7 col-lg-7" id="navBarRightPart">
       <ul class="nav navbar-nav">
-        <li class="{{currentPage === 'storylines' ? 'active': ''}}">
-          <a ng-href="#/storylines">Studies</a>
+        <li class="{{currentHash === 'studiesAbstract' ? 'active': ''}}">
+          <a ng-click="anchorScrollTo('studiesAbstract')" href="#/#studiesAbstract" class="pointable">Studies</a>
         </li>
         <li ng-repeat="page in pages" ng-if="page.slug !== 'home' && page.slug !== 'footer'" class="{{currentPage === page.slug ? 'active': ''}}">
           <a ng-href="#/{{page.slug}}">{{page.slug}}</a>
