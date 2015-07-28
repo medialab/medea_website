@@ -179,3 +179,18 @@ a.exponent:hover {
 section  ol {
   padding-left: 20px;
 }
+
+.nextSLButton, .nextSLButton:hover, .nextSLButton:active {
+  padding: 7px;
+  background-color: #57AACE;
+  color: white;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 700;
+}
+#nextSLContainer {
+  width: 100%;
+  text-align: center;
+}

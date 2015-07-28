@@ -21,7 +21,6 @@ angular.module('driveoutApp.directives.zeppelin', [])
         element.on('click', '[data-click]', function(e) {
           scope.$broadcast('focus', '' + $(this).attr('data-click'));
         })
-        console.log(scope)
         //Scroll spy for the narratives' text
         $('.slider').on('scroll', function(e){
           //Checks its the good slider that is triggered
@@ -76,6 +75,9 @@ angular.module('driveoutApp.directives.zeppelin', [])
           }
         })
 
+
+        getNextSL();
+
         /**
          * Note Handler
          */
@@ -84,7 +86,37 @@ angular.module('driveoutApp.directives.zeppelin', [])
           var noteNumber = + $(this).attr('noteIndex');
         });
 
+        function getNextSL() {
+          var nextStory = '',
+            menu = scope.nextstory.content.menu,
+            indexNext = -1,
+            currentSlug = scope.nextstory.currentPage.replace(/^\w*\//, ''),
+            found = false;
+          console.log(menu)
+          for (var i = 0; i < menu.length && !found; i++) {
+            if (menu[i].slug === currentSlug && i !== menu.length-1
+              && menu[i+1].slug !== 'countries-in-the-unfccc') {
+              found = true;
+              indexNext = i + 1;
+            }
+            else if (menu[i].slug === currentSlug && i !== menu.length-1
+              && menu[i+1].slug === 'countries-in-the-unfccc') {
+              found = true;
+              indexNext = i + 2;
+            }
+          }
 
+          if (indexNext !== -1)
+            nextStory = '#' + scope.nextstory.content.studyPath + '/' + menu[indexNext].slug;
+          console.log(nextStory);
+
+          if (nextStory !== '') {
+            $('.nextSLButton').attr('href', nextStory);
+          }
+          else {
+            $('.nextSLButton').addClass('displayNone')
+          }
+        }
         scope.$parent.$watch(function(scopeP) {
           return scopeP.height;
           }, function(h) {
