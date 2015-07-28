@@ -93,7 +93,13 @@ li.storyline {
   transform: translateY(-50%) translateX(-50%);
   top: 75px;
 }
-
+.studyTitle {
+  font: 50px 'Raleway';
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #33616D;
+}
 .authorName {
   font-style: italic;
   font-size: 11px;
@@ -105,16 +111,17 @@ li.storyline {
   clear: both;
 }
 .slImage {
+  /*display: block;*/
+  position: relative;
   margin-bottom: 30px;
   margin-right: 30px;
-  width: 200px;
-  height: 200px;
-  background-color: grey;
   float: left;
+  z-index: 1;
 }
-
 .frontSL {
   display: block;
+  position: relative;
+  margin-top: -200px;
   line-height: 200px;
   height: 100%;
   width: 100%;
@@ -125,7 +132,8 @@ li.storyline {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background-color: rgba(87, 170, 206, 0.80);
+  background-color: rgba(87, 170, 206,0.8);
+  z-index: 2;
 }
 
 .frontSL:active, .frontSL:hover {

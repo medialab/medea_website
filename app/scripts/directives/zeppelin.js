@@ -13,14 +13,15 @@ angular.module('driveoutApp.directives.zeppelin', [])
       templateUrl: 'views/templates/zeppelin.html',
       scope:{
         sections: '=',
-        index: '='
+        index: '=',
+        nextstory: '='
       },
       replace: true,
       link: function postLink(scope, element, attrs) {
         element.on('click', '[data-click]', function(e) {
           scope.$broadcast('focus', '' + $(this).attr('data-click'));
         })
-
+        console.log(scope)
         //Scroll spy for the narratives' text
         $('.slider').on('scroll', function(e){
           //Checks its the good slider that is triggered

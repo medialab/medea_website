@@ -21,14 +21,15 @@
           <div class="spaceBetweenParagraphs noFloat">&bull;</div>
           <div>
             <div class="thumbnailStudy" id="{{route.slug}}">
-              <img ng-src="images/medea2_back-01.jpg" class="backStudies">
-              <img ng-src="images/medea_studies-{{route.slug}}.png" class="frontStudies">
+              <span class="studyTitle">{{route.slug}}</span>
+<!--               <img ng-src="images/medea2_back-01.jpg" class="backStudies">
+              <img ng-src="images/medea_studies-{{route.slug}}.png" class="frontStudies"> -->
             </div>
             <ol class="storylinesContainer">
               <li class="storyline" id="{{slData.slug}}" ng-repeat="slData in contentStudies[route.slug].menu" ng-if="slData.slug !== 'mapping-the-organizational-dynamics-of-the-ipcc' && slData.slug !== 'mapping-adaptation-in-climate-negotiations' && slData.slug !== 'countries-in-the-unfccc'">
                 <!-- <a ng-href="#/{{route.slug}}/{{slData.slug}}"> -->
                 <div class="slImage" animatedlink>
-                  <div class="backgroundSL"></div>
+                  <img width="200" class="backgroundSL" ng-src="images/{{route.slug}}-{{$index}}.png"/>
                   <a ng-href="#/{{route.slug}}/{{slData.slug}}" class="frontSL hidden">Explore this story</a>
                 </div>
                 <!-- </a> -->
