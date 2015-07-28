@@ -94,4 +94,10 @@ li.storyline {
   top: 75px;
 }
 
-/*color footer: #33616D*/
+.authorName {
+  font-style: italic;
+  font-size: 11px;
+  width: 100%;
+  text-align: right;
+  padding-right: 10px;
+}

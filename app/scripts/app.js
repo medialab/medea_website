@@ -82,7 +82,7 @@ angular
           }
         }
       })
-      .when('/ipcc/national-cultures-of-climate-expertise-by-kari-de-pryck-and-ian-gray', {
+      .when('/ipcc/national-cultures-of-climate-expertise', {
         templateUrl: 'views/page.html',
         controller: 'PageCtrl', // handle the items loading
         resolve: {
@@ -91,7 +91,7 @@ angular
           }
         }
       })
-      .when('/ipcc/coordination-and-controversy-in-the-ipcc-by-ian-gray', {
+      .when('/ipcc/coordination-and-controversy-in-the-ipcc', {
         templateUrl: 'views/page.html',
         controller: 'PageCtrl', // handle the items loading
         resolve: {
@@ -100,7 +100,7 @@ angular
           }
         }
       })
-      .when('/ipcc/participation-and-politics-in-the-ipcc-by-ian-gray', {
+      .when('/ipcc/participation-and-politics-in-the-ipcc', {
         templateUrl: 'views/page.html',
         controller: 'PageCtrl', // handle the items loading
         resolve: {
@@ -109,7 +109,7 @@ angular
           }
         }
       })
-      .when('/ipcc/introduction-by-ian-gray', {
+      .when('/ipcc/introduction', {
         templateUrl: 'views/page.html',
         controller: 'PageCtrl', // handle the items loading
         resolve: {
@@ -118,7 +118,7 @@ angular
           }
         }
       })
-      .when('/unfccc/mapping-adaptation-in-climate-negotiations', {
+      .when('/unfccc/introduction', {
         templateUrl: 'views/page.html',
         controller: 'PageCtrl', // handle the items loading
         resolve: {

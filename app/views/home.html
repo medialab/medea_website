@@ -26,9 +26,9 @@
               <img ng-src="images/medea_studies-{{route.slug}}.png" class="frontStudies">
             </div>
             <ol class="storylinesContainer">
-              <li class="storyline" id="{{slData.slug}}" ng-repeat="slData in contentStudies[route.slug].menu" ng-if="slData.slug !== 'mapping-the-organizational-dynamics-of-the-ipcc' && slData.slug !== 'unfccc' && slData.slug !== 'countries-in-the-unfccc'">
+              <li class="storyline" id="{{slData.slug}}" ng-repeat="slData in contentStudies[route.slug].menu" ng-if="slData.slug !== 'mapping-the-organizational-dynamics-of-the-ipcc' && slData.slug !== 'mapping-adaptation-in-climate-negotiations' && slData.slug !== 'countries-in-the-unfccc'">
                 <h5 class="slTitle">{{slData.title}}</h5>
-                <p>{{slData.subtitle}}</p>
+                <p sectiontoinsert sectionhtml="slData.subtitle"></p>
                 <div class="exploreContainer">
                 <a ng-href="#/{{route.slug}}/{{slData.slug}}"><button class="exploreButton">Explore this story  <i class="fa fa-chevron-right"></i></button></a></div>
               </li>
