@@ -28,7 +28,7 @@ function parseGoogleDocument(result) {
       $ = drive.utils.parse(html);
 
   result.title = $('.title').text();
-  result.subtitle = drive.utils.clean($('.subtitle').html());
+  result.subtitle = drive.utils.formatAuthorName(drive.utils.clean($('.subtitle').html()));
   console.log('subtitle', $('.subtitle').html());
   // console.log($('.title'))
   // if (result.slug.search('coordin') !== -1)

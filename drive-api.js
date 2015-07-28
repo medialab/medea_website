@@ -41,7 +41,6 @@ drive.utils.cleanFileTitle = function(text) {
   return text.toString().toLowerCase()
     .replace(/^\d*\. /, '');
 }
-
 /*
   function utils.getFileId
   ---
@@ -111,6 +110,11 @@ drive.utils.clean = function(html){
       c = c.replace(currentSpan, cleanedText);
     }
   return c;
+}
+drive.utils.formatAuthorName = function(text) {
+  console.log('textext', text);
+  if(!text) return text;
+  return text.replace(/<strong>/, '<div class="authorName">').replace(/<\/strong>/, '</div>');
 }
 
 /*
