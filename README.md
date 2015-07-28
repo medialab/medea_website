@@ -1,7 +1,19 @@
-#Drive-out
+# MEDEA website
 
-Welcome to __Drive-out__, the node "exporter" for google drive. It extract html contents from Google Documents and allows you to download images, videos and other non-text contents.
-This installation comes with a reasonably complete website that gives you a "preview" of your google drive folder contents.
+## General presentation
+This website is an Angular application presenting the research results of the MEDEA project through narratives. These narratives contains both texts (the analyses) and interactive visualisations related to specific parts of the text.
+This website is mainly composed of 2 parts:
+* IPCC:
+This part contains 3 analyses (plus an introduction)
+* UNFCCC:
+This part contains 2 analyses (plus an introduction)
+
+## How to Install
+This application basically download content from a given Google Drive and plugs it to an Angular app.
+Consequently you need to install several components to have it working.
+
+### Setting up the Google Drive content downloader
+The content exporter is based on __Drive-out__ (created by Daniele Guido). It is a node "exporter" from Google Drive.
 
 /!\ Warning, it appears that the Google Drive Documents have to be in YOUR OWN GOOGLE DRIVE FOLDER in order to let the API access these files. So don't forget to click on the "Add to my drive" button!
 
@@ -14,7 +26,7 @@ You then need to place these credentials in the `settings.js` file.
 Once you have logged in with your google account, follow these steps:
 
 1. Create a new project
-2. Under __APIs & Auth__ / __APIs__  enable __DriveAPI__ by setting its status to __ON__
+2. Under __APIs & Auth__ / __APIs__  enable __DriveAPI__ by setting its status to __ON____Drive-out__
 3. Under __APIs & Auth__ / __Credentials__ click on __create new Client ID__ and then select  `Installed application` for _Application type_ and `Other` when the Installed Application Type panel appears.
 4. Under __APIs & Auth__ / __Concsent Screen__ select an _EMAIL ADDRESS_ and give a _PRODUCT NAME_ to your application.
 
@@ -25,17 +37,17 @@ Remember to doublecheck the google drive api credentials, the application name, 
 2. Installation on UNIX
 ---
 Driveout needs [node library](http://nodejs.org/) because it uses [bower](http://bower.io/#install-bower) and [grunt-cli](http://gruntjs.com/getting-started) as well. Open your terminal and type:
-	
+
 	npm install -g bower
 	npm install -g grunt
-	
+
 Git-cloned (e.g under `~~/`) and install the dependencies required by drive_api.js:
 
 	cd ~~/drive-out
 	npm install
 	bower install
-	
-	
+
+
 
 Copy the `settings.js` file
 
@@ -46,11 +58,6 @@ and fill it with Google clientID credentials. Put then in between the quotes:
 	settings.CLIENT_ID = 'YOUR GOOGLE CLIENT ID.apps.googleusercontent.com';
 	settings.CLIENT_SECRET = 'YOUR GOOGLE CLIENT SECRET';
 	settings.REDIRECT_URL = 'YOUR GOOGLE REDIRECT_URL';
-	
-
-3. Installation on Windows
----
-...
 
 3. Get the data ...
 ---
@@ -78,7 +85,7 @@ In order to get the data from your google drive folder type:
 
 copy the link after this line and paste in your browser address bar
 
-	Please visit the following url and authenticate with your google drive credentials: 
+	Please visit the following url and authenticate with your google drive credentials:
 
 Normally you will be asked for your google credentials (again) and you should then receive a code. Copy and paste the code into the terminal:
 
@@ -90,18 +97,15 @@ Inside the `media` folder you find a copy of each non-text file, while the `Cont
 
 Please refer to [index.js](https://github.com/medialab/drive-out/blob/master/index.js) file to understand how drive-out exports your files, and modify it according to your needs.
 
+## How to build an static app
 
-4. ... and run
----
-Run the Grunt server to check that everything is in place:
-	
-	grunt serve
+Run `grunt build` and copy the dist path to your server root
 
-or 
-	
-	grunt build
+## How to develop your app
+Run `grunt serve` in your local folder
 
-and copy the dist path to your server root.
+## How to update your app
+The texts have changed?
+Run `npm start`
+Then `grunt build` or `grunt serve` depending on your needs.
 
-	
-	
