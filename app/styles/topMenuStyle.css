@@ -12,35 +12,36 @@
 
 /*Allows the navbar to be height enough*/
 nav .navbar-header a, nav .navbar-nav > li > a {
-    line-height: 60px;
-    height: 60px;
-    padding-top: 0;
+  line-height: 60px;
+  height: 60px;
+  padding-top: 0;
 }
 /*Put the log in the left part's center*/
-.navbar-header a {
+.navbar-brand {
   padding-left: 60px;
   font-size: 22px;
   font-weight: 400;
+  margin-top: -2px;
+}
+#navBarLeftPart {
+  float: left;
+  padding-left: 15px;
 }
 /*Keep the sections to the right*/
 #navBarRightPart {
-  text-transform: uppercase;
   float: right;
-  right: 50px;
-}
-
-/*Dropdown on hover*/
-@media (min-width: 979px) {
-  ul.nav li.dropdown:hover > ul.dropdown-menu {
-    display: block;
-  }
-}
-/*background for dropdowned elements*/
-.studyLink > a:hover {
-  background: #CEE2F2 !important;
+  width: 300px;
+  margin-right: 45px;
+  text-align: right;
 }
 
 li.active > a{
   color: #57AACE !important;
   background-color: transparent !important;
+}
+.singlePageLink {
+  font-weight: 400;
+}
+.studiesMenuLink {
+  color: #57AACE !important;
 }

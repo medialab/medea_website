@@ -1,18 +1,24 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header col-sm-5 col-md-5 col-lg-5">
+    <div class="navbar-header" id="navBarLeftPart">
       <a class="navbar-brand" href="#/">medea</a>
+      <ul class="nav navbar-nav uppercase">
+        <li ng-repeat="page in pages" ng-if="page.slug !== 'home' && page.slug !== 'footer'" class="singlePageLink {{currentPage === page.slug ? 'active': ''}}">
+          <a ng-href="#/{{page.slug}}">{{page.slug}}</a>
+        </li>
+      </ul>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse col-sm-7 col-md-7 col-lg-7" id="navBarRightPart">
-      <ul class="nav navbar-nav">
-        <li class="{{currentHash === 'studiesAbstract' ? 'active': ''}}">
-          <a ng-click="anchorScrollTo('studiesAbstract')" href="#/#studiesAbstract" class="pointable">Studies</a>
+    <div class="navbar-header" id="navBarRightPart">
+      <a class="navbar-brand">studies</a>
+      <ul class="nav navbar-nav uppercase">
+        <li class="{{currentHash === 'ipcc' ? 'active': ''}}">
+          <a ng-click="anchorScrollTo('ipcc')" href="#/#ipcc" class="pointable studiesMenuLink">ipcc</a>
         </li>
-        <li ng-repeat="page in pages" ng-if="page.slug !== 'home' && page.slug !== 'footer'" class="{{currentPage === page.slug ? 'active': ''}}">
-          <a ng-href="#/{{page.slug}}">{{page.slug}}</a>
+        <li class="{{currentHash === 'unfccc' ? 'active': ''}}">
+          <a ng-click="anchorScrollTo('unfccc')" href="#/#unfccc" class="pointable studiesMenuLink">unfccc</a>
         </li>
       </ul>
 <!--       <ul class="nav navbar-nav">

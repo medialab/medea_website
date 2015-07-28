@@ -16,21 +16,23 @@
           <div sectiontoinsert sectionhtml="section.html"></div>
         </div>
       </div>
-      <div class="spaceBetweenParagraphs noFloat">&bull;</div>
       <div id="studies" class="page">
-        <p id="studiesAbstract">The Medea project is composed by two main studies: IPCC and UNFCCC</p>
-        <div class="study container-fluid col-sm-6 col-md-6 col-lg-6{{$index === 0 ? ' noLeftGutter rightBorder twentyPaddingRight' : ($index === 1 ? ' noRightGutter twentyPaddingLeft' : '')}}" ng-repeat="route in routes">
+        <div class="container-fluid row studyContainer" ng-repeat="route in routes">
+          <div class="spaceBetweenParagraphs noFloat">&bull;</div>
           <div>
-            <div class="thumbnailStudy">
+            <div class="thumbnailStudy" id="{{route.slug}}">
               <img ng-src="images/medea2_back-01.jpg" class="backStudies">
               <img ng-src="images/medea_studies-{{route.slug}}.png" class="frontStudies">
             </div>
             <ol class="storylinesContainer">
               <li class="storyline" id="{{slData.slug}}" ng-repeat="slData in contentStudies[route.slug].menu" ng-if="slData.slug !== 'mapping-the-organizational-dynamics-of-the-ipcc' && slData.slug !== 'mapping-adaptation-in-climate-negotiations' && slData.slug !== 'countries-in-the-unfccc'">
-                <h5 class="slTitle">{{slData.title}}</h5>
-                <p sectiontoinsert sectionhtml="slData.subtitle"></p>
-                <div class="exploreContainer">
-                <a ng-href="#/{{route.slug}}/{{slData.slug}}"><button class="exploreButton">Explore this story  <i class="fa fa-chevron-right"></i></button></a></div>
+                <div class="slImage"></div>
+                <div class="slInfo">
+                  <h5 class="slTitle">{{slData.title}}</h5>
+                  <p sectiontoinsert sectionhtml="slData.subtitle"></p>
+<!--                   <div class="exploreContainer">
+                  <a ng-href="#/{{route.slug}}/{{slData.slug}}"><button class="exploreButton">Explore this story  <i class="fa fa-chevron-right"></i></button></a></div> -->
+                </div>
               </li>
             </ol>
           </div>
