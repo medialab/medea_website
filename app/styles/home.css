@@ -113,3 +113,21 @@ li.storyline {
   float: left;
 }
 
+.frontSL {
+  display: block;
+  line-height: 200px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Raleway';
+  font-size: 14px;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: rgba(87, 170, 206, 0.80);
+}
+
+.frontSL:active, .frontSL:hover {
+  color: white;
+}

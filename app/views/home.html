@@ -26,7 +26,12 @@
             </div>
             <ol class="storylinesContainer">
               <li class="storyline" id="{{slData.slug}}" ng-repeat="slData in contentStudies[route.slug].menu" ng-if="slData.slug !== 'mapping-the-organizational-dynamics-of-the-ipcc' && slData.slug !== 'mapping-adaptation-in-climate-negotiations' && slData.slug !== 'countries-in-the-unfccc'">
-                <div class="slImage"></div>
+                <!-- <a ng-href="#/{{route.slug}}/{{slData.slug}}"> -->
+                <div class="slImage" animatedlink>
+                  <div class="backgroundSL"></div>
+                  <a ng-href="#/{{route.slug}}/{{slData.slug}}" class="frontSL hidden">Explore this story</a>
+                </div>
+                <!-- </a> -->
                 <div class="slInfo">
                   <h5 class="slTitle">{{slData.title}}</h5>
                   <p sectiontoinsert sectionhtml="slData.subtitle"></p>

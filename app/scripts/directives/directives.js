@@ -32,5 +32,6 @@ angular.module('driveoutApp.directives', [
   'driveoutApp.directives.unfccctablefive',
   'driveoutApp.directives.unfccctablefour',
   'driveoutApp.directives.unfccctrajectoriesadaptation',
+  'driveoutApp.directives.animatedlink',
   'driveoutApp.directives.gexfarthree'
   ])

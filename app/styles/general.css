@@ -104,6 +104,9 @@ h6 {
 .displayNone {
   display: none !important;
 }
+.hidden {
+  visibility: hidden !important;
+}
 /*Prevent the middle points to go to the right of a section*/
 .noFloat {
   clear: both;
