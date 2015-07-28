@@ -91,7 +91,7 @@ angular
           }
         }
       })
-      .when('/ipcc/coordination-and-controversy-in-the-ipcc', {
+      .when('/ipcc/coordination-and-controversy', {
         templateUrl: 'views/page.html',
         controller: 'PageCtrl', // handle the items loading
         resolve: {
@@ -100,7 +100,7 @@ angular
           }
         }
       })
-      .when('/ipcc/participation-and-politics-in-the-ipcc', {
+      .when('/ipcc/participation-and-politics', {
         templateUrl: 'views/page.html',
         controller: 'PageCtrl', // handle the items loading
         resolve: {
