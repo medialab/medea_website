@@ -22,8 +22,8 @@ angular.module('driveoutApp.directives.roleevolutiondiversity', [])
               margin = {
                 top: 5,
                 bottom: 20,
-                left: 45,
-                right: 40
+                left: 50,
+                right: 32
               };
           lineChart.drawChart('#container', {
             height: height,

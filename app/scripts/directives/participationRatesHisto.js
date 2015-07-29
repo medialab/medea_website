@@ -20,7 +20,7 @@ angular.module('driveoutApp.directives.partratehisto', [])
 
           var width = elementWidth,
               height = elementHeight/1.1 - legendHeight,
-              margin = {top: 40, bottom: 35, left: 40, right: 10};
+              margin = {top: 40, bottom: 45, left: 40, right: 25};
           histogram.drawChart('#containerNonBridge',
             {
               dataName: 'dataNonBridge',
@@ -40,7 +40,7 @@ angular.module('driveoutApp.directives.partratehisto', [])
           $('#containerBridge svg').css({
             'position': 'absolute',
             'bottom': (element.height()- $('.vizLegendZone').position().top - 5 )+ 'px',
-            'margin-bottom': 30 + 'px'});
+            'margin-bottom': 15 + 'px'});
       });
 
       window.addEventListener('resize', function() {
@@ -52,7 +52,7 @@ angular.module('driveoutApp.directives.partratehisto', [])
 
             var width = elementWidth,
                 height = elementHeight/1.1 - legendHeight,
-                margin = {top: 40, bottom: 35, left: 40, right: 10};
+                margin = {top: 40, bottom: 45, left: 40, right: 25};
             histogram.drawChart('#containerNonBridge',
               {
                 dataName: 'dataNonBridge',
@@ -72,7 +72,7 @@ angular.module('driveoutApp.directives.partratehisto', [])
             $('#containerBridge svg').css({
               'position': 'absolute',
               'bottom': (element.height()- $('.vizLegendZone').position().top - 5 )+ 'px',
-              'margin-bottom': 30 + 'px'});
+              'margin-bottom': 15 + 'px'});
           });
         }
       });

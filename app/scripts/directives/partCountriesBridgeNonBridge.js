@@ -19,7 +19,7 @@ angular.module('driveoutApp.directives.partcountrybridgenonbridge', [])
         histogram.load('contents/data/partCountriesBridgeNonBridge/participations.json', function() {
             var width = elementWidth,
                 height = elementHeight / 2.5,
-                margin = {top: 40, bottom: 34, left: 40, right: 10};
+                margin = {top: 40, bottom: 45, left: 40, right: 25};
 
                 histogram.drawChart('#containerNonBridge',
                   {
@@ -40,7 +40,7 @@ angular.module('driveoutApp.directives.partcountrybridgenonbridge', [])
           $('#containerBridge svg').css({
             'position': 'absolute',
             'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-            'margin-bottom': 30 + 'px'});
+            'margin-bottom': 15 + 'px'});
         });
         window.addEventListener('resize', function() {
           if (element.width() !== 0) {
@@ -50,7 +50,7 @@ angular.module('driveoutApp.directives.partcountrybridgenonbridge', [])
             histogram.load('contents/data/partCountriesBridgeNonBridge/participations.json', function() {
               var width = elementWidth,
                   height = elementHeight / 2.5,
-                  margin = {top: 40, bottom: 34, left: 40, right: 10};
+                  margin = {top: 40, bottom: 45, left: 40, right: 25};
 
               histogram.drawChart('#containerNonBridge',
                 {
@@ -71,7 +71,7 @@ angular.module('driveoutApp.directives.partcountrybridgenonbridge', [])
               $('#containerBridge svg').css({
                 'position': 'absolute',
                 'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-                'margin-bottom': 30 + 'px'});
+                'margin-bottom': 15 + 'px'});
             });
           }
         });

@@ -19,7 +19,7 @@ angular.module('driveoutApp.directives.partratehistototal', [])
           var legendHeight = $('.vizLegendZone').height();
           var width = elementWidth,
               height = elementHeight/1.2 - legendHeight,
-              margin = {top: 40, bottom: 35, left: 40, right: 10};
+              margin = {top: 40, bottom: 45, left: 40, right: 22};
 
           histogram.drawChart('#containerTotal',
             {
@@ -31,7 +31,7 @@ angular.module('driveoutApp.directives.partratehistototal', [])
           $('#containerTotal svg').css({
             'position': 'absolute',
             'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-            'margin-bottom': 30 + 'px'});
+            'margin-bottom': 15 + 'px'});
       });
 
       window.addEventListener('resize', function() {
@@ -42,7 +42,7 @@ angular.module('driveoutApp.directives.partratehistototal', [])
             var legendHeight = $('.vizLegendZone').height();
             var width = elementWidth,
                 height = elementHeight/1.2 - legendHeight,
-                margin = {top: 40, bottom: 35, left: 40, right: 10};
+                margin = {top: 40, bottom: 45, left: 40, right: 22};
 
             histogram.drawChart('#containerTotal',
               {
@@ -54,7 +54,7 @@ angular.module('driveoutApp.directives.partratehistototal', [])
             $('#containerTotal svg').css({
               'position': 'absolute',
               'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-              'margin-bottom': 30 + 'px'});
+              'margin-bottom': 15 + 'px'});
           });
         }
       });

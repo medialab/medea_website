@@ -20,7 +20,7 @@ angular.module('driveoutApp.directives.stackedwgsbyarcavsnonca', [])
 
           var width = elementWidth,
               height = elementHeight - legendHeight,
-              margin = {top: 40, bottom: 27, left: 50, right: -30};
+              margin = {top: 40, bottom: 27, left: 50, right: -18};
 
           stackedBars.drawViz('#svgContainer',
             {
@@ -32,7 +32,7 @@ angular.module('driveoutApp.directives.stackedwgsbyarcavsnonca', [])
           $('#svgContainer svg').css({
             'position': 'absolute',
             'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-            'margin-bottom': 30 + 'px'});
+            'margin-bottom': 15 + 'px'});
         });
         window.addEventListener('resize', function() {
           if (element.width() !== 0) {
@@ -44,7 +44,7 @@ angular.module('driveoutApp.directives.stackedwgsbyarcavsnonca', [])
 
               var width = elementWidth,
                   height = elementHeight - legendHeight,
-                  margin = {top: 40, bottom: 27, left: 50, right: -30};
+                  margin = {top: 40, bottom: 27, left: 50, right: -18};
 
               stackedBars.drawViz('#svgContainer',
                 {
@@ -56,7 +56,7 @@ angular.module('driveoutApp.directives.stackedwgsbyarcavsnonca', [])
               $('#svgContainer svg').css({
                 'position': 'absolute',
                 'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-                'margin-bottom': 30 + 'px'});
+                'margin-bottom': 15 + 'px'});
                 });
           }
         });

@@ -32,7 +32,7 @@ angular.module('driveoutApp.directives.roledistribstacked', [])
           $('#svgContainer svg').css({
             'position': 'absolute',
             'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-            'margin-bottom': 30 + 'px'});
+            'margin-bottom': 15 + 'px'});
         });
         window.addEventListener('resize', function() {
           if (element.width() !== 0) {
@@ -56,7 +56,7 @@ angular.module('driveoutApp.directives.roledistribstacked', [])
               $('#svgContainer svg').css({
                 'position': 'absolute',
                 'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-                'margin-bottom': 30 + 'px'});
+                'margin-bottom': 15 + 'px'});
                 });
           }
         });

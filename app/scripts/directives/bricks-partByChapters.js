@@ -17,7 +17,7 @@ angular.module('driveoutApp.directives.bricks', [])
         bricks.load('contents/data/bricks-partByChapters/participations.json', function() {
           var width = elementwidth,
               height = $('.vizLegendZone').position().top - 30,
-              margin = {top: 40, bottom: 15, left: 10, right: -10};
+              margin = {top: 40, bottom: 15, left: 27, right: 17};
 
           bricks.drawViz('#bricksSvgContainer',
             {
@@ -29,13 +29,13 @@ angular.module('driveoutApp.directives.bricks', [])
           $('#bricksSvgContainer svg').css({
             'position': 'absolute',
             'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-            'margin-bottom': 30 + 'px'});
+            'margin-bottom': 15 + 'px'});
           window.addEventListener('resize', function() {
             if (element.height() !== 0){
               var elementwidth = element.width() * 9.8/10;
               var width = elementwidth,
                 height = $('.vizLegendZone').position().top - 30,
-                margin = {top: 40, bottom: 15, left: 10, right: -10};
+                margin = {top: 40, bottom: 15, left: 27, right: 17};
 
               bricks.drawViz('#bricksSvgContainer',
                 {
@@ -47,7 +47,7 @@ angular.module('driveoutApp.directives.bricks', [])
               $('#bricksSvgContainer svg').css({
                 'position': 'absolute',
                 'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-                'margin-bottom': 30 + 'px'
+                'margin-bottom': 15 + 'px'
               });
             }
           });

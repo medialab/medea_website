@@ -32,7 +32,7 @@ angular.module('driveoutApp.directives.unfccctrajectoriesadaptation', [])
                 borderColor: '#2F5B66',
                 marginLeft: 200,
                 marginRight: 10,
-                height: $('.vizLegendZone').position().top -30,
+                height: $('.vizLegendZone').position().top -15,
                 marginBottom: 110
             },
 

@@ -146,7 +146,7 @@
     //Now the ticks are built, the legend of the x axis is added
     var barBbox = bar[0][0].getBBox();
     d3.select(svgContainer + ' #xAxisLegend')
-      .attr('y', barBbox.y + barBbox.height + 4*tickSize);
+      .attr('y', barBbox.y + barBbox.height + 8*tickSize);
   }
 
   Histogram.prototype.drawChart = function(container, params) {
@@ -238,7 +238,7 @@
     chart.append('text')
       .attr('transform', 'rotate(-90)')
       .attr('y', margin.left - 7*tickSize)
-      .attr('x', 0 - (margin.top + chartTrueHeight/2))
+      .attr('x', 0 - (margin.top + chartTrueHeight/2 + 10))
       .attr('id', 'yAxisLegend')
       .style('alignment-baseline', 'baseline')
       .style('dominant-baseline', 'baseline')
