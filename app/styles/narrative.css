@@ -73,3 +73,6 @@
 button:disabled {
   background: #33616D;
 }
+.legendLeft {
+  margin-left: 30px;
+}
