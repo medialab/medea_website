@@ -163,4 +163,4 @@ angular
         $("#wrapper").toggleClass("toggled");
       }
     );
-  })
+  });

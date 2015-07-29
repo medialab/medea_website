@@ -20,7 +20,7 @@ angular.module('driveoutApp.directives.partcountry9010', [])
           console.log('element loaded')
             var width = elementWidth,
                 height = elementHeight / 1.4,
-                margin = {top: 40, bottom: 34, left: 40, right: 10};
+                margin = {top: 40, bottom: 44, left: 40, right: 22};
 
                 histogram.drawChart('#container',
                   {
@@ -32,7 +32,7 @@ angular.module('driveoutApp.directives.partcountry9010', [])
           $('#container svg').css({
             'position': 'absolute',
             'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-            'margin-bottom': 30 + 'px'});
+            'margin-bottom': 15 + 'px'});
         });
         window.addEventListener('resize', function() {
           if (element.width() !== 0) {
@@ -42,7 +42,7 @@ angular.module('driveoutApp.directives.partcountry9010', [])
             histogram.load('contents/data/partCountries90-10/participations.json', function() {
               var width = elementWidth,
                   height = elementHeight / 1.4,
-                  margin = {top: 40, bottom: 34, left: 40, right: 10};
+                  margin = {top: 40, bottom: 44, left: 40, right: 22};
 
               histogram.drawChart('#container',
                 {
@@ -54,7 +54,7 @@ angular.module('driveoutApp.directives.partcountry9010', [])
               $('#container svg').css({
                 'position': 'absolute',
                 'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-                'margin-bottom': 30 + 'px'});
+                'margin-bottom': 15 + 'px'});
           });
           }
         });

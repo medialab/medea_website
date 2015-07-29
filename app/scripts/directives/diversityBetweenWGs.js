@@ -23,8 +23,8 @@ angular.module('driveoutApp.directives.diversitybetweenwgs', [])
 
             var width = elementWidth/2.1,
                 height = elementHeight - legendHeight,
-                marginLeft = {top: 40, bottom: 27, left: 45, right: 10},
-                marginRight = {top: 40, bottom: 27, left: 50, right: 10};
+                marginLeft = {top: 40, bottom: 15, left: 45, right: 10},
+                marginRight = {top: 40, bottom: 15, left: 50, right: 10};
 
             stackedBars.drawViz('#svgContainerLeft',
               {
@@ -46,13 +46,13 @@ angular.module('driveoutApp.directives.diversitybetweenwgs', [])
               'position': 'absolute',
               'left': 0 + 'px',
               'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-              'margin-bottom': 30 + 'px'
+              'margin-bottom': 15 + 'px'
             });
             $('#svgContainerRight svg').css({
               'position': 'absolute',
               'right': 0 + 'px',
               'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-              'margin-bottom': 30 + 'px'});
+              'margin-bottom': 15 + 'px'});
 
             window.addEventListener('resize', function() {
               if (element.width() !== 0) {
@@ -63,8 +63,8 @@ angular.module('driveoutApp.directives.diversitybetweenwgs', [])
 
                 var width = elementWidth /2.1,
                     height = elementHeight - legendHeight,
-                    marginLeft = {top: 40, bottom: 27, left: 45, right: 10},
-                    marginRight = {top: 40, bottom: 27, left: 50, right: 10};
+                    marginLeft = {top: 40, bottom: 15, left: 45, right: 10},
+                    marginRight = {top: 40, bottom: 15, left: 50, right: 10};
 
                 stackedBars.drawViz('#svgContainerLeft',
                   {
@@ -84,13 +84,13 @@ angular.module('driveoutApp.directives.diversitybetweenwgs', [])
                   'position': 'absolute',
                   'left': 0 + 'px',
                   'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-                  'margin-bottom': 30 + 'px'
+                  'margin-bottom': 15 + 'px'
                 });
                 $('#svgContainerRight svg').css({
                   'position': 'absolute',
                   'right': 0 + 'px',
                   'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-                  'margin-bottom': 30 + 'px'
+                  'margin-bottom': 15 + 'px'
                 });
               }
             });

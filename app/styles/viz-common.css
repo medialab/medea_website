@@ -69,18 +69,19 @@ select#currentAR {
   height: 100%;
 }
 #xAxisLegend, #yAxisLegend {
-  font-size: 11px;
+  font-size: 14px;
   text-transform: uppercase;
   font-family: 'Raleway';
   /*font-family: 'Merriweather-Regular';*/
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 300;
   fill: #33616D;
 }
 .title {
-  font-size: 11px;
-  letter-spacing: 1px;
   fill: #33616D;
+  font: 10px 'Raleway';
+  font-weight: 700;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -100,16 +101,18 @@ select#currentAR {
   fill: #2f5b66;
 }
 .tick text, .roleLegend {
-  font: 11px 'Raleway';
   fill: #33616D;
+  font: 10px 'Raleway';
   font-weight: 700;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .barTitle {
-  font: 14px 'Raleway';
   fill: #33616D;
-  text-transform: uppercase;
+  font: 10px 'Raleway';
+  font-weight: 700;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 /*********************************************************************
@@ -189,7 +192,7 @@ select#currentAR {
   font: 0px 'Raleway';
 }
 .powerLawHisto #yAxis text {
-  font: 11px 'Raleway';
+  font: 10px 'Raleway';
   font-weight: 700;
 }
 .powerLawHisto rect {
@@ -197,7 +200,8 @@ select#currentAR {
 }
 .powerLawHisto text, .powerLawHisto line {
   fill: #33616D;
-  font: 11px 'Raleway';
+  font: 10px 'Raleway';
+  font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -207,11 +211,11 @@ select#currentAR {
   fill: rgba(51, 97, 109, 0.8);
 }
 
-#powerLawTooltipText text{
-  fill: white;
-  font-size: 11px;
-  text-transform: none;
-  alignment-baseline: central;
+#powerLawTooltipText{
+  background: rgba(51, 97, 109, 0.8);
+  color: white;
+  font: 12px 'Raleway';
+  line-height: 16px;
 }
 
 /*********************************************************************
@@ -224,6 +228,8 @@ select#currentAR {
 .tooltipText {
   background: rgba(51, 97, 109, 0.8);
   color: white;
+  font: 12px 'Raleway';
+  line-height: 16px;
 }
 .tooltipText .hoverBar rect{
   fill: rgba(51, 97, 109, 0.8);
@@ -276,12 +282,13 @@ select#currentAR {
   background: #33616D;
   color: white;
   border: none;
-  margin: 0 2px;
+  margin: 4px 2px;
   font-family: 'Raleway';
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 8px;
   font-weight: 700;
+  width: 70px;
 }
 /*********************************************************************
  *************************** Line Chart
@@ -289,6 +296,7 @@ select#currentAR {
 .vizline {
   fill: none;
 }
+
 /*********************************************************************
  *************************** Stacked WGs by ARs
  *********************************************************************/
@@ -363,7 +371,8 @@ table .tableRow > td{
   padding-bottom: 20px;
 }
 table .firstColumn {
-  font: 13px 'Raleway';
+  padding-left: 30px;
+  font: 10px 'Raleway';
   text-transform: uppercase;
   letter-spacing: 1px;
   width: 200px !important;
@@ -371,13 +380,13 @@ table .firstColumn {
   color: #33616D;
 }
 table .secondColumn {
-  font: 13px 'Raleway';
+  font: 10px 'Raleway';
   letter-spacing: 1px;
   color: #33616D;
   padding-left: 20px;
 }
 table .thirdColumn {
-  font: 13px 'Raleway';
+  font: 10px 'Raleway';
   letter-spacing: 1px;
   color: #33616D;
   width: 100px !important;
@@ -385,12 +394,13 @@ table .thirdColumn {
 }
 
 .tableHeader .tableRow > td {
-  font: 13px 'Raleway';
+  font-size: 14px;
   text-transform: uppercase;
+  font-family: 'Raleway';
+  /*font-family: 'Merriweather-Regular';*/
   letter-spacing: 1px;
-  padding-bottom: 10px;
-  font-weight: 700;
-  color: #33616D;
+  font-weight: 300;
+  fill: #33616D;
 }
 
 .scrollableOverlay {

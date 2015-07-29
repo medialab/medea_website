@@ -183,7 +183,7 @@
         .attr("d", function(d) { return line(d.values); })
         .attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')')
         .style("stroke", function(d) { return colorRange[d.wmo]; })
-        .style("opacity", 0.6);
+        .style("opacity", 1);
 
     // continent.append("text")
     //     .datum(function(d) { return {wmo: d.wmo, value: d.values[d.values.length - 1]}; })

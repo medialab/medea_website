@@ -177,7 +177,7 @@
         .enter()
           .append('text')
           .attr('class','barTitle')
-          .attr('y', margin.top + barHeight + 15)
+          .attr('y', margin.top + barHeight + 5)
           .attr('x', function(d, i) {return xPositions[i] + barWidth/2; })
           .style('text-anchor', 'middle')
           .style('alignment-baseline', 'hanging')

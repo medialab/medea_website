@@ -22,7 +22,7 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
 
           var width = elementWidth/2.1,
               height = elementHeight - legendHeight,
-              margin = {top: 40, bottom: 27, left: 45, right: 10};
+              margin = {top: 40, bottom: 15, left: 45, right: 10};
 
           stackedBars.drawViz('#svgContainerLeft',
             {
@@ -35,7 +35,7 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
             'position': 'absolute',
             'left': 0 + 'px',
             'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-            'margin-bottom': 30 + 'px'});
+            'margin-bottom': 15 + 'px'});
 
           window.addEventListener('resize', function() {
             if (element.width() !== 0) {
@@ -46,7 +46,7 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
 
               var width = elementWidth /2.1,
                   height = elementHeight - legendHeight,
-                  margin = {top: 40, bottom: 27, left: 45, right: 10};
+                  margin = {top: 40, bottom: 15, left: 45, right: 10};
 
               stackedBars.drawViz('#svgContainerLeft',
                 {
@@ -59,7 +59,7 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
                 'position': 'absolute',
                 'left': 0 + 'px',
                 'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-                'margin-bottom': 30 + 'px'
+                'margin-bottom': 15 + 'px'
               });
             }
           });
@@ -69,7 +69,7 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
 
           var width = elementWidth/2.1,
               height = elementHeight - legendHeight,
-              margin = {top: 40, bottom: 27, left: 50, right: 15};
+              margin = {top: 40, bottom: 15, left: 50, right: 15};
 
           stackedBarsProp.drawViz('#svgContainerRight',
             {
@@ -82,7 +82,7 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
             'position': 'absolute',
             'right': 0 + 'px',
             'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-            'margin-bottom': 30 + 'px'});
+            'margin-bottom': 15 + 'px'});
 
           window.addEventListener('resize', function() {
             if (element.width() !== 0) {
@@ -93,7 +93,7 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
 
               var width = elementWidth /2.1,
                   height = elementHeight - legendHeight,
-                  margin = {top: 40, bottom: 27, left: 50, right: 15};
+                  margin = {top: 40, bottom: 15, left: 50, right: 15};
 
               stackedBarsProp.drawViz('#svgContainerRight',
                 {
@@ -106,7 +106,7 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
                 'position': 'absolute',
                 'right': 0 + 'px',
                 'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-                'margin-bottom': 30 + 'px'
+                'margin-bottom': 15 + 'px'
               });
             }
           });

@@ -142,7 +142,7 @@
     //Now the ticks are built, the legend of the x axis is added
     var barBbox = bar[0][0].getBBox();
     d3.select(svgContainer + ' #xAxisLegend')
-      .attr('y', barBbox.y + barBbox.height + 4*tickSize);
+      .attr('y', barBbox.y + barBbox.height + 8*tickSize);
   }
 
   Histogram.prototype.drawChart = function(container, params) {
@@ -243,7 +243,7 @@ console.log(data);
     //Adds the axis labels
     chart.append('text')
       .attr('x', margin.left + (chartTrueWidth / 2))
-      .attr('y', chartTrueHeight + margin.top + 2 * tickSize)
+      .attr('y', chartTrueHeight + margin.top + 10 * tickSize)
       .attr('id', 'xAxisLegend')
       .style('text-anchor', 'middle')
       .style('alignment-baseline', 'hanging')

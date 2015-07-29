@@ -47,12 +47,12 @@ angular.module('driveoutApp.directives.diversityacrossroles', [])
           $('#visualisation1 svg').css({
             'position': 'absolute',
             'left': 0 +'px',
-            'margin-bottom': 30 + 'px'});
+            'margin-bottom': 15 + 'px'});
           $('#visualisation2 svg').css({
             'position': 'absolute',
             'left': 0 +'px',
             'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-            'margin-bottom': 30 + 'px'});
+            'margin-bottom': 15 + 'px'});
 
           window.addEventListener('resize', function() {
             if (element.height() !== 0) {
@@ -77,12 +77,12 @@ angular.module('driveoutApp.directives.diversityacrossroles', [])
               $('#visualisation1 svg').css({
                 'position': 'absolute',
                 'left': 0 +'px',
-                'margin-bottom': 30 + 'px'});
+                'margin-bottom': 15 + 'px'});
               $('#visualisation2 svg').css({
                 'position': 'absolute',
                 'left': 0 +'px',
                 'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-                'margin-bottom': 30 + 'px'
+                'margin-bottom': 15 + 'px'
               });
             }
           });

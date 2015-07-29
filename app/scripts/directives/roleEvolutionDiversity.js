@@ -20,7 +20,7 @@ angular.module('driveoutApp.directives.roleevolutiondiversity', [])
           var width = elementWidth,
               height = elementHeight/1.2,
               margin = {
-                top: 70,
+                top: 5,
                 bottom: 20,
                 left: 45,
                 right: 40
@@ -34,7 +34,7 @@ angular.module('driveoutApp.directives.roleevolutiondiversity', [])
             'position': 'absolute',
             'left': 0 +'px',
             'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-            'margin-bottom': 30 + 'px'});
+            'margin-bottom': 15 + 'px'});
 
           window.addEventListener('resize', function() {
             if (element.width() !== 0) {
@@ -53,7 +53,7 @@ angular.module('driveoutApp.directives.roleevolutiondiversity', [])
                 'position': 'absolute',
                 'left': 0 +'px',
                 'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-                'margin-bottom': 30 + 'px'
+                'margin-bottom': 15 + 'px'
               });
             }
           });

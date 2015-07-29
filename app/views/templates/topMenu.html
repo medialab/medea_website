@@ -5,7 +5,7 @@
       <a class="navbar-brand" href="#/">medea</a>
       <ul class="nav navbar-nav uppercase">
         <li ng-repeat="page in pages" ng-if="page.slug !== 'home' && page.slug !== 'footer'" class="singlePageLink {{currentPage === page.slug ? 'active': ''}}">
-          <a ng-href="#/{{page.slug}}">{{page.slug}}</a>
+          <a ng-click="anchorScrollTo(page.slug)" ng-href="#/{{page.slug}}">{{page.slug}}</a>
         </li>
       </ul>
     </div>

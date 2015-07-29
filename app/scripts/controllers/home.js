@@ -12,25 +12,23 @@ angular.module('driveoutApp.home', [])
     if (scrollToStoryLines === undefined)
       scrollToStoryLines = false;
 
+    $anchorScroll.yOffset = 70;
 
-    if (scrollToStoryLines) {
+    if ($location.hash() !== '') {
       $scope.unsubscribeContentListener = $scope.$on('lastngrepeatdone', function(e) {
-        var abstractStudies = $('#studiesAbstract'),
-            scroll = abstractStudies.offset().top + abstractStudies.height() - 60;
-        $('html, body').scrollTop(scroll);
+        $anchorScroll($location.hash());
+        $scope.unsubscribeContentListener();
       });
     }
-    else if ($scope.unsubscribeContentListener !== undefined) {
-      $scope.unsubscribeContentListener();
-    }
+
     $scope.content = contentHome.data;
     $scope.contentStudies = {ipcc: contentIPCC.data, unfccc: contentUNFCCC.data};
     $scope.$parent.page = {};
 
-    $anchorScroll.yOffset = 70;
 
     $scope.anchorScrollTo = function(id) {
       $location.hash(id);
+      $anchorScroll();
     };
 
   });
