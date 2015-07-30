@@ -21,8 +21,10 @@ angular.module('driveoutApp.directives.diversitybetweenwgs', [])
           stackedBarsProp.load('contents/data/diversityBetweenWGs/participations.json', function() {
             var legendHeight = $('.vizLegendZone').height();
 
+            var imageHeight = $('.vizLegendZone').find('img').height();
+
             var width = elementWidth/2.1,
-                height = elementHeight - legendHeight,
+                height = elementHeight - legendHeight - (imageHeight === 0 ? 55 : 0),
                 marginLeft = {top: 40, bottom: 15, left: 45, right: 10},
                 marginRight = {top: 40, bottom: 15, left: 50, right: 10};
 
@@ -45,13 +47,15 @@ angular.module('driveoutApp.directives.diversitybetweenwgs', [])
             $('#svgContainerLeft svg').css({
               'position': 'absolute',
               'left': 0 + 'px',
-              'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+              'bottom': (element.height()- $('.vizLegendZone').position().top +
+                       (imageHeight === 0 ? 30: -5))+ 'px',
               'margin-bottom': 15 + 'px'
             });
             $('#svgContainerRight svg').css({
               'position': 'absolute',
               'right': 0 + 'px',
-              'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+              'bottom': (element.height()- $('.vizLegendZone').position().top +
+                       (imageHeight === 0 ? 30: -5))+ 'px',
               'margin-bottom': 15 + 'px'});
 
             window.addEventListener('resize', function() {
@@ -60,9 +64,10 @@ angular.module('driveoutApp.directives.diversitybetweenwgs', [])
                 var elementWidth = element.width(),
                     elementHeight = element.height();
 
+                var imageHeight = $('.vizLegendZone').find('img').height();
 
                 var width = elementWidth /2.1,
-                    height = elementHeight - legendHeight,
+                    height = elementHeight - legendHeight - (imageHeight === 0 ? 55 : 0),
                     marginLeft = {top: 40, bottom: 15, left: 45, right: 10},
                     marginRight = {top: 40, bottom: 15, left: 50, right: 10};
 
@@ -83,13 +88,15 @@ angular.module('driveoutApp.directives.diversitybetweenwgs', [])
                 $('#svgContainerLeft svg').css({
                   'position': 'absolute',
                   'left': 0 + 'px',
-                  'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+                  'bottom': (element.height()- $('.vizLegendZone').position().top +
+                       (imageHeight === 0 ? 30: -5))+ 'px',
                   'margin-bottom': 15 + 'px'
                 });
                 $('#svgContainerRight svg').css({
                   'position': 'absolute',
                   'right': 0 + 'px',
-                  'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+                  'bottom': (element.height()- $('.vizLegendZone').position().top +
+                       (imageHeight === 0 ? 30: -5))+ 'px',
                   'margin-bottom': 15 + 'px'
                 });
               }

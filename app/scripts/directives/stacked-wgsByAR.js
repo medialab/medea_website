@@ -17,9 +17,9 @@ angular.module('driveoutApp.directives.stackedwgsbyar', [])
         var stackedBars = new StackedBarsWGsByARs();
         stackedBars.load('contents/data/stacked-wgsByAR/participations.json', function() {
           var legendHeight = $('.vizLegendZone').height();
-
+          var imageHeight = $('.vizLegendZone').find('img').height();
           var width = elementWidth,
-              height = elementHeight - legendHeight,
+              height = elementHeight - legendHeight - (imageHeight === 0 ? 55 : 0),
               margin = {top: 40, bottom: 27, left: 50, right: -19};
 
           stackedBars.drawViz('#svgContainer',
@@ -31,7 +31,8 @@ angular.module('driveoutApp.directives.stackedwgsbyar', [])
             });
           $('#svgContainer svg').css({
             'position': 'absolute',
-            'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+            'bottom': (element.height()- $('.vizLegendZone').position().top +
+                       (imageHeight === 0 ? 25: -5))+ 'px',
             'margin-bottom': 15 + 'px'});
         });
         window.addEventListener('resize', function() {
@@ -39,9 +40,9 @@ angular.module('driveoutApp.directives.stackedwgsbyar', [])
             var legendHeight = $('.vizLegendZone').height();
             var elementWidth = element.width(),
                 elementHeight = element.height();
-
+            var imageHeight = $('.vizLegendZone').find('img').height();
             var width = elementWidth,
-                height = elementHeight - legendHeight,
+                height = elementHeight - legendHeight - (imageHeight === 0 ? 55 : 0),
                 margin = {top: 40, bottom: 27, left: 50, right: -19};
 
             stackedBars.drawViz('#svgContainer',
@@ -53,7 +54,8 @@ angular.module('driveoutApp.directives.stackedwgsbyar', [])
               });
             $('#svgContainer svg').css({
               'position': 'absolute',
-              'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+              'bottom': (element.height()- $('.vizLegendZone').position().top +
+                       (imageHeight === 0 ? 25: -5))+ 'px',
               'margin-bottom': 15 + 'px'
             });
           }

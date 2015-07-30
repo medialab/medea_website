@@ -19,9 +19,10 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
 
         stackedBars.load('contents/data/diversityAcrossARs/participations.json', function() {
           var legendHeight = $('.vizLegendZone').height();
+          var imageHeight = $('.vizLegendZone').find('img').height();
 
           var width = elementWidth/2.1,
-              height = elementHeight - legendHeight - 55,
+              height = elementHeight - legendHeight - (imageHeight === 0 ? 55 : 0),
               margin = {top: 40, bottom: 15, left: 45, right: 10};
 
           stackedBars.drawViz('#svgContainerLeft',
@@ -34,7 +35,8 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
           $('#svgContainerLeft svg').css({
             'position': 'absolute',
             'left': 0 + 'px',
-            'bottom': (element.height()- $('.vizLegendZone').position().top + 30)+ 'px',
+            'bottom': (element.height()- $('.vizLegendZone').position().top +
+                       (imageHeight === 0 ? 30: -5))+ 'px',
             'margin-bottom': 15 + 'px'});
 
           window.addEventListener('resize', function() {
@@ -43,9 +45,10 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
               var elementWidth = element.width(),
                   elementHeight = element.height();
 
+              var imageHeight = $('.vizLegendZone').find('img').height();
 
-              var width = elementWidth /2.1,
-                  height = elementHeight - legendHeight,
+              var width = elementWidth/2.1,
+                  height = elementHeight - legendHeight - (imageHeight === 0 ? 55 : 0),
                   margin = {top: 40, bottom: 15, left: 45, right: 10};
 
               stackedBars.drawViz('#svgContainerLeft',
@@ -58,7 +61,8 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
               $('#svgContainerLeft svg').css({
                 'position': 'absolute',
                 'left': 0 + 'px',
-                'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+                'bottom': (element.height()- $('.vizLegendZone').position().top +
+                       (imageHeight === 0 ? 30: -5))+ 'px',
                 'margin-bottom': 15 + 'px'
               });
             }
@@ -66,10 +70,11 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
         });
         stackedBarsProp.load('contents/data/diversityAcrossARs/participations.json', function() {
           var legendHeight = $('.vizLegendZone').height();
+          var imageHeight = $('.vizLegendZone').find('img').height();
 
           var width = elementWidth/2.1,
-              height = elementHeight - legendHeight - 55,
-              margin = {top: 40, bottom: 15, left: 50, right: 15};
+              height = elementHeight - legendHeight - (imageHeight === 0 ? 55 : 0),
+              margin = {top: 40, bottom: 15, left: 45, right: 10};
 
           stackedBarsProp.drawViz('#svgContainerRight',
             {
@@ -81,7 +86,8 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
           $('#svgContainerRight svg').css({
             'position': 'absolute',
             'right': 0 + 'px',
-            'bottom': (element.height()- $('.vizLegendZone').position().top + 30)+ 'px',
+            'bottom': (element.height()- $('.vizLegendZone').position().top +
+                       (imageHeight === 0 ? 30: -5))+ 'px',
             'margin-bottom': 15 + 'px'});
 
           window.addEventListener('resize', function() {
@@ -90,10 +96,11 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
               var elementWidth = element.width(),
                   elementHeight = element.height();
 
+              var imageHeight = $('.vizLegendZone').find('img').height();
 
-              var width = elementWidth /2.1,
-                  height = elementHeight - legendHeight,
-                  margin = {top: 40, bottom: 15, left: 50, right: 15};
+              var width = elementWidth/2.1,
+                  height = elementHeight - legendHeight - (imageHeight === 0 ? 55 : 0),
+                  margin = {top: 40, bottom: 15, left: 45, right: 10};
 
               stackedBarsProp.drawViz('#svgContainerRight',
                 {
@@ -105,7 +112,8 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
               $('#svgContainerRight svg').css({
                 'position': 'absolute',
                 'right': 0 + 'px',
-                'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+                'bottom': (element.height()- $('.vizLegendZone').position().top +
+                       (imageHeight === 0 ? 30: -5))+ 'px',
                 'margin-bottom': 15 + 'px'
               });
             }

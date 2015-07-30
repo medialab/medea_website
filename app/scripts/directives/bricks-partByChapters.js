@@ -15,8 +15,9 @@ angular.module('driveoutApp.directives.bricks', [])
         var elementwidth = element.width();
         var bricks = new Bricks();
         bricks.load('contents/data/bricks-partByChapters/participations.json', function() {
+          var imageHeight = $('.vizLegendZone').find('img').height();
           var width = elementwidth,
-              height = $('.vizLegendZone').position().top - 30,
+              height = $('.vizLegendZone').position().top - (imageHeight === 0 ? 46 : 30),
               margin = {top: 40, bottom: 15, left: 27, right: 17};
 
           bricks.drawViz('#bricksSvgContainer',
@@ -28,13 +29,16 @@ angular.module('driveoutApp.directives.bricks', [])
             });
           $('#bricksSvgContainer svg').css({
             'position': 'absolute',
-            'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+            'bottom': (element.height()- $('.vizLegendZone').position().top +
+                       (imageHeight === 0 ? 5: -5))+ 'px',
             'margin-bottom': 15 + 'px'});
           window.addEventListener('resize', function() {
             if (element.height() !== 0){
-              var elementwidth = element.width() * 9.8/10;
+              var imageHeight = $('.vizLegendZone').find('img').height();
+
+              var elementwidth = element.width();
               var width = elementwidth,
-                height = $('.vizLegendZone').position().top - 30,
+                height = $('.vizLegendZone').position().top - (imageHeight === 0 ? 46 : 30),
                 margin = {top: 40, bottom: 15, left: 27, right: 17};
 
               bricks.drawViz('#bricksSvgContainer',
@@ -46,7 +50,8 @@ angular.module('driveoutApp.directives.bricks', [])
                 });
               $('#bricksSvgContainer svg').css({
                 'position': 'absolute',
-                'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+                'bottom': (element.height()- $('.vizLegendZone').position().top +
+                       (imageHeight === 0 ? 5: -5))+ 'px',
                 'margin-bottom': 15 + 'px'
               });
             }

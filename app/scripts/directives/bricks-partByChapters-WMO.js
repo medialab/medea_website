@@ -15,9 +15,11 @@ angular.module('driveoutApp.directives.brickswmo', [])
         var elementwidth = element.width();
         var bricks = new BricksWMO();
         bricks.load('contents/data/bricks-partByChapters-WMO/participations.json', function() {
+          var imageHeight = $('.vizLegendZone').find('img').height();
+
           var width = elementwidth,
-              height = $('.vizLegendZone').position().top - 30,
-              margin = {top: 40, bottom: 15, left: 27, right: 17};
+              height = $('.vizLegendZone').position().top - (imageHeight === 0 ? 46 : 30),
+              margin = {top: 40, bottom: 13, left: 27, right: 17};
 
           bricks.drawViz('#bricksSvgContainer',
             {
@@ -28,14 +30,17 @@ angular.module('driveoutApp.directives.brickswmo', [])
             });
           $('#bricksSvgContainer svg').css({
             'position': 'absolute',
-            'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+            'bottom': (element.height()- $('.vizLegendZone').position().top +
+                       (imageHeight === 0 ? 5: -5))+ 'px',
             'margin-bottom': 15 + 'px'});
           window.addEventListener('resize', function() {
             if (element.height() !== 0){
+              var imageHeight = $('.vizLegendZone').find('img').height();
+
               var elementwidth = element.width();
               var width = elementwidth,
-                height = $('.vizLegendZone').position().top - 30,
-                margin = {top: 40, bottom: 15, left: 27, right: 17};
+                height = $('.vizLegendZone').position().top - (imageHeight === 0 ? 46 : 30),
+                margin = {top: 40, bottom: 13, left: 27, right: 17};
 
               bricks.drawViz('#bricksSvgContainer',
                 {
@@ -46,7 +51,8 @@ angular.module('driveoutApp.directives.brickswmo', [])
                 });
               $('#bricksSvgContainer svg').css({
                 'position': 'absolute',
-                'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+                'bottom': (element.height()- $('.vizLegendZone').position().top +
+                       (imageHeight === 0 ? 5: -5))+ 'px',
                 'margin-bottom': 15 + 'px'
               });
             }

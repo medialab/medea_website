@@ -15,6 +15,8 @@ angular.module('driveoutApp.directives.roleevolutiondiversity', [])
         var elementWidth = element.width(),
             elementHeight = element.height();
 
+        var imageHeight = $('.vizLegendZone').find('img').height();
+
         var lineChart = new LineChartRoleOnly();
         lineChart.load('contents/data/roleEvolutionDiversity/participations.json', function() {
           var width = elementWidth,
@@ -33,7 +35,8 @@ angular.module('driveoutApp.directives.roleevolutiondiversity', [])
           $('#container svg').css({
             'position': 'absolute',
             'left': 0 +'px',
-            'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+            'bottom': (element.height()- $('.vizLegendZone').position().top +
+                       (imageHeight === 0 ? 5: -5))+ 'px',
             'margin-bottom': 15 + 'px'});
 
           window.addEventListener('resize', function() {
@@ -52,7 +55,8 @@ angular.module('driveoutApp.directives.roleevolutiondiversity', [])
               $('#container svg').css({
                 'position': 'absolute',
                 'left': 0 +'px',
-                'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+                'bottom': (element.height()- $('.vizLegendZone').position().top +
+                       (imageHeight === 0 ? 5: -5))+ 'px',
                 'margin-bottom': 15 + 'px'
               });
             }

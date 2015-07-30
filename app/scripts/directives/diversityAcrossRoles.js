@@ -16,8 +16,11 @@ angular.module('driveoutApp.directives.diversityacrossroles', [])
             elementHeight = element.height();
         var lineChart = new LineChart();
         lineChart.load('contents/data/diversityAcrossRoles/', function() {
+          var imageHeight = $('.vizLegendZone').find('img').height();
+
           var width = elementWidth,
-              height = elementHeight/2.4,
+              height = elementHeight/2.8,
+
               marginTopViz = {
                 top: 20,
                 bottom: 25,
@@ -51,15 +54,17 @@ angular.module('driveoutApp.directives.diversityacrossroles', [])
           $('#visualisation2 svg').css({
             'position': 'absolute',
             'left': 0 +'px',
-            'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+            'bottom': (element.height()- $('.vizLegendZone').position().top +
+                       (imageHeight === 0 ? 30: -5))+ 'px',
             'margin-bottom': 15 + 'px'});
 
           window.addEventListener('resize', function() {
             if (element.height() !== 0) {
+              var imageHeight = $('.vizLegendZone').find('img').height();
               var elementWidth = element.width(),
                   elementHeight = element.height();
               var width = elementWidth,
-                  height = elementHeight/2.4;
+                  height = elementHeight/2.8;
               lineChart.drawChart('#visualisation1',
                 {
                   title: 'Participations as Contributing Authors (CA)',
@@ -81,7 +86,8 @@ angular.module('driveoutApp.directives.diversityacrossroles', [])
               $('#visualisation2 svg').css({
                 'position': 'absolute',
                 'left': 0 +'px',
-                'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+                'bottom': (element.height()- $('.vizLegendZone').position().top +
+                       (imageHeight === 0 ? 30: -5))+ 'px',
                 'margin-bottom': 15 + 'px'
               });
             }
