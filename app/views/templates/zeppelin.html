@@ -55,7 +55,9 @@
       </div>
       <div class="fill-height scrollable" ng-switch-when="ipccIntro4">
         <div id="pdf" class="fill-height" url="media/ipcc-ar_3dic2014.pdf" ratio="292/306" pdf>
-          <a ng-href="media/ipcc-ar_3dic2014.pdf" target="_blank"><canvas id="containerPdfConclusion"></canvas></a>
+          <a ng-href="media/ipcc-ar_3dic2014.pdf" target="_blank">
+          <canvas id="containerPdfConclusion"></canvas>
+          </a>
           <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
           <div collapse="isCollapsed" class="vizLegendZone">
             <div class="topline"></div>
