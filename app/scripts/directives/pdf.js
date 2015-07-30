@@ -123,7 +123,6 @@ angular.module('driveoutApp.directives.pdf', [])
         var ratio = scope.ratio;
         if ($('#pdf').width()*ratio
             < $('#pdf').height()) {
-          console.log('true')
           $('#containerPdfConclusion').css({
               'position': 'absolute',
               'height': ($('#pdf').width()*ratio-30) + 'px',

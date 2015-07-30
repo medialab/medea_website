@@ -22,6 +22,5 @@ angular.module('driveoutApp.page', [])
     $scope.getScrollFlag = function() {
       return $scope.automatedScroll;
     }
-    console.log(content)
 
   });

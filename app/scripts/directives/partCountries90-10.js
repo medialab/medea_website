@@ -17,7 +17,6 @@ angular.module('driveoutApp.directives.partcountry9010', [])
 
         var histogram = new countryPart9010();;
         histogram.load('contents/data/partCountries90-10/participations.json', function() {
-          console.log('element loaded')
             var width = elementWidth,
                 height = elementHeight / 1.4,
                 margin = {top: 40, bottom: 44, left: 40, right: 22};

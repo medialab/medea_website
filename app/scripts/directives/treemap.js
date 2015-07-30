@@ -14,7 +14,6 @@ angular.module('driveoutApp.directives.treemap', [])
         var elementWidth = element.width(),
             elementHeight = element.height();
 
-        console.log(elementHeight)
         var legendHeight = $('.vizLegendZone').height();
         var imageHeight = $('.vizLegendZone').find('img').height();
         var width = elementWidth,

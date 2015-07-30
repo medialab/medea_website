@@ -119,7 +119,6 @@
               return Object.keys(data[d].regions).sort(function(a, b) {
                 return - (orderStack.indexOf(a) - orderStack.indexOf(b));
               }).map(function(e, i, a) {
-                console.log(data[d])
                 var object = {
                       regionSymbol: e,
                       regionName: data[d].regions[e].regionName,

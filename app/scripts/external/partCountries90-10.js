@@ -40,7 +40,6 @@
     var self = this;
     d3.json(path, function(participations) {
       self.data = participations;
-      console.log('participation', participations);
 
       delete self.data['N/A'];
 
@@ -156,7 +155,6 @@
     var chartTrueHeight = height - (margin.top + margin.bottom),
         chartTrueWidth = width - (margin.left + margin.right);
 
-console.log(data);
     var nbKeysData = Object.keys(data).length,
         sum = 0,
         sumAtIndex = {};
@@ -185,10 +183,9 @@ console.log(data);
         concatResult.y += dataArray[i].y;
       }
     }
-    console.log(concatResult, dataArray.slice(0, indexToSplitAt+1))
+
     dataArray = dataArray.slice(0, indexToSplitAt+1);
     dataArray.push(concatResult);
-    console.log('dataArray', dataArray)
     /**
      * Scales
      */

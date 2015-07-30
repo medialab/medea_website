@@ -396,7 +396,6 @@
         .attr('y', params.spaceVertiUnit)
         .attr('x', params.xPosition)
         .attr('width', function(d, i) {
-          console.log('ddddd', d.wg.chapterTotal)
           var scale = d3.scale.linear()
                         .range([0, params.widthTotalBar])
                         .domain([0, d.wg.chapterTotal]);

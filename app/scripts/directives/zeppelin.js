@@ -98,7 +98,6 @@ angular.module('driveoutApp.directives.zeppelin', [])
             indexNext = -1,
             currentSlug = scope.nextstory.currentPage.replace(/^\w*\//, ''),
             found = false;
-          console.log(menu)
           for (var i = 0; i < menu.length && !found; i++) {
             if (menu[i].slug === currentSlug && i !== menu.length-1
               && menu[i+1].slug !== 'countries-in-the-unfccc') {
@@ -114,7 +113,6 @@ angular.module('driveoutApp.directives.zeppelin', [])
 
           if (indexNext !== -1)
             nextStory = '#' + scope.nextstory.content.studyPath + '/' + menu[indexNext].slug;
-          console.log(nextStory);
 
           if (nextStory !== '') {
             $('.nextSLButton').prop('disabled', false)
@@ -137,7 +135,6 @@ angular.module('driveoutApp.directives.zeppelin', [])
             indexPrev = -1,
             currentSlug = scope.nextstory.currentPage.replace(/^\w*\//, ''),
             found = false;
-          console.log(menu)
           for (var i = 0; i < menu.length && !found; i++) {
             if (menu[i].slug === currentSlug && i !== 0
               && menu[i-1].slug !== 'countries-in-the-unfccc'
@@ -155,7 +152,6 @@ angular.module('driveoutApp.directives.zeppelin', [])
 
           if (indexPrev !== -1)
             prevStory = '#' + scope.nextstory.content.studyPath + '/' + menu[indexPrev].slug;
-          console.log(prevStory);
 
           if (prevStory !== '') {
             $('.prevSLButton').prop('disabled', false);

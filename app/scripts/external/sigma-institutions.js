@@ -53,7 +53,6 @@
         // We first need to save the original colors of our
         // nodes and edges, like this:
         sigmaInstance.graph.nodes().forEach(function(n) {
-          console.log('node', n.attributes.attr_type);
           if (n.attributes.attr_type === 'Institution')
             n.staticLabel = true;
           n.originalColor = n.color;

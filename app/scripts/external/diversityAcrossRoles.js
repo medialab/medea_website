@@ -60,7 +60,6 @@
           return d.wmo != 'WMONA';
         });
         self.percentageMax = percentageMax;
-        console.log('percentageMax', percentageMax)
         if (typeof callback === 'function')
           callback();
       });
@@ -83,8 +82,6 @@
           'SAM': '#73A554'
         };
 
-    console.log('data', this.data)
-
     var chartTrueHeight = height - (margin.top + margin.bottom),
         chartTrueWidth = width - (margin.left + margin.right);
 
@@ -106,7 +103,6 @@
       .orient("bottom")
       .tickFormat(
       function(d) {
-        console.log('xAxis', d)
         return 'AR' + xFormatter(d);
       }),
       yAxis = d3.svg.axis()
@@ -114,7 +110,7 @@
         .orient("left");
 
     var line = d3.svg.line()
-      .x(function(d) { console.log('line', d); return x(d.AR); })
+      .x(function(d) { return x(d.AR); })
       .y(function(d) { return y(d.percentage); });
 
     d3.select(container + ' svg').remove();
@@ -205,7 +201,6 @@
         .attr("r", 3)
         .style("fill", function(d) { return colorRange[d.wmo]; })
         .on('mouseover', function(d,i) {
-          console.log('mouseover', d, i);
           drawToolTipHTML(container + 'Svg', this,i, d);
         })
         .on('mouseleave', function(d,i) {
@@ -224,7 +219,6 @@
 
   }
   function drawToolTipHTML(component, element, id, data) {
-    console.log('component', component);
 
     var country = data.country;
     var trueSvgPositions = document.getElementById(component.replace('#',''))
@@ -239,11 +233,8 @@
     var powerLawTooltipLegend = data.wmo + ': ' + data.percentage +'%',
         boundingRectLine = element.getBBox(),
         paddingText = {top: 5, left: 5};
-        console.log('heyehy', boundingRectLine)
 
 
-    console.log(element.getAttribute('transform'))
-    console.log(element.getAttribute('transform'))
     var trueY = data.wmo !== undefined ?
                   + element.getAttribute('transform')
                      .replace(/translate\(\d*,/,'').replace('\)','') :
@@ -252,7 +243,7 @@
                   + element.getAttribute('transform')
                      .replace(/translate\(/,'').replace(/,\s*\d*\)/,'') :
                   0;
-    console.log(trueX);
+
     d3.select('body')
       .append('div')
       .attr('id', 'lineTooltipContainer_' + component.replace('#',''))

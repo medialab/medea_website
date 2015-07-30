@@ -113,7 +113,6 @@
       //Binds the data to the rects
       var rects = d3.select(container + ' svg').selectAll('.categoryBars')
           .attr('transform',function(d,i) {
-            console.log(xPositions[i])
             return 'translate(' + xPositions[i] + ',' + margin.top + ')';
           })
             .selectAll('rect')
@@ -121,7 +120,6 @@
               return Object.keys(data[d].regions).sort(function(a, b) {
                 return - (orderStack.indexOf(a) - orderStack.indexOf(b));
               }).map(function(e, i, a) {
-                console.log(data[d])
                 var object = {
                       regionSymbol: e,
                       regionName: data[d].regions[e].regionName,

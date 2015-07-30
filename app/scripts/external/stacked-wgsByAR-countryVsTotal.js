@@ -346,7 +346,6 @@
 
   function drawToolTipHTML(component, bar, id, data, complementary) {
     var wg = data.wg;
-    console.log('in')
     //Remove the possibly existing tooltip
     d3.selectAll('.stackedTooltipContainer').remove();
 
