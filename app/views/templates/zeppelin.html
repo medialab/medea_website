@@ -6,7 +6,7 @@
         <div sectiontoinsert sectionhtml="section.html"></div>
         <br/>
       </section>
-      <div id="nextSLContainer"><a class="prevSLButton"><span><</span></a><a class="nextSLButton">></a></div>
+      <div id="nextSLContainer"><a class="prevSLButton"><span>&lt;</span></a><a class="nextSLButton">&gt;</a></div>
     </div>
   </div>
   <div class="col-sm-7 col-md-7 col-lg-8 fill-height noRightGutter noLeftGutter">
@@ -62,7 +62,8 @@
           <div collapse="isCollapsed" class="vizLegendZone">
             <div class="topline"></div>
             <div class="vizLegendText">
-              <h4>Diagrams of structure and hierarchy of IPCC 1988-2015<br/>&nbsp;&nbsp;&nbsp;&nbsp;<button id="prevPDF">Previous</button>&nbsp;&nbsp;&nbsp;<span><span id="page_numPDF"></span> / <span id="page_countPDF"></span></span>&nbsp;&nbsp;&nbsp;<button id="nextPDF">Next</button></h4>
+              <h4>Diagrams of structure and hierarchy of IPCC 1988-2015<br/>&nbsp;&nbsp;&nbsp;&nbsp;<button id="prevPDF">Previous</button>&nbsp;&nbsp;&nbsp;<span><span id="page_numPDF"></span> / <span id="page_countPDF"></span></span>&nbsp;&nbsp;&nbsp;<button id="nextPDF">Next</button>
+              </h4>
             </div>
           </div>
         </div>
@@ -70,7 +71,8 @@
       <!-- =================== Coordination & Controversy ================== -->
       <div class="fill-height scrollable" ng-switch-when="pdfWG">
         <img class="imgScaled" ng-src="images/pdfWG.jpg">
-        <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+        <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed">
+        <i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
         <div collapse="isCollapsed" class="vizLegendZone">
           <div class="topline"></div>
           <div class="vizLegendText">
@@ -506,10 +508,11 @@
           <div class="topline"></div>
           <div class="vizLegendText">
             <h4><span>List of the automatically extracted terms with their different forms</span>
-            <div class="centerText" id="buttonsTableContainer">
-        <button class="buttonTable" id="extractedTermsButton" disabled>Extracted terms</button>
-        <button class="buttonTable" id="selectedTermsButton">Selected terms</button>
-      </div></h4>
+              <div class="centerText" id="buttonsTableContainer">
+                <button class="buttonTable" id="extractedTermsButton" disabled>Extracted terms</button>
+                <button class="buttonTable" id="selectedTermsButton">Selected terms</button>
+                </div>
+            </h4>
             <!-- <h4> list of the manually selected terms with their forms and frequency</h4> -->
           </div>
         </div>
@@ -538,7 +541,7 @@
       </div>
       <!-- ========================== Thematic space ======================= -->
       <div class="fill-height" ng-switch-when="enbgraph">
-        <enbgraph ng-class="['fill-height', 'enbgraph']" gexf="contents/data/unfccc-the-thematic-space-of-negotiations/ENB.gexf" />
+        <enbgraph ng-class="['fill-height', 'enbgraph']" gexf="contents/data/unfccc-the-thematic-space-of-negotiations/ENB.gexf"></enbgraph>
       </div>
       <!-- ====================== Trajectories of adaptation =============== -->
       <div class="fill-height fill-width" ng-switch-when="trajectoriesOfAdaptation">
@@ -555,4 +558,5 @@
       </div>
       <div ng-switch-default> No viz assigned here </div>
     </div>
+  </div>
 </div>
