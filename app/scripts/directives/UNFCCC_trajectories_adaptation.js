@@ -103,7 +103,7 @@ angular.module('driveoutApp.directives.unfccctrajectoriesadaptation', [])
             },
 
             colorAxis: {
-                min: 0,
+                min: 1,
                 minColor: '#2F5B66',
                 maxColor: '#FFFFFF',
             },

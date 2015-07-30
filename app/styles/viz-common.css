@@ -425,13 +425,14 @@ table .thirdColumn {
 }
 
 .children text {
+  font-family: 'Raleway';
   pointer-events: none;
   fill: white;
   font-size: 12px;
-  font-family: 'Raleway';
 }
 
 .grandparent text {
+  font-family: 'Raleway';
   font-size: 14px;
   fill: #315b66;
   cursor: pointer;

@@ -89,6 +89,11 @@ drive.utils.clean = function(html){
             .replace(/&nbsp;/g, ' ')
             .replace(/&#x2019;/g, '\'')
             .replace(/&#x2013;/g, '-')
+            .replace(/&#x2014;/g, '-')
+            .replace(/&#x201C;/g, '"')
+            .replace(/&#x201D;/g, '"')
+            .replace(/&quot;/g, '"')
+            .replace(/&amp;/g, '&')
             .replace(/&#xE9;/g, 'é')
             .replace(/<sup(.*?)href="#cmnt(.*?)<\/sup>/g, '')
             .replace(/<div(.*?)href="#cmnt(.*?)<\/div>/g, '') // avoid comment in text
