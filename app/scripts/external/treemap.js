@@ -131,8 +131,8 @@ function drawTreemap(heightViz) {
     }
   };
 
-  d3.tsv(
-    "contents/data/treemap/participations.tsv",
+  d3.csv(
+    "contents/data/treemap/participations.csv",
     function(rows) {
       var
         root = createTreeNode( "IPCC", ROOT_NODE );
