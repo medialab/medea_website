@@ -416,3 +416,46 @@ table .thirdColumn {
   width: 100%;
 }
 
+/*********************************************************************
+ *************************** Treemap
+ *********************************************************************/
+ #chart {
+  /*background: #ddd;*/
+  margin: 0;
+}
+
+text {
+  pointer-events: none;
+  fill: white;
+  font-size: 12px;
+  font-family: 'Raleway';
+}
+
+.grandparent text {
+  font-size: 14px;
+  fill: #315b66;
+
+}
+
+rect {
+  stroke: #fff;
+}
+
+rect.parent {
+  stroke-width: 5px;
+}
+
+.grandparent rect {
+  fill: white;
+}
+
+
+.grandparent rect,
+rect.has-children {
+  cursor: pointer;
+}
+
+.children:hover rect.child {
+  /* fill: #bbb; */
+  fill-opacity: .5;
+}

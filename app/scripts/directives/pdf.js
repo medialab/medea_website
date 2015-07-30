@@ -141,12 +141,11 @@ angular.module('driveoutApp.directives.pdf', [])
             if ($('#pdf').width()*ratio
               < $('#pdf').height()) {
               $('#containerPdfConclusion').css({
-                  'position': 'absolute',
-                  'left': '0',
-                  'height': ($('#pdf').width()*ratio-30) + 'px',
-                  'width': '100%',
-                  'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-                  'margin-bottom': 30 + 'px'});
+              'position': 'absolute',
+              'height': ($('#pdf').width()*ratio-30) + 'px',
+              'width': '100%',
+              'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+              'margin-bottom': 30 + 'px'});
             }
             else {
               $('#containerPdfConclusion').css({
@@ -154,6 +153,7 @@ angular.module('driveoutApp.directives.pdf', [])
                 'margin-left': '15%'
               });
             }
+            queueRenderPage(pageNum);
           }
         })
         /**
