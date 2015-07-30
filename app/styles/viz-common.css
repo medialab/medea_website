@@ -424,7 +424,7 @@ table .thirdColumn {
   margin: 0;
 }
 
-text {
+.children text {
   pointer-events: none;
   fill: white;
   font-size: 12px;
@@ -434,11 +434,13 @@ text {
 .grandparent text {
   font-size: 14px;
   fill: #315b66;
+  cursor: pointer;
 
 }
 
-rect {
+rect.parent, rect.child {
   stroke: #fff;
+  cursor: pointer;
 }
 
 rect.parent {
