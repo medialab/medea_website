@@ -77,6 +77,12 @@ angular.module('driveoutApp.directives.zeppelin', [])
 
 
         getNextSL();
+        getPreviousSL();
+
+        window.addEventListener('resize', function() {
+          getNextSL();
+          getPreviousSL();
+        });
 
         /**
          * Note Handler
@@ -111,12 +117,63 @@ angular.module('driveoutApp.directives.zeppelin', [])
           console.log(nextStory);
 
           if (nextStory !== '') {
+            $('.nextSLButton').prop('disabled', false)
             $('.nextSLButton').attr('href', nextStory);
+            $('.nextSLButton').removeClass('disabledButton');
           }
           else {
-            $('.nextSLButton').addClass('displayNone')
+            $('.nextSLButton').prop('disabled', true)
+            $('.nextSLButton').addClass('disabledButton');
           }
+          $('.nextSLButton').css({
+            'width': ($('.slider').width()-37)/2,
+            'float': 'right',
+            'margin-left': '10px'
+          });
         }
+        function getPreviousSL() {
+          var prevStory = '',
+            menu = scope.nextstory.content.menu,
+            indexPrev = -1,
+            currentSlug = scope.nextstory.currentPage.replace(/^\w*\//, ''),
+            found = false;
+          console.log(menu)
+          for (var i = 0; i < menu.length && !found; i++) {
+            if (menu[i].slug === currentSlug && i !== 0
+              && menu[i-1].slug !== 'countries-in-the-unfccc'
+              && menu[i-1].slug !== 'mapping-the-organizational-dynamics-of-the-ipcc'
+              && menu[i-1].slug !== 'mapping-adaptation-in-climate-negotiations') {
+              found = true;
+              indexPrev = i - 1;
+            }
+            else if (menu[i].slug === currentSlug && i !== 0
+              && menu[i-1].slug === 'countries-in-the-unfccc') {
+              found = true;
+              indexPrev = i - 2;
+            }
+          }
+
+          if (indexPrev !== -1)
+            prevStory = '#' + scope.nextstory.content.studyPath + '/' + menu[indexPrev].slug;
+          console.log(prevStory);
+
+          if (prevStory !== '') {
+            $('.prevSLButton').prop('disabled', false);
+            $('.prevSLButton').attr('href', prevStory);
+            $('.prevSLButton').removeClass('disabledButton')
+          }
+          else {
+            $('.prevSLButton').prop('disabled', true);
+            $('.prevSLButton').addClass('disabledButton');
+          }
+          $('.prevSLButton').css({
+            'width': ($('.slider').width()-37)/2,
+            'float': 'left',
+            'margin-right': '10px'
+          });
+        }
+
+
         scope.$parent.$watch(function(scopeP) {
           return scopeP.height;
           }, function(h) {
