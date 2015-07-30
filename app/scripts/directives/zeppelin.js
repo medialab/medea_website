@@ -169,7 +169,7 @@ angular.module('driveoutApp.directives.zeppelin', [])
           $('.prevSLButton').css({
             'width': ($('.slider').width()-37)/2,
             'float': 'left',
-            'margin-right': '10px'
+            'margin-left': '10px'
           });
         }
 

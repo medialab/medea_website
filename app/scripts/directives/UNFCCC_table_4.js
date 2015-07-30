@@ -28,8 +28,8 @@ angular.module('driveoutApp.directives.unfccctablefour', [])
           $('#extractedTermsButton').prop('disabled', true)
           $('#selectedTermsButton').prop('disabled', false)
 
-          if ($('.vizLegendText h4').text() !== titleTable1)
-            $('.vizLegendText h4').text(titleTable1);
+          if ($('.vizLegendText h4 span').text() !== titleTable1)
+            $('.vizLegendText h4 span').text(titleTable1);
         });
         $('#selectedTermsButton').on('click', function() {
           $('#tableSelected').removeClass('displayNone');
@@ -40,8 +40,8 @@ angular.module('driveoutApp.directives.unfccctablefour', [])
           if (!$('#tableExtracted').hasClass('displayNone'))
             $('#tableExtracted').addClass('displayNone');
 
-          if ($('.vizLegendText h4').text() !== titleTable2)
-            $('.vizLegendText h4').text(titleTable2)
+          if ($('.vizLegendText h4 span').text() !== titleTable2)
+            $('.vizLegendText h4 span').text(titleTable2)
         });
       }
     };
