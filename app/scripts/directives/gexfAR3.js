@@ -89,9 +89,9 @@ angular.module('driveoutApp.directives.gexfarthree', [])
           }
         });
 
-        function initateButtons(sigmaInstance) {
+        function initateButtons() {
           var sigmaRecenter = function(){
-            var c = sigmaInstance.cameras[0]
+            var c = scope.sigmaInstance.cameras[0]
             c.goTo({
               ratio: 1
               ,x: 0
@@ -101,7 +101,7 @@ angular.module('driveoutApp.directives.gexfarthree', [])
           $('#recenterButton').on('click', sigmaRecenter);
 
           var sigmaZoom = function(){
-            var c = sigmaInstance.cameras[0]
+            var c = scope.sigmaInstance.cameras[0]
             c.goTo({
               ratio: c.ratio / c.settings('zoomingRatio')
             })
@@ -109,7 +109,7 @@ angular.module('driveoutApp.directives.gexfarthree', [])
           $('#zoomButton').on('click', sigmaZoom);
 
           var sigmaUnzoom = function(){
-            var c = sigmaInstance.cameras[0]
+            var c = scope.sigmaInstance.cameras[0]
             c.goTo({
               ratio: c.ratio * c.settings('zoomingRatio')
             })
