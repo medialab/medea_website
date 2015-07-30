@@ -22,7 +22,7 @@
 }
 #homeSubtitle, #studiesAbstract {
   font-family: 'Raleway';
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px;
   line-height: 40px;
 }
@@ -42,7 +42,7 @@
 .studyDescription {
   /*margin-top: 10px;*/
   font-family: 'Raleway';
-  font-weight: 300;
+  font-weight: 400;
   padding: 10px 0px;
   font-size: 14px;
   line-height: 26px;
@@ -95,7 +95,7 @@ li.storyline {
 }
 .studyTitle {
   font: 50px 'Raleway';
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #33616D;

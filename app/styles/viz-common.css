@@ -74,7 +74,7 @@ select#currentAR {
   font-family: 'Raleway';
   /*font-family: 'Merriweather-Regular';*/
   letter-spacing: 1px;
-  font-weight: 300;
+  font-weight: 400;
   fill: #33616D;
 }
 .title {
@@ -399,7 +399,7 @@ table .thirdColumn {
   font-family: 'Raleway';
   /*font-family: 'Merriweather-Regular';*/
   letter-spacing: 1px;
-  font-weight: 300;
+  font-weight: 400;
   fill: #33616D;
 }
 
