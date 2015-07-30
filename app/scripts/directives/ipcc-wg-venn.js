@@ -52,14 +52,19 @@ angular.module('driveoutApp.directives.wenn', [])
             });
           }
         });
-
+        $($('.buttonFocus')[1]).prop('disabled', true)
         scope.$on('focus', function(e, string) {
           if (string === "global") {
             element.html("");
+            $($('.buttonFocus')[0]).prop('disabled', false)
+            $($('.buttonFocus')[1]).prop('disabled', true)
             element[0].setAttribute('class', element[0].getAttribute('class').replace('fillHeight', 'fillComplement'));
             venn.plotGlobalAR(elementid, elementwidth, elementheight);
           } else if (string === "annual") {
+            $($('.buttonFocus')[1]).prop('disabled', false)
+            $($('.buttonFocus')[0]).prop('disabled', true)
             element.html("");
+            elementheight = element.height()-$('.vizLegendZone').height() - 30;
             element[0].setAttribute('class', element[0].getAttribute('class').replace('fillComplement', 'fillHeight'));
             venn.plotAnnualARs(elementid, elementwidth, elementheight);
           }
