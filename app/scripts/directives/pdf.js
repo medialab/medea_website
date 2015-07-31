@@ -66,7 +66,6 @@ angular.module('driveoutApp.directives.pdf', [])
            * @param num Page number.
            */
           function renderPage(num) {
-            console.log($('#pdf').width()*ratio, $('#pdf').height())
             if ($('#pdf').width()*ratio < $('#pdf').height() - $('.vizLegendZone').height()) {
               $('#containerPdfConclusion').css({
                   'position': 'absolute',

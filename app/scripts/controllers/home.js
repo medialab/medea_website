@@ -8,6 +8,11 @@
  * Controller of the driveoutApp
  */
 angular.module('driveoutApp.home', [])
+  .config( ['$anchorScrollProvider',
+    function($anchorScrollProvider) {
+        $anchorScrollProvider.disableAutoScrolling();
+    }]
+  )
   .controller('HomeCtrl', function ($scope, $window, $location, $anchorScroll, $timeout, contentHome, contentIPCC, contentUNFCCC, scrollToStoryLines) {
     if (scrollToStoryLines === undefined)
       scrollToStoryLines = false;
@@ -16,8 +21,10 @@ angular.module('driveoutApp.home', [])
 
     if ($location.hash() !== '') {
       $scope.unsubscribeContentListener = $scope.$on('lastngrepeatdone', function(e) {
-        $anchorScroll($location.hash());
-        $scope.unsubscribeContentListener();
+        $timeout(function() {
+          $anchorScroll($location.hash());
+          $scope.unsubscribeContentListener();
+        });
       });
     }
 
