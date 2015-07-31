@@ -67,7 +67,9 @@ h6 {
   letter-spacing: 1px;
   line-height: 16px;
 }
-
+a:hover {
+  color: #363633;
+}
 .uppercase {
   text-transform: uppercase;
 }
