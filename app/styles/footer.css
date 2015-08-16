@@ -41,3 +41,7 @@ img.fullwidth {
   font-size: 9px;
   text-align: right;
 }
+
+#licenseImage {
+  max-width: 50%;
+}
