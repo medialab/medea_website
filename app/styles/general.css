@@ -80,6 +80,9 @@ a:hover {
   margin-top: 10px;
   font-size: 20px;
 }
+.noScroll {
+  overflow: hidden;
+}
 .negativeMargin {
   position: absolute;
   margin-left: -30px;
@@ -201,4 +204,21 @@ section  ol {
 #nextSLContainer {
   width: 100%;
   text-align: center;
+}
+
+#contentBlocker {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2000;
+  text-align: center;
+  background-color: rgba(87, 170, 206, 0.85);
+  color: white;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 700;
+  padding-top: 80px;
 }
