@@ -14,6 +14,7 @@ angular.module('driveoutApp.layout', [])
       $('#contentBlocker').addClass('displayNone')
     }
     else {
+      $('#contentBlocker').removeClass('displayNone')
       $('body').addClass('noScroll')
     }
     window.addEventListener('resize', function() {
