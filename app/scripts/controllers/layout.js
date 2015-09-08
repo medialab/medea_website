@@ -10,18 +10,18 @@
 angular.module('driveoutApp.layout', [])
   .controller('LayoutCtrl', function ($scope, $route, FilesFactory) {
     console.log('windowsize',window.innerHeight, window.innerWidth)
-    if (window.innerHeight >= 760 && window.innerWidth >= 1020) {
+    if (window.innerHeight >= 500 && window.innerWidth >= 1000) {
       $('#contentBlocker').addClass('displayNone')
     }
     else {
       $('body').addClass('noScroll')
     }
     window.addEventListener('resize', function() {
-      if (window.innerHeight >= 760 && window.innerWidth >= 1020 && !$('#contentBlocker').hasClass('displayNone')) {
+      if (window.innerHeight >= 500 && window.innerWidth >= 1000 && !$('#contentBlocker').hasClass('displayNone')) {
         $('#contentBlocker').addClass('displayNone')
         $('body').removeClass('noScroll')
       }
-      else if ((window.innerHeight < 760 || window.innerWidth < 1020) && $('#contentBlocker').hasClass('displayNone')) {
+      else if ((window.innerHeight < 500 || window.innerWidth < 1000) && $('#contentBlocker').hasClass('displayNone')) {
         $('#contentBlocker').removeClass('displayNone')
         $('body').addClass('noScroll')
       }
