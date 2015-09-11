@@ -1,0 +1,56 @@
+{
+  "id": "1yodnhF80_UMqjKYJKlGKXuBNMad8ZIQqmCUS-8qcVXI",
+  "title": "Narrative title",
+  "slug": "narrative",
+  "mimeType": "application/vnd.google-apps.document",
+  "sections": [
+    {
+      "title": "introduction",
+      "type": "text",
+      "notes": [],
+      "html": "<p>test text</p>"
+    },
+    {
+      "title": "Fig. 1",
+      "directive": "histogram:",
+      "type": "directive",
+      "notes": [],
+      "html": "<p>the text here with special focus according to directive behaviour <a href=\"zoom:agriculture,system\">Dany</a> and the text with <a href=\"zoom:node_identifier\">markers</a> ici</p>"
+    },
+    {
+      "title": "Fig. 2",
+      "directive": "histogram:",
+      "type": "directive",
+      "notes": [],
+      "html": "<p>the text with <a href=\"zoom:node_identifier\">markers</a> ici</p>"
+    }
+  ],
+  "subtitle": "narrative subtitle",
+  "menu": [
+    {
+      "title": "Mapping the Organizational Dynamics of the IPCC",
+      "slug": "mapping-the-organizational-dynamics-of-the-ipcc",
+      "subtitle": "The IPCC is probably the largest instance of international scientific expertise in the history of science. Its periodic Assessment Reports, involving thousands of scientists, provide governments and the public with the most certified information on the global connections between human activity and a changing climate. This visual platform explores the social and political dimensions of this assessment-making by looking at who participates in the IPCC."
+    },
+    {
+      "title": "Introduction",
+      "slug": "introduction",
+      "subtitle": "<div class=\"authorName\">Ian Gray</div>The IPCC is the largest instance of international scientific expertise in the history of science. Its periodic Assessment Reports, involving thousands of scientists, provide governments and the public with the most certified information on the global connections between human activity and a changing climate. This visual platform explores the social and political dimensions of this assessment-making by looking at who participates in the IPCC. "
+    },
+    {
+      "title": "Participation and Politics",
+      "slug": "participation-and-politics",
+      "subtitle": "<div class=\"authorName\">Ian Gray</div>Legitimacy is a cornerstone of any political process. Situated at the interface of science and policy, the IPCC does not escape this condition. This storyline traces a process of institutional adaptation as the Panel navigates between competing priorities in its assessment making--cultivating legitimacy among its governmental members while maintaining the scientific rigour of its reports.  "
+    },
+    {
+      "title": "Coordination and Controversy",
+      "slug": "coordination-and-controversy",
+      "subtitle": "<div class=\"authorName\">Ian Gray</div>When a number of factual errors in the WGII volume of AR4 turned into a media spectacle in 2010, the IPCC was forced to quell the controversy by launching a full-scale review of its operating procedures. Could an improved culture of coordination have stemmed the loss of reputation?"
+    },
+    {
+      "title": "National Cultures of Climate Expertise",
+      "slug": "national-cultures-of-climate-expertise",
+      "subtitle": "<div class=\"authorName\">Kari de Pryck and Ian Gray</div>In this narrative, we use the database to develop a profile of one country's presence in the IPCC - that of France. We show how a back-and-forth existed between contributing to the assessment reports and advancing national expertise in climate change. This same biographical exercise could be conducted for any of the countries in the Mapping IPCC Dynamics database."
+    }
+  ]
+}

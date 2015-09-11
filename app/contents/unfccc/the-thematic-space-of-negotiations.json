@@ -1,0 +1,85 @@
+{
+  "id": "196wVJLZM1mBEcPj1znsjGD_x_102P8dIoWBwZmmfU_8",
+  "title": "The thematic space of negotiations",
+  "slug": "the-thematic-space-of-negotiations",
+  "mimeType": "application/vnd.google-apps.document",
+  "sections": [
+    {
+      "title": "I. Reading the co-occurrence graph",
+      "directive": "enbgraph",
+      "type": "directive",
+      "notes": [],
+      "html": "<p>There are many ways of making sense of a co-occurrence graph. The most common one is to calculate a series of statistics in order to detect the most important expressions and their semantic context. Here, we will propose a different approach, based on the visual observation of the network (Venturini, T., Jacomy, M., & Carvalho Pereira, D., 2015. Visual Network Analysis. Sciences Po médialab working paper, Paris). </p><p>Before we move to the detailed description of each cluster and the terms it contains, it is interesting to observe that the two main issues of the climate negotiation - namely mitigation and adaptation - have a very different profile in the network.</p><p>Terms related to the efforts to mitigate climate change (by reducing GHG emissions) characterize 7 of the 11 clusters of the networks:</p><ul><li>\"Technology transfer & energy\", \"Fuel & transport\" (at the top)</li><li>\"Clean Development Mechanism (at the top-right)</li><li>\"Compliance and enforcement\" (at the bottom-right)</li><li>\"Post-2012, mitigation & new funding\" and \"Land use & forestry\" (at the bottom)</li><li>\"Reducing GHG emissions\" and \"Emission reduction commitments\"  (on the left)</li></ul><p> These clusters are scattered across the whole graph, suggesting that mitigation is the main object of the negotiation and that its thematic diversification structures the UNFCCC debate.</p><p>The discussion on adaptation, on the contrary, is more concentrated and characterizes 3 clusters closely positioned in the center of the graph:</p><ul><li>\"Adaptation funding\"</li><li>\"Vulnerability & adaptation policy\"</li><li>\"Climate change impacts & development\"</li></ul><p>The three adaptation clusters are tightly connected and located at the center of the network, suggesting that the debate about adaptation is less scattered in sub-arenas than the debate about mitigation (which is more present but also more dispersed in the network). Unlike mitigation, adaptation profile resembles to that of a specific negotiation topic, but its centrality suggests its importance and its connection to all the other negotiation tables.</p>"
+    },
+    {
+      "title": "II. “Climate expertise” cluster",
+      "directive": "enbgraph",
+      "type": "directive",
+      "notes": [],
+      "html": "<p>This cluster (composed of three smaller subclusters) contains terms related to the scientific assessment of climate change. It is the only cluster that cannot be assigned to mitigation or adaptation (as it concerns both) and not surprisingly it is situated at the center of the network where it bridges the discussions on adaptation (to the right) and the discussion on mitigation (to left, top, and bottom).The &#x2018;&#x2018;Climate expertise\" cluster is located at the intersection of four other themes of the negotiations.</p><p>To describe the hub role of this cluster, let us take a closer look at the term  <strong>stabilization</strong><strong> </strong>designating the UNFCCC fundamental target. The terms that surround it more closely may serve to characterize it: <strong>greenhouse gas concentrations</strong> (the object of stabilization),<strong> 350 ppm</strong> - parts per million (the target figure), <strong>carbon dioxide-equivalent</strong> (the measure), and the <strong>political will </strong>(necessary to reach stabilization). </p><p>Following the connections of the stabilization we can describe how the negotiations are articulated. Toward the left, stabilization connects to <strong>CO2, </strong>at the heart of the &#x2018;&#x2018;GHG emissions'' cluster. Toward the bottom, stabilization is connected to the <strong>mitigation options</strong>, which is one of the two main strategies to fight against climate change. Toward the top, stabilization is connected to terms pertaining to the other main strategy to fight climate change: <strong>adaptation options</strong>, <strong>adaptive capacity</strong>. </p>"
+    },
+    {
+      "title": "III. “Reducing GHGs Emissions” and “Emission Reduction Commitments” clusters",
+      "directive": "enbgraph",
+      "type": "directive",
+      "notes": [],
+      "html": "<p>The two clusters are tightly connected and contain terms related to the reduction of greenhouse gases and the Kyoto agreement. The first is directly connected to the climate expertise cluster, the second to the discussions about the post-Kyoto agreement.  These two clusters represent fundamental aspects of the UNFCCC process: GHGs emissions reductions (GHGs) and reduction commitments to stabilize GHGs concentrations.</p><p>In the &#x2018;&#x2018;GHGs emissions'' cluster, we can discern three types of terms. </p><ul><li>First, there are terms defining which gases should be reduced (<strong>CH4, CO2, N2O, HFCs</strong>, etc.) and how (<strong>bubble, gas-by-gas, all gases, inventories of GHGs emissions</strong>). </li><li>Second, there are two key terms whose specificity lies in their hybrid origin, a mix between science and politics: the <strong>dangerous anthropogenic interferences </strong>with climate system and the <strong>1990 levels</strong> taken as a basis to set reducing targets. </li><li>Third, there are political and negotiation terms such as <strong>commitments for non-Annex I countries</strong>, <strong>new commitments</strong>, and<strong> common but differentiated responsibilities</strong>. </li></ul><p>The cluster configured around the expression \"Kyoto Protocol\" is made of terms referring to the negotiation on the binding reduction mechanisms: first through the <strong>Kyoto Protocol</strong>, then through the definition of its<strong> successor.</strong> </p><p>These negotiations, from the <strong>Berlin Mandate</strong> (1995) to the <strong>Durban Platform </strong>(2011), focus on various aspects: the <strong>definition of a base year</strong>, of <strong>reference levels,</strong> and of a <strong>length of commitment period</strong>; the implementation of <strong>flexibility mechanisms</strong>, among which are the emission trading scheme; the definition of <strong>accounting rules</strong> and <strong>quantified emission limitation and reduction objectives</strong> (QELROS) and an agreement on the mechanisms for the transformation of pledges into quantified objectives (<strong>pledges into QELROS);</strong> the identification of possible means to address the <strong>surplus Assigned Amount Units</strong>. </p><p>At the bottom of the cluster, terms related to the definition of <strong>future commitments </strong>after the end of the Kyoto Protocol (such as <strong>second commitment period,</strong> <strong>gap between commitment periods</strong> and <strong>binding commitments</strong>) connect this cluster to the post-Kyoto discussions. </p>"
+    },
+    {
+      "title": "IV. “Technology transfer & energy”, “Fuels & transports” clusters",
+      "directive": "enbgraph",
+      "type": "directive",
+      "notes": [],
+      "html": "<p>Situated at the top of the network, the terms about \"technology & energy\" (<strong>research & development</strong>, <strong>environmentally-sound technologies</strong>, <strong>innovation</strong>...) and \"fuels & transport\" (e.g. <strong>bunker fuel</strong>, <strong>international av</strong><strong>iation</strong>, <strong>marine transport</strong>...) are very tightly connected and draw a zone of the graph dedicated to the technical question connected to the &#x2018;de-carbonation' of society and particularly to the reduction in the use of <strong>fossil fuels</strong> through <strong>renewable energies</strong> and <strong>energy efficiency</strong>.</p><p>It is interesting to notice that most expressions connected to the economy (e.g. <strong>business</strong>, <strong>investments</strong>, <strong>private sector</strong>, <strong>industry</strong>, <strong>intellectual property rights</strong>) are also concentrated in these cluster</p><p>These two clusters are connected (toward the bottom) to the adaptation issues and in particular to the impacts cluster by the terms <strong>development</strong> and <strong>sustainable development</strong>, suggesting that developing countries consider the transfer of technological <strong>know-how</strong> from more industrialized countries as an integral part of the climate negotiations.</p>"
+    },
+    {
+      "title": "V. “Clean Development Mechanism” cluster",
+      "directive": "enbgraph",
+      "type": "directive",
+      "notes": [],
+      "html": "<p>In a more marginal position, on the far right corner of the map, the cluster dedicated to the CDM contains terms related to the flexibility mechanisms of the Kyoto Protocol allowing states to reduce their emissions outside their national borders (and in particular in developing countries) thereby obtaining Certified Emission Reductions (<strong>CERs</strong>).</p><p>This mechanism (strongly wanted by the United States) fueled animated debates on two principles surrounding its implementation. On the one hand, the principle of <strong>supplementarity</strong>: CDM projects are to remain supplemental to <strong>domestic actions</strong> to reduce emissions. On the other hand, the principle of <strong>additionality</strong> requires that CDM projects really make additional reductions of GHGs emissions that would not have been achieved otherwise. The <strong>impact assessment</strong> of projects' <strong>cost effectiveness</strong> is therefore crucial. </p>"
+    },
+    {
+      "title": "VI. Cluster “Land use & forestry” and “Post-2012, mitigation & new funding pledges” cluster",
+      "directive": "enbgraph",
+      "type": "directive",
+      "notes": [],
+      "html": "<p>Since the Buenos Aires Plan of Action (1998) and the discussions on the definition of the implementation rules of the Kyoto Protocol, two new topics have arisen on the negotiation agenda. First, discussions to reduce emissions caused by deforestation created heated controversy about how to include LULUCF (<strong>land use</strong>, <strong>land-use change</strong> and <strong>forestry</strong>) within Kyoto's binding targets or clean development mechanisms. Some countries insisted that this type of <strong>carbon stocks</strong> should be excluded from the Kyoto Protocol because, in the absence of strict regulations, <strong>forest management</strong> and <strong>forest conservation</strong> could become less <strong>additional activities</strong> and more pretexts not to comply with emissions reduction. These regulations were defined with the Marrakech agreement setting a limit to the authorized LULUCF carbon <strong>sink</strong> deductions and leaving the possibility for market-based action to help developing countries with land use and forest management and conservation. This agreement helped to ensure the ratification of the Kyoto Protocol in 2004. </p><p>The cluster on post-Kyoto agreement is structured around the <strong>Bali Action Plan</strong>. Adopted in 2007, such plan defined the <strong>building blocks</strong> of the agreement that should follow the Kyoto-protocol: the strengthening of the <strong>mitigation actions</strong>, the setting up of adaptation policies to the impacts of climate change, the transfer of technology, as well as the definition of a shared vision for <strong>long-term cooperation</strong> and <strong>cooperative action</strong>. </p><p>The cluster on the <strong>post-2012</strong> agreement is very close to the cluster on land use and forest because the Bali Action Plan also initiated discussions on how to reduce emissions caused by deforestation and forest degradation (<strong>REDD </strong>and<strong> REDD+</strong>) as well as on the possibility for <strong>sectoral approaches</strong> and <strong>non-market approaches</strong> to reducing emissions in developing countries. </p>"
+    },
+    {
+      "title": "VII. “Climate change impacts & development”, “Vulnerability & adaptation policy” and “Adaptation funding” clusters",
+      "directive": "enbgraph",
+      "type": "directive",
+      "notes": [],
+      "html": "<p>The center of the map shows three clusters closely connected and dedicated to adaptation-related clusters. Compared to the mitigation clusters described above, the adaptation clusters are fewer (three against seven) and more compact. The clusters on impacts and vulnerability, in particular, are tightly connected. Vulnerability refers to the different exposure of countries (and particularly <strong>most vulnerable</strong> states and <strong>small islands</strong>) to <strong>extreme weather</strong> events and slow onset impact and their capability to take <strong>adaptation and response measures</strong>. Failure to reduce vulnerability might have severe consequences on both natural and social systems, impacting <strong>water resources</strong>, <strong>agriculture</strong>, <strong>food security</strong>, but also <strong>health</strong>, <strong>gender</strong>, <strong>indigenous</strong> <strong>people</strong> and more generally <strong>climate justice</strong>. In the negotiations, such impacts have been addressed in particular by the <strong>The Nairobi work programme</strong> established at COP11 in December 2005.</p><p>A separated but connected discussion concerns the question of the <strong>funding</strong> of adaptation actions. This cluster gathers expressions connected to the <strong>financial mechanisms</strong> as well as to the <strong>policies and measures</strong> that should allow a transfer of resources from developed to developing countries to support the implementation of the <strong>National Adaptation Programmes of Actions</strong> (<strong>NAPA</strong>). The cluster contains also reference to specific funds created for such purpose: the Least Developed Country Fund (<strong>LDC Fund</strong>), the Global Environment Fund (<strong>GEF</strong>) and the <strong>Special Climate Change Fund</strong>.</p>"
+    }
+  ],
+  "subtitle": "<div class=\"authorName\">Tommaso Venturini and Nicolas Baya-Lafitte</div>The network presented in this section illustrates the thematic articulation of the UNFCCC negotiation. Mitigation-related topics appear to spread through the debate and structure it, while adaptation-related discussions occupy a more specific (though central) position.",
+  "menu": [
+    {
+      "title": "Mapping Adaptation in Climate Negotiations",
+      "slug": "mapping-adaptation-in-climate-negotiations",
+      "subtitle": null
+    },
+    {
+      "title": "Introduction",
+      "slug": "introduction",
+      "subtitle": "<div class=\"authorName\">Tommaso Venturini and Nicolas Baya-Lafitte</div>The United Nation Framework Convention on Climate Change is the official arena where the actions to mitigate global warming and to adapt to its impacts are discussed by the international community. The intricacy of such discussions has increasingly augmented in the last twenty years with new actors and new themes entering and transforming the negotiations. On this platform, we will use a graph and three heatmaps to visualize the rise and fall of topics and countries as well as the commitment of the different actors on the different negotiation tables."
+    },
+    {
+      "title": "The thematic space of negotiations",
+      "slug": "the-thematic-space-of-negotiations",
+      "subtitle": "<div class=\"authorName\">Tommaso Venturini and Nicolas Baya-Lafitte</div>The network presented in this section illustrates the thematic articulation of the UNFCCC negotiation. Mitigation-related topics appear to spread through the debate and structure it, while adaptation-related discussions occupy a more specific (though central) position."
+    },
+    {
+      "title": "Countries in the UNFCCC",
+      "slug": "countries-in-the-unfccc",
+      "subtitle": "<div class=\"authorName\">Tommaso Venturini and Nicolas Baya-Lafitte</div>The last section of this half of the platform discusses the engagement of different countries in UNFCCC negotiations, highlighting their relative visibility and the specific themes on which they are most (and least) active."
+    },
+    {
+      "title": "Visualizing the trajectories of adaptation in the UNFCCC",
+      "slug": "visualizing-the-trajectories-of-adaptation-in-the-unfccc",
+      "subtitle": "<div class=\"authorName\">Tommaso Venturini and Nicolas Baya-Lafitte</div>The heatmap discussed in this section illustrates the rise and fall of the different themes of climate negotiations, highlighting in particular how the debate on climate adaptation has progressively integrated questions related to the natural and social impacts of global warming as well as the national and international policies to handle them."
+    }
+  ]
+}
