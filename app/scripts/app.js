@@ -100,7 +100,7 @@ angular
           }
         }
       })
-      .when('/ipcc/participation-and-politics', {
+      .when('/ipcc/politics-and-practice-of-participation', {
         templateUrl: 'views/page.html',
         controller: 'PageCtrl', // handle the items loading
         resolve: {
