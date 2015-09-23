@@ -29,11 +29,13 @@ angular.module('driveoutApp.directives.image', [])
             element.find('img').css({
               'margin-left': (element.width() - element.width()*0.8) /2 + 'px',
               'height': '',
+              'margin-bottom': $('.vizLegendZone').height() / 1.5 + 'px',
               'width': ''
             });
           }
           else if (element.find('img').height() === $('.vizLegendZone').position().top - 30){
             element.find('img').css({
+              'margin-bottom': $('.vizLegendZone').height()/1.5 + 'px',
               'margin-left': (element.width() - element.find('img').width()) /2 + 'px',
             });
           }
@@ -41,6 +43,7 @@ angular.module('driveoutApp.directives.image', [])
             element.find('img').css({
               'height': ($('.vizLegendZone').position().top - 30) + 'px',
               'width': ($('.vizLegendZone').position().top - 30) / scope.ratiovertionhori + 'px',
+              'margin-bottom': $('.vizLegendZone').height()/1.5 + 'px',
               'margin-left': (element.width() - ($('.vizLegendZone').position().top - 30) / scope.ratiovertionhori) /2 + 'px'
             });
           }

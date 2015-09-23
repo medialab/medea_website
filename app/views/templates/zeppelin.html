@@ -87,7 +87,7 @@
           <div collapse="isCollapsed" class="vizLegendZone">
             <div class="topline"></div>
             <div class="vizLegendText">
-              <h4>Distribution of author participations in the IPCC</h4>
+              <h4>Distribution of authors in the IPCC according to the total number of chapters in which they have participated</h4>
             </div>
           </div>
         </div>
@@ -100,7 +100,7 @@
         <div collapse="isCollapsed" class="vizLegendZone">
           <div class="topline"></div>
           <div class="vizLegendText">
-            <h4>Diagram of IPCC AR1 WG1 report structure and relations with WGIII and WGII<br/>From AR1 WGI Report Forward, 1990.</h4>
+            <h4>Diagram of WGI report structure (AR1), with expected inputs from WGIII and outputs going to WGII</h4>
           </div>
         </div>
       </div>
@@ -127,7 +127,7 @@
           <div collapse="isCollapsed" class="vizLegendZone">
             <div class="topline"></div>
             <div class="vizLegendText">
-              <h4>Comparison of distribution participations between bridge and non-bridge authors in the IPCC</h4>
+              <h4>Distributions of number of participations between bridge and non-bridge authors in the IPCC</h4>
             </div>
           </div>
         </div>
@@ -140,7 +140,7 @@
             <div collapse="isCollapsed" class="vizLegendZone">
               <div class="topline"></div>
               <div class="vizLegendText">
-                <h4>Repartion roles in the IPCC by author type</h4>
+                <h4>Repartition of roles in the IPCC between bridge and non-bridge authors</h4>
               </div>
             </div>
           </div>
@@ -155,7 +155,7 @@
             <div collapse="isCollapsed" class="vizLegendZone">
               <div class="topline"></div>
               <div class="vizLegendText">
-                <h4>Comparison of distribution of country participations in the IPCC by author type</h4>
+                <h4>Distribution of IPCC participations by country for each author type</h4>
               </div>
             </div>
           </div>
@@ -231,6 +231,13 @@
       <!-- ============================ Diversity ========================== -->
       <div class="fill-height" ng-switch-when="worldmapDiversity">
         <iframe width='100%' height='100%' frameborder='0' src='https://audreybaneyx.cartodb.com/viz/0ec34b32-24b9-11e5-9a86-0e853d047bba/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+            <button class="btn btn-default vizLegendButton" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-chevron-circle-{{isCollapsed ? 'up': 'down'}}"></i></button>
+            <div collapse="isCollapsed" class="vizLegendZone">
+              <div class="topline"></div>
+              <div class="vizLegendText">
+                <h4>Countries with participating experts in the IPCC</h4>
+              </div>
+            </div>
       </div>
       <div class="fill-height" ng-switch-when="backToTheOECD">
         <div id="containerpartcountries9010" class="fill-height" partcountriesninetypercent>
@@ -253,7 +260,7 @@
           <div collapse="isCollapsed" class="vizLegendZone">
             <div class="topline"></div>
             <div class="vizLegendText">
-              <h4>Summary text from Special Committee on Participation on Developing Countries<br/>Report of the 3rd session of the IPCC - 1990<br/>&nbsp;&nbsp;&nbsp;&nbsp;<button id="prevPDF">Previous</button>&nbsp;&nbsp;&nbsp;<span><span id="page_numPDF"></span> / <span id="page_countPDF"></span></span>&nbsp;&nbsp;&nbsp;<button id="nextPDF">Next</button></h4>
+              <h4>Summary of report on how to increase participation from developing countries in the IPCC<br/>Delivered at the 2nd Plenary Session, Nairobi, 1989<br/>&nbsp;&nbsp;&nbsp;&nbsp;<button id="prevPDF">Previous</button>&nbsp;&nbsp;&nbsp;<span><span id="page_numPDF"></span> / <span id="page_countPDF"></span></span>&nbsp;&nbsp;&nbsp;<button id="nextPDF">Next</button></h4>
             </div>
           </div>
         </div>
@@ -339,7 +346,7 @@
         <div collapse="isCollapsed" class="vizLegendZone">
           <div class="topline"></div>
           <div class="vizLegendText">
-            <h4>The IPCC president in France</h4>
+            <h4>French President (Francois Hollande) and the Minister of Foreign Affairs (Laurent Fabius) with the President of the IPCC (Rajendra Pachuari) and the principal French IPCC authors for AR5 <br/>&copy; Presidence de la Republique - L. Blevennec.</h4>
           </div>
         </div>
       </div>
@@ -351,7 +358,7 @@
             <img ng-src="images/legend-allwgs.png" class="legendLeft">
             <div class="topline"></div>
             <div class="vizLegendText">
-              <h4 id="vizTitleContainer">Proportion of Author Participations in the WGs - <select name="countrySelector" id="titleCountry"></select><i class="fa fa-chevron-down selectIcon"></i></h4>
+              <h4 id="vizTitleContainer">Percentage of author participations by WGs as a proportion of total country participation in each AR - <select name="countrySelector" id="titleCountry"></select><i class="fa fa-chevron-down selectIcon"></i></h4>
             </div>
           </div>
         </div>
