@@ -235,7 +235,14 @@ function drawTreemap(heightViz) {
           .attr("class", "child")
           .call(rect)
           .append("title")
-          .text(function(d) { return d.parent.name.toUpperCase() + ': ' + d.name; });
+          .text(function(d) {
+            //Small cheat here as we want to force the authors name to be at the
+            //last level
+            if (d.parent.name !== d.name)
+              return d.parent.name.toUpperCase() + ': ' + d.name;
+            else
+              return d.parent.parent.name.toUpperCase() + ': ' + d.name;
+          });
 
       childCell.append("text")
             .attr("dy", ".35em")
