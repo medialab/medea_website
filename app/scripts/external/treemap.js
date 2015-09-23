@@ -235,7 +235,7 @@ function drawTreemap(heightViz) {
           .attr("class", "child")
           .call(rect)
           .append("title")
-          .text(function(d) { return d.name; });
+          .text(function(d) { return d.parent.name.toUpperCase() + ': ' + d.name; });
 
       childCell.append("text")
             .attr("dy", ".35em")
@@ -245,6 +245,12 @@ function drawTreemap(heightViz) {
       // Add interaction on click on tiles
       // Add interaction only if this object has children to display
       g.selectAll(".child")
+        .on('mouseenter', function(d) {
+          grandparent.select('text').text(name(d.parent));
+        })
+        .on('mouseleave', function(d) {
+          grandparent.select('text').text(name(d.parent.parent));
+        })
         .on('click', function(d) {
           if(d.hasOwnProperty('_children')) {
             transition(d.parent, 1000);
