@@ -511,7 +511,7 @@
       region = 'Non Available Info Grouping';
 
     if (data.chapterName !== undefined) {
-      var chapterDescription = 'Chapter: ' + data.chapterTitle + ' (AR ' + ar + ' - WG ' + wg + ' - CH '+ data.chapterName + ')',
+      var chapterDescription = 'Chapter ' + data.chapterName + ': ' + data.chapterTitle,
           partRegionDescription = data.wg.chapterEffective !== 0 ?
                     region + '\'s participations for this chapter: ' +
                               data.wg.chapterEffective:

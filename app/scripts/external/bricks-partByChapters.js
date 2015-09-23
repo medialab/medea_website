@@ -514,7 +514,7 @@
     bar.setAttribute("class", bar.getAttribute("class")+ ' hoverBar');
 
     if (data.chapterName !== undefined) {
-      var chapterDescription = 'Chapter: ' + data.chapterTitle + ' (AR ' + ar + ' - WG ' + wg + ' - CH '+ data.chapterName + ')',
+      var chapterDescription = 'Chapter ' + data.chapterName + ': ' + data.chapterTitle,
           partCountryDescription = data.wg.chapterEffective !== 0 ?
                     country + '\'s participations for this chapter: ' +
                               data.wg.chapterEffective:
