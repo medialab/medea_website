@@ -309,7 +309,7 @@ function drawTreemap(heightViz) {
           .attr("y", function(d) { return y(d.y) + TEXT_BASELINE_Y; })
           .style("opacity", function(d) {
             return rectWidth(d) > this.getComputedTextLength() + TEXT_PADDING_X
-              && rectHeight(d) > TEXT_BASELINE_Y
+              && rectHeight(d) > $(this)[0].clientHeight + TEXT_BASELINE_Y
               ? 1
               : 0;
           });
