@@ -74,12 +74,12 @@
         data = this.data[dataName],
         margin = params.margin || this.defaultMargin,
         colorRange = {
-          'EUR': '#1E6D75',
-          'NAC': '#EB983E',
-          'SWP': '#581315',
-          'ASI': '#A7252A',
-          'AFR': '#F4D74C',
-          'SAM': '#73A554'
+          'EUR': '#315b66',
+          'NAC': '#44a3c7',
+          'SWP': '#953a24',
+          'ASI': '#d7832e',
+          'AFR': '#cccf5f',
+          'SAM': '#5bae66'
         };
 
     var chartTrueHeight = height - (margin.top + margin.bottom),
