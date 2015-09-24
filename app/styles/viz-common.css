@@ -445,7 +445,7 @@ rect.parent, rect.child {
 }
 
 rect.parent {
-  stroke-width: 5px;
+  stroke-width: 8px;
 }
 
 .grandparent rect {
