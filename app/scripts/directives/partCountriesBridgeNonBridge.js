@@ -19,7 +19,8 @@ angular.module('driveoutApp.directives.partcountrybridgenonbridge', [])
         histogram.load('contents/data/partCountriesBridgeNonBridge/participations.json', function() {
             var width = elementWidth,
                 height = elementHeight / 2.5,
-                margin = {top: 40, bottom: 45, left: 40, right: 25};
+                margin = {top: 40, bottom: 45, left: 40, right: 25},
+                xOffset = 20;
 
                 histogram.drawChart('#containerNonBridge',
                   {
@@ -27,7 +28,8 @@ angular.module('driveoutApp.directives.partcountrybridgenonbridge', [])
                     title: 'Non-bridge authors',
                     height: height,
                     width: width,
-                    margin: margin
+                    margin: margin,
+                    xOffset: xOffset
                   });
                 histogram.drawChart('#containerBridge',
                   {
@@ -35,19 +37,19 @@ angular.module('driveoutApp.directives.partcountrybridgenonbridge', [])
                     title: 'Bridge authors',
                     height: height,
                     width: width,
-                    margin: margin
+                    margin: margin,
+                    xOffset: xOffset
                   });
           $('#containerBridge svg').css({
             'position': 'absolute',
             'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
             'margin-bottom': 15 + 'px'});
-        });
-        window.addEventListener('resize', function() {
-          if (element.width() !== 0) {
-            var elementWidth = element.width(),
-            elementHeight = element.height();
 
-            histogram.load('contents/data/partCountriesBridgeNonBridge/participations.json', function() {
+          window.addEventListener('resize', function() {
+            if (element.width() !== 0) {
+              var elementWidth = element.width(),
+              elementHeight = element.height();
+
               var width = elementWidth,
                   height = elementHeight / 2.5,
                   margin = {top: 40, bottom: 45, left: 40, right: 25};
@@ -58,7 +60,8 @@ angular.module('driveoutApp.directives.partcountrybridgenonbridge', [])
                   title: 'Non-bridge authors',
                   height: height,
                   width: width,
-                  margin: margin
+                  margin: margin,
+                  xOffset: xOffset
                 });
               histogram.drawChart('#containerBridge',
                 {
@@ -66,15 +69,16 @@ angular.module('driveoutApp.directives.partcountrybridgenonbridge', [])
                   title: 'Bridge authors',
                   height: height,
                   width: width,
-                  margin: margin
+                  margin: margin,
+                  xOffset: xOffset
                 });
               $('#containerBridge svg').css({
                 'position': 'absolute',
                 'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
                 'margin-bottom': 15 + 'px'});
-            });
-          }
+            }
+          });
         });
-    }
-  };
-});
+      }
+    };
+  });

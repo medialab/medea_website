@@ -64,11 +64,12 @@
         name = params.name || '',
         margin = params.margin,
         tickSize = params.tickSize,
-        barWidth = (w - data.length * 2 * distanceBarToTick) / data.length;
+        barWidth = (w - data.length * 2 * distanceBarToTick) / data.length,
+        xOffset = params.xOffset;
 
     var scaleY = scaleY.domain([0, d3.max(data, function(d) { return d.y; })]);
 
-    var bar = d3.select(svgContainer).selectAll('.bar '+ name)
+    var bar = d3.select(svgContainer).selectAll('.bar ' + name)
         .data(data)
         .enter().append('g')
         .attr('class', 'bar ' + name);
@@ -76,7 +77,7 @@
 
     bar.append('rect')
       .attr('x', function(d,i) {
-        return (margin.left +
+        return (margin.left + xOffset +
                 1 +
                 i * (barWidth + 2*distanceBarToTick) +
                 distanceBarToTick);
@@ -87,7 +88,7 @@
 
     bar.append('rect')
       .attr('x', function(d,i) {
-        return (margin.left +
+        return (margin.left + xOffset +
                 1 +
                 i * (barWidth + 2*distanceBarToTick) +
                 distanceBarToTick);
@@ -108,10 +109,10 @@
      */
     bar.append('line')
       .attr('x1', function(d,i) {
-        return (margin.left + 1 + (i+1) * (barWidth + 2 * distanceBarToTick))
+        return (margin.left + xOffset + 1 + (i+1) * (barWidth + 2 * distanceBarToTick))
       })
       .attr('x2', function(d,i) {
-        return (margin.left + 1 + (i+1) * (barWidth + 2 * distanceBarToTick))
+        return (margin.left + xOffset + 1 + (i+1) * (barWidth + 2 * distanceBarToTick))
       })
       .attr('y1', margin.top + h - tickSize )
       .attr('y2', margin.top + h + tickSize)
@@ -121,7 +122,7 @@
 
     bar.append('text')
       .attr('x', function(d,i) {
-        return (margin.left +
+        return (margin.left + xOffset +
                 1 +
                 i * (barWidth + 2*distanceBarToTick) +
                 distanceBarToTick +
@@ -156,7 +157,8 @@
         data = this[params.dataName] || this.data,
         margin = params.margin || this.defaultMargin,
         tickSize = params.tickSize || this.defaultTickSize,
-        nbCountries = params.nbCountries || 30;
+        nbCountries = params.nbCountries || 30,
+        xOffset = params.xOffset || 0;
 
     var chartTrueHeight = height - (margin.top + margin.bottom),
         chartTrueWidth = width - (margin.left + margin.right);
@@ -209,13 +211,13 @@
     //Adds the axes
     chart.append('g')
       .attr('class', 'axis')
-      .attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')')
+      .attr('transform', 'translate(' + (margin.left + xOffset) + ', ' + margin.top + ')')
       .attr('id', 'yAxis')
       .call(yAxis);
     chart.append('g')
       .attr('class', 'axis')
       .attr('id', 'xAxis')
-      .attr('transform', 'translate(' + margin.left + ', ' + (chartTrueHeight + margin.top)+ ')')
+      .attr('transform', 'translate(' + (margin.left + xOffset) + ', ' + (chartTrueHeight + margin.top)+ ')')
       .call(xAxis);
 
     //Adds the Title label
@@ -252,7 +254,8 @@
                          height: chartTrueHeight,
                          width: chartTrueWidth,
                          margin: margin,
-                         tickSize: tickSize
+                         tickSize: tickSize,
+                         xOffset: xOffset
                        });
     return chart;
   }
