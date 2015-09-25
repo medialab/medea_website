@@ -113,7 +113,7 @@
           });
 
       //Binds the data to the rects
-      var rects = d3.selectAll('.categoryBars')
+      var rects = d3.select(container + ' svg').selectAll('.categoryBars')
           .attr('transform',function(d,i) {
             return 'translate(' + xPositions[i] + ',' + margin.top + ')';
           })

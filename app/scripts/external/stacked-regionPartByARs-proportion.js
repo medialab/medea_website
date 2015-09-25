@@ -98,7 +98,6 @@
                           barWidth + Math.floor(totalHoriSpace/(Object.keys(data).length)));
         }
       });
-
       d3.select(container + ' svg')
         .selectAll('.categoryBars')
         .data(Object.keys(data))
