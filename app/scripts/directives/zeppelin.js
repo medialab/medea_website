@@ -96,7 +96,7 @@ angular.module('driveoutApp.directives.zeppelin', [])
           var nextStory = '',
             menu = scope.nextstory.content.menu,
             indexNext = -1,
-            currentSlug = scope.nextstory.currentPage.replace(/^\w*\//, ''),
+            currentSlug = window.location.hash.replace(/^#\/\w*\//, ''),
             found = false;
           for (var i = 0; i < menu.length && !found; i++) {
             if (menu[i].slug === currentSlug && i !== menu.length-1
@@ -133,7 +133,7 @@ angular.module('driveoutApp.directives.zeppelin', [])
           var prevStory = '',
             menu = scope.nextstory.content.menu,
             indexPrev = -1,
-            currentSlug = scope.nextstory.currentPage.replace(/^\w*\//, ''),
+            currentSlug = window.location.hash.replace(/^#\/\w*\//, ''),
             found = false;
           for (var i = 0; i < menu.length && !found; i++) {
             if (menu[i].slug === currentSlug && i !== 0
