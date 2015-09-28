@@ -14,7 +14,7 @@ angular.module('driveoutApp.content', ['ui.bootstrap'])
           // Dispatch event to update the view according to the index
           // Used for the zoom on the graph part of the UNFCCC view
           $scope.$broadcast('updateView', index);
-          $analytics.eventTrack('updateView', { category: 'viewChanged', label: index });
+          $analytics.eventTrack('updateView', { category: 'viewChanged', label: ($window.location.hash + '_' + index) });
         });
 
         $scope.getScrollFlag = function() {
