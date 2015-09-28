@@ -37,7 +37,7 @@
       self.data.CA = data;
       self.data.CA.forEach(function(d) {
         d.wmo         = d['WMO Symbol'];
-        d.percentage  = d['% WMO Region Participations'];
+        d.percentage  = Math.round(d['% WMO Region Participations']);
         if ((+d.percentage) > percentageMax)
           percentageMax = (+d.percentage);
       });
@@ -50,7 +50,7 @@
         self.data.others = dataO;
         self.data.others.forEach(function(d) {
           d.wmo         = d['WMO Symbol'];
-          d.percentage  = d['% WMO Region Participations'];
+          d.percentage  = Math.round(d['% WMO Region Participations']);
 
           if ((+d.percentage)> percentageMax)
             percentageMax = (+d.percentage);

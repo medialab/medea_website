@@ -35,7 +35,7 @@
             'Total Participations': data[ar].total,
             'Role': role,
             'participations': data[ar].roles[role],
-            'percentage': data[ar].roles[role] / data[ar].total * 100
+            'percentage': Math.round(data[ar].roles[role] / data[ar].total * 100)
           };
           self.data.push(object);
         }
@@ -199,7 +199,7 @@
     //Enables the styling with the hover
     element.setAttribute("class", element.getAttribute("class")+ ' hoverLine');
 
-    var powerLawTooltipLegend = data.Role + ': ' + data.percentage.toFixed(2) +'%',
+    var powerLawTooltipLegend = data.Role + ': ' + data.percentage +'%',
         boundingRectLine = element.getBBox(),
         paddingText = {top: 5, left: 5};
 
