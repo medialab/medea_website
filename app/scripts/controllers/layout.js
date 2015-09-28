@@ -9,7 +9,6 @@
  */
 angular.module('driveoutApp.layout', [])
   .controller('LayoutCtrl', function ($scope, $route, FilesFactory) {
-    console.log('windowsize',window.innerHeight, window.innerWidth)
     if (window.innerHeight >= 500 && window.innerWidth >= 800) {
       $('#contentBlocker').addClass('displayNone')
     }
@@ -27,7 +26,6 @@ angular.module('driveoutApp.layout', [])
         $('body').addClass('noScroll')
       }
     })
-    console.log('contentBlocker', $('#contentBlocker'))
     $scope.page = {};
 
     // inner pages
