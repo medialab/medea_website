@@ -1,5 +1,5 @@
 angular.module('driveoutApp.content', ['ui.bootstrap'])
-  .controller('contentCtrl', function($window, $scope, $element, $attrs) {
+  .controller('contentCtrl', function($window, $scope, $element, $attrs, $analytics) {
        var w = angular.element($window);
         $scope.index = 0;
         $scope.height = w.height() - 265;
@@ -14,6 +14,7 @@ angular.module('driveoutApp.content', ['ui.bootstrap'])
           // Dispatch event to update the view according to the index
           // Used for the zoom on the graph part of the UNFCCC view
           $scope.$broadcast('updateView', index);
+          $analytics.eventTrack('updateView', { category: 'viewChanged', label: index });
         });
 
         $scope.getScrollFlag = function() {

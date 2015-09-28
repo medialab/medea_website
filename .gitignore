@@ -1,5 +1,6 @@
 secrets.json
 settings.js
+app/scripts/analytics.js
 
 *.DS_Store
 

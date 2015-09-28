@@ -59,6 +59,12 @@ and fill it with Google clientID credentials. Put then in between the quotes:
 	settings.CLIENT_SECRET = 'YOUR GOOGLE CLIENT SECRET';
 	settings.REDIRECT_URL = 'YOUR GOOGLE REDIRECT_URL';
 
+
+Copy the `app/scripts/analytics.js` file
+	cd app/scripts
+	cp analytics.js.example analytics.js
+and fill it with your Google Analytics code.
+
 3. Get the data ...
 ---
 
