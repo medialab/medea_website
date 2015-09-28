@@ -7,16 +7,17 @@
  * # bricks diagram
  */
 angular.module('driveoutApp.directives.partcountrybridgenonbridge', [])
-  .directive('partcountriesbridgenonbridge', function () {
+  .directive('partcountriesbridgenonbridge', function ($timeout) {
     return {
       restrict: 'EA',
       scope: {},
       link: function postLink(scope, element, attrs) {
-        var elementWidth = element.width(),
-            elementHeight = element.height();
 
         var histogram = new countryPartBridgenonBridge();
         histogram.load('contents/data/partCountriesBridgeNonBridge/participations.json', function() {
+          $timeout(function() {
+            var elementWidth = element.width(),
+                elementHeight = element.height();
             var width = elementWidth,
                 height = elementHeight / 2.5,
                 margin = {top: 40, bottom: 45, left: 40, right: 25},
@@ -40,10 +41,11 @@ angular.module('driveoutApp.directives.partcountrybridgenonbridge', [])
                     margin: margin,
                     xOffset: xOffset
                   });
-          $('#containerBridge svg').css({
-            'position': 'absolute',
-            'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
-            'margin-bottom': 15 + 'px'});
+            $('#containerBridge svg').css({
+              'position': 'absolute',
+              'bottom': (element.height()- $('.vizLegendZone').position().top - 5)+ 'px',
+              'margin-bottom': 15 + 'px'});
+          });
 
           window.addEventListener('resize', function() {
             if (element.width() !== 0) {

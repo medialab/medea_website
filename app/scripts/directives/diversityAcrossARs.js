@@ -12,13 +12,13 @@ angular.module('driveoutApp.directives.diversityacrossar', [])
       restrict: 'EA',
       scope: {},
       link: function postLink(scope, element, attrs) {
-        var elementWidth = element.width(),
-            elementHeight = element.height();
         var stackedBars = new StackedBarsRegionPartByARs();
         var stackedBarsProp = new StackedBarsRegionPartProportionByARs();
 
         stackedBars.load('contents/data/diversityAcrossARs/participations.json', function() {
           $timeout(function() {
+            var elementWidth = element.width(),
+                elementHeight = element.height();
 
             var legendHeight = $('.vizLegendZone').height();
             var imageHeight = $('.vizLegendZone').find('img').height();
