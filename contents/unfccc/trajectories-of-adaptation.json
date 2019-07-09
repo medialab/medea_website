@@ -1,0 +1,92 @@
+{
+  "id": "1YPGM78aznXKfFbNPycr4iRfXh1jfZiPOV6bibKGbUGE",
+  "title": "Visualizing the trajectories of adaptation in the UNFCCC",
+  "slug": "trajectories-of-adaptation",
+  "mimeType": "application/vnd.google-apps.document",
+  "sections": [
+    {
+      "title": "I. Reading the thematic heat map",
+      "directive": "trajectoriesOfAdaptation",
+      "type": "directive",
+      "notes": [],
+      "html": "<p>In this section we will discuss of the relative visibility in the discussion on climate change of the issues of mitigation, adaptation and their sub-topics. To do so, we will use a heat map table. In such a diagram, each of the rows corresponds to one of the topics of the UNFCCC negotiations (as defined by the expressions' clusters identified in the previous section). The visibility of each topic is measured by counting the number of paragraphs in which at least two words of the same cluster are present.</p><p>The colors of the cells of the table vary according to the ranking of the visibility of the different themes: for each COP, the bluest cell corresponds to the most visible theme while the whitest one corresponds to the least visible.</p>"
+    },
+    {
+      "title": "II. Early adaptation discussions",
+      "directive": "trajectoriesOfAdaptation",
+      "type": "directive",
+      "notes": [],
+      "html": "<p>It is often said that the discussions on adaptation arrived late in the UNFCCC negotiations, following the recognition that the effort to reduce greenhouse gases emissions were insufficient to mitigate global warming and avoid its impacts (the so-called &#x2018;adaptation turn'). Such account is not completely accurate: though adaptation has been a long standing taboo for some (afraid that it would have steered attention from the mitigation actions), it has never been absent from the negotiations.</p><p>On the contrary, adaptation has been a central topic of the UNFCCC negotiations since the beginning. As shown in the heat map, the question of financing the actions against climate change consistently occupies the top spots throughout the 20 years of the UNFCCC negotiation. Such position is the result of the pressures of the Least Developed Countries (LDC) to obtain the financial resources necessary to meet their adaptation needs. This position has been particularly pushed by the Alliance of Small Island States (AOSIS) since its creation in 1991. The AOSIS has been one of the most active negotiation groups spearheading the questions of vulnerability, adaptation, and adaptation finance in the UNFCCC. It is for example on its demand that article 4.4 was added to the final text of the 1992 convention, stipulating that:</p><p>\"The developed country Parties and other developed Parties included in Annex II shall also assist the developing country Parties that are particularly vulnerable to the adverse effects of climate change in meeting costs of adaptation to those adverse effects.\"</p>"
+    },
+    {
+      "title": "III. Vulnerability and adaptation before 2004",
+      "directive": "trajectoriesOfAdaptation",
+      "type": "directive",
+      "notes": [],
+      "html": "<p>If the funding of adaptation has been a central issue since the beginning, the question of vulnerability and climate change impacts has been relatively marginal in the 90s and early 2000s. Despite the advocacy work the AOSIS, these questions have been put on hold since the first COP in Berlin.</p><p>Such marginalization derives, in part, from the staged-approach adopted by the UNFCCC:</p><ul><li>First stage: planning on the basis of observation to identify the most vulnerable countries and regions, as well as assessing the adaptation options.</li><li>Second stage:  assessing the measures that can be taken in preparation for adaptation action, especially capacity building.</li><li>And finally, the third stage : implement measures to facilitate appropriate adaptation, for example through adaptation technologies. </li></ul><p>But the reason for such marginalization is also to be found in the debates that adaptation has raised until very recently. Many actors feared that adaptation could become a distraction from (or even a renouncement to) mitigation objectives. Others noted the exact opposite: that global warming will have tragic consequences on the poorest and most vulnerable countries, regardless of any adaptation efforts.</p><p>These debates are related to the ambiguity of the concept, both on the practical and the normative level. Impacts and vulnerability are inevitably local and therefore have difficulties finding their place as objects of collective action on the global stage of the Convention.</p><p>It is only after 2001 (with the publication of the third IPCC report), that the acknowledgement of the weakness and failures of the mitigation regime finally led to the establishment of adaptation as a political object.</p>"
+    },
+    {
+      "title": "IV. Defining GHG emission reduction commitments",
+      "directive": "trajectoriesOfAdaptation",
+      "type": "directive",
+      "notes": [],
+      "html": "<p>As the heat map shows clearly, during the first six COPS, the focus of the negotiations was placed on the objective of reducing the emissions of GHGs to avoid dangerous anthropogenic interferences with the climate system. The topic reaches its first peak on the agenda at COP3, where the Kyoto Protocol (KP) is issued. The KP established binding commitments and quantified emission limitation or reduction objectives (QUELROS) on six GHGs for the 41 industrialized countries and economies in transition In light of the principle of common but differentiated responsibilities, the goal is a reduction of a least 5.2% compared to 1990 levels in a period of engagement spanning between 2008 and 2012. To reach that goal, the Kyoto Protocol provides a series of flexibility mechanisms, including joint implementation, emissions trading and the clean development mechanism, which allow countries to realize their reduction targets in countries where it is most economically efficient to do so.</p>"
+    },
+    {
+      "title": "V. Technology transfer and energy transitions",
+      "directive": "trajectoriesOfAdaptation",
+      "type": "directive",
+      "notes": [],
+      "html": "<p><p>Considering the mitigation targets, the questions connected to technology transfer from industrialized to developing countries are central, especially as energy is concerned. Such question are highly visible until The Hague and to some extent also after.</p><p>Negotiations on this topic concerned, among other things:</p><ul><li>The measures taken to create an enabling environment to encourage the efforts of the private sector (which play a central role when it comes to innovation and technological development).</li><li>The construction of mechanisms for cooperation and funds, making helping developing countries to move towards environmentally-sound technologies and renewable energies.</li></ul></p>\n"
+    },
+    {
+      "title": "VI. The LULUCF debate",
+      "directive": "trajectoriesOfAdaptation",
+      "type": "directive",
+      "notes": [],
+      "html": "<p>The years following the adoption of the Kyoto Protocol are characterized by a discussion of specific rules connected to its actual implementation. That is when, as we can see, the question of carbon sinks (and in particular the sinks connected to land use) gradually enters the scene. The observable rise (both in absolute and relative terms) is due to the controversies surrounding it. Some countries argued that LULUCF (land use, land use change and forestry) activities should be counted as emission reduction initiatives. Other countries fear that LULUCF become an excuse to circumvent the obligation to reduce emissions from fossil fuels.</p><p>The controversy reaches its peak at COP6 in The Hague and, following the stagnation of the negotiations at the COP6bis held in Bonn in June 2001. The urgency of reaching an agreement about LULUCF activities is reinforced by the announcement in March 2001 that the US and the UK refuse to ratify the Kyoto Protocol, calculation methods for such activities.</p><p>Such controversy is somewhat resolved with the establishment of the Marrakech Accord at COP7 in 2001 and the work carried on until COP10 in Buenos Aires.</p>"
+    },
+    {
+      "title": "VII. Funding adaptation through the Clean Development Mechanism",
+      "directive": "trajectoriesOfAdaptation",
+      "type": "directive",
+      "notes": [],
+      "html": "<p>Financed by a 2% levy on Certified Emission Reductions (CERs) from the Clean Development Mechanism (CDM), the creation of the Adaptation Fund renewed the tensions between adaptation and mitigation. The introduction of this levy as a predictable funding source is a major achievement of AOSIS. It results from a compromise reached with the major emerging economies, including Brazil, China and India, and gathers the bulk of CDM projects.</p><p>As the money belongs to the nation hosting the CDM projects, this adaptation fund is controlled by developing countries and does not depend on the national budgets of industrialized countries.</p><p>However this mechanism has its controversies. As an adaptation tax on CDM projects, this funding is not considered additional. Moreover, adding an extra economic cost to emission reductions, this levy creates a conflict between mitigation and adaptation.</p>"
+    },
+    {
+      "title": "VIII. The plateau of vulnerability and adaptation policies",
+      "directive": "trajectoriesOfAdaptation",
+      "type": "directive",
+      "notes": [],
+      "html": "<p>Since Marrakech 2000, we are witnessing the gradual consecration of a new framing linking together impacts, adaptation capacities, vulnerability, poverty and development within the UNFCCC regime.</p><p>During the COP8 held in Delhi in 2002, adaptation appeared well highlighted by the organizers and the idea of a separate adaptation protocol was brought forward for the first time. The Delhi Ministerial Declaration on Climate Change and Sustainable Development made adaptation a high priority, especially for the most vulnerable countries. Negotiations increasingly insisted on the need for the Subsidiary Body for Scientific and Technological Advice (SBSTA) to address the scientific, technical and socio-economic aspects of vulnerability and adaptation to climate change (COP9 Milan, 2003).</p><p>This is when the \"plateau of adaptation\" begins with the institutionalization of adaptation a as an issue for policy measures. The work program on adaptation and response measures (COP10, Buenos Aires, 2004) defines a two-track approach: one addressing the scientific, technical and socio-economic aspects under the SBSTA, the other addressing the improvement of information and methodologies, concrete adaptation actions, transfer of technologies for adaptation and capacity building under the Subsidiary Body for Implementation (SBI). </p><p>In 2005, the disaster of Hurricane Katrina and other extreme weather events raised awareness of \"non invulnerability\" among industrialized countries, and decisions taken at Buenos Aires continue to be discussed (COP11 Montreal).</p><p>The organization of COP12 in Nairobi, Kenya, gave UN Secretary-General Kofi Annan a new opportunity to call for urgent action on adaptation for the most vulnerable countries. Results are visible both in terms of funding, with the governance structure of the Adaptation Fund almost finalized at that time, and in terms of policies, with the adoption of the Nairobi work program for the implementation of adaptation.</p><p>If the adaptation progresses since Marrakech, its implementation has been hampered by the demand of the Organization of Petroleum Exporting Countries (OPEC) for a compensation for the reduced oil sales linked to mitigation actions. Such compensation, they argues, is necessary to support the adaptation of their economies to the global decarbonation policies. The controversy is closed at the COP13 held in Bali in 2007 (in the aftermath of the publication of the fourth Assessment Report). In the Bali Action Plan, the &#x2018;adaptation pillar' refers specifically to the impacts of global warming. The possible economic consequences of \"mitigation policies and measures\" are instead included in the \"mitigation pillar\". The argument of the oil countries overcome, vulnerable Least Developed Countries are therefore free to negotiate without ambiguity the governance of funding for adaptation during Pozna&#x144; (2008).</p>"
+    }
+  ],
+  "subtitle": "<div class=\"authorName\">Nicolas Baya-Laffite and Tommaso Venturini</div>The heatmap discussed in this section illustrates the rise and fall of the different themes of climate negotiations, highlighting in particular how the debate on climate adaptation has progressively integrated questions related to the natural and social impacts of global warming as well as the national and international policies to handle them.",
+  "menu": [
+    {
+      "title": "Mapping Adaptation in Climate Negotiations",
+      "slug": "mapping-adaptation-in-climate-negotiations",
+      "subtitle": null
+    },
+    {
+      "title": "Introduction",
+      "slug": "introduction",
+      "subtitle": "<div class=\"authorName\">Nicolas Baya-Laffite, Tommaso Venturini and Ian Gray</div>The United Nation Framework Convention on Climate Change is the official arena where the actions to mitigate global warming and to adapt to its impacts are discussed by the international community. The intricacy of such discussions has increasingly augmented in the last twenty years with new actors and new themes entering and transforming the negotiations. On this platform, we will use a graph and three heatmaps to visualize the rise and fall of topics and countries as well as the commitment of the different actors on the different negotiation tables."
+    },
+    {
+      "title": "The thematic space of negotiations",
+      "slug": "the-thematic-space-of-negotiations",
+      "subtitle": "<div class=\"authorName\">Nicolas Baya-Laffite and Tommaso Venturini</div>The network presented in this section illustrates the thematic articulation of the UNFCCC negotiation. Mitigation-related topics appear to spread through the debate and structure it, while adaptation-related discussions occupy a more specific (though central) position."
+    },
+    {
+      "title": "Countries in the UNFCCC",
+      "slug": "countries-in-the-unfccc",
+      "subtitle": "<div class=\"authorName\">Nicolas Baya-Laffite and Tommaso Venturini</div>The last section of this half of the platform discusses the engagement of different countries in UNFCCC negotiations, highlighting their relative visibility and the specific themes on which they are most (and least) active."
+    },
+    {
+      "title": "Visualizing the trajectories of adaptation in the UNFCCC",
+      "slug": "visualizing-the-trajectories-of-adaptation-in-the-unfccc",
+      "subtitle": "<div class=\"authorName\">Nicolas Baya-Laffite and Tommaso Venturini</div>The heatmap discussed in this section illustrates the rise and fall of the different themes of climate negotiations, highlighting in particular how the debate on climate adaptation has progressively integrated questions related to the natural and social impacts of global warming as well as the national and international policies to handle them."
+    }
+  ]
+}

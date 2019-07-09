@@ -1,0 +1,7 @@
+<nav class="navbar navbar-default navbar-fixed-top"> <div class="container-fluid"> <!-- Brand and toggle get grouped for better mobile display --> <div class="navbar-header" id="navBarLeftPart"> <a class="navbar-brand" href="#/">medea</a> <ul class="nav navbar-nav uppercase"> <li ng-repeat="page in pages" ng-if="page.slug !== 'home' && page.slug !== 'footer'" class="singlePageLink {{currentPage === page.slug ? 'active': ''}}"> <a ng-click="anchorScrollTo(page.slug)" ng-href="#/{{page.slug}}">{{page.slug}}</a> </li> </ul> </div> <!-- Collect the nav links, forms, and other content for toggling --> <div class="navbar-header" id="navBarRightPart"> <a class="navbar-brand">studies</a> <ul class="nav navbar-nav uppercase"> <li class="{{currentHash === 'ipcc' ? 'active': ''}}"> <a ng-click="anchorScrollTo('ipcc')" href="#/#ipcc" class="pointable studiesMenuLink">ipcc</a> </li> <li class="{{currentHash === 'unfccc' ? 'active': ''}}"> <a ng-click="anchorScrollTo('unfccc')" href="#/#unfccc" class="pointable studiesMenuLink">unfccc</a> </li> </ul> <!--       <ul class="nav navbar-nav">
+        <li class="dropdown {{isStory ? 'active': ''}}">
+            <a role="button" class="dropdown-toggle pointable" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Stories <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+            </ul>
+          </li>
+      </ul> --> </div><!-- /.navbar-collapse --> </div><!-- /.container-fluid --> </nav>

@@ -1,0 +1,106 @@
+#subchapters {
+  top: 147px;
+  height: 25px;
+  padding-top: 10px;
+  width: 100%;
+  background: white;
+  z-index: 1;
+  text-transform: uppercase;
+  /*text-align: center;*/
+}
+.subchapterContainer .active {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#subchapters {
+  padding-top: 0;
+  margin-bottom: 20px;
+}
+.subChapBullet{
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  font-size: 20px;
+  height: 16px;
+  line-height: 16px;
+}
+
+a {
+  color: #363633;
+}
+a:hover {
+  color: #f3bc4c;
+  text-decoration: none;
+}
+
+/**
+ * Radio buttons styling
+ */
+ /*Hide the default radio button*/
+input[type=radio]:not(old){
+  width: 20px;
+  padding: 0;
+  font-size: 14px;
+  opacity: 0;
+}
+
+/*Label Positionning*/
+input[type=radio]:not(old){
+  cursor: pointer;
+  display: inline-block;
+  margin-right: -20px;
+  line-height: 16px;
+}
+label {
+  display: inline-block;
+  line-height: 16px;
+}
+
+input[type=radio]:not(old):checked + label{
+  font-size:14px;
+  color: #57AACE;
+}
+
+/*Create the unchecked graphics*/
+/*input[type=radio]:not(old) + label > span{
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: 0.25em 0em 0.25em 0em;
+  border: 2px solid rgb(94, 94, 88);
+  border-radius: 7px;*/
+  /*background: rgb(224,224,224);*/
+/*  background-image:    -moz-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image:     -ms-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image:      -o-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image: -webkit-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image:         linear-gradient(rgb(240,240,240),rgb(224,224,224));*/
+/*  vertical-align: bottom;
+}
+*//*Inversed background gradient on selected radio button*/
+/*input[type=radio]:not(old):checked + label > span{
+  background-image :    -moz-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :     -ms-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :      -o-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image : -webkit-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :         linear-gradient(rgb(224,224,224),rgb(240,240,240));
+}*/
+/*Bullet displaying*/
+/*input[type=radio]:not(old):checked + label > span > span{
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin-top: 2px;
+  margin-left: 2px;
+  border-radius: 3px;
+  background: rgb(94, 94, 88);*/
+  /*
+  background-image :    -moz-linear-gradient(rgb(134, 137, 130),rgb(67, 71, 62));
+  background-image :     -ms-linear-gradient(rgb(134, 137, 130),rgb(67, 71, 62));
+  background-image :      -o-linear-gradient(rgb(134, 137, 130),rgb(67, 71, 62));
+  background-image : -webkit-linear-gradient(rgb(134, 137, 130),rgb(67, 71, 62));
+  background-image :         linear-gradient(rgb(134, 137, 130),rgb(67, 71, 62));
+  */
+/*}*/

@@ -1,0 +1,464 @@
+/*********************************************************************
+ *************************** Common
+ *********************************************************************/
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #33616D;
+  shape-rendering: crispEdges;
+  stroke-width: 1;
+}
+rect {
+  shape-rendering: crispEdges;
+}
+select {
+  background: #33616D;
+  color: white;
+  font: 12px 'Raleway';
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: 0;
+}
+select#currentAR {
+  position: relative;
+  width: 30px;
+  text-transform: uppercase;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.selectIcon {
+  pointer-events: none;
+  color: white;
+  position: relative;
+  left: -15px;
+  z-index: 0 !important;
+}
+.invisible {
+  visibility: hidden;
+  pointer-events: all;
+}
+
+.imgScaled {
+  width: 80%;
+  margin-left: 10%;
+}
+.imgNotScrollable {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.fillComplement {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+.fillComplement > canvas {
+  width: auto;
+  display: block;
+  margin: auto;
+  height: 100%;
+}
+#xAxisLegend, #yAxisLegend {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Raleway';
+  /*font-family: 'Merriweather-Regular';*/
+  letter-spacing: 1px;
+  font-weight: 400;
+  fill: #33616D;
+}
+.title {
+  fill: #33616D;
+  font: 10px 'Raleway';
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/*********************************************************************
+ *************************** StackedChart
+ *********************************************************************/
+.CA {
+  fill: #3c95b5;
+}
+.CLA {
+  fill: #3c87a3;
+}
+.LA {
+  fill: #287183;
+}
+.RE {
+  fill: #2f5b66;
+}
+.tick text, .roleLegend {
+  fill: #33616D;
+  font: 10px 'Raleway';
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.barTitle {
+  fill: #33616D;
+  font: 10px 'Raleway';
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/*********************************************************************
+ *************************** Bricks
+ *********************************************************************/
+#vizTitleContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.participationTotalARbar{
+  fill: #33616D;
+  opacity: 0.5;
+}
+.participationCountryARbar, .participationRegionARbar {
+  fill: #33616D;
+}
+
+.totalWG1{
+  fill: #766aa4;
+  opacity: 0.5;
+}
+.totalWG2 {
+  fill: #cccf5f;
+  opacity: 0.5;
+}
+.totalWG3 {
+  fill: #44a3c7;
+  opacity: 0.5;
+}
+
+.phantomWG1{
+  fill: #766aa4;
+  opacity: 0.5;
+}
+.phantomWG2 {
+  fill: #cccf5f;
+  opacity: 0.5;
+}
+.phantomWG3 {
+  fill: #44a3c7;
+  opacity: 0.5;
+}
+
+.partialWG1 {
+  fill: #766aa4;
+}
+.partialWG2 {
+  fill: #cccf5f;
+}
+.partialWG3 {
+  fill: #44a3c7;
+}
+
+.nbOnDarkBar {
+  fill: white;
+}
+/**
+ * Tooltips
+ */
+#bricksTooltipText {
+  pointer-events: none;
+  z-index: 2;
+}
+
+#bricksTooltipText{
+  background: rgba(51, 97, 109, 0.8);
+  color: white;
+  font: 12px 'Raleway';
+  line-height: 16px;
+}
+
+/*********************************************************************
+ *************************** Powerlaw histogram
+ *********************************************************************/
+.powerLawHisto .axis text {
+  font: 0px 'Raleway';
+}
+.powerLawHisto #yAxis text {
+  font: 10px 'Raleway';
+  font-weight: 700;
+}
+.powerLawHisto rect {
+  fill: #33616D;
+}
+.powerLawHisto text, .powerLawHisto line {
+  fill: #33616D;
+  font: 10px 'Raleway';
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+#powerLawTooltip rect, #powerLawTooltip path, .powerLawHisto .hoverBar{
+  fill: rgba(51, 97, 109, 0.8);
+}
+
+#powerLawTooltipText{
+  background: rgba(51, 97, 109, 0.8);
+  color: white;
+  font: 12px 'Raleway';
+  line-height: 16px;
+}
+
+/*********************************************************************
+ *************************** Powerlaw histogram
+ *********************************************************************/
+.tooltipText, .histoBridgeTooltipContainer #arrowTooltip{
+  pointer-events: none;
+  z-index: 2;
+}
+.tooltipText {
+  background: rgba(51, 97, 109, 0.8);
+  color: white;
+  font: 12px 'Raleway';
+  line-height: 16px;
+}
+.tooltipText .hoverBar rect{
+  fill: rgba(51, 97, 109, 0.8);
+}
+
+/*********************************************************************
+ *************************** Venn Diagram
+ *********************************************************************/
+.venntooltip {
+  position: absolute;
+  text-align: center;
+  background: rgba(91, 94, 93, 0.8);
+  color: white;
+  font-size: 11px;
+  border: 0;
+}
+
+/*********************************************************************
+ *************************** Sigma - IPCC
+ *********************************************************************/
+.pointable{
+  cursor: pointer;
+}
+.sigmaControl, .sigmaControl:hover {
+  color: #33616D;
+}
+.tooltip > .tooltip-inner {
+  background-color: #33616D;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.tooltip.right .tooltip-arrow {
+  border-right-color: #33616D;
+}
+/*********************************************************************
+ *************************** Sigma - UFCCC
+ *********************************************************************/
+.enbgraph {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+/*********************************************************************
+ *************************** PDF
+ *********************************************************************/
+#prevPDF, #nextPDF {
+  background: #33616D;
+  color: white;
+  border: none;
+  margin: 4px 2px;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 8px;
+  font-weight: 700;
+  width: 70px;
+}
+/*********************************************************************
+ *************************** Line Chart
+ *********************************************************************/
+.vizline {
+  fill: none;
+}
+
+/*********************************************************************
+ *************************** Stacked WGs by ARs
+ *********************************************************************/
+.WG1 {
+  fill: #766aa4;
+}
+.WG2 {
+  fill: #cccf5f;
+}
+.WG3 {
+  fill: #44a3c7;
+}
+.WG1-2 {
+  fill: #953a24;
+}
+.WG1-3 {
+  fill: #315b66;
+}
+.WG2-3 {
+  fill: #45a479;
+}
+.WG1-2-3 {
+  fill: #2b2a2b;
+}
+
+.respRole {
+  opacity: 0.5;
+}
+/*********************************************************************
+ *************************** IPCC people lines
+ *********************************************************************/
+.ipccPeopleLinesTooltipText {
+  background-color: rgba(51, 97, 109, 0.92);
+}
+.ipccPeopleLinesTooltipText li {
+  margin: 0px 5px 0px -5px;
+  font-size: 12px;
+}
+
+/*********************************************************************
+ *************************** Stacked Region Participation By AR
+ *********************************************************************/
+.NAC {
+  fill: #44a3c7;
+}
+.EUR {
+  fill: #315b66;
+}
+.WMONA {
+  fill: #695e9f;
+}
+.SWP {
+  fill: #953a24;
+}
+.ASI {
+  fill: #d7832e;
+}
+.AFR {
+  fill: #cccf5f;
+}
+.SAM {
+  fill: #5bae66;
+}
+
+/*********************************************************************
+ *************************** Tables
+ *********************************************************************/
+table {
+  width: 100%;
+}
+table .tableRow > td{
+  padding-bottom: 20px;
+}
+table .firstColumn {
+  padding-left: 30px;
+  font: 10px 'Raleway';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 200px !important;
+  font-weight: 700;
+  color: #33616D;
+}
+table .secondColumn {
+  font: 10px 'Raleway';
+  letter-spacing: 1px;
+  color: #33616D;
+  padding-left: 20px;
+}
+table .thirdColumn {
+  font: 10px 'Raleway';
+  letter-spacing: 1px;
+  color: #33616D;
+  width: 100px !important;
+  padding-left: 20px;
+}
+
+.tableHeader .tableRow > td {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Raleway';
+  /*font-family: 'Merriweather-Regular';*/
+  letter-spacing: 1px;
+  font-weight: 400;
+  fill: #33616D;
+}
+
+.scrollableOverlay {
+  overflow: auto;
+  overflow: overlay;
+}
+
+#buttonsTableContainer {
+  padding-bottom: 10px;
+  background-color: white;
+}
+.tableRow {
+  width: 100%;
+}
+
+/*********************************************************************
+ *************************** Treemap
+ *********************************************************************/
+ #chart {
+  /*background: #ddd;*/
+  margin: 0;
+}
+
+.children text {
+  font-family: 'Raleway';
+  pointer-events: none;
+  fill: white;
+  font-size: 10px;
+}
+
+.grandparent text {
+  font-family: 'Raleway';
+  font-size: 14px;
+  fill: #315b66;
+  cursor: pointer;
+
+}
+
+rect.parent, rect.child {
+  stroke: #fff;
+  cursor: pointer;
+}
+
+rect.parent {
+  stroke-width: 8px;
+}
+
+.grandparent rect {
+  fill: white;
+}
+
+
+.grandparent rect,
+rect.has-children {
+  cursor: pointer;
+}
+
+.children:hover rect.child {
+  /* fill: #bbb; */
+  fill-opacity: .5;
+}

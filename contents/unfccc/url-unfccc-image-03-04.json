@@ -1,0 +1,35 @@
+{
+  "id": "16PWLfuOzl1JinZNko3-IMRMBohIplMcjv3gg5QqhwOY",
+  "title": "",
+  "slug": "url-unfccc-image-03-04",
+  "mimeType": "application/vnd.google-apps.document",
+  "sections": [],
+  "subtitle": null,
+  "menu": [
+    {
+      "title": "Mapping Adaptation in Climate Negotiations",
+      "slug": "mapping-adaptation-in-climate-negotiations",
+      "subtitle": null
+    },
+    {
+      "title": "Introduction",
+      "slug": "introduction",
+      "subtitle": "<div class=\"authorName\">Nicolas Baya-Laffite, Tommaso Venturini and Ian Gray</div>The United Nation Framework Convention on Climate Change is the official arena where the actions to mitigate global warming and to adapt to its impacts are discussed by the international community. The intricacy of such discussions has increasingly augmented in the last twenty years with new actors and new themes entering and transforming the negotiations. On this platform, we will use a graph and three heatmaps to visualize the rise and fall of topics and countries as well as the commitment of the different actors on the different negotiation tables."
+    },
+    {
+      "title": "The thematic space of negotiations",
+      "slug": "the-thematic-space-of-negotiations",
+      "subtitle": "<div class=\"authorName\">Nicolas Baya-Laffite and Tommaso Venturini</div>The network presented in this section illustrates the thematic articulation of the UNFCCC negotiation. Mitigation-related topics appear to spread through the debate and structure it, while adaptation-related discussions occupy a more specific (though central) position."
+    },
+    {
+      "title": "Countries in the UNFCCC",
+      "slug": "countries-in-the-unfccc",
+      "subtitle": "<div class=\"authorName\">Nicolas Baya-Laffite and Tommaso Venturini</div>The last section of this half of the platform discusses the engagement of different countries in UNFCCC negotiations, highlighting their relative visibility and the specific themes on which they are most (and least) active."
+    },
+    {
+      "title": "Visualizing the trajectories of adaptation in the UNFCCC",
+      "slug": "visualizing-the-trajectories-of-adaptation-in-the-unfccc",
+      "subtitle": "<div class=\"authorName\">Nicolas Baya-Laffite and Tommaso Venturini</div>The heatmap discussed in this section illustrates the rise and fall of the different themes of climate negotiations, highlighting in particular how the debate on climate adaptation has progressively integrated questions related to the natural and social impacts of global warming as well as the national and international policies to handle them."
+    }
+  ]
+}
