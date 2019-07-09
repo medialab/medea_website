@@ -61,7 +61,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "deploy": "gh-pages -d .",
+    "deploy": "gh-pages -d ./dist",
     "postinstall": "bower install",
     "start": "node index.js",
     "test": "grunt test"
