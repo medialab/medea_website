@@ -19,7 +19,7 @@
     "cheerio": "^0.17.0",
     "cli-color": "^0.3.2",
     "css": "^2.1.0",
-    "googleapis": "^1.0.14",
+    "googleapis": "^39.1.0",
     "marked": "^0.3.2",
     "promise": "^6.0.0",
     "request": "^2.44.0",
