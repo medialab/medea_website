@@ -115,3 +115,9 @@ The texts have changed?
 Run `npm start`
 Then `grunt build` or `grunt serve` depending on your needs.
 
+## Notes regarding the website's prod and GDPR compliance
+
+This codebase is not maintained anymore and is probably hard to deploy with changes right now since most of its conf was lost to time. Thus, some changes were made directly on the `gh-pages` branch, bypassing the standard deployment procedure. Those changes include:
+
+* The addition of a `CNAME` for the custom domain.
+* Dropping the analytics.
