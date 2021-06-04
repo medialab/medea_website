@@ -10,8 +10,6 @@
  */
 angular
   .module('driveoutApp.global', [
-    'angulartics',
-    'angulartics.google.analytics',
     'ngAnimate',
     'ngCookies',
     'ngResource',
